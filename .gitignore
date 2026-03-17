@@ -1,0 +1,7 @@
+# Archivos de entorno y editores
+.vscode/
+*.code-workspace
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
