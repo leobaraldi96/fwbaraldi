@@ -1,97 +1,39 @@
-# Framework Baraldi — Repositorio de Skills y Prompts
+# Framework Baraldi 🤖⚡
 
-> **Para uso con IA:** cargar `00_boot/context.md` como System Orchestrator antes de cualquier skill.
+> **AI-Augmented System Product Design**
+>
+> Un framework metodológico diseñado para potenciar el diseño de productos digitales utilizando Inteligencia Artificial como copiloto estratégico en todas las etapas del proceso.
 
-**AI-Augmented System Product Design**
-Versión 2.0 · Leo Baraldi
+![Version](https://img.shields.io/badge/version-2.0-blue)
+![Status](https://img.shields.io/badge/status-active-success)
 
----
+## 📌 ¿Qué es este Framework?
 
-## Cómo usar este repositorio
+El **Framework Baraldi** es una colección estructurada de "Skills" y prompts diseñados para guiar modelos de Inteligencia Artificial (Claude, GPT, Gemini) a través de las diferentes fases del diseño de producto.
 
-### Paso 1 — Siempre empezá por el Boot
-Antes de cualquier sesión de trabajo, cargá el archivo `00_boot/context.md` en tu LLM. Es el contrato de identidad y comportamiento de la IA dentro del framework.
+A diferencia de un asistente genérico, este framework obliga a la IA a adoptar metodologías rigurosas, enfocarse en la divergencia, cuestionar asunciones y producir "artefactos" estructurados en lugar de respuestas conversacionales simples.
 
-```
-1. Abrí una nueva conversación en Claude / Gemini / GPT
-2. Copiá el contenido de 00_boot/context.md
-3. Completá la sección "Contexto del proyecto activo"
-4. A partir de ahí, usá los prompts de las skills
-```
+## 🚀 Fases del Proceso
 
-### Paso 2 — Ejecutá las skills en orden
-Cada etapa tiene sus prompts ordenados por momento. No saltees momentos sin documentar el motivo en el Decision Log.
+El flujo de trabajo cubre el ciclo completo de diseño de producto:
 
-### Paso 3 — Guardá todos los outputs como documentos
-Nunca queden los artefactos solo en el chat. Cada output es un archivo Markdown que se guarda en la carpeta del proyecto.
+1. **✅ Boot:** Set-up de identidad y contexto del proyecto para el modelo.
+2. **✅ Problem Framing:** Entendimiento del problema, mapeo de actores y diseño de metodologías de validación (research).
+3. **🔄 System Analysis:** Análisis del sistema (En desarrollo)
+4. **🔄 Product Logic:** Lógica del producto (En desarrollo)
+5. **🔄 UX Experience:** Experiencia de usuario (En desarrollo)
+6. **🔄 UI Design:** Diseño de interfaces (En desarrollo)
+7. **🔄 Implementation:** Implementación técnica (En desarrollo)
+8. **🔄 System Reflection:** Evaluación final (En desarrollo)
 
----
+## 🤖 Uso con Inteligencia Artificial
 
-## Estructura del repositorio
+Si eres un modelo de IA o estás configurando un agente autónomo para utilizar este framework, **DEBES LEER PRIMERO** el archivo de instrucciones maestras:
 
-```
-framework-baraldi/
-├── 00_boot/
-│   └── context.md                    ← SIEMPRE cargar primero
-│
-├── skills/
-│   ├── 01_problem_framing/
-│   │   └── prompts/
-│   │       ├── momento_1_vision.md              ← Visión y amplificación de campo
-│   │       ├── momento_feedback_metodologia.md  ← Asistente de research + soportes
-│   │       ├── momento_2_live_assistant.md      ← IA auxiliar on vivo
-│   │       └── momento_3_cierre.md              ← Evaluación de cierre + decisión IF
-│   │
-│   ├── 02_system_analysis/           ← En desarrollo
-│   ├── 03_product_logic/             ← En desarrollo
-│   ├── 04_ux_experience/             ← En desarrollo
-│   ├── 05_ui_design/                 ← En desarrollo
-│   ├── 06_implementation/            ← En desarrollo
-│   └── 07_system_reflection/         ← En desarrollo
-│
-└── templates/                        ← En desarrollo
-    ├── decision_log.md
-    └── artefactos_etapa1.md
-```
+👉 **[Ver Documentación para Modelos de IA (DOCUMENTACION_IA.md)](./DOCUMENTACION_IA.md)**
 
----
+Ahí encontrarás las reglas de activación, la estructura de metadata YAML esperada, compatibilidades de formato y cómo ejecutar el proceso `00_boot/context.md` antes de invocar cualquier skill individual.
 
-## Formato de los archivos de skill
+## 🤝 Contribuciones y Uso
 
-Cada skill tiene:
-- **Frontmatter YAML** — metadata estructurada (id, versión, trigger, inputs, output format)
-- **Rol** — quién es la IA en este momento específico
-- **Proceso visible** — qué pasos ejecuta la IA y cómo los muestra
-- **Formato de entrega** — estructura exacta del documento que produce
-- **Qué NO hacer** — comportamientos a evitar explícitamente
-- **Test de calidad** — checklist antes de entregar
-
----
-
-## Compatibilidad
-
-Estos prompts funcionan con:
-- Claude (Anthropic) — recomendado
-- Gemini (Google)
-- GPT-4 / GPT-4o (OpenAI)
-
-Para mejores resultados: cargar `context.md` completo al inicio de cada sesión.
-
----
-
-## Estado actual
-
-| Etapa | Skills | Estado |
-|---|---|---|
-| 00 Boot | context.md | ✅ Completo |
-| 01 Problem Framing | 4 prompts | ✅ Completo |
-| 02 System Analysis | — | 🔄 En desarrollo |
-| 03 Product Logic | — | 🔄 En desarrollo |
-| 04 UX Experience | — | 🔄 En desarrollo |
-| 05 UI Design | — | 🔄 En desarrollo |
-| 06 Implementation | — | 🔄 En desarrollo |
-| 07 System Reflection | — | 🔄 En desarrollo |
-
----
-
-*Framework Baraldi v2 · README.md*
+Desarrollado y mantenido por **Leo Baraldi**. Este sistema está optimizado para funcionar como skills autodescubribles bajo estándares tipo `skill-judge` o entornos de agentes complejos.
