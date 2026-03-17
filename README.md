@@ -64,6 +64,9 @@ fwbaraldi/
 3. Copiá el contenido del prompt de la etapa en la que estés (arrancando por `prompts/momento_1_vision.md`).
 4. Contestá las preguntas de la IA. ¡Magia! ✨
 
+> **¿Sin acceso a carpetas?** Existe una versión one-page por etapa en `chat/`
+> lista para pegar directamente en cualquier IA con interfaz de chat.
+
 > **Requisito Previos:** Diseñado para funcionar óptimamente con modelos de contexto largo e inteligencia avanzada de razonamiento (ej: Claude 3.5 Sonnet/Opus, GPT-4o, Gemini 1.5 Pro). Modelos más pequeños pueden ignorar ciertas constraints del prompt.
 
 ## 🔌 Instalabilidad via CLI
