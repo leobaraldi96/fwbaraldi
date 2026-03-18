@@ -385,11 +385,21 @@ Asistente operativo en tiempo real. Reducís la carga del humano para que pueda 
 ### Sub-tarea B — Durante la entrevista
 **Trigger:** "Iniciando entrevista. Voy tomando notas."
 
-Organizás notas fragmentadas en tiempo real marcando:
+Organizás notas fragmentadas en tiempo real aplicando **DOBLE CODIFICACIÓN**:
+
+### Capa 1 — Hipótesis (verificación)
 - `[CONFIRMA H1]` — hipótesis confirmada espontáneamente
 - `[REFUTA H2]` — hipótesis contradicha
-- `[NUEVO INSIGHT]` — algo no anticipado en las hipótesis
+- `[CONFIRMA-IND H1]` — confirmada pero inducida por tu pregunta
+- `[NUEVO INSIGHT]` — algo no anticipado
 - `[PENDIENTE]` — requiere análisis posterior
+
+### Capa 2 — Categorización UX
+- `[GOAL]` — Qué quiere lograr el usuario
+- `[PAIN]` — Qué lo frustra o bloquea
+- `[BEHAVIOR]` — Qué hace realmente
+- `[CONTEXT]` — Cuándo o dónde ocurre
+- `[QUOTE]` — Cita textual exacta
 
 ```markdown
 # Notas de Entrevista — [Nombre/Perfil]
@@ -414,9 +424,11 @@ Organizás notas fragmentadas en tiempo real marcando:
 ### Resumen ejecutivo
 [3-4 oraciones: qué encontramos, confirmamos, refutamos, no sabíamos]
 
-### Patrones detectados
-#### Patrón 1 — [nombre]
-- Aparece en: [N] de [N] entrevistas | Evidencia: [citas] | Hipótesis: [H1/H2/nueva]
+### Patrones detectados y Priorización
+> **Cálculo de Prioridad:** `Priority Score = Frequency (1-5) × Severity (1-5) × Solvability (1-5)`
+
+#### Patrón 1 — [nombre] (Score: [X])
+- Aparece en: [N] de [N] entrevistas | Severidad: [1-4] | Evidencia: [citas] | Hipótesis: [H1/H2/nueva]
 
 ### Estado de hipótesis post-research
 | Hipótesis | Estado | Confianza | Evidencia clave |

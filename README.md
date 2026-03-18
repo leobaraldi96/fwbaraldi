@@ -4,7 +4,7 @@
 >
 > Un framework metodológico diseñado para potenciar el diseño de productos digitales utilizando Inteligencia Artificial como copiloto estratégico en todas las etapas del proceso.
 
-![Version](https://img.shields.io/badge/version-2.1-blue)
+![Version](https://img.shields.io/badge/version-2.2-blue)
 ![Status](https://img.shields.io/badge/status-active-success)
 
 ---
@@ -87,7 +87,8 @@ fwbaraldi/
 │           └── system_mapping_guide.md     ← Guía de mapas sistémicos
 │
 ├── chat/                                   ← Versión one-page por etapa para interfaces de chat
-│   └── etapa01_chat.md
+│   ├── etapa01_chat.md                     ← Problem Framing
+│   └── etapa02_chat.md                     ← System Analysis
 │
 ├── references/                             ← Recursos globales compartidos entre etapas
 │   └── README.md

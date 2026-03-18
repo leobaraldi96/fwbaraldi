@@ -5,6 +5,18 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.2.0] - 2026-03-18
+
+### Añadido
+- **Etapa 02 (System Analysis)** completa: agregada la carpeta `skills/02_system_analysis` con su SKILL.md, 3 prompts operativos (`momento_1_mapeo.md`, `momento_2_dependencias.md`, `momento_3_documentacion.md`) y guía de referencias (`system_mapping_guide.md`).
+- Nueva versión one-page consolidada para interfaces chat de la Etapa 02 en `chat/etapa02_chat.md`.
+- Agregada guía de métodos de investigación (`research_methods_guide.md`) en la Etapa 01.
+
+### Cambiado
+- Actualizada la versión flat `chat/etapa01_chat.md` incorporando la técnica de doble codificación (Capa Hipótesis y UX) y la fórmula de priorización (Frequency x Severity x Solvability).
+- Actualizado el diagrama de estructura de carpetas y el status de Fases (pasando de 🔄 a ✅) en `README.md` y `DOCUMENTACION_IA.md`.
+- Subida general de versión del framework a `2.2.0`.
+
 ## [2.1.0] - 2026-03-17
 
 ### Añadido

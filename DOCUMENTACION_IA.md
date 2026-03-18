@@ -3,7 +3,7 @@
 > **Para uso con IA:** cargar `00_boot/context.md` como System Orchestrator antes de cualquier skill.
 
 **AI-Augmented System Product Design**
-Versión 2.0 · Leo Baraldi
+Versión 2.2 · Leo Baraldi
 
 ---
 
