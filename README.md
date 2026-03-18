@@ -41,7 +41,7 @@ Ninguno de los frameworks anteriores tiene estas tres características juntas:
 
 1. **✅ Boot:** Set-up de identidad y contexto del proyecto para el modelo.
 2. **✅ Problem Framing:** Entendimiento del problema, mapeo de actores y diseño de metodologías de validación.
-3. **🔄 System Analysis:** Análisis del sistema *(En desarrollo)*
+3. **✅ System Analysis:** Análisis del sistema.
 4. **🔄 Product Logic:** Lógica del producto *(En desarrollo)*
 5. **🔄 UX Experience:** Experiencia de usuario *(En desarrollo)*
 6. **🔄 UI Design:** Diseño de interfaces *(En desarrollo)*
@@ -66,15 +66,25 @@ fwbaraldi/
 │   └── context.md                          ← System Orchestrator — cargar siempre primero
 │
 ├── skills/
-│   └── 01_problem_framing/
-│       ├── SKILL.md                        ← Punto de entrada de la etapa
+│   ├── 01_problem_framing/
+│   │   ├── SKILL.md                        ← Punto de entrada de la etapa
+│   │   ├── prompts/
+│   │   │   ├── momento_1_vision.md
+│   │   │   ├── momento_feedback_metodologia.md
+│   │   │   ├── momento_2_live_assistant.md
+│   │   │   └── momento_3_cierre.md
+│   │   └── references/
+│   │       ├── benchmark_guide.md          ← Guía completa de benchmark (6 secciones)
+│   │       └── research_methods_guide.md   ← Métodos de recolección de datos
+│   │
+│   └── 02_system_analysis/
+│       ├── SKILL.md                        ← Punto de entrada de la etapa 2
 │       ├── prompts/
-│       │   ├── momento_1_vision.md
-│       │   ├── momento_feedback_metodologia.md
-│       │   ├── momento_2_live_assistant.md
-│       │   └── momento_3_cierre.md
+│       │   ├── momento_1_mapeo.md
+│       │   ├── momento_2_dependencias.md
+│       │   └── momento_3_documentacion.md
 │       └── references/
-│           └── benchmark_guide.md          ← Guía completa de benchmark (6 secciones)
+│           └── system_mapping_guide.md     ← Guía de mapas sistémicos
 │
 ├── chat/                                   ← Versión one-page por etapa para interfaces de chat
 │   └── etapa01_chat.md

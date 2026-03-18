@@ -1,4 +1,4 @@
-# Framework Baraldi — Documentación para Modelos de IA
+# Framework Baraldi — Repositorio de Skills y Prompts
 
 > **Para uso con IA:** cargar `00_boot/context.md` como System Orchestrator antes de cualquier skill.
 
@@ -10,94 +10,77 @@ Versión 2.0 · Leo Baraldi
 ## Cómo usar este repositorio
 
 ### Paso 1 — Siempre empezá por el Boot
-Antes de cualquier sesión, cargá `00_boot/context.md`. Es el contrato de identidad y comportamiento de la IA dentro del framework.
+Antes de cualquier sesión de trabajo, cargá el archivo `00_boot/context.md` en tu LLM. Es el contrato de identidad y comportamiento de la IA dentro del framework.
 
 ```
 1. Abrí una nueva conversación en Claude / Gemini / GPT
 2. Copiá el contenido de 00_boot/context.md
 3. Completá la sección "Contexto del proyecto activo"
-4. A partir de ahí, usá las skills
+4. A partir de ahí, usá los prompts de las skills
 ```
 
-### Paso 2 — Leé el SKILL.md de la etapa antes de ejecutar
-Cada etapa tiene un `SKILL.md` que es el punto de entrada. Describe el flujo completo, los momentos disponibles y cuándo activar cada uno. **Leerlo antes de ejecutar cualquier prompt.**
+### Paso 2 — Ejecutá las skills en orden
+Cada etapa tiene sus prompts ordenados por momento. No saltees momentos sin documentar el motivo en el Decision Log.
 
-### Paso 3 — Ejecutá los prompts en orden
-Los prompts están en `skills/[etapa]/prompts/`. No saltees momentos sin documentar el motivo en el Decision Log.
-
-### Paso 4 — Consultá las referencias cuando el SKILL.md lo indique
-Los archivos en `skills/[etapa]/references/` contienen guías detalladas para tareas específicas. El SKILL.md indica cuándo leer cada referencia.
-
-### Paso 5 — Guardá todos los outputs como documentos
-Nunca queden los artefactos solo en el chat. Cada output es un archivo Markdown.
+### Paso 3 — Guardá todos los outputs como documentos
+Nunca queden los artefactos solo en el chat. Cada output es un archivo Markdown que se guarda en la carpeta del proyecto.
 
 ---
 
 ## Estructura del repositorio
 
 ```
-fwbaraldi/
+framework-baraldi/
 ├── 00_boot/
-│   └── context.md                          ← SIEMPRE cargar primero (System Orchestrator)
+│   └── context.md                    ← SIEMPRE cargar primero
 │
 ├── skills/
-│   └── 01_problem_framing/
-│       ├── SKILL.md                        ← Leer antes de ejecutar cualquier prompt
-│       ├── prompts/
-│       │   ├── momento_1_vision.md
-│       │   ├── momento_feedback_metodologia.md
-│       │   ├── momento_2_live_assistant.md
-│       │   └── momento_3_cierre.md
-│       └── references/
-│           └── benchmark_guide.md          ← Leer antes de ejecutar el benchmark
+│   ├── 01_problem_framing/
+│   │   └── prompts/
+│   │       ├── momento_1_vision.md              ← Visión y amplificación de campo
+│   │       ├── momento_feedback_metodologia.md  ← Asistente de research + soportes
+│   │       ├── momento_2_live_assistant.md      ← IA auxiliar on vivo
+│   │       └── momento_3_cierre.md              ← Evaluación de cierre + decisión IF
+│   │
+│   ├── 02_system_analysis/
+│   │   └── prompts/
+│   │       ├── momento_1_mapeo.md
+│   │       ├── momento_2_dependencias.md
+│   │       └── momento_3_documentacion.md
+│   │
+│   ├── 03_product_logic/             ← En desarrollo
+│   ├── 04_ux_experience/             ← En desarrollo
+│   ├── 05_ui_design/                 ← En desarrollo
+│   ├── 06_implementation/            ← En desarrollo
+│   └── 07_system_reflection/         ← En desarrollo
 │
-├── references/                             ← Templates globales (en desarrollo)
-│   └── README.md
-│
-├── DOCUMENTACION_IA.md                     ← Este archivo
-└── README.md                               ← Para humanos
+└── templates/                        ← En desarrollo
+    ├── decision_log.md
+    └── artefactos_etapa1.md
 ```
-
----
-
-## Jerarquía de lectura para la IA
-
-```
-1. context.md          → quién sos y cómo te comportás (siempre)
-2. SKILL.md            → qué hace esta etapa y qué momentos tiene (por etapa)
-3. prompts/[momento]   → cómo ejecutar el momento específico (por tarea)
-4. references/[guía]   → detalle técnico cuando el SKILL.md lo indica (por necesidad)
-```
-
-**Nunca** saltear el nivel 2 (SKILL.md) e ir directo al nivel 3 (prompts).
-El SKILL.md es el que da el contexto de cuándo y cómo usar cada prompt.
 
 ---
 
 ## Formato de los archivos de skill
 
-Cada skill tiene frontmatter YAML con:
-- `name` — identificador del skill (compatible con sistemas autodescubribles)
-- `description` — qué hace + cuándo usarlo + keywords + restricciones
-- `version`, `framework`, `stage` — metadata de contexto
-
-Y cuerpo Markdown con:
-- **Rol** — quién es la IA en este momento
-- **Proceso visible** — pasos que ejecuta y muestra antes del output
+Cada skill tiene:
+- **Frontmatter YAML** — metadata estructurada (id, versión, trigger, inputs, output format)
+- **Rol** — quién es la IA en este momento específico
+- **Proceso visible** — qué pasos ejecuta la IA y cómo los muestra
 - **Formato de entrega** — estructura exacta del documento que produce
-- **Qué NO hacer** — con el "por qué" de cada restricción
+- **Qué NO hacer** — comportamientos a evitar explícitamente
 - **Test de calidad** — checklist antes de entregar
 
 ---
 
 ## Compatibilidad
 
-| Modelo | Compatibilidad | Notas |
-|---|---|---|
-| Claude (Anthropic) | ✅ Óptimo | Recomendado |
-| GPT-4 / GPT-4o | ✅ Compatible | Cargar context.md completo |
-| Gemini | ✅ Compatible | Cargar context.md completo |
-| Otros LLMs | ⚠️ Probable | Depende del tamaño de contexto |
+Estos prompts funcionan con:
+- Claude (Anthropic) — recomendado
+- Gemini (Google)
+- GPT-4 / GPT-4o (OpenAI)
+
+Para mejores resultados: cargar `context.md` completo al inicio de cada sesión.
 
 ---
 
@@ -106,8 +89,8 @@ Y cuerpo Markdown con:
 | Etapa | SKILL.md | Prompts | References | Estado |
 |---|---|---|---|---|
 | 00 Boot | — | context.md | — | ✅ Completo |
-| 01 Problem Framing | ✅ | 4 prompts | benchmark_guide.md | ✅ Completo |
-| 02 System Analysis | — | — | — | 🔄 En desarrollo |
+| 01 Problem Framing | ✅ | 4 prompts | benchmark_guide.md, research_methods_guide.md | ✅ Completo |
+| 02 System Analysis | ✅ | 3 prompts | system_mapping_guide.md | ✅ Completo |
 | 03 Product Logic | — | — | — | 🔄 En desarrollo |
 | 04 UX Experience | — | — | — | 🔄 En desarrollo |
 | 05 UI Design | — | — | — | 🔄 En desarrollo |

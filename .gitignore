@@ -5,3 +5,8 @@
 # Archivos del sistema operativo
 .DS_Store
 Thumbs.db
+
+# Carpetas temporales y de trabajo
+temporal/
+temp/
+tmp/
