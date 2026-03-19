@@ -65,7 +65,7 @@ Artefactos de Etapa 01 aprobados
 ### Momento 1 — Mapeo de Actores y Ecosistema
 **Archivo:** `prompts/momento_1_mapeo.md`
 **Activar cuando:** Se cierra Etapa 01 y se inicia Etapa 02.
-**Produce:** Actor Map expandido, System Map inicial, identificación de usuarios invisibles.
+**Produce:** Actor Map Consolidado (Actores Visibles, Invisibles y del Sistema) y solicitudes de stack tecnológico.
 **Regla clave:** Siempre incluir usuarios invisibles (devs, QA, ops, negocio, soporte). Son tan importantes como los usuarios finales.
 
 ### Momento 2 — Análisis de Dependencias y Riesgos
@@ -87,9 +87,7 @@ Artefactos de Etapa 01 aprobados
 
 | Artefacto | Momento | Formato |
 |---|---|---|
-| Actor Map | 1 | Documento Markdown |
-| System Map | 1 | Documento Markdown |
-| Usuarios Invisibles Map | 1 | Documento Markdown |
+| Actor Map Consolidado | 1 | Documento Markdown |
 | Dependency Map | 2 | Documento Markdown |
 | Data Flow Map | 2 | Documento Markdown |
 | Risk Map | 2 | Documento Markdown |
@@ -101,7 +99,7 @@ Artefactos de Etapa 01 aprobados
 ## Modelo de decisión para avanzar a Etapa 03
 
 **Avanzar a Etapa 03 — Product Logic** cuando:
-- El System Map cubre todos los actores visibles e invisibles
+- El Actor Map cubre a todos los actores visibles, invisibles y del sistema
 - Las dependencias críticas están identificadas con nivel de riesgo
 - Los flujos de datos principales están documentados
 - Los gaps del sistema están explícitamente marcados como riesgos activos

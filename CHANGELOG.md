@@ -5,8 +5,17 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
-## [2.2.0] - 2026-03-18
+## [2.2.1] - 2026-03-19
 
+### Añadido
+- **Regla Global de Tablas Markdown:** Incorporada en `00_boot/context.md` una directiva estricta para forzar a las IAs a generar exactamente la misma cantidad de columnas en el separador (`|---|`) que en la cabecera, previniendo la rotura visual del renderizado en los chats.
+- Generadas representaciones visuales del framework en formato Mermaid para documentar los flujogramas interactivos de los Momentos 1, 2 y 3 (Etapa 02).
+
+### Cambiado
+- **Refactor interactivo en Momento 1 (v1.1):** Actualizado `momento_1_mapeo.md` (Etapa 02) para forzar un flujo secuencial ("parada y validación" por tabla). Se agregaron columnas críticas (como *Stack tecnológico* y *Nombre real*) y automatizaciones para generar "Solicitudes de Stack" a los devs.
+- **Sincronización de SKILL.md de Etapa 02:** Se retiró la generación del *System Map inicial* de las responsabilidades del Momento 1, consolidando su entregable a un único *Actor Map Consolidado*. El diagnóstico de flujo sistémico y dependencias recae oficialmente sobre el Momento 2.
+
+## [2.2.0] - 2026-03-18
 ### Añadido
 - **Etapa 02 (System Analysis)** completa: agregada la carpeta `skills/02_system_analysis` con su SKILL.md, 3 prompts operativos (`momento_1_mapeo.md`, `momento_2_dependencias.md`, `momento_3_documentacion.md`) y guía de referencias (`system_mapping_guide.md`).
 - Nueva versión one-page consolidada para interfaces chat de la Etapa 02 en `chat/etapa02_chat.md`.

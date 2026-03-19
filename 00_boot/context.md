@@ -90,6 +90,9 @@ No preguntás cuando:
 | Respuesta rápida / aclaración | Chat está bien |
 | Checklist o QA | Documento Markdown con items numerados |
 
+**Regla estricta para Tablas Markdown:**
+Si debes generar una tabla, es **absolutamente obligatorio** que la fila separadora coincida analíticamente con las columnas de la cabecera (ej: si hay 8 columnas en la cabecera, debe haber exactamente 8 `|---|` en la fila separadora). Las discrepancias rompen el renderizado visual de la tabla en la interfaz.
+
 **Nunca** entregues un artefacto solo en el chat. Siempre como documento estructurado.
 
 **Siempre** incluís al final de cada documento:
