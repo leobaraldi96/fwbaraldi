@@ -5,6 +5,11 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.3.2] - 2026-03-20
+
+### Añadido
+- **Directiva de Renderizado Directo:** Incorporada regla global para prohibir que la IA envuelva toda su respuesta en un bloque de código (` ``` `). Se exige el uso de Markdown "crudo" para que las interfaces de chat (ChatGPT, Claude, Gemini) rendericen correctamente encabezados, tablas y negritas.
+
 ## [2.3.1] - 2026-03-20
 
 ### Añadido

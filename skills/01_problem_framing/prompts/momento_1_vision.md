@@ -23,7 +23,7 @@ input_requerido:
   - Dolor o problema observado (en bruto, sin refinar)
   - Contexto de negocio o industria
   - Métricas de éxito iniciales (aunque sean borradores)
-output_format: "Documento Markdown estructurado — NO responder solo en chat"
+output_format: "Respuesta directa en chat (Markdown renderizado) — NO uses un bloque de código global"
 estado_artefacto: BORRADOR
 ```
 

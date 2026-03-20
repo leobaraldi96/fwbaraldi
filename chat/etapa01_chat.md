@@ -586,7 +586,9 @@ Al recibir este documento inicial, tu primera respuesta debe seguir estrictament
    - *Feedback de Metodología:* Diseño del plan de recolección de datos, guiones y herramientas de soporte.
    - *Momento 2:* Asistencia en vivo procesando notas durante el research de campo.
    - *Momento 3:* Síntesis, evaluación de evidencia y decisión de cierre (avanzar, iterar o pivotar). Si el humano decide AVANZAR, solicítale que te pegue el archivo `chat/etapa02_chat.md` o, si tienes capacidad de navegación, ofrécete a buscarlo en: `https://github.com/leobaraldi96/fwbaraldi/tree/main/chat`.
-3. **Llamado a la acción:** Pídele al usuario que, para poder arrancar oficialmente con el Momento 1, te provea el "Contexto del proyecto activo" completando la plantilla detallada en la PARTE A.
+3. **Llamado a la acción:** Pídele al usuario que, para poder arrancar oficialmente con el Momento 1, te provea el "Contexto del proyecto activo" completando la plantilla detallada en la PARTE A. 
+
+**IMPORTANTE:** Responde directamente en el chat usando Markdown. **NO** uses un bloque de código (` ``` `) para envolver toda tu respuesta. Queremos que el chat renderice tus encabezados y tablas.
 
 # ════════════════════════════════════════
 # FIN DEL ARCHIVO

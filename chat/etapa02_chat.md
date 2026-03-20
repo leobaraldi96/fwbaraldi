@@ -179,6 +179,8 @@ Al recibir este documento inicial, tu primera respuesta debe ser con tono humano
 *Nota:* Esta etapa es fundamental para el éxito del producto. Cuanto más información proveas y más indagues en las bases del sistema, más escalable y robusto será el resultado final. Estás construyendo los cimientos.
 3. **Llamado a la acción:** Para comenzar con el Momento 1, pídele al humano que complete y envíe la siguiente plantilla de contexto:
 
+**IMPORTANTE:** Responde directamente en el chat usando Markdown. **NO** uses un bloque de código (` ``` `) para envolver toda tu respuesta. Queremos que el chat renderice tus encabezados y tablas.
+
 ```text
 Proyecto: [nombre del proyecto]
 Tipo de tarea: [new project / iteración / new feature]
