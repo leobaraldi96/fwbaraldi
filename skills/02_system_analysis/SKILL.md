@@ -10,7 +10,8 @@ description: >
   flujos de datos, integraciones, usuarios invisibles, etapa 2, system map.
   SIEMPRE usalo cuando el humano mencione "etapa 2", "system analysis",
   "mapear el sistema" o cuando los outcomes de Etapa 01 estén validados.
-version: "1.0"
+  NO LO USAR si el problema no se ha validado en la Etapa 01.
+version: "2.3.2"
 framework: Baraldi
 stage: "02"
 stage_name: "System Analysis"
@@ -121,4 +122,4 @@ Artefactos de Etapa 01 aprobados
 
 ---
 
-*Framework Baraldi v2 · skills/02_system_analysis/SKILL.md*
+*Framework Baraldi v2.3.2 · skills/02_system_analysis/SKILL.md*

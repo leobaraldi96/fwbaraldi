@@ -101,17 +101,18 @@ fwbaraldi/
 
 ## ⚡ Quick Start
 
-**Con acceso a carpetas (Cursor, VS Code, agentes):**
-1. Cargá `00_boot/context.md` como system prompt o contexto inicial.
-2. Completá la sección *"Contexto del proyecto activo"*.
-3. Leé el `SKILL.md` de la etapa en la que estés *(arrancando por `01_problem_framing/SKILL.md`)*.
-4. Ejecutá los prompts en el orden indicado.
+**Instalación Global (Recomendado para Antigravity):**
+Si usas el agente **Antigravity**, podés hacer que este framework esté disponible en **cualquier proyecto** siguiendo estos pasos:
+1. Copiá la carpeta completa `fw-baraldi` a:
+   `C:\Users\\[TuUsuario\]\\.gemini\\antigravity\\skills\\baraldi-framework`
+2. ¡Listo! Ahora, desde cualquier chat o proyecto, podés decirle al agente: *"Ejecutemos la Etapa 1 del Framework Baraldi"* y el sistema lo indexará automáticamente gracias al `SKILL.md` del root.
 
-**Sin acceso a carpetas (Claude.ai, ChatGPT, Gemini web):**
-1. Abrí un chat nuevo.
-2. Pegá el contenido completo de `chat/etapa01_chat.md`.
-3. Completá el bloque de contexto del proyecto que te pedirá la IA.
-4. La IA te irá guiando y activando cada skill según los triggers del flujo.
+**Uso Manual con Acceso a Carpetas (Cursor, VS Code):**
+1. Cargá `00_boot/context.md` como context inicial.
+2. Leé el `SKILL.md` de la etapa en la que estés *(arrancando por `01_problem_framing/SKILL.md`)*.
+
+**Uso en la Web (Claude.ai, ChatGPT, Gemini):**
+1. Abrí un chat nuevo y pegá el contenido de `chat/etapa01_chat.md`.
 
 > **Modelos recomendados:** Claude 3.5 Sonnet/Opus, GPT-4o, Gemini 1.5 Pro o superior. Modelos más limitados pueden ignorar ciertas constraints del prompt.
 
