@@ -9,6 +9,11 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
 ### Añadido
 - **Directiva de Renderizado Directo:** Incorporada regla global para prohibir que la IA envuelva toda su respuesta en un bloque de código (` ``` `). Se exige el uso de Markdown "crudo" para que las interfaces de chat (ChatGPT, Claude, Gemini) rendericen correctamente encabezados, tablas y negritas.
+- **Refinamiento de Triggers (Anti-Patterns):** Agregadas reglas explícitas de "Cuándo NO usar" en `skills/01_problem_framing/SKILL.md` y `skills/02_system_analysis/SKILL.md` para prevenir que agentes autónomos activen etapas antiguas accidentalmente.
+
+### Cambiado
+- **Sincronización de Versiones:** Todos los metadatos internos (`00_boot/context.md` y `SKILL.md`) unificados declarativamente a la versión `v2.3.2`.
+- **UX One-Page Restaurada y Evolucionada:** Actualizado el Boot Context (PARTE A) dentro de `chat/etapa01_chat.md` y `chat/etapa02_chat.md` con las reglas de la v2.3.2, asegurando que los usuarios de interfaces web puedan instanciar etapas críticas arrastrando un único archivo sin pérdida de contexto.
 
 ## [2.3.1] - 2026-03-20
 
