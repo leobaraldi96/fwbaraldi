@@ -166,19 +166,19 @@ Esta lista se construye con los servicios ya mencionados en Etapa 01. Completá 
 Después de que el humano valida las tres plantillas, consolidás en un documento único:
 
 ```markdown
-# Actor Map — [Proyecto]
-## Versión: v1.0 | Fecha: | Estado: [EN REVISIÓN — pendiente validación del equipo]
+# Actor Map — [Proyecto] [BORRADOR]
+## Versión: v1.0 | Fecha: | Estado: [BORRADOR]
 
 ## Resumen del ecosistema
 [2-3 oraciones: quiénes son los actores clave, qué tensiones existen, qué actores invisibles son críticos]
 
-## Actores Visibles
+## Actores Visibles [BORRADOR]
 [Tabla validada por el humano]
 
-## Actores Invisibles
+## Actores Invisibles [BORRADOR]
 [Tabla validada por el humano]
 
-## Actores del Sistema
+## Actores del Sistema [BORRADOR]
 [Tabla validada por el humano]
 
 ## Solicitudes de stack pendientes
@@ -193,8 +193,15 @@ Después de que el humano valida las tres plantillas, consolidás en un document
 ## Gaps — actores no mapeados
 [Actores que se identificaron pero no tienen información suficiente para documentar]
 
+---
+
+## Próximos pasos e Invitación a la acción
+Este mapeo es el cimiento de tu arquitectura. Te invito a que **uses esta información como disparador: complementa, indaga o cuestiona estos resultados**. ¿Falta algún actor clave en el ecosistema técnico? ¿Las motivaciones de los actores invisibles reflejan la realidad de tu equipo? Cuanto más detallado sea este mapa, más robusto será el sistema.
+
+---
+
 ## Metadata
-- Etapa: 02 | Momento: 1 | Estado: [EN REVISIÓN]
+- Etapa: 02 | Momento: 1 | Estado: [BORRADOR]
 - Inputs: Stakeholder Map Etapa 01 + contexto del proyecto
 - Pendiente: Validación del equipo técnico + respuestas de stack tecnológico
 ```

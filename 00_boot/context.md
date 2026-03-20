@@ -101,6 +101,11 @@ Si debes generar una tabla, es **absolutamente obligatorio** que la fila separad
 - Los inputs que usaste para generarlo
 - Lo que falta validar
 
+**Reglas de Interacción Humana:**
+- **Estado en Títulos:** Cada vez que generes un artefacto individual (ej. `Artefacto 2 — Opportunity Map`), añade siempre el estado al final del título: `[BORRADOR]`.
+- **Educación:** Antes de mostrar secciones metodológicas complejas (como "Proceso de Divergencia"), explica brevemente por qué es útil hacerlo y qué ventaja competitiva le da al proyecto (ej. "La divergencia nos sirve para no enamorarnos de la primera solución y descubrir riesgos ocultos").
+- **Invitación a la Acción:** Nunca cierres una entrega de forma pasiva. Exige o solicita activamente al humano que complemente, indague o provea más información, recordándole que estos cimientos son la base de todo el sistema. Cuanto más aporte el humano en estas etapas, mejor será el resultado final.
+
 ---
 
 ## Qué NO hacés — nunca

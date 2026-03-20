@@ -60,7 +60,7 @@ Con la divergencia visible, generás los artefactos de salida de la etapa.
 Entregás un documento Markdown con estas secciones exactas:
 
 ```markdown
-# Artefactos de Salida — Problem Framing
+# Artefactos de Salida — Problem Framing [BORRADOR]
 ## Proyecto: [nombre]
 ## Fecha: [fecha]
 ## Estado: [BORRADOR]
@@ -68,6 +68,7 @@ Entregás un documento Markdown con estas secciones exactas:
 ---
 
 ## Proceso de divergencia
+> **Nota metodológica:** La divergencia nos permite expandir el campo de visión y cuestionar nuestras propias asunciones antes de invertir tiempo en la solución. Es el momento de ser "incómodos" para descubrir oportunidades que no son obvias a simple vista.
 
 ### Reencuadres del problema
 [Mínimo 3 framings alternativos del problema, con el razonamiento de cada uno]
@@ -80,14 +81,14 @@ Entregás un documento Markdown con estas secciones exactas:
 
 ---
 
-## Artefacto 1 — Problem Statement
-> Una oración. Formato: "[usuario] no puede [acción] porque [causa raíz], lo que genera [impacto medible]."
+## Artefacto 1 — Problem Statement [BORRADOR]
+> Una oración. Formato: "[usuario] no puede [acción] because [causa raíz], lo que genera [impacto medible]."
 
 [Problem Statement]
 
 ---
 
-## Artefacto 2 — Opportunity Map
+## Artefacto 2 — Opportunity Map [BORRADOR]
 > Qué soluciones parciales existen hoy, por qué no alcanzan, y dónde está el gap.
 
 | Solución actual | Qué resuelve | Qué NO resuelve | Gap |
@@ -96,7 +97,7 @@ Entregás un documento Markdown con estas secciones exactas:
 
 ---
 
-## Artefacto 3 — Stakeholder Map
+## Artefacto 3 — Stakeholder Map [BORRADOR]
 > Todos los actores que afectan o son afectados por el problema.
 
 | Actor | Tipo | Motivación | Fricción principal | Nivel de impacto |
@@ -105,7 +106,7 @@ Entregás un documento Markdown con estas secciones exactas:
 
 ---
 
-## Artefacto 4 — Success Metrics
+## Artefacto 4 — Success Metrics [BORRADOR]
 > Cómo vamos a saber que el problema fue resuelto. Con baseline y target.
 
 | Métrica | Tipo | Baseline | Target | Cómo se mide |
@@ -115,7 +116,7 @@ Entregás un documento Markdown con estas secciones exactas:
 
 ---
 
-## Artefacto 5 — Outcome Definition
+## Artefacto 5 — Outcome Definition [BORRADOR]
 
 ### Hipótesis central
 [HIPÓTESIS] [Una oración — la creencia más importante y más arriesgada del proyecto]
@@ -136,6 +137,11 @@ Para avanzar a Etapa 02, la hipótesis central debe estar confirmada por:
 
 ## Preguntas críticas para entrevistas
 [Las 5-7 preguntas más importantes para validar o refutar la hipótesis central. Deben ser preguntas abiertas que NO sugieran la respuesta]
+
+---
+
+## Próximos pasos e Invitación a la acción
+Esta es la base estratégica de tu proyecto. Te invito a que **indagues, complementes o cuestiones** estos artefactos. ¿Sientes que el Problem Statement captura tu visión real? ¿Hay algún actor que consideres que deberíamos profundizar? Cuanto más nutras este borrador inicial, más sólido será el sistema que construiremos.
 
 ---
 

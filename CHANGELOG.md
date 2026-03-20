@@ -5,6 +5,16 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.3.1] - 2026-03-20
+
+### Añadido
+- **Refuerzo Educativo:** Incorporadas "Notas Metodológicas" que explican el valor de la divergencia y la contextualización al inicio de cada entrega de artefactos.
+- **Etiquetado de Títulos:** Obligatoriedad de incluir el tag `[BORRADOR]` en el título de cada artefacto individual para clarificar el estado del proceso.
+- **Invitación Proactiva a la Iteración:** La IA ahora exige o solicita explícitamente que el humano complemente o cuestione los resultados, enfatizando que esta etapa es la base crítica del sistema.
+
+### Cambiado
+- Sincronización de estas reglas en `00_boot/context.md`, `skills/` y las versiones de la carpeta `chat/`.
+
 ## [2.3.0] - 2026-03-20
 
 ### Añadido
