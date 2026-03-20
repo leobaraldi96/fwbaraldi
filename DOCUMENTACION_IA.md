@@ -3,7 +3,7 @@
 > **Para uso con IA:** cargar `00_boot/context.md` como System Orchestrator antes de cualquier skill.
 
 **AI-Augmented System Product Design**
-Versión 2.2 · Leo Baraldi
+Versión 2.3 · Leo Baraldi
 
 ---
 
@@ -24,6 +24,17 @@ Cada etapa tiene sus prompts ordenados por momento. No saltees momentos sin docu
 
 ### Paso 3 — Guardá todos los outputs como documentos
 Nunca queden los artefactos solo en el chat. Cada output es un archivo Markdown que se guarda en la carpeta del proyecto.
+
+---
+
+## Regla de Sincronización Arquitectónica (Core vs Chat)
+
+El Framework Baraldi existe en dos dimensiones paralelas que siempre deben mantenerse sincronizadas:
+1. **El Core del Framework (para Agentes/Skills):** Estructurado de forma modular (`00_boot`, `skills/`, `prompts/`) para que futuros agentes autónomos o LLMs lean instrucciones pieza por pieza según el contexto operativo.
+2. **La Carpeta `chat/` (para Humanos):** Copias adaptadas en modo "flat" (un solo archivo por etapa) diseñadas específicamente para que un usuario pueda hacer *copy-paste* en un chat tradicional (ChatGPT, Claude, etc).
+
+**⚠️ REGLA ESTRICTA PARA LA IA:**
+Cada vez que edites, agregues una regla, modifiques el tono o cambies una instrucción en el Core del Framework (ej. `00_boot/context.md` o un archivo de `skills/`), **DEBES OBLIGATORIAMENTE** replicar ese mismo ajuste en el archivo correspondiente dentro de la carpeta `chat/` (y viceversa). Esta sincronización garantiza que la experiencia metodológica sea idéntica sin importar la interfaz que use el humano.
 
 ---
 

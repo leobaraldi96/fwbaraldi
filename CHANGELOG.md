@@ -5,6 +5,17 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.3.0] - 2026-03-20
+
+### Añadido
+- **Protocolo de Humanización de la IA:** Nueva directiva global que obliga a la IA a presentarse de forma empática, resumir los planes de etapa en lenguaje natural y evitar el uso de códigos técnicos (ej. "[SKILL B1]") en el diálogo directo con el humano.
+- **Instrucciones de Handoff en Chat:** Incorporada lógica en las versiones *flat* para solicitar activamente el archivo de la siguiente etapa (o proponer su búsqueda en el repositorio oficial de GitHub) al cerrar un ciclo, previniendo alucinaciones de contenido entre etapas.
+- **Regla de Sincronización Arquitectónica:** Documentada en `DOCUMENTACION_IA.md` la obligatoriedad de mantener paridad funcional entre el Core (modular) y la carpeta `chat/` (one-page).
+
+### Cambiado
+- **Refactor de Salida en Chat:** Los encabezados y flujogramas de `chat/etapa01_chat.md` y `chat/etapa02_chat.md` fueron limpiados de ruidos técnicos excesivos para priorizar la legibilidad humana.
+- Actualizada la versión global del framework a `2.3.0`.
+
 ## [2.2.1] - 2026-03-19
 
 ### Añadido
