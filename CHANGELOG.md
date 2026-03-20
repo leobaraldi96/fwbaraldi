@@ -5,6 +5,12 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.3.3] - 2026-03-20
+
+### Cambiado
+- **Refuerzo Anti-Codeblock en Chat:** Modificadas explícitamente las directivas de la PARTE A en `etapa01_chat.md` y `etapa02_chat.md` para evitar que LLMs hiper-literales aíslen los artefactos y respuestas dentro de bloques de código markdown, garantizando que las interfaces web de ChatGPT y Claude rendericen nativamente tablas y encabezados.
+- Actualizada la versión global del framework a `2.3.3`.
+
 ## [2.3.2] - 2026-03-20
 
 ### Añadido

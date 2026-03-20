@@ -159,4 +159,4 @@ Al recibir este archivo de contexto (Boot Context), tu primera respuesta debe se
 
 ---
 
-*Framework Baraldi v2.3.2 · context.md · Boot Layer 00*
+*Framework Baraldi v2.3.3 · context.md · Boot Layer 00*

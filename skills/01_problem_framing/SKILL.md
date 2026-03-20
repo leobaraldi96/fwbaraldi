@@ -10,7 +10,7 @@ description: >
   SIEMPRE usalo cuando el humano mencione "arrancamos", "nuevo proyecto", "etapa 1",
   "problem framing" o provea el contexto inicial de un proyecto.
   NO LO USAR con proyectos que ya tienen la Etapa 01 cerrada.
-version: "2.3.2"
+version: "2.3.3"
 framework: Baraldi
 stage: "01"
 stage_name: "Problem Framing"
@@ -139,4 +139,4 @@ Contexto inicial del proyecto
 
 ---
 
-*Framework Baraldi v2.3.2 · skills/01_problem_framing/SKILL.md*
+*Framework Baraldi v2.3.3 · skills/01_problem_framing/SKILL.md*
