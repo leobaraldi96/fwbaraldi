@@ -15,6 +15,11 @@ El **Framework Baraldi** es una colección estructurada de Skills y prompts que 
 
 A diferencia de un asistente genérico, este framework obliga a la IA a adoptar metodologías rigurosas, mostrar su proceso de razonamiento, cuestionar supuestos y producir artefactos estructurados — en lugar de respuestas conversacionales que el diseñador no puede validar ni reutilizar.
 
+### 🎨 Representación Visual y Diagramas de Flujo
+Tenemos diagramas y explicaciones de carácter gráfico en Figma para ilustrar de qué va el framework y cómo funciona iterativamente. *(Nota: La documentación gráfica se encuentra actualmente en proceso de actualización, pero es el mejor punto de partida visual).*
+
+👉 **[Ver Diagramas del Framework Baraldi en Figma](https://www.figma.com/design/E8PBny6kx3RUriuyuM1uRu/Framework-Baraldi?node-id=0-1&t=7rqvxMKhPUemHSMQ-1)**
+
 ---
 
 ## 🗺️ De dónde deviene el Framework
