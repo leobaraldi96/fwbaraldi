@@ -58,7 +58,7 @@ Ninguno de los frameworks anteriores tiene estas tres características juntas:
 
 ## 🧠 Sistema de Memoria Global (Engram MCP)
 
-El Framework Baraldi es el primer framework que delega la retención de conocimiento a través de sesiones y proyectos utilizando [Engram](https://github.com/Gentleman-Programming/engram), un motor de base de datos SQLite persistente expuesto como servidor MCP.
+El Framework Baraldi delega la retención de conocimiento a través de sesiones y proyectos utilizando [Engram](https://github.com/Gentleman-Programming/engram), un motor de base de datos SQLite persistente expuesto como servidor MCP.
 
 A diferencia del pasado donde te perdías el contexto entre chats, el Agente utiliza estas herramientas internamente de forma automática en cada inicio y cierre, pero **también puedes solicitárselas explícitamente en el chat**:
 
