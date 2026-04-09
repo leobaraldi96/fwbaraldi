@@ -11,10 +11,11 @@ description: >
   Usalo cuando Dependency Map y Risk Map estén completos y aprobados.
   NO LO USES sin los artefactos del Momento 2 aprobados.
 skill_id: system_analysis_momento_3
-version: "1.0"
+version: "2.4.0"
 framework: Baraldi
 stage: "02 - System Analysis"
 momento: 3
+memory_key: "sa-decision-cierre"
 trigger: "Cuando el Dependency Map y Risk Map del Momento 2 están aprobados por el equipo"
 output_format: "Documento Markdown estructurado — NO responder solo en chat"
 ---
@@ -187,4 +188,19 @@ Fecha:
 
 ---
 
-*Framework Baraldi v2 · skills/02_system_analysis/prompts/momento_3_documentacion.md*
+## Protocolo de Memoria — Este Momento
+
+**Eje Estratégico a guardar al cerrar este momento:** `sa-decision-cierre`
+
+Cuando el humano firma el Informe de Cierre de Etapa 02, guardar en `memory/baraldi_knowledge_base.md`:
+- **Tipo:** `cierre-de-etapa`
+- **Qué:** Decisión de avance (Avanzar a Etapa 03 / No avanzar) + estado del Architecture Overview
+- **Por qué:** Resumen de lo que aprendió el equipo sobre el sistema que no sabía al cierre de Etapa 01
+- **Dónde:** Architecture Overview + Service Blueprint + Informe de Cierre Etapa 02
+- **Aprendido:** Input crítico para Etapa 03 sintetizado en 2-3 puntos concretos
+
+Además, si el Architecture Overview tiene decisiones técnicas registradas, guardar cada una bajo el Eje `sa-decision-arquitectura-[nombre]` con tipo `decisión`.
+
+---
+
+*Framework Baraldi v2.4.0 · skills/02_system_analysis/prompts/momento_3_documentacion.md*

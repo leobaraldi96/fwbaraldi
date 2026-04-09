@@ -13,10 +13,11 @@ description: >
   Keywords: entrevistas, notas, research, usuarios, evidencia, hipótesis, benchmark, saturación.
   NO LO USES para analizar datos sin tener notas o transcripciones reales como input.
 skill_id: problem_framing_momento_2
-version: "1.0"
+version: "2.4.0"
 framework: Baraldi
 stage: "01 - Problem Framing"
 momento: 2
+memory_key: "pf-insight-principal"
 trigger: "Cuando el humano aprueba la metodología y herramientas y está listo para ejecutar entrevistas con usuarios reales"
 input_requerido:
   - Artefactos del Momento 1 aprobados (especialmente hipótesis y preguntas críticas)
@@ -208,6 +209,7 @@ Procesás el conjunto completo de notas y generás el **Informe de Research** �
 - Si después de N/2 entrevistas ninguna hipótesis tiene evidencia en ninguna dirección → alertás al humano para recalibrar antes de continuar
 - Si dos entrevistas seguidas producen exactamente los mismos insights → posible saturación temprana, alertás
 - Si el humano declara "fin de entrevistas" sin haber alcanzado el N definido → preguntás si fue una decisión de saturación o un cambio de plan, y lo documentás
+- Si no existe el Informe de Benchmark de la Fase Feedback → alertás que el benchmark está pendiente antes de generar el Informe de Research final
 
 ---
 
@@ -221,4 +223,17 @@ Procesás el conjunto completo de notas y generás el **Informe de Research** �
 
 ---
 
-*Framework Baraldi v2 · skills/01_problem_framing/prompts/momento_2_live_assistant.md*
+## Protocolo de Memoria — Este Momento
+
+**Eje Estratégico a guardar al cerrar este momento:** `pf-insight-principal`
+
+Al generar el Informe de Research final (Sub-tarea D), guardar en `memory/baraldi_knowledge_base.md`:
+- **Tipo:** `validación`
+- **Qué:** El patrón más revelador encontrado en las entrevistas
+- **Por qué:** Cómo impacta en la hipótesis central (confirma / refuta / matiza)
+- **Dónde:** Informe de Research del proyecto
+- **Aprendido:** Estado final de la hipótesis central post-research (Alta/Media/Baja confianza)
+
+---
+
+*Framework Baraldi v2.4.0 · skills/01_problem_framing/prompts/momento_2_live_assistant.md*

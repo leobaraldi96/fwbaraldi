@@ -12,10 +12,11 @@ description: >
   Keywords: problem framing, hipótesis, stakeholders, métricas, divergencia, producto.
   NO LO USES para diseñar soluciones, features o interfaces.
 skill_id: problem_framing_momento_1
-version: "1.0"
+version: "2.4.0"
 framework: Baraldi
 stage: "01 - Problem Framing"
 momento: 1
+memory_key: "pf-hipotesis-central"
 trigger: "Cuando el humano provee el contexto inicial del proyecto y completa Definir problema real + Identificar stakeholders + Establecer métricas de éxito"
 input_requerido:
   - Nombre y descripción del proyecto
@@ -189,4 +190,17 @@ No pedís más contexto si:
 
 ---
 
-*Framework Baraldi v2 · skills/01_problem_framing/prompts/momento_1_vision.md*
+## Protocolo de Memoria — Este Momento
+
+**Eje Estratégico a guardar al cerrar este momento:** `pf-hipotesis-central`
+
+Cuando el humano aprueba los 5 artefactos de este momento, guardar en `memory/baraldi_knowledge_base.md`:
+- **Tipo:** `decisión` o `validación` según qué tan respaldada esté la hipótesis central
+- **Qué:** La hipótesis central del proyecto en una oración
+- **Por qué:** El razonamiento que llevó a ese framing del problema
+- **Dónde:** Artefacto 5 — Outcome Definition del proyecto
+- **Aprendido:** El Sesgo de confirmación detectado más relevante + criterio de validación
+
+---
+
+*Framework Baraldi v2.4.0 · skills/01_problem_framing/prompts/momento_1_vision.md*

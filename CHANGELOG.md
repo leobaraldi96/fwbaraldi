@@ -5,6 +5,83 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.5.2] - 2026-04-09
+
+### Arquitectura Mayor — "Cero-Copia" y Nomenclatura Semántica
+
+#### Añadido
+- **`ARQUITECTURA_CORE.md`:** Nuevo documento Maestro de arquitectura. Describe conceptualmente y mediante diagramas Mermaid el funcionamiento del framework, su valor vs GPTs transaccionales y el modelo tripartito global (Workspace + Skill + Engram).
+- **Directiva de Nomenclatura Semántica:** Creada regla estricta en el `00_boot/context.md` que prohíbe que el framework nombre los entregables con identificadores del motor (ej. `01_pf_momento_1_vision.md`). Fuerza el uso de nombres semánticos, comprensibles para el humano (ej: `01_Vision_Estrategica.md`).
+- **Aislamiento de Output Documental:** Todos los artefactos de diseño generados se guardarán ahora de forma automática y unificada en la subcarpeta `docs-fwbaraldi/` del proyecto activo, previniendo el ensuciamiento de la raíz.
+- **Protocolo de Diálogo Estructurado:** Instrucción forzada en `context.md` para separar responsabilidades de UI: El Planificador IDE lista los bloqueos técnicos, pero *toda la comunicación conversacional* la IA la debe dirigir desde el Chat, sin ruidos.
+
+#### Cambiado
+- **Refactorización "Cero-Copia" (Zero-Copy):** Reestructuración masiva. A partir de la v2.5.2, el framework ya no intenta generar carpetas como `memory/` o `00_boot/` en el proyecto del usuario. Opera exclusivamente desde su núcleo central global, dejando el proyecto local 100% puro y enfocado sólo a código/artefactos. 
+- **Desacople en Skills 01 y 02:** Se purgaron las referencias residuales a la base de conocimiento local (`memory/baraldi_knowledge_base.md`) incrustadas en las skills `01_problem_framing` y `02_system_analysis`. Todo el sistema apunta ahora a **Engram MCP** por mandato explícito.
+
+---
+
+## [2.5.1] - 2026-04-08
+
+### Añadido
+- **Paso -1 obligatorio en Boot:** El agente ahora detiene todo al inicio y pregunta la carpeta de trabajo antes de ejecutar cualquier tarea. Ejemplo: `"¿Cuál es la ruta raíz donde voy a crear los artefactos?"`. Previene que el agente use el directorio `scratch/` interno del framework.
+- **Campo `Carpeta de trabajo` en el bloque de Contexto del Proyecto Activo:** Primer campo del template, marcado como OBLIGATORIO.
+- **Regla explícita anti-scratch:** Agregada al listado "Qué NO hacés — nunca" la prohibición de usar `scratch/` o cualquier carpeta interna del framework para artefactos de proyecto.
+
+### Cambiado
+- **`00_boot/context.md`:** Actualizado a v2.5.1. Protocolo de cierre de sesión migrado a `mem_save` / `mem_session_summary`. Paso 0 de memoria actualizado para usar `mem_context` + `mem_search` de Engram MCP.
+
+### Contexto
+- Problema detectado en prueba real: al abrir el proyecto `C:\xampp\htdocs\prueba-fw`, el agente creó los artefactos en `C:\Users\leoba\.gemini\antigravity\scratch\la-cania-mantenimiento` porque el usuario no especificó carpeta y el agente no la preguntó. Esta versión lo corrige con bloqueo preventivo.
+
+---
+
+## [2.5.0] - 2026-04-08
+
+### Migración Mayor — Sistema de Memoria
+
+#### Cambiado
+- **Sistema de memoria migrado de Markdown manual a Engram MCP.** El servidor `engram.exe mcp` (configurado en `mcp_config.json`) es ahora la fuente de verdad del framework. El archivo `memory/baraldi_knowledge_base.md` pasa a ser LEGADO (solo lectura histórica).
+- **`memory/PROTOCOLO_MEMORIA.md`:** Actualizado a v2.5.0. Reemplaza todas las instrucciones de lectura/escritura de archivos Markdown por llamadas a las herramientas MCP: `mem_save`, `mem_search`, `mem_context`, `mem_session_summary`. Define el formato obligatorio de `topic_key` para evitar duplicados.
+- **`memory/baraldi_knowledge_base.md`:** Marcado como LEGADO. El eje estratégico `fw-decision-memoria-opcion-b` fue reemplazado por `fw-decision-memoria-engram` (Revisión 2).
+
+#### Contexto
+- Validación realizada el 2026-04-08: conexión MCP con Engram operativa. Se probaron exitosamente `mem_context`, `mem_save` y `mem_search` desde múltiples ventanas/proyectos.
+- Primer hallazgo migrado manualmente: `La Cañía — Cierre Etapa 01 Problem Framing` (fue guardado en el markdown por el agente de la otra ventana antes de la migración).
+- **Proyecto Engram:** `baraldi-framework` | **Servidor:** `C:\Users\leoba\go\bin\engram.exe`
+
+---
+
+## [2.4.1] - 2026-04-07
+
+### Decisión Arquitectónica
+- **Deprecación del Track Chat:** La carpeta `chat/` queda congelada en v2.3.3 y no recibirá actualizaciones. El framework tiene un único track activo: el **Track Agéntico** (`skills/` + `memory/` + `templates/`).
+- **Eliminación de la Regla de Sincronización Core↔Chat:** La obligatoriedad de replicar cambios del Core en `chat/` fue eliminada. Eliminada de `DOCUMENTACION_IA.md`.
+- **Decisión registrada en la memoria sistémica** bajo el Eje Estratégico `fw-decision-deprecar-track-chat`.
+
+### Añadido
+- **`chat/DEPRECATED.md`:** Aviso formal de deprecación con contexto, razones y camino de migración al track Agéntico.
+
+### Cambiado
+- **`DOCUMENTACION_IA.md`:** La "Regla de Sincronización" fue reemplazada por la sección "Arquitectura de Tracks" que documenta los dos tracks y su estado actual. Actualizado a v2.4.1.
+
+## [2.4.0] - 2026-04-07
+
+### Añadido
+- **Capa de Memoria Sistémica (Lite):** Primer sistema de memoria persistente del framework, basado en archivos Markdown sin dependencias externas. Inspirado en la arquitectura de `engram` (Gentleman-Programming) adaptada a la terminología y metodología Baraldi.
+- **`memory/PROTOCOLO_MEMORIA.md`:** Instrucciones completas para el Agente sobre cuándo y cómo cargar, guardar y buscar en la memoria. Define los conceptos de **Hallazgo Sistémico** y **Eje Estratégico**.
+- **`memory/baraldi_knowledge_base.md`:** Base de conocimiento activa del framework. Archivo append-only organizado por proyectos y ejes estratégicos. Pre-cargado con las primeras decisiones de arquitectura del framework.
+- **`templates/hallazgo_sistemico.md`:** Template estructurado para registrar hallazgos, con tipos definidos (decisión, validación, riesgo, patrón, preferencia, cierre-de-etapa, cierre-de-sesión) y convención de slugs por etapa (`pf-`, `sa-`, `pl-`, etc.).
+- **`templates/decision_log.md`:** Template de Decision Log cronológico con numeración (`DEC-001`) para registrar decisiones estratégicas con contexto, alternativas consideradas y consecuencias.
+- **`temp-Gentleman-Programming/`:** Carpeta de referencia con repos clonados de Gentleman-Programming (`engram`, `gentle-ai`, `Gentleman-Skills`) para ingeniería inversa y adaptación.
+
+### Cambiado
+- **`00_boot/context.md`:** Integrada la capa de memoria. El Paso 0 obliga al Agente a cargar la base de conocimiento antes de ejecutar cualquier tarea. Agregado el Protocolo de Cierre de Sesión (guardar hallazgos antes de declarar done). Actualizado a v2.4.0.
+- **`SKILL.md` (raíz):** Agregada la Regla de Oro **"Memoria Sistémica"**: el conocimiento nunca se pierde entre sesiones.
+- **`skills/01_problem_framing/SKILL.md`:** Hook de memoria al activar la etapa. Protocolo de Memoria con Ejes Estratégicos recomendados por cada Momento (`pf-hipotesis-central`, `pf-metodologia-research`, etc.). Actualizado a v2.4.0.
+- **`skills/02_system_analysis/SKILL.md`:** Hook de memoria al activar la etapa. Protocolo de Memoria con Ejes Estratégicos recomendados (`sa-actor-map`, `sa-riesgos-criticos`, `sa-dependencias-clave`). Actualizado a v2.4.0.
+- **`DOCUMENTACION_IA.md`:** Estructura del repositorio actualizada con las nuevas carpetas `memory/` y `templates/`. Tabla de estado refactorizada.
+
 ## [2.3.3] - 2026-03-20
 
 ### Cambiado

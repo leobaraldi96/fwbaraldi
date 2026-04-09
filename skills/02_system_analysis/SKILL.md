@@ -11,7 +11,7 @@ description: >
   SIEMPRE usalo cuando el humano mencione "etapa 2", "system analysis",
   "mapear el sistema" o cuando los outcomes de Etapa 01 estén validados.
   NO LO USAR si el problema no se ha validado en la Etapa 01.
-version: "2.3.3"
+version: "2.5.2"
 framework: Baraldi
 stage: "02"
 stage_name: "System Analysis"
@@ -37,6 +37,8 @@ Se activa cuando:
 No se activa si:
 - Etapa 01 terminó con decisión de "Iterar" o "Pivotar"
 - El Problem Statement todavía no está validado con usuarios reales
+
+> **[MEMORIA — Al activar esta etapa]** Recuperar todos los hallazgos `pf-` del proyecto activo desde `Engram MCP`. Son los inputs fundamentales de esta etapa. Presentar resumen al humano antes de iniciar el Momento 1.
 
 ---
 
@@ -120,6 +122,17 @@ Artefactos de Etapa 01 aprobados
 - **Siempre** marcar dependencias con nivel de criticidad: `[CRÍTICA]`, `[ALTA]`, `[MEDIA]`, `[BAJA]`
 - **Siempre** documentar lo que NO se pudo mapear como gaps explícitos
 
+### Protocolo de Memoria — Etapa 02
+
+**Al iniciar:** Recuperar hallazgos `pf-` del proyecto desde `Engram MCP` como inputs del mapeo.
+
+**Al cerrar cada Momento:** Guardar Hallazgo Sistémico:
+- Momento 1 → Eje: `sa-actor-map` (tipo: `artefacto`)
+- Momento 2 → Eje: `sa-riesgos-criticos` (tipo: `riesgo`) y `sa-dependencias-clave` (tipo: `patrón`)
+- Momento 3 → Eje: `sa-decision-cierre` (tipo: `cierre-de-etapa`)
+
+**Al cerrar la etapa:** Ejecutar el Protocolo de Cierre de Sesión del `00_boot/context.md`.
+
 ---
 
-*Framework Baraldi v2.3.3 · skills/02_system_analysis/SKILL.md*
+*Framework Baraldi v2.5.2 · skills/02_system_analysis/SKILL.md*

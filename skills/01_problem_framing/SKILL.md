@@ -10,7 +10,7 @@ description: >
   SIEMPRE usalo cuando el humano mencione "arrancamos", "nuevo proyecto", "etapa 1",
   "problem framing" o provea el contexto inicial de un proyecto.
   NO LO USAR con proyectos que ya tienen la Etapa 01 cerrada.
-version: "2.3.3"
+version: "2.5.2"
 framework: Baraldi
 stage: "01"
 stage_name: "Problem Framing"
@@ -31,6 +31,8 @@ status: complete
 | New project | Proyecto nuevo sin antecedentes |
 | Iteración existente | Proyecto en curso que necesita reencuadrar el problema |
 | New feature | Feature nueva que requiere validar el problema antes de diseñar |
+
+> **[MEMORIA — Al activar esta etapa]** Buscar en `Engram MCP` hallazgos con prefijo `pf-` del proyecto activo. Presentar al humano cualquier decisión o validación previa relevante antes de ejecutar el Momento 1.
 
 ---
 
@@ -137,6 +139,18 @@ Contexto inicial del proyecto
 - **Siempre** entregar artefactos como documentos Markdown, no en el chat
 - **Siempre** marcar `[HIPÓTESIS]`, `[VALIDADO]`, `[SUPUESTO]` explícitamente
 
+### Protocolo de Memoria — Etapa 01
+
+**Al iniciar:** Buscar en `Engram MCP` por `pf-` y proyecto activo.
+
+**Al cerrar cada Momento:** Guardar un Hallazgo Sistémico con el aprendizaje clave:
+- Momento 1 → Eje: `pf-hipotesis-central` (tipo: `validación` o `decisión`)
+- Momento Feedback → Eje: `pf-metodologia-research` (tipo: `decisión`)
+- Momento 2 → Eje: `pf-insight-principal` (tipo: `validación`)
+- Momento 3 → Eje: `pf-decision-cierre` (tipo: `cierre-de-etapa`)
+
+**Al cerrar la etapa:** Ejecutar el Protocolo de Cierre de Sesión del `00_boot/context.md`.
+
 ---
 
-*Framework Baraldi v2.3.3 · skills/01_problem_framing/SKILL.md*
+*Framework Baraldi v2.5.2 · skills/01_problem_framing/SKILL.md*

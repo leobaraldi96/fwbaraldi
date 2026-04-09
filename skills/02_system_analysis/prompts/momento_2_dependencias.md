@@ -10,10 +10,11 @@ description: >
   Usalo cuando el Actor Map y System Map estén aprobados por el equipo.
   NO LO USES sin el System Map del Momento 1 aprobado.
 skill_id: system_analysis_momento_2
-version: "1.0"
+version: "2.4.0"
 framework: Baraldi
 stage: "02 - System Analysis"
 momento: 2
+memory_key: "sa-riesgos-criticos"
 trigger: "Cuando el Actor Map y System Map del Momento 1 están aprobados"
 output_format: "Documento Markdown estructurado — NO responder solo en chat"
 ---
@@ -155,4 +156,28 @@ Ver Etapa 03 (Product Logic) para el modelo de estados completo.
 
 ---
 
-*Framework Baraldi v2 · skills/02_system_analysis/prompts/momento_2_dependencias.md*
+## Protocolo de Memoria — Este Momento
+
+**Ejes Estratégicos a guardar al cerrar este momento:**
+- `sa-riesgos-criticos` — Riesgos que bloquean Etapa 03
+- `sa-dependencias-clave` — Dependencias externas críticas sin alternativa
+
+Al completar el Dependency Map, Data Flow Map y Risk Map, guardar en `memory/baraldi_knowledge_base.md`:
+
+**Para `sa-riesgos-criticos`:**
+- **Tipo:** `riesgo`
+- **Qué:** Número de riesgos críticos detectados + el riesgo más grave con su descripción
+- **Por qué:** Por qué bloquea el avance a Etapa 03
+- **Dónde:** Risk Map del proyecto
+- **Aprendido:** Puntos únicos de falla (SPOF) identificados y su mitigación propuesta
+
+**Para `sa-dependencias-clave`:**
+- **Tipo:** `patrón`
+- **Qué:** Las dependencias externas críticas (APIs, servicios) con sus restricciones clave
+- **Por qué:** Impacto en la arquitectura del producto
+- **Dónde:** Dependency Map del proyecto
+- **Aprendido:** Alternativas identificadas para las dependencias sin fallback
+
+---
+
+*Framework Baraldi v2.4.0 · skills/02_system_analysis/prompts/momento_2_dependencias.md*

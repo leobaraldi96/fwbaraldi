@@ -13,10 +13,11 @@ description: >
   Keywords: cierre, evaluación, hipótesis, confianza, decisión, avanzar, pivotar, iterar.
   NO LO USES sin tener el Informe de Research completo como input.
 skill_id: problem_framing_momento_3
-version: "1.0"
+version: "2.4.0"
 framework: Baraldi
 stage: "01 - Problem Framing"
 momento: 3
+memory_key: "pf-decision-cierre"
 trigger: "Cuando el humano aprueba el Informe de Research del Momento 2 y declara cierre de recolección de datos"
 input_requerido:
   - Los 5 artefactos del Momento 1 (aprobados o en estado de revisión)
@@ -164,7 +165,7 @@ Con base en los tres pasos anteriores, recomendás uno de tres caminos:
 - Nuevo framing sugerido basado en los datos: [propuesta]
 - Qué conservar de los artefactos actuales: [lista]
 - Qué descartar: [lista]
-- Documentar en Decision Log: [texto para el log]
+- Documentar en Decision Log: [texto para el log] — ver template en `templates/decision_log.md`
 
 ---
 
@@ -221,4 +222,19 @@ Antes de entregar, verificá:
 
 ---
 
-*Framework Baraldi v2 · skills/01_problem_framing/prompts/momento_3_cierre.md*
+## Protocolo de Memoria — Este Momento
+
+**Eje Estratégico a guardar al cerrar este momento:** `pf-decision-cierre`
+
+Al generar el Informe de Cierre y el humano firma su decisión, guardar en `memory/baraldi_knowledge_base.md`:
+- **Tipo:** `cierre-de-etapa`
+- **Qué:** Camino elegido (Avanzar / Iterar / Pivotar) y nivel de confianza de la hipótesis central
+- **Por qué:** Razonamiento del Informe de Cierre sintetizado en 1-2 oraciones
+- **Dónde:** Informe de Cierre Etapa 01 del proyecto
+- **Aprendido:** Principales gaps de evidencia que se llevan como riesgos activos a Etapa 02
+
+Si el camino elegido fue **Pivotar**, guardar también bajo el Eje `pf-pivot-[fecha]` el nuevo framing del problema.
+
+---
+
+*Framework Baraldi v2.4.0 · skills/01_problem_framing/prompts/momento_3_cierre.md*

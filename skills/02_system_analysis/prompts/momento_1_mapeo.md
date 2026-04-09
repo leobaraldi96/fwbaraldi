@@ -10,10 +10,11 @@ description: >
   SIEMPRE usalo al iniciar la Etapa 02 o cuando el humano diga "mapeemos el sistema".
   NO LO USES antes de cerrar Etapa 01 con outcomes validados.
 skill_id: system_analysis_momento_1
-version: "1.1"
+version: "2.4.0"
 framework: Baraldi
 stage: "02 - System Analysis"
 momento: 1
+memory_key: "sa-actor-map"
 trigger: "Cuando se inicia la Etapa 02 con los artefactos de Etapa 01 aprobados"
 output_format: "Documento Markdown estructurado — NO responder solo en chat"
 ---
@@ -225,4 +226,17 @@ Este mapeo es el cimiento de tu arquitectura. Te invito a que **uses esta inform
 
 ---
 
-*Framework Baraldi v2 · skills/02_system_analysis/prompts/momento_1_mapeo.md*
+## Protocolo de Memoria — Este Momento
+
+**Eje Estratégico a guardar al cerrar este momento:** `sa-actor-map`
+
+Cuando el humano valida las tres plantillas y se consolida el Actor Map, guardar en `memory/baraldi_knowledge_base.md`:
+- **Tipo:** `artefacto`
+- **Qué:** Cantidad de actores mapeados (visibles, invisibles, del sistema) y el actor invisible más crítico detectado
+- **Por qué:** Por qué ese actor es crítico para el sistema
+- **Dónde:** Actor Map v1.0 del proyecto
+- **Aprendido:** Solicitudes de stack pendientes y supuestos no verificados más importantes
+
+---
+
+*Framework Baraldi v2.4.0 · skills/02_system_analysis/prompts/momento_1_mapeo.md*

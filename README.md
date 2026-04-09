@@ -15,10 +15,11 @@ El **Framework Baraldi** es una colección estructurada de Skills y prompts que 
 
 A diferencia de un asistente genérico, este framework obliga a la IA a adoptar metodologías rigurosas, mostrar su proceso de razonamiento, cuestionar supuestos y producir artefactos estructurados — en lugar de respuestas conversacionales que el diseñador no puede validar ni reutilizar.
 
-### 🎨 Representación Visual y Diagramas de Flujo
-Tenemos diagramas y explicaciones de carácter gráfico en Figma para ilustrar de qué va el framework y cómo funciona iterativamente. *(Nota: La documentación gráfica se encuentra actualmente en proceso de actualización, pero es el mejor punto de partida visual).*
+### 🎨 Representación Visual y Arquitectura Core
+Tenemos diagramas y explicaciones de carácter gráfico para ilustrar de qué va el framework, cómo funciona bajo la Arquitectura Cero-Copia y cómo iterar con IA.
 
-👉 **[Ver Diagramas del Framework Baraldi en Figma](https://www.figma.com/design/E8PBny6kx3RUriuyuM1uRu/Framework-Baraldi?node-id=0-1&t=7rqvxMKhPUemHSMQ-1)**
+👉 **[Ver Documentación Oficial de Arquitectura del Framework (ARQUITECTURA_CORE.md)](./ARQUITECTURA_CORE.md)**
+👉 **[Ver Diagramas Conceptuales Antiguos en Figma](https://www.figma.com/design/E8PBny6kx3RUriuyuM1uRu/Framework-Baraldi?node-id=0-1&t=7rqvxMKhPUemHSMQ-1)**
 
 ---
 
@@ -52,6 +53,24 @@ Ninguno de los frameworks anteriores tiene estas tres características juntas:
 6. **🔄 UI Design:** Diseño de interfaces *(En desarrollo)*
 7. **🔄 Implementation:** Implementación técnica *(En desarrollo)*
 8. **🔄 System Reflection:** Evaluación final *(En desarrollo)*
+
+---
+
+## 🧠 Sistema de Memoria Global (Engram MCP)
+
+El Framework Baraldi es el primer framework que delega la retención de conocimiento a través de sesiones y proyectos utilizando [Engram](https://github.com/Gentleman-Programming/engram), un motor de base de datos SQLite persistente expuesto como servidor MCP.
+
+A diferencia del pasado donde te perdías el contexto entre chats, el Agente utiliza estas herramientas internamente de forma automática en cada inicio y cierre, pero **también puedes solicitárselas explícitamente en el chat**:
+
+| Comando de Memoria | Qué hace | Cuándo usarlo (o cuándo lo usa la IA) |
+|---|---|---|
+| `mem_context` | Trae el contexto reciente del proyecto activo. | Se usa en el **Paso 0** al iniciar la IDE para saber en qué quedamos. |
+| `mem_search` | Búsqueda Full-Text Pura sobre actas y hallazgos. | Útil si querés pedirle a la IA: *"Buscá qué decidimos sobre la pasarela de pagos hace 2 meses"*. |
+| `mem_save` | Guarda una observación estructurada (Decisión, Bug, Riesgo). | La IA lo lanza al finalizar cada **Momento** crucial para crear actas. |
+| `mem_session_summary`| Realiza un Volcado de Fin de Sesión. | Obligatorio antes de apagar la IDE para consolidar aprendizajes. |
+| `mem_stats` | Muestra el estado global de tu cerebro. | Útil para ver cuántos proyectos o insights llevás grabados en Engram. |
+
+*Todo esto ocurre en tu disco duro (zero-cloud) y hace que saltar de un proyecto a otro sea una experiencia de inteligencia continua.*
 
 ---
 
@@ -91,9 +110,9 @@ fwbaraldi/
 │       └── references/
 │           └── system_mapping_guide.md     ← Guía de mapas sistémicos
 │
-├── chat/                                   ← Versión one-page por etapa para interfaces de chat
-│   ├── etapa01_chat.md                     ← Problem Framing
-│   └── etapa02_chat.md                     ← System Analysis
+├── chat/                                   ← [DEPRECATED] Track legacy para web
+│   ├── etapa01_chat.md                     
+│   └── etapa02_chat.md                     
 │
 ├── references/                             ← Recursos globales compartidos entre etapas
 │   └── README.md
@@ -116,8 +135,9 @@ Si usas el agente **Antigravity**, podés hacer que este framework esté disponi
 1. Cargá `00_boot/context.md` como context inicial.
 2. Leé el `SKILL.md` de la etapa en la que estés *(arrancando por `01_problem_framing/SKILL.md`)*.
 
-**Uso en la Web (Claude.ai, ChatGPT, Gemini):**
-1. Abrí un chat nuevo y pegá el contenido de `chat/etapa01_chat.md`.
+**Uso en la Web (Claude.ai, ChatGPT, Gemini) [TRACK LEGACY]:**
+> *Aviso: La interfaz conversacional manual de copiar/pegar un "mega-prompt" se descontinuó en v2.4.1. Úsala solo si no tienes entorno agéntico (Antigravity).*
+1. Abrí un chat y pegá el contenido de `chat/etapa01_chat.md`.
 
 > **Modelos recomendados:** Claude 3.5 Sonnet/Opus, GPT-4o, Gemini 1.5 Pro o superior. Modelos más limitados pueden ignorar ciertas constraints del prompt.
 

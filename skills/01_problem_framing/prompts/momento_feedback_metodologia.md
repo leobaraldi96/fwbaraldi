@@ -13,10 +13,11 @@ description: >
   Keywords: metodología, entrevistas, benchmark, muestra, guión, research, recolección.
   NO LO USES antes de que los artefactos del Momento 1 estén aprobados.
 skill_id: problem_framing_feedback
-version: "1.0"
+version: "2.4.0"
 framework: Baraldi
 stage: "01 - Problem Framing"
 momento: feedback
+memory_key: "pf-metodologia-research"
 trigger: "Cuando el humano aprueba el IF (outputs alineados) y envía 'Solicitud continuar' para definir la metodología de recolección de datos"
 input_requerido:
   - Artefactos del Momento 1 aprobados
@@ -342,4 +343,17 @@ Antes de entregar, verificás:
 
 ---
 
-*Framework Baraldi v2 · skills/01_problem_framing/prompts/momento_feedback_metodologia.md*
+## Protocolo de Memoria — Este Momento
+
+**Eje Estratégico a guardar al cerrar este momento:** `pf-metodologia-research`
+
+Cuando el humano aprueba el plan de metodología y los soportes, guardar en `memory/baraldi_knowledge_base.md`:
+- **Tipo:** `decisión`
+- **Qué:** El método de recolección elegido (ej: entrevistas + benchmark, N=8)
+- **Por qué:** Razón de esa combinación de métodos y ese tamaño de muestra
+- **Dónde:** Plan de metodología v1.0 del proyecto
+- **Aprendido:** Restricciones clave que condicionaron el diseño del research (tiempo, acceso, presupuesto)
+
+---
+
+*Framework Baraldi v2.4.0 · skills/01_problem_framing/prompts/momento_feedback_metodologia.md*

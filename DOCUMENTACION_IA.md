@@ -1,9 +1,9 @@
 # Framework Baraldi — Repositorio de Skills y Prompts
 
-> **Para uso con IA:** cargar `00_boot/context.md` como System Orchestrator antes de cualquier skill.
+> **Para uso con IA:** cargar `SKILL.md` raíz como punto de entrada del framework. El agente detecta y carga el boot context, la memoria y las skills automáticamente.
 
 **AI-Augmented System Product Design**
-Versión 2.3 · Leo Baraldi
+Versión 2.5.1 · Leo Baraldi
 
 ---
 
@@ -27,14 +27,17 @@ Nunca queden los artefactos solo en el chat. Cada output es un archivo Markdown 
 
 ---
 
-## Regla de Sincronización Arquitectónica (Core vs Chat)
+## Arquitectura de Tracks
 
-El Framework Baraldi existe en dos dimensiones paralelas que siempre deben mantenerse sincronizadas:
-1. **El Core del Framework (para Agentes/Skills):** Estructurado de forma modular (`00_boot`, `skills/`, `prompts/`) para que futuros agentes autónomos o LLMs lean instrucciones pieza por pieza según el contexto operativo.
-2. **La Carpeta `chat/` (para Humanos):** Copias adaptadas en modo "flat" (un solo archivo por etapa) diseñadas específicamente para que un usuario pueda hacer *copy-paste* en un chat tradicional (ChatGPT, Claude, etc).
+El Framework Baraldi existe en dos tracks con misiones distintas y **sin paridad obligatoria**:
 
-**⚠️ REGLA ESTRICTA PARA LA IA:**
-Cada vez que edites, agregues una regla, modifiques el tono o cambies una instrucción en el Core del Framework (ej. `00_boot/context.md` o un archivo de `skills/`), **DEBES OBLIGATORIAMENTE** replicar ese mismo ajuste en el archivo correspondiente dentro de la carpeta `chat/` (y viceversa). Esta sincronización garantiza que la experiencia metodológica sea idéntica sin importar la interfaz que use el humano.
+### Track Agéntico (Full) — `skills/` + `memory/` + `templates/`
+La experiencia completa del framework. Requiere un agente de IA configurado (Antigravity, Claude Code, Cursor, etc.). Incluye memoria persistente, modularidad y evolución continua. **Este es el track activo.**
+
+### Track Chat (Lite) — `chat/` ⚠️ DEPRECADO
+Versiones one-page de las Etapas 01 y 02 para uso en interfaces de chat web tradicionales (ChatGPT, Claude, Gemini). Congelado en v2.3.3. No se actualiza con las nuevas versiones del Core. Ver `chat/DEPRECATED.md` para contexto completo.
+
+> **Nota:** La regla de sincronización obligatoria Core↔Chat fue eliminada en v2.4.1. El track Chat está en proceso de deprecación progresiva.
 
 ---
 
@@ -44,6 +47,14 @@ Cada vez que edites, agregues una regla, modifiques el tono o cambies una instru
 framework-baraldi/
 ├── 00_boot/
 │   └── context.md                    ← SIEMPRE cargar primero
+│
+├── memory/                           ← CAPA DE MEMORIA SISTEMICA (Engram MCP)
+│   ├── PROTOCOLO_MEMORIA.md          ← Instrucciones de memoria para el Agente (v2.5.0)
+│   └── baraldi_knowledge_base.md     ← LEGADO — solo lectura histórica
+│
+├── templates/
+│   ├── hallazgo_sistemico.md         ← Template para registrar hallazgos
+│   └── decision_log.md               ← Template de Decision Log cronológico
 │
 ├── skills/
 │   ├── 01_problem_framing/
@@ -64,10 +75,6 @@ framework-baraldi/
 │   ├── 05_ui_design/                 ← En desarrollo
 │   ├── 06_implementation/            ← En desarrollo
 │   └── 07_system_reflection/         ← En desarrollo
-│
-└── templates/                        ← En desarrollo
-    ├── decision_log.md
-    └── artefactos_etapa1.md
 ```
 
 ---
@@ -97,17 +104,22 @@ Para mejores resultados: cargar `context.md` completo al inicio de cada sesión.
 
 ## Estado actual
 
-| Etapa | SKILL.md | Prompts | References | Estado |
-|---|---|---|---|---|
-| 00 Boot | — | context.md | — | ✅ Completo |
-| 01 Problem Framing | ✅ | 4 prompts | benchmark_guide.md, research_methods_guide.md | ✅ Completo |
-| 02 System Analysis | ✅ | 3 prompts | system_mapping_guide.md | ✅ Completo |
-| 03 Product Logic | — | — | — | 🔄 En desarrollo |
-| 04 UX Experience | — | — | — | 🔄 En desarrollo |
-| 05 UI Design | — | — | — | 🔄 En desarrollo |
-| 06 Implementation | — | — | — | 🔄 En desarrollo |
-| 07 System Reflection | — | — | — | 🔄 En desarrollo |
+| Capa | Componente | Estado |
+|---|---|---|
+| **00 Boot** | context.md | ✅ v2.5.1 — Paso -1 carpeta + Engram MCP |
+| **Memoria** | PROTOCOLO_MEMORIA.md | ✅ v2.5.0 — Migrado a Engram MCP |
+| **Memoria** | baraldi_knowledge_base.md | ⚠️ LEGADO — solo lectura histórica |
+| **Memoria** | Engram MCP (`engram.exe mcp`) | ✅ Activo desde v2.5.0 |
+| **Templates** | hallazgo_sistemico.md | ✅ Nuevo en v2.4.0 |
+| **Templates** | decision_log.md | ✅ Nuevo en v2.4.0 |
+| **01 Problem Framing** | SKILL.md + 4 prompts | ✅ Completo + hooks de memoria |
+| **02 System Analysis** | SKILL.md + 3 prompts | ✅ Completo + hooks de memoria |
+| **03 Product Logic** | — | 🔄 En desarrollo |
+| **04 UX Experience** | — | 🔄 En desarrollo |
+| **05 UI Design** | — | 🔄 En desarrollo |
+| **06 Implementation** | — | 🔄 En desarrollo |
+| **07 System Reflection** | — | 🔄 En desarrollo |
 
 ---
 
-*Framework Baraldi v2 · DOCUMENTACION_IA.md*
+*Framework Baraldi v2.5.1 · DOCUMENTACION_IA.md*
