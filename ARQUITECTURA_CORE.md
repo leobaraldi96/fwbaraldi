@@ -28,25 +28,25 @@ Ningún archivo metodológico, de identidad de la IA, o plantillas de sistema de
 ```mermaid
 flowchart TD
     %% Nodos Principales
-    subgraph Motor[1. Motor Global - Skill Repository]
+    subgraph Motor["1. Motor Global - Skill Repository"]
         direction TB
-        A[00_boot/context.md]:::skill
-        B[SKILL.md Orchestrators]:::skill
-        C[Prompts y Metodología]:::skill
+        A["00_boot/context.md"]:::skill
+        B["SKILL.md Orchestrators"]:::skill
+        C["Prompts y Metodología"]:::skill
     end
 
-    subgraph Cerebro[2. Memoria Sistémica Global]
+    subgraph Cerebro["2. Memoria Sistémica Global"]
         direction TB
         D((Engram MCP)):::engram
-        D1([Persistencia entre sesiones]):::engram
-        D2([Historial de Decisiones]):::engram
+        D1(["Persistencia entre sesiones"]):::engram
+        D2(["Historial de Decisiones"]):::engram
     end
 
-    subgraph Workspace[3. Workspace Local del Proyecto]
+    subgraph Workspace["3. Workspace Local del Proyecto"]
         direction TB
-        E[docs-fwbaraldi/]:::localfolder
-        F[Archivos Entregables (Problem Statement, etc.)]:::localfile
-        G[index.html / src/]:::localfile
+        E["docs-fwbaraldi/"]:::localfolder
+        F["Archivos Entregables (Problem Statement, etc.)"]:::localfile
+        G["index.html / src/"]:::localfile
     end
 
     %% Relaciones
