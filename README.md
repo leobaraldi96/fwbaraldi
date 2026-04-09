@@ -72,6 +72,15 @@ A diferencia del pasado donde te perdías el contexto entre chats, el Agente uti
 
 *Todo esto ocurre en tu disco duro (zero-cloud) y hace que saltar de un proyecto a otro sea una experiencia de inteligencia continua.*
 
+### 🌟 Inspiración y Reconocimientos
+El soporte tecnológico actual para el manejo de esta memoria fue inspirado y potenciado por el excelente trabajo del ecosistema open-source [Gentleman-Programming](https://github.com/Gentleman-Programming), particularmente su protocolo **Engram**.
+
+**¿En qué se diferencian ambos proyectos?**
+- **Gentleman-Programming (Engram):** Es una solución de arquitectura técnica y de propósito general diseñada para dar memoria a agentes de programación (Coding Agents). Su objetivo es resolver el *cómo* la IA recuerda bases de código.
+- **Framework Baraldi:** Es una **metodología dogmática de diseño**. Resuelve el *qué, el por qué y el orden estructurado* de la ideación de productos. 
+
+> **Nota de desarrollo:** Actualmente utilizamos el binario `engram.exe` como proxy de memoria externo para agilizar nuestras pruebas. Esto nos "libera las manos" y nos permite poner el 100% de nuestro foco y energía en desarrollar y pulir las rígidas **Etapas del Framework** (Diagnóstico, Lógica, UX/UI). Una vez que todas las etapas del framework estén construidas, evaluaremos desarrollar un servidor MCP Baraldi nativo si es necesario.
+
 ---
 
 ## 🤖 Uso con Inteligencia Artificial
