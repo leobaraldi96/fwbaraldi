@@ -136,17 +136,29 @@ fwbaraldi/
 
 ---
 
-## ⚡ Quick Start
+## ⚡ Quick Start / Instalación (v2.5.2)
 
-**Instalación Global (Recomendado para Antigravity):**
-Si usas el agente **Antigravity**, podés hacer que este framework esté disponible en **cualquier proyecto** siguiendo estos pasos:
-1. Copiá la carpeta completa `fw-baraldi` a:
-   `C:\Users\\[TuUsuario\]\\.gemini\\antigravity\\skills\\baraldi-framework`
-2. ¡Listo! Ahora, desde cualquier chat o proyecto, podés decirle al agente: *"Ejecutemos la Etapa 1 del Framework Baraldi"* y el sistema lo indexará automáticamente gracias al `SKILL.md` del root.
+> ⚠️ **IMPORTANTE:** A partir de la versión 2.5.0 (Modelo Cero-Copia), el Framework Baraldi dejó de ser un simple texto para copiar y pegar. Ahora es un **Orquestador Agéntico**. Para usarlo, tu IA debe soportar el uso de herramientas MCP y lectura de carpetas locales (Ej: **Antigravity de Google, Claude Code, Cursor, Windsurf**, etc.).
 
-**Uso Manual con Acceso a Carpetas (Cursor, VS Code):**
-1. Cargá `00_boot/context.md` como context inicial.
-2. Leé el `SKILL.md` de la etapa en la que estés *(arrancando por `01_problem_framing/SKILL.md`)*.
+### Instalación Desatendida (Recomendado)
+Hemos construido un instalador interactivo (`baraldi-init`) que se encarga de todo el trabajo pesado. Solo necesitas tener **Node.js** instalado en tu computadora.
+
+Abrí tu terminal y ejecutá (directamente desde este repositorio):
+```bash
+npx github:leobaraldi96/fwbaraldi
+```
+
+**El instalador CLI interactivo se ocupará de:**
+1. Preguntarte qué Agente usas (por ahora soporta *Antigravity* y *Claude Code* globalmente, o instalación local).
+2. Descargar de forma segura y transparente el binario compilado de **Engram** específico para tu OS (Windows/Mac/Linux) y ubicarlo en `~/.fwbaraldi/bin`.
+3. Auto-copiar el Framework a la carpeta `skills` de tu Agente.
+4. Imprimirte el bloque de código exacto que debés pegar en tu `mcp_config.json` para encender la memoria.
+
+### Paso 2: Ejecución
+1. Abre tu terminal o IDE en la carpeta vacía de tu nuevo proyecto.
+2. Inicia tu Agente (Ej: Antigravity).
+3. Escribe en el chat: *"Iniciemos un proyecto nuevo usando el Framework Baraldi"*.
+4. El sistema se auto-orquestará leyendo tu `SKILL.md` global y registrará memorias en tu SQLite local automáticamente.
 
 **Uso en la Web (Claude.ai, ChatGPT, Gemini) [TRACK LEGACY]:**
 > *Aviso: La interfaz conversacional manual de copiar/pegar un "mega-prompt" se descontinuó en v2.4.1. Úsala solo si no tienes entorno agéntico (Antigravity).*
@@ -156,9 +168,8 @@ Si usas el agente **Antigravity**, podés hacer que este framework esté disponi
 
 ---
 
-## 🔌 Instalabilidad via CLI
-
-La instalación via `npx skills add` estará disponible cuando el framework tenga al menos 3-4 etapas completas. Por ahora, debes usar la carga manual.
+## 🔌 Instalabilidad NPM via CLI
+Una vez que el Framework salga de su fase Beta, será publicado oficialmente en NPM para que puedas instalarlo simplemente tecleando `npx baraldi-init`. Por ahora, utiliza el método `npx github:...` descrito arriba.
 
 ---
 
