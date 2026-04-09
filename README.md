@@ -72,6 +72,10 @@ A diferencia del pasado donde te perdías el contexto entre chats, el Agente uti
 
 *Todo esto ocurre en tu disco duro (zero-cloud) y hace que saltar de un proyecto a otro sea una experiencia de inteligencia continua.*
 
+### ⚡ Ventaja de Infraestructura: Ahorro Masivo de Tokens (90%+)
+A nivel de infraestructura (LLM Ops), el Framework Baraldi hereda una de las mayores ventajas arquitectónicas de Engram: **la eficiencia de contexto (RAG local)**. 
+En lugar de inyectar bases enteras de conocimiento kilométricas en el prompt (que consumen miles de tokens por request), el Framework realiza consultas semánticas exactas (`mem_search`). Al cargar en memoria viva solo los hallazgos estrictamente necesarios para la toma de decisión del momento, **estamos estimando un ahorro del contexto (tokens de entrada) superior al 90%** en fases de desarrollo avanzado, manteniendo la IA enfocada, rápida y económicamente viable.
+
 ### 🌟 Inspiración y Reconocimientos
 El soporte tecnológico actual para el manejo de esta memoria fue inspirado y potenciado por el excelente trabajo del ecosistema open-source [Gentleman-Programming](https://github.com/Gentleman-Programming), particularmente su protocolo **Engram**.
 
