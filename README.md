@@ -77,7 +77,7 @@ A nivel de infraestructura (LLM Ops), el Framework Baraldi hereda una de las may
 En lugar de inyectar bases enteras de conocimiento kilométricas en el prompt (que consumen miles de tokens por request), el Framework realiza consultas semánticas exactas (`mem_search`). Al cargar en memoria viva solo los hallazgos estrictamente necesarios para la toma de decisión del momento, **estamos estimando un ahorro del contexto (tokens de entrada) superior al 90%** en fases de desarrollo avanzado, manteniendo la IA enfocada, rápida y económicamente viable.
 
 ### 🌟 Inspiración y Reconocimientos
-El soporte tecnológico actual para el manejo de esta memoria fue inspirado y potenciado por el excelente trabajo del ecosistema open-source [Gentleman-Programming](https://github.com/Gentleman-Programming), particularmente su protocolo **Engram**.
+El soporte tecnológico actual para el manejo de esta memoria fue inspirado y potenciado por el excelente trabajo del ecosistema open-source [Gentleman-Programming](https://github.com/Gentleman-Programming), (Gracias Ale!!! 😍) particularmente su protocolo **Engram**.
 
 **¿En qué se diferencian ambos proyectos?**
 - **Gentleman-Programming (Engram):** Es una solución de arquitectura técnica y de propósito general diseñada para dar memoria a agentes de programación (Coding Agents). Su objetivo es resolver el *cómo* la IA recuerda bases de código.
