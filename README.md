@@ -4,7 +4,7 @@
 >
 > Un framework metodológico diseñado para potenciar el diseño de productos digitales utilizando Inteligencia Artificial como copiloto estratégico en todas las etapas del proceso.
 
-![Version](https://img.shields.io/badge/version-2.9.0-blue)
+![Version](https://img.shields.io/badge/version-2.13.0-blue)
 ![Status](https://img.shields.io/badge/status-active-success)
 
 ---
@@ -51,7 +51,9 @@ No deviene de un solo modelo. Es una síntesis crítica de varios referentes met
 - **Design Thinking** *(IDEO / Stanford d.school)* — Comparte el foco en empatía y validación con usuarios reales. Pero Design Thinking es un proceso de innovación, no de diseño de producto continuo. No escala bien a equipos técnicos ni a productos complejos con deuda técnica.
 - **Systems Thinking** *(Donella Meadows)* — La idea de producto como sistema vivo viene de acá. Meadows habla de stocks, flujos, loops de retroalimentación. El Framework Baraldi traduce eso al lenguaje operativo del diseño de producto.
 - **Jobs To Be Done** *(Christensen / Ulwick)* — El foco en outcomes medibles y en entender el progreso que el usuario quiere hacer, no solo el dolor que siente. Está implícito en el Outcome Definition y en el criterio de validación.
-- **Shape Up** *(Basecamp / Ryan Singer)* — La idea de ciclos acotados con criterios de cierre explícitos. El modelo IF/Else del diagrama y los cierres de etapa tienen ADN de Shape Up.
+- **Shape Up** *(Basecamp / Ryan Singer)* — La idea de ciclos acotados con criterios de cierre explícitos.
+- **Context7** *(Context7.com)* — Nuestra fuente oficial de **Conocimiento técnico** (Manuales para IA).
+- **Skills.sh** *(Vercel Labs)* — Nuestra fuente oficial de **Procedimientos operativos** (Entrenamiento para IA).
 
 ## 💎 Lo que lo hace genuinamente distinto
 
@@ -126,8 +128,10 @@ fwbaraldi/
 │   ├── core/
 │   │   ├── 00_core_guardrails/
 │   │   │   └── SKILL.md                    ← Guardián de la Metodología (Docs, Naming, Pureza)
-│   │   └── 00_operational_hygiene/
-│   │       └── SKILL.md                    ← Protocolo de Branches, Commits Semánticos y Handoff
+│   │   ├── 00_operational_hygiene/
+│   │   │   └── SKILL.md                    ← Protocolo de Branches, Commits Semánticos y Handoff
+│   │   └── 00_skill_evaluation/
+│   │       └── SKILL.md                    ← La "Aduana": Filtro anti-obesidad cognitiva (Skill Judge)
 │   │
 │   ├── methodology/
 │   │   ├── 01_problem_framing/             ← Punto de entrada
@@ -144,7 +148,9 @@ fwbaraldi/
 │       └── tech_guardrails/                 ← Estándares Técnicos Expertos
 │           ├── jira_strategic_tasks/
 │           ├── nextjs_15_standards/
-│           └── tailwind_4_standards/
+│           ├── tailwind_4_standards/
+│           ├── electron_standards/
+│           └── react_native_standards/
 │
 ├── chat/                                   ← [DEPRECATED] Track legacy para web
 │   ├── etapa01_chat.md                     
@@ -159,14 +165,14 @@ fwbaraldi/
 
 ---
 
-## ⚡ Quick Start / Instalación (v2.9.0)
+## ⚡ Quick Start / Instalación (v2.13.0)
 
 > ⚠️ **IMPORTANTE:** A partir de la versión 2.5.0 (Modelo Cero-Copia), el Framework Baraldi dejó de ser un simple texto para copiar y pegar. Ahora es un **Orquestador Agéntico**. Para usarlo, tu IA debe soportar el uso de herramientas MCP y lectura de carpetas locales (Ej: **Antigravity de Google, Claude Code, Cursor, Windsurf**, etc.).
 
 ### Instalación Desatendida (Recomendado)
 Hemos construido un instalador interactivo (`baraldi-init`) que se encarga de todo el trabajo pesado. Solo necesitas tener **Node.js** instalado en tu computadora.
 
-Abrí tu terminal y ejecutá (directamente desde este repositorio):
+Abrí tu terminal y ejecutá (directly desde este repositorio):
 ```bash
 npx github:leobaraldi96/fwbaraldi
 ```
@@ -206,4 +212,4 @@ Podés usarlo **GRATIS** para tus proyectos personales, comerciales o de agencia
 Si compartís, publicás o enseñás este sistema públicamente, por favor da el crédito apropiado: mencionando a **Leo Baraldi** y enlazando a este repositorio.
 
 ---
-*Framework Baraldi v2.9.0 · Desarrollado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.13.0 · Desarrollado y mantenido por Leo Baraldi.*

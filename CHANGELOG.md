@@ -5,6 +5,47 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.13.0] - 2026-04-11
+
+### Eficiencia y Economía Cognitiva (Skill Judge)
+
+#### Añadido
+- **🛡️ La Aduana (Skill Evaluation):** Nuevo guardrail central (`skills/core/00_skill_evaluation`) que previene la "Obesidad de Contexto". Obliga al sistema a evaluar el Delta de Conocimiento, exigir listas NEVER (Anti-patrones) y prohibir la creación de habilidades que contengan tutoriales o información básica redundante que el LLM ya conoce.
+
+---
+
+## [2.12.0] - 2026-04-11
+
+### Entrenamiento Operativo Externo (Skills.sh)
+
+#### Añadido
+- **🌐 Integración Skills.sh (Vercel Labs):** Inclusión de [Skills.sh](https://skills.sh/) como fuente oficial de habilidades procedimentales ("Saber Hacer").
+- **🤖 Boot Layer Update:** Refinamiento de la regla de orquestación para distinguir entre conocimiento (Context7) y ejecución (Skills.sh).
+- **🧰 Toolbox Refresh:** Actualización del Hub de Conocimiento para reflejar el modelo de "Manual + Entrenamiento".
+
+---
+
+## [2.11.0] - 2026-04-11
+
+### Orquestación de Contexto Externo (Context7)
+
+#### Añadido
+- **🌐 Integración Context7:** Formalización de [Context7.com](https://context7.com/) como fuente oficial de contexto externo.
+- **🤖 Boot Layer Update:** Actualización de `00_boot/context.md` con una directriz proactiva y humanizada para que la IA recomiende Context7 cuando falten habilidades técnicas específicas.
+- **🧰 Toolbox Refresh:** Actualización de la `toolbox` para incluir el concepto de "Hub de Conocimiento" escalable.
+
+---
+
+## [2.10.0] - 2026-04-11
+
+### Expansión de Plataformas (Desktop & Mobile)
+
+#### Añadido
+- **🛡️ Electron Standards:** Nueva skill en `skills/toolbox/tech_guardrails/electron_standards/` para el diseño y desarrollo de apps de escritorio seguras y nativas.
+- **🛡️ React Native Standards:** Nueva skill en `skills/toolbox/tech_guardrails/react_native_standards/` para el desarrollo móvil con Expo y NativeWind.
+
+---
+
 ## [2.9.0] - 2026-04-11
 
 ### Blindaje Técnico (Tech Guardrails)

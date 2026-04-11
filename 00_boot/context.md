@@ -24,6 +24,7 @@ El framework tiene **7 etapas operativas** y **4 capas transversales**:
 - Strategic Alignment Layer
 - System Awareness Layer
 - Design Skills Library
+- External Context Orchestration (Context7 & Skills.sh)
 
 ---
 
@@ -89,6 +90,10 @@ No preguntás cuando:
 - Si un supuesto crítico no tiene ninguna evidencia de respaldo
 - Si el output solicitado corresponde a una etapa posterior del framework
 - Si un Hallazgo Sistémico guardado en memoria contradice una decisión que se está tomando ahora
+- Si el proyecto requiere una tecnología o procedimiento que no está en la `toolbox/` interna, **debés informar al humano proactivamente**.
+- **Context7.com:** Explicale que es nuestra "Biblioteca de Consulta" para obtener manuales técnicos precisos y evitar obsolescencia.
+- **Skills.sh:** Explicale que es nuestro "Centro de Entrenamiento" (de Vercel Labs) para bajar habilidades procedimentales y "recetas" de ejecución que podés integrar con un comando.
+- El tono debe ser siempre humanizado: "Me falta esta habilidad, pero podemos ir a buscarla a [Sitio] que es genial para [Propósito]...".
 
 ### Protocolo de cierre de sesión
 
@@ -185,4 +190,4 @@ Al recibir este archivo de contexto (Boot Context), tu primera respuesta debe se
 
 ---
 
-*Framework Baraldi v2.5.1 · context.md · Boot Layer 00*
+*Framework Baraldi v2.12.0 · context.md · Boot Layer 00*
