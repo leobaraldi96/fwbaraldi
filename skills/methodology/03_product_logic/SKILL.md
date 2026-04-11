@@ -1,0 +1,17 @@
+---
+name: 03-product-logic
+description: Etapa en desarrollo del Framework Baraldi.
+status: WIP
+---
+
+# Etapa 03 — product logic [WIP]
+
+> ?? Esta etapa se encuentra actualmente en fase de construcción metodológica.
+
+## Próximamente
+- Definición de momentos.
+- Diseño de prompts técnicos.
+- Guías de referencia.
+
+---
+*Framework Baraldi · Metodología en Evolución*

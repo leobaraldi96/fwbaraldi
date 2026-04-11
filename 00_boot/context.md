@@ -56,7 +56,7 @@ Antes de hacer cualquier otra cosa, definir la carpeta donde se guardarán únic
 0. **[MEMORIA Y GUARDRAILS — Paso 0]** 
    - **Memoria Global:** Llamar `mem_context(project="baraldi-framework", limit=20)` y luego `mem_search(query="[nombre del proyecto]", project="baraldi-framework")`. El conocimiento histórico y estado reside en Engram.
    - **Memoria de Proyecto (Backlog):** Revisa visualmente los archivos de la carpeta de salida (ej. con listado de directorios). Si existe el archivo `00_Backlog_Estrategico.md`, léelo y saluda al humano resumiendo MUY brevemente la cantidad de pendientes ("Tenemos X items pendientes categorizados").
-   - **Disciplina:** Cargar la skill `skills/00_core_guardrails/SKILL.md`. Estas son tus "Barandas de Contención" (Docs-Alignment, Naming, Pureza, Backlog). Debes seguirlas como instintos básicos.
+   - **Disciplina:** Cargar la skill `skills/core/00_core_guardrails/SKILL.md`. Estas son tus "Barandas de Contención" (Docs-Alignment, Naming, Pureza, Backlog). Debes seguirlas como instintos básicos.
 1. **Identificá en qué etapa del framework estás consultando.** Si es un proyecto nuevo, iniciá en Etapa 01.
 2. **Verificá que tenés el input necesario.** 
 Si falta información crítica, pedila antes de ejecutar. No asumas.
@@ -114,7 +114,7 @@ Antes de declarar que la sesión o etapa terminó:
 **Regla estricta para Tablas Markdown:**
 Si debes generar una tabla, es **absolutamente obligatorio** que la fila separadora coincida analíticamente con las columnas de la cabecera (ej: si hay 8 columnas en la cabecera, debe haber exactamente 8 `|---|` en la fila separadora). Las discrepancias rompen el renderizado visual de la tabla en la interfaz.
 
-**Reglas de Calidad y Salida:** Consulta siempre `skills/00_core_guardrails/SKILL.md` para las directivas de **Nomenclatura Semántica** y **Alineación de Documentación**. 
+**Reglas de Calidad y Salida:** Consulta siempre `skills/core/00_core_guardrails/SKILL.md` para las directivas de **Nomenclatura Semántica** y **Alineación de Documentación**. 
 
 **Siempre** incluís al final de cada documento:
 - La etapa del framework a la que pertenece
@@ -143,7 +143,7 @@ Si debes generar una tabla, es **absolutamente obligatorio** que la fila separad
 - **No usás etiquetas de sistema** o códigos internos al hablar con el usuario (ej. `[SKILL B1]`).
 - **No cerrás una sesión** sin ejecutar el Protocolo de Cierre (Engram).
 - **No guardás datos privados** en la memoria compartida.
-- **Arquitectura Cero-Copia y Disciplina:** Delegada a `skills/00_core_guardrails/SKILL.md`.
+- **Arquitectura Cero-Copia y Disciplina:** Delegada a `skills/core/00_core_guardrails/SKILL.md`.
 
 ---
 

@@ -5,6 +5,16 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.6.1] - 2026-04-11
+
+### Arquitectura de 3 Capas (Core, Methodology, Toolbox)
+
+#### Cambiado
+- **Refactor de Estructura de Skills:** Reubicación de todas las habilidades en subdirectorios categorizados por propósito (`skills/core/`, `skills/methodology/`, `skills/toolbox/`). Esto previene el desorden entre etapas lineales y herramientas transversales.
+- **Sincronización de Rutas:** Actualizadas todas las referencias internas en el `00_boot/context.md` para apuntar a las nuevas ubicaciones.
+
+---
+
 ## [2.6.0] - 2026-04-11
 
 ### Visión Estratégica y Disciplina Operativa (Simbiosis Cognitiva)

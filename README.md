@@ -4,7 +4,7 @@
 >
 > Un framework metodológico diseñado para potenciar el diseño de productos digitales utilizando Inteligencia Artificial como copiloto estratégico en todas las etapas del proceso.
 
-![Version](https://img.shields.io/badge/version-2.6.0-blue)
+![Version](https://img.shields.io/badge/version-2.6.1-blue)
 ![Status](https://img.shields.io/badge/status-active-success)
 
 ---
@@ -123,28 +123,21 @@ fwbaraldi/
 │   └── context.md                          ← System Orchestrator — cargar siempre primero
 │
 ├── skills/
-│   ├── 00_core_guardrails/
-│   │   └── SKILL.md                        ← Guardián de la Metodología (Docs, Naming, Pureza)
+│   ├── core/
+│   │   └── 00_core_guardrails/
+│   │       └── SKILL.md                    ← Guardián de la Metodología (Docs, Naming, Pureza)
 │   │
-│   ├── 01_problem_framing/
-│   │   ├── SKILL.md                        ← Punto de entrada de la etapa
-│   │   ├── prompts/
-│   │   │   ├── momento_1_vision.md
-│   │   │   ├── momento_feedback_metodologia.md
-│   │   │   ├── momento_2_live_assistant.md
-│   │   │   └── momento_3_cierre.md
-│   │   └── references/
-│   │       ├── benchmark_guide.md          ← Guía completa de benchmark (6 secciones)
-│   │       └── research_methods_guide.md   ← Métodos de recolección de datos
+│   ├── methodology/
+│   │   ├── 01_problem_framing/             ← Punto de entrada
+│   │   ├── 02_system_analysis/              ← Punto de entrada
+│   │   ├── 03_product_logic/               [WIP]
+│   │   ├── 04_ux_experience/               [WIP]
+│   │   ├── 05_ui_design/                   [WIP]
+│   │   ├── 06_implementation/              [WIP]
+│   │   └── 07_system_reflection/            [WIP]
 │   │
-│   └── 02_system_analysis/
-│       ├── SKILL.md                        ← Punto de entrada de la etapa 2
-│       ├── prompts/
-│       │   ├── momento_1_mapeo.md
-│       │   ├── momento_2_dependencias.md
-│       │   └── momento_3_documentacion.md
-│       └── references/
-│           └── system_mapping_guide.md     ← Guía de mapas sistémicos
+│   └── toolbox/                            ← Herramientas transversales y utilidades
+│       └── SKILL.md
 │
 ├── chat/                                   ← [DEPRECATED] Track legacy para web
 │   ├── etapa01_chat.md                     
@@ -159,7 +152,7 @@ fwbaraldi/
 
 ---
 
-## ⚡ Quick Start / Instalación (v2.6.0)
+## ⚡ Quick Start / Instalación (v2.6.1)
 
 > ⚠️ **IMPORTANTE:** A partir de la versión 2.5.0 (Modelo Cero-Copia), el Framework Baraldi dejó de ser un simple texto para copiar y pegar. Ahora es un **Orquestador Agéntico**. Para usarlo, tu IA debe soportar el uso de herramientas MCP y lectura de carpetas locales (Ej: **Antigravity de Google, Claude Code, Cursor, Windsurf**, etc.).
 
@@ -206,4 +199,4 @@ Podés usarlo **GRATIS** para tus proyectos personales, comerciales o de agencia
 Si compartís, publicás o enseñás este sistema públicamente, por favor da el crédito apropiado: mencionando a **Leo Baraldi** y enlazando a este repositorio.
 
 ---
-*Framework Baraldi v2.6.0 · Desarrollado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.6.1 · Desarrollado y mantenido por Leo Baraldi.*
