@@ -5,6 +5,42 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.9.0] - 2026-04-11
+
+### Blindaje Técnico (Tech Guardrails)
+
+#### Añadido
+- **🛡️ Technical Guardrails Group:** Nueva subcarpeta en `skills/toolbox/tech_guardrails/` con estándares expertos para prevenir obsolescencia:
+  - **Next.js 15 Standards:** Forzando App Router, Server Actions y fetching moderno.
+  - **Tailwind 4 Standards:** Reglas de estilización semántica vinculadas al ADN visual Baraldi.
+  - **Jira Strategic Tasks:** Protocolo de puentes entre Producto e IT (Parent/Child structure).
+
+---
+
+## [2.8.0] - 2026-04-11
+
+### Identidad Visual y ADN Baraldi (Modernismo Tech)
+
+#### Añadido
+- **🧬 Baraldi Visual Identity Skill:** Creada nueva habilidad en `skills/toolbox/baraldi_visual_identity/`.
+  - Captura los tokens de diseño reales del sitio oficial (Gris Grafito `#383635`, Verde Esmeralda `#4EEDB9`, Púrpura `#600DFF`).
+  - Integra la filosofía de diseño de **Paul Rand** ( Modernismo, asimetría, rigor geométrico y tipografía Bold Condensed).
+  - Define reglas de composición para que la IA genere interfaces con el "gusto" y sello personal de Leo Baraldi.
+
+---
+
+## [2.7.0] - 2026-04-11
+
+### Higiene Operativa (Simbiosis Técnica)
+
+#### Añadido
+- **🌱 Framework Operational Hygiene:** Creada nueva skill maestra en `skills/core/00_operational_hygiene/` para dictar cómo el director humano y el orquestador IA mantienen limpio el proyecto:
+  - **Branches Semánticos para Diseño:** `discovery/`, `logic/`, `ux/`, `ui/`.
+  - **Commits Semánticos:** Tipos estandarizados `feat()`, `review()`, `docs()`, `chore()`.
+  - **Deep Review Protocol:** Auditoría de trazabilidad y edge-cases forzada antes de avanzar etapas.
+
+---
+
 ## [2.6.1] - 2026-04-11
 
 ### Arquitectura de 3 Capas (Core, Methodology, Toolbox)

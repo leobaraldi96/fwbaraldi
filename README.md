@@ -4,7 +4,7 @@
 >
 > Un framework metodológico diseñado para potenciar el diseño de productos digitales utilizando Inteligencia Artificial como copiloto estratégico en todas las etapas del proceso.
 
-![Version](https://img.shields.io/badge/version-2.6.1-blue)
+![Version](https://img.shields.io/badge/version-2.9.0-blue)
 ![Status](https://img.shields.io/badge/status-active-success)
 
 ---
@@ -124,8 +124,10 @@ fwbaraldi/
 │
 ├── skills/
 │   ├── core/
-│   │   └── 00_core_guardrails/
-│   │       └── SKILL.md                    ← Guardián de la Metodología (Docs, Naming, Pureza)
+│   │   ├── 00_core_guardrails/
+│   │   │   └── SKILL.md                    ← Guardián de la Metodología (Docs, Naming, Pureza)
+│   │   └── 00_operational_hygiene/
+│   │       └── SKILL.md                    ← Protocolo de Branches, Commits Semánticos y Handoff
 │   │
 │   ├── methodology/
 │   │   ├── 01_problem_framing/             ← Punto de entrada
@@ -137,7 +139,12 @@ fwbaraldi/
 │   │   └── 07_system_reflection/            [WIP]
 │   │
 │   └── toolbox/                            ← Herramientas transversales y utilidades
-│       └── SKILL.md
+│       ├── SKILL.md
+│       ├── baraldi_visual_identity/         ← Identidad Visual (Inspiración Paul Rand)
+│       └── tech_guardrails/                 ← Estándares Técnicos Expertos
+│           ├── jira_strategic_tasks/
+│           ├── nextjs_15_standards/
+│           └── tailwind_4_standards/
 │
 ├── chat/                                   ← [DEPRECATED] Track legacy para web
 │   ├── etapa01_chat.md                     
@@ -152,7 +159,7 @@ fwbaraldi/
 
 ---
 
-## ⚡ Quick Start / Instalación (v2.6.1)
+## ⚡ Quick Start / Instalación (v2.9.0)
 
 > ⚠️ **IMPORTANTE:** A partir de la versión 2.5.0 (Modelo Cero-Copia), el Framework Baraldi dejó de ser un simple texto para copiar y pegar. Ahora es un **Orquestador Agéntico**. Para usarlo, tu IA debe soportar el uso de herramientas MCP y lectura de carpetas locales (Ej: **Antigravity de Google, Claude Code, Cursor, Windsurf**, etc.).
 
@@ -199,4 +206,4 @@ Podés usarlo **GRATIS** para tus proyectos personales, comerciales o de agencia
 Si compartís, publicás o enseñás este sistema públicamente, por favor da el crédito apropiado: mencionando a **Leo Baraldi** y enlazando a este repositorio.
 
 ---
-*Framework Baraldi v2.6.1 · Desarrollado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.9.0 · Desarrollado y mantenido por Leo Baraldi.*
