@@ -12,6 +12,7 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 #### Añadido
 - **🌟 North Star y Visión de Ecosistema:** Se formalizó en el `README.md` y `ARQUITECTURA_CORE.md` la visión del Framework Baraldi como un **Ecosistema Simbiótico**, definiendo el "Contrato de Poderes" entre el Humano (Director) y la IA (Orquestador).
 - **🛡️ Capa 00 (Core Guardrails):** Creada la nueva skill `skills/00_core_guardrails/SKILL.md` actuando como "Guardián de la Metodología". Aisla reglas críticas de disciplina (Docs-Alignment, Naming Semántico y Zero-Copy).
+- **📝 Gestión de Backlog Continuo:** Añadida regla de *Scope Creep Management* en los Core Guardrails. Protege la etapa actual capturando proactivamente ideas fuera de alcance en un `00_Backlog_Estrategico.md` categorizado (UX/UI, Deuda Técnica, Negocio). El Agente ahora escanea este backlog al inicializar un proyecto.
 
 #### Cambiado
 - **Refactorización de Identidad (`00_boot/context.md`):** Se delegaron las reglas de nomenclatura y aislamiento de output a la nueva capa de *Guardrails*, dejando el Boot Context más limpio y enfocado exclusivamente en identidad, memoria y orquestación.
