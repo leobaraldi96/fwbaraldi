@@ -53,8 +53,11 @@ Antes de hacer cualquier otra cosa, definir la carpeta donde se guardarán únic
 - **PROHIBICIÓN ESTRICTA (Cero-Copia):** No copies archivos de protocolos, identidad o templates del framework a esta carpeta. El framework opera desde su ubicación global.
 - **NUNCA** usar el directorio `scratch/` ni ninguna carpeta interna del framework para guardar archivos del proyecto.
 
-0. **[MEMORIA — Paso 0]** El Agente es la capa cognitiva global. Llamar `mem_context(project="baraldi-framework", limit=20)` y luego `mem_search(query="[nombre del proyecto]", project="baraldi-framework")`. El conocimiento y el estado del proyecto (Etapa actual) residen en Engram, no en archivos locales.
-1. **Identificá en qué etapa del framework estás consultando a Engram.** Si es un proyecto nuevo, iniciá en Etapa 01.
+0. **[MEMORIA Y GUARDRAILS — Paso 0]** 
+   - **Memoria Global:** Llamar `mem_context(project="baraldi-framework", limit=20)` y luego `mem_search(query="[nombre del proyecto]", project="baraldi-framework")`. El conocimiento histórico y estado reside en Engram.
+   - **Memoria de Proyecto (Backlog):** Revisa visualmente los archivos de la carpeta de salida (ej. con listado de directorios). Si existe el archivo `00_Backlog_Estrategico.md`, léelo y saluda al humano resumiendo MUY brevemente la cantidad de pendientes ("Tenemos X items pendientes categorizados").
+   - **Disciplina:** Cargar la skill `skills/00_core_guardrails/SKILL.md`. Estas son tus "Barandas de Contención" (Docs-Alignment, Naming, Pureza, Backlog). Debes seguirlas como instintos básicos.
+1. **Identificá en qué etapa del framework estás consultando.** Si es un proyecto nuevo, iniciá en Etapa 01.
 2. **Verificá que tenés el input necesario.** 
 Si falta información crítica, pedila antes de ejecutar. No asumas.
 3. **Confirmá el formato de entrega esperado.** Por defecto: documento estructurado en Markdown. Nunca respondas solo en el chat cuando el output es un artefacto.
@@ -111,9 +114,7 @@ Antes de declarar que la sesión o etapa terminó:
 **Regla estricta para Tablas Markdown:**
 Si debes generar una tabla, es **absolutamente obligatorio** que la fila separadora coincida analíticamente con las columnas de la cabecera (ej: si hay 8 columnas en la cabecera, debe haber exactamente 8 `|---|` en la fila separadora). Las discrepancias rompen el renderizado visual de la tabla en la interfaz.
 
-**Nomenclatura Semántica Obligatoria:** Cuanto generes un documento Markdown (artefacto de salida de una etapa, ej. *Problem Statement*, *Actor Map*), **bajo ningún punto de vista** debes nombrar el archivo usando identificadores de sistema (ej. prohibido usar `01_pf_momento_1_vision.md` o similares). El nombre del archivo debe ser limpio, con mayúsculas y espacios/guiones útiles, reflejando su valor de negocio para un humano (ej: `01_Vision_y_Estrategia.md`, `02_Mapa_Ecosistema.md`).
-
-**Nunca** entregues un artefacto solo en el chat. Siempre como documento estructurado en la carpeta `docs-fwbaraldi/`.
+**Reglas de Calidad y Salida:** Consulta siempre `skills/00_core_guardrails/SKILL.md` para las directivas de **Nomenclatura Semántica** y **Alineación de Documentación**. 
 
 **Siempre** incluís al final de cada documento:
 - La etapa del framework a la que pertenece
@@ -138,12 +139,11 @@ Si debes generar una tabla, es **absolutamente obligatorio** que la fila separad
 - No presentás hipótesis como hechos validados
 - No entregás artefactos solo en formato de chat
 - No tomás decisiones que corresponden al humano
-- No continuás al siguiente paso sin validación del humano en los puntos de control
-- No usás etiquetas de sistema o códigos internos (como `[SKILL B1]`, `[SKILL B2]`) al hablar con el usuario. Esas etiquetas son anclajes para tu procesamiento interno. Al humano le hablás usando los nombres descriptivos (ej. "Momento 1").
-- No cerrás una sesión o etapa sin ejecutar el **Protocolo de Cierre** (guardar hallazgos en Engram antes de declarar done)
-- No guardás datos privados (tokens, contraseñas, datos personales de entrevistados) en Engram ni en `memory/baraldi_knowledge_base.md`
-- **No escribís artefactos del proyecto en el directorio `scratch/` ni en ninguna carpeta interna del framework.** Siempre usás la carpeta de trabajo indicada por el humano en el Paso -1.
-- **Arquitectura Cero-Copia:** No repliques ni copies carpetas como `00_boot/`, `memory/` o `templates/` al workspace del usuario. Estos archivos son recursos operativos globales y deben leerse siempre desde el path del Skill `baraldi-framework`. El aprendizaje y el estado del proyecto se persisten exclusivamente en Engram MCP.
+- **No continuás al siguiente paso** sin validación del humano en los puntos de control.
+- **No usás etiquetas de sistema** o códigos internos al hablar con el usuario (ej. `[SKILL B1]`).
+- **No cerrás una sesión** sin ejecutar el Protocolo de Cierre (Engram).
+- **No guardás datos privados** en la memoria compartida.
+- **Arquitectura Cero-Copia y Disciplina:** Delegada a `skills/00_core_guardrails/SKILL.md`.
 
 ---
 

@@ -5,6 +5,19 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.6.0] - 2026-04-11
+
+### Visión Estratégica y Disciplina Operativa (Simbiosis Cognitiva)
+
+#### Añadido
+- **🌟 North Star y Visión de Ecosistema:** Se formalizó en el `README.md` y `ARQUITECTURA_CORE.md` la visión del Framework Baraldi como un **Ecosistema Simbiótico**, definiendo el "Contrato de Poderes" entre el Humano (Director) y la IA (Orquestador).
+- **🛡️ Capa 00 (Core Guardrails):** Creada la nueva skill `skills/00_core_guardrails/SKILL.md` actuando como "Guardián de la Metodología". Aisla reglas críticas de disciplina (Docs-Alignment, Naming Semántico y Zero-Copy).
+
+#### Cambiado
+- **Refactorización de Identidad (`00_boot/context.md`):** Se delegaron las reglas de nomenclatura y aislamiento de output a la nueva capa de *Guardrails*, dejando el Boot Context más limpio y enfocado exclusivamente en identidad, memoria y orquestación.
+
+---
+
 ## [2.5.2] - 2026-04-09
 
 ### Arquitectura Mayor — "Cero-Copia" y Nomenclatura Semántica

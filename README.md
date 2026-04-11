@@ -4,8 +4,28 @@
 >
 > Un framework metodológico diseñado para potenciar el diseño de productos digitales utilizando Inteligencia Artificial como copiloto estratégico en todas las etapas del proceso.
 
-![Version](https://img.shields.io/badge/version-2.3.3-blue)
+![Version](https://img.shields.io/badge/version-2.6.0-blue)
 ![Status](https://img.shields.io/badge/status-active-success)
+
+---
+
+## 🌟 Nuestra North Star
+
+Liderar la era de la **Simbiosis Cognitiva**, donde la **intuición y empatía humana** dirigen la visión del producto, mientras que el **rigor metodológico y la memoria sistémica** de la IA actúan como guardianes de la evidencia, asegurando productos de alto impacto que funcionan en el mundo real, no solo en un Figma.
+
+---
+
+## 🌐 Un Ecosistema Simbiótico
+
+El Framework Baraldi ha evolucionado de ser una colección de prompts a convertirse en un **Ecosistema Agéntico**. No buscamos automatizar al diseñador, sino potenciarlo mediante una relación de equilibrio de poderes: una simbiosis donde cada parte aporta lo que la otra no puede.
+
+> [!TIP]
+> ### 🤝 El Contrato de Poderes
+> 
+| Rol | Responsabilidad | Aporte al Ecosistema |
+| :--- | :--- | :--- |
+| **Humano (Director)** | Intuición, Ética, Empatía y Visión de Negocio. | El "Para Qué" y el Sabor Único del producto. |
+| **IA (Orquestador)** | Estructura, Memoria Sistémica, Lógica y Rigor Dogmático. | El "Cómo", la Consistencia y la Protección contra Sesgos. |
 
 ---
 
@@ -103,6 +123,9 @@ fwbaraldi/
 │   └── context.md                          ← System Orchestrator — cargar siempre primero
 │
 ├── skills/
+│   ├── 00_core_guardrails/
+│   │   └── SKILL.md                        ← Guardián de la Metodología (Docs, Naming, Pureza)
+│   │
 │   ├── 01_problem_framing/
 │   │   ├── SKILL.md                        ← Punto de entrada de la etapa
 │   │   ├── prompts/
@@ -136,7 +159,7 @@ fwbaraldi/
 
 ---
 
-## ⚡ Quick Start / Instalación (v2.5.2)
+## ⚡ Quick Start / Instalación (v2.6.0)
 
 > ⚠️ **IMPORTANTE:** A partir de la versión 2.5.0 (Modelo Cero-Copia), el Framework Baraldi dejó de ser un simple texto para copiar y pegar. Ahora es un **Orquestador Agéntico**. Para usarlo, tu IA debe soportar el uso de herramientas MCP y lectura de carpetas locales (Ej: **Antigravity de Google, Claude Code, Cursor, Windsurf**, etc.).
 
@@ -183,4 +206,4 @@ Podés usarlo **GRATIS** para tus proyectos personales, comerciales o de agencia
 Si compartís, publicás o enseñás este sistema públicamente, por favor da el crédito apropiado: mencionando a **Leo Baraldi** y enlazando a este repositorio.
 
 ---
-*Desarrollado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.6.0 · Desarrollado y mantenido por Leo Baraldi.*

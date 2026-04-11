@@ -1,15 +1,17 @@
 # Arquitectura Core del Framework Baraldi
 
-> Este documento detalla la estructura lógica, la arquitectura tecnológica y el ciclo de vida de adopción del **Framework Baraldi** (v2.5.2+). Está diseñado para ayudar a ingenieros, diseñadores de producto y stakeholders a comprender cómo opera el framework a nivel sistémico.
+> Este documento detalla la estructura lógica, la arquitectura tecnológica y el ciclo de vida de adopción del **Framework Baraldi** (v2.5.2+). El framework ya no es solo una metodología táctica; ha evolucionado hacia un **Ecosistema Simbiótico de Diseño** donde la infraestructura tecnológica y la maestría humana convergen.
 
 ---
 
 ## 1. La Propuesta de Valor (El "Por qué")
 
-### LLM como Chat vs. LLM como Orquestador
-La interacción típica con la IA es un entorno transaccional (pregunta-respuesta) donde el contexto se pierde o se satura rápidamente. Entramos, dictamos tareas tácticas ("hazme este diseño", "escribe este código") y generamos soluciones sin validar las raíces del problema.
+### De Herramienta Táctica a Ecosistema Simbiótico
+La interacción típica con la IA es un entorno transaccional (pregunta-respuesta) donde el contexto se pierde o se satura rápidamente. El **Framework Baraldi** rompe este paradigma transformando a la IA de un "chat táctico" a un **Orquestador de Producto Sistémico**.
 
-El **Framework Baraldi** transforma a la IA de un "chat táctico" a un **Orquestador de Producto Sistémico**. 
+Este ecosistema se basa en la **Simbiosis Cognitiva**:
+- El humano aporta el contexto ético, la intuición y la brújula estratégica.
+- La IA aporta el rigor dogmático, la memoria de largo plazo y la capacidad de análisis sistémico.
 - Obliga a pasar por etapas de **divergencia y diagnóstico** antes de programar una sola línea de código.
 - Aisla las decisiones (Problema → Entorno → Lógica → Interfaz) impidiendo la mezcla riesgosa de diagnóstico con solución.
 - Genera y documenta evidencia real para sostener la construcción técnica y comercial del producto.
