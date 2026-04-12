@@ -39,8 +39,11 @@ status: complete
 ## Flujo de la etapa — 4 momentos en secuencia
 
 ```
-Contexto inicial del proyecto
+[MOMENTO 0] Anuncio e Intake de Proyecto
         ↓
+  Validar inputs suficientes?
+  ├── NO → solicitar info faltante
+  └── SÍ ↓
 [MOMENTO 1] Visión y Amplificación de Campo
         ↓
   IF outputs alineados?
@@ -56,36 +59,41 @@ Contexto inicial del proyecto
         ↓
 [MOMENTO 3] Evaluación de Cierre
         ↓
-  Outcomes validados con evidencia real
+  Informe de Cierre + Protocolo de Ubicación Sistémica
         ↓
       Etapa 02
 ```
 
 ---
 
-## Los 4 momentos — cuándo activar cada uno
+## Los 5 momentos — cuándo activar cada uno
+
+### Momento 0 — Anuncio e Intake de Proyecto
+**Archivo:** `skills/momento_0_anuncio.md`
+**Activar cuando:** El humano menciona que quiere iniciar un proyecto, la etapa 01 o escribe "arrancamos".
+**Produce:** Bienvenida humanizada, explicación de objetivos y solicitud de 5 inputs clave (Intake).
 
 ### Momento 1 — Visión y Amplificación de Campo
-**Archivo:** `prompts/momento_1_vision.md`
+**Archivo:** `skills/momento_1_vision.md`
 **Activar cuando:** El humano provee el contexto inicial del proyecto.
 **Produce:** 5 artefactos — Problem Statement, Opportunity Map, Stakeholder Map, Success Metrics, Outcome Definition.
 **Regla clave:** Mostrar siempre el proceso de divergencia antes del output. Nunca saltear.
 
 ### Momento Feedback — Metodología y Soportes
-**Archivo:** `prompts/momento_feedback_metodologia.md`
+**Archivo:** `skills/momento_feedback_metodologia.md`
 **Referencia benchmark:** `references/benchmark_guide.md`
 **Activar cuando:** El humano aprueba los artefactos del Momento 1 y escribe "Solicitud continuar".
 **Produce:** Plan de metodología + guión de entrevistas + informe de benchmark (6 secciones) + base de datos de entrevistados.
 **Regla clave:** El benchmark es un informe completo de 6 secciones. Leer `references/benchmark_guide.md` antes de ejecutarlo.
 
 ### Momento 2 — IA Auxiliar / Asistente on Vivo
-**Archivo:** `prompts/momento_2_live_assistant.md`
+**Archivo:** `skills/momento_2_live_assistant.md`
 **Activar cuando:** El humano aprueba los soportes y está listo para ejecutar entrevistas.
 **Produce:** Briefs por entrevistado, notas estructuradas en tiempo real, informe de research completo.
 **Regla clave:** Marcar evidencia con `[CONFIRMA H1]`, `[REFUTA H2]`, `[NUEVO INSIGHT]`. Nunca sacar conclusiones estratégicas durante el research.
 
 ### Momento 3 — Evaluación de Cierre
-**Archivo:** `prompts/momento_3_cierre.md`
+**Archivo:** `skills/momento_3_cierre.md`
 **Activar cuando:** El humano aprueba el Informe de Research y declara cierre de recolección.
 **Produce:** Informe de Cierre con recomendación: avanzar / iterar / pivotar.
 **Regla clave:** Ejecutar los 4 pasos visibles siempre. La honestidad del informe es no negociable.
@@ -149,8 +157,11 @@ Contexto inicial del proyecto
 - Momento 2 → Eje: `pf-insight-principal` (tipo: `validación`)
 - Momento 3 → Eje: `pf-decision-cierre` (tipo: `cierre-de-etapa`)
 
-**Al cerrar la etapa:** Ejecutar el Protocolo de Cierre de Sesión del `00_boot/context.md`.
+**Al cerrar la etapa:** 
+1. Ejecutar el Protocolo de Cierre de Ubicación Sistémica del `00_boot/context.md`.
+2. Mostrar Mapa de Progreso: `✅ 01 Problem Framing | 🚧 02 System Analysis | 🔲 03 Product Logic`.
+3. Ejecutar el Protocolo de Cierre de Sesión del `00_boot/context.md`.
 
 ---
 
-*Framework Baraldi v2.5.2 · skills/01_problem_framing/SKILL.md*
+*Framework Baraldi v2.14.0 · skills/01_problem_framing/SKILL.md*

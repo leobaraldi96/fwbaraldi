@@ -11,8 +11,12 @@
 
 ## 🌟 Nuestra North Star
 
-Liderar la era de la **Simbiosis Cognitiva**, donde la **intuición y empatía humana** dirigen la visión del producto, mientras que el **rigor metodológico y la memoria sistémica** de la IA actúan como guardianes de la evidencia, asegurando productos de alto impacto que funcionan en el mundo real, no solo en un Figma.
+Liderar la era de la **Simbiosis Cognitiva**, un espacio de trabajo colaborativo donde la tecnología no reemplaza la consciencia humana, sino que la potencia en absoluta sintonía. Construimos productos de alto impacto en el mundo real, guiados por los siguientes principios fundacionales:
 
+*   **Intencionalidad (Originados en el Humano):** No diseñamos cosas "porque sí". Somos plenamente conscientes de qué hacemos, cómo y para qué lo hacemos. Como humanos, aportamos la empatía, trazamos la estrategia y definimos el plan. Somos personas diseñando para personas.
+*   **Amplificación, no Omnisciencia:** No pretendemos ser expertos en todos los territorios. En cambio, usamos a la IA para expandir nuestro campo de visión, permitiéndonos profundizar y reflexionar a partir de las preguntas correctas.
+*   **Hermandad Sistémica:** La IA es nuestro amplificador cognitivo. Trabaja en sincronía con el diseñador, asumiendo la carga operativa y velando por el rigor de la evidencia.
+*   **Espacio para el Aprendizaje:** Al liberarnos de la ejecución mecánica, ganamos el espacio mental necesario para la reflexión pura. En este ecosistema, la IA no es solo un asistente, es un conducto directo hacia el aprendizaje y la innovación humana.
 ---
 
 ## 🌐 Un Ecosistema Simbiótico
@@ -134,8 +138,16 @@ fwbaraldi/
 │   │       └── SKILL.md                    ← La "Aduana": Filtro anti-obesidad cognitiva (Skill Judge)
 │   │
 │   ├── methodology/
-│   │   ├── 01_problem_framing/             ← Punto de entrada
-│   │   ├── 02_system_analysis/              ← Punto de entrada
+│   │   ├── 01_problem_framing/
+│   │   │   ├── SKILL.md                    ← Orquestador de la etapa
+│   │   │   ├── skills/                     ← Instrucciones operativas (Momentos)
+│   │   │   └── references/                 ← Guías y benchmarks
+│   │   │
+│   │   ├── 02_system_analysis/
+│   │   │   ├── SKILL.md                    ← Orquestador de la etapa
+│   │   │   ├── skills/                     ← Instrucciones operativas (Momentos)
+│   │   │   └── references/                 ← Guías de mapeo
+│   │   │
 │   │   ├── 03_product_logic/               [WIP]
 │   │   ├── 04_ux_experience/               [WIP]
 │   │   ├── 05_ui_design/                   [WIP]

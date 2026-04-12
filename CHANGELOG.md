@@ -5,6 +5,29 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.15.0] - 2026-04-11
+
+### Protocolo de Ubicación Sistémica (Human-First UI)
+
+#### Añadido
+- **👋 Momento 0 (Apertura):** Implementación de una fase de anuncio obligatoria al inicio de cada etapa para orientar al usuario sobre los objetivos y entregables.
+- **📄 Intake de Proyecto:** Nueva interfaz de recolección de datos en la Etapa 01 para facilitar el inicio de proyectos.
+- **🗺️ Cierre Visual:** Protocolo de finalización que muestra un "Mapa de Progreso" para mantener la ubicación del usuario en el sistema.
+- **🤖 Boot Update:** Inyección global de las reglas de anuncio y cierre en `00_boot/context.md`.
+
+---
+
+## [2.14.0] - 2026-04-11
+
+### Evolución Semántica: De "Prompts" a "Skills"
+
+#### Cambiado
+- **📂 Estructura de Etapas:** Renombrando el directorio `prompts/` a `skills/` en todas las etapas metodológicas (01 y 02). 
+- **🧠 Identidad de Orquestación:** Este cambio refleja que cada instrucción operativa no es solo un "pedido" a la IA, sino una **Habilidad** (Competencia) que el framework orquesta.
+- **🔗 Referencias Internas:** Actualización de todos los archivos `SKILL.md` de cada etapa para apuntar a las nuevas rutas.
+
+---
+
 ## [2.13.0] - 2026-04-11
 
 ### Eficiencia y Economía Cognitiva (Skill Judge)

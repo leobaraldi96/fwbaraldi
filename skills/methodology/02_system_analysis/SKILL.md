@@ -47,6 +47,8 @@ No se activa si:
 ```
 Artefactos de Etapa 01 aprobados
         ↓
+[MOMENTO 0] Anuncio y Validación de Bases
+        ↓
 [MOMENTO 1] Mapeo de Actores y Ecosistema
         ↓
   IF sistema suficientemente mapeado?
@@ -56,30 +58,35 @@ Artefactos de Etapa 01 aprobados
         ↓
 [MOMENTO 3] Documentación del Sistema
         ↓
-  System Map validado por el equipo
+  System Map + Protocolo de Ubicación Sistémica
         ↓
       Etapa 03 — Product Logic
 ```
 
 ---
 
-## Los 3 momentos — cuándo activar cada uno
+## Los 4 momentos — cuándo activar cada uno
+
+### Momento 0 — Anuncio y Validación de Bases
+**Archivo:** `skills/momento_0_anuncio.md`
+**Activar cuando:** Se cierra Etapa 01 y se inicia Etapa 02.
+**Produce:** Bienvenida humanizada, objetivos de la etapa y validación del alcance previo.
 
 ### Momento 1 — Mapeo de Actores y Ecosistema
-**Archivo:** `prompts/momento_1_mapeo.md`
+**Archivo:** `skills/momento_1_mapeo.md`
 **Activar cuando:** Se cierra Etapa 01 y se inicia Etapa 02.
 **Produce:** Actor Map Consolidado (Actores Visibles, Invisibles y del Sistema) y solicitudes de stack tecnológico.
 **Regla clave:** Siempre incluir usuarios invisibles (devs, QA, ops, negocio, soporte). Son tan importantes como los usuarios finales.
 
 ### Momento 2 — Análisis de Dependencias y Riesgos
-**Archivo:** `prompts/momento_2_dependencias.md`
+**Archivo:** `skills/momento_2_dependencias.md`
 **Referencia:** `references/system_mapping_guide.md`
 **Activar cuando:** El Actor Map y System Map inicial están aprobados por el equipo.
 **Produce:** Dependency Map, Data Flow Map, Risk Map.
 **Regla clave:** Las dependencias ocultas son más peligrosas que las visibles. Buscar activamente lo que no está documentado.
 
 ### Momento 3 — Documentación del Sistema
-**Archivo:** `prompts/momento_3_documentacion.md`
+**Archivo:** `skills/momento_3_documentacion.md`
 **Activar cuando:** El Dependency Map y Risk Map están completos.
 **Produce:** Architecture Overview, Service Blueprint, documentación técnica lista para Etapa 03.
 **Regla clave:** El output de esta etapa es el input de Product Logic. Si falta algo, Product Logic va a tomar decisiones sobre supuestos — documentar los gaps explícitamente.
@@ -131,8 +138,11 @@ Artefactos de Etapa 01 aprobados
 - Momento 2 → Eje: `sa-riesgos-criticos` (tipo: `riesgo`) y `sa-dependencias-clave` (tipo: `patrón`)
 - Momento 3 → Eje: `sa-decision-cierre` (tipo: `cierre-de-etapa`)
 
-**Al cerrar la etapa:** Ejecutar el Protocolo de Cierre de Sesión del `00_boot/context.md`.
+**Al cerrar la etapa:** 
+1. Ejecutar el Protocolo de Cierre de Ubicación Sistémica del `00_boot/context.md`.
+2. Mostrar Mapa de Progreso: `✅ 01 Problem Framing | ✅ 02 System Analysis | 🚧 03 Product Logic`.
+3. Ejecutar el Protocolo de Cierre de Sesión del `00_boot/context.md`.
 
 ---
 
-*Framework Baraldi v2.5.2 · skills/02_system_analysis/SKILL.md*
+*Framework Baraldi v2.14.0 · skills/02_system_analysis/SKILL.md*
