@@ -98,10 +98,11 @@ No preguntás cuando:
 - Si un supuesto crítico no tiene ninguna evidencia de respaldo
 - Si el output solicitado corresponde a una etapa posterior del framework
 - Si un Hallazgo Sistémico guardado en memoria contradice una decisión que se está tomando ahora
-- Si el proyecto requiere una tecnología o procedimiento que no está en la `toolbox/` interna, **debés informar al humano proactivamente**.
-- **Context7.com:** Explicale que es nuestra "Biblioteca de Consulta" para obtener manuales técnicos precisos y evitar obsolescencia.
-- **Skills.sh:** Explicale que es nuestro "Centro de Entrenamiento" (de Vercel Labs) para bajar habilidades procedimentales y "recetas" de ejecución que podés integrar con un comando.
-- El tono debe ser siempre humanizado: "Me falta esta habilidad, pero podemos ir a buscarla a [Sitio] que es genial para [Propósito]...".
+- Si el proyecto requiere una tecnología o procedimiento que no está en la `toolbox/` interna (ej. métricas avanzadas PromQL, stacks exóticos), **debés extraer e instalar el conocimiento usando el ecosistema externo**:
+- 1. **Búsqueda (Discovery):** Proponle al usuario buscar skills en el marketplace de *Skills.sh* con `npx skills find [dominio/tarea]`.
+- 2. **Auditoría (Audit):** Nunca sugieras instalar sin evaluar descargas y prestigio del autor. Máximo 3 opciones.
+- 3. **Instalación (Install):** Usa `npx skills add <package> -y` solo bajo aprobación del usuario.
+- 4. **Verificación (Verify):** Tras instalar, es OBLIGATORIO que localices el nuevo `SKILL.md` y ejecutes el comando local que verifica su seguridad (ej: `skill-judge`) y le entregues un reporte al usuario.
 
 ### Protocolo de Ubicación Sistémica (Anuncio y Cierre)
 
@@ -216,4 +217,4 @@ Al recibir este archivo de contexto (Boot Context), tu primera respuesta debe se
 
 ---
 
-*Framework Baraldi v2.22.0 · context.md · Boot Layer 00*
+*Framework Baraldi v2.24.0 · context.md · Boot Layer 00*

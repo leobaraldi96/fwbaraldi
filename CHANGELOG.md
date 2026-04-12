@@ -5,6 +5,16 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.24.0] - 2026-04-12
+
+### UXR Synthesis & Orchestrator Meta-Skill
+
+#### Añadido
+- **🧠 UXR Synthesis Expert:** Nuevo guardián enfocado en el análisis sistemático de datos (Thematic Analysis, Affinity Mapping, Opportunity Sizing).
+- **🤖 Orchestrator Meta-Skill:** Inyección de protocolos `npx skills` directamente en el `00_boot/context.md` para enseñar a la IA a buscar, auditar, instalar y verificar habilidades externas (Skill-Judge) de manera autónoma pero segura.
+
+---
+
 ## [2.23.0] - 2026-04-12
 
 ### Expansión de Investigación y Métricas de Producto

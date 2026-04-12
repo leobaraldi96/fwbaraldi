@@ -68,4 +68,4 @@ fwbaraldi/
 - **NUNCA** generes código de implementación sin haber pasado por el diagnóstico sistémico (Etapa 01 y 02).
 
 ---
-*Framework Baraldi v2.23.0 · DOCUMENTACION_IA.md*
+*Framework Baraldi v2.24.0 · DOCUMENTACION_IA.md*
