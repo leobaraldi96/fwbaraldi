@@ -25,7 +25,7 @@ Es el contrato de identidad. Debe cargarse **SIEMPRE primero**. Define las regla
 - **`methodology/`**: Contiene las etapas dogmáticas del diseño (01_Problem_Framing, 02_System_Analysis, etc.). Cada etapa tiene su propio orquestador `SKILL.md`.
 - **`toolbox/`**: Herramientas transversales.
     - `baraldi_visual_identity`: ADN visual (Modernist Tech).
-    - `tech_guardrails/`: Guardianes de calidad (WordPress, Next.js, SEO, UX Writing, Performance, UXR, Service Blueprint, IxD).
+    - `tech_guardrails/`: Guardianes de calidad (WordPress, Next.js, SEO, UX Writing, Performance, UXR, Service Blueprint, IxD, Accessibility).
 
 ### 3. 📂 `core/` (Reglas del Sistema)
 - `00_core_guardrails`: Garantiza el naming semántico y la pureza metodológica.
@@ -69,4 +69,4 @@ fwbaraldi/
 - **NUNCA** generes código de implementación sin haber pasado por el diagnóstico sistémico (Etapa 01 y 02).
 
 ---
-*Framework Baraldi v2.19.1 · DOCUMENTACION_IA.md*
+*Framework Baraldi v2.20.0 · DOCUMENTACION_IA.md*

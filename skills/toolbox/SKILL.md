@@ -18,6 +18,7 @@ Esta carpeta contiene habilidades especializadas que pueden ser invocadas en cua
     *   `tech_guardrails/uxr_scientific_testing/`
     *   `tech_guardrails/product_service_blueprint/`
     *   `tech_guardrails/ixd_multimodal_feedback/`
+    *   `tech_guardrails/accessibility_expert/`
     Estándares expertos de desarrollo (Next.js, Tailwind, etc.).
 
 ## 🌐 Ecosistema de Contexto Externo (Recomendado)

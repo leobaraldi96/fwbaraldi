@@ -5,6 +5,17 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.20.0] - 2026-04-12
+
+### Accesibilidad Pro (WCAG 2.2 Expert)
+
+#### Añadido
+- **♿ Accessibility Expert:** Fusión maestra de guías universales WCAG 2.2 y patrones de implementación avanzados para React/TypeScript.
+- **🧱 Componentes Blindados:** Inclusión de patrones para botones accesibles, Focus Traps y lógica de anuncios de live-regions.
+- **🛡️ Guardrails WCAG 2.2:** Implementación de reglas críticas como Target Size (2.5.8), Focus not obscured (2.4.11) y Redundant Entry (3.3.7).
+
+---
+
 ## [2.19.1] - 2026-04-12
 
 ### Pulido Final de Infraestructura (Toolkit Parity)
