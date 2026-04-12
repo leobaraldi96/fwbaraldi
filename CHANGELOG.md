@@ -5,6 +5,27 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.22.0] - 2026-04-12
+
+### Blindaje de Transparencia y Seguridad
+
+#### Añadido
+- **🛡️ SECURITY.md:** Creación del documento oficial de transparencia, privacidad y políticas de comunicación externa.
+- **🔒 Privacy First Boot:** Actualización del protocolo de inicio con garantías explícitas de "Solo Lectura" en la verificación de versión.
+- **📄 Compromiso Ético:** Formalización de la arquitectura Zero-Data-Collection y local-first (Engram).
+
+---
+
+## [2.21.0] - 2026-04-12
+
+### Sistema de Notificaciones (Boot Alert)
+
+#### Añadido
+- **🔔 Notificador de Actualizaciones:** Implementación del "Paso -2" en el protocolo de Boot. La IA ahora verifica silenciosamente la versión local contra el repositorio oficial de GitHub.
+- **🛡️ Integridad Metodológica:** El sistema alerta proactivamente si existe una versión más reciente, facilitando el comando de actualización manual (`git pull`).
+
+---
+
 ## [2.20.0] - 2026-04-12
 
 ### Accesibilidad Pro (WCAG 2.2 Expert)

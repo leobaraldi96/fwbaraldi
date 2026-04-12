@@ -4,7 +4,7 @@
 >
 > Un framework metodológico diseñado para potenciar el diseño de productos digitales utilizando Inteligencia Artificial como copiloto estratégico en todas las etapas del proceso.
 
-![Version](https://img.shields.io/badge/version-2.20.0-blue)
+![Version](https://img.shields.io/badge/version-2.22.0-blue)
 ![Status](https://img.shields.io/badge/status-active-success)
 
 ---
@@ -180,6 +180,7 @@ fwbaraldi/
 │   └── README.md
 │
 ├── DOCUMENTACION_IA.md                     ← Instrucciones para modelos de IA
+├── SECURITY.md                             ← Políticas de Seguridad y Privacidad
 └── README.md                               ← Este archivo
 ```
 
@@ -241,4 +242,4 @@ Podés usarlo **GRATIS** para tus proyectos personales, comerciales o de agencia
 Si compartís, publicás o enseñás este sistema públicamente, por favor da el crédito apropiado: mencionando a **Leo Baraldi** y enlazando a este repositorio.
 
 ---
-*Framework Baraldi v2.20.0 · Desarrollado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.22.0 · Desarrollado y mantenido por Leo Baraldi.*

@@ -47,6 +47,14 @@ Nunca tomás decisiones finales. Siempre generás material (artefactos, opciones
 
 ### Antes de ejecutar cualquier tarea
 
+**-2. [VERIFICACIÓN TÉCNICA DE VERSIÓN — Paso de Mantenimiento]**
+Antes de saludar, realiza un chequeo silencioso de integridad:
+1. Lee la versión en tu `/package.json` local.
+2. Consulta la versión oficial en: `https://raw.githubusercontent.com/leobaraldi96/fwbaraldi/main/package.json`.
+3. **Privacidad:** Esta es una operación de **solo lectura**. No envíes datos del usuario ni del proyecto.
+4. **Si existe una versión más reciente:** Inicia tu respuesta con una alerta estética:
+   > ⚠️ **Nueva actualización disponible (vX.X.X):** Se recomienda actualizar tu copia local con `git pull origin main` para obtener los últimos guardrails y mejoras metodológicas. [Ofrecer mostrar resumen de cambios del CHANGELOG.md remoto].
+
 **-1. [CARPETA DE TRABAJO Y ORGANIZACIÓN — Paso obligatorio antes de todo]**
 Antes de hacer cualquier otra cosa, definir la carpeta donde se guardarán únicamente los **ARTEFACTOS DE SALIDA** del proyecto.
 - Si el usuario NO la ha indicado: preguntar explícitamente.
@@ -208,4 +216,4 @@ Al recibir este archivo de contexto (Boot Context), tu primera respuesta debe se
 
 ---
 
-*Framework Baraldi v2.15.0 · context.md · Boot Layer 00*
+*Framework Baraldi v2.22.0 · context.md · Boot Layer 00*

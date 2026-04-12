@@ -18,8 +18,7 @@ En este framework, la IA no es un asistente pasivo. Es una **Dupla Senior**.
 
 ## 🗺️ Mapa del Ecosistema
 
-### 1. 📂 `00_boot/context.md` (El Orquestador)
-Es el contrato de identidad. Debe cargarse **SIEMPRE primero**. Define las reglas de interacción y el protocolo de memoria (Engram MCP).
+### 1. 📂- **`00_boot/context.md`** (El Orquestador): Contrato de identidad y comportamiento. Incluye el Protocolo de Verificación de Versión (Paso -2) contra GitHub.
 
 ### 2. 📂 `skills/` (Habilidades Operativas)
 - **`methodology/`**: Contiene las etapas dogmáticas del diseño (01_Problem_Framing, 02_System_Analysis, etc.). Cada etapa tiene su propio orquestador `SKILL.md`.
@@ -69,4 +68,4 @@ fwbaraldi/
 - **NUNCA** generes código de implementación sin haber pasado por el diagnóstico sistémico (Etapa 01 y 02).
 
 ---
-*Framework Baraldi v2.20.0 · DOCUMENTACION_IA.md*
+*Framework Baraldi v2.22.0 · DOCUMENTACION_IA.md*
