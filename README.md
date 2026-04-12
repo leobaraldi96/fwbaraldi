@@ -63,9 +63,9 @@ No deviene de un solo modelo. Es una síntesis crítica de varios referentes met
 
 Ninguno de los frameworks anteriores tiene estas tres características juntas:
 
-1. **IA como capa cognitiva, no como herramienta**: No es "usá Midjourney para hacer mockups más rápido". Es un modelo orquestado de **cuándo el humano dirige y cuándo la IA ejecuta** en cada momento exacto del proceso. Eso no existe en ningún framework anterior porque, tecnológicamente, no podía existir.
-2. **Experiencia implementada como principio fundacional**: El diseño no termina en el handoff de Figma. Termina cuando la experiencia funciona y aporta valor en producción. Eso redefine el rol del diseñador de forma radical, y ningún framework clásico lo enuncia explícitamente como su meta.
-3. **El problema del nivel de madurez resuelto con estructura**: El diseñador académico conoce los modelos teóricos pero no sabe cómo adaptarlos a la velocidad actual. El senior experimentado sabe qué hacer de forma empírica pero no tiene un modelo que lo sostenga estructuradamente. El Framework Baraldi **le da al académico la experiencia embebida en el proceso, y al senior le da el modelo que le faltaba**.
+1. **IA como capa cognitiva, no como herramienta**: No es "usá Midjourney para hacer mockups más rápido". Es un modelo orquestado de **cuándo el humano dirige y cuándo la IA ejecuta** en cada momento exacto del proceso.
+2. **Experiencia implementada como principio fundacional**: El diseño no termina en el handoff. Termina cuando la experiencia funciona y aporta valor en producción. Eso redefine el rol del diseñador de forma radical, y lo enuncia explícitamente como su meta.
+3. **El problema del nivel de madurez resuelto con estructura**: El diseñador académico conoce los modelos teóricos pero no sabe cómo adaptarlos a la velocidad actual. El senior experimentado sabe qué hacer de forma empírica pero no tiene un modelo que lo sostenga estructuradamente. El Framework **le da al académico la experiencia embebida en el proceso, y al senior le da el modelo que le faltaba**.
 
 ---
 
@@ -84,7 +84,7 @@ Ninguno de los frameworks anteriores tiene estas tres características juntas:
 
 ## 🧠 Sistema de Memoria Global (Engram MCP)
 
-El Framework Baraldi delega la retención de conocimiento a través de sesiones y proyectos utilizando [Engram](https://github.com/Gentleman-Programming/engram), un motor de base de datos SQLite persistente expuesto como servidor MCP.
+El Framework delega la retención de conocimiento a través de sesiones y proyectos utilizando [Engram](https://github.com/Gentleman-Programming/engram), un motor de base de datos SQLite persistente expuesto como servidor MCP.
 
 A diferencia del pasado donde te perdías el contexto entre chats, el Agente utiliza estas herramientas internamente de forma automática en cada inicio y cierre, pero **también puedes solicitárselas explícitamente en el chat**:
 
