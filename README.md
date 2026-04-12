@@ -246,4 +246,16 @@ Podés usarlo **GRATIS** para tus proyectos personales, comerciales o de agencia
 Si compartís, publicás o enseñás este sistema públicamente, por favor da el crédito apropiado: mencionando a **Leo Baraldi** y enlazando a este repositorio.
 
 ---
+
+## 📩 Contacto
+
+**Leo Baraldi** — *Senior UX Product Designer*
+
+- 💼 **LinkedIn:** [leobaraldi](https://www.linkedin.com/in/leobaraldi/)
+- 🌐 **Web:** [leobaraldi.com.ar](https://leobaraldi.com.ar/)
+- 📧 **Email:** [leobaraldi96@gmail.com](mailto:leobaraldi96@gmail.com)
+
+---
+
+---
 *Framework Baraldi v2.24.0 · Desarrollado y mantenido por Leo Baraldi.*
