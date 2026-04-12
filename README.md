@@ -190,7 +190,7 @@ fwbaraldi/
 
 ---
 
-## ⚡ Quick Start / Instalación (v2.13.0)
+## ⚡ Quick Start / Instalación (v2.24.0)
 
 > ⚠️ **IMPORTANTE:** A partir de la versión 2.5.0 (Modelo Cero-Copia), el Framework Baraldi dejó de ser un simple texto para copiar y pegar. Ahora es un **Orquestador Agéntico**. Para usarlo, tu IA debe soportar el uso de herramientas MCP y lectura de carpetas locales (Ej: **Antigravity de Google, Claude Code, Cursor, Windsurf**, etc.).
 

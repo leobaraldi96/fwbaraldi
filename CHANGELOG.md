@@ -12,6 +12,7 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 #### Añadido
 - **🧠 UXR Synthesis Expert:** Nuevo guardián enfocado en el análisis sistemático de datos (Thematic Analysis, Affinity Mapping, Opportunity Sizing).
 - **🤖 Orchestrator Meta-Skill:** Inyección de protocolos `npx skills` directamente en el `00_boot/context.md` para enseñar a la IA a buscar, auditar, instalar y verificar habilidades externas (Skill-Judge) de manera autónoma pero segura.
+- **🌟 North Star & Manifesto:** Actualización del README con los principios fundacionales de Simbiosis Cognitiva e Intencionalidad Humana.
 
 ---
 

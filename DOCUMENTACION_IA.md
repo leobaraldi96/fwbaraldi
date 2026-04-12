@@ -3,7 +3,7 @@
 > **Para uso con IA:** cargar `SKILL.md` raíz como punto de entrada del framework. El agente detecta y carga el boot context, la memoria y las skills automáticamente.
 
 **AI-Augmented System Product Design**
-Versión 2.18.1 · Leo Baraldi
+Versión 2.24.0 · Leo Baraldi
 
 ---
 
@@ -42,7 +42,7 @@ Cada vez que ejecutes una etapa, debes seguir el protocolo de **Momento 0**:
 
 ---
 
-## 📁 Estructura Actualizada (v2.18.1)
+## 📁 Estructura Actualizada (v2.24.0)
 
 ```text
 fwbaraldi/
