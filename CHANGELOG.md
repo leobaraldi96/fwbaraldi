@@ -13,6 +13,8 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 - **👋 Momento 0 (Apertura):** Implementación de una fase de anuncio obligatoria al inicio de cada etapa para orientar al usuario sobre los objetivos y entregables.
 - **📄 Intake de Proyecto:** Nueva interfaz de recolección de datos en la Etapa 01 para facilitar el inicio de proyectos.
 - **🗺️ Cierre Visual:** Protocolo de finalización que muestra un "Mapa de Progreso" para mantener la ubicación del usuario en el sistema.
+- **🤝 Identidad de "La Dupla":** Definición de reglas de comunicación humanizada, asertiva y honesta en los Core Guardrails.
+- **🌟 North Star Manifest:** Actualización total del manifiesto del framework hacia una visión de Simbiosis Cognitiva y aprendizaje humano.
 - **🤖 Boot Update:** Inyección global de las reglas de anuncio y cierre en `00_boot/context.md`.
 
 ---
