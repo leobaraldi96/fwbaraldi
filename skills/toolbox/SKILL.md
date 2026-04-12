@@ -19,7 +19,11 @@ Esta carpeta contiene habilidades especializadas que pueden ser invocadas en cua
     *   `tech_guardrails/product_service_blueprint/`
     *   `tech_guardrails/ixd_multimodal_feedback/`
     *   `tech_guardrails/accessibility_expert/`
+    *   `tech_guardrails/uxr_discovery_expert/`
+    *   `tech_guardrails/competitor_intelligence/`
+    *   `tech_guardrails/product_metrics_expert/`
     Estándares expertos de desarrollo (Next.js, Tailwind, etc.).
+
 
 ## 🌐 Ecosistema de Contexto Externo (Recomendado)
 
@@ -32,4 +36,4 @@ Context7 es una plataforma de **"Context-as-a-Service"**. Provee documentación 
 Creado por **Vercel Labs**, es un ecosistema abierto de habilidades procedimentales. Si Context7 es el manual, Skills.sh es el **Entrenamiento**. Permite a la IA aprender nuevos "trucos" y flujos de ejecución de forma instantánea.
 
 ---
-*Framework Baraldi v2.12.0 · Hub de Conocimiento.*
+*Framework Baraldi v2.23.0 · Hub de Conocimiento.*

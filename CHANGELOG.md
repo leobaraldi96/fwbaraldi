@@ -5,6 +5,20 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.23.0] - 2026-04-12
+
+### Expansión de Investigación y Métricas de Producto
+
+#### Añadido
+- **🕵️ UXR Discovery Expert:** Fusión de técnicas cualitativas y JTBD para blindar el Problem Framing contra sesgos.
+- **🕵️ Competitor Intelligence:** Nuevo guardián táctico enfocado en inteligencia de mercado, brechas de contenido y SEO.
+- **📈 Product Metrics Expert:** Integración de estrategia (Frameworks North Star, HEART) y código de visualización visual con React/Recharts. 
+
+#### Removido / Excluido
+- 🚫 Se ha excluido explícitamente el guardián de *PromQL/Grafana* (`metrics-analysis`) para mantener la "pureza cognitiva" del framework centrada en Producto y no en DevOps.
+
+---
+
 ## [2.22.0] - 2026-04-12
 
 ### Blindaje de Transparencia y Seguridad

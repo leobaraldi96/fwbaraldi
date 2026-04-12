@@ -4,7 +4,7 @@
 >
 > Un framework metodológico diseñado para potenciar el diseño de productos digitales utilizando Inteligencia Artificial como copiloto estratégico en todas las etapas del proceso.
 
-![Version](https://img.shields.io/badge/version-2.22.0-blue)
+![Version](https://img.shields.io/badge/version-2.23.0-blue)
 ![Status](https://img.shields.io/badge/status-active-success)
 
 ---
@@ -170,7 +170,10 @@ fwbaraldi/
 │           ├── uxr_scientific_testing/      ← [NUEVO] Test de usabilidad cuantitativo
 │           ├── product_service_blueprint/   ← Conexión UI ↔ Backend
 │           ├── ixd_multimodal_feedback/     ← Feedback sensorial (Háptica)
-│           └── accessibility_expert/        ← [NUEVO] Accesibilidad WCAG 2.2 Pro
+│           ├── accessibility_expert/        ← Accesibilidad WCAG 2.2 Pro
+│           ├── uxr_discovery_expert/        ← [NUEVO] Cualitativo \u0026 JTBD
+│           ├── competitor_intelligence/     ← [NUEVO] Análisis de brechas SEO/GEO
+│           └── product_metrics_expert/      ← [NUEVO] Estrategia KPI \u0026 Recharts
 │
 ├── chat/                                   ← [DEPRECATED] Track legacy para web
 │   ├── etapa01_chat.md                     
@@ -242,4 +245,4 @@ Podés usarlo **GRATIS** para tus proyectos personales, comerciales o de agencia
 Si compartís, publicás o enseñás este sistema públicamente, por favor da el crédito apropiado: mencionando a **Leo Baraldi** y enlazando a este repositorio.
 
 ---
-*Framework Baraldi v2.22.0 · Desarrollado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.23.0 · Desarrollado y mantenido por Leo Baraldi.*
