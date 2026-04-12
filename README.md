@@ -4,7 +4,7 @@
 >
 > Un framework metodológico diseñado para potenciar el diseño de productos digitales utilizando Inteligencia Artificial como copiloto estratégico en todas las etapas del proceso.
 
-![Version](https://img.shields.io/badge/version-2.13.0-blue)
+![Version](https://img.shields.io/badge/version-2.19.1-blue)
 ![Status](https://img.shields.io/badge/status-active-success)
 
 ---
@@ -157,12 +157,19 @@ fwbaraldi/
 │   └── toolbox/                            ← Herramientas transversales y utilidades
 │       ├── SKILL.md
 │       ├── baraldi_visual_identity/         ← Identidad Visual (Inspiración Paul Rand)
-│       └── tech_guardrails/                 ← Estándares Técnicos Expertos
+│       ├── tech_guardrails/                 ← Estándares Técnicos Expertos
 │           ├── jira_strategic_tasks/
 │           ├── nextjs_15_standards/
 │           ├── tailwind_4_standards/
 │           ├── electron_standards/
-│           └── react_native_standards/
+│           ├── react_native_standards/
+│           ├── wordpress_performance/       ← Experto en WP
+│           ├── core_web_vitals/             ← Optimización LCP, INP, CLS
+│           ├── seo_audit/                   ← Estrategia SEO técnica
+│           ├── ux_writing_standards/        ← UX Writing y Micro-copy
+│           ├── uxr_scientific_testing/      ← [NUEVO] Test de usabilidad cuantitativo
+│           ├── product_service_blueprint/   ← [NUEVO] Conexión UI ↔ Backend
+│           └── ixd_multimodal_feedback/     ← [NUEVO] Feedback sensorial (Háptica)
 │
 ├── chat/                                   ← [DEPRECATED] Track legacy para web
 │   ├── etapa01_chat.md                     
@@ -212,6 +219,15 @@ npx github:leobaraldi96/fwbaraldi
 ## 🔌 Instalabilidad NPM via CLI
 Una vez que el Framework salga de su fase Beta, será publicado oficialmente en NPM para que puedas instalarlo simplemente tecleando `npx baraldi-init`. Por ahora, utiliza el método `npx github:...` descrito arriba.
 
+### 🔄 Cómo Actualizar
+Para obtener las últimas mejoras y nuevas etapas del framework:
+
+- **Si usaste el instalador:** Volvé a ejecutar `npx github:leobaraldi96/fwbaraldi` en tu terminal.
+- **Si sos desarrollador:** Navegá hasta la carpeta del framework dentro de tu Agente y ejecutá `git pull`.
+
+> [!NOTE]
+> Al ser una arquitectura **Zero-Copy**, actualizar el framework no romperá tus proyectos activos. Los artefactos de tus proyectos viven en sus propias carpetas y el framework solo actúa como el "motor" u orquestador externo.
+
 ---
 
 ## 📄 Licencia y Uso Libre
@@ -224,4 +240,4 @@ Podés usarlo **GRATIS** para tus proyectos personales, comerciales o de agencia
 Si compartís, publicás o enseñás este sistema públicamente, por favor da el crédito apropiado: mencionando a **Leo Baraldi** y enlazando a este repositorio.
 
 ---
-*Framework Baraldi v2.13.0 · Desarrollado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.19.1 · Desarrollado y mantenido por Leo Baraldi.*

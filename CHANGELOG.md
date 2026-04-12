@@ -5,6 +5,70 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.19.1] - 2026-04-12
+
+### Pulido Final de Infraestructura (Toolkit Parity)
+
+#### Actualizado
+- **📑 Documentación Técnica:** Sincronización final de `ARQUITECTURA_CORE.md` y `DOCUMENTACION_IA.md` para reflejar la inclusión de la Trilogía de Avanzada (UXR, Producto, IxD).
+- **🛠️ Refuerzo de Toolbox:** Asegurada la consistencia de rutas y orquestadores para los 8 guardianes técnicos actuales.
+
+---
+
+## [2.19.0] - 2026-04-12
+
+### Trilogía de Expertos de Avanzada (UXR, Producto, IxD)
+
+#### Añadido
+- **🔬 UXR Scientific Testing:** Guardrail para el diseño de experimentos con métricas cuantitativas (SUS, Time-on-task, Success Rate).
+- **🚀 Product Service Blueprint:** Capa de pensamiento sistémico que conecta la UI con la infraestructura técnica (Frontstage vs Backstage).
+- **⚡ Interaction & Multimodal Feedback:** Estándares para el comportamiento físico de la interfaz (Háptica, Audio, Timings de animación).
+- **📂 Toolbox Expansion:** Integración de los 3 nuevos expertos en la orquestación global.
+
+---
+
+## [2.18.1] - 2026-04-12
+
+### Sincronización de Documentación (Technical Parity)
+
+#### Actualizado
+- **📑 Guías de Arquitectura:** Sincronización total de `ARQUITECTURA_CORE.md` y `DOCUMENTACION_IA.md` con la estructura de skills v2.18.0.
+- **🗺️ Mapa de Repositorio:** Actualización de rutas y jerarquías para reflejar la realidad del sistema agéntico.
+
+---
+
+## [2.18.0] - 2026-04-12
+
+### Calidad de Contenido (UX Writing Standards)
+
+#### Añadido
+- **✍️ UX Writing & Content Design Standards:** Integración de un guardrail experto para la redacción de interfaces. Destilado de mejores prácticas de la industria y adaptado a la identidad "Baraldi".
+- **📝 Guía de Micro-copy:** Reglas específicas para botones, mensajes de error, placeholders y empty states.
+- **🛡️ Filtro de Pureza Lingüística:** Prohibición de tecnicismos innecesarios y abreviaturas latinas para mejorar la accesibilidad y claridad.
+
+---
+
+## [2.17.0] - 2026-04-12
+
+### Calidad Web y Visibilidad (Performance & SEO)
+
+#### Añadido
+- **⚡ Core Web Vitals Expert:** Integración de guardrail especializado para optimizar LCP, INP y CLS. Incluye fragmentos de código para debugging proactivo.
+- **🔍 SEO Audit Expert:** Integración de metodología de auditoría senior. Incluye la advertencia crítica sobre la detección de Schema Markup en entornos de IA.
+- **📂 Actualización de Toolbox:** Expansión de los `tech_guardrails` para cubrir el ciclo de vida completo de la calidad de producto.
+
+---
+
+## [2.16.0] - 2026-04-12
+
+### Optimización de Herramientas Legadas (WordPress Expert)
+
+#### Añadido
+- **🐘 WordPress Performance Expert:** Integración de un Índice Experto en la `toolbox/tech_guardrails/`. Permite a la IA actuar como un Senior WordPress Developer aplicando reglas críticas de performance y seguridad.
+- **🧠 On-Demand Knowledge Protocol:** Implementación de la carga de conocimiento pesado bajo demanda. La IA solo lee el manual completo (131KB) cuando detecta una tarea de WordPress, optimizando el uso de tokens en otros proyectos.
+
+---
+
 ## [2.15.0] - 2026-04-11
 
 ### Protocolo de Ubicación Sistémica (Human-First UI)

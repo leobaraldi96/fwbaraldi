@@ -9,7 +9,16 @@ Esta carpeta contiene habilidades especializadas que pueden ser invocadas en cua
 
 ## 🧱 Habilidades Internas
 - **baraldi_visual_identity:** El ADN visual del director (Modernist Tech).
-- **tech_guardrails:** Estándares expertos de desarrollo (Next.js, Tailwind, etc.).
+- **tech_guardrails:** 
+    *   `tech_guardrails/react_native_standards/`
+    *   `tech_guardrails/wordpress_performance/`
+    *   `tech_guardrails/core_web_vitals/`
+    *   `tech_guardrails/seo_audit/`
+    *   `tech_guardrails/ux_writing_standards/`
+    *   `tech_guardrails/uxr_scientific_testing/`
+    *   `tech_guardrails/product_service_blueprint/`
+    *   `tech_guardrails/ixd_multimodal_feedback/`
+    Estándares expertos de desarrollo (Next.js, Tailwind, etc.).
 
 ## 🌐 Ecosistema de Contexto Externo (Recomendado)
 

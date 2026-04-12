@@ -1,6 +1,6 @@
 # Arquitectura Core del Framework Baraldi
 
-> Este documento detalla la estructura lógica, la arquitectura tecnológica y el ciclo de vida de adopción del **Framework Baraldi** (v2.5.2+). El framework ya no es solo una metodología táctica; ha evolucionado hacia un **Ecosistema Simbiótico de Diseño** donde la infraestructura tecnológica y la maestría humana convergen.
+> Este documento detalla la estructura lógica, la arquitectura tecnológica y el ciclo de vida de adopción del **Framework Baraldi** (v2.19.0). El framework ha evolucionado de un repositorio de prompts a un **Ecosistema Agéntico Simbiótico** donde la infraestructura tecnológica y la maestría humana convergen.
 
 ---
 
@@ -33,8 +33,8 @@ flowchart TD
     subgraph Motor["1. Motor Global - Skill Repository"]
         direction TB
         A["00_boot/context.md"]:::skill
-        B["SKILL.md Orchestrators"]:::skill
-        C["Prompts y Metodología"]:::skill
+        B["Methodology Tracks"]:::skill
+        C["Tech Guardrails (Toolbox)"]:::skill
     end
 
     subgraph Cerebro["2. Memoria Sistémica Global"]

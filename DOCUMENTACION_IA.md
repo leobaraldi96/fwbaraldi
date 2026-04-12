@@ -3,123 +3,70 @@
 > **Para uso con IA:** cargar `SKILL.md` raíz como punto de entrada del framework. El agente detecta y carga el boot context, la memoria y las skills automáticamente.
 
 **AI-Augmented System Product Design**
-Versión 2.5.1 · Leo Baraldi
+Versión 2.18.1 · Leo Baraldi
 
 ---
 
-## Cómo usar este repositorio
-
-### Paso 1 — Siempre empezá por el Boot
-Antes de cualquier sesión de trabajo, cargá el archivo `00_boot/context.md` en tu LLM. Es el contrato de identidad y comportamiento de la IA dentro del framework.
-
-```
-1. Abrí una nueva conversación en Claude / Gemini / GPT
-2. Copiá el contenido de 00_boot/context.md
-3. Completá la sección "Contexto del proyecto activo"
-4. A partir de ahí, usá los prompts de las skills
-```
-
-### Paso 2 — Ejecutá las skills en orden
-Cada etapa tiene sus prompts ordenados por momento. No saltees momentos sin documentar el motivo en el Decision Log.
-
-### Paso 3 — Guardá todos los outputs como documentos
-Nunca queden los artefactos solo en el chat. Cada output es un archivo Markdown que se guarda en la carpeta del proyecto.
+## 🤝 Identidad: "La Dupla"
+En este framework, la IA no es un asistente pasivo. Es una **Dupla Senior**. 
+- Comunícate de forma humana, clara y asertiva.
+- Cuestiona supuestos.
+- Frena el proceso si falta información crítica.
+- Provee alternativas ante la incertidumbre.
 
 ---
 
-## Arquitectura de Tracks
+## 🗺️ Mapa del Ecosistema
 
-El Framework Baraldi existe en dos tracks con misiones distintas y **sin paridad obligatoria**:
+### 1. 📂 `00_boot/context.md` (El Orquestador)
+Es el contrato de identidad. Debe cargarse **SIEMPRE primero**. Define las reglas de interacción y el protocolo de memoria (Engram MCP).
 
-### Track Agéntico (Full) — `skills/` + `memory/` + `templates/`
-La experiencia completa del framework. Requiere un agente de IA configurado (Antigravity, Claude Code, Cursor, etc.). Incluye memoria persistente, modularidad y evolución continua. **Este es el track activo.**
+### 2. 📂 `skills/` (Habilidades Operativas)
+- **`methodology/`**: Contiene las etapas dogmáticas del diseño (01_Problem_Framing, 02_System_Analysis, etc.). Cada etapa tiene su propio orquestador `SKILL.md`.
+- **`toolbox/`**: Herramientas transversales.
+    - `baraldi_visual_identity`: ADN visual (Modernist Tech).
+    - `tech_guardrails/`: Guardianes de calidad (WordPress, Next.js, SEO, UX Writing, Performance, UXR, Service Blueprint, IxD).
 
-### Track Chat (Lite) — `chat/` ⚠️ DEPRECADO
-Versiones one-page de las Etapas 01 y 02 para uso en interfaces de chat web tradicionales (ChatGPT, Claude, Gemini). Congelado en v2.3.3. No se actualiza con las nuevas versiones del Core. Ver `chat/DEPRECATED.md` para contexto completo.
-
-> **Nota:** La regla de sincronización obligatoria Core↔Chat fue eliminada en v2.4.1. El track Chat está en proceso de deprecación progresiva.
+### 3. 📂 `core/` (Reglas del Sistema)
+- `00_core_guardrails`: Garantiza el naming semántico y la pureza metodológica.
+- `00_skill_evaluation`: La **Aduana**. Filtra nuevas habilidades para evitar la obesidad cognitiva.
 
 ---
 
-## Estructura del repositorio
+## 🔄 Protocolo de Ubicación Sistémica
 
-```
-framework-baraldi/
+Cada vez que ejecutes una etapa, debes seguir el protocolo de **Momento 0**:
+1.  **Anuncio:** Informar qué etapa comienza, su objetivo y qué vamos a abordar.
+2.  **Intake/Validación:** Asegurar que tenemos la información necesaria para proceder.
+3.  **Cierre Visual:** Al finalizar, mostrar el mapa de progreso:
+    `✅ 01 | 🚧 02 | 🔲 03`
+
+---
+
+## 📁 Estructura Actualizada (v2.18.1)
+
+```text
+fwbaraldi/
 ├── 00_boot/
-│   └── context.md                    ← SIEMPRE cargar primero
-│
-├── memory/                           ← CAPA DE MEMORIA SISTEMICA (Engram MCP)
-│   ├── PROTOCOLO_MEMORIA.md          ← Instrucciones de memoria para el Agente (v2.5.0)
-│   └── baraldi_knowledge_base.md     ← LEGADO — solo lectura histórica
-│
-├── templates/
-│   ├── hallazgo_sistemico.md         ← Template para registrar hallazgos
-│   └── decision_log.md               ← Template de Decision Log cronológico
-│
+│   └── context.md             ← Orquestador Principal
 ├── skills/
-│   ├── 01_problem_framing/
-│   │   └── prompts/
-│   │       ├── momento_1_vision.md              ← Visión y amplificación de campo
-│   │       ├── momento_feedback_metodologia.md  ← Asistente de research + soportes
-│   │       ├── momento_2_live_assistant.md      ← IA auxiliar on vivo
-│   │       └── momento_3_cierre.md              ← Evaluación de cierre + decisión IF
-│   │
-│   ├── 02_system_analysis/
-│   │   └── prompts/
-│   │       ├── momento_1_mapeo.md
-│   │       ├── momento_2_dependencias.md
-│   │       └── momento_3_documentacion.md
-│   │
-│   ├── 03_product_logic/             ← En desarrollo
-│   ├── 04_ux_experience/             ← En desarrollo
-│   ├── 05_ui_design/                 ← En desarrollo
-│   ├── 06_implementation/            ← En desarrollo
-│   └── 07_system_reflection/         ← En desarrollo
+│   ├── methodology/           ← Capas de Diseño de Producto
+│   │   ├── 01_problem_framing/
+│   │   ├── 02_system_analysis/
+│   │   └── ...
+│   ├── core/                  ← Guardrails de Sistema (La Aduana)
+│   └── toolbox/               ← Guardianes Tecnológicos (WP, SEO, CWV, UX)
+├── CHANGELOG.md               ← Historial de versiones
+└── README.md                  ← Puerta de entrada humana
 ```
 
 ---
 
-## Formato de los archivos de skill
-
-Cada skill tiene:
-- **Frontmatter YAML** — metadata estructurada (id, versión, trigger, inputs, output format)
-- **Rol** — quién es la IA en este momento específico
-- **Proceso visible** — qué pasos ejecuta la IA y cómo los muestra
-- **Formato de entrega** — estructura exacta del documento que produce
-- **Qué NO hacer** — comportamientos a evitar explícitamente
-- **Test de calidad** — checklist antes de entregar
+## 🛡️ Regla de Oro para el Agente
+**Documentación vs Conversación:**
+- El **Plan de Implementación** es para tareas técnicas.
+- El **Chat** es para la comunicación fluida con el humano.
+- **NUNCA** generes código de implementación sin haber pasado por el diagnóstico sistémico (Etapa 01 y 02).
 
 ---
-
-## Compatibilidad
-
-Estos prompts funcionan con:
-- Claude (Anthropic) — recomendado
-- Gemini (Google)
-- GPT-4 / GPT-4o (OpenAI)
-
-Para mejores resultados: cargar `context.md` completo al inicio de cada sesión.
-
----
-
-## Estado actual
-
-| Capa | Componente | Estado |
-|---|---|---|
-| **00 Boot** | context.md | ✅ v2.5.1 — Paso -1 carpeta + Engram MCP |
-| **Memoria** | PROTOCOLO_MEMORIA.md | ✅ v2.5.0 — Migrado a Engram MCP |
-| **Memoria** | baraldi_knowledge_base.md | ⚠️ LEGADO — solo lectura histórica |
-| **Memoria** | Engram MCP (`engram.exe mcp`) | ✅ Activo desde v2.5.0 |
-| **Templates** | hallazgo_sistemico.md | ✅ Nuevo en v2.4.0 |
-| **Templates** | decision_log.md | ✅ Nuevo en v2.4.0 |
-| **01 Problem Framing** | SKILL.md + 4 prompts | ✅ Completo + hooks de memoria |
-| **02 System Analysis** | SKILL.md + 3 prompts | ✅ Completo + hooks de memoria |
-| **03 Product Logic** | — | 🔄 En desarrollo |
-| **04 UX Experience** | — | 🔄 En desarrollo |
-| **05 UI Design** | — | 🔄 En desarrollo |
-| **06 Implementation** | — | 🔄 En desarrollo |
-| **07 System Reflection** | — | 🔄 En desarrollo |
-
----
-
-*Framework Baraldi v2.5.1 · DOCUMENTACION_IA.md*
+*Framework Baraldi v2.19.1 · DOCUMENTACION_IA.md*
