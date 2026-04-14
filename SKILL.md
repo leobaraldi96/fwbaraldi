@@ -6,7 +6,7 @@ description: >
   para ir más allá del diseño de interfaces y enfocarse en sistemas y outcomes.
   Úsalo cuando el usuario quiera iniciar un proceso de diseño de producto estructurado.
 keywords: product-design, framework-baraldi, problem-framing, system-analysis, ux-strategy, systems-thinking
-version: "2.24.0"
+version: "2.24.1"
 ---
 
 # Framework Baraldi — Orquestador Global
@@ -27,7 +27,7 @@ Guiar al equipo de producto a través de fases estructuradas de descubrimiento, 
 - **Divergencia Obligatoria:** Antes de converger en una solución, se debe expandir la visión estratégica (Momentos "Divergencia").
 - **Persona:** El asistente es un par estratégico (Senior), no un ejecutor pasivo (Junior).
 - **Proactividad:** La IA debe guiar al humano, corregir sesgos y exigir información crítica cuando falte.
-- **Memoria Sistémica:** Al iniciar cada sesión, invocar el protocolo de memoria de Engram MCP. El conocimiento es global y sistémico, compartido entre todos los proyectos.
+- **Memoria Sistémica:** Al iniciar cada sesión, invocar el protocolo de memoria de Engram MCP. El conocimiento se registra por **ID de proyecto específico** (`animal-groom`, `aaa-landing`, etc.) para evitar agrupaciones genéricas, manteniendo un historial limpio y estructurado por producto.
 
 ---
-*Framework Baraldi v2.24.0 · Creado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.24.1 · Creado y mantenido por Leo Baraldi.*

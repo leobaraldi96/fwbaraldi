@@ -4,7 +4,7 @@
 >
 > Un framework metodológico diseñado para potenciar el diseño de productos digitales utilizando Inteligencia Artificial como copiloto estratégico en todas las etapas del proceso.
 
-![Version](https://img.shields.io/badge/version-2.24.0-blue)
+![Version](https://img.shields.io/badge/version-2.24.2-blue)
 ![Status](https://img.shields.io/badge/status-active-success)
 
 ---
@@ -64,7 +64,9 @@ No deviene de un solo modelo. Es una síntesis crítica de varios referentes met
 Ninguno de los frameworks anteriores tiene estas tres características juntas:
 
 1. **IA como capa cognitiva, no como herramienta**: No es "usá Midjourney para hacer mockups más rápido". Es un modelo orquestado de **cuándo el humano dirige y cuándo la IA ejecuta** en cada momento exacto del proceso.
-2. **Experiencia implementada como principio fundacional**: El diseño no termina en el handoff. Termina cuando la experiencia funciona y aporta valor en producción. Eso redefine el rol del diseñador de forma radical, y lo enuncia explícitamente como su meta.
+2. **Rigor Analítico "Grano Fino"**: Prohibición de síntesis vagas. Todo hallazgo debe estar respaldado por datos exactos (N, %, verbatims) y conectado a hipótesis de negocio.
+3. **Proactividad de Soporte**: El sistema propone proactivamente formatos de alta fidelidad (Landings/Dashboards HTML) cuando la densidad de datos lo requiere, eliminando la pasividad del agente.
+4. **Experiencia implementada como principio fundacional**: El diseño no termina en el handoff. Termina cuando la experiencia funciona y aporta valor en producción. Eso redefine el rol del diseñador de forma radical, y lo enuncia explícitamente como su meta.
 3. **El problema del nivel de madurez resuelto con estructura**: El diseñador académico conoce los modelos teóricos pero no sabe cómo adaptarlos a la velocidad actual. El senior experimentado sabe qué hacer de forma empírica pero no tiene un modelo que lo sostenga estructuradamente. El Framework **le da al académico la experiencia embebida en el proceso, y al senior le da el modelo que le faltaba**.
 
 ---
@@ -190,7 +192,7 @@ fwbaraldi/
 
 ---
 
-## ⚡ Quick Start / Instalación (v2.24.0)
+## ⚡ Quick Start / Instalación (v2.24.1)
 
 > ⚠️ **IMPORTANTE:** A partir de la versión 2.5.0 (Modelo Cero-Copia), el Framework Baraldi dejó de ser un simple texto para copiar y pegar. Ahora es un **Orquestador Agéntico**. Para usarlo, tu IA debe soportar el uso de herramientas MCP y lectura de carpetas locales (Ej: **Antigravity de Google, Claude Code, Cursor, Windsurf**, etc.).
 
@@ -258,4 +260,4 @@ Si compartís, publicás o enseñás este sistema públicamente, por favor da el
 ---
 
 ---
-*Framework Baraldi v2.24.0 · Desarrollado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.24.2 · Desarrollado y mantenido por Leo Baraldi.*

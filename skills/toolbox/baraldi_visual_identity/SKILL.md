@@ -56,7 +56,15 @@ Cuando generes interfaces o diagramas, piensa en **"¿Qué haría Paul Rand si t
 
 - Usa formas circulares o rectangulares potentes para enmarcar datos clave.
 - Mantén el texto condensado y alineado con rigor suizo.
+- Usa formas circulares o rectangulares potentes para enmarcar datos clave.
+- Mantén el texto condensado y alineado con rigor suizo.
 - Deja que los acentos vibrantes (Verde/Púrpura) guíen el ojo hacia la acción principal.
 
+## 📋 Protocolo de Generación de Informes (Mandatario)
+Para asegurar la consistencia de marca (v2.24.2):
+1. **Firma Visual Única:** Todo reporte HTML, dashboard o landing interna debe basarse obligatoriamente en el archivo de estilos **`references/templates/baraldi_report_standard.css`**. 
+2. **Copia de Estilos:** Al generar un reporte, lee el contenido de dicho archivo CSS e inclúyelo dentro de una etiqueta `<style>` o cópialo íntegramente en un archivo `style.css` **dentro de la carpeta del proyecto** (nunca en la raíz).
+3. **Dark Mode por Defecto:** Todos los reportes generados por el framework deben configurarse en **Dark Mode** (Fondo Grafito) por defecto, siguiendo la identidad del sitio oficial.
+
 ---
-*Framework Baraldi v2.8.0 · Identidad Visual Basada en el Legado de Paul Rand.*
+*Framework Baraldi v2.24.2 · Identidad Visual Basada en el Legado de Paul Rand.*

@@ -89,14 +89,14 @@ status: complete
 ### Momento 2 — IA Auxiliar / Asistente on Vivo
 **Archivo:** `skills/momento_2_live_assistant.md`
 **Activar cuando:** El humano aprueba los soportes y está listo para ejecutar entrevistas.
-**Produce:** Briefs por entrevistado, notas estructuradas en tiempo real, informe de research completo.
-**Regla clave:** Marcar evidencia con `[CONFIRMA H1]`, `[REFUTA H2]`, `[NUEVO INSIGHT]`. Nunca sacar conclusiones estratégicas durante el research.
+**Produce:** Briefs por entrevistado, notas estructuradas en tiempo real, informe de research completo con **Matriz de Evidencia** (Hipótesis vs. Dato real vs. Hallazgo).
+**Regla clave:** Marcar evidencia con `[CONFIRMA H1]`, `[REFUTA H2]`, `[NUEVO INSIGHT]`. Prohibida la síntesis vaga; cada hallazgo debe asociarse a una pregunta o dato específico.
 
 ### Momento 3 — Evaluación de Cierre
 **Archivo:** `skills/momento_3_cierre.md`
 **Activar cuando:** El humano aprueba el Informe de Research y declara cierre de recolección.
 **Produce:** Informe de Cierre con recomendación: avanzar / iterar / pivotar.
-**Regla clave:** Ejecutar los 4 pasos visibles siempre. La honestidad del informe es no negociable.
+**Regla clave:** Ejecutar los 4 pasos visibles siempre. La honestidad del informe es no negociable. **Proactividad de Soporte:** Si el N de respuestas o entrevistas es > 10, debés proponer proactivamente generar una **Landing de Informe UXR (HTML/CSS)**. Esta landing debe comportarse como una **vista amplificadora**, visualizando exhaustivamente TODAS las métricas relevantes, proporcionando contexto para cada bloque de datos y conectándolos con la Matriz de Evidencia de forma enriquecida. No recortes información.
 
 ---
 
@@ -164,4 +164,4 @@ status: complete
 
 ---
 
-*Framework Baraldi v2.14.0 · skills/01_problem_framing/SKILL.md*
+*Framework Baraldi v2.24.1 · skills/01_problem_framing/SKILL.md*

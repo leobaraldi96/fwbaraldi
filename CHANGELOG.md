@@ -5,6 +5,28 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.24.2] - 2026-04-13
+
+### Firma Visual Unificada & Blindaje de Higiene
+
+#### Añadido
+- **🎨 Sistema de Diseño para Reports:** Creación de `references/templates/baraldi_report_standard.css`. Mandato de uso obligatorio para mantener la firma visual Modernist Tech / Dark Mode en todos los informes.
+- **🛡️ Endurecimiento Zero-Leakage:** Prohibición estricta de generar archivos o carpetas (ej. `scratch`) en la raíz del proyecto del usuario.
+- **📂 Aislamiento de Assets:** Cualquier recurso auxiliar para landings debe vivir dentro de la subcarpeta del artefacto en `docs-fwbaraldi/`.
+
+---
+
+## [2.24.1] - 2026-04-13
+
+### Rigor Analítico & Proactividad (Anti-Lazy Synthesis)
+
+#### Añadido
+- **🔬 Regla de "Grano Fino":** Bloqueo explícito de la síntesis vaga. Se obliga a la IA a proveer datos exactos (%, N, citas) vinculados a la Matriz de Evidencia.
+- **📊 Proactividad de Soporte:** Nueva directiva que fuerza al agente a proponer y generar Landings/Dashboards HTML para el reporte de datos densos (N > 10) en lugar de simples archivos Markdown.
+- **🛡️ Aislamiento de Memoria:** Prohibición del uso de IDs genéricos (`baraldi-framework`) para memorias de proyecto; el framework ahora exige IDs específicos por producto.
+
+---
+
 ## [2.24.0] - 2026-04-12
 
 ### UXR Synthesis & Orchestrator Meta-Skill

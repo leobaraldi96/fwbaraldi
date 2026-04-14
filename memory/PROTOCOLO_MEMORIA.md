@@ -18,8 +18,8 @@
 La memoria es la capa transversal del Framework Baraldi que permite que el conocimiento generado en una sesion este disponible en sesiones futuras.
 
 **Fuente de verdad actual:** Servidor **Engram MCP** (`engram.exe mcp`)
-**Proyecto Engram:** `baraldi-framework`
-**Archivo legado (solo lectura):** `memory/baraldi_knowledge_base.md`
+**Proyecto Engram (Infraestructura):** `fw-baraldi-core`
+**Proyecto Engram (Producto):** `[slug-del-proyecto]` (Ej: `la-cania`, `animal-groom`)
 
 ---
 
@@ -27,8 +27,8 @@ La memoria es la capa transversal del Framework Baraldi que permite que el conoc
 
 Al iniciar cualquier sesion, **antes de ejecutar cualquier tarea**, el Agente DEBE:
 
-1. Llamar `mem_context(project="baraldi-framework", limit=20)` para obtener el historial reciente.
-2. Llamar `mem_search(query="[nombre del proyecto activo]", project="baraldi-framework")` para filtrar hallazgos relevantes.
+1. Llamar `mem_context(project="fw-baraldi-core", limit=10)` para obtener historial de arquitectura.
+2. Llamar `mem_context(project="[slug-del-proyecto]", limit=20)` para filtrar hallazgos específicos del producto.
 3. Presentar un resumen breve al humano: "Tengo memoria de X hallazgos en este proyecto. Los mas recientes son..."
 4. Si no hay hallazgos del proyecto, comunicarlo: "Es la primera sesion registrada para este proyecto."
 
@@ -53,16 +53,16 @@ Usar `mem_save(...)` inmediatamente cuando ocurre cualquiera de estos eventos:
 ```
 title:     "[Proyecto] — [descripcion corta]"
 content:   formato **What/Why/Where/Learned**
-project:   "baraldi-framework"
+project:   "[slug-del-proyecto]"
 type:      segun la tabla anterior
-topic_key: "[eje-estrategico]/[slug-proyecto]"
+topic_key: "[eje-estrategico]"
 ```
 
 ---
 
 ## Cuando BUSCAR en la memoria
 
-Usar `mem_search(query="...", project="baraldi-framework")` antes de:
+Usar `mem_search(query="...", project="[slug-del-proyecto]")` antes de:
 - Proponer una solucion o decision similar a algo ya trabajado
 - Iniciar una nueva etapa del framework
 - El humano pregunta "ya habiamos decidido algo sobre X?"
@@ -79,7 +79,7 @@ Antes de declarar "listo", "terminamos" o "cerramos esta etapa":
    - Hallazgos registrados
    - Artefactos producidos
    - Proximos pasos definidos
-2. Usar `project: "baraldi-framework"` en todos los llamados.
+2. Usar `project: "[slug-del-proyecto]"` (o `fw-baraldi-core` si es un cambio al framework) en todos los llamados.
 
 ---
 
@@ -92,13 +92,13 @@ Si el contenido a guardar incluye tokens, contrasenas, datos personales de entre
 ## Estructura de proyecto en Engram
 
 Todos los hallazgos del framework usan:
-- `project: "baraldi-framework"`
-- `topic_key: "[eje-estrategico]/[slug-proyecto]"` para evitar duplicados
+- `project: "[slug-del-proyecto]"` (Ej: `animal-groom`)
+- `topic_key: "[eje-estrategico]"`
 
 Ejemplos de topic_key:
-- `pf-hipotesis-central/la-cania`
-- `sa-actor-map/gentlemanprog`
-- `fw-decision-memoria-engram/meta`
+- `pf-hipotesis-central` (dentro del proyecto `la-cania`)
+- `sa-actor-map` (dentro del proyecto `animal-groom`)
+- `fw-decision-memoria-engram` (dentro del proyecto `fw-baraldi-core`)
 
 ---
 

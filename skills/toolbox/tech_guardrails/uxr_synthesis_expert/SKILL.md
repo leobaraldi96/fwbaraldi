@@ -3,7 +3,7 @@ name: uxr_synthesis_expert
 description: >
   Protocolos de síntesis de investigación cualitativa y cuantitativa.
   De datos crudos a insights estructurados: Thematic Analysis, Triangulación y Dimensionamiento de Oportunidades.
-version: "1.0.0"
+version: "2.24.1"
 ---
 
 # 🧠 UXR Synthesis Expert
@@ -28,6 +28,11 @@ Nunca confíes en un solo punto ciego.
 - **Personas basadas en Comportamiento, no en Demografía:** Las personas "Marketing Sarah" o "Developer Dan" (solo por su título) son inútiles. Define a las personas por sus **Jobs to be Done**, sus dolores y sus "Workarounds" (atajos que inventan).
 - **Citas Verbatim (Evidence over Opinion):** Respalda siempre tus descubrimientos (Findings) con comillas literales de las transcripciones. Atribuye al *tipo* de usuario, no al nombre (ej: *"Admin Corporativo, equipo de 200"* en lugar de *"Juan"*).
 
+## 🧃 Doctrina de Exhaustividad (Max-Juice Doctrine)
+Si el usuario se tomó el trabajo de recopilar X variables (preguntas de formulario, métricas, grabaciones), es tu obligación procesar e ilustrar el valor de **TODAS Y CADA UNA**. 
+- **Vista Amplificadora, no Reduccionista:** Nunca agrupes 10 preguntas en una sola viñeta vaga. Desglosa cada sección, aporta contexto de por qué se investigó y qué se aprendió.
+- Si vas a crear Dashboards, cada bloque de información provisto debe traducirse idealmente en un gráfico, porcentaje o evidencia textual estructurada.
+
 ## 🧮 Opportunity Sizing (Dimensionamiento)
 No presentes un problema sin dimensionar su impacto:
 - **Impacto:** (Usuarios Afectados) x (Frecuencia) x (Severidad).
@@ -38,4 +43,4 @@ No presentes un problema sin dimensionar su impacto:
 - Confundir Frecuencia con Severidad. Un bug que arruina los datos ocurre 1 vez al año pero es catastrófico; un botón desalineado se ve 1000 veces pero su severidad es nula.
 
 ---
-*Framework Baraldi v2.24.0 · Core / Tech Guardrails / UXR Synthesis Expert*
+*Framework Baraldi v2.24.1 · Core / Tech Guardrails / UXR Synthesis Expert*

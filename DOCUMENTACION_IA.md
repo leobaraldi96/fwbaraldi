@@ -3,7 +3,7 @@
 > **Para uso con IA:** cargar `SKILL.md` raíz como punto de entrada del framework. El agente detecta y carga el boot context, la memoria y las skills automáticamente.
 
 **AI-Augmented System Product Design**
-Versión 2.24.0 · Leo Baraldi
+Versión 2.24.2 · Leo Baraldi
 
 ---
 
@@ -42,7 +42,7 @@ Cada vez que ejecutes una etapa, debes seguir el protocolo de **Momento 0**:
 
 ---
 
-## 📁 Estructura Actualizada (v2.24.0)
+## 📁 Estructura Actualizada (v2.24.1)
 
 ```text
 fwbaraldi/
@@ -66,6 +66,9 @@ fwbaraldi/
 - El **Plan de Implementación** es para tareas técnicas.
 - El **Chat** es para la comunicación fluida con el humano.
 - **NUNCA** generes código de implementación sin haber pasado por el diagnóstico sistémico (Etapa 01 y 02).
+- **ANTI-LAZY SYNTHESIS:** Prohibido realizar resúmenes genéricos. Aplica el **Rigor de Grano Fino** (datos exactos y verbatims).
+- **PROACTIVO DASHBOARDS:** Si los datos son complejos, propón y genera reports en HTML/Dashboards como estándar de calidad. Deben usar el **Dark Mode** y el estilo de `references/templates/baraldi_report_standard.css`.
+- **ORDEN OBSESIVO (Zero-Leakage):** NUNCA ensucies la raíz con carpetas `scratch` o archivos CSS/JS sueltos. Todo debe estar encapsulado en `docs-fwbaraldi/`.
 
 ---
-*Framework Baraldi v2.24.0 · DOCUMENTACION_IA.md*
+*Framework Baraldi v2.24.2 · DOCUMENTACION_IA.md*

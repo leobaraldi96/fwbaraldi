@@ -1,0 +1,182 @@
+/* 
+   BARALDI REPORT DESIGN SYSTEM v1.0
+   Dark Mode Canonical Style
+   Colors: Graphite #383635 | Electric Purple #600DFF | Emerald #4EEDB9
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;600;700&display=swap');
+
+:root {
+  --bg-primary: #181615; /* $black: #181615 */
+  --bg-surface: #383635; /* $body-bg: #383635 */
+  --accent-purple: #600DFF; /* $purple */
+  --accent-blue: #4554fa; /* $blue */
+  --accent-emerald: #4EEDB9; /* $green */
+  --accent-green-dark: #1a8474; /* $green-dark */
+  --accent-orange: #F88603; /* $orange */
+  --accent-red: #FE5753; /* $red */
+  --accent-yellow: #FDDC53; /* $yellow */
+  --text-white: #FFFFFF;
+  --text-gray: #928F8E; /* $gray-500 */
+  --text-muted: rgba(255, 255, 255, 0.6);
+  --glass: rgba(255, 255, 255, 0.05);
+  --border: rgba(255, 255, 255, 0.1);
+  --radius-xl: 24px;
+  --radius-lg: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-white);
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Header & Typography */
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h1 { font-size: 2.5rem; margin-bottom: 2rem; border-left: 6px solid var(--accent-purple); padding-left: 1rem; }
+h2 { color: var(--accent-emerald); margin-top: 2rem; margin-bottom: 1rem; font-size: 1.5rem; }
+
+/* Layout Grid */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Cards & Surfaces */
+.card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-purple);
+}
+
+.card-title {
+  color: var(--accent-emerald);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+/* Evidence Matrix Table */
+.matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.matrix-table th {
+  text-align: left;
+  padding: 1rem;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.matrix-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Status Badges */
+.badge {
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.badge-high { background: var(--accent-emerald); color: var(--bg-primary); }
+.badge-mid { background: #FDDC53; color: var(--bg-primary); }
+.badge-low { background: #FE5753; color: var(--text-white); }
+
+/* Progress Bars */
+.progress-container {
+  margin-top: 1rem;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.progress-bar {
+  height: 8px;
+  background: var(--glass);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--accent-purple);
+  width: 0%; /* Dynamic */
+}
+
+/* Color Helpers for charts & highlights */
+.bg-purple { background-color: var(--accent-purple) !important; color: white; }
+.bg-blue   { background-color: var(--accent-blue) !important; color: white; }
+.bg-orange { background-color: var(--accent-orange) !important; color: white; }
+.bg-red    { background-color: var(--accent-red) !important; color: white; }
+.bg-emerald { background-color: var(--accent-emerald) !important; color: var(--bg-primary); }
+.bg-yellow { background-color: var(--accent-yellow) !important; color: var(--bg-primary); }
+
+.text-purple { color: var(--accent-purple) !important; }
+.text-blue   { color: var(--accent-blue) !important; }
+.text-orange { color: var(--accent-orange) !important; }
+.text-red    { color: var(--accent-red) !important; }
+.text-emerald { color: var(--accent-emerald) !important; }
+.text-yellow { color: var(--accent-yellow) !important; }
+.text-gray   { color: var(--text-gray) !important; }
+
+/* Verbatim / Quotes */
+blockquote {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--text-white);
+  border-left: 2px solid var(--accent-emerald);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+}
+
+.quote-source {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-style: normal;
+}
+
+/* Footer / Metadata */
+.report-footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  text-align: center;
+}
