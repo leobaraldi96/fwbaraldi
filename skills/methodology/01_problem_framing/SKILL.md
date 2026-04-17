@@ -159,6 +159,31 @@ E) Combinación de los anteriores → especificar cuáles
 → La elección condiciona TODO: tecnología, paleta de colores, tipografía, estructura del dato.
 → Si el humano no tiene claro cuál, RECOMENDAR según el contexto del proyecto.
 
+**👥 AUDIENCE PROFILING CHECKPOINT (hacer junto con el formato):**
+El informe cambia radicalmente según quién lo va a leer. Preguntar:
+
+```
+👥 ¿Y quién va a leer este informe?
+
+A) 🔬 Equipo interno / técnico
+   → Qué necesita: datos detallados, verbatims, cruces, evidencia cruda
+   → Cómo adaptar: versión densa, todas las preguntas, secciones técnicas visibles
+
+B) 👔 C-Level / Cliente ejecutivo
+   → Qué necesita: resumen ejecutivo claro, 3-5 hallazgos clave, recomendaciones accionables
+   → Cómo adaptar: síntesis al tope, "So what?" priorizado, gráficas de alto impacto
+
+C) 🌐 Público general / presentación abierta
+   → Qué necesita: contexto amplio, narrativa accesible, sin jerga técnica
+   → Cómo adaptar: versión divulgativa, más storytelling, datos apoyados con contexto
+
+D) Audiencia mixta → definir secciones diferenciadas por perfil
+```
+
+→ Si el informe es para **B (C-Level)**: el resumen ejecutivo va PRIMERO, máximo 1 pantalla, con las 3 decisiones que el dato habilita.
+→ Si el informe es para **A (equipo técnico)**: el detalle va completo, sin suavizar los datos incómodos.
+→ Si no se especifica: preguntar antes de generar. No asumir.
+
 **Proactividad de Soporte:** Si el N de respuestas o entrevistas es > 10 y se elige HTML, debés proponer generar una **Landing de Informe UXR (HTML/CSS/Chart.js)** que se comporte como una **vista amplificadora**: visualizando exhaustivamente TODAS las preguntas y métricas, proporcionando copy interpretativo para cada gráfica, y proponiendo cruces de datos no obvios. **Ninguna pregunta de la encuesta puede quedar sin representación visual o analítica.**
 
 
