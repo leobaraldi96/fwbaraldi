@@ -1,55 +1,163 @@
 /* 
-   BARALDI REPORT DESIGN SYSTEM v1.0
-   Dark Mode Canonical Style
+   BARALDI REPORT DESIGN SYSTEM v2.0
+   Dark Mode Canonical Style — UXR Informe Standard
+   
+   REGLAS DE LEGIBILIDAD (NO NEGOCIABLES):
+   ✅ Font-size mínimo en cualquier texto visible: 13px (0.8125rem)
+   ✅ Font-size mínimo en texto de lectura continua: 15px (0.9375rem)
+   ✅ Contraste mínimo texto/fondo: 4.5:1 (WCAG AA)
+   ✅ Toda gráfica debe tener copy contextual debajo (class="chart-copy")
+   
    Colors: Graphite #383635 | Electric Purple #600DFF | Emerald #4EEDB9
+   Versión: 2.0 | Actualizado: 2026-04-17
 */
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
 
+/* =====================================================
+   DESIGN TOKENS — Variables del Sistema
+   ===================================================== */
 :root {
-  --bg-primary: #181615; /* $black: #181615 */
-  --bg-surface: #383635; /* $body-bg: #383635 */
-  --accent-purple: #600DFF; /* $purple */
-  --accent-blue: #4554fa; /* $blue */
-  --accent-emerald: #4EEDB9; /* $green */
-  --accent-green-dark: #1a8474; /* $green-dark */
-  --accent-orange: #F88603; /* $orange */
-  --accent-red: #FE5753; /* $red */
-  --accent-yellow: #FDDC53; /* $yellow */
-  --text-white: #FFFFFF;
-  --text-gray: #928F8E; /* $gray-500 */
-  --text-muted: rgba(255, 255, 255, 0.6);
-  --glass: rgba(255, 255, 255, 0.05);
-  --border: rgba(255, 255, 255, 0.1);
+  /* Superficies */
+  --bg-primary:    #181615;
+  --bg-surface:    #383635;
+  --bg-surface-alt: #2a2826;
+  --bg-elevated:   #444240;
+
+  /* Acentos primarios */
+  --accent-purple:  #600DFF;
+  --accent-blue:    #4554fa;
+  --accent-emerald: #4EEDB9;
+
+  /* Acentos semánticos */
+  --accent-green-dark: #1a8474;
+  --accent-orange: #F88603;
+  --accent-red:    #FE5753;
+  --accent-yellow: #FDDC53;
+  --accent-pink:   #E040FB;
+  --accent-cyan:   #00BCD4;
+  --accent-lime:   #AEEA00;
+
+  /* Texto */
+  --text-white:    #FFFFFF;
+  --text-primary:  #F0EDEA;
+  --text-secondary: #C4BFBA;
+  --text-muted:    rgba(255, 255, 255, 0.55);
+  --text-gray:     #928F8E;
+
+  /* Surfaces especiales */
+  --glass:   rgba(255, 255, 255, 0.05);
+  --glass-md: rgba(255, 255, 255, 0.08);
+  --border:  rgba(255, 255, 255, 0.10);
+  --border-accent: rgba(96, 13, 255, 0.40);
+
+  /* Radios */
   --radius-xl: 24px;
   --radius-lg: 16px;
+  --radius-md: 10px;
+  --radius-sm: 6px;
+
+  /* -----------------------------------------------
+     TIPOGRAFÍA — Escala de Tamaños (MÍNIMO 13px)
+     ----------------------------------------------- */
+  --font-xxs:   0.8125rem;  /* 13px — MÍNIMO ABSOLUTO para cualquier texto visible */
+  --font-xs:    0.875rem;   /* 14px — labels de gráfica, metadata */
+  --font-sm:    0.9375rem;  /* 15px — copy contextual, descripciones breves */
+  --font-base:  1rem;       /* 16px — texto de lectura continua */
+  --font-md:    1.125rem;   /* 18px — highlights, citas destacadas */
+  --font-lg:    1.375rem;   /* 22px — h3, títulos de sección */
+  --font-xl:    1.75rem;    /* 28px — h2 */
+  --font-2xl:   2.25rem;    /* 36px — h1, cifra destacada */
+  --font-3xl:   3rem;       /* 48px — KPI hero */
+
+  /* -----------------------------------------------
+     CHART.JS — Paleta de Colores Estándar
+     Usar en este orden para series de datos.
+     ----------------------------------------------- */
+  --chart-1:  #600DFF;   /* Purple — serie principal */
+  --chart-2:  #4EEDB9;   /* Emerald — segunda serie */
+  --chart-3:  #F88603;   /* Orange — tercera serie */
+  --chart-4:  #4554fa;   /* Blue — cuarta serie */
+  --chart-5:  #FE5753;   /* Red — quinta serie / alerta */
+  --chart-6:  #FDDC53;   /* Yellow — sexta serie */
+  --chart-7:  #E040FB;   /* Pink — séptima serie */
+  --chart-8:  #00BCD4;   /* Cyan — octava serie */
+  --chart-9:  #AEEA00;   /* Lime — novena serie */
+  --chart-10: #928F8E;   /* Gray — otros / N/A */
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* Paleta Chart.js como array JS — comentario de referencia para la IA:
+   chartColors = [
+     '#600DFF','#4EEDB9','#F88603','#4554fa','#FE5753',
+     '#FDDC53','#E040FB','#00BCD4','#AEEA00','#928F8E'
+   ] 
+   chartColorsAlpha = (alpha = 0.6) => chartColors.map(c => c + Math.round(alpha*255).toString(16))
+*/
+
+
+/* =====================================================
+   RESET & BASE
+   ===================================================== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; }
 
 body {
   background-color: var(--bg-primary);
-  color: var(--text-white);
+  color: var(--text-primary);
   font-family: 'IBM Plex Sans Condensed', sans-serif;
-  line-height: 1.6;
+  font-size: var(--font-base);
+  line-height: 1.65;
   padding: 2rem;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Header & Typography */
-h1, h2, h3 {
+
+/* =====================================================
+   TIPOGRAFÍA
+   ===================================================== */
+h1 {
+  font-size: var(--font-2xl);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  border-left: 6px solid var(--accent-purple);
+  padding-left: 1.25rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: var(--font-xl);
+  font-weight: 700;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  font-weight: 700;
+  color: var(--accent-emerald);
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
 }
 
-h1 { font-size: 2.5rem; margin-bottom: 2rem; border-left: 6px solid var(--accent-purple); padding-left: 1rem; }
-h2 { color: var(--accent-emerald); margin-top: 2rem; margin-bottom: 1rem; font-size: 1.5rem; }
+h3 {
+  font-size: var(--font-lg);
+  font-weight: 600;
+  color: var(--text-white);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
 
-/* Layout Grid */
+p {
+  font-size: var(--font-base);
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+small, .text-sm   { font-size: var(--font-xs); }   /* 14px */
+.text-xxs         { font-size: var(--font-xxs); }  /* 13px — NUNCA por debajo de esto */
+
+
+/* =====================================================
+   LAYOUT GRID
+   ===================================================== */
 .dashboard-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -57,126 +165,249 @@ h2 { color: var(--accent-emerald); margin-top: 2rem; margin-bottom: 1rem; font-s
   margin-top: 2rem;
 }
 
-/* Cards & Surfaces */
+.dashboard-grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.col-full  { grid-column: 1 / -1; }
+.col-2     { grid-column: span 2; }
+
+
+/* =====================================================
+   CARDS & SURFACES
+   ===================================================== */
 .card {
   background: var(--bg-surface);
   border: 1px solid var(--border);
   padding: 2rem;
   border-radius: var(--radius-lg);
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
   border-color: var(--accent-purple);
 }
 
 .card-title {
+  font-size: var(--font-xs);   /* 14px — legible, no bajamos de aquí */
+  font-weight: 700;
   color: var(--accent-emerald);
-  font-weight: 600;
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
   text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.25rem;
 }
 
-/* Evidence Matrix Table */
+
+/* =====================================================
+   KPI HERO — Cifra grande destacada
+   ===================================================== */
+.kpi-value {
+  font-size: var(--font-3xl);
+  font-weight: 700;
+  color: var(--text-white);
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.kpi-label {
+  font-size: var(--font-xs);   /* 14px min */
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+
+/* =====================================================
+   CHART WRAPPER — Contenedor obligatorio para gráficas
+   ===================================================== */
+.chart-wrapper {
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+
+/*
+   COPY CONTEXTUAL — OBLIGATORIO bajo toda gráfica
+   
+   REGLA: Ninguna gráfica puede existir sin su .chart-copy.
+   El copy debe: (1) describir el patrón principal, (2) dar 
+   contexto al dato, (3) conectarlo con una decisión de diseño.
+*/
+.chart-copy {
+  font-size: var(--font-sm);   /* 15px — legibilidad garantizada */
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-top: 1rem;
+  padding: 0.875rem 1rem;
+  background: var(--glass-md);
+  border-left: 3px solid var(--accent-purple);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.chart-copy strong {
+  color: var(--text-white);
+}
+
+.chart-insight {
+  display: inline-block;
+  font-size: var(--font-xxs);  /* 13px min */
+  font-weight: 600;
+  color: var(--accent-emerald);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.375rem;
+}
+
+
+/* =====================================================
+   TABLAS — Evidencia y Matrices
+   ===================================================== */
 .matrix-table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
+  font-size: var(--font-xs);   /* 14px — mínimo para tablas */
 }
 
 .matrix-table th {
   text-align: left;
-  padding: 1rem;
+  padding: 0.875rem 1rem;
+  font-size: var(--font-xxs);  /* 13px — header de tabla */
+  font-weight: 700;
   color: var(--text-muted);
-  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
   border-bottom: 1px solid var(--border);
 }
 
 .matrix-table td {
-  padding: 1rem;
+  padding: 0.875rem 1rem;
+  font-size: var(--font-xs);   /* 14px */
   border-bottom: 1px solid var(--border);
+  color: var(--text-secondary);
+  line-height: 1.5;
 }
 
-/* Status Badges */
+.matrix-table tr:hover td {
+  background: var(--glass);
+}
+
+
+/* =====================================================
+   BADGES — Estado / Confianza
+   ===================================================== */
 .badge {
-  padding: 0.2rem 0.6rem;
-  border-radius: 4px;
-  font-size: 0.75rem;
+  display: inline-block;
+  padding: 0.25rem 0.625rem;
+  border-radius: var(--radius-sm);
+  font-size: var(--font-xxs);  /* 13px — mínimo absoluto */
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.4;
 }
 
-.badge-high { background: var(--accent-emerald); color: var(--bg-primary); }
-.badge-mid { background: #FDDC53; color: var(--bg-primary); }
-.badge-low { background: #FE5753; color: var(--text-white); }
+.badge-high    { background: var(--accent-emerald); color: var(--bg-primary); }
+.badge-mid     { background: var(--accent-yellow);  color: var(--bg-primary); }
+.badge-low     { background: var(--accent-red);     color: var(--text-white); }
+.badge-purple  { background: var(--accent-purple);  color: var(--text-white); }
+.badge-blue    { background: var(--accent-blue);    color: var(--text-white); }
+.badge-neutral { background: var(--bg-elevated);    color: var(--text-secondary); border: 1px solid var(--border); }
 
-/* Progress Bars */
-.progress-container {
-  margin-top: 1rem;
-}
+
+/* =====================================================
+   PROGRESS BARS
+   ===================================================== */
+.progress-container { margin-top: 0.75rem; }
 
 .progress-label {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
-  font-size: 0.85rem;
+  align-items: baseline;
+  margin-bottom: 0.4rem;
+  font-size: var(--font-xs);  /* 14px */
+  color: var(--text-secondary);
+}
+
+.progress-label .progress-pct {
+  font-size: var(--font-md);
+  font-weight: 700;
+  color: var(--text-white);
 }
 
 .progress-bar {
   height: 8px;
-  background: var(--glass);
+  background: var(--glass-md);
   border-radius: 4px;
   overflow: hidden;
 }
 
 .progress-fill {
   height: 100%;
-  background: var(--accent-purple);
-  width: 0%; /* Dynamic */
+  background: linear-gradient(90deg, var(--accent-purple), var(--accent-blue));
+  border-radius: 4px;
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 0%;
 }
 
-/* Color Helpers for charts & highlights */
-.bg-purple { background-color: var(--accent-purple) !important; color: white; }
-.bg-blue   { background-color: var(--accent-blue) !important; color: white; }
-.bg-orange { background-color: var(--accent-orange) !important; color: white; }
-.bg-red    { background-color: var(--accent-red) !important; color: white; }
-.bg-emerald { background-color: var(--accent-emerald) !important; color: var(--bg-primary); }
-.bg-yellow { background-color: var(--accent-yellow) !important; color: var(--bg-primary); }
 
-.text-purple { color: var(--accent-purple) !important; }
-.text-blue   { color: var(--accent-blue) !important; }
-.text-orange { color: var(--accent-orange) !important; }
-.text-red    { color: var(--accent-red) !important; }
-.text-emerald { color: var(--accent-emerald) !important; }
-.text-yellow { color: var(--accent-yellow) !important; }
-.text-gray   { color: var(--text-gray) !important; }
-
-/* Verbatim / Quotes */
+/* =====================================================
+   VERBATIMS / CITAS TEXTUALES
+   ===================================================== */
 blockquote {
+  font-size: var(--font-base);  /* 16px — lectura continua */
   font-style: italic;
-  font-size: 1.1rem;
   color: var(--text-white);
-  border-left: 2px solid var(--accent-emerald);
-  padding-left: 1rem;
+  border-left: 3px solid var(--accent-emerald);
+  padding: 1rem 1.25rem;
   margin: 1.5rem 0;
+  background: var(--glass);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
 }
 
 .quote-source {
   display: block;
   margin-top: 0.5rem;
-  font-size: 0.8rem;
+  font-size: var(--font-xs);   /* 14px */
   color: var(--text-muted);
   font-style: normal;
+  font-weight: 600;
 }
 
-/* Footer / Metadata */
+
+/* =====================================================
+   HELPERS DE COLOR — Texto y Fondo
+   ===================================================== */
+.bg-purple  { background-color: var(--accent-purple)  !important; color: white; }
+.bg-blue    { background-color: var(--accent-blue)    !important; color: white; }
+.bg-orange  { background-color: var(--accent-orange)  !important; color: white; }
+.bg-red     { background-color: var(--accent-red)     !important; color: white; }
+.bg-emerald { background-color: var(--accent-emerald) !important; color: var(--bg-primary); }
+.bg-yellow  { background-color: var(--accent-yellow)  !important; color: var(--bg-primary); }
+.bg-pink    { background-color: var(--accent-pink)    !important; color: white; }
+.bg-cyan    { background-color: var(--accent-cyan)    !important; color: var(--bg-primary); }
+
+.text-purple  { color: var(--accent-purple)  !important; }
+.text-blue    { color: var(--accent-blue)    !important; }
+.text-orange  { color: var(--accent-orange)  !important; }
+.text-red     { color: var(--accent-red)     !important; }
+.text-emerald { color: var(--accent-emerald) !important; }
+.text-yellow  { color: var(--accent-yellow)  !important; }
+.text-pink    { color: var(--accent-pink)    !important; }
+.text-cyan    { color: var(--accent-cyan)    !important; }
+.text-muted   { color: var(--text-muted)     !important; }
+.text-gray    { color: var(--text-gray)      !important; }
+
+
+/* =====================================================
+   FOOTER / METADATA DEL INFORME
+   ===================================================== */
 .report-footer {
   margin-top: 4rem;
   padding-top: 2rem;
   border-top: 1px solid var(--border);
   color: var(--text-muted);
-  font-size: 0.8rem;
+  font-size: var(--font-xxs);  /* 13px — footer, aceptable */
   text-align: center;
+  line-height: 1.8;
 }

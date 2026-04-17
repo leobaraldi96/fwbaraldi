@@ -257,17 +257,53 @@ Este es el momento más operativo del framework. No analizás estrategia — eje
 
 ---
 
+## ✅ UI Quality Checklist — Informes HTML (Sub-tarea D con output HTML)
+
+> Aplicar este checklist antes de entregar cualquier informe visual. Si algún ítem no se cumple, corregir antes de presentar al humano.
+
+### Legibilidad y Tipografía
+- [ ] **Font-size mínimo 13px** en cualquier texto visible del informe (incluyendo labels de gráfica, headers de tabla, badges, footer). Sin excepciones.
+- [ ] **Font-size mínimo 15px** en textos de lectura continua (descripciones, copy contextual, verbatims).
+- [ ] Contraste texto/fondo ≥ 4.5:1 en todos los elementos de texto. Verificar especialmente texto claro sobre fondos oscuros medios.
+- [ ] Importar `baraldi_report_standard.css` o replicar sus tokens de diseño. Usar `--font-xxs` (13px) como límite inferior.
+
+### Paleta de Colores para Gráficas
+- [ ] Usar la paleta ordenada del Design System para series de Chart.js:
+  `['#600DFF','#4EEDB9','#F88603','#4554fa','#FE5753','#FDDC53','#E040FB','#00BCD4','#AEEA00','#928F8E']`
+- [ ] No usar colores por defecto de Chart.js (azul, verde, rojo estándar). La firma visual es no-negociable.
+- [ ] Si hay más de 3 series en una gráfica, verificar que los colores sean distinguibles entre sí y tengan suficiente contraste visual.
+- [ ] Charts con fondo oscuro: usar colores con alpha al 80% para el fill y 100% para el borde.
+
+### Copy Contextual — OBLIGATORIO bajo toda gráfica
+- [ ] **Cada gráfica tiene su `<div class="chart-copy">`** inmediatamente debajo. Sin excepción.
+- [ ] El copy NO es una repetición del título. Debe: (1) describir el patrón o dato más relevante, (2) dar contexto al número, (3) conectarlo con una implicancia de diseño o decisión de producto.
+- [ ] Las gráficas NO se explican solas. El dato "67%" sin contexto no comunica nada. El copy es la diferencia entre un reporte y un motor de decisión.
+- [ ] Si la gráfica tiene múltiples series: el copy menciona la relación entre ellas, no solo cada serie por separado.
+
+### Principio de Amplificación en Iteraciones
+- [ ] Al iterar sobre un informe existente: verificar que NO se eliminó ninguna sección, gráfica o dato previo.
+- [ ] Cada iteración solo suma: nuevas secciones, mayor profundidad, mejor diseño. Nunca reduce.
+- [ ] Si por requerimiento técnico es necesario tocar una sección adyacente: notificar al humano explícitamente qué se tocó y por qué.
+
+### Cobertura de Datos
+- [ ] Todas las preguntas del instrumento tienen representación visual o analítica en el informe.
+- [ ] La sección de "Análisis por dimensión" tiene un bloque por cada pregunta/campo del formulario.
+- [ ] Al final del informe: puntaje de cobertura visible `[N/N preguntas representadas]`.
+
+---
+
 ## Protocolo de Memoria — Este Momento
 
 **Eje Estratégico a guardar al cerrar este momento:** `pf-insight-principal`
 
 Al generar el Informe de Research final (Sub-tarea D), guardar en `memory/baraldi_knowledge_base.md`:
 - **Tipo:** `validación`
-- **Qué:** El patrón más revelador encontrado en las entrevistas
+- **Qué:** El patrón más revelador encontrado en las entrevistas/encuestas
 - **Por qué:** Cómo impacta en la hipótesis central (confirma / refuta / matiza)
 - **Dónde:** Informe de Research del proyecto
 - **Aprendido:** Estado final de la hipótesis central post-research (Alta/Media/Baja confianza)
+- **Formato de entrega elegido:** [HTML / Exportación / PPT / Estático] — para referencia en futuras sesiones
 
 ---
 
-*Framework Baraldi v2.4.0 · skills/01_problem_framing/prompts/momento_2_live_assistant.md*
+*Framework Baraldi v2.25.5 · skills/01_problem_framing/skills/momento_2_live_assistant.md*
