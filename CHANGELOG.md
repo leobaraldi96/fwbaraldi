@@ -5,6 +5,20 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.25.7] - 2026-04-17
+
+### Dashboard Header Mandatorio
+- **Añadido:** Inyectado el requerimiento del Dashboard Header Mandatorio en el `UI Quality Checklist` de informes HTML, exigiendo metadatos clave (proyecto, audiencia, recolección, tamaño segmentado) previo a visualizar datos.
+
+---
+
+## [2.25.6] - 2026-04-17
+
+### Audience Profiling Checkpoint
+- **Añadido:** Nuevo checkpoint en Momento 3 para definir la audiencia del informe (equipo técnico, ejecutivo o público general) antes de construir la salida. Este checkpoint moldea la densidad, tono y estructura del reporte.
+
+---
+
 ## [2.25.5] - 2026-04-17
 
 ### UI Standards v2.0 & Quality Control
