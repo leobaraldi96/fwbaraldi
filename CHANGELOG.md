@@ -1,9 +1,25 @@
-# Changelog
+﻿# Changelog
 
 Todas las actualizaciones destacadas de este proyecto se documentarán en este archivo.
 
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
+
+## [2.25.1] - 2026-04-17\n\n### Aprendizajes de Animal Groom — Research Proactivity & Folder Taxonomy\n\n> Learnings extraídos del proyecto Animal Groom (UXR con Google Forms) incorporados al framework.\n\n#### Problema Resuelto (1) — Pasividad en el Research Planning\n- **Bug metodológico:** El Momento Feedback de la Etapa 01 esperaba que el humano llegara con la metodología de investigación ya definida. El framework actuaba como validador, no como co-creador del plan.\n\n#### Problema Resuelto (2) — Contaminación de carpetas del proyecto\n- **Bug estructural:** Sin una taxonomía de subcarpetas, los archivos de research, diseño y contenido se mezclaban en la raíz de `docs-fwbaraldi/` o peor, en la raíz del proyecto entregable.\n\n#### Añadido\n- **⚡ Research Planning Checkpoint (5 pasos):** Nuevo protocolo obligatorio en el Momento Feedback de la Etapa 01. El framework ahora diagnostica proactivamente si existe un plan de research, qué datos previos hay, recomienda metodologías según el tipo de problema, se ofrece a diseñar el cuestionario completo y sugiere el canal de distribución. La iniciativa es del framework, no del humano.\n- **📂 Taxonomía de subcarpetas `docs-fwbaraldi/`:** Nueva estructura obligatoria de organización con carpetas por naturaleza del contenido: `01-07_[Etapa]/` para artefactos metodológicos, `UXR/` para research (con subcarpeta `informe/` para landings HTML), `UX/` para diseño de experiencia, `UXW/` para UX Writing y contenidos estratégicos, `UI/` para especificaciones visuales.\n- **Regla de Oro actualizada:** \"Si un archivo no va a producción, va a `docs-fwbaraldi/`.\"\n\n---\n\n## [2.25.0] - 2026-04-17
+
+### Protocolo de Detección de Proyecto Activo (Project Awareness)
+
+#### Problema Resuelto
+- **Bug crítico:** Al iniciar una nueva sesión en un proyecto diferente, la IA no detectaba el cambio de contexto y operaba sin memoria del proyecto activo, o mezclaba contexto de proyectos anteriores.
+
+#### Añadido
+- **🔍 Paso -3 (Project Detection):** Nuevo paso obligatorio en el Boot Context que se ejecuta en silencio ANTES de cualquier saludo. Implementa un algoritmo de detección de 5 niveles de prioridad: Señal Explícita → Workspace Activo → Memoria Reciente → Historial de Conversaciones → Pregunta explícita.
+- **📊 Panel de Reingreso:** Nueva plantilla de primera respuesta obligatoria cuando se detecta un proyecto existente. Muestra en un solo mensaje: Estado actual, Artefactos existentes, Última acción realizada, Pendientes y Recomendaciones proactivas para la sesión.
+- **Dos Escenarios de Bienvenida:** El protocolo de primera respuesta ahora bifurca en Escenario A (Reingreso con Panel) y Escenario B (Proyecto nuevo).
+- **Optimización de llamadas a Engram:** El Paso 0 de Memoria evita ahora llamadas redundantes a `mem_context` si el Paso -3 ya las ejecutó.
+- **Detección de Carpeta de Trabajo:** El Paso -1 recupera la carpeta de trabajo de la memoria si el proyecto ya es conocido, eliminando preguntas innecesarias en reingresos.
+
+---
 
 ## [2.24.2] - 2026-04-13
 

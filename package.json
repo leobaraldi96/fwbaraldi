@@ -1,6 +1,6 @@
 {
   "name": "baraldi-framework",
-  "version": "2.24.2",
+  "version": "2.25.1",
   "description": "Framework metodológico diseñado para potenciar el diseño de productos digitales utilizando Inteligencia Artificial como orquestador.",
   "main": "index.js",
   "type": "module",

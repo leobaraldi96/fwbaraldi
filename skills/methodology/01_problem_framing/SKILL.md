@@ -79,12 +79,49 @@ status: complete
 **Produce:** 5 artefactos — Problem Statement, Opportunity Map, Stakeholder Map, Success Metrics, Outcome Definition.
 **Regla clave:** Mostrar siempre el proceso de divergencia antes del output. Nunca saltear.
 
-### Momento Feedback — Metodología y Soportes
+### Momento Feedback — Research Planning Checkpoint (Metodología y Soportes)
 **Archivo:** `skills/momento_feedback_metodologia.md`
 **Referencia benchmark:** `references/benchmark_guide.md`
 **Activar cuando:** El humano aprueba los artefactos del Momento 1 y escribe "Solicitud continuar".
-**Produce:** Plan de metodología + guión de entrevistas + informe de benchmark (6 secciones) + base de datos de entrevistados.
+**Produce:** Plan de metodología + guión de entrevistas/encuestas + informe de benchmark (6 secciones) + base de datos de entrevistados.
+
+**⚡ PROACTIVIDAD OBLIGATORIA — Research Planning Checkpoint:**
+Antes de diseñar el plan, el framework debe ejecutar el siguiente interrogatorio en este orden. **No asumas que el humano ya tiene el plan definido. Tu rol aquí es guiar, no esperar.**
+
+```
+[CHECKPOINT 1 — Diagnóstico de Research Existente]
+→ "¿Ya tenés definida una metodología de investigación para este proyecto?"
+→ Si SÍ: pedir que comparta el plan para validarlo y enriquecerlo.
+→ Si NO: continuar al Checkpoint 2.
+
+[CHECKPOINT 2 — ¿Hay datos existentes?]
+→ "¿Contás con datos previos? (encuestas anteriores, feedback de clientes,
+   análisis de soporte, reviews públicas, métricas de uso)"
+→ Si SÍ: incorporarlos como evidencia base antes de diseñar nuevas metodologías.
+→ Si NO: continuar al Checkpoint 3.
+
+[CHECKPOINT 3 — Recomendación Metodológica Proactiva]
+→ Basándote en la hipótesis central y el tipo de problema definidos en el Momento 1,
+   recomendar proactivamente una combinación de métodos:
+   - Problema de DESCUBRIMIENTO → Entrevistas en profundidad (N ≥ 5-8) + Desk Research
+   - Problema de VALIDACIÓN → Encuesta cuantitativa (N ≥ 30) + Test de concepto
+   - Problema MIXTO → Entrevistas exploratorias (N=5) + Encuesta de validación posterior
+   - Presentar las opciones con sus trade-offs (tiempo, costo, profundidad del insight)
+
+[CHECKPOINT 4 — ¿Hay plan de encuesta?]
+→ Si el método incluye encuesta: "¿Ya tenés las preguntas diseñadas?"
+→ Si SÍ: revisarlas y sugerir mejoras (evitar preguntas leading, añadir escalas, etc.)
+→ Si NO: ofrecerse a diseñar el cuestionario completo con escala,
+   formato de respuesta recomendado (Likert, abierta, NPS) y soporte sugerido
+   (Google Forms, Typeform, u otro). Generar el guión listo para usar.
+
+[CHECKPOINT 5 — Soporte de distribución]
+→ "¿Tenés pensado cómo vas a reclutar o distribuir la investigación?"
+→ Si NO: sugerir canales concretos según el perfil del usuario target del proyecto.
+```
+
 **Regla clave:** El benchmark es un informe completo de 6 secciones. Leer `references/benchmark_guide.md` antes de ejecutarlo.
+**Regla anti-pasividad:** Si el humano llega a este momento sin un plan de research definido, **la IA es la responsable de guiarlo**. El framework nunca debe limitarse a esperar que el humano proponga la metodología. La iniciativa es del framework, no del humano.
 
 ### Momento 2 — IA Auxiliar / Asistente on Vivo
 **Archivo:** `skills/momento_2_live_assistant.md`

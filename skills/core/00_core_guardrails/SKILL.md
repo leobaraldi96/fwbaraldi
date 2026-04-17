@@ -33,11 +33,75 @@ Esta es la regla de oro para evitar la degradación del conocimiento en el ecosi
 
 ---
 
-## 📂 3. Aislamiento de Output (Zero-Copy)
+## 📂 3. Aislamiento de Output y Taxonomía de Carpetas (Zero-Leakage)
 
-- **Ubicación Obligatoria:** Todos los artefactos generados deben residir exclusivamente en la carpeta `docs-fwbaraldi/` del proyecto activo (o la ruta específica definida por el usuario al inicio).
-- **Prohibición de Fuga (Zero-Leakage):** Queda prohibido generar carpetas temporales (ej: `scratch`), archivos de estilos (`.css`), o scripts sueltos (`.js`) fuera del directorio del artefacto. 
-- **Cero Basura en la Raíz:** Si el sistema necesita archivos auxiliares para una landing, estos deben guardarse en una subcarpeta interna (ej: `docs-fwbaraldi/01_Problem_Framing/assets/`). 
+### El principio
+El repositorio del *entregable* (el código de la web, la app, el producto que irá a deploy) debe permanecer **100% puro**. Nada que no sea parte del entregable puede vivir en su raíz o en sus carpetas de código. Todo lo que genera el framework — sin importar su naturaleza — vive **exclusivamente** dentro de `docs-fwbaraldi/` en la raíz del proyecto.
+
+**REGLA DE ORO:** Si un archivo no va a producción, va a `docs-fwbaraldi/`.
+
+### Taxonomía obligatoria de subcarpetas
+
+Dentro de `docs-fwbaraldi/` la organización es por **naturaleza del contenido**, no por fecha ni por nombre de sprint:
+
+```
+docs-fwbaraldi/
+├── 00_Backlog_Estrategico.md          ← Siempre en la raíz. Gestión de scope.
+│
+├── 01_Problem_Framing/                ← Artefactos de la Etapa 01
+│   ├── 01_Problem_Statement.md
+│   ├── 02_Opportunity_Map.md
+│   ├── 03_Stakeholder_Map.md
+│   ├── 04_Success_Metrics.md
+│   ├── 05_Outcome_Definition.md
+│   └── 06_Informe_de_Cierre.md
+│
+├── 02_System_Analysis/                ← Artefactos de la Etapa 02
+│   ├── Actor_Map.md
+│   ├── Dependency_Map.md
+│   └── Architecture_Overview.md
+│
+├── [03_07_...]/                       ← Una carpeta por cada etapa con artefactos propios
+│
+├── UXR/                               ← Todo lo que sea User Research
+│   ├── plan_de_metodologia.md         ← Plan de research y metodologías elegidas
+│   ├── guion_entrevistas.md           ← Guión de entrevistas cualitativas
+│   ├── guion_encuesta.md              ← Cuestionario para encuestas cuantitativas
+│   ├── base_entrevistados.md          ← Registro de participantes
+│   ├── notas_entrevista_[nombre].md   ← Una nota por entrevista/sesión
+│   ├── sintesis_tematica.md           ← Análisis y patrones emergentes
+│   ├── matriz_de_evidencia.md         ← Hipótesis vs. dato real vs. hallazgo
+│   └── informe/                       ← Si se genera landing HTML de reporte
+│       └── index.html
+│
+├── UX/                                ← Artefactos de diseño de experiencia
+│   ├── flujos_de_usuario.md
+│   ├── arquitectura_de_informacion.md
+│   ├── user_journeys.md
+│   └── wireframes_conceptuales.md
+│
+├── UXW/                               ← UX Writing y contenidos estratégicos
+│   ├── voz_y_tono.md                  ← Manual de voz y tono de marca
+│   ├── directivas_de_contenido.md     ← Reglas de escritura para la interfaz
+│   ├── microcopy_guidelines.md
+│   └── glosario_de_terminos.md
+│
+├── UI/                                ← Solo si hay especificaciones de diseño visual
+│   ├── design_tokens.md
+│   └── componentes_spec.md
+│
+└── IA/                                ← Prompts y recursos de IA del proyecto
+    ├── prompt_figma.md                ← Prompts para Figma AI u otras herramientas de diseño
+    ├── prompt_copy.md                 ← Prompts para generación de contenido del producto
+    ├── prompt_imagen.md               ← Instrucciones para generación de assets visuales
+    ├── system_prompt_[herramienta].md ← System prompts para herramientas externas (ChatGPT, Claude...)
+    └── contexto_proyecto_ia.md        ← Contexto condensado del proyecto para re-inyectar en IAs
+```
+
+### Reglas operativas
+- **Ubicación Obligatoria:** Todo artefacto del framework debe tener una subcarpeta de destino explícita. Si la IA no sabe en qué subcarpeta va, **frena y pregunta** antes de escribir el archivo.
+- **Prohibición de Fuga (Zero-Leakage):** Queda prohibido generar carpetas temporales (ej: `scratch`), archivos de estilos (`.css`) o scripts sueltos (`.js`) fuera del directorio del artefacto.
+- **Cero Basura en la Raíz:** Si el sistema necesita archivos auxiliares para una landing, estos deben guardarse dentro de la subcarpeta del artefacto (ej: `docs-fwbaraldi/UXR/informe/assets/`).
 - **Bloqueo Preventivo:** Si el agente no está seguro de la ruta de destino, **debe frenar y preguntar** al usuario antes de escribir cualquier archivo en el disco.
 - **Pureza del Repositorio:** No se deben copiar archivos operativos del framework (como este `SKILL.md` o el `context.md`) al workspace del usuario.
 

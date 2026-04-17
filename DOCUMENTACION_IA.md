@@ -3,7 +3,7 @@
 > **Para uso con IA:** cargar `SKILL.md` raíz como punto de entrada del framework. El agente detecta y carga el boot context, la memoria y las skills automáticamente.
 
 **AI-Augmented System Product Design**
-Versión 2.24.2 · Leo Baraldi
+Versión 2.25.0 · Leo Baraldi
 
 ---
 
@@ -71,4 +71,4 @@ fwbaraldi/
 - **ORDEN OBSESIVO (Zero-Leakage):** NUNCA ensucies la raíz con carpetas `scratch` o archivos CSS/JS sueltos. Todo debe estar encapsulado en `docs-fwbaraldi/`.
 
 ---
-*Framework Baraldi v2.24.2 · DOCUMENTACION_IA.md*
+*Framework Baraldi v2.25.0 · DOCUMENTACION_IA.md*
