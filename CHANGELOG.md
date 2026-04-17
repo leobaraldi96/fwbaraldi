@@ -1,11 +1,64 @@
-﻿# Changelog
+# Changelog
 
 Todas las actualizaciones destacadas de este proyecto se documentarán en este archivo.
 
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
-## [2.25.1] - 2026-04-17\n\n### Aprendizajes de Animal Groom — Research Proactivity & Folder Taxonomy\n\n> Learnings extraídos del proyecto Animal Groom (UXR con Google Forms) incorporados al framework.\n\n#### Problema Resuelto (1) — Pasividad en el Research Planning\n- **Bug metodológico:** El Momento Feedback de la Etapa 01 esperaba que el humano llegara con la metodología de investigación ya definida. El framework actuaba como validador, no como co-creador del plan.\n\n#### Problema Resuelto (2) — Contaminación de carpetas del proyecto\n- **Bug estructural:** Sin una taxonomía de subcarpetas, los archivos de research, diseño y contenido se mezclaban en la raíz de `docs-fwbaraldi/` o peor, en la raíz del proyecto entregable.\n\n#### Añadido\n- **⚡ Research Planning Checkpoint (5 pasos):** Nuevo protocolo obligatorio en el Momento Feedback de la Etapa 01. El framework ahora diagnostica proactivamente si existe un plan de research, qué datos previos hay, recomienda metodologías según el tipo de problema, se ofrece a diseñar el cuestionario completo y sugiere el canal de distribución. La iniciativa es del framework, no del humano.\n- **📂 Taxonomía de subcarpetas `docs-fwbaraldi/`:** Nueva estructura obligatoria de organización con carpetas por naturaleza del contenido: `01-07_[Etapa]/` para artefactos metodológicos, `UXR/` para research (con subcarpeta `informe/` para landings HTML), `UX/` para diseño de experiencia, `UXW/` para UX Writing y contenidos estratégicos, `UI/` para especificaciones visuales.\n- **Regla de Oro actualizada:** \"Si un archivo no va a producción, va a `docs-fwbaraldi/`.\"\n\n---\n\n## [2.25.0] - 2026-04-17
+## [2.25.5] - 2026-04-17
+
+### UI Standards v2.0 & Quality Control
+- **Añadido:** `baraldi_report_standard.css` v2.0 con escala tipográfica endurecida (mínimo 13px) y paleta de 10 colores para Chart.js.
+- **Añadido:** **UI Quality Checklist** obligatorio para informes HTML en el Momento 2.
+- **Mejorado:** Reglas de contraste y legibilidad garantizadas por diseño en los templates.
+
+---
+
+## [2.25.4] - 2026-04-17
+
+### Data Exhaustiveness & Principle of Amplification
+- **Añadido:** **Principio de Amplificación** — Prohibición absoluta de reducir contenido en iteraciones. El framework solo puede sumar o enriquecer.
+- **Añadido:** **Data Exhaustiveness Mandate** — Obligación de analizar el 100% de los datos recolectados. Prohibida la síntesis que descarte preguntas de encuestas.
+- **Añadido:** **Output Format Checkpoint** — El framework ahora pregunta el formato de salida (HTML, BI, PPT, PDF) antes de generar informes.
+
+---
+
+## [2.25.3] - 2026-04-17
+
+### Transparencia Operativa (Por qué / Cómo / Para qué)
+- **Añadido:** Protocolo de comunicación obligatoria antes de cualquier acción estructural (crear carpetas, archivos o proponer metodologías).
+- **Añadido:** Integración del Protocolo en el Boot Context y en el Checklist de Core Guardrails (v1.3.0).
+
+---
+
+## [2.25.2] - 2026-04-17
+
+### Refinamiento de Taxonomía & IA Folder
+- **Añadido:** Carpeta `IA/` dentro de `docs-fwbaraldi/` para centralizar prompts de Figma, instrucciones de sistema y resúmenes de contexto para otras IAs.
+- **Añadido:** Taxonomía de carpetas UXW (UX Writing) y UI (Diseño Visual) dentro de la estructura Zero-Leakage.
+
+---
+
+## [2.25.1] - 2026-04-17
+
+### Aprendizajes de Animal Groom — Research Proactivity & Folder Taxonomy
+
+> Learnings extraídos del proyecto Animal Groom (UXR con Google Forms) incorporados al framework.
+
+#### Problema Resuelto (1) — Pasividad en el Research Planning
+- **Bug metodológico:** El Momento Feedback de la Etapa 01 esperaba que el humano llegara con la metodología de investigación ya definida. El framework actuaba como validador, no como co-creador del plan.
+
+#### Problema Resuelto (2) — Contaminación de carpetas del proyecto
+- **Bug estructural:** Sin una taxonomía de subcarpetas, los archivos de research, diseño y contenido se mezclaban en la raíz de `docs-fwbaraldi/` o peor, en la raíz del proyecto entregable.
+
+#### Añadido
+- **⚡ Research Planning Checkpoint (5 pasos):** Nuevo protocolo obligatorio en el Momento Feedback de la Etapa 01. El framework ahora diagnostica proactivamente si existe un plan de research, qué datos previos hay, recomienda metodologías según el tipo de problema, se ofrece a diseñar el cuestionario completo y sugiere el canal de distribución. La iniciativa es del framework, no del humano.
+- **📂 Taxonomía de subcarpetas `docs-fwbaraldi/`:** Nueva estructura obligatoria de organización con carpetas por naturaleza del contenido: `01-07_[Etapa]/` para artefactos metodológicos, `UXR/` para research (con subcarpeta `informe/` para landings HTML), `UX/` para diseño de experiencia, `UXW/` para UX Writing y contenidos estratégicos, `UI/` para especificaciones visuales.
+- **Regla de Oro actualizada:** "Si un archivo no va a producción, va a `docs-fwbaraldi/`."
+
+---
+
+## [2.25.0] - 2026-04-17
 
 ### Protocolo de Detección de Proyecto Activo (Project Awareness)
 
