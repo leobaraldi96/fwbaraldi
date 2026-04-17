@@ -129,11 +129,38 @@ Antes de diseñar el plan, el framework debe ejecutar el siguiente interrogatori
 **Produce:** Briefs por entrevistado, notas estructuradas en tiempo real, informe de research completo con **Matriz de Evidencia** (Hipótesis vs. Dato real vs. Hallazgo).
 **Regla clave:** Marcar evidencia con `[CONFIRMA H1]`, `[REFUTA H2]`, `[NUEVO INSIGHT]`. Prohibida la síntesis vaga; cada hallazgo debe asociarse a una pregunta o dato específico.
 
-### Momento 3 — Evaluación de Cierre
+### Momento 3 — Evaluación de Cierre + Output Format Selection
 **Archivo:** `skills/momento_3_cierre.md`
 **Activar cuando:** El humano aprueba el Informe de Research y declara cierre de recolección.
 **Produce:** Informe de Cierre con recomendación: avanzar / iterar / pivotar.
-**Regla clave:** Ejecutar los 4 pasos visibles siempre. La honestidad del informe es no negociable. **Proactividad de Soporte:** Si el N de respuestas o entrevistas es > 10, debés proponer proactivamente generar una **Landing de Informe UXR (HTML/CSS)**. Esta landing debe comportarse como una **vista amplificadora**, visualizando exhaustivamente TODAS las métricas relevantes, proporcionando contexto para cada bloque de datos y conectándolos con la Matriz de Evidencia de forma enriquecida. No recortes información.
+**Regla clave:** Ejecutar los 4 pasos visibles siempre. La honestidad del informe es no negociable.
+
+**⚡ OUTPUT FORMAT SELECTION CHECKPOINT (OBLIGATORIO antes de generar el informe):**
+Antes de generar cualquier entregable de datos, el framework DEBE preguntar:
+
+```
+📊 Tenemos los datos procesados. Antes de armar el informe, necesito saber cómo lo vas a presentar:
+
+A) 🌐 HTML interactivo (para browser, con gráficas con Chart.js/D3)
+   → Ideal para: presentar en vivo al cliente, compartir como link, dashboards explorables
+
+B) 📊 Exportación estructurada (CSV / JSON para Tableau, Power BI, Google Data Studio)
+   → Ideal para: cruzar con otras fuentes, refreshes automáticos, equipos con BI propio
+
+C) 🖼️ Imágenes/infografías (PNG/SVG para PPT, Notion, Figma, Canva)
+   → Ideal para: presentaciones ejecutivas, decks de cliente, materiales impresos
+
+D) 📄 Documento estático (PDF o Markdown de alta densidad)
+   → Ideal para: reportes formales, entregables de consultoría, documentación interna
+
+E) Combinación de los anteriores → especificar cuáles
+```
+
+→ La elección condiciona TODO: tecnología, paleta de colores, tipografía, estructura del dato.
+→ Si el humano no tiene claro cuál, RECOMENDAR según el contexto del proyecto.
+
+**Proactividad de Soporte:** Si el N de respuestas o entrevistas es > 10 y se elige HTML, debés proponer generar una **Landing de Informe UXR (HTML/CSS/Chart.js)** que se comporte como una **vista amplificadora**: visualizando exhaustivamente TODAS las preguntas y métricas, proporcionando copy interpretativo para cada gráfica, y proponiendo cruces de datos no obvios. **Ninguna pregunta de la encuesta puede quedar sin representación visual o analítica.**
+
 
 ---
 

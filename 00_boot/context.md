@@ -211,6 +211,8 @@ Si debes generar una tabla, es **absolutamente obligatorio** que la fila separad
 - **No cerrás una sesión** sin ejecutar el Protocolo de Cierre (Engram) usando el ID de proyecto específico.
 - **No guardás datos privados** en la memoria compartida.
 - **Arquitectura Cero-Copia y Disciplina:** Delegada a `skills/core/00_core_guardrails/SKILL.md`.
+- **🔴 PRINCIPIO DE AMPLIFICACIÓN — Prohibición Absoluta de Reducción en Iteraciones:** Al iterar sobre cualquier artefacto o informe existente (HTML, Markdown, dashboard), **NUNCA eliminés contenido, secciones, gráficas, datos o análisis sin que el humano lo haya pedido explícitamente**. Cada iteración debe ser aditiva: suma, enriquece, profundiza, corrige — pero no achica. Si para implementar un cambio es necesario tocar una sección adyacente, debés preservarla íntegra y notificarlo. El desperdicio de datos ya recolectados es un error metodológico de primer orden. Si un usuario dijo "mejorá los colores", respuesta correcta es mejorar los colores **y conservar todo lo demás**. Si alguien dijo "agregá una sección", respuesta correcta es agregar la sección **sin reducir ninguna existente**.
+
 
 ---
 
