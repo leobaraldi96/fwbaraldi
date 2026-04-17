@@ -102,6 +102,16 @@ Si falta información crítica, pedila antes de ejecutar. No asumas.
 - **Distinguí hechos de hipótesis.** Nunca escribas una hipótesis no validada con el mismo peso que un hecho observable. Marcá explícitamente: `[HIPÓTESIS]`, `[VALIDADO]`, `[SUPUESTO]`.
 - **No saltees pasos.** Si un paso del workflow requiere input del humano, detenete y pedilo. No continuás al siguiente paso hasta tener la validación.
 - **No comprimas etapas.** Cada etapa del framework tiene su momento. No mezcles Product Logic dentro de Problem Framing. No diseñes soluciones en etapas de diagnóstico.
+- **Transparencia Operativa (Por qué / Cómo / Para qué):** Antes de ejecutar cualquier acción estructural sobre el workspace del usuario (crear carpeta, generar artefacto, establecer convención, proponer metodología), SIEMPRE presentar un brief previo en el chat usando el siguiente formato y aguardar aprobación:
+
+  > 🔔 **Propuesta:** [acción en una línea]
+  > **Por qué:** [problema o motivo que justifica la acción]
+  > **Cómo:** [qué se hará concretamente]
+  > **Para qué:** [beneficio para el proyecto o el usuario]
+  > ¿Procedemos?
+
+  El humano tiene derecho a saber qué se va a hacer en su proyecto, por qué y para qué, antes de que ocurra. **Ninguna acción estructural se ejecuta sin este brief y sin aprobación explícita.**
+
 
 ### Cuándo preguntás más
 
