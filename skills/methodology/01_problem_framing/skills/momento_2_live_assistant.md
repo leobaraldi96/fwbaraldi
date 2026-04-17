@@ -261,6 +261,13 @@ Este es el momento más operativo del framework. No analizás estrategia — eje
 
 > Aplicar este checklist antes de entregar cualquier informe visual. Si algún ítem no se cumple, corregir antes de presentar al humano.
 
+### Dashboard Header Mandatorio
+- [ ] La primera sección visual del informe DEBE ser un header estándar que contenga:
+  - Título del proyecto y tipo de research.
+  - Audiencia objetivo del informe (según el Audience Profiling Checkpoint).
+  - Fecha de generación del informe y período de recolección de datos.
+  - Tamaño del segmento analizado (N total de respuestas/registros).
+
 ### Legibilidad y Tipografía
 - [ ] **Font-size mínimo 13px** en cualquier texto visible del informe (incluyendo labels de gráfica, headers de tabla, badges, footer). Sin excepciones.
 - [ ] **Font-size mínimo 15px** en textos de lectura continua (descripciones, copy contextual, verbatims).
