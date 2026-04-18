@@ -249,6 +249,12 @@ Si compartís, publicás o enseñás este sistema públicamente, por favor da el
 
 ---
 
+## 🤝 Colaboradores
+
+- **[Denisse Peduzzi](https://www.linkedin.com/in/denissepeduzzi/)** — *Content Designer*
+
+---
+
 ## 📩 Contacto
 
 **Leo Baraldi** — *Senior UX Product Designer*
@@ -259,4 +265,4 @@ Si compartís, publicás o enseñás este sistema públicamente, por favor da el
 
 ---
 
-*Framework Baraldi v2.25.0 · Desarrollado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.25.7 · Desarrollado y mantenido por Leo Baraldi.*
