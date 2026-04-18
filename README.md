@@ -28,8 +28,8 @@ El Framework Baraldi ha evolucionado de ser una colección de prompts a converti
 > 
 | Rol | Responsabilidad | Aporte al Ecosistema |
 | :--- | :--- | :--- |
-| **Humano (Director)** | Intuición, Ética, Empatía y Visión de Negocio. | El "Para Qué" y el Sabor Único del producto. |
-| **IA (Orquestador)** | Estructura, Memoria Sistémica, Lógica y Rigor Dogmático. | El "Cómo", la Consistencia y la Protección contra Sesgos. |
+| **Humano (Director)** | Intuición, ética, émpatía y visión de negocio. | El "Para qué" y el sabor único del producto. |
+| **IA (Orquestador)** | Estructura, memoria sistémica, lógica y rigor dogmático. | El "cómo", la consistencia y la protección contra sesgos. |
 
 ---
 
@@ -43,6 +43,7 @@ A diferencia de un asistente genérico, este framework obliga a la IA a adoptar 
 Tenemos diagramas y explicaciones de carácter gráfico para ilustrar de qué va el framework, cómo funciona bajo la Arquitectura Cero-Copia y cómo iterar con IA.
 
 👉 **[Ver Documentación Oficial de Arquitectura del Framework (ARQUITECTURA_CORE.md)](./ARQUITECTURA_CORE.md)**
+
 👉 **[Ver Diagramas Conceptuales Antiguos en Figma](https://www.figma.com/design/E8PBny6kx3RUriuyuM1uRu/Framework-Baraldi?node-id=0-1&t=7rqvxMKhPUemHSMQ-1)**
 
 ---
@@ -67,7 +68,8 @@ Ninguno de los frameworks anteriores tiene estas tres características juntas:
 2. **Rigor Analítico "Grano Fino"**: Prohibición de síntesis vagas. Todo hallazgo debe estar respaldado por datos exactos (N, %, verbatims) y conectado a hipótesis de negocio.
 3. **Proactividad de Soporte**: El sistema propone proactivamente formatos de alta fidelidad (Landings/Dashboards HTML) cuando la densidad de datos lo requiere, eliminando la pasividad del agente.
 4. **Experiencia implementada como principio fundacional**: El diseño no termina en el handoff. Termina cuando la experiencia funciona y aporta valor en producción. Eso redefine el rol del diseñador de forma radical, y lo enuncia explícitamente como su meta.
-3. **El problema del nivel de madurez resuelto con estructura**: El diseñador académico conoce los modelos teóricos pero no sabe cómo adaptarlos a la velocidad actual. El senior experimentado sabe qué hacer de forma empírica pero no tiene un modelo que lo sostenga estructuradamente. El Framework **le da al académico la experiencia embebida en el proceso, y al senior le da el modelo que le faltaba**.
+5. **El problema del nivel de madurez resuelto con estructura**: El diseñador académico conoce los modelos teóricos pero no sabe cómo adaptarlos a la velocidad actual. El senior experimentado sabe qué hacer de forma empírica pero no tiene un modelo que lo sostenga estructuradamente. El Framework **le da al académico la experiencia embebida en el proceso, y al senior le da el modelo que le faltaba**.
+6. **Verificación de Versión Silenciosa (v2.21.0+)**: La IA ahora verifica silenciosamente la versión local contra el repositorio oficial de GitHub para asegurar que el motor metodológico esté siempre actualizado.
 
 ---
 
@@ -101,7 +103,7 @@ A diferencia del pasado donde te perdías el contexto entre chats, el Agente uti
 *Todo esto ocurre en tu disco duro (zero-cloud) y hace que saltar de un proyecto a otro sea una experiencia de inteligencia continua.*
 
 ### ⚡ Ventaja de Infraestructura: Ahorro Masivo de Tokens (90%+)
-A nivel de infraestructura (LLM Ops), el Framework Baraldi hereda una de las mayores ventajas arquitectónicas de Engram: **la eficiencia de contexto (RAG local)**. 
+A nivel de infraestructura (LLM Ops), el Framework hereda una de las mayores ventajas arquitectónicas de Engram: **la eficiencia de contexto [(RAG local)](https://www.youtube.com/watch?v=uAsd9pOIcLg)**. 
 En lugar de inyectar bases enteras de conocimiento kilométricas en el prompt (que consumen miles de tokens por request), el Framework realiza consultas semánticas exactas (`mem_search`). Al cargar en memoria viva solo los hallazgos estrictamente necesarios para la toma de decisión del momento, **estamos estimando un ahorro del contexto (tokens de entrada) superior al 90%** en fases de desarrollo avanzado, manteniendo la IA enfocada, rápida y económicamente viable.
 
 ### 🌟 Inspiración y Reconocimientos
@@ -199,7 +201,7 @@ fwbaraldi/
 ### Instalación Desatendida (Recomendado)
 Hemos construido un instalador interactivo (`baraldi-init`) que se encarga de todo el trabajo pesado. Solo necesitas tener **Node.js** instalado en tu computadora.
 
-Abrí tu terminal y ejecutá (directly desde este repositorio):
+Abrí tu terminal y ejecutá (directo desde este repositorio):
 ```bash
 npx github:leobaraldi96/fwbaraldi
 ```
@@ -211,9 +213,9 @@ npx github:leobaraldi96/fwbaraldi
 4. Imprimirte el bloque de código exacto que debés pegar en tu `mcp_config.json` para encender la memoria.
 
 ### Paso 2: Ejecución
-1. Abre tu terminal o IDE en la carpeta vacía de tu nuevo proyecto.
-2. Inicia tu Agente (Ej: Antigravity).
-3. Escribe en el chat: *"Iniciemos un proyecto nuevo usando el Framework Baraldi"*.
+1. Abre tu terminal o IDE en la carpeta vacía de tu nuevo proyecto o proyecto ya comenzado.
+2. Inicia tu Agente (Ej: [Antigravity](https://antigravity.google/)).
+3. Escribe en el chat: *"Iniciemos un proyecto nuevo usando el Framework Baraldi"* o *"Quiero utilizar el Framework Baraldi en este proyecto"*.
 4. El sistema se auto-orquestará leyendo tu `SKILL.md` global y registrará memorias en tu SQLite local automáticamente.
 
 **Uso en la Web (Claude.ai, ChatGPT, Gemini) [TRACK LEGACY]:**
