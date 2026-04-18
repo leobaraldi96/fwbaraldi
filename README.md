@@ -69,7 +69,7 @@ Ninguno de los frameworks anteriores tiene estas tres características juntas:
 3. **Proactividad de Soporte**: El sistema propone proactivamente formatos de alta fidelidad (Landings/Dashboards HTML) cuando la densidad de datos lo requiere, eliminando la pasividad del agente.
 4. **Experiencia implementada como principio fundacional**: El diseño no termina en el handoff. Termina cuando la experiencia funciona y aporta valor en producción. Eso redefine el rol del diseñador de forma radical, y lo enuncia explícitamente como su meta.
 5. **El problema del nivel de madurez resuelto con estructura**: El diseñador académico conoce los modelos teóricos pero no sabe cómo adaptarlos a la velocidad actual. El senior experimentado sabe qué hacer de forma empírica pero no tiene un modelo que lo sostenga estructuradamente. El Framework **le da al académico la experiencia embebida en el proceso, y al senior le da el modelo que le faltaba**.
-6. **Verificación de Versión Silenciosa (v2.21.0+)**: La IA ahora verifica silenciosamente la versión local contra el repositorio oficial de GitHub para asegurar que el motor metodológico esté siempre actualizado.
+6. **Verificación de Versión Proactiva (v2.25.7+)**: El Framework ahora verifica automáticamente tu versión local contra el repositorio oficial de GitHub y te avisará si existe una actualización disponible para asegurar que el motor metodológico esté siempre al día.
 
 ---
 
@@ -230,6 +230,8 @@ npx github:leobaraldi96/fwbaraldi
 Una vez que el Framework salga de su fase Beta, será publicado oficialmente en NPM para que puedas instalarlo simplemente tecleando `npx baraldi-init`. Por ahora, utiliza el método `npx github:...` descrito arriba.
 
 ### 🔄 Cómo Actualizar
+El Framework ahora verifica automáticamente tu versión local y te avisará si existe una actualización disponible para asegurar que trabajes con el motor metodológico más reciente.
+
 Para obtener las últimas mejoras y nuevas etapas del framework:
 
 - **Si usaste el instalador:** Volvé a ejecutar `npx github:leobaraldi96/fwbaraldi` en tu terminal.

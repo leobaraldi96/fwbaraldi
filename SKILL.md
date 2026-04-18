@@ -30,4 +30,4 @@ Guiar al equipo de producto a través de fases estructuradas de descubrimiento, 
 - **Memoria Sistémica:** Al iniciar cada sesión, invocar el protocolo de memoria de Engram MCP. El conocimiento se registra por **ID de proyecto específico** (`animal-groom`, `aaa-landing`, etc.) para evitar agrupaciones genéricas, manteniendo un historial limpio y estructurado por producto.
 
 ---
-*Framework Baraldi v2.24.1 · Creado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.25.7 · Creado y mantenido por Leo Baraldi.*
