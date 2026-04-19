@@ -5,6 +5,17 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.25.9] - 2026-04-19
+
+### Dualidad de Síntesis UXR (Dashboard vs Informe Profundo)
+- **Añadido:** **Output Dimensions Checkpoint** — El framework ahora obliga a definir Naturaleza, Formato, Audiencia y Contexto Físico de uso antes de generar entregables de datos.
+- **Añadido:** **Protocolo de Brief de Filtrado** — Obligación de proponer y validar con el humano qué datos se omiten en un Dashboard por economía visual.
+- **Añadido:** **Ley de Miller para Dashboards** — Límite estricto de 5-7 módulos visuales clave para prevenir la obesidad cognitiva en dashboards.
+- **Añadido:** **Soporte BI Proactivo** — Si se solicita un dashboard en formato de exportación, la IA ahora interroga sobre el schema/estructura requerida por el software destino (PowerBI/Tableau).
+- **Mejorado:** La "Max-Juice Doctrine" de exhaustividad ahora se reserva y potencia exclusivamente para el modo **Informe Profundo**.
+
+---
+
 ## [2.25.8] - 2026-04-19
 
 ### Estabilización de Infraestructura (Engram v1.12.0)
