@@ -7,7 +7,7 @@
 
 ## SISTEMA DE MEMORIA ACTUALIZADO — Usar Engram MCP
 
-> **Version 2.5.2** — Arquitectura Cero-Copia activada el 2026-04-08.
+> **Version 2.6.0** — Actualización de Infraestructura (Engram v1.12.0) el 2026-04-19.
 > El sistema de memoria del framework es **GLOBAL** y reside exclusivamente en **Engram MCP**.
 > **NO repliques carpetas de memoria en el proyecto local.** Esto garantiza que el aprendizaje sea sistémico entre todos tus proyectos.
 
@@ -17,9 +17,9 @@
 
 La memoria es la capa transversal del Framework Baraldi que permite que el conocimiento generado en una sesion este disponible en sesiones futuras.
 
-**Fuente de verdad actual:** Servidor **Engram MCP** (`engram.exe mcp`)
+**Fuente de verdad actual:** Servidor **Engram MCP** `v1.12.0` (`engram.exe mcp`)
 **Proyecto Engram (Infraestructura):** `fw-baraldi-core`
-**Proyecto Engram (Producto):** `[slug-del-proyecto]` (Ej: `la-cania`, `animal-groom`)
+**Proyecto Engram (Producto):** `[slug-del-proyecto]` (Ej: `app-comercio`, `proyecto-alfa`)
 
 ---
 
@@ -92,14 +92,27 @@ Si el contenido a guardar incluye tokens, contrasenas, datos personales de entre
 ## Estructura de proyecto en Engram
 
 Todos los hallazgos del framework usan:
-- `project: "[slug-del-proyecto]"` (Ej: `animal-groom`)
+- `project: "[slug-del-proyecto]"` (Ej: `proyecto-alfa`)
 - `topic_key: "[eje-estrategico]"`
 
 Ejemplos de topic_key:
 - `pf-hipotesis-central` (dentro del proyecto `la-cania`)
-- `sa-actor-map` (dentro del proyecto `animal-groom`)
+- `sa-actor-map` (dentro del proyecto `proyecto-alfa`)
 - `fw-decision-memoria-engram` (dentro del proyecto `fw-baraldi-core`)
+
+## Mantenimiento y Actualización del Motor
+El motor de memoria (Engram) debe mantenerse actualizado para aprovechar las capacidades proactivas del framework.
+
+### Cómo actualizar el motor
+Si ya tienes el framework instalado, puedes actualizar el binario de Engram de dos formas:
+1. **Vía Go (Recomendado):** Ejecuta `go install github.com/Gentleman-Programming/engram/cmd/engram@latest`.
+2. **Reinstalación:** Vuelve a ejecutar el script `npm run install` del framework, el cual descargará automáticamente la versión estable definida en `scripts/install.js`.
+
+### Mejoras de la v1.12.0
+- **Save Nudges:** El motor detecta periodos de inactividad de guardado (10 min+) y envía recordatorios al agente para evitar pérdida de contexto.
+- **Activity Score:** Al ejecutar `mem_session_summary`, el sistema añade un reporte de actividad (ej: "47 herramientas usadas, 2 guardados") para medir el esfuerzo de documentación.
+- **Obsidian Brain:** Capacidad nativa de exportar toda la memoria para visualizarla como un grafo de conocimiento en Obsidian.
 
 ---
 
-*Framework Baraldi v2.5.0 · memory/PROTOCOLO_MEMORIA.md · Capa de Memoria Sistemica*
+*Framework Baraldi v2.6.0 · memory/PROTOCOLO_MEMORIA.md · Capa de Memoria Sistémica*

@@ -5,6 +5,18 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.25.8] - 2026-04-19
+
+### Estabilización de Infraestructura (Engram v1.12.0)
+- **Actualizado:** Motor de memoria Engram migrado a la versión estable global `v1.12.0`.
+- **Añadido:** Capacidad de **Save Nudges** para prevenir pérdida de contexto por inactividad.
+- **Añadido:** Capacidad de **Session Activity Score** para auditar el esfuerzo de memoria.
+- **Añadido:** Guía de Mantenimiento y Actualización del Motor en el `PROTOCOLO_MEMORIA.md`.
+- **Añadido:** Aislamiento de Contexto (Workspace Awareness) en las Reglas de Oro del framework para evitar contaminación entre proyectos.
+- **Mejorado:** `scripts/install.js` ahora descarga por defecto la versión v1.12.0 estable para nuevos usuarios.
+
+---
+
 ## [2.25.7] - 2026-04-17
 
 ### Dashboard Header Mandatorio

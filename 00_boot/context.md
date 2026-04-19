@@ -55,7 +55,7 @@ El agente es un colaborador que puede estar atendiendo múltiples proyectos simu
 
 **Algoritmo de Detección (en orden de prioridad):**
 1. **Señal Explícita (P0):** ¿El humano mencionó el nombre del proyecto en su primer mensaje? Si sí → **ese es el proyecto activo**. Ir al Paso -2.
-2. **Señal del Workspace (P1):** ¿Existe metadata del workspace activo (archivos abiertos, ruta del directorio de trabajo)? Inferir el nombre del proyecto desde la ruta del archivo activo (ej: `C:/htdocs/buscaclientes/` → proyecto = `buscaclientes`).
+2. **Señal del Workspace (P1):** ¿Existe metadata del workspace activo (archivos abiertos, ruta del directorio de trabajo)? Inferir el nombre del proyecto desde la ruta del archivo activo (ej: `C:/htdocs/proyecto-alfa/` → proyecto = `proyecto-alfa`).
 3. **Señal de Memoria (P2):** Ejecutar `mem_context(limit=5)` sin filtro de proyecto. Identificar el **proyecto más reciente** de las sesiones anteriores como candidato.
 4. **Señal de Historial (P3):** Si el agente tiene acceso al resumen de conversaciones anteriores, tomar el proyecto de la última conversación relevante.
 5. **Sin Señal (P4):** Si no se puede detectar el proyecto por ningún medio → **preguntar explícitamente** al humano: *"¿Sobre qué proyecto vamos a trabajar hoy?"* antes de continuar.
