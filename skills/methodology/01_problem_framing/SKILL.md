@@ -135,56 +135,32 @@ Antes de diseñar el plan, el framework debe ejecutar el siguiente interrogatori
 **Produce:** Informe de Cierre con recomendación: avanzar / iterar / pivotar.
 **Regla clave:** Ejecutar los 4 pasos visibles siempre. La honestidad del informe es no negociable.
 
-**⚡ OUTPUT FORMAT SELECTION CHECKPOINT (OBLIGATORIO antes de generar el informe):**
-Antes de generar cualquier entregable de datos, el framework DEBE preguntar:
+**⚡ OUTPUT DIMENSIONS CHECKPOINT (OBLIGATORIO antes de generar el informe):**
+Antes de generar cualquier entregable de datos, el framework DEBE interrogar al usuario sobre las 4 dimensiones de salida. Esto es crítico para no confundir un dashboard con un informe.
 
 ```
-📊 Tenemos los datos procesados. Antes de armar el informe, necesito saber cómo lo vas a presentar:
+📊 Tenemos los datos procesados. Antes de construirlos, necesito definir 4 variables clave:
 
-A) 🌐 HTML interactivo (para browser, con gráficas con Chart.js/D3)
-   → Ideal para: presentar en vivo al cliente, compartir como link, dashboards explorables
+1. Naturaleza Analítica: ¿Dashboard o Informe Profundo?
+   → Dashboard Ágil: Economía visual, 5-7 métricas clave máximo, para consumo rápido y accionar inmediato.
+   → Informe Profundo (Deep Report): Densidad analítica, cruces de datos complejos, pensado para el entendimiento exhaustivo y decisiones a largo plazo.
 
-B) 📊 Exportación estructurada (CSV / JSON para Tableau, Power BI, Google Data Studio)
-   → Ideal para: cruzar con otras fuentes, refreshes automáticos, equipos con BI propio
+2. Formato Técnico (Soporte):
+   → HTML interactivo, Exportación (CSV/JSON), Documento estático, Infografía.
+   *(Nota: Si es un Dashboard exportable para BI como PowerBI/Tableau, por favor indícame qué schema/estructura requiere ese software).*
 
-C) 🖼️ Imágenes/infografías (PNG/SVG para PPT, Notion, Figma, Canva)
-   → Ideal para: presentaciones ejecutivas, decks de cliente, materiales impresos
+3. Audiencia (¿Quién lo consume?):
+   → Técnico (quiere ver el dato crudo), Ejecutivo C-Level (quiere ver la conclusión rápida), Público general (quiere narrativa accesible).
 
-D) 📄 Documento estático (PDF o Markdown de alta densidad)
-   → Ideal para: reportes formales, entregables de consultoría, documentación interna
-
-E) Combinación de los anteriores → especificar cuáles
+4. Contexto Físico de Uso:
+   → ¿Bajo qué condiciones se leerá esto? (Ej: "En una iPad en el exterior con sol directo", "En pantallas industriales lejanas", "En una oficina tranquila"). Esto dictará mis reglas de contraste tipográfico y ui-tokens.
 ```
 
-→ La elección condiciona TODO: tecnología, paleta de colores, tipografía, estructura del dato.
-→ Si el humano no tiene claro cuál, RECOMENDAR según el contexto del proyecto.
+→ **Protocolo de Transparencia de Exclusión (Brief de Filtrado):** 
+Si el humano selecciona la ruta **"Dashboard"**, el framework tiene la regla estricta de NO mostrarlo todo. Pero NUNCA debe ocultar datos por asunción. Antes de generar el código, presentá un **Brief de Filtrado**:
+*"Dado que es un Dashboard y requerimos economía visual, propongo mantener estas 5 métricas primarias [listar] y dejar fuera estas 3 [listar] porque [motivo]. ¿Estás de acuerdo o preferís cambiar el liderazgo de los datos?"*
 
-**👥 AUDIENCE PROFILING CHECKPOINT (hacer junto con el formato):**
-El informe cambia radicalmente según quién lo va a leer. Preguntar:
-
-```
-👥 ¿Y quién va a leer este informe?
-
-A) 🔬 Equipo interno / técnico
-   → Qué necesita: datos detallados, verbatims, cruces, evidencia cruda
-   → Cómo adaptar: versión densa, todas las preguntas, secciones técnicas visibles
-
-B) 👔 C-Level / Cliente ejecutivo
-   → Qué necesita: resumen ejecutivo claro, 3-5 hallazgos clave, recomendaciones accionables
-   → Cómo adaptar: síntesis al tope, "So what?" priorizado, gráficas de alto impacto
-
-C) 🌐 Público general / presentación abierta
-   → Qué necesita: contexto amplio, narrativa accesible, sin jerga técnica
-   → Cómo adaptar: versión divulgativa, más storytelling, datos apoyados con contexto
-
-D) Audiencia mixta → definir secciones diferenciadas por perfil
-```
-
-→ Si el informe es para **B (C-Level)**: el resumen ejecutivo va PRIMERO, máximo 1 pantalla, con las 3 decisiones que el dato habilita.
-→ Si el informe es para **A (equipo técnico)**: el detalle va completo, sin suavizar los datos incómodos.
-→ Si no se especifica: preguntar antes de generar. No asumir.
-
-**Proactividad de Soporte:** Si el N de respuestas o entrevistas es > 10 y se elige HTML, debés proponer generar una **Landing de Informe UXR (HTML/CSS/Chart.js)** que se comporte como una **vista amplificadora**: visualizando exhaustivamente TODAS las preguntas y métricas, proporcionando copy interpretativo para cada gráfica, y proponiendo cruces de datos no obvios. **Ninguna pregunta de la encuesta puede quedar sin representación visual o analítica.**
+→ **Proactividad de Soporte:** Si se elige HTML, ofrecer generar el código (Tailwind, Chart.js) acorde a las elecciones de contraste (Contexto) y densidad (Naturaleza).
 
 
 ---

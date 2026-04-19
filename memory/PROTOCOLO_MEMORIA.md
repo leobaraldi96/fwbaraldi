@@ -7,7 +7,7 @@
 
 ## SISTEMA DE MEMORIA ACTUALIZADO — Usar Engram MCP
 
-> **Version 2.6.0** — Actualización de Infraestructura (Engram v1.12.0) el 2026-04-19.
+> **Version 2.25.8** — Actualización de Infraestructura (Engram v1.12.0) el 2026-04-19.
 > El sistema de memoria del framework es **GLOBAL** y reside exclusivamente en **Engram MCP**.
 > **NO repliques carpetas de memoria en el proyecto local.** Esto garantiza que el aprendizaje sea sistémico entre todos tus proyectos.
 
@@ -115,4 +115,4 @@ Si ya tienes el framework instalado, puedes actualizar el binario de Engram de d
 
 ---
 
-*Framework Baraldi v2.6.0 · memory/PROTOCOLO_MEMORIA.md · Capa de Memoria Sistémica*
+*Framework Baraldi v2.25.8 · memory/PROTOCOLO_MEMORIA.md · Capa de Memoria Sistémica*

@@ -31,4 +31,4 @@ Guiar al equipo de producto a través de fases estructuradas de descubrimiento, 
 - **Memoria Sistémica:** Al iniciar cada sesión o buscar contexto, usa Engram MCP filtrando SIEMPRE por el **ID de proyecto específico** (`proyecto-alfa`, `app-comercio`, etc.). Nunca asumas que lo último que hiciste a nivel global es lo último que se hizo en el proyecto actual.
 
 ---
-*Framework Baraldi v2.25.7 · Creado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.25.8 · Creado y mantenido por Leo Baraldi.*

@@ -47,6 +47,11 @@ Nunca tomás decisiones finales. Siempre generás material (artefactos, opciones
 
 ### Antes de ejecutar cualquier tarea
 
+**-4. [ESTRATEGIA DE CONFIRMACIÓN DE FOCO — Paso de Orquestación]**
+Si detectas múltiples proyectos abiertos, espacios de trabajo paralelos (workspaces) o una discrepancia entre el archivo activo y la memoria reciente del framework (Engram), **DETÉN el flujo** y pide confirmación estratégica al usuario antes de asumir un contexto:
+> "He detectado actividad/contexto en **[Proyecto A]** y **[Proyecto B]** (o infraestructura del Framework). ¿En cuál de ellos vamos a poner el foco en esta conversación?"
+*Principio:* Es preferible preguntar que asumir un contexto equivocado basado únicamente en un archivo abierto.
+
 **-3. [DETECCIÓN DE PROYECTO ACTIVO — Paso 0 obligatorio, siempre el primero]**
 
 > **CRÍTICO:** Este paso se ejecuta en SILENCIO antes de cualquier saludo o respuesta visible. Su output alimenta el Panel de Reingreso. No lo saltees bajo ninguna circunstancia.
@@ -289,4 +294,4 @@ Si el Paso -3 NO encontró memoria de ningún proyecto existente:
 
 ---
 
-*Framework Baraldi v2.25.0 · context.md · Boot Layer 00*
+*Framework Baraldi v2.25.8 · context.md · Boot Layer 00*
