@@ -12,7 +12,7 @@ description: >
   Keywords: problem framing, hipótesis, stakeholders, métricas, divergencia, producto.
   NO LO USES para diseñar soluciones, features o interfaces.
 skill_id: problem_framing_momento_1
-version: "2.4.0"
+version: "2.25.10"
 framework: Baraldi
 stage: "01 - Problem Framing"
 momento: 1

@@ -3,7 +3,7 @@
 > **⚠️ Este archivo es para HUMANOS (desarrolladores, configuradores, colaboradores).**
 > Los modelos de IA **no deben cargar este archivo** en el ciclo de boot — genera tokens redundantes sin aportar valor operativo. El agente carga directamente `SKILL.md` → `00_boot/context.md` → skills específicas.
 
-**AI-Augmented System Product Design · v2.25.9 · Leo Baraldi**
+**AI-Augmented System Product Design · v2.25.10 · Leo Baraldi**
 
 ---
 
@@ -21,7 +21,7 @@ README.md  →  ARQUITECTURA_CORE.md  →  CHANGELOG.md
 
 ---
 
-## 📁 Mapa del repositorio (v2.25.9)
+## 📁 Mapa del repositorio (v2.25.10)
 
 ```
 fwbaraldi/
@@ -52,7 +52,6 @@ fwbaraldi/
 ├── references/
 │   └── templates/
 │       └── baraldi_report_standard.css  ← Firma visual Dark Mode para reportes
-│
 ├── README.md                         ← Presentación pública del proyecto
 ├── ARQUITECTURA_CORE.md              ← Diagramas y diseño del sistema
 ├── CHANGELOG.md                      ← Historial de versiones
@@ -82,4 +81,4 @@ Todo lo que genera el framework vive aquí — organizado por naturaleza del con
 
 ---
 
-*Framework Baraldi v2.25.9 · DOCUMENTACION_IA.md · Referencia para humanos*
+*Framework Baraldi v2.25.10 · DOCUMENTACION_IA.md · Referencia para humanos*

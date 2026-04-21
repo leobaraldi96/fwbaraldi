@@ -37,4 +37,4 @@ Context7 es una plataforma de **"Context-as-a-Service"**. Provee documentación 
 Creado por **Vercel Labs**, es un ecosistema abierto de habilidades procedimentales. Si Context7 es el manual, Skills.sh es el **Entrenamiento**. Permite a la IA aprender nuevos "trucos" y flujos de ejecución de forma instantánea.
 
 ---
-*Framework Baraldi v2.24.0 · Hub de Conocimiento.*
+*Framework Baraldi v2.25.10 · Hub de Conocimiento.*

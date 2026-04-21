@@ -38,4 +38,4 @@
 
 ---
 
-*Última actualización: 2026-04-19 · Sincronizado con v.2.25.9*
+*Última actualización: 2026-04-20 · Sincronizado con v.2.25.10*

@@ -13,7 +13,7 @@ description: >
   Keywords: cierre, evaluación, hipótesis, confianza, decisión, avanzar, pivotar, iterar.
   NO LO USES sin tener el Informe de Research completo como input.
 skill_id: problem_framing_momento_3
-version: "2.4.0"
+version: "2.25.10"
 framework: Baraldi
 stage: "01 - Problem Framing"
 momento: 3

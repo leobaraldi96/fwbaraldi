@@ -40,57 +40,6 @@ Aprendido:    El agente DEBE usar mem_save/mem_search/mem_context de Engram.
 
 ---
 
-### [Eje Estratégico: fw-decision-deprecar-track-chat]
-
-```
-Tipo:         decisión
-Proyecto:     Framework Baraldi — Meta
-Etapa:        00 — Boot / Infraestructura
-Revisión:     1
-
-Qué:          Se decide deprecar el track Chat (carpeta chat/) a mediano plazo.
-              El track Chat queda congelado en v2.3.3 con las Etapas 01 y 02.
-              No se actualiza con las nuevas versiones del Core (v2.4.0+).
-
-Por qué:      La capa de memoria sistémica (v2.4.0) hace incompatible el track Chat
-              con la experiencia completa del framework. Mantener sincronización
-              Core↔Chat a lo largo de las 7 etapas genera deuda técnica insostenible.
-              El chat no puede persistir la knowledge base ni ejecutar el protocolo
-              de memoria entre sesiones.
-
-Dónde:        chat/DEPRECATED.md (aviso), DOCUMENTACION_IA.md (arquitectura de tracks)
-
-Aprendido:    El framework tiene UN solo track activo: el track Agéntico (skills/ +
-              memory/ + templates/). La carpeta chat/ es legacy. No crear nuevas
-              versiones chat de las Etapas 03-07. La regla de sincronización
-              obligatoria Core↔Chat fue eliminada en v2.4.1.
-```
-
----
-
-### [Eje Estratégico: fw-arquitectura-repositorio]
-
-```
-Tipo:         patrón
-Proyecto:     Framework Baraldi — Meta
-Etapa:        00 — Boot / Infraestructura
-Revisión:     1
-
-Qué:          El framework tiene dualidad Core↔Chat. Toda modificación al Core
-              (00_boot, skills/) debe replicarse en la carpeta chat/.
-
-Por qué:      Garantiza que la experiencia metodológica sea idéntica para
-              humanos usando copy-paste y para agentes que leen instrucciones
-              modulares.
-
-Dónde:        DOCUMENTACION_IA.md — Regla de Sincronización Arquitectónica
-
-Aprendido:    NUNCA modificar solo el Core sin actualizar chat/. Esta regla
-              aplica también a la nueva capa de memoria (agregar referencias
-              de memoria en los archivos chat/ cuando corresponda).
-```
-
----
 
 <!-- 
   Por qué:      [razón, evidencia o contexto]

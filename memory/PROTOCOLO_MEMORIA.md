@@ -7,7 +7,7 @@
 
 ## SISTEMA DE MEMORIA ACTUALIZADO — Usar Engram MCP
 
-> **Version 2.25.8** — Actualización de Infraestructura (Engram v1.12.0) el 2026-04-19.
+> **Version 2.25.10** — Blindaje de Interacción (Anti-no-op) el 2026-04-20.
 > El sistema de memoria del framework es **GLOBAL** y reside exclusivamente en **Engram MCP**.
 > **NO repliques carpetas de memoria en el proyecto local.** Esto garantiza que el aprendizaje sea sistémico entre todos tus proyectos.
 
@@ -71,15 +71,12 @@ Usar `mem_search(query="...", project="[slug-del-proyecto]")` antes de:
 ---
 
 ## Protocolo de CIERRE de sesion
+Para evitar ruido técnico ("no-op") en la interfaz de usuario, el orden de cierre es mandatorio:
 
-Antes de declarar "listo", "terminamos" o "cerramos esta etapa":
-
-1. Llamar `mem_session_summary(...)` con:
-   - Objetivo de la sesion
-   - Hallazgos registrados
-   - Artefactos producidos
-   - Proximos pasos definidos
-2. Usar `project: "[slug-del-proyecto]"` (o `fw-baraldi-core` si es un cambio al framework) en todos los llamados.
+1. **Sincronización Técnica:** Llamar `mem_session_summary(...)` con el resumen de la sesión.
+2. **Registro de Artefactos:** Actualizar archivos de backtrack o task si corresponde.
+3. **Cierre Humano:** Emitir un mensaje final de texto que confirme el éxito de la tarea o plantee la siguiente acción. **Este debe ser siempre el último paso del turno.**
+4. Usar `project: "[slug-del-proyecto]"` (o `fw-baraldi-core` si es un cambio al framework) en todos los llamados.
 
 ---
 
@@ -115,4 +112,4 @@ Si ya tienes el framework instalado, puedes actualizar el binario de Engram de d
 
 ---
 
-*Framework Baraldi v2.25.8 · memory/PROTOCOLO_MEMORIA.md · Capa de Memoria Sistémica*
+*Framework Baraldi v2.25.10 · memory/PROTOCOLO_MEMORIA.md · Capa de Memoria Sistémica*

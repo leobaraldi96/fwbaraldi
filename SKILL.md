@@ -6,7 +6,7 @@ description: >
   para ir más allá del diseño de interfaces y enfocarse en sistemas y outcomes.
   Úsalo cuando el usuario quiera iniciar un proceso de diseño de producto estructurado.
 keywords: product-design, framework-baraldi, problem-framing, system-analysis, ux-strategy, systems-thinking
-version: "2.25.8"
+version: "2.25.10"
 ---
 
 # Framework Baraldi — Orquestador Global
@@ -20,8 +20,8 @@ Guiar al equipo de producto a través de fases estructuradas de descubrimiento, 
 1. **Identidad:** Cargar siempre primero las reglas en `00_boot/context.md`.
 2. **Descubrimiento:** El framework se compone de múltiples sub-skills organizadas por etapas.
 3. **Flujo Sugerido:**
-   - Empezar siempre por la **Etapa 01 — Problem Framing** (`skills/01_problem_framing/SKILL.md`) para validar el "para qué" antes del "cómo".
-   - Avanzar a **Etapa 02 — System Analysis** (`skills/02_system_analysis/SKILL.md`) para mapear el ecosistema completo.
+   - Empezar siempre por la **Etapa 01 — Problem Framing** (`skills/methodology/01_problem_framing/SKILL.md`) para validar el "para qué" antes del "cómo".
+   - Avanzar a **Etapa 02 — System Analysis** (`skills/methodology/02_system_analysis/SKILL.md`) para mapear el ecosistema completo.
 
 ## Reglas de Oro del Framework
 - **Divergencia Obligatoria:** Antes de converger en una solución, se debe expandir la visión estratégica (Momentos "Divergencia").
@@ -31,4 +31,4 @@ Guiar al equipo de producto a través de fases estructuradas de descubrimiento, 
 - **Memoria Sistémica:** Al iniciar cada sesión o buscar contexto, usa Engram MCP filtrando SIEMPRE por el **ID de proyecto específico** (`proyecto-alfa`, `app-comercio`, etc.). Nunca asumas que lo último que hiciste a nivel global es lo último que se hizo en el proyecto actual.
 
 ---
-*Framework Baraldi v2.25.8 · Creado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.25.10 · Creado y mantenido por Leo Baraldi.*

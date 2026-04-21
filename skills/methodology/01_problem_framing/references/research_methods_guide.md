@@ -7,7 +7,7 @@ description: >
   de recolección de datos. Define qué método usar según qué hipótesis se quiere
   validar, cuántos participantes justifican qué nivel de confianza, y cómo
   codificar los datos recolectados con doble capa de análisis.
-version: "1.0"
+version: "2.25.10"
 framework: Baraldi
 stage: "01 - Problem Framing"
 tipo: reference

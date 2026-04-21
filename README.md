@@ -4,7 +4,7 @@
 >
 > Un framework metodológico diseñado para potenciar el diseño de productos digitales utilizando Inteligencia Artificial como copiloto estratégico en todas las etapas del proceso.
 
-![Version](https://img.shields.io/badge/version-2.25.7-blue)
+![Version](https://img.shields.io/badge/version-2.25.10-blue)
 ![Status](https://img.shields.io/badge/status-active-success)
 
 ---
@@ -69,7 +69,7 @@ Ninguno de los frameworks anteriores tiene estas tres características juntas:
 3. **Proactividad de Soporte**: El sistema propone proactivamente formatos de alta fidelidad (Landings/Dashboards HTML) cuando la densidad de datos lo requiere, eliminando la pasividad del agente.
 4. **Experiencia implementada como principio fundacional**: El diseño no termina en el handoff. Termina cuando la experiencia funciona y aporta valor en producción. Eso redefine el rol del diseñador de forma radical, y lo enuncia explícitamente como su meta.
 5. **El problema del nivel de madurez resuelto con estructura**: El diseñador académico conoce los modelos teóricos pero no sabe cómo adaptarlos a la velocidad actual. El senior experimentado sabe qué hacer de forma empírica pero no tiene un modelo que lo sostenga estructuradamente. El Framework **le da al académico la experiencia embebida en el proceso, y al senior le da el modelo que le faltaba**.
-6. **Verificación de Versión Proactiva (v2.25.7+)**: El Framework ahora verifica automáticamente tu versión local contra el repositorio oficial de GitHub y te avisará si existe una actualización disponible para asegurar que el motor metodológico esté siempre al día.
+6. **Verificación de Versión Proactiva (v2.25.10+)**: El Framework ahora verifica automáticamente tu versión local contra el repositorio oficial de GitHub y te avisará si existe una actualización disponible para asegurar que el motor metodológico esté siempre al día.
 
 ---
 
@@ -175,14 +175,11 @@ fwbaraldi/
 │           ├── product_service_blueprint/   ← Conexión UI ↔ Backend
 │           ├── ixd_multimodal_feedback/     ← Feedback sensorial (Háptica)
 │           ├── accessibility_expert/        ← Accesibilidad WCAG 2.2 Pro
-│           ├── uxr_discovery_expert/        ← [NUEVO] Cualitativo \u0026 JTBD
+│           ├── uxr_discovery_expert/        ← [NUEVO] Cualitativo & JTBD
 │           ├── uxr_synthesis_expert/        ← [NUEVO] Síntesis y Thematic Analysis
 │           ├── competitor_intelligence/     ← Análisis de brechas SEO/GEO
-│           └── product_metrics_expert/      ← [NUEVO] Estrategia KPI \u0026 Recharts
+│           └── product_metrics_expert/      ← [NUEVO] Estrategia KPI & Recharts
 │
-├── chat/                                   ← [DEPRECATED] Track legacy para web
-│   ├── etapa01_chat.md                     
-│   └── etapa02_chat.md                     
 │
 ├── references/                             ← Recursos globales compartidos entre etapas
 │   └── README.md
@@ -194,9 +191,9 @@ fwbaraldi/
 
 ---
 
-## ⚡ Quick Start / Instalación (v2.25.7)
+## 🚀 Quick Start / Instalación (v2.25.10)
 
-> ⚠️ **IMPORTANTE:** A partir de la versión 2.25.7 (Modelo Cero-Copia), el Framework Baraldi dejó de ser un simple texto para copiar y pegar. Ahora es un **Orquestador Agéntico**. Para usarlo, tu IA debe soportar el uso de herramientas MCP y lectura de carpetas locales (Ej: **Antigravity de Google, Claude Code, Cursor, Windsurf**, etc.).
+> ⚠️ **IMPORTANTE:** A partir de la versión 2.25.10 (Modelo Cero-Copia), el Framework Baraldi dejó de ser un simple texto para copiar y pegar. Ahora es un **Orquestador Agéntico**. Para usarlo, tu IA debe soportar el uso de herramientas MCP y lectura de carpetas locales (Ej: **Antigravity de Google, Claude Code, Cursor, Windsurf**, etc.).
 
 ### Instalación Desatendida (Recomendado)
 Hemos construido un instalador interactivo (`baraldi-init`) que se encarga de todo el trabajo pesado. Solo necesitas tener **Node.js** instalado en tu computadora.
@@ -218,11 +215,6 @@ npx github:leobaraldi96/fwbaraldi
 3. Escribe en el chat: *"Iniciemos un proyecto nuevo usando el Framework Baraldi"* o *"Quiero utilizar el Framework Baraldi en este proyecto"*.
 4. El sistema se auto-orquestará leyendo tu `SKILL.md` global y registrará memorias en tu SQLite local automáticamente.
 
-**Uso en la Web (Claude.ai, ChatGPT, Gemini) [TRACK LEGACY]:**
-> *Aviso: La interfaz conversacional manual de copiar/pegar un "mega-prompt" se descontinuó en v2.4.1. Úsala solo si no tienes entorno agéntico (Antigravity).*
-1. Abrí un chat y pegá el contenido de `chat/etapa01_chat.md`.
-
-> **Modelos recomendados:** Claude 3.5 Sonnet/Opus, GPT-4o, Gemini 1.5 Pro o superior. Modelos más limitados pueden ignorar ciertas constraints del prompt.
 
 ---
 
@@ -269,4 +261,4 @@ Si compartís, publicás o enseñás este sistema públicamente, por favor da el
 
 ---
 
-*Framework Baraldi v2.25.7 · Desarrollado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.25.10 · Desarrollado y mantenido por Leo Baraldi.*

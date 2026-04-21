@@ -5,7 +5,7 @@ description: >
   Define las reglas críticas para la nomenclatura de ramas (branches), commits semánticos
   y auditorías profundas (Deep Reviews), adaptadas al diseño y estrategia de producto.
   Trigger: Al crear commits, ramas de trabajo, o al revisar el trabajo entre etapas.
-version: "1.0"
+version: "2.25.10"
 ---
 
 # Higiene Operativa — Framework Baraldi
@@ -68,7 +68,14 @@ Basado en la lógica ingenieril, este protocolo fuerza a la IA (y al equipo) a a
 2. **Casos Límite (Edge Cases):** ¿Se han diseñado los estados vacíos, de error, de carga y de éxito excepcional? (Si no es así, la etapa no ha concluido).
 3. **Consistencia Sistémica:** Revisar si el cambio en este flujo rompe otro componente mapeado en el Service Blueprint.
 4. **Higiene de Naming:** ¿Están los IDs y nombres de componentes usando nomenclatura humana y de negocio (como obliga `00_core_guardrails`)?
+5. **Higiene de Interacción:** ¿Se ha evitado el ruido técnico ("no-op") al final de la respuesta mediante un cierre textual humano posterior a las llamadas a herramientas?
 
 ---
 
-*Framework Baraldi v2.7.0 · Higiene Operativa.*
+## 4. Protocolo de Cierre Humano (Anti-no-op)
+Para garantizar una experiencia premium, el agente tiene prohibido cerrar un turno de respuesta con una llamada a herramienta (Engram, Backlog, Files). El flujo debe ser:
+`Ejecución Técnica -> Sincronización de Memoria -> Mensaje Final Humano`.
+
+---
+
+*Framework Baraldi v2.25.10 · Higiene Operativa.*

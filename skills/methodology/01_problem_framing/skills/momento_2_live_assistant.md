@@ -13,7 +13,7 @@ description: >
   Keywords: entrevistas, notas, research, usuarios, evidencia, hipótesis, benchmark, saturación.
   NO LO USES para analizar datos sin tener notas o transcripciones reales como input.
 skill_id: problem_framing_momento_2
-version: "2.4.0"
+version: "2.25.10"
 framework: Baraldi
 stage: "01 - Problem Framing"
 momento: 2

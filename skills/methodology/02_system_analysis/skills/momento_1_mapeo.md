@@ -10,7 +10,7 @@ description: >
   SIEMPRE usalo al iniciar la Etapa 02 o cuando el humano diga "mapeemos el sistema".
   NO LO USES antes de cerrar Etapa 01 con outcomes validados.
 skill_id: system_analysis_momento_1
-version: "2.4.0"
+version: "2.25.10"
 framework: Baraldi
 stage: "02 - System Analysis"
 momento: 1

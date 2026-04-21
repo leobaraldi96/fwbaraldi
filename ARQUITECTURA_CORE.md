@@ -1,6 +1,6 @@
 # Arquitectura Core del Framework Baraldi
 
-> Este documento detalla la estructura lógica, la arquitectura tecnológica y el ciclo de vida de adopción del **Framework Baraldi** (v2.25.8). El framework ha evolucionado de un repositorio de prompts a un **Ecosistema Agéntico Simbiótico** donde la infraestructura tecnológica y la maestría humana convergen.
+> Este documento detalla la estructura lógica, la arquitectura tecnológica y el ciclo de vida de adopción del **Framework Baraldi** (v2.25.10). El framework ha evolucionado de un repositorio de prompts a un **Ecosistema Agéntico Simbiótico** donde la infraestructura tecnológica y la maestría humana convergen.
 
 ---
 
@@ -33,7 +33,7 @@ flowchart TD
     subgraph Motor["1. Motor Global - Skill Repository"]
         direction TB
         A["00_boot/context.md"]:::skill
-        B["Methodology Tracks"]:::skill
+        B["Methodology Skills"]:::skill
         C["Tech Guardrails (Toolbox)"]:::skill
     end
 
@@ -101,10 +101,10 @@ sequenceDiagram
     IA->>IA: Pasa a Etapa 02 o 03 (Lógica/Sistemas)
 ```
 
-### Regulación de Diálogo Estructurado
-Para evitar saturación cognitiva, existe el acuerdo de **Documentación vs Conversación**:
-1. El **Plan de Implementación** (panel de tareas de la IDE) solo sirve para documentar bloqueos técnicos.
-2. El **Chat** es el conducto de charla humana. La IA nunca espera que el humano edite el plan; el humano lidera desde el chat natural.
+### Regulación de Diálogo de Producto
+Para evitar saturación cognitiva, existe el acuerdo de **Documentación vs Interacción**:
+1. El **Plan de Implementación** (panel de tareas de la IDE) solo sirve para documentar bloqueos técnicos y progreso.
+2. La **Interfaz del Agente** es el conducto de charla humana y estratégica. La IA nunca espera que el humano edite el plan; el humano lidera desde el diálogo natural.
 
 ---
 

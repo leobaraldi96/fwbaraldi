@@ -11,7 +11,7 @@ description: >
   SIEMPRE usalo cuando el humano mencione "etapa 2", "system analysis",
   "mapear el sistema" o cuando los outcomes de Etapa 01 estén validados.
   NO LO USAR si el problema no se ha validado en la Etapa 01.
-version: "2.5.2"
+version: "2.25.10"
 framework: Baraldi
 stage: "02"
 stage_name: "System Analysis"
@@ -145,4 +145,4 @@ Artefactos de Etapa 01 aprobados
 
 ---
 
-*Framework Baraldi v2.14.0 · skills/02_system_analysis/SKILL.md*
+*Framework Baraldi v2.25.10 · skills/methodology/02_system_analysis/SKILL.md*

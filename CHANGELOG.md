@@ -5,6 +5,15 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.25.10] - 2026-04-20
+
+### Consolidación Sistémica y Purga de Pencil
+- **Eliminado:** Purgada toda referencia a la integración experimental con **Pencil MCP** tras validación de resultados insuficientes. El framework vuelve a su núcleo ágil de Markdown y HTML/CSS puro.
+- **Sincronizado:** Versión global de infraestructura a v2.25.10 en **todas** las sub-skills de la Toolbox y metodologías (01 y 02). Unificación total de metadatos.
+- **Eliminado:** Purgada por completo la carpeta `chat/` y el soporte para el **Track Legacy (copiar/pegar)**. El framework es ahora un ecosistema puramente agéntico.
+
+---
+
 ## [2.25.9] - 2026-04-19
 
 ### Dualidad de Síntesis UXR (Dashboard vs Informe Profundo)

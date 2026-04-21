@@ -10,7 +10,7 @@ description: >
   Usalo cuando el Actor Map y System Map estén aprobados por el equipo.
   NO LO USES sin el System Map del Momento 1 aprobado.
 skill_id: system_analysis_momento_2
-version: "2.4.0"
+version: "2.25.10"
 framework: Baraldi
 stage: "02 - System Analysis"
 momento: 2

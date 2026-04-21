@@ -5,7 +5,7 @@ description: >
   Leer antes de ejecutar los Momentos 1 y 2 de System Analysis cuando el
   sistema tiene alta complejidad, muchos actores o integraciones externas.
   Define patrones de dependencias, tipos de riesgos y criterios de criticidad.
-version: "1.0"
+version: "2.25.10"
 framework: Baraldi
 stage: "02 - System Analysis"
 tipo: reference
