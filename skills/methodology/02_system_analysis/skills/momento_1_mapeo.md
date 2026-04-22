@@ -10,7 +10,7 @@ description: >
   SIEMPRE usalo al iniciar la Etapa 02 o cuando el humano diga "mapeemos el sistema".
   NO LO USES antes de cerrar Etapa 01 con outcomes validados.
 skill_id: system_analysis_momento_1
-version: "2.25.10"
+version: "2.25.11"
 framework: Baraldi
 stage: "02 - System Analysis"
 momento: 1
@@ -40,7 +40,7 @@ Antes de cualquier plantilla, mostrás brevemente:
 
 Generás una sección a la vez, con explicación de para qué sirve cada una, listas pre-pobladas basadas en lo que ya se sabe de Etapa 01, y campos claramente marcados como `[CRÍTICO]` o `[OPCIONAL]`.
 
-**El humano edita, completa o elimina cada lista antes de avanzar a la siguiente.**
+**El humano edita, completa o elimina cada lista antes de avanzar a la siguiente. Si el humano provee un listado propio de actores, este tiene prioridad absoluta: debés integrar el 100% de sus actores sin simplificar, omitir o diluir su identidad individual.**
 
 ---
 
@@ -222,6 +222,7 @@ Este mapeo es el cimiento de tu arquitectura. Te invito a que **uses esta inform
 - **No avanzás al Momento 2 sin que el humano valide las tres plantillas** — las plantillas vacías o con supuestos sin verificar producen un Dependency Map sobre arena.
 - **No inventás nombres, stacks o restricciones** — marcás `[COMPLETAR]` o `[SUPUESTO]` y esperás confirmación.
 - **No ignorás los actores invisibles** — son los que generan más retrabajos costosos en implementación.
+- **No simplificás ni omitís actores proporcionados por el humano** — Si el humano entrega un listado, tu obligación es utilizar el 100% de esos actores para entender, mapear y extender. No tenés permiso para resumirlos o descartarlos bajo criterios de "eficiencia".
 - **No combinás las tres secciones en una sola tabla** — tienen propósitos distintos y mezclarlas produce confusión.
 
 ---
@@ -239,4 +240,4 @@ Cuando el humano valida las tres plantillas y se consolida el Actor Map, guardar
 
 ---
 
-*Framework Baraldi v2.4.0 · skills/02_system_analysis/prompts/momento_1_mapeo.md*
+*Framework Baraldi v2.25.11 · skills/02_system_analysis/prompts/momento_1_mapeo.md*

@@ -10,7 +10,7 @@ description: >
   Usalo cuando el Actor Map y System Map estén aprobados por el equipo.
   NO LO USES sin el System Map del Momento 1 aprobado.
 skill_id: system_analysis_momento_2
-version: "2.25.10"
+version: "2.25.11"
 framework: Baraldi
 stage: "02 - System Analysis"
 momento: 2
@@ -41,6 +41,7 @@ Antes del output mostrás:
 ```markdown
 # Dependency Map — [Proyecto]
 ## Fecha: | Estado: [BORRADOR]
+> **OBLIGACIÓN DE TRAZABILIDAD:** Asegurate de que el 100% de los actores y sistemas identificados en el Actor Map tengan sus dependencias correspondientes mapeadas aquí. No omitas actores humanos (invisibles) si su trabajo genera una dependencia técnica o lógica crítica.
 
 ## Dependencias internas
 
@@ -153,6 +154,7 @@ Ver Etapa 03 (Product Logic) para el modelo de estados completo.
 - **No asumís que las integraciones funcionan sin restricciones** — toda API tiene límites, costos y condiciones. Investigarlas y documentarlas.
 - **No ignorás los riesgos de datos** — privacidad, consistencia y pérdida de datos son los más costosos de resolver tarde.
 - **No avanzás con riesgos que bloquean Etapa 03 sin que el equipo los haya evaluado** — documentarlos no es suficiente, requieren decisión explícita.
+- **No simplificás, recortás ni resumís dependencias** — Si una dependencia fue identificada o tiene relación con los actores del Momento 1, debe ser mapeada en su totalidad. No tenés permiso para "limpiar" el mapa omitiendo detalles que consideres secundarios; el rigor sistémico exige exhaustividad.
 
 ---
 
@@ -180,4 +182,4 @@ Al completar el Dependency Map, Data Flow Map y Risk Map, guardar en `memory/bar
 
 ---
 
-*Framework Baraldi v2.4.0 · skills/02_system_analysis/prompts/momento_2_dependencias.md*
+*Framework Baraldi v2.25.11 · skills/02_system_analysis/prompts/momento_2_dependencias.md*
