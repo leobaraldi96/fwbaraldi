@@ -5,6 +5,13 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.25.11] - 2026-04-22
+
+### Pluralización de Insights y Captura de Intuición Humana
+- **Mejorado:** El Momento 2 de la Etapa 01 (IA Auxiliar en Vivo) ahora solicita explícitamente **insights sutiles o intuitivos** al humano antes de cerrar la recolección de datos.
+- **Mejorado:** La clave de memoria sistémica `pf-insight-principal` ha sido evolucionada para persistir una **pluralidad de hallazgos**, integrando tanto patrones de alta tracción (IA) como hallazgos estratégicos (Humano).
+- **Actualizado:** Sincronización global de metadatos y versiones en `DIAGRAMA_FLUJO_E1_E2.md` y archivos de skills.
+
 ## [2.25.10] - 2026-04-20
 
 ### Consolidación Sistémica y Purga de Pencil

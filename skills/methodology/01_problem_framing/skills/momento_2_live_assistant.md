@@ -13,7 +13,7 @@ description: >
   Keywords: entrevistas, notas, research, usuarios, evidencia, hipótesis, benchmark, saturación.
   NO LO USES para analizar datos sin tener notas o transcripciones reales como input.
 skill_id: problem_framing_momento_2
-version: "2.25.10"
+version: "2.25.11"
 framework: Baraldi
 stage: "01 - Problem Framing"
 momento: 2
@@ -145,11 +145,9 @@ Este es el momento más operativo del framework. No analizás estrategia — eje
 **Qué hacés en esta sub-tarea:**
 1. **Auditoría Total de Cobertura:** Listás TODAS las preguntas/campos del instrumento de recolección. Por cada una verificás que tiene análisis y representación en el informe. Si alguna no tiene → la añadís obligatoriamente.
 2. **Procesado Completo:** Procesás el conjunto completo de notas/encuestas y generás el Informe de Research.
-3. **Cruces de Datos (obligatorio proponer):** Al terminar el análisis por pregunta, identificás y proponés activamente cruces no obvios:
-   - ¿Hay correlación entre perfil demográfico y respuesta a X?
-   - ¿Los que respondieron A en pregunta 3 tienden a responder B en pregunta 7?
-   - ¿Hay patrones de comportamiento que aparecen en múltiples preguntas simultáneamente?
-4. **Mentalidad Data-Driven:** Cada hallazgo debe ir acompañado de su implicancia para la toma de decisiones de producto. No es un reporte — es un motor de decisión.
+3. **Cruces de Datos (obligatorio proponer):** Al terminar el análisis por pregunta, identificás y proponés activamente cruces no obvios.
+4. **Consulta de Insights Sutiles (Humano):** Antes de cerrar la colección, preguntás explícitamente al humano: *"Más allá de los datos estadísticos, ¿identificaste algún patrón sutil, tensión o insight intuitivo que debamos elevar a la memoria sistémica?"*
+5. **Mentalidad Data-Driven:** Cada hallazgo debe ir acompañado de su implicancia para la toma de decisiones de producto. No es un reporte — es un motor de decisión.
 
 **Formato de entrega — Informe de Research:**
 ```markdown
@@ -305,12 +303,12 @@ Este es el momento más operativo del framework. No analizás estrategia — eje
 
 Al generar el Informe de Research final (Sub-tarea D), guardar en `memory/baraldi_knowledge_base.md`:
 - **Tipo:** `validación`
-- **Qué:** El patrón más revelador encontrado en las entrevistas/encuestas
-- **Por qué:** Cómo impacta en la hipótesis central (confirma / refuta / matiza)
+- **Qué:** Los patrones de alta tracción (saturación/hipótesis) y los insights sutiles identificados por el humano.
+- **Por qué:** Cómo impactan en la hipótesis central (confirman / refuta / matiza) y relevancia estratégica.
 - **Dónde:** Informe de Research del proyecto
-- **Aprendido:** Estado final de la hipótesis central post-research (Alta/Media/Baja confianza)
+- **Aprendido:** Estado final de la hipótesis central post-research (Alta/Media/Baja confianza) + Hallazgos humanos validados.
 - **Formato de entrega elegido:** [HTML / Exportación / PPT / Estático] — para referencia en futuras sesiones
 
 ---
 
-*Framework Baraldi v2.25.5 · skills/01_problem_framing/skills/momento_2_live_assistant.md*
+*Framework Baraldi v2.25.11 · skills/01_problem_framing/skills/momento_2_live_assistant.md*

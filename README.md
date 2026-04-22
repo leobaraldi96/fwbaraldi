@@ -4,7 +4,7 @@
 >
 > Un framework metodológico diseñado para potenciar el diseño de productos digitales utilizando Inteligencia Artificial como copiloto estratégico en todas las etapas del proceso.
 
-![Version](https://img.shields.io/badge/version-2.25.10-blue)
+![Version](https://img.shields.io/badge/version-2.25.11-blue)
 ![Status](https://img.shields.io/badge/status-active-success)
 
 ---
@@ -267,4 +267,4 @@ Si compartís, publicás o enseñás este sistema públicamente, por favor da el
 
 ---
 
-*Framework Baraldi v2.25.10 · Desarrollado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.25.11 · Desarrollado y mantenido por Leo Baraldi.*

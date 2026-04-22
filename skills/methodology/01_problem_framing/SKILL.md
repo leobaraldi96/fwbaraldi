@@ -10,7 +10,7 @@ description: >
   SIEMPRE usalo cuando el humano mencione "arrancamos", "nuevo proyecto", "etapa 1",
   "problem framing" o provea el contexto inicial de un proyecto.
   NO LO USAR con proyectos que ya tienen la Etapa 01 cerrada.
-version: "2.25.10"
+version: "2.25.11"
 framework: Baraldi
 stage: "01"
 stage_name: "Problem Framing"
@@ -126,8 +126,8 @@ Antes de diseñar el plan, el framework debe ejecutar el siguiente interrogatori
 ### Momento 2 — IA Auxiliar / Asistente on Vivo
 **Archivo:** `skills/momento_2_live_assistant.md`
 **Activar cuando:** El humano aprueba los soportes y está listo para ejecutar entrevistas.
-**Produce:** Briefs por entrevistado, notas estructuradas en tiempo real, informe de research completo con **Matriz de Evidencia** (Hipótesis vs. Dato real vs. Hallazgo).
-**Regla clave:** Marcar evidencia con `[CONFIRMA H1]`, `[REFUTA H2]`, `[NUEVO INSIGHT]`. Prohibida la síntesis vaga; cada hallazgo debe asociarse a una pregunta o dato específico.
+**Produce:** Briefs por entrevistado, notas estructuradas en tiempo real, informe de research completo con **Matriz de Evidencia** (Hipótesis vs. Dato real vs. Hallazgo). Incluye la identificación de hallazgos sutiles por parte del humano.
+**Regla clave:** Marcar evidencia con `[CONFIRMA H1]`, `[REFUTA H2]`, `[NUEVO INSIGHT]`. Prohibida la síntesis vaga; cada hallazgo debe asociarse a una pregunta o dato específico. Dar espacio proactivo para que el humano indique hallazgos sutiles o intuitivos.
 
 ### Momento 3 — Evaluación de Cierre + Output Format Selection
 **Archivo:** `skills/momento_3_cierre.md`
@@ -219,7 +219,7 @@ Si el humano selecciona la ruta **"Dashboard"**, el framework tiene la regla est
 **Al cerrar cada Momento:** Guardar un Hallazgo Sistémico con el aprendizaje clave:
 - Momento 1 → Eje: `pf-hipotesis-central` (tipo: `validación` o `decisión`)
 - Momento Feedback → Eje: `pf-metodologia-research` (tipo: `decisión`)
-- Momento 2 → Eje: `pf-insight-principal` (tipo: `validación`)
+- Momento 2 → Eje: `pf-insight-principal` (tipo: `validación`) — Patrones de alta tracción + insights humanos sutiles.
 - Momento 3 → Eje: `pf-decision-cierre` (tipo: `cierre-de-etapa`)
 
 **Al cerrar la etapa:** 
@@ -229,4 +229,4 @@ Si el humano selecciona la ruta **"Dashboard"**, el framework tiene la regla est
 
 ---
 
-*Framework Baraldi v2.25.10 · skills/methodology/01_problem_framing/SKILL.md*
+*Framework Baraldi v2.25.11 · skills/methodology/01_problem_framing/SKILL.md*
