@@ -3,7 +3,7 @@
 > **⚠️ Este archivo es para HUMANOS (desarrolladores, configuradores, colaboradores).**
 > Los modelos de IA **no deben cargar este archivo** en el ciclo de boot — genera tokens redundantes sin aportar valor operativo. El agente carga directamente `SKILL.md` → `00_boot/context.md` → skills específicas.
 
-**AI-Augmented System Product Design · v2.25.10 · Leo Baraldi**
+**AI-Augmented System Product Design · v2.25.12 · Leo Baraldi**
 
 ---
 
@@ -21,7 +21,7 @@ README.md  →  ARQUITECTURA_CORE.md  →  CHANGELOG.md
 
 ---
 
-## 📁 Mapa del repositorio (v2.25.10)
+## 📁 Mapa del repositorio (v2.25.12)
 
 ```
 fwbaraldi/
@@ -38,7 +38,7 @@ fwbaraldi/
 │   ├── methodology/
 │   │   ├── 01_problem_framing/       ← ✅ Completa
 │   │   ├── 02_system_analysis/       ← ✅ Completa
-│   │   ├── 03_product_logic/         ← 🔄 WIP
+│   │   ├── 03_product_logic/         ← ✅ Completa
 │   │   ├── 04_ux_experience/         ← 🔄 WIP
 │   │   ├── 05_ui_design/             ← 🔄 WIP
 │   │   ├── 06_implementation/        ← 🔄 WIP
