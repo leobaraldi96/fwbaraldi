@@ -103,7 +103,7 @@ A diferencia del pasado donde te perdías el contexto entre chats, el Agente uti
 *Todo esto ocurre en tu disco duro (zero-cloud) y hace que saltar de un proyecto a otro sea una experiencia de inteligencia continua.*
 
 ### ⚡ Eficiencia de Contexto (Context ROI)
-A nivel de infraestructura (LLM Ops), el Framework Baraldi maximiza el rendimiento del presupuesto de tokens mediante el uso de **Engram (RAG local Context Optimization)**.
+A nivel de infraestructura (LLM Ops), el Framework Baraldi maximiza el rendimiento del presupuesto de tokens mediante el uso de [Engram (RAG local Context Optimization)](https://www.youtube.com/watch?v=uAsd9pOIcLg&t=1417s).
 
 | Métrica | Valor | Estado |
 |---|---|---|
