@@ -97,9 +97,21 @@ sequenceDiagram
     
     IA->>E: Guarda validación de hipótesis central
     
-    note over IA,Humano: EJECUCIÓN SUCESIVA
-    IA->>IA: Pasa a Etapa 02 o 03 (Lógica/Sistemas)
+    note over IA,Humano: FASE DE LÓGICA SISTÉMICA (Etapa 03)
+    IA->>IA: Ejecuta Product Logic (Brain Integration)
+    IA->>FS: Genera Blueprint y Business Rules Matrix
 ```
+
+### 3.1 El Rol de la Etapa 03 (Product Logic)
+Tras completar la actualización v2.25.12, la Etapa 03 se consolida como el **"Cerebro del Producto"**. Su función es blindar la viabilidad funcional antes de que el equipo de diseño entre a la fase visual. 
+
+**Entregables clave al usuario:**
+- **Service Blueprint:** Mapa de interacción front/back/soporte.
+- **Data Dictionary:** Inventario de entidades y atributos.
+- **Business Rules Matrix:** Leyes lógicas de comportamiento (If/Then).
+- **KPIs Funcionales:** North Star Metric y puntos de medición.
+
+---
 
 ### Regulación de Diálogo de Producto
 Para evitar saturación cognitiva, existe el acuerdo de **Documentación vs Interacción**:

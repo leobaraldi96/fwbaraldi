@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "good-services-service-design": {
+      "source": "tristanmanchester/agent-skills",
+      "sourceType": "github",
+      "skillPath": "good-services-service-design/SKILL.md",
+      "computedHash": "007280b35b88435478f6a67af069204bc45b9e25b2d4a3944788043e75b2d2db"
+    }
+  }
+}

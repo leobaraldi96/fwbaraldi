@@ -17,6 +17,7 @@ Esta carpeta contiene habilidades especializadas que pueden ser invocadas en cua
     *   `tech_guardrails/ux_writing_standards/`
     *   `tech_guardrails/uxr_scientific_testing/`
     *   `tech_guardrails/product_service_blueprint/`
+    *   `tech_guardrails/good_services_service_design/`
     *   `tech_guardrails/ixd_multimodal_feedback/`
     *   `tech_guardrails/accessibility_expert/`
     *   `tech_guardrails/uxr_discovery_expert/`

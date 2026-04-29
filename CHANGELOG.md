@@ -5,7 +5,15 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
-## [2.25.11] - 2026-04-22
+## [2.25.12] - 2026-04-29
+ 
+### Operacionalización de la Etapa 03 (Product Logic)
+- **Añadido:** Estructura completa de la **Etapa 03** (Product Logic) con 3 Momentos operativos: Blueprint, Entidades/Reglas y Flujos/Métricas.
+- **Añadido:** **Guía de Referencia Agnostica** para Product Logic en `references/product_logic_guide.md`.
+- **Integrado:** Migración de la skill de **Good Services** a la carpeta `skills/toolbox/tech_guardrails/` para garantizar la autonomía del framework y la disponibilidad inmediata para nuevos usuarios sin dependencias externas.
+- **Sincronizado:** Backlog estratégico actualizado marcando la Etapa 03 como operacional.
++
+ ## [2.25.11] - 2026-04-22
 
 ### Pluralización de Insights y Captura de Intuición Humana
 - **Mejorado:** El Momento 2 de la Etapa 01 (IA Auxiliar en Vivo) ahora solicita explícitamente **insights sutiles o intuitivos** al humano antes de cerrar la recolección de datos.
