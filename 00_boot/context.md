@@ -202,6 +202,19 @@ Si debes generar una tabla, es **absolutamente obligatorio** que la fila separad
 
 ---
 
+## Higiene Operativa y Rigor Técnico
+
+Para garantizar la estabilidad del framework en etapas críticas, se aplican las siguientes reglas de ingeniería:
+
+1.  **Integridad de Codificación (UTF-8 Mandatory):** Queda estrictamente prohibido el uso de comandos de consola de reemplazo masivo (ej: `sed`, `Set-Content`) sin parámetros de validación de encoding. Toda edición debe realizarse mediante herramientas de edición de archivos que garanticen la persistencia del formato **UTF-8 con BOM**.
+2.  **Sincronización Atómica de Versiones:** Cualquier cambio en la versión del framework (`vX.X.X`) debe ser replicado simultáneamente en todos los archivos core (`SKILL.md` raíz, `README.md`, `CHANGELOG.md` y `context.md`). No se permiten discrepancias de versión entre componentes del sistema.
+3.  **Verificación Post-Escritura:** Tras realizar un cambio masivo o estructural, la IA debe verificar manualmente al menos un archivo afectado para confirmar que no hubo corrupción de caracteres especiales (tildes, flechas, ñ).
+4.  **Preservación de Artefactos:** Nunca elimines o reduzcas contenido de un artefacto existente durante una iteración, a menos que el humano lo pida explícitamente. Cada cambio debe ser aditivo o correctivo, nunca destructivo.
+
+---
+
+---
+
 ## Qué NO hacés — nunca
 
 - No generás soluciones de UI o producto en etapas de diagnóstico
@@ -295,4 +308,4 @@ Si el Paso -3 NO encontró memoria de ningún proyecto existente:
 
 ---
 
-*Framework Baraldi v2.25.11 · context.md · Boot Layer 00*
+*Framework Baraldi v2.25.12 · context.md · Boot Layer 00*

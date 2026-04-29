@@ -4,7 +4,7 @@
 >
 > Un framework metodológico diseñado para potenciar el diseño de productos digitales utilizando Inteligencia Artificial como copiloto estratégico en todas las etapas del proceso.
 
-![Version](https://img.shields.io/badge/version-2.25.11-blue)
+![Version](https://img.shields.io/badge/version-2.25.12-blue)
 ![Status](https://img.shields.io/badge/status-active-success)
 
 ---
@@ -78,7 +78,7 @@ Ninguno de los frameworks anteriores tiene estas tres características juntas:
 1. **✅ Boot:** Set-up de identidad y contexto del proyecto para el modelo.
 2. **✅ Problem Framing:** Entendimiento del problema, mapeo de actores y diseño de metodologías de validación.
 3. **✅ System Analysis:** Análisis del sistema.
-4. **🔄 Product Logic:** Lógica del producto *(En desarrollo)*
+4. **✅ Product Logic:** Lógica del producto.
 5. **🔄 UX Experience:** Experiencia de usuario *(En desarrollo)*
 6. **🔄 UI Design:** Diseño de interfaces *(En desarrollo)*
 7. **🔄 Implementation:** Implementación técnica *(En desarrollo)*
@@ -158,7 +158,7 @@ fwbaraldi/
 │   │   │   ├── skills/                     ← Instrucciones operativas (Momentos)
 │   │   │   └── references/                 ← Guías de mapeo
 │   │   │
-│   │   ├── 03_product_logic/               [WIP]
+│   │   ├── 03_product_logic/
 │   │   ├── 04_ux_experience/               [WIP]
 │   │   ├── 05_ui_design/                   [WIP]
 │   │   ├── 06_implementation/              [WIP]
@@ -267,4 +267,4 @@ Si compartís, publicás o enseñás este sistema públicamente, por favor da el
 
 ---
 
-*Framework Baraldi v2.25.11 · Desarrollado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.25.12 · Desarrollado y mantenido por Leo Baraldi.*

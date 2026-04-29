@@ -229,4 +229,4 @@ Si el humano selecciona la ruta **"Dashboard"**, el framework tiene la regla est
 
 ---
 
-*Framework Baraldi v2.25.11 · skills/methodology/01_problem_framing/SKILL.md*
+*Framework Baraldi v2.25.12 · skills/methodology/01_problem_framing/SKILL.md*
