@@ -1,6 +1,6 @@
 # Arquitectura Core del Framework Baraldi
 
-> Este documento detalla la estructura lógica, la arquitectura tecnológica y el ciclo de vida de adopción del **Framework Baraldi** (v2.25.10). El framework ha evolucionado de un repositorio de prompts a un **Ecosistema Agéntico Simbiótico** donde la infraestructura tecnológica y la maestría humana convergen.
+> Este documento detalla la estructura lógica, la arquitectura tecnológica y el ciclo de vida de adopción del **Framework Baraldi** (v2.25.13). El framework ha evolucionado de un repositorio de prompts a un **Ecosistema Agéntico Simbiótico** donde la infraestructura tecnológica y la maestría humana convergen.
 
 ---
 
@@ -15,6 +15,7 @@ Este ecosistema se basa en la **Simbiosis Cognitiva**:
 - Obliga a pasar por etapas de **divergencia y diagnóstico** antes de programar una sola línea de código.
 - Aisla las decisiones (Problema → Entorno → Lógica → Interfaz) impidiendo la mezcla riesgosa de diagnóstico con solución.
 - Genera y documenta evidencia real para sostener la construcción técnica y comercial del producto.
+- **Blindaje Metodológico (Ley de Interpretación de Templates):** Garantiza que la IA nunca alucine con datos hipotéticos, forzando la generación de contenido original basado exclusivamente en el contexto del proyecto activo.
 
 ---
 
@@ -103,13 +104,14 @@ sequenceDiagram
 ```
 
 ### 3.1 El Rol de la Etapa 03 (Product Logic)
-Tras completar la actualización v2.25.13, la Etapa 03 se consolida como el **"Cerebro del Producto"**. Su función es blindar la viabilidad funcional antes de que el equipo de diseño entre a la fase visual. 
+Tras completar la actualización v2.25.13, la Etapa 03 se consolida como el **"Cerebro del Producto"**. Su función es blindar la viabilidad funcional antes de que el equipo de diseño entre a la fase visual, integrando el estándar **UX-DNA (Experience Anatomy)**. 
 
 **Entregables clave al usuario:**
-- **Product Logic Orchestration:** Matriz de Actores y Service Blueprint (Temporal).
+- **Product Logic Orchestration:** Matriz de Actores, Matriz de Orquestación de Backlog y Service Blueprint.
+- **UX-DNA Documents:** Handoff funcional de anatomía de experiencia.
 - **Data Dictionary:** Inventario de entidades y atributos.
 - **Business Rules Matrix:** Leyes lógicas de comportamiento (If/Then).
-- **KPIs Funcionales:** North Star Metric y puntos de medición.
+- **KPIs Funcionales:** North Star Metric y puntos de medición (Recharts Expert).
 
 ---
 

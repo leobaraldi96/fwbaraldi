@@ -60,27 +60,32 @@ No deviene de un solo modelo. Es una síntesis crítica de varios referentes met
 
 ## 💎 Lo que lo hace genuinamente distinto
 
-Ninguno de los frameworks anteriores tiene estas tres características juntas:
+Ninguno de los frameworks anteriores tiene estas características juntas:
 
 1. **IA como capa cognitiva, no como herramienta**: No es "usá Midjourney para hacer mockups más rápido". Es un modelo orquestado de **cuándo el humano dirige y cuándo la IA ejecuta** en cada momento exacto del proceso.
-2. **Rigor Analítico "Grano Fino"**: Prohibición de síntesis vagas. Todo hallazgo debe estar respaldado por datos exactos (N, %, verbatims) y conectado a hipótesis de negocio.
-3. **Proactividad de Soporte**: El sistema propone proactivamente formatos de alta fidelidad (Landings/Dashboards HTML) cuando la densidad de datos lo requiere, eliminando la pasividad del agente.
-4. **Experiencia implementada como principio fundacional**: El diseño no termina en el handoff. Termina cuando la experiencia funciona y aporta valor en producción. Eso redefine el rol del diseñador de forma radical, y lo enuncia explícitamente como su meta.
-5. **El problema del nivel de madurez resuelto con estructura**: El diseñador académico conoce los modelos teóricos pero no sabe cómo adaptarlos a la velocidad actual. El senior experimentado sabe qué hacer de forma empírica pero no tiene un modelo que lo sostenga estructuradamente. El Framework **le da al académico la experiencia embebida en el proceso, y al senior le da el modelo que le faltaba**.
-6. **Verificación de Versión Proactiva (v2.25.10+)**: El Framework ahora verifica automáticamente tu versión local contra el repositorio oficial de GitHub y te avisará si existe una actualización disponible para asegurar que el motor metodológico esté siempre al día.
+2. **Blindaje Metodológico (Ley de Interpretación de Templates)**: El Framework prohíbe explícitamente a la IA usar datos de ejemplo o hipotéticos. Toda respuesta debe basarse en la co-construcción real con el humano, eliminando alucinaciones genéricas.
+3. **Rigor Analítico "Grano Fino"**: Prohibición de síntesis vagas. Todo hallazgo debe estar respaldado por datos exactos (N, %, verbatims) y conectado a hipótesis de negocio.
+4. **UX-DNA (Experience Anatomy)**: El estándar de handoff funcional que conecta la lógica de negocio con la arquitectura de información, asegurando que el diseño visual nazca de una base técnica sólida.
+5. **Matriz de Orquestación y Priorización**: Gestión inteligente del backlog para alinear el diseño con el MVP y los recursos disponibles del equipo de desarrollo.
+6. **Experiencia implementada como principio fundacional**: El diseño no termina en el handoff. Termina cuando la experiencia funciona y aporta valor en producción. Eso redefine el rol del diseñador de forma radical, y lo enuncia explícitamente como su meta.
+7. **El problema del nivel de madurez resuelto con estructura**: El diseñador académico conoce los modelos teóricos pero no sabe cómo adaptarlos a la velocidad actual. El senior experimentado sabe qué hacer de forma empírica pero no tiene un modelo que lo sostenga estructuradamente. El Framework **le da al académico la experiencia embebida en el proceso, y al senior le da el modelo que le faltaba**.
+8. **Proactividad de Soporte**: El sistema propone proactivamente formatos de alta fidelidad (Landings/Dashboards HTML) cuando la densidad de datos lo requiere, eliminando la pasividad del agente.
+9. **Verificación de Versión Proactiva (v2.25.13+)**: El Framework verifica automáticamente tu versión local para asegurar que el motor metodológico esté siempre al día.
 
 ---
 
 ## 🚀 Fases del proceso
 
-1. **✅ Boot:** Set-up de identidad y contexto del proyecto para el modelo.
-2. **✅ Problem Framing:** Entendimiento del problema, mapeo de actores y diseño de metodologías de validación.
-3. **✅ System Analysis:** Análisis del sistema.
-4. **✅ Product Logic:** Lógica del producto.
-5. **🔄 UX Experience:** Experiencia de usuario *(En desarrollo)*
-6. **🔄 UI Design:** Diseño de interfaces *(En desarrollo)*
-7. **🔄 Implementation:** Implementación técnica *(En desarrollo)*
-8. **🔄 System Reflection:** Evaluación final *(En desarrollo)*
+| Fase | Estado | Descripción |
+|---|---|---|
+| **00_boot** | ✅ Estable | Set-up de identidad y contexto del proyecto. |
+| **01_problem_framing** | ✅ Estable | Entendimiento del problema y mapeo de actores. |
+| **02_system_analysis** | ✅ Estable | Mapeo de dependencias, flujos de datos y riesgos. |
+| **03_product_logic** | ✅ Estable | Lógica de negocio, UX-DNA y Matriz de Orquestación. |
+| **04_ux_experience** | 🔄 En desarrollo | Arquitectura de información y Service Blueprint. |
+| **05_ui_design** | 🔄 En desarrollo | Diseño visual y Design Systems. |
+| **06_implementation** | 🔄 En desarrollo | Handoff técnico y supervisión de QA. |
+| **07_system_reflection** | 🔄 En desarrollo | Auditoría de outcomes y evolución. |
 
 ---
 
@@ -105,7 +110,7 @@ A nivel de infraestructura (LLM Ops), el Framework Baraldi maximiza el rendimien
 
 | Métrica | Valor | Estado |
 |---|---|---|
-| **Eficiencia Actual (v2.25.x)** | **85.21%** | 🟡 Fase Beta (02/07 Etapas) |
+| **Eficiencia Actual (v2.25.13)** | **85.21%** | 🟡 Fase Beta (03/07 Etapas) |
 | **Target Sistémico** | **+90%** | 🟢 Hito v2.30.0 |
 
 *Aclaración Técnica: Al cargar en memoria viva solo los hallazgos estrictamente necesarios para la toma de decisión del momento, reducimos el ruido contextual, manteniendo la IA enfocada, rápida y económicamente viable.*
@@ -118,8 +123,6 @@ El soporte tecnológico actual para el manejo de esta memoria fue inspirado y po
 - **Framework Baraldi:** Es una **metodología dogmática de diseño**. Resuelve el *qué, el por qué y el orden estructurado* de la ideación de productos. 
 
 > **Nota de desarrollo:** Actualmente utilizamos el binario `engram.exe` como proxy de memoria externo para agilizar nuestras pruebas. Esto nos "libera las manos" y nos permite poner el 100% de nuestro foco y energía en desarrollar y pulir las rígidas **Etapas del Framework** (Diagnóstico, Lógica, UX/UI). Una vez que todas las etapas del framework estén construidas, evaluaremos desarrollar un servidor MCP Baraldi nativo si es necesario.
-
----
 
 ## 🤖 Uso con Inteligencia Artificial
 
@@ -175,14 +178,14 @@ fwbaraldi/
 │           ├── core_web_vitals/             ← Optimización LCP, INP, CLS
 │           ├── seo_audit/                   ← Estrategia SEO técnica
 │           ├── ux_writing_standards/        ← UX Writing y Micro-copy
-│           ├── uxr_scientific_testing/      ← [NUEVO] Test de usabilidad cuantitativo
+│           ├── uxr_scientific_testing/      ← Test de usabilidad cuantitativo
 │           ├── product_service_blueprint/   ← Conexión UI ↔ Backend
 │           ├── ixd_multimodal_feedback/     ← Feedback sensorial (Háptica)
 │           ├── accessibility_expert/        ← Accesibilidad WCAG 2.2 Pro
-│           ├── uxr_discovery_expert/        ← [NUEVO] Cualitativo & JTBD
-│           ├── uxr_synthesis_expert/        ← [NUEVO] Síntesis y Thematic Analysis
+│           ├── uxr_discovery_expert/        ← Cualitativo & JTBD
+│           ├── uxr_synthesis_expert/        ← Síntesis y Thematic Analysis
 │           ├── competitor_intelligence/     ← Análisis de brechas SEO/GEO
-│           └── product_metrics_expert/      ← [NUEVO] Estrategia KPI & Recharts
+│           └── product_metrics_expert/      ← Estrategia KPI & Recharts
 │
 │
 ├── references/                             ← Recursos globales compartidos entre etapas
@@ -208,40 +211,21 @@ npx github:leobaraldi96/fwbaraldi
 ```
 
 **El instalador CLI interactivo se ocupará de:**
-1. Preguntarte qué Agente usas (por ahora soporta *Antigravity* y *Claude Code* globalmente, o instalación local).
-2. Descargar de forma segura y transparente el binario compilado de **Engram** específico para tu OS (Windows/Mac/Linux) y ubicarlo en `~/.fwbaraldi/bin`.
+1. Preguntarte qué Agente usas (soporta *Antigravity*, *Claude Code* o instalación local).
+2. Descargar de forma segura el binario compilado de **Engram** específico para tu OS.
 3. Auto-copiar el Framework a la carpeta `skills` de tu Agente.
-4. Imprimirte el bloque de código exacto que debés pegar en tu `mcp_config.json` para encender la memoria.
+4. Imprimirte el bloque de código exacto para tu `mcp_config.json`.
 
 ### Paso 2: Ejecución
-1. Abre tu terminal o IDE en la carpeta vacía de tu nuevo proyecto o proyecto ya comenzado.
+1. Abre tu terminal o IDE en la carpeta de tu proyecto.
 2. Inicia tu Agente (Ej: [Antigravity](https://antigravity.google/)).
-3. Escribe en el chat: *"Iniciemos un proyecto nuevo usando el Framework Baraldi"* o *"Quiero utilizar el Framework Baraldi en este proyecto"*.
-4. El sistema se auto-orquestará leyendo tu `SKILL.md` global y registrará memorias en tu SQLite local automáticamente.
-
-
----
-
-## 🔌 Instalabilidad NPM via CLI
-Una vez que el Framework salga de su fase Beta, será publicado oficialmente en NPM para que puedas instalarlo simplemente tecleando `npx baraldi-init`. Por ahora, utiliza el método `npx github:...` descrito arriba.
-
-### 🔄 Cómo Actualizar
-El Framework ahora verifica automáticamente tu versión local y te avisará si existe una actualización disponible para asegurar que trabajes con el motor metodológico más reciente.
-
-Para obtener las últimas mejoras y nuevas etapas del framework:
-
-- **Si usaste el instalador:** Volvé a ejecutar `npx github:leobaraldi96/fwbaraldi` en tu terminal.
-- **Si sos desarrollador:** Navegá hasta la carpeta del framework dentro de tu Agente y ejecutá `git pull`.
-
-> [!NOTE]
-> Al ser una arquitectura **Zero-Copy**, actualizar el framework no romperá tus proyectos activos. Los artefactos de tus proyectos viven en sus propias carpetas y el framework solo actúa como el "motor" u orquestador externo.
+3. Escribe en el chat: *"Iniciemos un proyecto nuevo usando el Framework Baraldi"*.
 
 ---
 
 ## 📄 Licencia y Uso Libre
 
 El **Framework Baraldi** es de código abierto.
-
 Podés usarlo **GRATIS** para tus proyectos personales, comerciales o de agencia. Podés modificarlo para adaptarlo a tu equipo y publicar forks.
 
 **La única condición (Licencia tipo CC BY 4.0 / MIT con atribución):**
@@ -249,45 +233,22 @@ Si compartís, publicás o enseñás este sistema públicamente, por favor da el
 
 ---
 
-## 🤝 Colaboradores
+### 🏆 Créditos
+El Framework Baraldi es el resultado de más de 25 años de experiencia en el diseño de productos digitales. Gracias a todos los mentores, colegas y clientes que han formado parte de este viaje.
 
+---
+
+## 🤝 Colaboradores
 - **[Denisse Peduzzi](https://www.linkedin.com/in/denissepeduzzi/)** — *Content Designer*
+- **[Tu Nombre Aquí]** — *¿Quieres colaborar? ¡Envía un PR!*
 
 ---
 
 ## 📩 Contacto
-
 **Leo Baraldi** — *Senior UX Product Designer*
-
 - 💼 **LinkedIn:** [leobaraldi](https://www.linkedin.com/in/leobaraldi/)
 - 🌐 **Web:** [leobaraldi.com.ar](https://leobaraldi.com.ar/)
 - 📧 **Email:** [leobaraldi96@gmail.com](mailto:leobaraldi96@gmail.com)
 
 ---
-
-*Framework Baraldi v2.25.13 · Desarrollado y mantenido por Leo Baraldi.*.
-
-Podés usarlo **GRATIS** para tus proyectos personales, comerciales o de agencia. Podés modificarlo para adaptarlo a tu equipo y publicar forks.
-
-**La única condición (Licencia tipo CC BY 4.0 / MIT con atribución):**
-Si compartís, publicás o enseñás este sistema públicamente, por favor da el crédito apropiado: mencionando a **Leo Baraldi** y enlazando a este repositorio.
-
----
-
-## 🤝 Colaboradores
-
-- **[Denisse Peduzzi](https://www.linkedin.com/in/denissepeduzzi/)** — *Content Designer*
-
----
-
-## 📩 Contacto
-
-**Leo Baraldi** — *Senior UX Product Designer*
-
-- 💼 **LinkedIn:** [leobaraldi](https://www.linkedin.com/in/leobaraldi/)
-- 🌐 **Web:** [leobaraldi.com.ar](https://leobaraldi.com.ar/)
-- 📧 **Email:** [leobaraldi96@gmail.com](mailto:leobaraldi96@gmail.com)
-
----
-
-*Framework Baraldi v2.25.12 · Desarrollado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.25.13 · Desarrollado y mantenido por Leo Baraldi.*

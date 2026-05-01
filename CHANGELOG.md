@@ -7,12 +7,14 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
 ## [2.25.13] - 2026-05-01
  
-### Refactor de Product Logic (Momento 1)
-- **Refactorizado:** Momento 1 de la Etapa 03 evolucionado a **"Product Logic Orchestration"**.
-- **Añadido:** Separación obligatoria entre **Actor Logic Definition** (Estática/Funcional) y **Service Blueprint** (Temporal/UX).
-- **Mejorado:** Inclusión obligatoria de la **Línea de Visibilidad** en el Service Blueprint para separar Frontstage de Backstage.
-- **Regla de Oro:** Se prohíbe el agnosticismo técnico en el backstage; el UX debe definir las acciones del sistema.
-- **Sincronizado:** Versión global del framework actualizada a v2.25.13 en todos los archivos core.
+### Blindaje Metodológico y Hardening (Hito de Fidelidad)
+- **Añadido:** **Ley de Interpretación de Templates** — Regla maestra que prohíbe a la IA usar datos hipotéticos, forzando la co-construcción original basada en el proyecto activo.
+- **Hardening:** Blindaje preventivo de las 18 Skills de la **Toolbox (Tech Guardrails)** y de las 3 etapas metodológicas activas (01, 02, 03) mediante etiquetado de seguridad `[EJEMPLO DE ESTRUCTURA]`.
+- **Refactor de Product Logic:** El Momento 1 de la Etapa 03 evoluciona a **"Product Logic Orchestration"**, integrando la **Matriz de Orquestación de Backlog** para priorización inteligente.
+- **Añadido:** Estándar **UX-DNA (Experience Anatomy)** — Nuevo protocolo de handoff funcional que conecta la lógica de negocio con la arquitectura de información.
+- **Mejorado:** Inclusión obligatoria de la **Línea de Visibilidad** en el Service Blueprint para separar Frontstage de Backstage con rigor técnico.
+- **Sincronizado:** Versión global v2.25.13 unificada en `README.md`, `ARQUITECTURA_CORE.md`, `CHANGELOG.md` y todos los archivos `SKILL.md` maestros.
+- **Documentación:** Reestructuración profunda del `README.md` restaurando la filosofía de madurez del diseñador y el manifiesto de la experiencia como principio fundacional.
 
 ## [2.25.12] - 2026-04-29
  

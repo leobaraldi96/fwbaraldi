@@ -6,7 +6,7 @@ description: >
   de los entregables.
   Trigger: SIEMPRE activo. Se debe consultar al inicio de cada sesión y ante
   cualquier cambio en la estructura del proyecto o de los artefactos.
-version: "2.25.10"
+version: "2.25.13"
 ---
 
 # 🛡️ Capa 00 — Core Guardrails (Barandas de Contención)
