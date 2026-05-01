@@ -32,6 +32,7 @@ Guiar al equipo de producto a través de fases estructuradas de descubrimiento, 
 - **Integridad de Codificación (UTF-8 Mandatory):** Queda prohibido el uso de comandos de consola de reemplazo masivo que puedan corromper caracteres especiales (tildes, ñ, flechas). Toda edición debe hacerse mediante herramientas que garanticen la persistencia del formato UTF-8 original.
 - **Sincronización Atómica de Versiones:** Cualquier cambio en la versión del framework debe ser replicado simultáneamente en `SKILL.md`, `README.md`, `CHANGELOG.md` y `ARQUITECTURA_CORE.md`. No se permiten estados de versión inconsistentes entre archivos core.
 - **Protocolo de Templates y Ejemplos:** Toda tabla o estructura de ejemplo en la metodología debe ser ignorada como dato real. La IA debe generar siempre contenido original basado exclusivamente en el contexto del proyecto activo.
+- **Ley de No-Degradación Sistémica:** Queda prohibido eliminar, resumir o "limpiar" secciones de documentación que contengan filosofía, principios de diseño o especificaciones técnicas. Toda actualización debe ser ADITIVA o de REEMPLAZO ENRIQUECEDOR. Ante la duda, CONSULTAR antes de borrar.
 
 ---
 *Framework Baraldi v2.25.13 · Creado y mantenido por Leo Baraldi.*

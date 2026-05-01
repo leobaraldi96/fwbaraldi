@@ -19,6 +19,12 @@ version: "2.25.13"
 
 Esta es la regla de oro para evitar la degradación del conocimiento en el ecosistema.
 
+- **Integridad de Codificación (UTF-8 Mandatory):** Prohibido el uso de comandos que corrompan caracteres especiales.
+- **Sincronización Atómica:** Todo cambio de versión debe ser replicado en README, ARQUITECTURA, CHANGELOG y SKILLS simultáneamente.
+- **Ley de No-Degradación Sistémica:** El Framework es una estructura acumulativa y compleja. Queda TERMINANTEMENTE PROHIBIDO eliminar, resumir o "limpiar" secciones de documentación (README, Arquitectura, Guías) que contengan filosofía, principios de diseño, historia o especificaciones técnicas. 
+  - Toda actualización debe ser **ADITIVA** o de **REEMPLAZO ENRIQUECEDOR**.
+  - Si se considera necesario remover algo por obsolescencia, se DEBE consultar y explicar el motivo al Humano antes de ejecutar.
+  - El objetivo es siempre AMPLIAR el sistema, nunca reducir su densidad informativa.
 - **Sincronización Total:** No se considera una tarea terminada hasta que todos los documentos de soporte (`README.md`, `ARQUITECTURA_CORE.md`, `CHANGELOG.md` y artefactos en `docs-fwbaraldi/`) estén perfectamente sincronizados con el nuevo estado del sistema o del código.
 - **Estado Real, no Deseado:** La documentación debe describir el comportamiento **actual** y verificado, nunca promesas de funciones futuras no implementadas.
 - **Limpieza de Referencias:** Al eliminar o renombrar un archivo o carpeta, se deben limpiar inmediatamente todas las menciones a estas en el resto de la documentación.
