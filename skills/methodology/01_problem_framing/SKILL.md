@@ -26,6 +26,7 @@ status: complete
 
 ## Cuándo se activa esta etapa
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 | Tipo de entrada | Descripción |
 |---|---|
 | New project | Proyecto nuevo sin antecedentes |

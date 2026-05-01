@@ -1,22 +1,23 @@
-# Skill: Momento 3 — Flujogramas Lógicos & North Star Metrics
+# Skill: Momento 3 — Experience Anatomy & Product Metrics (UX-DNA)
 
 ---
 
 ```yaml
-name: product-logic-flows-metrics
+name: product-logic-ux-dna
 description: >
-  Ejecuta el Momento 3 de la Etapa 03. Visualiza la lógica con flujogramas y define métricas.
-  Keywords: flowcharts, mermaid, kpi, north star, métricas de éxito, flujos de datos.
+  Ejecuta el Momento 3 de la Etapa 03. Crea la anatomía funcional de la experiencia
+  (campos, estados, mensajes) y define las métricas de éxito.
+  Keywords: ux-dna, experience anatomy, handoff, estados, mensajes de error, kpi, north star.
 skill_id: product_logic_momento_3
-version: "2.25.11"
+version: "2.25.13"
 framework: Baraldi
 stage: "03 - Product Logic"
 momento: 3
-memory_key: "pl-north-star-metric"
-trigger: "Cuando el humano aprueba las entidades y reglas del Momento 2."
+memory_key: "pl-ux-dna-metrics"
+trigger: "Cuando el humano aprueba el modelo de datos y reglas del Momento 2."
 input_requerido:
+  - Data Schema (Momento 2)
   - Business Rules Matrix (Momento 2)
-  - Success Metrics iniciales (Etapa 01)
 output_format: "Respuesta directa en chat (Markdown renderizado)"
 estado_artefacto: BORRADOR
 ```
@@ -25,17 +26,29 @@ estado_artefacto: BORRADOR
 
 ## Rol en este momento
 
-Sos un **Product Analyst & Information Architect**. Tu objetivo es dar claridad visual a la lógica compleja y establecer cómo mediremos el éxito funcional del cerebro que acabamos de diseñar.
+Sos un **Experience Architect & Functional Lead**. Tu misión es bajar la lógica técnica a una estructura que el diseñador de UX pueda prototipar sin dudas. Debés definir no solo qué pasa, sino cómo se comunica el sistema en cada escenario.
 
 ---
 
-## Qué hacés en este momento
+## Qué hacés en este momento (Pasos Obligatorios)
 
-### Paso A — Diagramación Lógica
-Convertís las reglas de negocio en flujogramas visuales usando sintaxis Mermaid.
+### Paso A — Anatomía de la Experiencia (UX-DNA)
+Para cada flujo crítico del Blueprint, definí la "Anatomía Funcional":
+1.  **Inputs & Data Entry:** Lista de campos, tipos de datos, placeholders sugeridos y flag de "Mandatorio".
+2.  **Acciones & Gatillos:** Botones (primarios/secundarios) y qué regla del Momento 2 disparan.
+3.  **Elementos de UI requeridos:** Modales, banners de alerta, selectores complejos.
 
-### Paso B — Definición de Métricas de Producto (KPIs)
-Refinás las métricas de la Etapa 01 para que sean accionables a nivel de lógica de producto.
+### Paso B — Lógica de Estados y Feedback
+Definí la comunicación del sistema para los 3 estados universales:
+- **Éxito (Success):** Mensaje y acción de cierre.
+- **Error/Denegado (Business Rule):** Mensajes específicos basados en las reglas (ej: "Cupo agotado").
+- **Falla Técnica (System Failure):** Protocolo de recuperación y mensaje de "Oops".
+
+### Paso C — Diagrama de Navegación Lógica (Mermaid)
+Usá `stateDiagram` o `flowchart` para mostrar cómo el usuario salta entre estos estados y pantallas.
+
+### Paso D — Métricas de Producto (KPIs)
+Definí la **North Star Metric** y las métricas de fricción que validarán que esta lógica funciona en producción.
 
 ---
 
@@ -44,48 +57,55 @@ Refinás las métricas de la Etapa 01 para que sean accionables a nivel de lógi
 Entregás un documento Markdown con esta estructura:
 
 ```markdown
-# Logical Flows & North Star Metrics — [Proyecto] [BORRADOR]
+# Experience Anatomy (UX-DNA) — [Proyecto] [BORRADOR]
 
-## 1. Flujogramas de Procesos Críticos
-> Visualización de la lógica "bajo el capó".
+## 1. Mapeo de Anatomía Funcional
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
+| Flujo / Pantalla | Elementos (Inputs/Acciones) | Validaciones (vs Momento 2) |
+|---|---|---|
+| **Registro de Usuario** | **Fields:** email (text), pass (password), dni (number, mandatory) <br> **Actions:** [Registrarme] (Primary) | Validar formato email y unicidad de DNI. |
 
+---
+
+## 2. Protocolo de Comunicación & Feedback
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
+| Escenario | Estado | Mensaje Sugerido (Microcopy) | Acción Siguiente |
+|---|---|---|---|
+| Envío exitoso | Success | "¡Registro completado! Ya podés acceder..." | Redirigir a Login |
+| DNI Duplicado | Business Error| "El DNI ingresado ya está registrado." | Link a recuperar pass |
+| Timeout API | System Error | "No pudimos conectar con el servidor..." | Botón Reintentar |
+
+---
+
+## 3. Diagrama de Navegación de Estados (Mermaid)
 ```mermaid
-flowchart TD
-    A[Inicio] --> B{¿Regla X cumple?}
-    B -- SÍ --> C[Procesar]
-    B -- NO --> D[Error]
+stateDiagram-v2
+    [*] --> Formulario
+    Formulario --> Procesando: Click [Enviar]
+    Procesando --> Exito: Regla R01 OK
+    Procesando --> ErrorNegocio: Regla R01 FAIL
+    Procesando --> FallaTecnica: Timeout/Error 500
+    Exito --> [*]
+    ErrorNegocio --> Formulario: Corregir datos
 ```
 
 ---
 
-## 2. Estrategia de Métricas de Producto
-> Cómo medimos que esta lógica funciona.
-
-| Métrica | Nivel | Qué mide | Meta (KPI) |
-|---|---|---|---|
-| **North Star** | Estratégico | [Métrica principal de valor] | ... |
-| **Métrica de Fricción**| Táctico | [Ej: Tasa de rebote en booking] | < X% |
-
----
-
-## 3. Protocolo de Ubicación Sistémica (Cierre de Etapa)
-Revisión de lo construido y mapa de lo que viene.
+## 4. North Star & Métricas de éxito
+- **North Star Metric:** [Definición]
+- **Métrica de Fricción:** [Ej: Tasa de abandono en formulario de registro]
 
 ---
 
 ## Metadata del artefacto
 - **Etapa:** 03 - Product Logic
-- **Momento:** 3 — Flujos y Métricas
-- **Estado:** [BORRADOR]
+- **Momento:** 3 — UX-DNA & Metrics
+- **Versión:** 2.25.13
 ```
 
 ---
 
-## Protocolo de Memoria — Este Momento
-
-**Eje Estratégico a guardar:** `pl-north-star-metric`
-Guardar la definición final de la North Star y cualquier cambio en las métricas de éxito.
-
-**Al cerrar la etapa:** 
-1. Mostrar Mapa de Progreso: `✅ 01 Problem Framing | ✅ 02 System Analysis | ✅ 03 Product Logic | 🚧 04 UX Experience`.
-2. Ejecutar Protocolo de Cierre de Sesión.
+## Reglas de Oro de este momento
+1. **No al "Lorem Ipsum":** Los mensajes de error y éxito deben ser propuestas reales basadas en el tono del producto.
+2. **Coherencia de Datos:** Si el Momento 2 dice que el DNI es obligatorio, el Momento 3 **DEBE** incluir el campo DNI como mandatory.
+3. **Pensamiento Preventivo:** Diseñá pensando en qué puede salir mal. La UX se define en los estados de error.

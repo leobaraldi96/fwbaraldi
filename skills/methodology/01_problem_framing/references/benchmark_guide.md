@@ -36,6 +36,7 @@ Define qué área se analiza y qué hipótesis del Outcome Definition este bench
 - [Hipótesis 2]
 
 **KPIs comparables:**
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 | KPI | Descripción | Cómo se mide | Relevancia |
 |---|---|---|---|
 | [Precio por módulo] | [desc] | [fuente] | Alta/Media/Baja |
@@ -58,6 +59,7 @@ Tres tipos de players — nunca analizar solo competidores directos.
 ```markdown
 ## Sección 2 — Players analizados
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 | # | Nombre | Tipo | URL | Por qué es relevante |
 |---|---|---|---|---|
 | 1 | [nombre] | Directo / Funcional / Aspiracional | [url] | [razón] |
@@ -121,6 +123,7 @@ La parte más estratégica. Compara nuestro proyecto contra cada referente y cua
 | [Comunidad/escala] | | | | |
 
 ### Cuadrantes de posicionamiento
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 [Describir en qué cuadrante cae cada player — ej: Alto precio / Alta calidad]
 ```
 

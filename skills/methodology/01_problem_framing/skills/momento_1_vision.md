@@ -92,6 +92,7 @@ Entregás un documento Markdown con estas secciones exactas:
 ## Artefacto 2 — Opportunity Map [BORRADOR]
 > Qué soluciones parciales existen hoy, por qué no alcanzan, y dónde está el gap.
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 | Solución actual | Qué resuelve | Qué NO resuelve | Gap |
 |---|---|---|---|
 | ... | ... | ... | ... |
@@ -101,6 +102,7 @@ Entregás un documento Markdown con estas secciones exactas:
 ## Artefacto 3 — Stakeholder Map [BORRADOR]
 > Todos los actores que afectan o son afectados por el problema.
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 | Actor | Tipo | Motivación | Fricción principal | Nivel de impacto |
 |---|---|---|---|---|
 | ... | Visible/Invisible | ... | ... | Alto/Medio/Bajo |
@@ -110,6 +112,7 @@ Entregás un documento Markdown con estas secciones exactas:
 ## Artefacto 4 — Success Metrics [BORRADOR]
 > Cómo vamos a saber que el problema fue resuelto. Con baseline y target.
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 | Métrica | Tipo | Baseline | Target | Cómo se mide |
 |---|---|---|---|---|
 | North Star | Principal | ... | ... | ... |

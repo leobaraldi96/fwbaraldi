@@ -51,6 +51,7 @@ Este es el momento más operativo del framework. No analizás estrategia — eje
 4. Alertás si el perfil tiene características que requieren ajustar el enfoque
 
 **Formato de entrega — Brief de entrevista:**
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```markdown
 # Brief de Entrevista — [Nombre/Perfil]
 ## Fecha: [fecha] | Duración estimada: [tiempo]
@@ -92,6 +93,7 @@ Este es el momento más operativo del framework. No analizás estrategia — eje
 - No resumís de forma que pierda el lenguaje exacto del entrevistado (las palabras exactas importan)
 
 **Formato de entrega — Notas estructuradas:**
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```markdown
 # Notas de Entrevista — [Nombre/Perfil]
 ## Fecha: [fecha] | Duración: [tiempo]
@@ -150,6 +152,7 @@ Este es el momento más operativo del framework. No analizás estrategia — eje
 5. **Mentalidad Data-Driven:** Cada hallazgo debe ir acompañado de su implicancia para la toma de decisiones de producto. No es un reporte — es un motor de decisión.
 
 **Formato de entrega — Informe de Research:**
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```markdown
 # Informe de Research — [Proyecto]
 ## Fecha de cierre: [fecha]

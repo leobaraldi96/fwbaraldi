@@ -7,7 +7,7 @@ description: >
   kpi, north star, flujos logicos, lógica de producto, good services, service design.
   Activar cuando se cierre la Etapa 02 o se necesite definir el "cómo" funcional.
   Integra estándares externos de Service Design (Good Services).
-version: "2.25.12"
+version: "2.25.13"
 framework: Baraldi
 stage: "03"
 stage_name: "Product Logic"
@@ -23,7 +23,7 @@ status: operational
 ## Flujo de la etapa — 3 momentos en secuencia
 
 ```
-[MOMENTO 1] Service Blueprint & Actor Journey Logic
+[MOMENTO 1] Product Logic Orchestration (Actor & Service Blueprint)
         ↓
   Validar alineación con el Negocio
         ↓
@@ -40,22 +40,27 @@ status: operational
 
 ## Los 3 momentos — cuándo activar cada uno
 
-### Momento 1 — Service Blueprint & Actor Journey Logic
+### Momento 1 — Product Logic Orchestration (Actor & Service Blueprint)
 **Archivo:** `skills/momento_1_blueprint.md`
-**Objetivo:** Conectar las acciones del usuario (Frontstage) con la maquinaria interna (Backstage).
-**Produce:** Service Blueprint con capas de: Evidencia Física, Acciones del Cliente, Frontstage, Backstage y Procesos de Soporte.
+**Objetivo:** Definir la jurisdicción de los actores y coreografiar su interacción temporal (Frontstage vs Backstage).
+**Produce:** 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
+1. **Actor Logic Matrix:** Alcance y reglas funcionales por actor.
+2. **Service Blueprint:** Flujo temporal con Línea de Visibilidad.
 
 ### Momento 2 — Entidades de Datos & Business Rules
 **Archivo:** `skills/momento_2_entities_rules.md`
 **Objetivo:** Definir el "Diccionario" del sistema y las leyes que lo rigen.
 **Produce:** 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 1. **Data Schema (Lite):** Listado de entidades, atributos y relaciones (1:N, N:N).
 2. **Business Rules Matrix:** Matriz de condiciones y consecuencias (If/Then).
 
 ### Momento 3 — Flujogramas Lógicos & North Star Metrics
 **Archivo:** `skills/momento_3_flows_metrics.md`
-**Objetivo:** Visualizar el movimiento de la información y definir el éxito.
+**Objetivo:** Visualizar el movemento de la información y definir el éxito.
 **Produce:**
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 1. **Logical Flowcharts (Mermaid):** Diagramas de secuencia y flujo lógico.
 2. **Product KPI Strategy:** Definición de North Star Metric y métricas de soporte (HEART/AARRR).
 
@@ -63,7 +68,8 @@ status: operational
 
 ## Criterio de calidad para cerrar esta etapa
 
-- [ ] El Service Blueprint cubre el 100% de los flujos críticos definidos en Etapa 01.
+- [ ] La orquestación lógica cubre el 100% de los flujos críticos definidos en Etapa 01.
+- [ ] El Service Blueprint incluye una clara Línea de Visibilidad y flujos temporales.
 - [ ] No existen "Cajas Negras" en el Backstage (procesos sin responsable o sistema).
 - [ ] El modelo de datos es consistente con las necesidades técnicas de la Etapa 02.
 - [ ] Las reglas de negocio contemplan los casos de error (Edge Cases).
@@ -75,9 +81,9 @@ status: operational
 **Al iniciar:** Buscar en `Engram MCP` por `sa-` (System Analysis) para entender los límites técnicos.
 
 **Al cerrar cada Momento:**
-- Momento 1 → Eje: `pl-service-blueprint` (tipo: `arquitectura`)
+- Momento 1 → Eje: `pl-orchestration-logic` (tipo: `arquitectura`)
 - Momento 2 → Eje: `pl-business-rules` (tipo: `decisión`)
 - Momento 3 → Eje: `pl-north-star-metric` (tipo: `estrategia`)
 
 ---
-*Framework Baraldi v2.25.12 · skills/methodology/03_product_logic/SKILL.md*
+*Framework Baraldi v2.25.13 · skills/methodology/03_product_logic/SKILL.md*

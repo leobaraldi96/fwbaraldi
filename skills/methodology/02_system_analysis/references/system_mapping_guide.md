@@ -20,6 +20,7 @@ tipo: reference
 
 En cualquier sistema de producto digital, buscar siempre estos actores invisibles que el equipo tiende a olvidar:
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 | Categoría | Actores típicos | Por qué importa mapearlos |
 |---|---|---|
 | **Equipo técnico** | Dev Frontend, Dev Backend, DevOps, QA | Son los primeros usuarios invisibles — diseñar sin ellos genera deuda técnica |
@@ -108,6 +109,7 @@ A y B se necesitan mutuamente. Riesgo: acoplamiento alto — un cambio en A romp
 
 El Service Blueprint tiene 5 capas. Completar siempre todas.
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 | Capa | Qué documenta | Ejemplo |
 |---|---|---|
 | **Evidencia física** | Qué ve y toca el usuario | Pantalla, email, notificación |

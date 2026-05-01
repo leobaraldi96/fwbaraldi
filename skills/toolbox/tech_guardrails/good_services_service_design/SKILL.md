@@ -208,8 +208,9 @@ Keep everything in **plain language**, using the user's terms (verbs), not inter
 
 ---
 
-# Examples
+# Ejemplos
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ## Example 1 — Quick audit
 User: “Can you audit our online appointment booking service? Drop-off is high.”
 Actions:

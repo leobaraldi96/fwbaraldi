@@ -99,14 +99,14 @@ sequenceDiagram
     
     note over IA,Humano: FASE DE LÓGICA SISTÉMICA (Etapa 03)
     IA->>IA: Ejecuta Product Logic (Brain Integration)
-    IA->>FS: Genera Blueprint y Business Rules Matrix
+    IA->>FS: Genera Blueprint y Business Rules Matrix(v2.25.13)
 ```
 
 ### 3.1 El Rol de la Etapa 03 (Product Logic)
-Tras completar la actualización v2.25.12, la Etapa 03 se consolida como el **"Cerebro del Producto"**. Su función es blindar la viabilidad funcional antes de que el equipo de diseño entre a la fase visual. 
+Tras completar la actualización v2.25.13, la Etapa 03 se consolida como el **"Cerebro del Producto"**. Su función es blindar la viabilidad funcional antes de que el equipo de diseño entre a la fase visual. 
 
 **Entregables clave al usuario:**
-- **Service Blueprint:** Mapa de interacción front/back/soporte.
+- **Product Logic Orchestration:** Matriz de Actores y Service Blueprint (Temporal).
 - **Data Dictionary:** Inventario de entidades y atributos.
 - **Business Rules Matrix:** Leyes lógicas de comportamiento (If/Then).
 - **KPIs Funcionales:** North Star Metric y puntos de medición.

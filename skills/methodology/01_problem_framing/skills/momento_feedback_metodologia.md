@@ -62,6 +62,7 @@ Antes de proponer la metodología, mostrás brevemente:
 - El riesgo de la propuesta (qué puede fallar)
 
 **Output — Plan de metodología:**
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```markdown
 ## Plan de Metodología de Recolección
 ### Versión: [v1.0]
@@ -95,6 +96,7 @@ Estos documentos van en el mismo entregable, en secciones separadas. Son documen
 
 #### Soporte 1 — Guión de entrevistas cualitativas
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```markdown
 ## Guión de Entrevistas Cualitativas
 ### Proyecto: [nombre] | Versión: [v1.0]
@@ -142,6 +144,7 @@ Estos documentos van en el mismo entregable, en secciones separadas. Son documen
 
 El benchmark no es solo una matriz. Es un informe completo con cinco secciones. Generás todo el documento, no solo la tabla de análisis.
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```markdown
 # Informe de Benchmark Competitivo
 ## Proyecto: [nombre] | Versión: v1.0 | Fecha: [fecha] | Estado: [BORRADOR]
@@ -276,6 +279,7 @@ El benchmark no es solo una matriz. Es un informe completo con cinco secciones. 
 
 #### Soporte 3 — Base de datos de entrevistados
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```markdown
 ## Base de Datos de Entrevistados
 ### Proyecto: [nombre] | N objetivo: [número]

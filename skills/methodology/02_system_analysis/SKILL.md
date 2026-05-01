@@ -95,6 +95,7 @@ Artefactos de Etapa 01 aprobados
 
 ## Artefactos de salida de la etapa
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 | Artefacto | Momento | Formato |
 |---|---|---|
 | Actor Map Consolidado | 1 | Documento Markdown |

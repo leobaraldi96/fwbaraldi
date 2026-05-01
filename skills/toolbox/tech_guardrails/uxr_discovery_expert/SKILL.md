@@ -27,6 +27,7 @@ En el descubrimiento de producto, el usuario "contrata" un producto para hacer u
 
 ## 🛠️ Patrones de Entrevistas (Discovery)
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ### Malas Preguntas ❌
 - *"¿Usarías esta herramienta si costara $10?"* (Hipotético)
 - *"¿No crees que esta UI es un poco confusa?"* (Sesgada / Leading)

@@ -21,6 +21,7 @@ Nunca crees una tarea técnica gigante. Divide siempre el trabajo en:
 
 ## 🎨 Plantilla de Tarea de Producto (Parent)
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```markdown
 ## 🎯 Objetivo / User Story
 Como un {perfil de usuario}, quiero {acción} para que {beneficio estratégico}.
@@ -39,6 +40,7 @@ Como un {perfil de usuario}, quiero {acción} para que {beneficio estratégico}.
 
 ## ⚙️ Plantilla de Tarea Técnica (Child)
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```markdown
 ## 🛠️ Detalles de Implementación (Tech)
 Implementación técnica del flujo {nombre} para el componente {API/UI}.

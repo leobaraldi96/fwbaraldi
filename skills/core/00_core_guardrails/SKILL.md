@@ -100,6 +100,9 @@ docs-fwbaraldi/
 
 ### Reglas operativas
 - **Ubicación Obligatoria:** Todo artefacto del framework debe tener una subcarpeta de destino explícita. Si la IA no sabe en qué subcarpeta va, **frena y pregunta** antes de escribir el archivo.
+- **Documentación Dinámica:** Queda prohibido usar nombres de archivos genéricos (ej: `entrega.md`). Todo archivo generado debe seguir el Naming Standard: `[Momento]_[Nombre_Descriptivo].md`.
+- **Interpretación de Templates (Ley de Ejemplo):** Toda tabla, diagrama o estructura de datos presente en los archivos de metodología del Framework que contenga datos hipotéticos (ej: "Mascota", "Login", "Empresa X") debe ser tratada estrictamente como un **EJEMPLO DE FORMATO**. La IA tiene terminantemente prohibido replicar esos datos en el proyecto del usuario; debe generar siempre contenido 100% original basado en la auditoría del workspace actual.
+- **Rigor en la Indagación:** Si un artefacto requiere datos de etapas previas, la IA **DEBE** leer esos archivos antes de proponer nada. No se permiten suposiciones ni "alucinaciones por omisión".
 - **Prohibición de Fuga (Zero-Leakage):** Queda prohibido generar carpetas temporales (ej: `scratch`), archivos de estilos (`.css`) o scripts sueltos (`.js`) fuera del directorio del artefacto.
 - **Cero Basura en la Raíz:** Si el sistema necesita archivos auxiliares para una landing, estos deben guardarse dentro de la subcarpeta del artefacto (ej: `docs-fwbaraldi/UXR/informe/assets/`).
 - **Bloqueo Preventivo:** Si el agente no está seguro de la ruta de destino, **debe frenar y preguntar** al usuario antes de escribir cualquier archivo en el disco.

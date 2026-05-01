@@ -58,6 +58,7 @@ Revisá esta lista. Editá los datos que estén incompletos, eliminá los que no
 ## Plantilla — Actores Visibles
 > Editá esta tabla. Eliminá filas que no correspondan. Agregá las que falten.
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 | Actor | Nombre real (si aplica) | Rol en el producto | Motivación principal | Fricción principal | Frecuencia de uso | Impacto | Stack tecnológico (si es técnico) |
 |---|---|---|---|---|---|---|---|
 | [ej. Maquetista] | [CRÍTICO si es persona específica] | Crea y publica proyectos | Prestigio + archivo personal | [completar] | Semanal | Alto | — |
@@ -117,6 +118,7 @@ Esta lista es un supuesto base que aplica a casi cualquier producto digital. Rev
 ## Plantilla — Actores Invisibles
 > Esta lista es un supuesto base. Editá, completá o eliminá según tu proyecto.
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 | Actor | Nombre real (si aplica) | Qué necesita del sistema | Fricción típica si no se diseña para él | Impacto en el proyecto | Crítico? |
 |---|---|---|---|---|---|
 | Dev / Frontend | [COMPLETAR si hay persona asignada] | Specs claras, componentes bien definidos, lógica documentada | Diseños sin estados definidos, edge cases no documentados | Alto | [CRÍTICO] |
@@ -144,6 +146,7 @@ Esta lista se construye con los servicios ya mencionados en Etapa 01. Completá 
 ## Plantilla — Actores del Sistema
 > Lista pre-poblada desde Etapa 01. Editá y completá los campos faltantes.
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 | Actor / Servicio | Tipo | Función en el producto | Restricciones conocidas | Costo / Modelo | Criticidad | Alternativa si falla |
 |---|---|---|---|---|---|---|
 | [ej. Supabase] | Base de datos + Auth | Almacenamiento relacional y autenticación | Límite de requests en plan free | Freemium / pago por uso | [CRÍTICO] | — |

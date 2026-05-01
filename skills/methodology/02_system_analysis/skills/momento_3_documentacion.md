@@ -44,6 +44,7 @@ Reportás los gaps antes de continuar. No generás documentación sobre informac
 
 ### Paso B — Architecture Overview
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```markdown
 # Architecture Overview — [Proyecto]
 ## Versión: v1.0 | Fecha: | Estado: [BORRADOR — pendiente validación técnica]
@@ -96,6 +97,7 @@ Reportás los gaps antes de continuar. No generás documentación sobre informac
 
 ### Paso C — Service Blueprint
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```markdown
 # Service Blueprint — [Proyecto]
 ## Versión: v1.0 | Fecha: | Estado: [BORRADOR]
@@ -129,6 +131,7 @@ Reportás los gaps antes de continuar. No generás documentación sobre informac
 
 ### Paso D — Informe de cierre de Etapa 02
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```markdown
 # Informe de Cierre — Etapa 02 System Analysis
 ## Proyecto: | Fecha: | Estado: [BORRADOR]

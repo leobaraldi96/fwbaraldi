@@ -25,6 +25,7 @@ Nunca confíes en un solo punto ciego.
 
 ## 📊 Reglas de Extracción de Insights
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 - **Personas basadas en Comportamiento, no en Demografía:** Las personas "Marketing Sarah" o "Developer Dan" (solo por su título) son inútiles. Define a las personas por sus **Jobs to be Done**, sus dolores y sus "Workarounds" (atajos que inventan).
 - **Citas Verbatim (Evidence over Opinion):** Respalda siempre tus descubrimientos (Findings) con comillas literales de las transcripciones. Atribuye al *tipo* de usuario, no al nombre (ej: *"Admin Corporativo, equipo de 200"* en lugar de *"Juan"*).
 

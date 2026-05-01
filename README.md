@@ -2,9 +2,7 @@
 
 > **AI-Augmented System Product Design**
 >
-> Un framework metodológico diseñado para potenciar el diseño de productos digitales utilizando Inteligencia Artificial como copiloto estratégico en todas las etapas del proceso.
-
-![Version](https://img.shields.io/badge/version-2.25.12-blue)
+> Un framework metodológico diseñado para potenciar el diseño de productos digitales utilizando Inteligencia Artificial como copiloto estratégico en todas las etapas del pro![Version](https://img.shields.io/badge/version-2.25.13-blue)
 ![Status](https://img.shields.io/badge/status-active-success)
 
 ---
@@ -56,7 +54,7 @@ No deviene de un solo modelo. Es una síntesis crítica de varios referentes met
 - **Design Thinking** *(IDEO / Stanford d.school)* — Comparte el foco en empatía y validación con usuarios reales. Pero Design Thinking es un proceso de innovación, no de diseño de producto continuo. No escala bien a equipos técnicos ni a productos complejos con deuda técnica.
 - **Systems Thinking** *(Donella Meadows)* — La idea de producto como sistema vivo viene de acá. Meadows habla de stocks, flujos, loops de retroalimentación. El Framework Baraldi traduce eso al lenguaje operativo del diseño de producto.
 - **Jobs To Be Done** *(Christensen / Ulwick)* — El foco en outcomes medibles y en entender el progreso que el usuario quiere hacer, no solo el dolor que siente. Está implícito en el Outcome Definition y en el criterio de validación.
-- **Shape Up** *(Basecamp / Ryan Singer)* — La idea de ciclos acotados con criterios de cierre explícitos.
+- **Shape Up** *(Basecamp / Ryan Singer)* — La idea de ciclos acotados con criterios de cierre explícitamente.
 - **Context7** *(Context7.com)* — Nuestra fuente oficial de **Conocimiento técnico** (Manuales para IA).
 - **Skills.sh** *(Vercel Labs)* — Nuestra fuente oficial de **Procedimientos operativos** (Entrenamiento para IA).
 
@@ -197,7 +195,7 @@ fwbaraldi/
 
 ---
 
-## 🚀 Quick Start / Instalación (v2.25.10)
+## 🚀 Quick Start / Instalación (v2.25.13)
 
 > ⚠️ **IMPORTANTE:** A partir de la versión 2.25.10 (Modelo Cero-Copia), el Framework Baraldi dejó de ser un simple texto para copiar y pegar. Ahora es un **Orquestador Agéntico**. Para usarlo, tu IA debe soportar el uso de herramientas MCP y lectura de carpetas locales (Ej: **Antigravity de Google, Claude Code, Cursor, Windsurf**, etc.).
 
@@ -243,6 +241,31 @@ Para obtener las últimas mejoras y nuevas etapas del framework:
 ## 📄 Licencia y Uso Libre
 
 El **Framework Baraldi** es de código abierto.
+
+Podés usarlo **GRATIS** para tus proyectos personales, comerciales o de agencia. Podés modificarlo para adaptarlo a tu equipo y publicar forks.
+
+**La única condición (Licencia tipo CC BY 4.0 / MIT con atribución):**
+Si compartís, publicás o enseñás este sistema públicamente, por favor da el crédito apropiado: mencionando a **Leo Baraldi** y enlazando a este repositorio.
+
+---
+
+## 🤝 Colaboradores
+
+- **[Denisse Peduzzi](https://www.linkedin.com/in/denissepeduzzi/)** — *Content Designer*
+
+---
+
+## 📩 Contacto
+
+**Leo Baraldi** — *Senior UX Product Designer*
+
+- 💼 **LinkedIn:** [leobaraldi](https://www.linkedin.com/in/leobaraldi/)
+- 🌐 **Web:** [leobaraldi.com.ar](https://leobaraldi.com.ar/)
+- 📧 **Email:** [leobaraldi96@gmail.com](mailto:leobaraldi96@gmail.com)
+
+---
+
+*Framework Baraldi v2.25.13 · Desarrollado y mantenido por Leo Baraldi.*.
 
 Podés usarlo **GRATIS** para tus proyectos personales, comerciales o de agencia. Podés modificarlo para adaptarlo a tu equipo y publicar forks.
 

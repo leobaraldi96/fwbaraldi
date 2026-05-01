@@ -5,6 +5,15 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.25.13] - 2026-05-01
+ 
+### Refactor de Product Logic (Momento 1)
+- **Refactorizado:** Momento 1 de la Etapa 03 evolucionado a **"Product Logic Orchestration"**.
+- **Añadido:** Separación obligatoria entre **Actor Logic Definition** (Estática/Funcional) y **Service Blueprint** (Temporal/UX).
+- **Mejorado:** Inclusión obligatoria de la **Línea de Visibilidad** en el Service Blueprint para separar Frontstage de Backstage.
+- **Regla de Oro:** Se prohíbe el agnosticismo técnico en el backstage; el UX debe definir las acciones del sistema.
+- **Sincronizado:** Versión global del framework actualizada a v2.25.13 en todos los archivos core.
+
 ## [2.25.12] - 2026-04-29
  
 ### Operacionalización de la Etapa 03 (Product Logic)
@@ -12,8 +21,8 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 - **Añadido:** **Guía de Referencia Agnostica** para Product Logic en `references/product_logic_guide.md`.
 - **Integrado:** Migración de la skill de **Good Services** a la carpeta `skills/toolbox/tech_guardrails/` para garantizar la autonomía del framework y la disponibilidad inmediata para nuevos usuarios sin dependencias externas.
 - **Sincronizado:** Backlog estratégico actualizado marcando la Etapa 03 como operacional.
-+
- ## [2.25.11] - 2026-04-22
+
+## [2.25.11] - 2026-04-22
 
 ### Pluralización de Insights y Captura de Intuición Humana
 - **Mejorado:** El Momento 2 de la Etapa 01 (IA Auxiliar en Vivo) ahora solicita explícitamente **insights sutiles o intuitivos** al humano antes de cerrar la recolección de datos.

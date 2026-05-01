@@ -57,6 +57,7 @@ Reportás cada contradicción explícitamente. No la resolvés — la señalás 
 
 Por cada hipótesis del Outcome Definition, cruzás contra el Informe de Research y asignás nivel de confianza:
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 | Nivel | Criterio |
 |---|---|
 | **Alta** | Confirmada espontáneamente por ≥70% de entrevistados, sin inducción |
@@ -81,9 +82,10 @@ Con base en los tres pasos anteriores, recomendás uno de tres caminos:
 
 ## Formato de entrega obligatorio
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```markdown
 # Informe de Cierre — Etapa 01 Problem Framing
-## Proyecto: [nombre]
+# Proyecto: [nombre]
 ## Fecha de cierre: [fecha]
 ## Estado: [BORRADOR — pendiente aprobación humana]
 

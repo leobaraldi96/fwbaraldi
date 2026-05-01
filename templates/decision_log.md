@@ -17,6 +17,7 @@
 
 ## Datos del Proyecto
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 | Campo | Valor |
 |---|---|
 | Proyecto | [nombre] |
@@ -29,6 +30,7 @@
 
 ## Registro de Decisiones
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ### [DEC-001] — [Título breve de la decisión]
 
 | Campo | Valor |

@@ -38,6 +38,7 @@ Antes del output mostrás:
 
 ### Paso B — Dependency Map
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```markdown
 # Dependency Map — [Proyecto]
 ## Fecha: | Estado: [BORRADOR]
@@ -74,6 +75,7 @@ Antes del output mostrás:
 
 ### Paso C — Data Flow Map
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```markdown
 # Data Flow Map — [Proyecto]
 ## Fecha: | Estado: [BORRADOR]
@@ -110,6 +112,7 @@ Ver Etapa 03 (Product Logic) para el modelo de estados completo.
 
 ### Paso D — Risk Map
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```markdown
 # Risk Map — [Proyecto]
 ## Fecha: | Estado: [BORRADOR]

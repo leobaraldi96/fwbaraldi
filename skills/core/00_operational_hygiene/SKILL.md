@@ -27,6 +27,7 @@ Prohibido mantener el trabajo en ramas genéricas (`bocetos`, `nueva-pantalla`, 
 ### Formato Obligatorio
 **Patrón:** `[fase]/[contexto]`
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 | Fase (Type) | Cuándo se usa | Ejemplo |
 |-------------|---------------|---------|
 | `discovery/` | Etapas 01 y 02 (Investigación y mapeo) | `discovery/actor-map-fintech` |

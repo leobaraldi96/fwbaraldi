@@ -32,8 +32,9 @@ Cuando el diseño implique construir dashboards (React / Next.js), utilizamos **
 Los Dashboards no deben bloquear todo el hilo, usar Skeletons mientras las métricas se obtienen de la DB o sistema externo.
 
 ### Componente Recharts Base (Ejemplo Lineal Accionable)
-Asegura Tooltips precisos y colores que mantengan el ratio WCAG. Si comparas cohortes prestat atención a los bordes dinámicos.
+Asegura Tooltips precisos y colores que mantengan el ratio WCAG. Si comparas cohortes presta atención a los bordes dinámicos.
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```tsx
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 

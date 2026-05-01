@@ -28,6 +28,7 @@ En el Framework Baraldi, el texto **es** interfaz. Esta habilidad asegura que la
 - **Evitar Latinismos:** NUNCA uses `e.g.`, `i.e.`, `etc.` o `vs`. Usa "por ejemplo", "es decir" o "comparado con".
 
 ### 2. Micro-copy por Superficie
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 - **Botones (CTAs):** Deben empezar con un verbo de acción específico. (Do: "Crear proyecto", "Eliminar cuenta" / Don't: "Enviar", "OK").
 - **Mensajes de Error:** Estructura obligatoria: **¿Qué pasó? + ¿Por qué? (si se sabe) + ¿Cómo solucionarlo?**. (Do: "No se pudo conectar. Verifica tu clave API y reintenta.").
 - **Empty States:** No solo informes, guía al usuario. (Do: "Aún no hay proyectos. Crea el primero para empezar a diseñar.").

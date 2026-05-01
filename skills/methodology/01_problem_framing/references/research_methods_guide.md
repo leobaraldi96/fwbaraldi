@@ -82,6 +82,7 @@ Marca qué tipo de información es el dato, independientemente de las hipótesis
 
 ### Cómo aplicar las dos capas
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```markdown
 > "Siempre termino comprando en tres lugares distintos
 >  y nunca encuentro todo en un mismo sitio."

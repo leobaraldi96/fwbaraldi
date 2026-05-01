@@ -16,6 +16,7 @@
 
 ## Template
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```
 ### [Eje Estratégico: slug-del-tema]
 
