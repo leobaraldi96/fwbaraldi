@@ -2,7 +2,7 @@
 name: competitor_intelligence
 description: >
   Protocolos de análisis competitivo e inteligencia de mercado. Foco en detección de brechas (Gaps), SEO/GEO y análisis de posicionamiento.
-version: "2.25.10"
+version: "2.25.13"
 ---
 
 # 🕵️ Competitor Intelligence Expert
@@ -39,4 +39,4 @@ Siempre que entregues inteligencia competitiva, resume los datos en:
 - **Ignorar el Backstage:** No mirar solo la UI. Investigar su arquitectura de negocio, pricing o dependencias (ver *Product Service Blueprint*).
 
 ---
-*Framework Baraldi v2.25.10 · Core / Tech Guardrails / Competitor Intelligence*
+*Framework Baraldi v2.25.13 · Core / Tech Guardrails / Competitor Intelligence*

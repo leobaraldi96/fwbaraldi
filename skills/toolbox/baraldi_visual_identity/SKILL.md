@@ -5,7 +5,7 @@ description: >
   Basada en el rigor geométrico de Paul Rand y la ejecución vibrante/dark
   del sitio oficial leobaraldi.com.ar. Use este skill para asegurar que todos los
   artefactos y diseños tengan el ADN visual del director.
-version: "2.25.10"
+version: "2.25.13"
 ---
 
 # 🧬 Identidad Visual Baraldi (Modernist Tech)
@@ -67,4 +67,4 @@ Para asegurar la consistencia de marca (v2.24.2):
 3. **Dark Mode por Defecto:** Todos los reportes generados por el framework deben configurarse en **Dark Mode** (Fondo Grafito) por defecto, siguiendo la identidad del sitio oficial.
 
 ---
-*Framework Baraldi v2.25.10 · Identidad Visual Basada en el Legado de Paul Rand.*
+*Framework Baraldi v2.25.13 · Identidad Visual Basada en el Legado de Paul Rand.*

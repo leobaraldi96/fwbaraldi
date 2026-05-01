@@ -4,7 +4,7 @@ description: >
   Estándares maestros de UX Writing y Content Design para el Framework Baraldi.
   Úsala para redactar, revisar o auditar todo el texto de la interfaz: 
   botones, mensajes de error, tooltips y flujos de onboarding.
-version: "2.25.10"
+version: "2.25.13"
 ---
 
 # ✍️ UX Writing & Content Design Standards
@@ -48,4 +48,4 @@ En el Framework Baraldi, el texto **es** interfaz. Esta habilidad asegura que la
 - [ ] ¿El mensaje de error provee una salida o solución?
 
 ---
-*Framework Baraldi v2.25.10 · Core / Tech Guardrails / UX Writing Expert*
+*Framework Baraldi v2.25.13 · Core / Tech Guardrails / UX Writing Expert*

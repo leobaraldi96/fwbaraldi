@@ -84,13 +84,13 @@ Antes de saludar, realiza un chequeo silencioso de integridad:
 4. **Si existe una versión más reciente:** Incluir en el Panel de Reingreso una alerta estética:
    > ⚠️ **Nueva actualización disponible (vX.X.X):** Se recomienda actualizar tu copia local con `git pull origin main`.
 
-**-1. [CARPETA DE TRABAJO Y ORGANIZACIÓN — Paso obligatorio antes de todo]**
-Antes de hacer cualquier otra cosa, definir la carpeta donde se guardarán únicamente los **ARTEFACTOS DE SALIDA** del proyecto.
-- La carpeta de trabajo **debe estar ya definida** si el Paso -3 detectó un proyecto existente (recuperar de la memoria).
-- Si el usuario NO la ha indicado y es un proyecto nuevo: preguntar explícitamente.
-- Si la indicó (ej. `C:/proyecto/`): Todo archivo generado por ti debe guardarse **obligatoriamente** en una subcarpeta dedicada llamada `docs-fwbaraldi/` (ej: `C:/proyecto/docs-fwbaraldi/`). No ensucies la raíz del repositorio.
-- **PROHIBICIÓN ESTRICTA (Cero-Copia):** No copies archivos de protocolos, identidad o templates del framework a esta carpeta. El framework opera desde su ubicación global.
-- **NUNCA** usar el directorio `scratch/` ni ninguna carpeta interna del framework para guardar archivos del proyecto.
+**-1. [CARPETA DE TRABAJO Y ORGANIZACIÓN — Protocolo de Aislamiento Sistémico]**
+Antes de realizar cualquier acción técnica o estratégica, debes asegurar la existencia de la subcarpeta `docs-fwbaraldi/` en la raíz del proyecto.
+- **Utilidad y Transparencia:** Explica al usuario que esta carpeta no es solo un almacén de archivos, sino el **Activo Estratégico más rico del proyecto**. Es el resultado de la co-construcción Humano/IA donde reside la inteligencia que guiará el diseño, desarrollo y estrategia de negocio. Advierte que ignorar su contenido es perder el objetivo del framework.
+- **Validación de Existencia:** Si el Paso -3 detectó un proyecto existente pero la carpeta no está presente o el agente no tiene acceso, **NO escribas nada**. Pide al usuario confirmación para inicializarla.
+- **Archivo README Mandatorio:** Al crear la carpeta por primera vez, el primer archivo que **DEBES** generar es `docs-fwbaraldi/README.md` usando la plantilla de utilidad. Esto elimina la confusión del usuario sobre "qué es esto".
+- **Enrutamiento Obligatorio:** Todo archivo generado por ti (investigación, lógica, backlog) debe guardarse **exclusivamente** dentro de `docs-fwbaraldi/`. Ignorar esta regla se considera una violación grave del protocolo de higiene operacional.
+- **Zero-Copy:** No copies archivos internos del framework (instrucciones, MDs maestros) a esta carpeta. Solo guarda outputs originales del proyecto activo.
 
 0. **[MEMORIA Y GUARDRAILS — Paso 0]**
    - **Memoria Global:** Llamar `mem_context(project="fw-baraldi-core", limit=10)` para obtener reglas del framework.
@@ -308,4 +308,4 @@ Si el Paso -3 NO encontró memoria de ningún proyecto existente:
 
 ---
 
-*Framework Baraldi v2.25.12 · context.md · Boot Layer 00*
+*Framework Baraldi v2.25.13 · context.md · Boot Layer 00*

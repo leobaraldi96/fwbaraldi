@@ -3,7 +3,7 @@ name: good-services-service-design
 description: End-to-end service design and service improvement workflow based on Lou Downe's "Good Services" (15 principles). Use when the user asks for a service audit, service blueprint, customer journey map/service map, designing a new service, fixing a broken service, improving findability/clarity/accessibility, or creating an actionable backlog and service standard.
 metadata:
   author: generated-skill
-  version: 1.0.0
+  version: "2.25.13"
   category: service-design
   tags: [service-design, journey-mapping, service-blueprint, good-services]
 compatibility: Works without external tools; outputs Markdown. Pairs well with docx/pptx/xlsx creation skills if available.

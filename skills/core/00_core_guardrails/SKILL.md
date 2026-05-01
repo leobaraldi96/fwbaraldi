@@ -52,6 +52,7 @@ Dentro de `docs-fwbaraldi/` la organización es por **naturaleza del contenido**
 
 ```
 docs-fwbaraldi/
+├── README.md                          ← Manual de utilidad y bienvenida (Mandatorio)
 ├── 00_Backlog_Estrategico.md          ← Siempre en la raíz. Gestión de scope.
 │
 ├── 01_Problem_Framing/                ← Artefactos de la Etapa 01
@@ -180,4 +181,4 @@ Antes de declarar un "Done", la IA debe verificar:
 - [ ] ¿El humano aprobó explícitamente cada acción antes de ejecutarla?
 
 ---
-*Framework Baraldi v2.25.10 · Core Guardrails*
+*Framework Baraldi v2.25.13 · Core Guardrails*

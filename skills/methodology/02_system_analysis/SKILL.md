@@ -146,4 +146,4 @@ Artefactos de Etapa 01 aprobados
 
 ---
 
-*Framework Baraldi v2.25.12 · skills/methodology/02_system_analysis/SKILL.md*
+*Framework Baraldi v2.25.13 · skills/methodology/02_system_analysis/SKILL.md*

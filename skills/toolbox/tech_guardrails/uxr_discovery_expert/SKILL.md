@@ -3,7 +3,7 @@ name: uxr_discovery_expert
 description: >
   Guardián de Investigación Cualitativa, centrado en el descubrimiento de problemas (Problem Framing) y metodologías Jobs-to-be-Done (JTBD).
   Fuerza al sistema a obtener evidencias de comportamiento real, no opiniones.
-version: "2.25.10"
+version: "2.25.13"
 ---
 
 # 🕵️ UXR Discovery Expert (Cualitativo & JTBD)
@@ -44,4 +44,4 @@ En el descubrimiento de producto, el usuario "contrata" un producto para hacer u
 - **Entrevistar solo a los Fans:** Ignorar a los detractores o a los que abandonaron en el onboarding o churned users. El "oro" está en el abandono.
 
 ---
-*Framework Baraldi v2.25.10 · Core / Tech Guardrails / UXR Discovery*
+*Framework Baraldi v2.25.13 · Core / Tech Guardrails / UXR Discovery*

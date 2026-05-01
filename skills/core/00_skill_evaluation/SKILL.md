@@ -5,7 +5,7 @@ description: >
   instalar o modificar una habilidad (Skill) para prevenir la "Obesidad de Contexto".
   Trigger: Al crear un nuevo archivo SKILL.md, auditar una habilidad existente, 
   o cuando el usuario pida agregar una nueva capacidad al sistema.
-version: "2.25.10"
+version: "2.25.13"
 ---
 
 # 🛡️ Orquestador de Inteligencia y Eficiencia (Skill Judge)
@@ -54,4 +54,4 @@ Si detectas que el usuario pide crear una skill redundante (ej. "Crea una skill 
 4. Ofrécele, en cambio, usar ese espacio para escribir una skill sobre "Restricciones de Negocio" u "Identidad Visual" que tú no podrías adivinar.
 
 ---
-*Framework Baraldi v2.25.10 · Skill Evaluation.*
+*Framework Baraldi v2.25.13 · Skill Evaluation.*

@@ -4,7 +4,7 @@ description: >
   Habilidad experta en Diseño de Interacción y Feedback Sensorial. 
   Úsala para definir el comportamiento físico, visual y auditivo de la 
   interfaz, asegurando una experiencia táctil y fluida.
-version: "2.25.10"
+version: "2.25.13"
 ---
 
 # ⚡ Interaction & Multimodal Feedback Expert
@@ -41,4 +41,4 @@ Al definir un componente, debes especificar:
 *"Si el usuario tiene que preguntarse si su clic funcionó, el diseño falló"*. El feedback debe ocurrir en menos de 100ms después de la interacción.
 
 ---
-*Framework Baraldi v2.25.10 · Core / Tech Guardrails / IxD Expert*
+*Framework Baraldi v2.25.13 · Core / Tech Guardrails / IxD Expert*

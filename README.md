@@ -111,7 +111,7 @@ A nivel de infraestructura (LLM Ops), el Framework Baraldi maximiza el rendimien
 | Métrica | Valor | Estado |
 |---|---|---|
 | **Eficiencia Actual (v2.25.13)** | **85.21%** | 🟡 Fase Beta (03/07 Etapas) |
-| **Target Sistémico** | **+90%** | 🟢 Hito v2.30.0 |
+| **Target Sistémico** | **+90%** | 🟢 Hito v2.25.13 |
 
 *Aclaración Técnica: Al cargar en memoria viva solo los hallazgos estrictamente necesarios para la toma de decisión del momento, reducimos el ruido contextual, manteniendo la IA enfocada, rápida y económicamente viable.*
 
@@ -221,7 +221,17 @@ npx github:leobaraldi96/fwbaraldi
 2. Inicia tu Agente (Ej: [Antigravity](https://antigravity.google/)).
 3. Escribe en el chat: *"Iniciemos un proyecto nuevo usando el Framework Baraldi"*.
 
+### Mantenimiento y Alineación (v2.25.13+)
+Si ya tienes un proyecto en curso y quieres asegurarte de que tus artefactos y carpetas sigan los últimos estándares del framework (nuevas taxonomías, versiones, etc.), puedes ejecutar el comando de alineación:
+
+```bash
+npm run baraldi-align
+```
+
+Este comando auditará tu carpeta `docs-fwbaraldi/` y te notificará sobre cualquier desajuste antes de aplicar los cambios.
+
 ---
+
 
 ## 📄 Licencia y Uso Libre
 

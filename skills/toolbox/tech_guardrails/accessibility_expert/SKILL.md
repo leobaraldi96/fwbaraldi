@@ -4,7 +4,7 @@ description: >
   Guardia universal de Accesibilidad (a11y) basado en WCAG 2.2. 
   Fusiona reglas dogmáticas con patrones de implementación avanzada 
   en React, Tailwind y TypeScript.
-version: "2.25.10"
+version: "2.25.13"
 ---
 
 # ♿ Accessibility Expert (WCAG 2.2)
@@ -79,4 +79,4 @@ Es OBLIGATORIO usar `FocusTrap` en modales. Si el usuario presiona `Escape`, el 
 - [ ] ¿Respeta `prefers-reduced-motion`?
 
 ---
-*Framework Baraldi v2.25.10 · Core / Tech Guardrails / a11y Expert*
+*Framework Baraldi v2.25.13 · Core / Tech Guardrails / a11y Expert*

@@ -3,7 +3,7 @@ name: uxr_synthesis_expert
 description: >
   Protocolos de síntesis de investigación cualitativa y cuantitativa.
   De datos crudos a insights estructurados: Thematic Analysis, Triangulación y Dimensionamiento de Oportunidades.
-version: "2.25.10"
+version: "2.25.13"
 ---
 
 # 🧠 UXR Synthesis Expert
@@ -54,4 +54,4 @@ No presentes un problema sin dimensionar su impacto:
 - Confundir Frecuencia con Severidad. Un bug que arruina los datos ocurre 1 vez al año pero es catastrófico; un botón desalineado se ve 1000 veces pero su severidad es nula.
 
 ---
-*Framework Baraldi v2.25.10 · Core / Tech Guardrails / UXR Synthesis Expert*
+*Framework Baraldi v2.25.13 · Core / Tech Guardrails / UXR Synthesis Expert*

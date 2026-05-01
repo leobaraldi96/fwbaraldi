@@ -5,7 +5,7 @@ description: >
   Fuerza el uso de componentes funcionales, hooks personalizados y
   estilado con NativeWind.
   Trigger: Al diseñar apps móviles, navegación con Expo Router o manejo de layouts seguros.
-version: "2.25.10"
+version: "2.25.13"
 ---
 
 # 📱 React Native Expert Guardrails (Baraldi Edition)
@@ -36,4 +36,4 @@ src/
 ```
 
 ---
-*Framework Baraldi v2.25.10 · Excelencia en Mobile.*
+*Framework Baraldi v2.25.13 · Excelencia en Mobile.*

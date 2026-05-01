@@ -4,7 +4,7 @@ description: >
   Habilidad experta en diseño de experimentos de usabilidad y métricas 
   cuantitativas. Úsala para transformar la investigación anecdótica en 
   evidencia científica reproducible.
-version: "2.25.10"
+version: "2.25.13"
 ---
 
 # 🔬 UXR Scientific Testing Agent
@@ -39,4 +39,4 @@ Esta habilidad asegura que el diseño sea validado con rigor metodológico. No b
 Antes de validar, pregúntate: *"¿Estamos testeando la interfaz o estamos testeando si el usuario entiende el valor del producto?"*. Separa siempre la **usabilidad** de la **deseabilidad**.
 
 ---
-*Framework Baraldi v2.25.10 · Core / Tech Guardrails / UXR Expert*
+*Framework Baraldi v2.25.13 · Core / Tech Guardrails / UXR Expert*

@@ -15,6 +15,7 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 - **Mejorado:** Inclusión obligatoria de la **Línea de Visibilidad** en el Service Blueprint para separar Frontstage de Backstage con rigor técnico.
 - **Sincronizado:** Versión global v2.25.13 unificada en `README.md`, `ARQUITECTURA_CORE.md`, `CHANGELOG.md` y todos los archivos `SKILL.md` maestros.
 - **Documentación:** Reestructuración profunda del `README.md` restaurando la filosofía de madurez del diseñador y el manifiesto de la experiencia como principio fundacional.
+- **Añadido:** Comando `baraldi-align` — Herramienta de alineación sistémica para proyectos de usuario que audita y sincroniza carpetas, taxonomía y versiones según los últimos estándares.
 
 ## [2.25.12] - 2026-04-29
  
@@ -35,7 +36,7 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
 ### Consolidación Sistémica y Purga de Pencil
 - **Eliminado:** Purgada toda referencia a la integración experimental con **Pencil MCP** tras validación de resultados insuficientes. El framework vuelve a su núcleo ágil de Markdown y HTML/CSS puro.
-- **Sincronizado:** Versión global de infraestructura a v2.25.10 en **todas** las sub-skills de la Toolbox y metodologías (01 y 02). Unificación total de metadatos.
+- **Sincronizado:** Versión global de infraestructura a v2.25.13 en **todas** las sub-skills de la Toolbox y metodologías (01 y 02). Unificación total de metadatos.
 - **Eliminado:** Purgada por completo la carpeta `chat/` y el soporte para el **Track Legacy (copiar/pegar)**. El framework es ahora un ecosistema puramente agéntico.
 
 ---
@@ -53,13 +54,13 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
 ## [2.25.8] - 2026-04-19
 
-### Estabilización de Infraestructura (Engram v1.12.0)
-- **Actualizado:** Motor de memoria Engram migrado a la versión estable global `v1.12.0`.
+### Estabilización de Infraestructura (Engram v2.25.13)
+- **Actualizado:** Motor de memoria Engram migrado a la versión estable global `v2.25.13`.
 - **Añadido:** Capacidad de **Save Nudges** para prevenir pérdida de contexto por inactividad.
 - **Añadido:** Capacidad de **Session Activity Score** para auditar el esfuerzo de memoria.
 - **Añadido:** Guía de Mantenimiento y Actualización del Motor en el `PROTOCOLO_MEMORIA.md`.
 - **Añadido:** Aislamiento de Contexto (Workspace Awareness) en las Reglas de Oro del framework para evitar contaminación entre proyectos.
-- **Mejorado:** `scripts/install.js` ahora descarga por defecto la versión v1.12.0 estable para nuevos usuarios.
+- **Mejorado:** `scripts/install.js` ahora descarga por defecto la versión v2.25.13 estable para nuevos usuarios.
 
 ---
 
@@ -99,7 +100,7 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
 ### Transparencia Operativa (Por qué / Cómo / Para qué)
 - **Añadido:** Protocolo de comunicación obligatoria antes de cualquier acción estructural (crear carpetas, archivos o proponer metodologías).
-- **Añadido:** Integración del Protocolo en el Boot Context y en el Checklist de Core Guardrails (v1.3.0).
+- **Añadido:** Integración del Protocolo en el Boot Context y en el Checklist de Core Guardrails (v2.25.13).
 
 ---
 
@@ -252,7 +253,7 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 ### Sincronización de Documentación (Technical Parity)
 
 #### Actualizado
-- **📑 Guías de Arquitectura:** Sincronización total de `ARQUITECTURA_CORE.md` y `DOCUMENTACION_IA.md` con la estructura de skills v2.18.0.
+- **📑 Guías de Arquitectura:** Sincronización total de `ARQUITECTURA_CORE.md` y `DOCUMENTACION_IA.md` con la estructura de skills v2.25.13.
 - **🗺️ Mapa de Repositorio:** Actualización de rutas y jerarquías para reflejar la realidad del sistema agéntico.
 
 ---
@@ -426,7 +427,7 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 - **Protocolo de Diálogo Estructurado:** Instrucción forzada en `context.md` para separar responsabilidades de UI: El Planificador IDE lista los bloqueos técnicos, pero *toda la comunicación conversacional* la IA la debe dirigir desde el Chat, sin ruidos.
 
 #### Cambiado
-- **Refactorización "Cero-Copia" (Zero-Copy):** Reestructuración masiva. A partir de la v2.5.2, el framework ya no intenta generar carpetas como `memory/` o `00_boot/` en el proyecto del usuario. Opera exclusivamente desde su núcleo central global, dejando el proyecto local 100% puro y enfocado sólo a código/artefactos. 
+- **Refactorización "Cero-Copia" (Zero-Copy):** Reestructuración masiva. A partir de la v2.25.13, el framework ya no intenta generar carpetas como `memory/` o `00_boot/` en el proyecto del usuario. Opera exclusivamente desde su núcleo central global, dejando el proyecto local 100% puro y enfocado sólo a código/artefactos. 
 - **Desacople en Skills 01 y 02:** Se purgaron las referencias residuales a la base de conocimiento local (`memory/baraldi_knowledge_base.md`) incrustadas en las skills `01_problem_framing` y `02_system_analysis`. Todo el sistema apunta ahora a **Engram MCP** por mandato explícito.
 
 ---
@@ -439,7 +440,7 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 - **Regla explícita anti-scratch:** Agregada al listado "Qué NO hacés — nunca" la prohibición de usar `scratch/` o cualquier carpeta interna del framework para artefactos de proyecto.
 
 ### Cambiado
-- **`00_boot/context.md`:** Actualizado a v2.5.1. Protocolo de cierre de sesión migrado a `mem_save` / `mem_session_summary`. Paso 0 de memoria actualizado para usar `mem_context` + `mem_search` de Engram MCP.
+- **`00_boot/context.md`:** Actualizado a v2.25.13. Protocolo de cierre de sesión migrado a `mem_save` / `mem_session_summary`. Paso 0 de memoria actualizado para usar `mem_context` + `mem_search` de Engram MCP.
 
 ### Contexto
 - Problema detectado en prueba real: al abrir el proyecto `C:\xampp\htdocs\prueba-fw`, el agente creó los artefactos en `C:\Users\leoba\.gemini\antigravity\scratch\la-cania-mantenimiento` porque el usuario no especificó carpeta y el agente no la preguntó. Esta versión lo corrige con bloqueo preventivo.
@@ -452,7 +453,7 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
 #### Cambiado
 - **Sistema de memoria migrado de Markdown manual a Engram MCP.** El servidor `engram.exe mcp` (configurado en `mcp_config.json`) es ahora la fuente de verdad del framework. El archivo `memory/baraldi_knowledge_base.md` pasa a ser LEGADO (solo lectura histórica).
-- **`memory/PROTOCOLO_MEMORIA.md`:** Actualizado a v2.5.0. Reemplaza todas las instrucciones de lectura/escritura de archivos Markdown por llamadas a las herramientas MCP: `mem_save`, `mem_search`, `mem_context`, `mem_session_summary`. Define el formato obligatorio de `topic_key` para evitar duplicados.
+- **`memory/PROTOCOLO_MEMORIA.md`:** Actualizado a v2.25.13. Reemplaza todas las instrucciones de lectura/escritura de archivos Markdown por llamadas a las herramientas MCP: `mem_save`, `mem_search`, `mem_context`, `mem_session_summary`. Define el formato obligatorio de `topic_key` para evitar duplicados.
 - **`memory/baraldi_knowledge_base.md`:** Marcado como LEGADO. El eje estratégico `fw-decision-memoria-opcion-b` fue reemplazado por `fw-decision-memoria-engram` (Revisión 2).
 
 #### Contexto
@@ -465,7 +466,7 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 ## [2.4.1] - 2026-04-07
 
 ### Decisión Arquitectónica
-- **Deprecación del Track Chat:** La carpeta `chat/` queda congelada en v2.3.3 y no recibirá actualizaciones. El framework tiene un único track activo: el **Track Agéntico** (`skills/` + `memory/` + `templates/`).
+- **Deprecación del Track Chat:** La carpeta `chat/` queda congelada en v2.25.13 y no recibirá actualizaciones. El framework tiene un único track activo: el **Track Agéntico** (`skills/` + `memory/` + `templates/`).
 - **Eliminación de la Regla de Sincronización Core↔Chat:** La obligatoriedad de replicar cambios del Core en `chat/` fue eliminada. Eliminada de `DOCUMENTACION_IA.md`.
 - **Decisión registrada en la memoria sistémica** bajo el Eje Estratégico `fw-decision-deprecar-track-chat`.
 
@@ -473,7 +474,7 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 - **`chat/DEPRECATED.md`:** Aviso formal de deprecación con contexto, razones y camino de migración al track Agéntico.
 
 ### Cambiado
-- **`DOCUMENTACION_IA.md`:** La "Regla de Sincronización" fue reemplazada por la sección "Arquitectura de Tracks" que documenta los dos tracks y su estado actual. Actualizado a v2.4.1.
+- **`DOCUMENTACION_IA.md`:** La "Regla de Sincronización" fue reemplazada por la sección "Arquitectura de Tracks" que documenta los dos tracks y su estado actual. Actualizado a v2.25.13.
 
 ## [2.4.0] - 2026-04-07
 
@@ -486,10 +487,10 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 - **`temp-Gentleman-Programming/`:** Carpeta de referencia con repos clonados de Gentleman-Programming (`engram`, `gentle-ai`, `Gentleman-Skills`) para ingeniería inversa y adaptación.
 
 ### Cambiado
-- **`00_boot/context.md`:** Integrada la capa de memoria. El Paso 0 obliga al Agente a cargar la base de conocimiento antes de ejecutar cualquier tarea. Agregado el Protocolo de Cierre de Sesión (guardar hallazgos antes de declarar done). Actualizado a v2.4.0.
+- **`00_boot/context.md`:** Integrada la capa de memoria. El Paso 0 obliga al Agente a cargar la base de conocimiento antes de ejecutar cualquier tarea. Agregado el Protocolo de Cierre de Sesión (guardar hallazgos antes de declarar done). Actualizado a v2.25.13.
 - **`SKILL.md` (raíz):** Agregada la Regla de Oro **"Memoria Sistémica"**: el conocimiento nunca se pierde entre sesiones.
-- **`skills/01_problem_framing/SKILL.md`:** Hook de memoria al activar la etapa. Protocolo de Memoria con Ejes Estratégicos recomendados por cada Momento (`pf-hipotesis-central`, `pf-metodologia-research`, etc.). Actualizado a v2.4.0.
-- **`skills/02_system_analysis/SKILL.md`:** Hook de memoria al activar la etapa. Protocolo de Memoria con Ejes Estratégicos recomendados (`sa-actor-map`, `sa-riesgos-criticos`, `sa-dependencias-clave`). Actualizado a v2.4.0.
+- **`skills/01_problem_framing/SKILL.md`:** Hook de memoria al activar la etapa. Protocolo de Memoria con Ejes Estratégicos recomendados por cada Momento (`pf-hipotesis-central`, `pf-metodologia-research`, etc.). Actualizado a v2.25.13.
+- **`skills/02_system_analysis/SKILL.md`:** Hook de memoria al activar la etapa. Protocolo de Memoria con Ejes Estratégicos recomendados (`sa-actor-map`, `sa-riesgos-criticos`, `sa-dependencias-clave`). Actualizado a v2.25.13.
 - **`DOCUMENTACION_IA.md`:** Estructura del repositorio actualizada con las nuevas carpetas `memory/` y `templates/`. Tabla de estado refactorizada.
 
 ## [2.3.3] - 2026-03-20
@@ -505,8 +506,8 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 - **Refinamiento de Triggers (Anti-Patterns):** Agregadas reglas explícitas de "Cuándo NO usar" en `skills/01_problem_framing/SKILL.md` y `skills/02_system_analysis/SKILL.md` para prevenir que agentes autónomos activen etapas antiguas accidentalmente.
 
 ### Cambiado
-- **Sincronización de Versiones:** Todos los metadatos internos (`00_boot/context.md` y `SKILL.md`) unificados declarativamente a la versión `v2.3.2`.
-- **UX One-Page Restaurada y Evolucionada:** Actualizado el Boot Context (PARTE A) dentro de `chat/etapa01_chat.md` y `chat/etapa02_chat.md` con las reglas de la v2.3.2, asegurando que los usuarios de interfaces web puedan instanciar etapas críticas arrastrando un único archivo sin pérdida de contexto.
+- **Sincronización de Versiones:** Todos los metadatos internos (`00_boot/context.md` y `SKILL.md`) unificados declarativamente a la versión `v2.25.13`.
+- **UX One-Page Restaurada y Evolucionada:** Actualizado el Boot Context (PARTE A) dentro de `chat/etapa01_chat.md` y `chat/etapa02_chat.md` con las reglas de la v2.25.13, asegurando que los usuarios de interfaces web puedan instanciar etapas críticas arrastrando un único archivo sin pérdida de contexto.
 
 ## [2.3.1] - 2026-03-20
 

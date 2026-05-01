@@ -79,4 +79,4 @@ Para garantizar una experiencia premium, el agente tiene prohibido cerrar un tur
 
 ---
 
-*Framework Baraldi v2.25.10 · Higiene Operativa.*
+*Framework Baraldi v2.25.13 · Higiene Operativa.*

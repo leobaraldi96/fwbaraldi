@@ -1,11 +1,12 @@
 {
   "name": "baraldi-framework",
-  "version": "2.25.10",
+  "version": "2.25.13",
   "description": "Framework metodológico diseñado para potenciar el diseño de productos digitales utilizando Inteligencia Artificial como orquestador.",
   "main": "index.js",
   "type": "module",
   "bin": {
-    "baraldi-init": "./scripts/install.js"
+    "baraldi-init": "./scripts/install.js",
+    "baraldi-align": "./scripts/align.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
