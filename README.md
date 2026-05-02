@@ -96,13 +96,30 @@ El Framework delega la retención de conocimiento a través de sesiones y proyec
 
 A diferencia del pasado donde te perdías el contexto entre chats, el Agente utiliza estas herramientas internamente de forma automática en cada inicio y cierre, pero **también puedes solicitárselas explícitamente en el chat**:
 
-| Comando de Memoria | Qué hace | Cuándo usarlo (o cuándo lo usa la IA) |
+| Herramienta (MCP) | Qué hace | Cuándo usarlo (o cuándo lo usa la IA) |
 |---|---|---|
-| `mem_context` | Trae el contexto reciente del proyecto activo. | Se usa en el **Paso 0** al iniciar la IDE para saber en qué quedamos. |
-| `mem_search` | Búsqueda Full-Text Pura sobre actas y hallazgos. | Útil si querés pedirle a la IA: *"Buscá qué decidimos sobre la pasarela de pagos hace 2 meses"*. |
-| `mem_save` | Guarda una observación estructurada (Decisión, Bug, Riesgo). | La IA lo lanza al finalizar cada **Momento** crucial para crear actas. |
-| `mem_session_summary`| Realiza un Volcado de Fin de Sesión. | Obligatorio antes de apagar la IDE para consolidar aprendizajes. |
-| `mem_stats` | Muestra el estado global de tu cerebro. | Útil para ver cuántos proyectos o insights llevás grabados en Engram. |
+| `mem_context` | Trae el contexto reciente del proyecto activo. | Se usa al iniciar la IDE para saber en qué quedamos. |
+| `mem_search` | Búsqueda Full-Text sobre actas y hallazgos. | *"Buscá qué decidimos sobre la arquitectura hace 2 meses"*. |
+| `mem_save` | Guarda una observación estructurada (Decisión, Riesgo). | La IA lo lanza al finalizar cada hito crucial para crear actas. |
+| `mem_update` | Actualiza una observación existente por ID. | Para corregir o ampliar decisiones o descubrimientos previos. |
+| `mem_timeline` | Muestra el contexto cronológico de un hallazgo. | Para entender qué pasó justo antes y después de una decisión. |
+| `mem_get_observation` | Obtiene el contenido completo de una memoria. | Cuando el resumen de búsqueda no es suficiente para decidir. |
+| `mem_session_summary`| Realiza un Volcado de Fin de Sesión. | **Obligatorio** antes de cerrar para consolidar aprendizajes. |
+| `mem_capture_passive`| Extrae aprendizajes de secciones de texto. | Escanea secciones `## Key Learnings:` y guarda cada punto. |
+| `mem_suggest_topic_key`| Sugiere una clave estable para el tema. | Evita duplicados al actualizar temas evolutivos. |
+| `mem_save_prompt` | Guarda lo que el usuario preguntó literalmente. | Registra la intención original detrás de los cambios. |
+| `mem_stats` | Muestra estadísticas globales del sistema. | Ver el volumen de proyectos e insights grabados en el cerebro. |
+| `mem_delete` | Borra una observación (soft-delete). | Limpieza de datos erróneos o redundantes. |
+
+### 💻 Uso desde la Terminal (CLI)
+Además de los comandos que usa la IA, puedes gestionar tu memoria directamente:
+
+*   `engram tui`: Lanza la interfaz visual interactiva (Bubbletea) para navegar tus memorias.
+*   `engram search "<query>"`: Búsqueda rápida desde la terminal.
+*   `engram sync`: Sincroniza tus memorias mediante chunks comprimidos (Git-friendly).
+*   `engram export/import`: Backup y restauración de tu base de datos en JSON.
+*   `engram projects consolidate`: Mezcla nombres de proyectos similares para evitar dispersión.
+
 
 *Todo esto ocurre en tu disco duro (zero-cloud) y hace que saltar de un proyecto a otro sea una experiencia de inteligencia continua.*
 
