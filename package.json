@@ -6,10 +6,13 @@
   "type": "module",
   "bin": {
     "baraldi-init": "./scripts/install.js",
-    "baraldi-align": "./scripts/align.js"
+    "baraldi-align": "./scripts/align.js",
+    "fwb-init": "./scripts/install.js",
+    "fwb-align": "./scripts/align.js"
   },
   "scripts": {
     "baraldi-align": "node ./scripts/align.js",
+    "fwb-align": "node ./scripts/align.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Leo Baraldi",

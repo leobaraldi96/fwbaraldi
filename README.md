@@ -1,4 +1,4 @@
-# Framework Baraldi 🤖⚡
+# Framework Baraldi (FWB) 🤖⚡
 
 > **AI-Augmented System Product Design**
 >
