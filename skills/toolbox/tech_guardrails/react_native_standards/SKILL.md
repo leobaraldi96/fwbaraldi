@@ -26,6 +26,7 @@ Este skill asegura que cualquier aplicación móvil generada o diseñada sea mod
 
 ## 📁 Estructura Móvil Recomendada
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```text
 src/
 ├── app/            # Expo Router Screens & Layouts

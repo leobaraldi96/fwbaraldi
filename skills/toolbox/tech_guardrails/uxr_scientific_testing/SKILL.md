@@ -12,6 +12,8 @@ version: "2.25.13"
 Esta habilidad asegura que el diseño sea validado con rigor metodológico. No buscamos "opiniones", buscamos **datos**.
 
 ## 📊 Métricas Core
+
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 1.  **SUS (System Usability Scale):** Score de 0 a 100 para medir la percepción de usabilidad.
 2.  **Time-on-Task:** Segundos/Minutos que tarda el usuario en completar una tarea crítica.
 3.  **Task Success Rate:** Porcentaje de usuarios que logran el objetivo sin asistencia.

@@ -40,6 +40,8 @@ Esta habilidad asegura que el producto no solo sea funcional, sino que sea **enc
 ---
 
 ## 📑 Formato de Reporte de Hallazgos
+
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 Para cada problema detectado, informar:
 - **Problema:** Qué está mal.
 - **Impacto:** Alto/Medio/Bajo.

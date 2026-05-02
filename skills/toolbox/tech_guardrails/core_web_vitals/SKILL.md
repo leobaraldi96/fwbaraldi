@@ -22,6 +22,7 @@ Esta habilidad asegura que el producto sea estable, rápido y reactivo. Ningún 
 
 ## 🛠️ Checklists Críticos
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ### 1. LCP (Largest Contentful Paint)
 - [ ] TTFB < 800ms (CDN + Edge Caching).
 - [ ] Imagen LCP pre-cargada con `fetchpriority="high"`.
@@ -43,6 +44,8 @@ Esta habilidad asegura que el producto sea estable, rápido y reactivo. Ningún 
 ---
 
 ## 🔍 Debugging en Vivo (PerformanceObserver)
+
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 Si necesitas identificar elementos problemáticos, usa este patrón:
 ```javascript
 new PerformanceObserver((list) => {

@@ -23,6 +23,7 @@ Este skill evita que la IA genere código CSS "sucio" u obsoleto. Obligamos a us
 
 ## 🛠️ El Utility `cn()` (Tailwind Merge)
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```typescript
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";

@@ -9,6 +9,7 @@
     "baraldi-align": "./scripts/align.js"
   },
   "scripts": {
+    "baraldi-align": "node ./scripts/align.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Leo Baraldi",

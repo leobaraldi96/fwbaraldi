@@ -23,6 +23,7 @@ Esta habilidad asegura que el producto sea **Perceptible, Operable, Comprensible
 
 ## 🛠️ Patrones de Implementación Senior
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ### 1. Elementos Ocultos pero Semánticos
 Usa esta clase para texto que solo deben leer los lectores de pantalla:
 ```css
@@ -72,6 +73,8 @@ Es OBLIGATORIO usar `FocusTrap` en modales. Si el usuario presiona `Escape`, el 
 ---
 
 ## 📋 Checklist de Auditoría Rápida
+
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 - [ ] ¿Es navegable 100% con teclado (Tab, Enter, Space)?
 - [ ] ¿Tiene un link de "Saltar al contenido principal"?
 - [ ] ¿Todas las imágenes tienen `alt` (o `alt=""` si son decorativas)?

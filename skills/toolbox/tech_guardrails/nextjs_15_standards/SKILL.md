@@ -13,6 +13,7 @@ Estos estándares aseguran que la IA nunca utilice librerías obsoletas ni patro
 
 ## 📁 Convenciones del App Router
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```text
 app/
 ├── layout.tsx          # Layout raíz (obligatorio)
@@ -26,6 +27,7 @@ app/
 
 ## ⚡ Server Components & Actions
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 1.  **Server Components por defecto:** No uses `use client` a menos que necesites interactividad (hooks, events).
 2.  **Server Actions (Mutaciones):**
     ```typescript

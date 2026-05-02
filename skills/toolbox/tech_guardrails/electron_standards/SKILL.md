@@ -20,6 +20,7 @@ Este skill asegura que la IA construya aplicaciones de escritorio robustas y seg
 
 ## 📁 Estructura de Proyecto Recomendada
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```text
 src/
 ├── main/           # Proceso de Node.js (Servicios, Ventanas, IPC)
@@ -30,6 +31,7 @@ src/
 
 ## ⚡ Comunicación IPC (Inter-Process Communication)
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 No expongas el módulo `ipcRenderer` completo. Usa un adaptador typed:
 
 ```typescript

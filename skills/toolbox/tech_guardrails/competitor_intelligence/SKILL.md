@@ -28,6 +28,8 @@ Fuerza siempre a investigar las brechas para nuestro producto. Si puedes usar an
 - **SERP Features:** ¿Ganan los "Featured Snippets" en Google? ¿Son citados o referenciados por motores de IA Generativa (GEO)?
 
 ## 🛠️ Entregable Estándar: "Battlecard" Competitiva
+
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 Siempre que entregues inteligencia competitiva, resume los datos en:
 1. **Puntos Fuertes (Para Aprender):** La razón por la que sus usuarios los compran o mantienen.
 2. **Brechas y Debilidades (Para Explotar):** Donde los usuarios se quejan (reviews en foros, churn reasons).

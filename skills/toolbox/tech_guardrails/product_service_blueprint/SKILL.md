@@ -13,6 +13,7 @@ Esta habilidad asegura que el diseño no sea una cáscara vacía. Conectamos la 
 
 ## 🏗️ Las 4 Capas del Blueprint
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 1.  **Frontstage (Acción del Usuario):** Lo que el usuario hace (ej: "Hace clic en 'Comprar'").
 2.  **Line of Visibility (Lo que ve):** Feedback visual inmediato (ej: "Spinner de carga").
 3.  **Backstage (Procesos Técnicos):** Lo que sucede detrás (ej: "Llamada a la API de Stripe", "Validación de stock").

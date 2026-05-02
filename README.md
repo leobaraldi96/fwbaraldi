@@ -160,10 +160,10 @@ fwbaraldi/
 │   │   │   └── references/                 ← Guías de mapeo
 │   │   │
 │   │   ├── 03_product_logic/
-│   │   ├── 04_ux_experience/               [WIP]
-│   │   ├── 05_ui_design/                   [WIP]
-│   │   ├── 06_implementation/              [WIP]
-│   │   └── 07_system_reflection/            [WIP]
+│   │   ├── 04_information_architecture/    [WIP]
+│   │   ├── 05_interaction_design_ux/       [WIP]
+│   │   ├── 06_visual_design_ui/            [WIP]
+│   │   └── 07_handover_qa/                 [WIP]
 │   │
 │   └── toolbox/                            ← Herramientas transversales y utilidades
 │       ├── SKILL.md
@@ -221,14 +221,32 @@ npx github:leobaraldi96/fwbaraldi
 2. Inicia tu Agente (Ej: [Antigravity](https://antigravity.google/)).
 3. Escribe en el chat: *"Iniciemos un proyecto nuevo usando el Framework Baraldi"*.
 
-### Mantenimiento y Alineación (v2.25.13+)
-Si ya tienes un proyecto en curso y quieres asegurarte de que tus artefactos y carpetas sigan los últimos estándares del framework (nuevas taxonomías, versiones, etc.), puedes ejecutar el comando de alineación:
+### 🔄 ¿Cómo actualizar tu proyecto? (Mantenimiento)
+Si ya tienes un proyecto en curso y quieres asegurarte de que tus carpetas y archivos sigan los últimos estándares (nuevas etapas, versiones, etc.), tienes dos formas de hacerlo:
 
-```bash
-npm run baraldi-align
+#### Opción A: Pedirle a la IA (Recomendado para Diseñadores) ⚡
+No necesitas copiar códigos. Simplemente escribe esto en el chat de tu Agente:
+> *"Por favor, ejecuta el script de alineación (baraldi-align) para sincronizar mi proyecto con la última versión del framework."*
+
+**Tu Agente se encargará de:**
+1. Buscar dónde está instalado el framework.
+2. Ejecutar la auditoría de tu carpeta `docs-fwbaraldi/`.
+3. Informarte qué falta y pedirte permiso para actualizarlo automáticamente.
+
+#### Opción B: Uso de Terminal (Manual)
+Si te sientes cómodo usando la terminal, puedes ejecutar el comando directo. 
+
+**En Windows (PowerShell):**
+```powershell
+node "$env:USERPROFILE\.gemini\antigravity\skills\baraldi-framework\scripts\align.js"
 ```
 
-Este comando auditará tu carpeta `docs-fwbaraldi/` y te notificará sobre cualquier desajuste antes de aplicar los cambios.
+**En macOS/Linux:**
+```bash
+node ~/.fwbaraldi/skills/scripts/align.js
+```
+
+Este proceso auditará tus archivos Markdown, actualizará los números de versión y creará las carpetas de las nuevas etapas que hayamos añadido en esta versión.
 
 ---
 

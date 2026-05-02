@@ -29,6 +29,7 @@ Esta habilidad asegura que la interfaz no sea solo un dibujo, sino un **objeto f
 
 ## 🛠️ Especificación de Interactividad
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 Al definir un componente, debes especificar:
 - **Trigger:** Qué inicia el cambio (Click, Tap, Long Press, Scroll).
 - **Response:** Qué cambia visualmente.

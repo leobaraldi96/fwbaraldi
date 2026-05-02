@@ -21,6 +21,7 @@ Esta skill es un **Índice Directivo**. Si vas a realizar una tarea de refactori
 
 ## 📋 Quick Reference (Las 8 Capas Críticas)
 
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 Aplica estas reglas de forma inmediata en cualquier sugerencia de código:
 
 1.  **db-optimization (CRÍTICO):** Usar siempre `$wpdb->prepare()`. Evitar `posts_per_page => -1`. Usar `fields => 'ids'` cuando sea posible.
