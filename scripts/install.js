@@ -15,7 +15,7 @@ const __dirname = path.dirname(__filename);
 const packageRoot = path.join(__dirname, '..');
 
 // Configuración de versión fuerte
-const ENGRAM_VERSION = 'v1.12.0'; // TODO: Cambiar esto para que pase a tu cuenta de Github Releases después
+const ENGRAM_VERSION = 'v1.15.1'; // TODO: Cambiar esto para que pase a tu cuenta de Github Releases después
 const REPO_ORIGEN = 'Gentleman-Programming'; 
 
 async function downloadBinary(osType, arch) {

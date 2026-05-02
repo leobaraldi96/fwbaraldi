@@ -17,7 +17,7 @@
 
 La memoria es la capa transversal del Framework Baraldi que permite que el conocimiento generado en una sesion este disponible en sesiones futuras.
 
-**Fuente de verdad actual:** Servidor **Engram MCP** `v1.12.0` (`engram.exe mcp`)
+**Fuente de verdad actual:** Servidor **Engram MCP** `v1.15.1` (`engram.exe mcp`)
 **Proyecto Engram (Infraestructura):** `fw-baraldi-core`
 **Proyecto Engram (Producto):** `[slug-del-proyecto]` (Ej: `app-comercio`, `proyecto-alfa`)
 
@@ -105,7 +105,7 @@ Si ya tienes el framework instalado, puedes actualizar el binario de Engram de d
 1. **Vía Go (Recomendado):** Ejecuta `go install github.com/Gentleman-Programming/engram/cmd/engram@latest`.
 2. **Reinstalación:** Vuelve a ejecutar el script `npm run install` del framework, el cual descargará automáticamente la versión estable definida en `scripts/install.js`.
 
-### Mejoras de la v1.12.0
+### Mejoras de la v1.15.1
 - **Save Nudges:** El motor detecta periodos de inactividad de guardado (10 min+) y envía recordatorios al agente para evitar pérdida de contexto.
 - **Activity Score:** Al ejecutar `mem_session_summary`, el sistema añade un reporte de actividad (ej: "47 herramientas usadas, 2 guardados") para medir el esfuerzo de documentación.
 - **Obsidian Brain:** Capacidad nativa de exportar toda la memoria para visualizarla como un grafo de conocimiento en Obsidian.

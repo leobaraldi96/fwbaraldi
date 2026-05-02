@@ -1,4 +1,4 @@
-﻿# Archivos de entorno y editores
+# Archivos de entorno y editores
 .vscode/
 *.code-workspace
 
@@ -19,3 +19,7 @@ node_modules/
 # Documentación de flujo sistémico
 DIAGRAMA_FLUJO_E1_E2.md
 00_Backlog_Estrategico.md
+
+# Engram Memory (Soberanía y Estabilidad)
+.engram/
+!.engram/config.json

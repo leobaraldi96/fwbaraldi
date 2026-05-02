@@ -120,8 +120,14 @@ Además de los comandos que usa la IA, puedes gestionar tu memoria directamente:
 *   `engram export/import`: Backup y restauración de tu base de datos en JSON.
 *   `engram projects consolidate`: Mezcla nombres de proyectos similares para evitar dispersión.
 
-
 *Todo esto ocurre en tu disco duro (zero-cloud) y hace que saltar de un proyecto a otro sea una experiencia de inteligencia continua.*
+
+> [!NOTE]
+> ### 🔒 Robustez y Estabilidad (v1.15.1+)
+> El Framework Baraldi ahora utiliza el motor **Engram v1.15.1**, que introduce mejoras críticas de arquitectura:
+> - **Project Locking:** Mediante un archivo `.engram/config.json` opcional, puedes forzar un nombre de proyecto único, eliminando definitivamente la fragmentación de la memoria (Project Drift).
+> - **Windows Hardening:** Optimización específica para entornos PowerShell y Git Bash, garantizando que la memoria nunca se bloquee.
+> - **Escritura Atómica:** Implementación de colas de procesos para evitar conflictos en la base de datos SQLite durante sesiones de alta intensidad.
 
 ### ⚡ Eficiencia de Contexto (Context ROI)
 A nivel de infraestructura (LLM Ops), el Framework Baraldi maximiza el rendimiento del presupuesto de tokens mediante el uso de [Engram (RAG local Context Optimization)](https://www.youtube.com/watch?v=uAsd9pOIcLg&t=1417s).

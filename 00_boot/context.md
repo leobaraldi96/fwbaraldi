@@ -59,11 +59,13 @@ Si detectas múltiples proyectos abiertos, espacios de trabajo paralelos (worksp
 El agente es un colaborador que puede estar atendiendo múltiples proyectos simultáneos. En cada primera interacción de una sesión, **NUNCA asumas** que el proyecto activo es el mismo que en la sesión anterior. Sigue este protocolo de detección:
 
 **Algoritmo de Detección (en orden de prioridad):**
-1. **Señal Explícita (P0):** ¿El humano mencionó el nombre del proyecto en su primer mensaje? Si sí → **ese es el proyecto activo**. Ir al Paso -2.
-2. **Señal del Workspace (P1):** ¿Existe metadata del workspace activo (archivos abiertos, ruta del directorio de trabajo)? Inferir el nombre del proyecto desde la ruta del archivo activo (ej: `C:/htdocs/proyecto-alfa/` → proyecto = `proyecto-alfa`).
-3. **Señal de Memoria (P2):** Ejecutar `mem_context(limit=5)` sin filtro de proyecto. Identificar el **proyecto más reciente** de las sesiones anteriores como candidato.
-4. **Señal de Historial (P3):** Si el agente tiene acceso al resumen de conversaciones anteriores, tomar el proyecto de la última conversación relevante.
-5. **Sin Señal (P4):** Si no se puede detectar el proyecto por ningún medio → **preguntar explícitamente** al humano: *"¿Sobre qué proyecto vamos a trabajar hoy?"* antes de continuar.
+1. **Identidad Blindada (P0 - Máxima Prioridad):** ¿Existe el archivo `.engram/config.json` en la raíz? Si sí → **usar ese nombre obligatoriamente**. Este archivo es la Única Fuente de Verdad.
+2. **Señal Explícita (P1):** ¿El humano mencionó el nombre del proyecto en su primer mensaje? Si sí → **ese es el proyecto activo**. Ir al Paso -2.
+3. **Señal del Workspace (P2):** ¿Existe metadata del workspace activo (archivos abiertos, ruta del directorio de trabajo)? Inferir el nombre del proyecto desde la ruta del archivo activo (ej: `C:/htdocs/proyecto-alfa/` → proyecto = `proyecto-alfa`).
+4. **Señal de Memoria (P3):** Ejecutar `mem_context(limit=5)` sin filtro de proyecto. Identificar el **proyecto más reciente** de las sesiones anteriores como candidato.
+5. **Señal de Historial (P4):** Si el agente tiene acceso al resumen de conversaciones anteriores, tomar el proyecto de la última conversación relevante.
+6. **Sin Señal (P5):** Si no se puede detectar el proyecto por ningún medio → **preguntar explícitamente** al humano.
+
 
 **Una vez detectado el proyecto candidato:**
 - Ejecutar `mem_context(project="[proyecto-detectado]", limit=20)` para traer el historial completo.
@@ -88,7 +90,11 @@ Antes de saludar, realiza un chequeo silencioso de integridad:
 Antes de realizar cualquier acción técnica o estratégica, debes asegurar la existencia de la subcarpeta `docs-fwbaraldi/` en la raíz del proyecto.
 - **Utilidad y Transparencia:** Explica al usuario que esta carpeta no es solo un almacén de archivos, sino el **Activo Estratégico más rico del proyecto**. Es el resultado de la co-construcción Humano/IA donde reside la inteligencia que guiará el diseño, desarrollo y estrategia de negocio. Advierte que ignorar su contenido es perder el objetivo del framework.
 - **Validación de Existencia:** Si el Paso -3 detectó un proyecto existente pero la carpeta no está presente o el agente no tiene acceso, **NO escribas nada**. Pide al usuario confirmación para inicializarla.
-- **Archivo README Mandatorio:** Al crear la carpeta por primera vez, el primer archivo que **DEBES** generar es `docs-fwbaraldi/README.md` usando la plantilla de utilidad. Esto elimina la confusión del usuario sobre "qué es esto".
+- **Identidad Blindada (Project Locking):** Al crear la carpeta `docs-fwbaraldi/` por primera vez, **DEBES** crear también el archivo `.engram/config.json` en la raíz con el nombre del proyecto detectado. 
+- **Transparencia de Identidad:** Explica al usuario que esta carpeta oculta (`.engram/`) funciona como la **"Cédula de Identidad"** del proyecto. Su única función es garantizar que la IA siempre reconozca este proyecto correctamente, evitando que la memoria se disperse o se mezcle con otros trabajos.
+- **Higiene de Repositorio:** Tras crear la configuración de Engram, añade automáticamente las reglas al `.gitignore` para ignorar la base de datos local: `.engram/` e `!.engram/config.json`. **Debes explicar al usuario** que esto se hace para mantener el repositorio limpio, asegurando que solo la "Identidad" se comparta, mientras que los datos pesados de la base de datos local se quedan fuera del control de versiones.
+
+- **Archivo README Mandatorio:** Al inicializar, el primer archivo que **DEBES** generar es `docs-fwbaraldi/README.md` usando la plantilla de utilidad. Esto elimina la confusión del usuario sobre "qué es esto".
 - **Enrutamiento Obligatorio:** Todo archivo generado por ti (investigación, lógica, backlog) debe guardarse **exclusivamente** dentro de `docs-fwbaraldi/`. Ignorar esta regla se considera una violación grave del protocolo de higiene operacional.
 - **Zero-Copy:** No copies archivos internos del framework (instrucciones, MDs maestros) a esta carpeta. Solo guarda outputs originales del proyecto activo.
 
