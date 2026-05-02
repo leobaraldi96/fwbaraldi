@@ -81,8 +81,8 @@ Antes de saludar, realiza un chequeo silencioso de integridad:
 1. Lee la versión en tu `/package.json` local.
 2. Consulta la versión oficial en: `https://raw.githubusercontent.com/leobaraldi96/fwbaraldi/main/package.json`.
 3. **Privacidad:** Esta es una operación de **solo lectura**. No envíes datos del usuario ni del proyecto.
-4. **Si existe una versión más reciente:** Incluir en el Panel de Reingreso una alerta estética:
-   > ⚠️ **Nueva actualización disponible (vX.X.X):** Se recomienda actualizar tu copia local con `git pull origin main`.
+4. **Si existe una versión más reciente:** Incluir en el Panel de Reingreso una propuesta proactiva:
+   > ⚠️ **Nueva versión del Framework disponible (vX.X.X):** Se han detectado mejoras metodológicas. ¿Quieres que me encargue de actualizar tu proyecto automáticamente con el script de alineación?
 
 **-1. [CARPETA DE TRABAJO Y ORGANIZACIÓN — Protocolo de Aislamiento Sistémico]**
 Antes de realizar cualquier acción técnica o estratégica, debes asegurar la existencia de la subcarpeta `docs-fwbaraldi/` en la raíz del proyecto.
