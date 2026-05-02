@@ -5,6 +5,17 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.25.14] - 2026-05-02
+ 
+### Soberanía de Memoria e Identidad Blindada (Hito de Estabilidad)
+- **Actualizado:** Motor de memoria Engram migrado a la versión estable **v1.15.1** en el script de instalación y protocolos internos.
+- **Añadido:** **Project Locking (Identidad Blindada)** — Implementación obligatoria del archivo `.engram/config.json` para forzar un nombre de proyecto único, eliminando definitivamente la fragmentación de datos (Project Drift).
+- **Mejorado:** El **Boot Context (context.md)** ahora prioriza la identidad blindada (P0) y automatiza la creación de la configuración y el `.gitignore` en proyectos nuevos.
+- **Transparencia:** Nuevo protocolo de comunicación que explica al usuario el propósito de la carpeta `.engram/` (Cédula de Identidad) y los cambios en el control de versiones.
+- **Higiene Operativa:** Optimización de la arquitectura de memoria para permitir la consolidación de proyectos fragmentados, eliminando el ruido contextual y garantizando una base de datos de conocimiento limpia y coherente.
+- **Documentación:** El `README.md` ahora incluye la tabla completa de las 12 herramientas MCP y una nueva sección de comandos CLI para gestión avanzada de memoria.
+
+
 ## [2.25.13] - 2026-05-01
  
 ### Blindaje Metodológico y Hardening (Hito de Fidelidad)
