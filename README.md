@@ -71,7 +71,8 @@ Ninguno de los frameworks anteriores tiene estas características juntas:
 6. **Experiencia implementada como principio fundacional**: El diseño no termina en el handoff. Termina cuando la experiencia funciona y aporta valor en producción. Eso redefine el rol del diseñador de forma radical, y lo enuncia explícitamente como su meta.
 7. **El problema del nivel de madurez resuelto con estructura**: El diseñador académico conoce los modelos teóricos pero no sabe cómo adaptarlos a la velocidad actual. El senior experimentado sabe qué hacer de forma empírica pero no tiene un modelo que lo sostenga estructuradamente. El Framework **le da al académico la experiencia embebida en el proceso, y al senior le da el modelo que le faltaba**.
 8. **Proactividad de Soporte**: El sistema propone proactivamente formatos de alta fidelidad (Landings/Dashboards HTML) cuando la densidad de datos lo requiere, eliminando la pasividad del agente.
-9. **Verificación de Versión Proactiva (v2.25.25+)**: El Framework verifica automáticamente tu versión local para asegurar que el motor metodológico esté siempre al día.
+9. **Contratos Agénticos (VOICE.md & DESIGN.md)**: El framework genera archivos de "Fuente de Verdad" diseñados específicamente para ser leídos por otras IAs, garantizando que el tono, la voz y la identidad visual se mantengan consistentes en cada línea de código generada.
+10. **Verificación de Versión Proactiva (v2.25.25+)**: El Framework verifica automáticamente tu versión local para asegurar que el motor metodológico esté siempre al día.
 
 ---
 
@@ -83,10 +84,10 @@ Ninguno de los frameworks anteriores tiene estas características juntas:
 | **01_problem_framing** | ✅ Estable | Entendimiento del problema y mapeo de actores. |
 | **02_system_analysis** | ✅ Estable | Mapeo de dependencias, flujos de datos y riesgos. |
 | **03_product_logic** | ✅ Estable | Lógica de negocio, UX-DNA y Matriz de Orquestación. |
-| **04_ux_experience** | ✅ Estable | Arquitectura de información y Service Blueprint. |
-| **05_ui_design** | 🔄 En desarrollo | Diseño visual y Design Systems. |
-| **06_implementation** | 🔄 En desarrollo | Handoff técnico y supervisión de QA. |
-| **07_system_reflection** | 🔄 En desarrollo | Auditoría de outcomes y evolución. |
+| **04_information_architecture** | ✅ Estable | Arquitectura de información, Sitemap y Glosario. |
+| **05_interaction_design_ux** | ✅ Estable | Diseño de interacción, Estados y **VOICE.md**. |
+| **06_visual_design_ui** | ✅ Estable | Diseño visual, Tokens y **DESIGN.md**. |
+| **07_handover_qa** | 🔄 En desarrollo | Procesos de validación final y documentación. |
 
 ---
 
@@ -184,9 +185,9 @@ fwbaraldi/
 │   │   │   └── references/                 ← Guías de mapeo
 │   │   │
 │   │   ├── 03_product_logic/
-│   │   ├── 04_information_architecture/    [WIP]
-│   │   ├── 05_interaction_design_ux/       [WIP]
-│   │   ├── 06_visual_design_ui/            [WIP]
+│   │   ├── 04_information_architecture/    ← Sitemap, User Flows y Vocabulario Core
+│   │   ├── 05_interaction_design_ux/       ← Micro-interacciones y **VOICE.md**
+│   │   ├── 06_visual_design_ui/            ← Design System y **DESIGN.md**
 │   │   └── 07_handover_qa/                 [WIP]
 │   │
 │   └── toolbox/                            ← Herramientas transversales y utilidades

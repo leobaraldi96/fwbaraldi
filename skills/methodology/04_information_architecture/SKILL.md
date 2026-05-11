@@ -29,7 +29,7 @@ Para evitar la "poda de datos" y la pérdida de resolución sistémica detectada
 
 ---
 
-## Flujo de la etapa — 3 momentos en secuencia
+## Flujo de la etapa — 4 momentos en secuencia
 
 ```
 [MOMENTO 1] Sitemap & Navigation Strategy
@@ -49,7 +49,7 @@ Para evitar la "poda de datos" y la pérdida de resolución sistémica detectada
 
 ---
 
-## Los 3 momentos — cuándo activar cada uno
+## Los 4 momentos — cuándo activar cada uno
 
 ### Momento 1 — Sitemap & Navigation Strategy
 **Objetivo:** Definir el inventario de vistas y la jerarquía de navegación.

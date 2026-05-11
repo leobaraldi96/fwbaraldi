@@ -2,7 +2,7 @@
 
 > **Bienvenido al Cerebro Estratégico de tu Producto.**
 
-Esta carpeta ha sido creada automáticamente por el **Framework Baraldi** (v2.25.13). Su existencia responde a uno de los principios fundamentales de nuestra metodología: la **Arquitectura Cero-Copia (Zero-Copy)**.
+Esta carpeta ha sido creada automáticamente por el **Framework Baraldi** (v2.25.25). Su existencia responde a uno de los principios fundamentales de nuestra metodología: la **Arquitectura Cero-Copia (Zero-Copy)**.
 
 ## 💎 El Activo más Valioso de tu Proyecto
 

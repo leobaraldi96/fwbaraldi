@@ -112,6 +112,7 @@ Tras completar la actualización v2.25.25, la Etapa 03 se consolida como el **"C
 - **Data Dictionary:** Inventario de entidades y atributos.
 - **Business Rules Matrix:** Leyes lógicas de comportamiento (If/Then).
 - **KPIs Funcionales:** North Star Metric y puntos de medición (Recharts Expert).
+- **Contratos Agénticos (Handoff 2.0):** Generación de los archivos **VOICE.md** (Capa semántica y de tono) y **DESIGN.md** (Capa visual y de tokens) como el nuevo estándar de handoff diseñado para el consumo de modelos de lenguaje, garantizando la fidelidad de la implementación automatizada.
 
 ---
 
