@@ -7,7 +7,7 @@ description: >
   kpi, north star, flujos logicos, lógica de producto, good services, service design.
   Activar cuando se cierre la Etapa 02 o se necesite definir el "cómo" funcional.
   Integra estándares externos de Service Design (Good Services).
-version: "2.25.13"
+version: "2.25.25"
 framework: Baraldi
 stage: "03"
 stage_name: "Product Logic"
@@ -86,4 +86,4 @@ status: operational
 - Momento 3 → Eje: `pl-north-star-metric` (tipo: `estrategia`)
 
 ---
-*Framework Baraldi v2.25.13 · skills/methodology/03_product_logic/SKILL.md*
+*Framework Baraldi v2.25.25 · skills/methodology/03_product_logic/SKILL.md*

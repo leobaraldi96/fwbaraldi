@@ -6,7 +6,7 @@ description: >
   de los entregables.
   Trigger: SIEMPRE activo. Se debe consultar al inicio de cada sesión y ante
   cualquier cambio en la estructura del proyecto o de los artefactos.
-version: "2.25.13"
+version: "2.25.25"
 ---
 
 # 🛡️ Capa 00 — Core Guardrails (Barandas de Contención)
@@ -23,6 +23,8 @@ Esta es la regla de oro para evitar la degradación del conocimiento en el ecosi
 - **Sincronización Atómica:** Todo cambio de versión debe ser replicado en README, ARQUITECTURA, CHANGELOG y SKILLS simultáneamente.
 - **Ley de No-Degradación Sistémica:** El Framework es una estructura acumulativa y compleja. Queda TERMINANTEMENTE PROHIBIDO eliminar, resumir o "limpiar" secciones de documentación (README, Arquitectura, Guías) que contengan filosofía, principios de diseño, historia o especificaciones técnicas. 
   - Toda actualización debe ser **ADITIVA** o de **REEMPLAZO ENRIQUECEDOR**.
+  - **Anti-Data Pruning:** Queda prohibida la eliminación de datos, flujos o secciones previamente validadas durante actualizaciones incrementales. Si se añade un campo nuevo, no se borran los antiguos.
+  - **Mandato de Expansión (Redundancia Estratégica):** En fases de arquitectura e IA, el objetivo es **Expandir, Redundar y Documentar**. La síntesis es un error si sacrifica la resolución del sistema.
   - Si se considera necesario remover algo por obsolescencia, se DEBE consultar y explicar el motivo al Humano antes de ejecutar.
   - El objetivo es siempre AMPLIAR el sistema, nunca reducir su densidad informativa.
 - **Sincronización Total:** No se considera una tarea terminada hasta que todos los documentos de soporte (`README.md`, `ARQUITECTURA_CORE.md`, `CHANGELOG.md` y artefactos en `docs-fwbaraldi/`) estén perfectamente sincronizados con el nuevo estado del sistema o del código.
@@ -181,4 +183,4 @@ Antes de declarar un "Done", la IA debe verificar:
 - [ ] ¿El humano aprobó explícitamente cada acción antes de ejecutarla?
 
 ---
-*Framework Baraldi v2.25.13 · Core Guardrails*
+*Framework Baraldi v2.25.25 · Core Guardrails*

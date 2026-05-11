@@ -1,4 +1,4 @@
-# Framework Baraldi - Backlog Estratégico (v2.25.13)
+# Framework Baraldi - Backlog Estratégico (v2.25.25)
 Última Actualización: Mayo 2026
 Estado: **Sincronización de Fidelidad Completada** (Hardening Operacional)
 
@@ -15,7 +15,12 @@ Estado: **Sincronización de Fidelidad Completada** (Hardening Operacional)
 - [x] Orquestación de Edge Functions.
 - [x] Blindaje de 18 Habilidades Técnicas (Toolbox). **[COMPLETADO]**
 
-- [ ] **Etapa 04 — Information Architecture**: Protocolos de Sitemap, User Flows y Taxonomía de datos.
+### 🔴 Etapa 04 - Information Architecture
+- **Estado:** OPERACIONAL (Validado en Proyectos Complejos)
+- [x] Protocolos de Sitemap y Jerarquía de Navegación.
+- [x] User Flows y Interaction Paths Críticos.
+- [x] Data Taxonomy & Content Inventory Matrix. **[COMPLETADO]**
+
 - [ ] **Etapa 05 — Interaction Design (UX)**: Estándares de micro-interacciones y estados de componentes.
 - [ ] **Etapa 06 — Visual Design (UI)**: Consolidación del Design System "Luxury Obsidian" en componentes reutilizables.
 - [ ] **Etapa 07 — Handover & Quality Assurance**: Procesos de validación final y documentación para desarrollo.
@@ -45,4 +50,4 @@ Estado: **Sincronización de Fidelidad Completada** (Hardening Operacional)
 
 ---
 
-*Última actualización: 2026-05-01 · Sincronizado con v.2.25.13*
+*Última actualización: 2026-05-11 · Sincronizado con v.2.25.25*

@@ -1,6 +1,6 @@
 # Framework Baraldi (FWB) 🤖⚡
 
-![Version](https://img.shields.io/badge/version-2.25.13-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-yellow) ![Memory](https://img.shields.io/badge/memory-Engram--Powered-orange) ![Type](https://img.shields.io/badge/type-Agentic--Orchestrator-blueviolet)
+![Version](https://img.shields.io/badge/version-2.25.25-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-yellow) ![Memory](https://img.shields.io/badge/memory-Engram--Powered-orange) ![Type](https://img.shields.io/badge/type-Agentic--Orchestrator-blueviolet)
 
 > **AI-Augmented System Product Design**
 >
@@ -71,7 +71,7 @@ Ninguno de los frameworks anteriores tiene estas características juntas:
 6. **Experiencia implementada como principio fundacional**: El diseño no termina en el handoff. Termina cuando la experiencia funciona y aporta valor en producción. Eso redefine el rol del diseñador de forma radical, y lo enuncia explícitamente como su meta.
 7. **El problema del nivel de madurez resuelto con estructura**: El diseñador académico conoce los modelos teóricos pero no sabe cómo adaptarlos a la velocidad actual. El senior experimentado sabe qué hacer de forma empírica pero no tiene un modelo que lo sostenga estructuradamente. El Framework **le da al académico la experiencia embebida en el proceso, y al senior le da el modelo que le faltaba**.
 8. **Proactividad de Soporte**: El sistema propone proactivamente formatos de alta fidelidad (Landings/Dashboards HTML) cuando la densidad de datos lo requiere, eliminando la pasividad del agente.
-9. **Verificación de Versión Proactiva (v2.25.13+)**: El Framework verifica automáticamente tu versión local para asegurar que el motor metodológico esté siempre al día.
+9. **Verificación de Versión Proactiva (v2.25.25+)**: El Framework verifica automáticamente tu versión local para asegurar que el motor metodológico esté siempre al día.
 
 ---
 
@@ -83,7 +83,7 @@ Ninguno de los frameworks anteriores tiene estas características juntas:
 | **01_problem_framing** | ✅ Estable | Entendimiento del problema y mapeo de actores. |
 | **02_system_analysis** | ✅ Estable | Mapeo de dependencias, flujos de datos y riesgos. |
 | **03_product_logic** | ✅ Estable | Lógica de negocio, UX-DNA y Matriz de Orquestación. |
-| **04_ux_experience** | 🔄 En desarrollo | Arquitectura de información y Service Blueprint. |
+| **04_ux_experience** | ✅ Estable | Arquitectura de información y Service Blueprint. |
 | **05_ui_design** | 🔄 En desarrollo | Diseño visual y Design Systems. |
 | **06_implementation** | 🔄 En desarrollo | Handoff técnico y supervisión de QA. |
 | **07_system_reflection** | 🔄 En desarrollo | Auditoría de outcomes y evolución. |
@@ -134,8 +134,8 @@ A nivel de infraestructura (LLM Ops), el Framework Baraldi maximiza el rendimien
 
 | Métrica | Valor | Estado |
 |---|---|---|
-| **Eficiencia Actual (v2.25.13)** | **85.21%** | 🟡 Fase Beta (03/07 Etapas) |
-| **Target Sistémico** | **+90%** | 🟢 Hito v2.25.13 |
+| **Eficiencia Actual (v2.25.25)** | **88.45%** | 🟡 Fase Beta (04/07 Etapas) |
+| **Target Sistémico** | **+90%** | 🟢 Hito v2.25.25 |
 
 *Aclaración Técnica: Al cargar en memoria viva solo los hallazgos estrictamente necesarios para la toma de decisión del momento, reducimos el ruido contextual, manteniendo la IA enfocada, rápida y económicamente viable.*
 
@@ -222,7 +222,7 @@ fwbaraldi/
 
 ---
 
-## 🚀 Quick Start / Instalación (v2.25.13)
+## 🚀 Quick Start / Instalación (v2.25.25)
 
 > ⚠️ **IMPORTANTE:** A partir de la versión 2.25.10 (Modelo Cero-Copia), el Framework Baraldi dejó de ser un simple texto para copiar y pegar. Ahora es un **Orquestador Agéntico**. Para usarlo, tu IA debe soportar el uso de herramientas MCP y lectura de carpetas locales (Ej: **Antigravity de Google, Claude Code, Cursor, Windsurf**, etc.).
 
@@ -303,4 +303,4 @@ El Framework Baraldi es el resultado de más de 25 años de experiencia en el di
 - 📧 **Email:** [leobaraldi96@gmail.com](mailto:leobaraldi96@gmail.com)
 
 ---
-*Framework Baraldi v2.25.13 · Desarrollado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.25.25 · Desarrollado y mantenido por Leo Baraldi.*

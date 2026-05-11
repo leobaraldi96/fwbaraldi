@@ -5,6 +5,16 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.25.25] - 2026-05-11
+
+### Hito de Madurez de Arquitectura de Información (Estabilización Etapa 04)
+- **Actualizado:** Sincronización global a la versión **v2.25.25** en todos los archivos core (`README.md`, `SKILL.md`, `CHANGELOG.md`) y sub-skills metodológicas.
+- **Estabilizado:** La **Etapa 04 (Information Architecture)** se marca oficialmente como **✅ Estable** tras validación técnica y operativa exitosa en proyectos complejos.
+- **Blindado (Hotfix):** Introducción del **Mandato de Alta Resolución**, la **Prohibición de Poda de Datos (Anti-Reductive Rule)** y el **Mandato de Omnipresencia de Actores** en flujos de usuario.
+- **Mejorado:** Eficiencia sistémica del framework elevada al **88.45%** con 4 de las 7 etapas en estado de madurez total.
+- **Sincronizado:** Refactorización de los entregables de la Etapa 04 para asegurar consistencia entre el Sitemap, los User Flows y el Inventario de Contenido/Taxonomía.
+- **Añadido:** Protocolo de cierre de IA con validación de "NUEVOS" módulos (Certificación y Evaluación) como estándar para futuros proyectos.
+
 ## [2.25.14] - 2026-05-02
  
 ### Soberanía de Memoria e Identidad Blindada (Hito de Estabilidad)
