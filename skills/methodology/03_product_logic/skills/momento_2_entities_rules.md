@@ -9,7 +9,7 @@ description: >
   Crea el diccionario de entidades y la matriz de reglas (If/Then).
   Keywords: data model, entidades, business rules, reglas de negocio, lógica, schema.
 skill_id: product_logic_momento_2
-version: "2.25.13"
+version: "2.25.25"
 framework: Baraldi
 stage: "03 - Product Logic"
 momento: 2
@@ -89,7 +89,7 @@ Entregás un documento Markdown con esta estructura:
 ## Metadata del artefacto
 - **Etapa:** 03 - Product Logic
 - **Momento:** 2 — Entidades y Reglas
-- **Versión:** 2.25.13
+- **Versión:** 2.25.25
 ```
 
 ---
