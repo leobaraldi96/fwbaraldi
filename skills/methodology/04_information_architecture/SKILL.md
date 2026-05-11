@@ -42,6 +42,8 @@ Para evitar la "poda de datos" y la pérdida de resolución sistémica detectada
         ↓
 [MOMENTO 3] Data Taxonomy & Content Inventory
         ↓
+[MOMENTO 4] Vocabulary Foundations & Object States
+        ↓
       Etapa 05 (Visual Design / UI)
 ```
 
@@ -72,6 +74,16 @@ Para evitar la "poda de datos" y la pérdida de resolución sistémica detectada
 1. **Content Inventory Matrix:** Listado de elementos informativos por vista.
 2. **Taxonomy Schema:** Clasificación de datos (categorías, etiquetas, metadatos).
 
+### Momento 4 — Vocabulary Foundations & Object States
+**Objetivo:** Garantizar la consistencia terminológica y lógica de los estados del sistema.
+**Reglas de Consistencia:**
+- **Blindaje de Lenguaje:** Establecer el nombre oficial de cada entidad para evitar sinonimia confusa en la interfaz.
+- **Lógica de Estados:** Definir el ciclo de vida de los objetos principales (ej: Pedido, Usuario, Contenido).
+**Produce:**
+1. **Product Glossary:** Tabla de términos críticos, definiciones y etiquetas de interfaz prohibidas vs. sugeridas.
+2. **Object State Machine:** Matriz de estados y transiciones para las entidades core del negocio.
+3. **Notification Trigger Map:** Definición de puntos de contacto (Push, Email) basados en cambios de estado o hitos de navegación.
+
 ---
 
 ## Criterio de calidad para cerrar esta etapa
@@ -81,6 +93,8 @@ Para evitar la "poda de datos" y la pérdida de resolución sistémica detectada
 - [ ] Los User Flows cubren el **100% de los Actores** relevantes definidos en la Etapa 03.
 - [ ] Se han mapeado proactivamente los **Edge Cases** y estados de error.
 - [ ] La taxonomía de datos es coherente con el esquema de base de datos de la Etapa 03.
+- [ ] Se ha definido un **Glosario de Términos Críticos** para asegurar la consistencia del lenguaje.
+- [ ] Los **Estados de los Objetos** core están mapeados (State Machine).
 - [ ] La navegación permite acceder a secciones clave en menos de 3 clics.
 - [ ] Se han identificado y mapeado todos los puntos de decisión del usuario.
 
@@ -94,6 +108,7 @@ Para evitar la "poda de datos" y la pérdida de resolución sistémica detectada
 - Momento 1 → Eje: `ia-sitemap-structure` (tipo: `arquitectura`)
 - Momento 2 → Eje: `ia-user-flows` (tipo: `diseño`)
 - Momento 3 → Eje: `ia-taxonomy-content` (tipo: `estructural`)
+- Momento 4 → Eje: `ia-vocabulary-states` (tipo: `ux-writing`)
 
 ---
 *Framework Baraldi v2.25.25 · skills/methodology/04_information_architecture/SKILL.md*

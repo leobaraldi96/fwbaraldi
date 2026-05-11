@@ -13,6 +13,10 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 - **Blindado (Hotfix):** Introducción del **Mandato de Alta Resolución**, la **Prohibición de Poda de Datos (Anti-Reductive Rule)** y el **Mandato de Omnipresencia de Actores** en flujos de usuario.
 - **Mejorado:** Eficiencia sistémica del framework elevada al **88.45%** con 4 de las 7 etapas en estado de madurez total.
 - **Sincronizado:** Refactorización de los entregables de la Etapa 04 para asegurar consistencia entre el Sitemap, los User Flows y el Inventario de Contenido/Taxonomía.
+- **Añadido:** **Momento 04 (Vocabulary Foundations & Object States)** como estándar de cierre de IA.
+- **Evolucionado:** Las Etapas **05 (UX)** y **06 (UI)** dejan de ser WIP para convertirse en **Operacionales**.
+- **Añadido:** **VOICE.md (Agent-First Content Design)** como entregable mandatorio de la Etapa 05 para blindar el Tono, Voz y Microcopy del producto.
+- **Añadido:** **DESIGN.md (Agent-First Design System)** como entregable mandatorio de la Etapa 06 para facilitar la implementación automatizada por agentes de IA.
 - **Añadido:** Protocolo de cierre de IA con validación de "NUEVOS" módulos (Certificación y Evaluación) como estándar para futuros proyectos.
 
 ## [2.25.14] - 2026-05-02

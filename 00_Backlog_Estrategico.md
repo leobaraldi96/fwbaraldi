@@ -21,8 +21,10 @@ Estado: **Sincronización de Fidelidad Completada** (Hardening Operacional)
 - [x] User Flows y Interaction Paths Críticos.
 - [x] Data Taxonomy & Content Inventory Matrix. **[COMPLETADO]**
 
-- [ ] **Etapa 05 — Interaction Design (UX)**: Estándares de micro-interacciones y estados de componentes.
-- [ ] **Etapa 06 — Visual Design (UI)**: Consolidación del Design System "Luxury Obsidian" en componentes reutilizables.
+- [ ] **Etapa 05 — Interaction Design (UX)**: Estándares de micro-interacciones.
+  - [ ] **VOICE.md**: Creación del manual de Tono, Voz y Microcopy para Agentes.
+- [ ] **Etapa 06 — Visual Design (UI)**: Consolidación del Design System "Luxury Obsidian".
+  - [ ] **DESIGN.md**: Creación del archivo de "Fuente de Verdad" para Agentes (Tokens, CSS Variables, UI Rules).
 - [ ] **Etapa 07 — Handover & Quality Assurance**: Procesos de validación final y documentación para desarrollo.
 
 ---
