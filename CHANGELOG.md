@@ -5,19 +5,18 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
-## [2.25.27] - 2026-05-12
+## [2.25.27] - 2026-05-13
 
-### ✨ La Experiencia Baraldi (Finalización Etapa 04)
-#### Añadido
-- **Nuevo Instalador Interactivo:** Lanzamiento de `scripts/install.js` con soporte nativo para `npx github:leobaraldi96/fwbaraldi`.
-- **Experiencia Onboarding (UX):** Animación ASCII de bienvenida (gatito parpadeante) y flujo interactivo para la selección de agentes (Antigravity/Claude).
-- **Branding & Hardening:** Sincronización oficial de URLs (`http://leobaraldi.com.ar/`) y canales de contacto en toda la documentación y terminal.
-- **Soporte Binario:** Configuración de `bin` en `package.json` para facilitar la instalación desatendida.
+### ✨ Hardening & Mantenimiento Core (Hito de Integridad)
+- **Protocolo de Mantenimiento Maestro (.helpers):** Creación de un sistema de orquestación interna para el framework, centralizado en la carpeta oculta `.helpers/` (protegida por `.gitignore`).
+- **MAINTENANCE_SKILL.md:** Nuevo protocolo de mantenimiento que obliga a la sincronización de versiones, auditoría de enlaces físicos y meta-validación de herramientas.
+- **Scripts de Automatización (.cjs):** Implementación de `sync_versions.cjs`, `audit_links.cjs` y `fix_links.cjs` para garantizar que el framework nunca tenga "cables sueltos".
 
 #### Mejorado
-- **Motor de Memoria Engram (v1.15.11):** Integración profunda que permite la detección automática de proyectos (`mem_current_project`) y elimina la necesidad de pasar el argumento `project` manualmente.
-- **Estabilización Etapa 04 (✅ Estable):** La **Information Architecture** alcanza su madurez total tras la validación técnica de Vocabulario, Taxonomía y Estados de Objetos.
-- **Protocolos de IA:** Refuerzo de los guardrails de "Core Immunity" y mandatos de sincronización retroactiva para evitar deuda técnica terminológica.
+- **Integridad Sistémica:** Reparación masiva de 18 enlaces metodológicos rotos resultantes de la refactorización a 3 capas (`core`, `methodology`, `toolbox`).
+- **Ley de Estabilidad:** Nueva directiva de seguridad que prioriza la compatibilidad multiplataforma sobre la reducción estética del código en el instalador.
+- **Blindaje del Changelog:** Refinamiento de las herramientas de sincronización para proteger el historial de versiones contra sobreescrituras accidentales.
+- **Auditoría IA:** Los guardrails de "Core Immunity" ahora incluyen formateo de código para evitar falsos positivos en los diagnósticos de integridad.
 
 ## [2.25.26] - 2026-05-12
 
@@ -52,7 +51,7 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 - **Documentación:** El `README.md` ahora incluye la tabla completa de las 12 herramientas MCP y una nueva sección de comandos CLI para gestión avanzada de memoria.
 
 
-## [2.25.27] - 2026-05-01
+## [2.25.13] - 2026-05-01
  
 ### Blindaje Metodológico y Hardening (Hito de Fidelidad)
 - **Añadido:** **Ley de Interpretación de Templates** — Regla maestra que prohíbe a la IA usar datos hipotéticos, forzando la co-construcción original basada en el proyecto activo.

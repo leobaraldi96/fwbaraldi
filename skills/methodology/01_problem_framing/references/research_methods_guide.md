@@ -147,4 +147,4 @@ Aplicar esta fórmula a los patrones detectados para ordenar los gaps antes de p
 
 ---
 
-*Framework Baraldi v2 · skills/01_problem_framing/references/research_methods_guide.md*
+*Framework Baraldi v2 · skills/methodology/01_problem_framing/references/research_methods_guide.md*

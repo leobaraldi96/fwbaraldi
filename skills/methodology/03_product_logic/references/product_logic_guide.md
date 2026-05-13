@@ -91,4 +91,4 @@ Medir la lógica significa medir el éxito de los procesos internos, no solo el 
 
 ---
 
-*Framework Baraldi v2.25.11 · Guía de Referencia Agóstica*
+*Framework Baraldi v2.25.27 · Guía de Referencia Agóstica*

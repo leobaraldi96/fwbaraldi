@@ -153,4 +153,4 @@ Antes de cerrar la etapa, verificar:
 
 ---
 
-*Framework Baraldi v2 · skills/02_system_analysis/references/system_mapping_guide.md*
+*Framework Baraldi v2 · skills/methodology/02_system_analysis/references/system_mapping_guide.md*

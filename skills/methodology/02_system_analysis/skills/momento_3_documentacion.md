@@ -206,4 +206,4 @@ Además, si el Architecture Overview tiene decisiones técnicas registradas, gua
 
 ---
 
-*Framework Baraldi v2.4.0 · skills/02_system_analysis/prompts/momento_3_documentacion.md*
+*Framework Baraldi v2.25.27 · skills/methodology/02_system_analysis/skills/momento_3_documentacion.md*

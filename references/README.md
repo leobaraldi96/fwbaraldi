@@ -12,7 +12,7 @@ Un recurso va en `references/` global cuando:
 ## Cuándo NO va acá
 
 Si el recurso es específico de una etapa, va en `skills/[etapa]/references/`.
-Por ejemplo: `benchmark_guide.md` está en `skills/01_problem_framing/references/`
+Por ejemplo: `benchmark_guide.md` está en `skills/methodology/01_problem_framing/references/`
 porque solo aplica a la Etapa 01.
 
 ## Archivos previstos (en desarrollo)

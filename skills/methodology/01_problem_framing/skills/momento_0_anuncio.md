@@ -34,4 +34,4 @@ Para que yo pueda amplificar tu visión y detectar riesgos ocultos, por favor co
 > **Tip del Framework:** No te preocupes por ser súper formal ahora. Contame lo que sepas y yo me encargo de procesarlo y ayudarte a refinarlo.
 
 ---
-*Framework Baraldi v2.15.0 · Momento 0: Intake*
+*Framework Baraldi v2.25.27 · Momento 0: Intake*

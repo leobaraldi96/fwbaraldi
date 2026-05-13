@@ -360,4 +360,4 @@ Cuando el humano aprueba el plan de metodología y los soportes, guardar en `mem
 
 ---
 
-*Framework Baraldi v2.4.0 · skills/01_problem_framing/prompts/momento_feedback_metodologia.md*
+*Framework Baraldi v2.25.27 · skills/methodology/01_problem_framing/skills/momento_feedback_metodologia.md*

@@ -148,6 +148,33 @@ async function run() {
 
   const spinner = ora('Sincronizando skills y guardrails...').start();
   copyDirectorySync(packageRoot, destPath);
+  
+  // Hardening de Seguridad Post-Instalación (Identidad Blindada)
+  if (agenteDestino === 'local') {
+    const engramDir = path.join(destPath, '.engram');
+    const engramConfigPath = path.join(engramDir, 'config.json');
+    const gitignorePath = path.join(destPath, '.gitignore');
+
+    if (!fs.existsSync(engramDir)) fs.mkdirSync(engramDir, { recursive: true });
+    
+    // Crear Identidad del Proyecto
+    if (!fs.existsSync(engramConfigPath)) {
+      const projectName = path.basename(destPath);
+      fs.writeFileSync(engramConfigPath, JSON.stringify({ project: projectName }, null, 2));
+    }
+
+    // Proteger Memoria Local en .gitignore
+    const gitignoreRules = '\n# Engram Memory (Framework Baraldi Security)\n.engram/\n!.engram/config.json\n';
+    if (fs.existsSync(gitignorePath)) {
+      const content = fs.readFileSync(gitignorePath, 'utf8');
+      if (!content.includes('.engram/')) {
+        fs.appendFileSync(gitignorePath, gitignoreRules);
+      }
+    } else {
+      fs.writeFileSync(gitignorePath, gitignoreRules);
+    }
+  }
+
   spinner.succeed(chalk.green(`✓ Framework desplegado con éxito en: `) + chalk.cyan(destPath));
 
   console.log(chalk.bold('\n[3/3] ⚙️ Vinculación Final'));
@@ -166,6 +193,7 @@ async function run() {
 
   console.log(chalk.bold.magenta('\n' + '═'.repeat(60)));
   console.log(chalk.bold.green('  ✨ ¡INSTALACIÓN COMPLETADA EXITOSAMENTE!'));
+  console.log(chalk.dim('  Protocolo de Seguridad: ') + chalk.green('ACTIVO (Identidad Blindada)'));
   console.log(chalk.bold.magenta('═'.repeat(60)));
 
   console.log(chalk.bold('\nPróximos pasos para empezar:'));

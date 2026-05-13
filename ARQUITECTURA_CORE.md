@@ -67,7 +67,7 @@ flowchart TD
 ```
 
 * **Motor Global (Skill Directory):** Vive oculto en tu gestor de IA (Antigravity). Contiene el ADN de comportamiento y las instrucciones puras.
-* **Memoria Sistémica (Engram MCP):** Actúa como la base de datos centralizada. En lugar de guardar archivos `.md` de memoria repartidos por tu PC, todos los hallazgos y en qué etapa está un proyecto viven aquí. Si cruzas aprendizajes entre dos proyectos distintos, Engram lo nota.
+* **Memoria Sistémica (Engram MCP):** Actúa como la base de datos centralizada. En lugar de guardar archivos `.md` de memoria repartidos por tu PC, todos los hallazgos y en qué etapa está un proyecto viven aquí. El protocolo **Identidad Blindada (Project Locking)** mediante `.engram/config.json` garantiza que la memoria de diferentes proyectos nunca se cruce.
 * **Workspace Local:** Tu carpeta. El Agente tiene orden estricta de dirigir todo entregable final a un folder ordenado y semántico (`docs-fwbaraldi/`).
 
 ---

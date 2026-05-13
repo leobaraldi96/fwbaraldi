@@ -27,4 +27,4 @@ Para empezar, voy a recuperar los hallazgos de la Etapa 01 desde nuestra memoria
 **Confirmame:** ¿Hubo algún cambio de último momento en la hipótesis central o en el alcance del proyecto que deba tener en cuenta antes de mapear el sistema?
 
 ---
-*Framework Baraldi v2.15.0 · Momento 0: Apertura de E2*
+*Framework Baraldi v2.25.27 · Momento 0: Apertura de E2*

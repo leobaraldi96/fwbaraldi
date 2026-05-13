@@ -126,7 +126,7 @@ Además de los comandos que usa la IA, puedes gestionar tu memoria directamente:
 > [!NOTE]
 > ### 🔒 Robustez y Estabilidad (v1.15.1+)
 > El Framework Baraldi ahora utiliza el motor **Engram v1.15.1**, que introduce mejoras críticas de arquitectura:
-> - **Project Locking:** Mediante un archivo `.engram/config.json` opcional, puedes forzar un nombre de proyecto único, eliminando definitivamente la fragmentación de la memoria (Project Drift).
+> - **Project Locking:** Mediante un archivo `.engram/config.json` mandatorio, puedes forzar un nombre de proyecto único, eliminando definitivamente la fragmentación de la memoria (Project Drift).
 > - **Windows Hardening:** Optimización específica para entornos PowerShell y Git Bash, garantizando que la memoria nunca se bloquee.
 > - **Escritura Atómica:** Implementación de colas de procesos para evitar conflictos en la base de datos SQLite durante sesiones de alta intensidad.
 
@@ -272,7 +272,7 @@ node "$env:USERPROFILE\.gemini\antigravity\skills\baraldi-framework\scripts\alig
 
 **En macOS/Linux:**
 ```bash
-node ~/.fwbaraldi/skills/scripts/align.js
+node ~/.fwbaraldi/scripts/align.js
 ```
 
 Este proceso auditará tus archivos Markdown, actualizará los números de versión y creará las carpetas de las nuevas etapas que hayamos añadido en esta versión.

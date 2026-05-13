@@ -33,8 +33,9 @@ El framework realiza llamadas externas únicamente en los siguientes casos de "S
 ## 🛠️ Buenas Prácticas de Seguridad
 
 1.  **Secretos y API Keys:** Nunca compartas claves API, contraseñas o secretos en el chat con la IA. Si necesitas integrar una API, usa variables de entorno locales y pide al framework que genere el código base sin los valores reales.
-2.  **Rutas Absolutas:** El framework utiliza rutas absolutas locales para interactuar con tus archivos, asegurando que el agente solo trabaje dentro del perímetro autorizado.
-3.  **Memoria Sensible:** Si un hallazgo del proyecto es extremadamente confidencial, puedes pedir a la IA que no lo guarde en la memoria persistente de Engram.
+2.  **Identidad Blindada (Project Locking):** El framework utiliza un archivo `.engram/config.json` en la raíz del proyecto para asegurar que la memoria nunca se mezcle entre diferentes trabajos.
+3.  **Rutas Absolutas:** El framework utiliza rutas absolutas locales para interactuar con tus archivos, asegurando que el agente solo trabaje dentro del perímetro autorizado.
+4.  **Memoria Sensible:** Si un hallazgo del proyecto es extremadamente confidencial, puedes pedir a la IA que no lo guarde en la memoria persistente de Engram.
 
 ---
-*Framework Baraldi v2.22.0 · Transparencia y Ética Agéntica*
+*Framework Baraldi v2.25.27 · Transparencia y Ética Agéntica*

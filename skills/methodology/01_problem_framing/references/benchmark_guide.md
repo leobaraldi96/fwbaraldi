@@ -202,4 +202,4 @@ Antes de entregar, verificar:
 
 ---
 
-*Framework Baraldi v2 · skills/01_problem_framing/references/benchmark_guide.md*
+*Framework Baraldi v2 · skills/methodology/01_problem_framing/references/benchmark_guide.md*

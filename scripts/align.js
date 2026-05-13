@@ -44,12 +44,31 @@ async function runAlign() {
     }
 
     const spinner = ora('Escaneando alineamientos y versiones...').start();
-    
     const report = {
         foldersToAdd: [],
         filesToUpdate: [],
-        versionMismatches: []
+        versionMismatches: [],
+        engramConfig: false,
+        gitIgnoreUpdate: false
     };
+
+    // 0. Verificar Identidad Blindada (Engram Config)
+    const engramDir = path.join(projectPath, '.engram');
+    const engramConfigPath = path.join(engramDir, 'config.json');
+    if (!fs.existsSync(engramConfigPath)) {
+        report.engramConfig = true;
+    }
+
+    // Verificar .gitignore
+    const gitignorePath = path.join(projectPath, '.gitignore');
+    if (fs.existsSync(gitignorePath)) {
+        const content = fs.readFileSync(gitignorePath, 'utf8');
+        if (!content.includes('.engram/')) {
+            report.gitIgnoreUpdate = true;
+        }
+    } else {
+        report.gitIgnoreUpdate = true;
+    }
 
     // 1. Verificar Taxonomía de Carpetas
     MANDATORY_FOLDERS.forEach(folder => {
@@ -95,12 +114,22 @@ async function runAlign() {
     spinner.stop();
 
     // Mostrar Reporte
-    if (report.foldersToAdd.length === 0 && report.filesToUpdate.length === 0 && report.versionMismatches.length === 0) {
+    if (report.foldersToAdd.length === 0 && report.filesToUpdate.length === 0 && report.versionMismatches.length === 0 && !report.engramConfig && !report.gitIgnoreUpdate) {
         console.log(chalk.green.bold('\n✅ ¡Tu proyecto está perfectamente alineado con la v' + FRAMEWORK_VERSION + '!\n'));
         process.exit(0);
     }
 
     console.log(chalk.bold.blue('📋 Resumen de cambios sugeridos:'));
+    
+    if (report.engramConfig) {
+        console.log(chalk.cyan('\n🔐 Seguridad e Identidad:'));
+        console.log(`  + .engram/config.json (Identidad Blindada)`);
+    }
+
+    if (report.gitIgnoreUpdate) {
+        console.log(chalk.cyan(report.engramConfig ? '' : '\n🔐 Seguridad e Identidad:'));
+        console.log(`  ~ .gitignore (Reglas de exclusión de memoria local)`);
+    }
     
     if (report.foldersToAdd.length > 0) {
         console.log(chalk.cyan('\n📂 Carpetas a crear (Taxonomía mandatoria):'));
@@ -125,6 +154,22 @@ async function runAlign() {
     if (proceed) {
         const applySpinner = ora('Aplicando alineamientos...').start();
         
+        // 0. Aplicar Identidad Blindada
+        if (report.engramConfig) {
+            if (!fs.existsSync(engramDir)) fs.mkdirSync(engramDir, { recursive: true });
+            const projectName = path.basename(projectPath);
+            fs.writeFileSync(engramConfigPath, JSON.stringify({ project: projectName }, null, 2));
+        }
+
+        if (report.gitIgnoreUpdate) {
+            const rules = '\n# Engram Memory\n.engram/\n!.engram/config.json\n';
+            if (fs.existsSync(gitignorePath)) {
+                fs.appendFileSync(gitignorePath, rules);
+            } else {
+                fs.writeFileSync(gitignorePath, rules);
+            }
+        }
+
         // Crear carpetas
         report.foldersToAdd.forEach(folder => {
             fs.mkdirSync(path.join(docsPath, folder), { recursive: true });

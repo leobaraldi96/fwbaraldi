@@ -239,4 +239,4 @@ Si el camino elegido fue **Pivotar**, guardar también bajo el Eje `pf-pivot-[fe
 
 ---
 
-*Framework Baraldi v2.4.0 · skills/01_problem_framing/prompts/momento_3_cierre.md*
+*Framework Baraldi v2.25.27 · skills/methodology/01_problem_framing/skills/momento_3_cierre.md*

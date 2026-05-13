@@ -206,4 +206,4 @@ Cuando el humano aprueba los 5 artefactos de este momento, guardar en `memory/ba
 
 ---
 
-*Framework Baraldi v2.4.0 · skills/01_problem_framing/prompts/momento_1_vision.md*
+*Framework Baraldi v2.25.27 · skills/methodology/01_problem_framing/skills/momento_1_vision.md*
