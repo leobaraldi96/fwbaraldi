@@ -3,7 +3,7 @@
 > **⚠️ Este archivo es para HUMANOS (desarrolladores, configuradores, colaboradores).**
 > Los modelos de IA **no deben cargar este archivo** en el ciclo de boot — genera tokens redundantes sin aportar valor operativo. El agente carga directamente `SKILL.md` → `00_boot/context.md` → skills específicas.
 
-**AI-Augmented System Product Design · v2.25.25 · Leo Baraldi**
+**AI-Augmented System Product Design · v2.25.27 · Leo Baraldi**
 
 ---
 
@@ -21,7 +21,7 @@ README.md  →  ARQUITECTURA_CORE.md  →  CHANGELOG.md
 
 ---
 
-## 📁 Mapa del repositorio (v2.25.25)
+## 📁 Mapa del repositorio (v2.25.27)
 
 ```
 fwbaraldi/
@@ -39,10 +39,10 @@ fwbaraldi/
 │   │   ├── 01_problem_framing/       ← ✅ Completa
 │   │   ├── 02_system_analysis/       ← ✅ Completa
 │   │   ├── 03_product_logic/         ← ✅ Completa
-│   │   ├── 04_ux_experience/         ← 🔄 WIP
-│   │   ├── 05_ui_design/             ← 🔄 WIP
-│   │   ├── 06_implementation/        ← 🔄 WIP
-│   │   └── 07_system_reflection/     ← 🔄 WIP
+│   │   ├── 04_information_architecture/ ← ✅ Estable
+│   │   ├── 05_interaction_design_ux/ ← 🔄 WIP
+│   │   ├── 06_visual_design_ui/      ← 🔄 WIP
+│   │   └── 07_handover_qa/           ← 🔄 WIP
 │   │
 │   └── toolbox/
 │       ├── baraldi_visual_identity/  ← ADN visual (Modernist Tech, Paul Rand)
@@ -81,4 +81,4 @@ Todo lo que genera el framework vive aquí — organizado por naturaleza del con
 
 ---
 
-*Framework Baraldi v2.25.25 · DOCUMENTACION_IA.md · Referencia para humanos*
+*Framework Baraldi v2.25.27 · DOCUMENTACION_IA.md · Referencia para humanos*

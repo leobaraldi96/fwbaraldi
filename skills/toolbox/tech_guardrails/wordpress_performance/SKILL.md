@@ -5,7 +5,7 @@ description: >
   Úsalo cuando identifiques que el usuario está trabajando en desarrollo de 
   plugins, temas o lógica custom de WordPress. Previene la obesidad de contexto 
   y aplica el "Skill Judge" de Baraldi.
-version: "2.25.25"
+version: "2.25.27"
 trigger: "Proyectos que operen sobre el entorno WordPress"
 ---
 
@@ -41,4 +41,4 @@ Aplica estas reglas de forma inmediata en cualquier sugerencia de código:
 - **NUNCA** hardcodees URLs de assets; usa `wp_enqueue_script/style`.
 
 ---
-*Framework Baraldi v2.25.25 · Core / Tech Guardrails / Wordpress Performance Expert*
+*Framework Baraldi v2.25.27 · Core / Tech Guardrails / Wordpress Performance Expert*

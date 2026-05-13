@@ -7,7 +7,7 @@
 
 ## SISTEMA DE MEMORIA ACTUALIZADO — Usar Engram MCP
 
-> **Version 2.25.25** — Blindaje de Interacción (Anti-no-op) el 2026-04-20.
+> **Version 2.25.27** — Blindaje de Interacción (Anti-no-op) el 2026-04-20.
 > El sistema de memoria del framework es **GLOBAL** y reside exclusivamente en **Engram MCP**.
 > **NO repliques carpetas de memoria en el proyecto local.** Esto garantiza que el aprendizaje sea sistémico entre todos tus proyectos.
 
@@ -112,4 +112,4 @@ Si ya tienes el framework instalado, puedes actualizar el binario de Engram de d
 
 ---
 
-*Framework Baraldi v2.25.25 · memory/PROTOCOLO_MEMORIA.md · Capa de Memoria Sistémica*
+*Framework Baraldi v2.25.27 · memory/PROTOCOLO_MEMORIA.md · Capa de Memoria Sistémica*

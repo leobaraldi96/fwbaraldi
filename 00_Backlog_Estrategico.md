@@ -1,4 +1,4 @@
-# Framework Baraldi - Backlog Estratégico (v2.25.25)
+# Framework Baraldi - Backlog Estratégico (v2.25.27)
 Última Actualización: Mayo 2026
 Estado: **Sincronización de Fidelidad Completada** (Hardening Operacional)
 
@@ -49,7 +49,8 @@ Estado: **Sincronización de Fidelidad Completada** (Hardening Operacional)
 
 - [ ] **Pitch Engine v2**: Integrar los datos de UXR directamente en la generación de propuestas de valor para que el Assistant actúe como un Sales Partner.
 - [ ] **Ecosistema de Skills Externas**: Mapear y destilar nuevas fuentes de conocimiento (ej: tendencias de AI en SaaS 2026) para los guardrails de competidores.
+- [ ] **English-Native Version (Token Optimization)**: Traducir y optimizar todo el framework al inglés para reducir el consumo de tokens y mejorar la eficiencia del Context ROI.
 
 ---
 
-*Última actualización: 2026-05-11 · Sincronizado con v.2.25.25*
+*Última actualización: 2026-05-12 · Sincronizado con v.2.25.27*

@@ -5,7 +5,7 @@ description: >
   Fuerza la seguridad (Context Isolation), la comunicación IPC tipo-segura
   y la separación de procesos (Main/Renderer).
   Trigger: Al diseñar o prototipar apps de escritorio, menús de sistema o integraciones nativas.
-version: "2.25.25"
+version: "2.25.27"
 ---
 
 # 🖥️ Electron Expert Guardrails (Baraldi Edition)
@@ -49,4 +49,4 @@ contextBridge.exposeInMainWorld('electron', {
 3.  **Tray & Notifications:** Usa las APIs nativas para que la app se sienta parte del sistema operativo.
 
 ---
-*Framework Baraldi v2.25.25 · Rigor en Escritorio.*
+*Framework Baraldi v2.25.27 · Rigor en Escritorio.*

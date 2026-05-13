@@ -5,7 +5,7 @@ description: >
   Define la estructura, navegación y taxonomía del producto.
   Keywords: information architecture, sitemap, user flow, taxonomía, navegación, content inventory.
   Activar cuando se cierre la Etapa 03 o se necesite estructurar la navegación.
-version: "2.25.25"
+version: "2.25.27"
 framework: Baraldi
 stage: "04"
 stage_name: "Information Architecture"
@@ -79,7 +79,8 @@ Para evitar la "poda de datos" y la pérdida de resolución sistémica detectada
 **Reglas de Consistencia:**
 - **Blindaje de Lenguaje:** Establecer el nombre oficial de cada entidad para evitar sinonimia confusa en la interfaz.
 - **Lógica de Estados:** Definir el ciclo de vida de los objetos principales (ej: Pedido, Usuario, Contenido).
-**Produce:**
+- **Mandato de Sincronización Retroactiva (P0):** Dado que este momento establece la "Fuente de Verdad" terminológica, el Agente tiene la **OBLIGACIÓN PROACTIVA** de proponer y ejecutar la revisión de los artefactos de los Momentos 01, 02 y 03 (Sitemap, Flows y Taxonomía). Se debe asegurar que la nomenclatura y los estados coincidan al 100% con el Glosario y la State Machine antes de cerrar la etapa.
+**Produce:** 
 1. **Product Glossary:** Tabla de términos críticos, definiciones y etiquetas de interfaz prohibidas vs. sugeridas.
 2. **Object State Machine:** Matriz de estados y transiciones para las entidades core del negocio.
 3. **Notification Trigger Map:** Definición de puntos de contacto (Push, Email) basados en cambios de estado o hitos de navegación.
@@ -94,6 +95,7 @@ Para evitar la "poda de datos" y la pérdida de resolución sistémica detectada
 - [ ] Se han mapeado proactivamente los **Edge Cases** y estados de error.
 - [ ] La taxonomía de datos es coherente con el esquema de base de datos de la Etapa 03.
 - [ ] Se ha definido un **Glosario de Términos Críticos** para asegurar la consistencia del lenguaje.
+- [ ] **Auditoría de Consistencia:** Se ha verificado que el Sitemap, los Flows y la Taxonomía (M01-M03) utilizan el lenguaje oficial definido en el Glosario (M04).
 - [ ] Los **Estados de los Objetos** core están mapeados (State Machine).
 - [ ] La navegación permite acceder a secciones clave en menos de 3 clics.
 - [ ] Se han identificado y mapeado todos los puntos de decisión del usuario.
@@ -111,4 +113,4 @@ Para evitar la "poda de datos" y la pérdida de resolución sistémica detectada
 - Momento 4 → Eje: `ia-vocabulary-states` (tipo: `ux-writing`)
 
 ---
-*Framework Baraldi v2.25.25 · skills/methodology/04_information_architecture/SKILL.md*
+*Framework Baraldi v2.25.27 · skills/methodology/04_information_architecture/SKILL.md*

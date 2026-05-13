@@ -59,12 +59,10 @@ Si detectas múltiples proyectos abiertos, espacios de trabajo paralelos (worksp
 El agente es un colaborador que puede estar atendiendo múltiples proyectos simultáneos. En cada primera interacción de una sesión, **NUNCA asumas** que el proyecto activo es el mismo que en la sesión anterior. Sigue este protocolo de detección:
 
 **Algoritmo de Detección (en orden de prioridad):**
-1. **Identidad Blindada (P0 - Máxima Prioridad):** ¿Existe el archivo `.engram/config.json` en la raíz? Si sí → **usar ese nombre obligatoriamente**. Este archivo es la Única Fuente de Verdad.
-2. **Señal Explícita (P1):** ¿El humano mencionó el nombre del proyecto en su primer mensaje? Si sí → **ese es el proyecto activo**. Ir al Paso -2.
-3. **Señal del Workspace (P2):** ¿Existe metadata del workspace activo (archivos abiertos, ruta del directorio de trabajo)? Inferir el nombre del proyecto desde la ruta del archivo activo (ej: `C:/htdocs/proyecto-alfa/` → proyecto = `proyecto-alfa`).
-4. **Señal de Memoria (P3):** Ejecutar `mem_context(limit=5)` sin filtro de proyecto. Identificar el **proyecto más reciente** de las sesiones anteriores como candidato.
-5. **Señal de Historial (P4):** Si el agente tiene acceso al resumen de conversaciones anteriores, tomar el proyecto de la última conversación relevante.
-6. **Sin Señal (P5):** Si no se puede detectar el proyecto por ningún medio → **preguntar explícitamente** al humano.
+1. **Identidad Nativa Engram (P0 - Máxima Prioridad):** Ejecutar `mem_current_project()`. Si devuelve un nombre de proyecto válido (vía git remote o `.engram/config.json`) → **usar ese nombre obligatoriamente**. Engram v1.15.11+ gestiona esto de forma nativa.
+2. **Señal Explícita (P1):** ¿El humano mencionó el nombre del proyecto en su primer mensaje? Si sí → comparar con la detección nativa. Si hay conflicto, pedir aclaración.
+3. **Señal de Memoria (P2):** Ejecutar `mem_context(limit=5)` sin filtro de proyecto. Identificar el **proyecto más reciente** como candidato.
+4. **Sin Señal (P3):** Si no se puede detectar el proyecto por ningún medio → **preguntar explícitamente** al humano.
 
 
 **Una vez detectado el proyecto candidato:**
@@ -172,8 +170,8 @@ Antes de realizar CUALQUIER tarea operativa de una etapa metodológica, **siempr
 
 Antes de declarar que la sesión o etapa terminó:
 
-1. **Registrar hallazgos:** Usar `mem_save(project="[nombre-del-proyecto]", ...)` para guardar todos los hallazgos de tipo `decision`, `discovery` o `pattern` generados en la sesión. Ver `memory/PROTOCOLO_MEMORIA.md` para el formato exacto.
-2. **Registrar cierre:** Guardar con `mem_session_summary(project="[nombre-del-proyecto]")` con: objetivo de la sesión, hallazgos registrados, artefactos producidos, próximos pasos.
+1. **Registrar hallazgos:** Usar `mem_save(...)` para guardar todos los hallazgos. **IMPORTANTE:** A partir de Engram v1.15.11, ya no es necesario (ni está permitido) pasar el argumento `project` en herramientas de escritura; Engram lo detecta automáticamente. Ver `memory/PROTOCOLO_MEMORIA.md` para el formato.
+2. **Registrar cierre:** Guardar con `mem_session_summary()` con: objetivo de la sesión, hallazgos registrados, artefactos producidos, próximos pasos.
 3. **Declarar done:** Solo después de los pasos anteriores, comunicar al humano que la sesión está cerrada.
 
 ---
@@ -314,4 +312,4 @@ Si el Paso -3 NO encontró memoria de ningún proyecto existente:
 
 ---
 
-*Framework Baraldi v2.25.25 · context.md · Boot Layer 00*
+*Framework Baraldi v2.25.27 · context.md · Boot Layer 00 (Engram v1.15.11 Sync)*

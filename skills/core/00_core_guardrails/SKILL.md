@@ -6,12 +6,23 @@ description: >
   de los entregables.
   Trigger: SIEMPRE activo. Se debe consultar al inicio de cada sesión y ante
   cualquier cambio en la estructura del proyecto o de los artefactos.
-version: "2.25.25"
+version: "2.25.27"
 ---
 
 # 🛡️ Capa 00 — Core Guardrails (Barandas de Contención)
 
 > **Objetivo:** Garantizar que la IA opere con rigor metodológico, protegiendo al proyecto de la desorganización, la obsolescencia de la documentación y el ruido técnico.
+
+## 🛡️ 0. Inmunidad del Núcleo (Core Self-Protection)
+
+Esta es la regla de protección existencial del framework. El Agente debe verificar el ámbito de trabajo antes de realizar cualquier cambio en el código fuente del Framework Baraldi:
+
+- **Detección de Ámbito:** El Framework Baraldi tiene su propio repositorio de desarrollo (`leobaraldi96/fwbaraldi`).
+- **Prohibición de Modificación Externa:** Si el Agente está trabajando en un proyecto de implementación (ej: Animal Groom, Anticipate, etc.), tiene terminantemente **PROHIBIDO** modificar archivos dentro de la carpeta raíz del framework (`.../skills/baraldi-framework/`).
+- **Acción Obligatoria ante Sugerencia de Mejora:** Si durante el uso del framework el Agente detecta una mejora necesaria en la metodología, **NO DEBE APLICARLA DIRECTAMENTE**. Debe:
+  1. Notificar al humano sobre la oportunidad de mejora.
+  2. Solicitar al humano que abra el **Workspace específico del Framework** en una ventana independiente para realizar la evolución de forma aislada y segura.
+- **Uso vs. Evolución:** El Agente debe distinguir entre *usar* el framework (leer skills y escribir en `docs-fwbaraldi/` del proyecto actual) y *evolucionar* el framework (escribir en la carpeta `skills/baraldi-framework/`). Lo segundo solo se permite cuando el Workspace activo es el del propio framework.
 
 ---
 
@@ -109,6 +120,7 @@ docs-fwbaraldi/
 
 ### Reglas operativas
 - **Ubicación Obligatoria:** Todo artefacto del framework debe tener una subcarpeta de destino explícita. Si la IA no sabe en qué subcarpeta va, **frena y pregunta** antes de escribir el archivo.
+- **Mandato de Artefactos Físicos (Anti-Chat Only):** Queda terminantemente prohibido que el Agente solo muestre el contenido de un entregable en la terminal o chat. Todo hito de la metodología **DEBE** materializarse en un archivo físico `.md` dentro de `docs-fwbaraldi/`. Mostrar el texto en el chat sin crear el archivo se considera un incumplimiento de la proactividad del framework.
 - **Documentación Dinámica:** Queda prohibido usar nombres de archivos genéricos (ej: `entrega.md`). Todo archivo generado debe seguir el Naming Standard: `[Momento]_[Nombre_Descriptivo].md`.
 - **Interpretación de Templates (Ley de Ejemplo):** Toda tabla, diagrama o estructura de datos presente en los archivos de metodología del Framework que contenga datos hipotéticos (ej: "Mascota", "Login", "Empresa X") debe ser tratada estrictamente como un **EJEMPLO DE FORMATO**. La IA tiene terminantemente prohibido replicar esos datos en el proyecto del usuario; debe generar siempre contenido 100% original basado en la auditoría del workspace actual.
 - **Rigor en la Indagación:** Si un artefacto requiere datos de etapas previas, la IA **DEBE** leer esos archivos antes de proponer nada. No se permiten suposiciones ni "alucinaciones por omisión".
@@ -183,4 +195,4 @@ Antes de declarar un "Done", la IA debe verificar:
 - [ ] ¿El humano aprobó explícitamente cada acción antes de ejecutarla?
 
 ---
-*Framework Baraldi v2.25.25 · Core Guardrails*
+*Framework Baraldi v2.25.27 · Core Guardrails*
