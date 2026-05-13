@@ -11,6 +11,7 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 #### Añadido
 - **Recovery Token Protocol (P0):** Implementación de la lógica de recuperación ante ambigüedad de proyectos. Ahora el framework obliga a la IA a detenerse y solicitar intervención humana cuando se detectan múltiples proyectos en un mismo workspace.
 - **Soporte Nativo Engram v1.15.11:** Integración de los campos `project_choice_reason` y `recovery_token` en todas las operaciones de escritura de memoria.
+- **Mandato de Soberanía Humana (P0):** Nueva ley ética que prohíbe el reduccionismo o la síntesis no autorizada del trabajo del usuario. La IA ahora está obligada a preservar íntegramente el input humano durante las iteraciones.
 - **Blindaje de Identidad v2:** El `context.md` ahora incluye un algoritmo de detección de 4 niveles con "Parada por Ambigüedad" mandatoria.
 
 #### Mejorado
@@ -79,7 +80,7 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
  
 ### Operacionalización de la Etapa 03 (Product Logic)
 - **Añadido:** Estructura completa de la **Etapa 03** (Product Logic) con 3 Momentos operativos: Blueprint, Entidades/Reglas y Flujos/Métricas.
-- **Añadido:** **Guía de Referencia Agnostica** para Product Logic en `references/product_logic_guide.md`.
+- **Añadido:** **Guía de Lógica de Producto:** [product_logic_guide.md](skills/methodology/03_product_logic/references/product_logic_guide.md).
 - **Integrado:** Migración de la skill de **Good Services** a la carpeta `skills/toolbox/tech_guardrails/` para garantizar la autonomía del framework y la disponibilidad inmediata para nuevos usuarios sin dependencias externas.
 - **Sincronizado:** Backlog estratégico actualizado marcando la Etapa 03 como operacional.
 
@@ -466,7 +467,7 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
 #### Añadido
 - **🌟 North Star y Visión de Ecosistema:** Se formalizó en el `README.md` y `ARQUITECTURA_CORE.md` la visión del Framework Baraldi como un **Ecosistema Simbiótico**, definiendo el "Contrato de Poderes" entre el Humano (Director) y la IA (Orquestador).
-- **🛡️ Capa 00 (Core Guardrails):** Creada la nueva skill `skills/00_core_guardrails/SKILL.md` actuando como "Guardián de la Metodología". Aisla reglas críticas de disciplina (Docs-Alignment, Naming Semántico y Zero-Copy).
+- **🛡️ Capa 00 (Core Guardrails):** Creada la nueva skill **Guardrails Core:** [SKILL.md](skills/core/00_core_guardrails/SKILL.md) actuando como "Guardián de la Metodología". Aisla reglas críticas de disciplina (Docs-Alignment, Naming Semántico y Zero-Copy).
 - **📝 Gestión de Backlog Continuo:** Añadida regla de *Scope Creep Management* en los Core Guardrails. Protege la etapa actual capturando proactivamente ideas fuera de alcance en un `00_Backlog_Estrategico.md` categorizado (UX/UI, Deuda Técnica, Negocio). El Agente ahora escanea este backlog al inicializar un proyecto.
 
 #### Cambiado
@@ -547,8 +548,8 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 ### Cambiado
 - **`00_boot/context.md`:** Integrada la capa de memoria. El Paso 0 obliga al Agente a cargar la base de conocimiento antes de ejecutar cualquier tarea. Agregado el Protocolo de Cierre de Sesión (guardar hallazgos antes de declarar done). Actualizado a v2.25.27.
 - **`SKILL.md` (raíz):** Agregada la Regla de Oro **"Memoria Sistémica"**: el conocimiento nunca se pierde entre sesiones.
-- **`skills/01_problem_framing/SKILL.md`:** Hook de memoria al activar la etapa. Protocolo de Memoria con Ejes Estratégicos recomendados por cada Momento (`pf-hipotesis-central`, `pf-metodologia-research`, etc.). Actualizado a v2.25.27.
-- **`skills/02_system_analysis/SKILL.md`:** Hook de memoria al activar la etapa. Protocolo de Memoria con Ejes Estratégicos recomendados (`sa-actor-map`, `sa-riesgos-criticos`, `sa-dependencias-clave`). Actualizado a v2.25.27.
+- **`skills/methodology/01_problem_framing/SKILL.md`:** Hook de memoria al activar la etapa. Protocolo de Memoria con Ejes Estratégicos recomendados.
+- **`skills/methodology/02_system_analysis/SKILL.md`:** Hook de memoria al activar la etapa. Protocolo de Memoria con Ejes Estratégicos recomendados.
 - **`DOCUMENTACION_IA.md`:** Estructura del repositorio actualizada con las nuevas carpetas `memory/` y `templates/`. Tabla de estado refactorizada.
 
 ## [2.3.3] - 2026-03-20
@@ -561,7 +562,7 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
 ### Añadido
 - **Directiva de Renderizado Directo:** Incorporada regla global para prohibir que la IA envuelva toda su respuesta en un bloque de código (` ``` `). Se exige el uso de Markdown "crudo" para que las interfaces de chat (ChatGPT, Claude, Gemini) rendericen correctamente encabezados, tablas y negritas.
-- **Refinamiento de Triggers (Anti-Patterns):** Agregadas reglas explícitas de "Cuándo NO usar" en `skills/01_problem_framing/SKILL.md` y `skills/02_system_analysis/SKILL.md` para prevenir que agentes autónomos activen etapas antiguas accidentalmente.
+- **Refinamiento de Triggers (Anti-Patterns):** Agregadas reglas explícitas de **Etapa 01:** [Problem Framing](skills/methodology/01_problem_framing/SKILL.md) y [System Analysis](skills/methodology/02_system_analysis/SKILL.md) para prevenir que agentes autónomos activen etapas antiguas accidentalmente.
 
 ### Cambiado
 - **Sincronización de Versiones:** Todos los metadatos internos (`00_boot/context.md` y `SKILL.md`) unificados declarativamente a la versión `v2.25.27`.
@@ -600,7 +601,7 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
 ## [2.2.0] - 2026-03-18
 ### Añadido
-- **Etapa 02 (System Analysis)** completa: agregada la carpeta `skills/02_system_analysis` con su SKILL.md, 3 prompts operativos (`momento_1_mapeo.md`, `momento_2_dependencias.md`, `momento_3_documentacion.md`) y guía de referencias (`system_mapping_guide.md`).
+- **Etapa 02 (System Analysis)** completa: agregada la carpeta [System Analysis](skills/methodology/02_system_analysis) con su SKILL.md.
 - Nueva versión one-page consolidada para interfaces chat de la Etapa 02 en `chat/etapa02_chat.md`.
 - Agregada guía de métodos de investigación (`research_methods_guide.md`) en la Etapa 01.
 
