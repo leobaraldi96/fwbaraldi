@@ -9,7 +9,7 @@ description: >
   Define el inventario de vistas y la jerarquía de navegación del producto.
   Keywords: information architecture, sitemap, navegación, jerarquía, niveles de navegación.
 skill_id: ia_momento_1
-version: "2.25.27"
+version: "2.26.0"
 framework: Baraldi
 stage: "04 - Information Architecture"
 momento: 1

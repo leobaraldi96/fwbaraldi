@@ -4,7 +4,7 @@ description: >
   Habilidad experta en Auditoría y Estrategia SEO Técnica y On-Page.
   Úsala para diagnosticar problemas de ranking, crawlability e indexación.
   Contiene la advertencia crítica sobre Schema Markup en agentes de IA.
-version: "2.25.27"
+version: "2.26.0"
 ---
 
 # 🔍 SEO Audit Expert (Baraldi Index)
@@ -49,4 +49,4 @@ Para cada problema detectado, informar:
 - **Solución:** Recomendación técnica específica.
 
 ---
-*Framework Baraldi v2.25.27 · Core / Tech Guardrails / SEO Expert*
+*Framework Baraldi v2.26.0 · Core / Tech Guardrails / SEO Expert*

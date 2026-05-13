@@ -13,7 +13,7 @@ description: >
   Keywords: metodología, entrevistas, benchmark, muestra, guión, research, recolección.
   NO LO USES antes de que los artefactos del Momento 1 estén aprobados.
 skill_id: problem_framing_feedback
-version: "2.25.27"
+version: "2.26.0"
 framework: Baraldi
 stage: "01 - Problem Framing"
 momento: feedback
@@ -360,4 +360,4 @@ Cuando el humano aprueba el plan de metodología y los soportes, guardar en `mem
 
 ---
 
-*Framework Baraldi v2.25.27 · skills/methodology/01_problem_framing/skills/momento_feedback_metodologia.md*
+*Framework Baraldi v2.26.0 · skills/methodology/01_problem_framing/skills/momento_feedback_metodologia.md*

@@ -2,7 +2,7 @@
 name: handover-qa
 description: Etapa 07 del Framework Baraldi - Entrega y Control de Calidad.
 status: WIP
-version: "2.25.27"
+version: "2.26.0"
 ---
 
 # Etapa 07 - Handover & Quality Assurance [WIP]

@@ -4,7 +4,7 @@ description: >
   Habilidad experta en optimización de Core Web Vitals (LCP, INP, CLS).
   Úsala para asegurar performance de nivel superior y ranking en buscadores.
   Previene regresiones de performance y desplazamientos de layout.
-version: "2.25.27"
+version: "2.26.0"
 ---
 
 # 🚀 Core Web Vitals Expert (Baraldi Index)
@@ -56,4 +56,4 @@ new PerformanceObserver((list) => {
 ```
 
 ---
-*Framework Baraldi v2.25.27 · Core / Tech Guardrails / CWV Expert*
+*Framework Baraldi v2.26.0 · Core / Tech Guardrails / CWV Expert*

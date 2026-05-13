@@ -13,7 +13,7 @@ description: >
   Keywords: entrevistas, notas, research, usuarios, evidencia, hipótesis, benchmark, saturación.
   NO LO USES para analizar datos sin tener notas o transcripciones reales como input.
 skill_id: problem_framing_momento_2
-version: "2.25.27"
+version: "2.26.0"
 framework: Baraldi
 stage: "01 - Problem Framing"
 momento: 2
@@ -314,4 +314,4 @@ Al generar el Informe de Research final (Sub-tarea D), guardar en `memory/barald
 
 ---
 
-*Framework Baraldi v2.25.27 · skills/methodology/01_problem_framing/skills/momento_2_live_assistant.md*
+*Framework Baraldi v2.26.0 · skills/methodology/01_problem_framing/skills/momento_2_live_assistant.md*

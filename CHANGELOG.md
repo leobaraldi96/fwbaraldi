@@ -5,6 +5,18 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.26.0] - 2026-05-13
+
+### 🛡️ Protocolo de Recuperación y Soberanía (Recovery Tokens)
+#### Añadido
+- **Recovery Token Protocol (P0):** Implementación de la lógica de recuperación ante ambigüedad de proyectos. Ahora el framework obliga a la IA a detenerse y solicitar intervención humana cuando se detectan múltiples proyectos en un mismo workspace.
+- **Soporte Nativo Engram v1.15.11:** Integración de los campos `project_choice_reason` y `recovery_token` en todas las operaciones de escritura de memoria.
+- **Blindaje de Identidad v2:** El `context.md` ahora incluye un algoritmo de detección de 4 niveles con "Parada por Ambigüedad" mandatoria.
+
+#### Mejorado
+- **Sincronización Atómica:** El motor de sincronización de versiones ahora es consciente del historial y protege el `CHANGELOG.md` automáticamente.
+- **Higiene de Sesión:** Refuerzo de los protocolos de reintentos para asegurar que ningún hallazgo se pierda por errores de contexto.
+
 ## [2.25.27] - 2026-05-13
 
 ### ✨ Hardening & Mantenimiento Core (Hito de Integridad)

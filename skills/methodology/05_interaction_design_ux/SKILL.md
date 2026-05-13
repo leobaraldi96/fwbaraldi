@@ -5,7 +5,7 @@ description: >
   Define el comportamiento, los estados y el esqueleto de la experiencia.
 keywords: ux, interaction design, micro-interactions, states, wireframes, user experience.
 status: operational
-version: "2.25.27"
+version: "2.26.0"
 ---
 
 # Etapa 05 — Interaction Design (UX)
@@ -37,4 +37,4 @@ En esta etapa no nos preocupamos por los colores, sino por:
 - [ ] La navegación es intuitiva y sigue patrones de diseño establecidos.
 
 ---
-*Framework Baraldi v2.25.27 · skills/methodology/05_interaction_design_ux/SKILL.md*
+*Framework Baraldi v2.26.0 · skills/methodology/05_interaction_design_ux/SKILL.md*

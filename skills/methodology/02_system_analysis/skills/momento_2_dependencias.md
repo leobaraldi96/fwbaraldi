@@ -10,7 +10,7 @@ description: >
   Usalo cuando el Actor Map y System Map estén aprobados por el equipo.
   NO LO USES sin el System Map del Momento 1 aprobado.
 skill_id: system_analysis_momento_2
-version: "2.25.27"
+version: "2.26.0"
 framework: Baraldi
 stage: "02 - System Analysis"
 momento: 2
@@ -185,4 +185,4 @@ Al completar el Dependency Map, Data Flow Map y Risk Map, guardar en `memory/bar
 
 ---
 
-*Framework Baraldi v2.25.27 · skills/methodology/02_system_analysis/skills/momento_2_dependencias.md*
+*Framework Baraldi v2.26.0 · skills/methodology/02_system_analysis/skills/momento_2_dependencias.md*

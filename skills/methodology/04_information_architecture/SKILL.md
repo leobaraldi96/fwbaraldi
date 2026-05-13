@@ -5,7 +5,7 @@ description: >
   Define la estructura, navegación y taxonomía del producto.
   Keywords: information architecture, sitemap, user flow, taxonomía, navegación, content inventory.
   Activar cuando se cierre la Etapa 03 o se necesite estructurar la navegación.
-version: "2.25.27"
+version: "2.26.0"
 framework: Baraldi
 stage: "04"
 stage_name: "Information Architecture"
@@ -113,4 +113,4 @@ Para evitar la "poda de datos" y la pérdida de resolución sistémica detectada
 - Momento 4 → Eje: `ia-vocabulary-states` (tipo: `ux-writing`)
 
 ---
-*Framework Baraldi v2.25.27 · skills/methodology/04_information_architecture/SKILL.md*
+*Framework Baraldi v2.26.0 · skills/methodology/04_information_architecture/SKILL.md*

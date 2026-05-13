@@ -6,7 +6,7 @@ description: >
   Crea el contrato visual para la implementación agéntica (DESIGN.md).
 keywords: visual design, ui, tokens, design system, luxury obsidian, design.md, css variables.
 status: operational
-version: "2.25.27"
+version: "2.26.0"
 ---
 
 # Etapa 06 — Visual Design (UI)
@@ -46,4 +46,4 @@ Este archivo es obligatorio y debe contener:
 - [ ] Existe una jerarquía visual clara que guía la atención del usuario.
 
 ---
-*Framework Baraldi v2.25.27 · skills/methodology/06_visual_design_ui/SKILL.md*
+*Framework Baraldi v2.26.0 · skills/methodology/06_visual_design_ui/SKILL.md*

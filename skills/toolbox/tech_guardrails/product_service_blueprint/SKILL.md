@@ -4,7 +4,7 @@ description: >
   Habilidad experta en Service Blueprinting. Úsala para conectar las 
   interacciones del usuario con la arquitectura técnica y los procesos 
   de negocio subyacentes.
-version: "2.25.27"
+version: "2.26.0"
 ---
 
 # 🚀 Product Service Blueprint Expert
@@ -33,4 +33,4 @@ Esta habilidad asegura que el diseño no sea una cáscara vacía. Conectamos la 
 *"Un gran diseño enfrente de un mal proceso de backstage genera una mala experiencia de cliente"*. Siempre audita si el proceso interno es tan fluido como la interfaz externa.
 
 ---
-*Framework Baraldi v2.25.27 · Core / Tech Guardrails / Product Expert*
+*Framework Baraldi v2.26.0 · Core / Tech Guardrails / Product Expert*

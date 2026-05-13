@@ -9,7 +9,7 @@ description: >
   Establece la base terminológica oficial y la lógica de estados de los objetos del sistema.
   Keywords: glosario, taxonomía, nomenclatura, estados, state machine, consistencia.
 skill_id: ia_momento_4
-version: "2.25.27"
+version: "2.26.0"
 framework: Baraldi
 stage: "04 - Information Architecture"
 momento: 4

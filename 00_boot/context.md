@@ -59,7 +59,9 @@ Si detectas múltiples proyectos abiertos, espacios de trabajo paralelos (worksp
 El agente es un colaborador que puede estar atendiendo múltiples proyectos simultáneos. En cada primera interacción de una sesión, **NUNCA asumas** que el proyecto activo es el mismo que en la sesión anterior. Sigue este protocolo de detección:
 
 **Algoritmo de Detección (en orden de prioridad):**
-1. **Identidad Nativa Engram (P0 - Máxima Prioridad):** Ejecutar `mem_current_project()`. Si devuelve un nombre de proyecto válido (vía git remote o `.engram/config.json`) → **usar ese nombre obligatoriamente**. Engram v1.15.11+ gestiona esto de forma nativa.
+1. **Identidad Nativa Engram (P0 - Máxima Prioridad):** Ejecutar `mem_current_project()`. 
+   - **Caso Normal:** Si devuelve un nombre de proyecto válido (vía git remote o `.engram/config.json`) → usar ese nombre obligatoriamente.
+   - **Caso de Ambigüedad (Novedad v2.26.0):** Si devuelve `error_code: "ambiguous_project"`, el Agente **DEBE DETENERSE**. No asumas ningún proyecto. Informa al usuario de los `available_projects`, pide la selección manual y guarda el `recovery_token` para la siguiente operación de escritura.
 2. **Señal Explícita (P1):** ¿El humano mencionó el nombre del proyecto en su primer mensaje? Si sí → comparar con la detección nativa. Si hay conflicto, pedir aclaración.
 3. **Señal de Memoria (P2):** Ejecutar `mem_context(limit=5)` sin filtro de proyecto. Identificar el **proyecto más reciente** como candidato.
 4. **Sin Señal (P3):** Si no se puede detectar el proyecto por ningún medio → **preguntar explícitamente** al humano.
@@ -170,7 +172,7 @@ Antes de realizar CUALQUIER tarea operativa de una etapa metodológica, **siempr
 
 Antes de declarar que la sesión o etapa terminó:
 
-1. **Registrar hallazgos:** Usar `mem_save(...)` para guardar todos los hallazgos. **IMPORTANTE:** A partir de Engram v1.15.11, ya no es necesario (ni está permitido) pasar el argumento `project` en herramientas de escritura; Engram lo detecta automáticamente. Ver `memory/PROTOCOLO_MEMORIA.md` para el formato.
+1. **Registrar hallazgos:** Usar `mem_save(...)` para guardar todos los hallazgos. **IMPORTANTE:** Si la herramienta devuelve un error `ambiguous_project`, debes usar el `recovery_token` obtenido en el Paso -3 (o pedir uno nuevo) y reintentar con `project_choice_reason: "user_selected_after_ambiguous_project"`.
 2. **Registrar cierre:** Guardar con `mem_session_summary()` con: objetivo de la sesión, hallazgos registrados, artefactos producidos, próximos pasos.
 3. **Declarar done:** Solo después de los pasos anteriores, comunicar al humano que la sesión está cerrada.
 
@@ -312,4 +314,4 @@ Si el Paso -3 NO encontró memoria de ningún proyecto existente:
 
 ---
 
-*Framework Baraldi v2.25.27 · context.md · Boot Layer 00 (Engram v1.15.11 Sync)*
+*Framework Baraldi v2.26.0 · context.md · Boot Layer 00 (Recovery Token Protocol)*

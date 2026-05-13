@@ -6,7 +6,7 @@ description: >
   para ir más allá del diseño de interfaces y enfocarse en sistemas y outcomes.
   Úsalo cuando el usuario quiera iniciar un proceso de diseño de producto estructurado.
 keywords: product-design, framework-baraldi, problem-framing, system-analysis, ux-strategy, systems-thinking
-version: "2.25.27"
+version: "2.26.0"
 ---
 
 # Framework Baraldi — Orquestador Global
@@ -35,4 +35,4 @@ Guiar al equipo de producto a través de fases estructuradas de descubrimiento, 
 - **Ley de No-Degradación Sistémica:** Queda prohibido eliminar, resumir o "limpiar" secciones de documentación que contengan filosofía, principios de diseño o especificaciones técnicas. Toda actualización debe ser ADITIVA o de REEMPLAZO ENRIQUECEDOR. Ante la duda, CONSULTAR antes de borrar.
 
 ---
-*Framework Baraldi v2.25.27 · Creado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.26.0 · Creado y mantenido por Leo Baraldi.*
