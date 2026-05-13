@@ -14,6 +14,16 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 - **Mandato de Soberanía Humana (P0):** Nueva ley ética que prohíbe el reduccionismo o la síntesis no autorizada del trabajo del usuario. La IA ahora está obligada a preservar íntegramente el input humano durante las iteraciones.
 - **Blindaje de Identidad v2:** El `context.md` ahora incluye un algoritmo de detección de 4 niveles con "Parada por Ambigüedad" mandatoria.
 
+### 🛡️ Etapa 04 & 05: Hardening Sistémico y Prevención de Amnesia IA
+#### Añadido
+- **Ley Anti-Poda (P0):** Prohibición explícita a la IA de resumir, agrupar o podar información en las actualizaciones documentales. Todas las iteraciones deben ser obligatoriamente aditivas.
+- **Ley Anti-Amnesia de Actores:** Protocolo obligatorio de validación de completitud para garantizar que el 100% de los actores de la Etapa 03 sean representados en los diagramas de flujos.
+- **Mandato de Mapeo Negativo Obligatorio:** Obligación de mapear proactivamente los *Unhappy Paths* y *Edge Cases* en diagramas Mermaid sin esperar solicitud del humano.
+- **Mandato de Alta Resolución (Deep Mapping):** Directiva estricta para evitar "Sitemaps Perezosos", obligando a la IA a mapear todas las sub-vistas y flujos de error, subdividiendo diagramas si es necesario.
+- **Protocolos de UX Writing de Clase Mundial:** Incorporación de los 4 Pilares (Purposeful, Concise, Conversational, Clear) y reglas estrictas de Accesibilidad Cognitiva para lectores de pantalla.
+- **Handoff Multilingüe (i18n):** Creación obligatoria de diccionarios de localización JSON para agilizar el puente técnico entre UXW y Frontend.
+- **Auditoría Semántica Transversal:** Bucle de validación (Feedback Loop) entre el microcopy generado en la Etapa 05 y el Vocabulario maestro de la Etapa 04 para evitar fracturas ontológicas.
+
 #### Mejorado
 - **Sincronización Atómica:** El motor de sincronización de versiones ahora es consciente del historial y protege el `CHANGELOG.md` automáticamente.
 - **Higiene de Sesión:** Refuerzo de los protocolos de reintentos para asegurar que ningún hallazgo se pierda por errores de contexto.

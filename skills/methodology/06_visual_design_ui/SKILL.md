@@ -15,10 +15,13 @@ version: "2.26.0"
 
 ---
 
-## 🎨 El Sistema "Luxury Obsidian"
-El framework utiliza por defecto el sistema de diseño **Luxury Obsidian**:
-- **Estética:** Dark mode profundo, vidrio (glassmorphism), gradientes sutiles y tipografía moderna (Outfit/Inter).
-- **Acento:** Colores vibrantes pero elegantes (Esmeralda, Oro, Violeta eléctrico).
+## 🎨 Selector de Estética (Aesthetic Taste Selector)
+El framework es **estéticamente agnóstico**. No fuerza un estilo visual. En su lugar, al iniciar esta etapa, la IA debe consultar qué "Taste" (gusto estético) se alinea con el negocio (inspirado en las arquitecturas de `leonxlnx`):
+
+1. **High-End (SaaS / Premium):** Dark mode profundo (tipo "Luxury Obsidian"), glassmorphism, gradientes sutiles y tipografía moderna (Outfit/Inter). Ideal para herramientas pro y fintech.
+2. **Minimalist UI (Productividad):** Fondos blancos puros o grises hiper-suaves, monocromía estricta, alta densidad de datos sin ruido visual. Ideal para dashboards densos.
+3. **Industrial Brutalist (Dev Tools):** Bordes crudos, tipografías monoespaciadas, alto contraste en blanco y negro con un solo color de acento. Ideal para herramientas técnicas.
+4. **Custom (Design System Existente):** La IA debe leer el sistema del cliente y adherirse estrictamente a él, sin inyectar creatividad no solicitada.
 
 ---
 

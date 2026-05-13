@@ -1,6 +1,6 @@
-# Framework Baraldi - Backlog Estratégico (v2.25.27)
+# Framework Baraldi - Backlog Estratégico (v2.26.0)
 Última Actualización: Mayo 2026
-Estado: **Sincronización de Fidelidad Completada** (Hardening Operacional)
+Estado: **Hardening de Soberanía y Auditoría Completado** (v2.26.0)
 
 > **Propósito:** Centralizar el scope futuro, las etapas en desarrollo (WIP) y las ideas de mejora sistémica para evitar el Scope Creep durante las sesiones actuales.
 > **Disciplina:** Revisar este archivo al inicio de cada sesión (Boot Step -3).

@@ -54,8 +54,13 @@ Propone cómo el usuario se moverá entre las vistas:
 - **Nivel 2 (Local):** Tabs internas, menús laterales de sección.
 - **Nivel 3 (Contextual):** Breadcrumbs, botones de "Ver más", enlaces dentro del texto.
 
-### Paso 3 — Sitemap Visual (Mermaid)
-Crea un diagrama que visualice la jerarquía.
+### Paso 3 — Sitemap Visual (Mermaid) con Deep Mapping
+**[CRÍTICO - MANDATO DE ALTA RESOLUCIÓN]:** Tienes estrictamente prohibido entregar un Sitemap "pobre", "perezoso" o "de alto nivel". El diagrama debe reflejar el 100% de la arquitectura.
+- No agrupes secciones complejas bajo una sola caja genérica (ej: "Configuración"). Debes desplegar las sub-vistas (ej: "Perfil", "Seguridad", "Suscripción", "Notificaciones").
+- Incluye flujos críticos de error o recuperación (ej: "Recuperar Contraseña", "Página 404", "Upgrade Paywall").
+- Si el sitemap es gigante, divídelo en sub-grafos por módulo (ej: `Sitemap_Auth`, `Sitemap_Dashboard`), pero **NUNCA omitas profundidad**.
+
+Crea un diagrama exhaustivo que visualice la jerarquía.
 **[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```mermaid
 graph TD
