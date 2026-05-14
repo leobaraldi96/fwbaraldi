@@ -7,11 +7,11 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
 ## [2.26.4] - 2026-05-14
 
-### 🛡️ Arquitectura y Hardening Final (Toolbox Cleanup)
-- **Cambiado:** **Bridge Architecture v3.** Reorganización total de las etapas metodológicas. Los motores tácticos (Engines) ahora residen en subcarpetas `/engines` dentro de cada etapa, separando el flujo secuencial (Momentos) de las herramientas opcionales.
-- **Eliminado:** **Deprecación de Tech Guardrails.** Se eliminaron del Toolbox todas las herramientas de implementación técnica (React, Next.js, Tailwind) para mantener el framework agnóstico y enfocado 100% en Lógica de Producto y Diseño Sistémico.
-- **Sincronizado:** Versión global `v2.26.4` unificada en todos los archivos core y skills.
-- **Corregido:** Reparación de enlaces internos en los índices de las 7 etapas tras la migración a la estructura `/engines`.
+### 🛡️ Arquitectura y Hardening Metodológico Final
+- **Añadido:** **Sprint de Hardening Metodológico (Skill Judge Audit).** Se integraron bloques de **NEVER Lists** (Anti-patrones) y **ALWAYS Lists** (Mandatos) en las 7 etapas metodológicas, elevando el scoring a **10/10**.
+- **Cambiado:** **Bridge Architecture v3.** Reorganización total de las etapas metodológicas. Los motores tácticos (Engines) ahora residen en subcarpetas `/engines` dentro de cada etapa.
+- **Eliminado:** **Deprecación de Tech Guardrails.** Se eliminaron herramientas de implementación (React, Next.js, Tailwind) para mantener el framework agnóstico.
+- **Sincronizado:** Versión global `v2.26.4` unificada en todos los archivos core, skills y metodologías tras la auditoría de integridad y reparación de enlaces internos.
 
 ## [2.26.3] - 2026-05-14
 
