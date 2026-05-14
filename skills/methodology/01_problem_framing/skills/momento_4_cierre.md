@@ -1,4 +1,4 @@
-# Skill: Momento 3 — Evaluación de Cierre y Decisión de Avance
+# Skill: Momento 4 — Evaluación de Cierre y Decisión de Avance
 
 ---
 
@@ -12,16 +12,16 @@ description: >
   iterar en Etapa 01 o pivotar el Problem Statement.
   Keywords: cierre, evaluación, hipótesis, confianza, decisión, avanzar, pivotar, iterar.
   NO LO USES sin tener el Informe de Research completo como input.
-skill_id: problem_framing_momento_3
+skill_id: problem_framing_momento_4
 version: "2.26.0"
 framework: Baraldi
 stage: "01 - Problem Framing"
-momento: 3
+momento: 4
 memory_key: "pf-decision-cierre"
-trigger: "Cuando el humano aprueba el Informe de Research del Momento 2 y declara cierre de recolección de datos"
+trigger: "Cuando el humano aprueba el Informe de Research del Momento 3 y declara cierre de recolección de datos"
 input_requerido:
   - Los 5 artefactos del Momento 1 (aprobados o en estado de revisión)
-  - Informe de Research completo del Momento 2
+  - Informe de Research completo del Momento 3
   - N definido de entrevistas y si fue alcanzado
   - Criterio de validación definido en el Outcome Definition
 output_format: "Informe de Cierre de Etapa 1 — documento Markdown — NO responder solo en chat"
@@ -171,6 +171,13 @@ Con base en los tres pasos anteriores, recomendás uno de tres caminos:
 
 ---
 
+### 💡 Soporte Opcional — Preparación de Pitch
+Si necesitas presentar estos hallazgos a socios, inversores o stakeholders, podés solicitar:
+- **"Preparame la narrativa para presentar esto"**: Activará la estrategia de Stakeholder Pitch para armar tus talking points y sugerencias de slides.
+- **"Armame un Q&A de este cierre"**: Para anticipar preguntas difíciles basadas en los gaps detectados.
+
+---
+
 ## 7. Decisión del humano
 
 > A completar por el humano después de leer este informe.
@@ -186,9 +193,9 @@ Firmado por:
 
 ## Metadata del artefacto
 - **Etapa:** 01 - Problem Framing
-- **Momento:** 3 — Evaluación de cierre
+- **Momento:** 4 — Evaluación de cierre
 - **Estado:** [BORRADOR]
-- **Inputs usados:** 5 artefactos Momento 1 + Informe de Research Momento 2
+- **Inputs usados:** 5 artefactos Momento 1 + Informe de Research Momento 3
 - **Pendiente:** Decisión y firma del humano responsable
 ```
 
@@ -239,4 +246,4 @@ Si el camino elegido fue **Pivotar**, guardar también bajo el Eje `pf-pivot-[fe
 
 ---
 
-*Framework Baraldi v2.26.0 · skills/methodology/01_problem_framing/skills/momento_3_cierre.md*
+*Framework Baraldi v2.26.0 · skills/methodology/01_problem_framing/skills/momento_4_cierre.md*

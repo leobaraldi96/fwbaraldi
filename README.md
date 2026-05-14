@@ -43,8 +43,6 @@ Tenemos diagramas y explicaciones de carácter gráfico para ilustrar de qué va
 
 👉 **[Ver Documentación Oficial de Arquitectura del Framework (ARQUITECTURA_CORE.md)](./ARQUITECTURA_CORE.md)**
 
-👉 **[Ver Diagramas Conceptuales Antiguos en Figma](https://www.figma.com/design/E8PBny6kx3RUriuyuM1uRu/Framework-Baraldi?node-id=0-1&t=7rqvxMKhPUemHSMQ-1)**
-
 ---
 
 ## 🗺️ De dónde deviene el Framework
@@ -163,69 +161,68 @@ Si sos un modelo de IA o estás configurando un agente, **LEER PRIMERO:**
 
 ---
 
+## 🧰 El Arsenal de Élite (v2.26.0)
+
+La Toolbox del Framework Baraldi no es una simple carpeta de utilidades; es un conjunto de **protocolos de alto impacto** diseñados para resolver situaciones críticas de producto, negocio y política organizacional.
+
+| Skill | Nombre | Propósito Estratégico |
+| :--- | :--- | :--- |
+| **01** | **Stakeholder Narrative** | Gestión de líderes difíciles (Anti-Lucio/Carlos/Maxi) y venta de ideas. |
+| **02** | **Advanced Prioritization** | Motor de ROI absoluto usando RICE, Kano y Score Baraldi. |
+| **03** | **Personal Impact Report** | Tu "Brag Document" automático para visibilizar tus logros. |
+| **04** | **Experimentation Lab** | Protocolo de validación científica para no diseñar por opinión. |
+| **05** | **Product Launch** | Orquestación total del Go-To-Market (Ingeniería + Mkt + Métricas). |
+| **06** | **Product Health QBR** | Reporte trimestral de salud para el C-Level. |
+| **07** | **Strategic Roadmap** | Planificación temporal basada en temas y horizontes. |
+| **08** | **AI-UX Design Brief** | Guía experta para diseñar experiencias con IA. |
+| **09** | **User Stories & AC** | El handoff técnico definitivo (Criterios de Aceptación blindados). |
+| **10** | **Global Readiness** | Auditoría de Internacionalización (i18n) y soporte RTL. |
+| **11** | **Concept Synthesis** | Transformación de ideas sueltas en propuestas de valor. |
+| **12** | **Accessibility Audit** | Certificación ética y técnica de inclusión universal. |
+
+---
+<!-- ⚠️ ATENCIÓN MANTENIMIENTO: PROHIBIDO RESUMIR O PODAR ESTA SECCIÓN. EL MAPA DEBE SER SIEMPRE COMPLETO Y DETALLADO. -->
 ## 📁 Estructura del repositorio
 
 ```text
 fwbaraldi/
-├── 00_boot/
-│   └── context.md                          ← System Orchestrator — cargar siempre primero
-│
+├── 00_boot/                                ← Identidad y Contexto inicial
 ├── skills/
-│   ├── core/
-│   │   ├── 00_core_guardrails/
-│   │   │   └── SKILL.md                    ← Guardián de la Metodología (Docs, Naming, Pureza)
-│   │   ├── 00_operational_hygiene/
-│   │   │   └── SKILL.md                    ← Protocolo de Branches, Commits Semánticos y Handoff
-│   │   ├── 00_project_health_audit/
-│   │   │   └── SKILL.md                    ← **Framework Doctor**: Auditoría de Salud y Coherencia
-│   │   └── 00_skill_evaluation/
-│   │       └── SKILL.md                    ← La "Aduana": Filtro anti-obesidad cognitiva (Skill Judge)
+│   ├── core/                               ← Consciencia del Framework (Reglas de Inmunidad)
+│   │   ├── 00_core_guardrails/             ← Barandas de contención y disciplina
+│   │   ├── 00_operational_hygiene/         ← Protocolos de ramas y handoff
+│   │   ├── 00_project_health_audit/        ← Framework Doctor (Auditoría de salud)
+│   │   └── 00_skill_evaluation/            ← Skill Judge (Filtro de calidad)
 │   │
-│   ├── methodology/
-│   │   ├── 01_problem_framing/
-│   │   │   ├── SKILL.md                    ← Orquestador de la etapa
-│   │   │   ├── skills/                     ← Instrucciones operativas (Momentos)
-│   │   │   └── references/                 ← Guías y benchmarks
-│   │   │
-│   │   ├── 02_system_analysis/
-│   │   │   ├── SKILL.md                    ← Orquestador de la etapa
-│   │   │   ├── skills/                     ← Instrucciones operativas (Momentos)
-│   │   │   └── references/                 ← Guías de mapeo
-│   │   │
-│   │   ├── 03_product_logic/
-│   │   ├── 04_information_architecture/    ← Sitemap, User Flows y Vocabulario Core
-│   │   ├── 05_interaction_design_ux/       ← Micro-interacciones y **VOICE.md**
-│   │   ├── 06_visual_design_ui/            ← Design System y **DESIGN.md**
-│   │   └── 07_handover_qa/                 [WIP]
+│   ├── methodology/                        ← El núcleo del proceso (End-to-End)
+│   │   ├── 01_problem_framing/             ← Hardened v2.26.0
+│   │   ├── 02_system_analysis/             ← Próximo Hit (Planificación)
+│   │   ├── 03_product_logic/               ← Lógica de negocio y UX-DNA
+│   │   ├── 04_information_architecture/    ← Jerarquía y Vocabulario Core
+│   │   ├── 05_interaction_design_ux/       ← Micro-interacciones y VOICE.md
+│   │   ├── 06_visual_design_ui/            ← Design System y DESIGN.md
+│   │   └── 07_handover_qa/                 ← Validación final y documentación
 │   │
-│   └── toolbox/                            ← Herramientas transversales y utilidades
-│       ├── SKILL.md
-│       ├── baraldi_visual_identity/         ← Identidad Visual (Inspiración Paul Rand)
-│       ├── tech_guardrails/                 ← Estándares Técnicos Expertos
-│           ├── jira_strategic_tasks/
-│           ├── nextjs_15_standards/
-│           ├── tailwind_4_standards/
-│           ├── electron_standards/
-│           ├── react_native_standards/
-│           ├── wordpress_performance/       ← Experto en WP
-│           ├── core_web_vitals/             ← Optimización LCP, INP, CLS
-│           ├── seo_audit/                   ← Estrategia SEO técnica
-│           ├── ux_writing_standards/        ← UX Writing y Micro-copy
-│           ├── uxr_scientific_testing/      ← Test de usabilidad cuantitativo
-│           ├── product_service_blueprint/   ← Conexión UI ↔ Backend
-│           ├── ixd_multimodal_feedback/     ← Feedback sensorial (Háptica)
-│           ├── accessibility_expert/        ← Accesibilidad WCAG 2.2 Pro
-│           ├── uxr_discovery_expert/        ← Cualitativo & JTBD
-│           ├── uxr_synthesis_expert/        ← Síntesis y Thematic Analysis
-│           ├── competitor_intelligence/     ← Análisis de brechas SEO/GEO
-│           └── product_metrics_expert/      ← Estrategia KPI & Recharts
+│   └── toolbox/                            ← Tu arsenal estratégico (v2.26.0)
+│       ├── 01_stakeholder_narrative_strategy.md
+│       ├── 02_advanced_prioritization_protocol.md
+│       ├── 03_personal_impact_report.md
+│       ├── 04_experimentation_and_ab_testing.md
+│       ├── 05_product_launch_protocol.md
+│       ├── 06_product_health_qbr_protocol.md
+│       ├── 07_strategic_product_roadmap.md
+│       ├── 08_ai_interaction_design_brief.md
+│       ├── 09_user_story_and_acceptance_criteria_protocol.md
+│       ├── 10_localization_and_global_readiness_protocol.md
+│       ├── 11_concept_synthesis_and_ideation_protocol.md
+│       └── 12_accessibility_audit_and_inclusion_protocol.md
 │
+├── scripts/
+│   ├── install.js                          ← Instalador CLI interactivo
+│   └── align.js                            ← Guardián de Integridad y Versiones
 │
-├── references/                             ← Recursos globales compartidos entre etapas
-│   └── README.md
-│
-├── DOCUMENTACION_IA.md                     ← Instrucciones para modelos de IA
-├── SECURITY.md                             ← Políticas de Seguridad y Privacidad
+├── 00_Backlog_Estrategico.md               ← Hoja de ruta del propio Framework
+├── SKILL.md                                ← Archivo maestro para Agentes IA
 └── README.md                               ← Este archivo
 ```
 
@@ -301,6 +298,10 @@ El Framework Baraldi es el resultado de más de 25 años de experiencia en el di
 
 ## 🤝 Colaboradores
 - **[Denisse Peduzzi](https://www.linkedin.com/in/denissepeduzzi/)** — *Content Designer*
+- **[Analia Lucero](https://www.linkedin.com/in/anabelucero/)** — *Functional & Business Analyst Sr*
+- **[Víctor Cámara](https://www.linkedin.com/in/camaravictor/)** — *Product & Web Platform Strategist*
+- **[Rodrigo Arija](https://www.linkedin.com/in/rodrigo-arija-29847514/)** — *CEO Manifesto Solutions (AI & Security Specialist)*
+- **[Hernán Novillo](https://www.linkedin.com/in/novufy/)** — *Art Director & Visual Designer*
 - **[Tu Nombre Aquí]** — *¿Quieres colaborar? ¡Envía un PR!*
 
 ---

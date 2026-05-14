@@ -1,4 +1,4 @@
-# Skill: Momento 2 — IA Auxiliar / Asistente on Vivo
+# Skill: Momento 3 — IA Auxiliar / Asistente on Vivo
 
 ---
 
@@ -12,11 +12,11 @@ description: >
   de Research completo al cierre del N de entrevistas.
   Keywords: entrevistas, notas, research, usuarios, evidencia, hipótesis, benchmark, saturación.
   NO LO USES para analizar datos sin tener notas o transcripciones reales como input.
-skill_id: problem_framing_momento_2
+skill_id: problem_framing_momento_3
 version: "2.26.0"
 framework: Baraldi
 stage: "01 - Problem Framing"
-momento: 2
+momento: 3
 memory_key: "pf-insight-principal"
 trigger: "Cuando el humano aprueba la metodología y herramientas y está listo para ejecutar entrevistas con usuarios reales"
 input_requerido:
@@ -73,7 +73,7 @@ Este es el momento más operativo del framework. No analizás estrategia — eje
 - [Comportamiento específico a evitar con este perfil]
 
 ### Metadata
-- Etapa: 01 | Momento: 2 | Estado: [BORRADOR]
+- Etapa: 01 | Momento: 3 | Estado: [BORRADOR]
 ```
 
 ---
@@ -120,7 +120,7 @@ Este es el momento más operativo del framework. No analizás estrategia — eje
 | H1: [texto] | Fortalecida / Debilitada / Sin impacto | [cita o comportamiento] |
 
 ### Metadata
-- Etapa: 01 | Momento: 2 | Estado: [BORRADOR]
+- Etapa: 01 | Momento: 3 | Estado: [BORRADOR]
 - Entrevista N° [número] de [N total]
 - Saturación alcanzada: Sí / No / Parcial
 ```
@@ -145,11 +145,12 @@ Este es el momento más operativo del framework. No analizás estrategia — eje
 > El desperdicio de data ya recolectada es un error metodológico inaceptable. Cada pregunta, campo o punto de datos que el humano invirtió tiempo en recolectar **DEBE ser analizado y representado**. No hay "preguntas secundarias" ni "datos de relleno". Todo tiene valor o fue un error de diseño del cuestionario — y en ese caso, señalarlo es parte del análisis.
 
 **Qué hacés en esta sub-tarea:**
-1. **Auditoría Total de Cobertura:** Listás TODAS las preguntas/campos del instrumento de recolección. Por cada una verificás que tiene análisis y representación en el informe. Si alguna no tiene → la añadís obligatoriamente.
-2. **Procesado Completo:** Procesás el conjunto completo de notas/encuestas y generás el Informe de Research.
-3. **Cruces de Datos (obligatorio proponer):** Al terminar el análisis por pregunta, identificás y proponés activamente cruces no obvios.
-4. **Consulta de Insights Sutiles (Humano):** Antes de cerrar la colección, preguntás explícitamente al humano: *"Más allá de los datos estadísticos, ¿identificaste algún patrón sutil, tensión o insight intuitivo que debamos elevar a la memoria sistémica?"*
-5. **Mentalidad Data-Driven:** Cada hallazgo debe ir acompañado de su implicancia para la toma de decisiones de producto. No es un reporte — es un motor de decisión.
+1. **Limpieza de Datos (Mandatoria):** Antes de analizar, auditás las notas/transcripciones. Descartás duplicados y marcás como `[VAGO/DESCARTADO]` cualquier nota que no tenga suficiente contexto para ser usada como evidencia.
+2. **Codificación Sistemática:** Asignás un código corto (2-5 palabras) a cada observación relevante para agrupar conceptos de forma técnica, no subjetiva.
+3. **Auditoría Total de Cobertura:** Listás TODAS las preguntas/campos del instrumento de recolección. Por cada una verificás que tiene análisis y representación en el informe. Si alguna no tiene → la añadís obligatoriamente.
+4. **Procesado Completo (Triangulación):** Generás el Informe de Research cruzando fuentes (entrevistas vs encuestas vs benchmark).
+5. **Consulta de Insights Sutiles (Humano):** Antes de cerrar la colección, preguntás explícitamente al humano: *"Más allá de los datos estadísticos, ¿identificaste algún patrón sutil, tensión o insight intuitivo que debamos elevar a la memoria sistémica?"*
+6. **Mentalidad Data-Driven:** Cada hallazgo debe ir acompañado de su implicancia para la toma de decisiones de producto.
 
 **Formato de entrega — Informe de Research:**
 **[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
@@ -161,14 +162,38 @@ Este es el momento más operativo del framework. No analizás estrategia — eje
 
 ---
 
-## Resumen ejecutivo
-[3-4 oraciones: qué encontramos, qué confirmamos, qué refutamos, qué no sabíamos]
+## Resumen ejecutivo (Triangulación de hallazgos)
+> ⚠️ **Mandato de Triangulación:** No resumas método por método. Cruza la información.
+- **Patrón Dominante:** [Hallazgo reforzado por >1 fuente de datos]
+- **Tensión Detectada:** [Contradicción entre lo que el usuario dice (encuesta) y lo que hace o siente (entrevista)]
+- **Estado de la Visión:** [¿El research apoya la visión original o sugiere que estamos mirando el problema equivocado?]
+- **Insight de "Poder":** [El descubrimiento más sorprendente que cambia la perspectiva del equipo]
 
 ---
 
-## Análisis exhaustivo por pregunta / dimensión
-> ⚠️ Esta sección es OBLIGATORIA y debe cubrir el 100% de las preguntas del instrumento.
-> Ningún dato recolectado puede quedar sin análisis.
+## Análisis de Triangulación y Contradicciones
+> Espacio para documentar dónde los datos no coinciden. La contradicción es donde vive la oportunidad de diseño más profunda.
+
+| Hallazgo | Fuente A (ej. Encuesta) | Fuente B (ej. Entrevista) | Veredicto / Tensión |
+| :--- | :--- | :--- | :--- |
+| [ej. Facilidad de uso] | 80% dice que es fácil. | Los usuarios tardan >2min en completar la tarea. | **Tensión:** Sesgo de complacencia o falta de autocrítica del usuario. |
+| [...] | | | |
+
+---
+
+## Análisis exhaustivo por pregunta / dimensión (Estructura OPIR)
+> ⚠️ **Mandato de Rigor:** Cada punto de datos analizado debe seguir la estructura de 4 bloques. No uses lenguaje dubitativo ("podría", "parece"). Si hay incertidumbre, declárala como "Riesgo de Conocimiento".
+
+### Dimensión/Pregunta: [Nombre de la pregunta]
+- **Observación:** [Lo que se vio/escuchó directamente, sin interpretación. Cita o dato crudo.]
+- **Patrón:** [Frecuencia y consistencia. ej: "8/10 participantes lo mencionaron; tendencia fuerte en perfil Junior"]
+- **Implicancia:** [Qué sugiere esto sobre el modelo mental o la fricción del usuario. Conectado a la hipótesis.]
+- **Recomendación:** [Acción sugerida para el equipo de producto respetando las restricciones del proyecto.]
+
+---
+
+## Resumen Estratégico ("So What?")
+> Un párrafo de 60 segundos enfocado en el impacto de negocio. ¿Qué significa todo este reporte para los objetivos del Q3 o el roadmap actual?
 
 ### Dimensión 1 — [nombre de la pregunta o bloque]
 - **Dato clave:** [número, %, N]
@@ -190,11 +215,31 @@ Este es el momento más operativo del framework. No analizás estrategia — eje
 
 ---
 
-## Patrones detectados
-### Patrón 1 — [nombre]
-- Aparece en: [N] de [N] respuestas/entrevistas
-- Evidencia: [citas o datos representativos]
-- Hipótesis que impacta: [H1 / H2 / nueva]
+## Patrones detectados (Affinity Mapping)
+> ⚠️ **Regla de Naming:** No uses etiquetas simples (ej: "Navegación"). Usa oraciones de hallazgo (ej: "Los usuarios abandonan el flujo al no entender el estado de carga").
+
+### Patrón 1 — [Oración de hallazgo descriptiva]
+- **Frecuencia:** Aparece en [N] de [N] participantes ([%] del total).
+- **Evidencia:** [Citas textuales más representativas con sus códigos]
+- **Hipótesis impactada:** [H1 / H2 / nueva]
+- **Nivel de confianza:** Alto / Medio / Bajo (según consistencia de la evidencia).
+
+---
+
+## Mapa de Pain Points
+> Clasificación de las fricciones detectadas por severidad e impacto. Herramienta de priorización para stakeholders.
+> ⚠️ **Regla:** Esta sección describe problemas, no soluciones. Las oportunidades de diseño se definen en la Etapa 03.
+
+| Pain Point | Severidad (1-5) | Frecuencia | Evidencia (cita) | Hipótesis que impacta |
+| :--- | :---: | :--- | :--- | :--- |
+| [descripción del problema] | [1-5] | [N/N usuarios] | *"[cita textual]"* | [H1 / H2 / nueva] |
+
+**Escala de severidad:**
+- **5** — Bloquea completamente la tarea. El usuario abandona.
+- **4** — Frustra significativamente. El usuario busca alternativas.
+- **3** — Molesta pero se sortea con esfuerzo extra.
+- **2** — Fricción menor. Impacto bajo en la experiencia.
+- **1** — Cosmético. No afecta la completitud de la tarea.
 
 ---
 
@@ -224,16 +269,113 @@ Este es el momento más operativo del framework. No analizás estrategia — eje
 
 ---
 
+## Autoevaluación del proceso de investigación
+> Esta sección audita la **calidad del proceso**, no la calidad de los datos. Son dos evaluaciones distintas: podés tener datos ricos de un proceso imperfecto — o datos pobres de un proceso impecable. Documentar ambos es lo que permite mejorar el siguiente ciclo.
+
+| Dimensión | Evaluación | Evidencia / Observación |
+| :--- | :---: | :--- |
+| **Efectividad del guión** | Alta / Media / Baja | ¿Qué preguntas generaron insights? ¿Cuáles produjeron respuestas vacías o inducidas? |
+| **Calidad del perfil de participantes** | Alta / Media / Baja | ¿Todos cumplían los criterios de selección reales? ¿Hubo perfiles que no aportaron? |
+| **Sesgo del entrevistador** | Detectado / No detectado | ¿Hubo momentos de inducción, anticipación de respuestas o confirmación de hipótesis? |
+| **Cobertura temática** | Completa / Parcial / Con gaps | ¿Alguna hipótesis quedó sin explorar por falta de tiempo o por diseño del guión? |
+
+**Aprendizajes para el próximo ciclo:**
+- [Qué cambiaría del guión]
+- [Qué perfil de participante fue más útil y cuál no]
+- [Qué sesgo identificar y evitar activamente]
+- [Qué preguntas agregaría que no estaban]
+
+---
+
 ## Recomendación de cierre
 [¿Los datos son suficientes para el Momento 3? ¿Hay algo crítico sin resolver?]
 
 ---
 
 ## Metadata
-- Etapa: 01 | Momento: 2 | Estado: [BORRADOR — pendiente validación humana]
+- Etapa: 01 | Momento: 3 | Estado: [BORRADOR — pendiente validación humana]
 - Inputs: [lista de entrevistas/encuestas procesadas]
 - Cobertura: [N/N preguntas analizadas]
 - Saturación: [alcanzada / no alcanzada / parcial]
+```
+
+---
+
+### Sub-tarea E — Síntesis de Personas basada en evidencia
+**Trigger:** "Generá las personas del proyecto." / "Armá los perfiles de usuario." / el Informe de Research ya fue aprobado.
+
+**🔴 Regla Fundamental — Anti-Ficción:**
+> Una persona del Baraldi Framework NO es una construcción hipotética. **Cada atributo debe poder citarse con evidencia real** del Informe de Research. Si un atributo no tiene respaldo en datos, se deja vacío y se marca como `[SIN EVIDENCIA — pendiente]`. Está prohibido "completar" con suposiciones plausibles.
+
+**Qué hacés en esta sub-tarea:**
+1. **Definición de Ejes Conductuales:** Antes de crear fichas, identificás los 2 ejes que más separan a los participantes (ej: Expertise técnico vs. Frecuencia de uso).
+2. **Clusterización por Comportamiento:** Agrupás a los participantes según su posición en esos ejes.
+3. **Generación de Personas Anti-Ficción:** Creás 2-4 personas. Cada atributo (meta, dolor, conducta) DEBE estar linkeado a una cita o dato real. Si no hay evidencia, se marca como `[SIN EVIDENCIA - SUPUESTO]`.
+4. **Validación de Arquetipo:** El nombre de la persona debe reflejar su comportamiento principal, no su demografía.
+5. **Identificación de Target y Gaps:** Definís cuál es la persona prioritaria para el diseño y qué segmentos no pudimos cubrir en este ciclo.
+
+**Qué hacés (Flujo operativo):**
+1. Agrupás los patrones del Informe de Research por perfil de usuario (si hay más de uno).
+2. Por cada perfil detectado, generás un archivo `PERSONA_[nombre].md` en `docs-fwbaraldi/`.
+3. Al finalizar, hacés un `mem_save` con tag `pf-personas` y el resumen de arquetipos.
+
+**Formato de entrega — Persona:**
+**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
+```markdown
+# PERSONA — [Nombre ficticio representativo]
+
+## Personas de Comportamiento
+
+### [Nombre], [Arquetipo Conductual]
+> "[Cita textual real del research que captura su esencia]"
+
+- **Eje Conductual:** [Posición en los ejes definidos]
+- **Modelo Mental:** [Cómo piensa sobre el problema: expectativas, confusiones, nivel de confianza]
+- **Metas y Motivaciones:** [Qué quiere lograr y por qué]
+- **Dolores y Fricciones:** [Qué lo frena o frustra hoy]
+- **Needs vs. Wants:**
+    - **Dice que quiere:** [Lo declarado en entrevistas]
+    - **Realmente necesita:** [Lo inferido por comportamiento observado]
+- **Snapshot "Momento de Verdad":** [Breve narrativa de 3 oraciones de su encuentro con el problema/producto]
+- **Evidencia:** [Lista de citas o IDs de participantes que alimentan esta persona]
+
+---
+
+### Análisis Estratégico de Segmentos
+- **Ejes de Diferenciación:** [Descripción de los ejes usados para separar estas personas]
+- **Target Primario de Diseño:** [A quién priorizamos y por qué]
+- **Gaps de Investigación:** [Segmentos o comportamientos que detectamos pero no pudimos profundizar]
+
+---
+
+## 3. Pain Points (referencia cruzada)
+> Ver Mapa de Pain Points del Informe de Research para severidad y frecuencia completa.
+
+| Pain Point | Severidad | Respuesta emocional | Cita |
+| :--- | :---: | :--- | :--- |
+| [descripción] | [1-5] | [frustración / ansiedad / resignación...] | *"[cita textual]"* |
+
+## 4. Comportamientos y contexto de uso
+- **Cómo resuelve hoy el problema:** [workarounds actuales — sin juzgar]
+- **Herramientas y canales que usa:** [las reales, citadas del research]
+- **Cuándo y dónde:** [contexto físico/digital de uso — ej: "en el celular, en tránsito"]
+- **Proceso de decisión:** [cómo evalúa y elige — basado en observación]
+- **Evidencia:** [referencias concretas]
+
+## 5. Arco emocional (input para Etapa 05)
+| Momento clave de interacción | Estado emocional | Oportunidad de tono |
+| :--- | :--- | :--- |
+| [ej: Primera vez que abre la app] | [ej: Ansioso, expectante] | [ej: Tono cálido, célébrar el primer paso] |
+| [ej: Encuentra un error] | [ej: Frustrado] | [ej: Tono directo, sin humor, dar solución] |
+
+> ⚠️ Esta tabla es el puente directo con la **Matriz de Tono** del VOICE.md (Etapa 05 / Momento 1).
+
+---
+## Metadata de la Persona
+- **Basada en:** [N] entrevistas / [N] respuestas de encuesta
+- **Saturación del perfil:** [Alta / Media / Baja]
+- **Campos sin evidencia:** [listar si aplica, o "Ninguno"]
+- **Estado:** [BORRADOR — pendiente validación humana]
 ```
 
 ---
@@ -294,9 +436,12 @@ Este es el momento más operativo del framework. No analizás estrategia — eje
 - [ ] Si por requerimiento técnico es necesario tocar una sección adyacente: notificar al humano explícitamente qué se tocó y por qué.
 
 ### Cobertura de Datos
-- [ ] Todas las preguntas del instrumento tienen representación visual o analítica en el informe.
-- [ ] La sección de "Análisis por dimensión" tiene un bloque por cada pregunta/campo del formulario.
-- [ ] Al final del informe: puntaje de cobertura visible `[N/N preguntas representadas]`.
+- [ ] El análisis de cada dimensión sigue la estructura OPIR (Observación, Patrón, Implicancia, Recomendación)
+- [ ] No se utiliza lenguaje dubitativo ("podría", "quizás") en los hallazgos confirmados
+- [ ] El "Resumen Estratégico" conecta los hallazgos con el impacto de negocio (So What?)
+- [ ] Todas las preguntas del instrumento tienen representación visual o analítica en el informe
+- [ ] La sección de "Análisis por dimensión" tiene un bloque por cada pregunta/campo del formulario
+- [ ] Al final del informe: puntaje de cobertura visible `[N/N preguntas representadas]`
 
 ---
 
@@ -314,4 +459,4 @@ Al generar el Informe de Research final (Sub-tarea D), guardar en `memory/barald
 
 ---
 
-*Framework Baraldi v2.26.0 · skills/methodology/01_problem_framing/skills/momento_2_live_assistant.md*
+*Framework Baraldi v2.26.0 · skills/methodology/01_problem_framing/skills/momento_3_live_assistant.md*

@@ -1,0 +1,102 @@
+import fs from 'fs';
+import path from 'path';
+import chalk from 'chalk';
+
+const rootDir = process.cwd();
+
+console.log(chalk.bold.blue('\n🔍 Iniciando Auditoría Interna del Framework Baraldi (v2.26.0)\n'));
+
+let issues = 0;
+
+function reportIssue(msg) {
+    console.log(chalk.red(`  ❌ [ERROR] ${msg}`));
+    issues++;
+}
+
+function reportSuccess(msg) {
+    console.log(chalk.green(`  ✅ [OK] ${msg}`));
+}
+
+// 1. Check Versiones
+const pkg = JSON.parse(fs.readFileSync(path.join(rootDir, 'package.json'), 'utf8'));
+const currentVersion = pkg.version;
+
+// Check README
+const readme = fs.readFileSync(path.join(rootDir, 'README.md'), 'utf8');
+if (!readme.includes(currentVersion)) reportIssue(`Versión ${currentVersion} no encontrada en README.md`);
+else reportSuccess(`Versión sincronizada en README.md`);
+
+// Check SKILL.md
+const rootSkill = fs.readFileSync(path.join(rootDir, 'SKILL.md'), 'utf8');
+if (!rootSkill.includes(currentVersion)) reportIssue(`Versión ${currentVersion} no encontrada en SKILL.md (raíz)`);
+else reportSuccess(`Versión sincronizada en SKILL.md`);
+
+// Check CHANGELOG
+const changelog = fs.readFileSync(path.join(rootDir, 'CHANGELOG.md'), 'utf8');
+if (!changelog.includes(`## [${currentVersion}]`)) reportIssue(`No existe entrada para la versión ${currentVersion} en CHANGELOG.md`);
+else reportSuccess(`Entrada encontrada en CHANGELOG.md`);
+
+// 2. Check Toolbox Integrity
+const toolboxDir = path.join(rootDir, 'skills', 'toolbox');
+const toolFiles = fs.readdirSync(toolboxDir).filter(f => f.endsWith('.md') && f !== 'SKILL.md');
+const toolboxCount = toolFiles.length;
+
+console.log(chalk.yellow(`\n📦 Auditando Toolbox (${toolboxCount} herramientas detectadas)...`));
+
+toolFiles.forEach(file => {
+    // Normalizamos el nombre del archivo para la búsqueda
+    const toolName = file.replace('.md', ''); // ej: 01_stakeholder_narrative_strategy
+    const toolNameNoNumber = file.split('_').slice(1).join('_').replace('.md', ''); // ej: stakeholder_narrative_strategy
+    const toolClean = toolNameNoNumber.replace(/_/g, ' '); // ej: stakeholder narrative strategy
+
+    // Buscamos todas las variaciones posibles
+    const searchPatterns = [
+        toolName.toLowerCase(), // 01_stakeholder_narrative_strategy
+        toolName.toLowerCase().replace(/_/g, ' '), // 01 stakeholder narrative strategy
+        toolClean.toLowerCase(), // stakeholder narrative strategy
+        toolClean.toLowerCase().replace(/ab/g, 'a b'), // stakeholder narrative a b testing
+        toolNameNoNumber.toLowerCase() // stakeholder_narrative_strategy
+    ];
+
+    const readmeLow = readme.toLowerCase().replace(/\//g, ' ');
+    const skillLow = rootSkill.toLowerCase().replace(/\//g, ' ');
+
+    const foundInReadme = searchPatterns.some(p => readmeLow.includes(p));
+    const foundInSkill = searchPatterns.some(p => skillLow.includes(p));
+
+    if (!foundInReadme) {
+        reportIssue(`Herramienta '${file}' no está listada correctamente en el README.md`);
+    }
+    if (!foundInSkill) {
+        reportIssue(`Herramienta '${file}' no está listada correctamente en el SKILL.md maestro`);
+    }
+});
+
+if (toolboxCount === 12) reportSuccess(`Conteo de Toolbox correcto (12 de 12)`);
+else reportIssue(`Se detectaron ${toolboxCount} herramientas, se esperaban 12.`);
+
+// 3. Check Guardrails
+const guardrails = fs.readFileSync(path.join(rootDir, 'skills', 'core', '00_core_guardrails', 'SKILL.md'), 'utf8');
+const guardrailsClean = guardrails.toLowerCase();
+if (!guardrailsClean.includes('prohibido resumir') && !guardrailsClean.includes('inmunidad del mapa')) {
+    reportIssue(`La Cláusula de Inmunidad del Mapa no está presente en los Core Guardrails`);
+} else {
+    reportSuccess(`Cláusula de Inmunidad del Mapa verificada`);
+}
+
+// 4. Check Etapas Metodología
+const methodologyDir = path.join(rootDir, 'skills', 'methodology');
+for (let i = 1; i <= 7; i++) {
+    const etapa = `0${i}`;
+    const etapaDir = fs.readdirSync(methodologyDir).find(d => d.startsWith(etapa));
+    if (!etapaDir) reportIssue(`Falta la carpeta de la Etapa ${etapa} en methodology/`);
+    else reportSuccess(`Etapa ${etapa} presente: ${etapaDir}`);
+}
+
+console.log('\n------------------------------------------------');
+if (issues === 0) {
+    console.log(chalk.bold.green('🚀 RESULTADO: FRAMEWORK NIVELADO Y LISTO PARA SUBIR.'));
+} else {
+    console.log(chalk.bold.red(`🛑 RESULTADO: SE ENCONTRARON ${issues} INCONSISTENCIAS. NO SUBIR.`));
+}
+console.log('------------------------------------------------\n');

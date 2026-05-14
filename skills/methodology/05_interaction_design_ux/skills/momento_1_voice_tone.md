@@ -35,8 +35,21 @@ Una vez definida la Voz, diseña con el usuario las matrices operativas:
 1. **Matriz de Tono Variables:** Cómo cambia la voz según el estado (Éxito, Error Crítico, Onboarding, Loading).
 2. **Estándares de Microcopy:**
     *   **Botones (CTAs):** ¿Verbos en infinitivo ("Guardar") o primera persona ("Guardar mi perfil")?
-    *   **Empty States:** ¿Educativos o humorísticos?
-    *   **Mensajes de Error:** Prohibido culpar al usuario. Estructura: *Qué pasó + Por qué + Cómo solucionarlo*.
+    *   **Empty States:** Deben responder 3 preguntas: *¿Qué es este espacio? / ¿Por qué está vacío? / ¿Cómo empiezo?*. Nunca usar solo un ícono vacío sin texto de orientación.
+    *   **Mensajes de Error:** Prohibido culpar al usuario. Estructura fija: *Qué pasó + Por qué + Cómo solucionarlo*. (Ej: *"No pudimos guardar los cambios. Revisa tu conexión e inténtalo de nuevo."*)
+    *   **Tooltips:** Máximo 150 caracteres. Un solo concepto por globo. Nunca esconder información crítica dentro de un tooltip.
+3. **Estados Temporales y de Confirmación** *(patrón incorporado desde AI UX Playground)*
+    *   **Carga / Progreso — Regla de los 3 umbrales:**
+        | Tiempo de espera | Qué mostrar |
+        | :--- | :--- |
+        | **< 2 segundos** | Solo spinner visual, sin texto |
+        | **2 – 10 segundos** | Mensaje de estado descriptivo (ej: *"Guardando cambios..."*) |
+        | **> 10 segundos** | Duración estimada + porcentaje de progreso (ej: *"Procesando tu video. Suele tomar 1-2 minutos."*) |
+    *   **Mensajes de Éxito — Más allá de la confirmación:**
+        *   ❌ Genérico: *"¡Éxito!"*
+        *   ✅ Específico: *"Tu perfil ha sido actualizado."*
+        *   ✅ Con datos: *"Mensaje enviado a usuario@ejemplo.com"* / *"Pedido #12345 confirmado."*
+        *   ✅ Con siguiente paso: *"Contraseña cambiada. Ya puedes iniciar sesión con tu nueva contraseña."*
 
 ### Paso 4: Auditoría Semántica (Feedback Loop con Etapa 04)
 **[CRÍTICO - EVITAR DRIFT ARQUITECTÓNICO]:** Antes de aprobar el microcopy final o los JSON, la IA debe cruzar los términos elegidos aquí con el artefacto de la Etapa 04: `04_VOCABULARY.md`.

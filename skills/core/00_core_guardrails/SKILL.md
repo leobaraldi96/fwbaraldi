@@ -41,6 +41,7 @@ Esta es la regla de oro para evitar la degradación del conocimiento en el ecosi
 - **Sincronización Total:** No se considera una tarea terminada hasta que todos los documentos de soporte (`README.md`, `ARQUITECTURA_CORE.md`, `CHANGELOG.md` y artefactos en `docs-fwbaraldi/`) estén perfectamente sincronizados con el nuevo estado del sistema o del código.
 - **Estado Real, no Deseado:** La documentación debe describir el comportamiento **actual** y verificado, nunca promesas de funciones futuras no implementadas.
 - **Limpieza de Referencias:** Al eliminar o renombrar un archivo o carpeta, se deben limpiar inmediatamente todas las menciones a estas en el resto de la documentación.
+- **Inmunidad del Mapa (README Map Integrity):** Queda terminantemente PROHIBIDO resumir, podar o simplificar la sección "Estructura del Repositorio" en el README. Este mapa es vital para la navegación humana y agéntica; debe mantenerse siempre detallado, completo y fiel a la jerarquía de archivos real.
 
 ---
 

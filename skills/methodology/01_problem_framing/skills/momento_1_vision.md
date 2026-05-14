@@ -82,10 +82,26 @@ Entregás un documento Markdown con estas secciones exactas:
 
 ---
 
-## Artefacto 1 — Problem Statement [BORRADOR]
-> Una oración. Formato: "[usuario] no puede [acción] because [causa raíz], lo que genera [impacto medible]."
+## Artefacto 1 — Problem Statement (Alta Densidad) [BORRADOR]
+> Definición blindada del problema, su escala, evidencia y límites de acción.
 
-[Problem Statement]
+**1. La Sentencia (Problem Statement):**
+`[Quién] necesita [qué] porque [por qué]. Actualmente [status quo], lo que resulta en [impacto medible].`
+
+**2. Contexto y Escala:**
+- **Urgencia (¿Por qué ahora?):** Disparadores y criticidad temporal.
+- **Alcance:** Quiénes son los afectados directos e indirectos y a qué escala (Nº de usuarios/equipos).
+
+**3. La Necesidad y Workarounds:**
+- **Dolor Real:** Qué intentan resolver y qué "parches" o procesos manuales usan hoy (con su costo asociado).
+- **Resultado Deseado:** Cómo se ve el "éxito" desde la perspectiva del usuario.
+
+**4. Evidencia y Asunciones:**
+- **Data/Insights:** Qué métricas o hallazgos previos respaldan este problema.
+- **Asunciones Críticas:** Qué estamos dando por sentado y qué requiere validación urgente en el Momento 2.
+
+**5. Fuera de Alcance (Out of Scope):**
+- Clarificación de los límites del problema para evitar el crecimiento descontrolado del proyecto.
 
 ---
 
@@ -109,14 +125,27 @@ Entregás un documento Markdown con estas secciones exactas:
 
 ---
 
-## Artefacto 4 — Success Metrics [BORRADOR]
-> Cómo vamos a saber que el problema fue resuelto. Con baseline y target.
+## Artefacto 4 — OKRs & Strategic Alignment [BORRADOR]
+> Define el norte del proyecto mediante Objetivos cualitativos y Resultados Clave cuantitativos.
 
-**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
-| Métrica | Tipo | Baseline | Target | Cómo se mide |
-|---|---|---|---|---|
-| North Star | Principal | ... | ... | ... |
-| ... | Secundaria | ... | ... | ... |
+**Objetivo Estratégico:** [Frase aspiracional, inspiradora y clara — ej: "Dominar el mercado de micro-logística urbana"]
+- **Por qué importa:** [Impacto en el negocio/usuario]
+- **Alineación:** [Cómo escala a la estrategia general de la compañía]
+
+| Key Result (KR) | Baseline | Target | Fuente de Datos | Cadencia |
+| :--- | :---: | :---: | :--- | :--- |
+| [Métrica 1 - Outcome] | [actual] | [meta] | [ej: GA4 / Mixpanel] | [Semanal] |
+| [Métrica 2 - Calidad] | [actual] | [meta] | [ej: Zendesk / NPS] | [Mensual] |
+| [Métrica 3 - Negocio] | [actual] | [meta] | [ej: Stripe / CRM] | [Trimestral] |
+
+**Iniciativas de Soporte (Hipótesis de Trabajo):**
+- [Iniciativa 1]: [Breve descripción de qué proyecto/acción moverá el KR1]
+- [Iniciativa 2]: [Breve descripción de qué proyecto/acción moverá el KR2]
+
+**Criterio de Graduación (Éxito):**
+- **0.3 (Mínimo):** [Qué significa fallar con aprendizaje]
+- **0.7 (Éxito Real):** [El objetivo ambicioso pero alcanzable]
+- **1.0 (Extraordinario):** [El escenario ideal]
 
 ---
 

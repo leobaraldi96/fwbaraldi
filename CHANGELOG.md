@@ -22,6 +22,18 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 - **Mandato de Alta Resolución (Deep Mapping):** Directiva estricta para evitar "Sitemaps Perezosos", obligando a la IA a mapear todas las sub-vistas y flujos de error, subdividiendo diagramas si es necesario.
 - **Protocolos de UX Writing de Clase Mundial:** Incorporación de los 4 Pilares (Purposeful, Concise, Conversational, Clear) y reglas estrictas de Accesibilidad Cognitiva para lectores de pantalla.
 - **Handoff Multilingüe (i18n):** Creación obligatoria de diccionarios de localización JSON para agilizar el puente técnico entre UXW y Frontend.
+
+### 💎 Arsenal de Élite y Estructura Intocable (v2.26.0 - Hardenización)
+#### Añadido
+- **Toolbox de Alta Densidad (12 Skills):** Inyección masiva de 12 herramientas tácticas hardenizadas (desde *Stakeholder Narrative* hasta *Accessibility Audit*). Cada herramienta incluye protocolos de ROI, NEVER Lists y visión senior.
+- **Cláusula de Mapa Intocable (README Integrity):** Mandato sistémico que prohíbe el resumen o poda de la estructura del repositorio. El mapa ahora es exhaustivo y transparente para garantizar la navegabilidad.
+- **Hardenización de Etapa 01 (Problem Framing):** Actualización de la metodología de visión inicial a estándar de "Alta Densidad", eliminando generalidades y enfocándose en OKRs y Estrategia de Posicionamiento.
+- **Ampliación del Muro de Colaboradores:** Incorporación de Analia Lucero, Víctor Cámara, Rodrigo Arija y Hernán Novillo en reconocimiento a su aporte multidisciplinar al ecosistema.
+
+#### Eliminado
+- **Diagramas de Figma Obsoletos:** Eliminación de enlaces a diagramas conceptuales antiguos que no reflejaban el estado actual y hardened del framework.
+
+---
 - **Auditoría Semántica Transversal:** Bucle de validación (Feedback Loop) entre el microcopy generado en la Etapa 05 y el Vocabulario maestro de la Etapa 04 para evitar fracturas ontológicas.
 
 #### Mejorado

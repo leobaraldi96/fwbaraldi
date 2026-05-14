@@ -1,41 +1,30 @@
----
-name: baraldi-toolbox-core
-description: Herramientas transversales y ecosistema de habilidades externas.
----
+# 🧰 Toolbox Core (v2.26.0)
 
-# 🧰 Toolbox (Caja de Herramientas)
+Este es el arsenal estratégico del **Framework Baraldi**. Estas herramientas son transversales y pueden ser invocadas en cualquier etapa del proyecto mediante su nombre o ID.
 
-Esta carpeta contiene habilidades especializadas que pueden ser invocadas en cualquier etapa del framework para potenciar las capacidades de la IA.
+## 🛠️ Inventario de Herramientas de Alta Densidad
 
-## 🧱 Habilidades Internas
-- **baraldi_visual_identity:** El ADN visual del director (Modernist Tech).
-- **tech_guardrails:** 
-    *   `tech_guardrails/react_native_standards/`
-    *   `tech_guardrails/wordpress_performance/`
-    *   `tech_guardrails/core_web_vitals/`
-    *   `tech_guardrails/seo_audit/`
-    *   `tech_guardrails/ux_writing_standards/`
-    *   `tech_guardrails/uxr_scientific_testing/`
-    *   `tech_guardrails/product_service_blueprint/`
-    *   `tech_guardrails/good_services_service_design/`
-    *   `tech_guardrails/ixd_multimodal_feedback/`
-    *   `tech_guardrails/accessibility_expert/`
-    *   `tech_guardrails/uxr_discovery_expert/`
-    *   `tech_guardrails/uxr_synthesis_expert/`
-    *   `tech_guardrails/competitor_intelligence/`
-    *   `tech_guardrails/product_metrics_expert/`
-    Estándares expertos de desarrollo (Next.js, Tailwind, etc.).
+1.  **01_Stakeholder Narrative Strategy:** Gestión política, narrativa de impacto y protocolos de defensa (Anti-Lucio/Carlos/Maxi).
+2.  **02_Advanced Prioritization Protocol:** Scoring basado en RICE, Kano y ROI Baraldi.
+3.  **03_Personal Impact Report:** Generación de hitos de carrera y visibilidad de valor.
+4.  **04_Experimentation & A/B Testing:** Protocolos de validación científica y aprendizaje.
+5.  **05_Product Launch Protocol:** Orquestación de Ingeniería, GTM y Métricas post-lanzamiento.
+6.  **06_Product Health QBR:** Reporte de salud trimestral y gobernanza estratégica.
+7.  **07_Strategic Product Roadmap:** Planificación de horizontes (Now/Next/Later).
+8.  **08_AI Interaction Design Brief:** Especificación de experiencia para features de IA.
+9.  **09_User Story & Acceptance Criteria:** Contrato de ejecución y handoff blindado.
+10. **10_Localization & Global Readiness:** Auditoría de i18n, L10n y soporte RTL.
+11. **11_Concept Synthesis & Ideation:** Convergencia de ideas y diseño de propuestas de valor.
+12. **12_Accessibility Audit & Inclusion:** Certificación de calidad inclusiva (WCAG).
 
+## 🧱 Guías Técnicas (Tech Guardrails)
+- **Visual Identity:** ADN visual Modernist Tech.
+- **Performance & SEO:** Estándares de Core Web Vitals y optimización.
+- **UX Writing:** Estándares de microcopy e i18n automation.
+- **Research Standards:** Protocolos de moderación y síntesis experta.
 
-## 🌐 Ecosistema de Contexto Externo (Recomendado)
-
-Si el proyecto requiere una tecnología que no está cubierta por nuestras habilidades internas, el Framework Baraldi delega la autoridad técnica a ecosistemas especializados:
-
-### **Context7.com**
-Context7 es una plataforma de **"Context-as-a-Service"**. Provee documentación técnica optimizada (Skills) para que las IAs trabajemos con precisión quirúrgica, evitando errores por obsolescencia. Es nuestra **Biblioteca de Consulta**.
-
-### **Skills.sh**
-Creado por **Vercel Labs**, es un ecosistema abierto de habilidades procedimentales. Si Context7 es el manual, Skills.sh es el **Entrenamiento**. Permite a la IA aprender nuevos "trucos" y flujos de ejecución de forma instantánea.
+## 🚀 Cómo invocar una herramienta
+El humano puede pedir: *"Usa la Skill 05 para planificar el lanzamiento"* o *"Aplica el protocolo Anti-Lucio para este feedback"*. La IA debe cargar inmediatamente el archivo correspondiente en `skills/toolbox/`.
 
 ---
-*Framework Baraldi v2.26.0 · Hub de Conocimiento.*
+*Framework Baraldi v2.26.0 · Toolbox Central Orchestrator.*

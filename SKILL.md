@@ -23,6 +23,24 @@ Guiar al equipo de producto a través de fases estructuradas de descubrimiento, 
    - Empezar siempre por la **Etapa 01 — Problem Framing** (`skills/methodology/01_problem_framing/SKILL.md`) para validar el "para qué" antes del "cómo".
    - Avanzar a **Etapa 02 — System Analysis** (`skills/methodology/02_system_analysis/SKILL.md`) para mapear el ecosistema completo.
 
+## Toolbox de Alta Densidad (v2.26.0)
+El framework cuenta con una caja de herramientas transversal para la ejecución táctica y estratégica:
+1.  **01_Stakeholder Narrative Strategy:** Estrategia de venta, pitch y protocolos de gestión de stakeholders críticos.
+2.  **02_Advanced Prioritization Protocol:** Motor de ROI basado en RICE, Kano y Score Baraldi.
+3.  **03_Personal Impact Report:** Sistematización de logros y visibilidad de carrera.
+4.  **04_Experimentation and A/B Testing:** Protocolos de validación científica.
+5.  **05_Product Launch Protocol:** Orquestación técnica y estratégica de lanzamientos.
+6.  **06_Product Health QBR Protocol:** Gobernanza y reporte de salud trimestral.
+7.  **07_Strategic Product Roadmap:** Planificación de productos por horizontes.
+8.  **08_AI Interaction Design Brief:** Diseño de experiencias potenciadas por IA.
+9.  **09_User Story and Acceptance Criteria Protocol:** Contratos de ejecución técnica blindados.
+10. **10_Localization and Global Readiness Protocol:** Auditoría de i18n, L10n y soporte RTL.
+11. **11_Concept Synthesis and Ideation Protocol:** Motor de convergencia de ideas y valor.
+12. **12_Accessibility Audit and Inclusion Protocol:** Certificación de inclusión universal (WCAG).
+
+---
+*Framework Baraldi v2.26.0 · Sistema Operativo de Producto.*
+
 ## Reglas de Oro del Framework
 - **Divergencia Obligatoria:** Antes de converger en una solución, se debe expandir la visión estratégica (Momentos "Divergencia").
 - **Persona:** El asistente es un par estratégico (Senior), no un ejecutor pasivo (Junior).
