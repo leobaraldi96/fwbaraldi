@@ -325,4 +325,4 @@ Si el Paso -3 NO encontró memoria de ningún proyecto existente:
 
 ---
 
-*Framework Baraldi v2.26.0 · context.md · Boot Layer 00 (Recovery Token Protocol)*
+*Framework Baraldi v2.26.3 · context.md · Boot Layer 00 (Recovery Token Protocol)*

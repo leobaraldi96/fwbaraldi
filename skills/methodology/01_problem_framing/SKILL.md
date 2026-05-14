@@ -10,7 +10,7 @@ description: >
   SIEMPRE usalo cuando el humano mencione "arrancamos", "nuevo proyecto", "etapa 1",
   "problem framing" o provea el contexto inicial de un proyecto.
   NO LO USAR con proyectos que ya tienen la Etapa 01 cerrada.
-version: "2.26.0"
+version: "2.26.3"
 framework: Baraldi
 stage: "01"
 stage_name: "Problem Framing"
@@ -73,6 +73,24 @@ status: complete
 **Archivo:** `skills/momento_0_anuncio.md`
 **Activar cuando:** El humano menciona que quiere iniciar un proyecto, la etapa 01 o escribe "arrancamos".
 **Produce:** Bienvenida humanizada, explicación de objetivos y solicitud de 5 inputs clave (Intake).
+
+### [PASO 0] Ecosystem Setup (Configuración del Entorno)
+Antes de iniciar el Problem Framing, el Agente debe solicitar y documentar:
+1. **Composición del Equipo:** ¿Lobo Solitario o Equipo? (Si es equipo, listar integrantes y roles: Dev, UX, PM, etc.).
+2. **Gobernanza:** ¿Es un proyecto propio (In-house) o para un tercero (Cliente/Stakeholders)?
+3. **Nivel de Burocracia Metodológica:** Informar al usuario que el framework ajustará la profundidad de los workshops y facilitación basándose en este setup.
+4. **Reconfigurabilidad:** Indicar que este setup puede ser redefinido en cualquier momento si el equipo crece o cambia el contexto.
+5. **Brand & Identity Assets (Herencia de Marca):** ¿Existe un Brandbook, manual de marca o librería de iconos mandatoria?
+    *   **Si SÍ existe:** Capturar y auditar su viabilidad digital.
+    *   **Si NO existe:** El Agente DEBE actuar como mentor técnico, guiando al usuario a elegir cimientos sólidos mediante la reflexión:
+        *   **Tipografía:** Invitar a explorar [Google Fonts](https://fonts.google.com/). Explicar la importancia de las **Web Fonts** (Rendimiento, Consistencia y Licencias).
+        *   **Iconografía:** Invitar a explorar [Lucide](https://lucide.dev/) o [Phosphor](https://phosphoricons.com/). Explicar la ventaja de los **vectores (SVG)** para la escalabilidad.
+    *   **Misión:** El Agente explica los "porqués" técnicos, pero el **Humano decide**.
+6. **Stack Tecnológico & Plataforma:** ¿Se ha definido el uso de un framework (ej. Bootstrap, Tailwind) o plataforma específica (ej. WordPress, Shopify, SAP)?
+    *   **Escenario A (Framework/Plataforma):** Explicar que estos imponen **"Límites Creativos Saludables"**. El Agente debe guiar al usuario a respetar el sistema nativo para evitar sobrecostos.
+    *   **Escenario B (A Medida / Vanilla):** Explicar que la libertad es absoluta, pero la responsabilidad de consistencia es mayor. El **DESIGN.md (E06)** será la única "ley" del sistema. Sin un framework externo, cada decisión atómica debe ser documentada con rigor para evitar caos en el desarrollo.
+    *   **Registro Obligatorio:** Todas estas definiciones DEBEN quedar plasmadas en la **PRODUCT_MASTER_MATRIX.md (Skill 39)** dentro de la sección inicial **"0. Foundational DNA"**. Este artefacto es la "Cápsula del Tiempo" que garantiza que el ADN del producto no se degrade y pueda ser auditado en las Etapas 04, 05, 06 y 07.
+    *   **Misión Final:** El Agente entrega al usuario el link a este artefacto como el primer gran hito de alineación del proyecto.
 
 ### Momento 1 — Visión y Amplificación de Campo
 **Archivo:** `skills/momento_1_vision.md`
@@ -166,6 +184,15 @@ Si el humano selecciona la ruta **"Dashboard"**, el framework tiene la regla est
 
 ---
 
+## 🛠️ Integración con la Toolbox (Bridge Architecture)
+Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
+1. **Skill 01 (Stakeholder Narrative Strategy):** 
+   - **En Equipo:** Aplicar para blindar el *Stakeholder Map* y anticipar resistencias políticas.
+   - **Solo:** Utilizar para refinar la narrativa del producto ante inversores, partners o el mercado.
+2. **Skill 14 (Business Strategy & Growth):** Aplicar siempre para asegurar que el problema detectado tenga impacto directo en el ROI.
+
+---
+
 ## Artefactos de salida de la etapa
 
 | Artefacto | Momento | Formato |
@@ -230,4 +257,4 @@ Si el humano selecciona la ruta **"Dashboard"**, el framework tiene la regla est
 
 ---
 
-*Framework Baraldi v2.26.0 · skills/methodology/01_problem_framing/SKILL.md*
+*Framework Baraldi v2.26.3 · skills/methodology/01_problem_framing/SKILL.md*

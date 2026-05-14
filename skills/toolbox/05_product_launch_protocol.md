@@ -10,7 +10,7 @@ description: >
   Úsala al final de la Etapa 05 o durante la Etapa 06.
   Keywords: launch, runbook, GTM, comunicación, habilitación, ventas, marketing, deploy.
 skill_id: toolbox_launch_protocol
-version: "1.2.0"
+version: "2.26.3"
 framework: Baraldi
 type: "Toolbox / Operations & GTM"
 trigger: "Cuando el producto está listo para producción y se requiere un plan que cubra tanto el deploy técnico como la estrategia de salida al mercado."
@@ -103,4 +103,4 @@ Identificación de la **métrica única** que define el éxito del lanzamiento (
 
 ---
 
-*Framework Baraldi v2.26.0 · toolbox/05_product_launch_protocol.md*
+*Framework Baraldi v2.26.3 · toolbox/05_product_launch_protocol.md*

@@ -112,4 +112,4 @@ Si ya tienes el framework instalado, puedes actualizar el binario de Engram de d
 
 ---
 
-*Framework Baraldi v2.26.0 · memory/PROTOCOLO_MEMORIA.md · Capa de Memoria Sistémica*
+*Framework Baraldi v2.26.3 · memory/PROTOCOLO_MEMORIA.md · Capa de Memoria Sistémica*

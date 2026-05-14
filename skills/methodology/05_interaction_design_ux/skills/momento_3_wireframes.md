@@ -1,51 +1,41 @@
 ---
 name: momento-3-wireframes
-description: >
-  Protocolo operativo para estructurar la jerarquía visual mediante Wireframes de baja/media fidelidad.
+description: Protocolo de alta densidad para la creación, validación y priorización exhaustiva de Wireframes antes del diseño visual.
 ---
 
-# [MOMENTO 3] Wireframing Funcional & Layout
+# [MOMENTO 3] Wireframing, Validación & Handoff Matrix
 
-> **Misión:** Traducir el Sitemap (Etapa 04), el VOICE.md (Momento 1) y los Estados (Momento 2) en estructuras de pantalla tangibles. Validar la jerarquía de la información antes de aplicar la capa estética.
+> **Misión:** Transformar la arquitectura e interacción en un esqueleto funcional blindado. Tu objetivo es asegurar que **ninguna pantalla** se quede sin definir y que cada decisión de layout esté alineada con Negocio, Legal, Producto y el tono de Voz.
 
-## 🏁 Instrucciones para el Agente
+## 🏁 Paso 1: Inventario Exhaustivo (Sitemap-to-Wireframe)
+El Agente debe tomar el Sitemap de la Etapa 04 y listar **TODAS** las pantallas. No se permite "ignorar" pantallas secundarias sin una justificación estratégica.
+1.  **Listado Completo:** Crear una tabla con todas las rutas del sistema.
+2.  **Estado de Wireframe:** Marcar cada una como [Pendiente], [En Proceso] o [Completado].
 
-### Paso 1: Selección de Pantallas Críticas y CRO
-- No wireframear todo. Enfócate en las 3-5 pantallas que componen el *Core User Flow* (el camino crítico que cumple el Job To Be Done del usuario).
-- **Regla:** Aplicar la **Ley de Respiro del Dato** (Density Rules) desde esta etapa.
-- **[NUEVO] Optimización de Conversión (CRO):** Si la pantalla es un *Onboarding*, *Formulario de Registro* o *Paywall*, debes aplicar los estándares de fricción cero (inspirados en el ecosistema `coreyhaines31`):
-  - **Formularios:** Reducir carga cognitiva. Mostrar solo campos estrictamente necesarios. Agrupar lógicamente.
-  - **Onboarding/Sign Up:** Dividir procesos largos en pasos cortos (Progressive Disclosure).
-  - **Paywalls:** Visibilidad clara de valor antes de pedir datos de pago.
+## 🧠 Paso 2: Diseño & Alineación Multidimensional
+Para cada pantalla, se debe generar el wireframe (ASCII o Tabla) y someterlo a la **Matriz de Validación Baraldi**:
 
-### Paso 2: Diseño de Wireframes en ASCII / Markdown
-Para cada pantalla crítica, genera una representación esquemática usando cajas ASCII o tablas Markdown. 
-- **Estructura requerida por pantalla:**
-  1. **Objetivo:** ¿Qué debe lograr el usuario aquí?
-  2. **Wireframe visual:** (Representación en texto).
-  3. **Data Points:** Qué datos vienen del Backend (Etapa 03).
-  4. **Interacciones:** Qué elementos son tocables/clickeables.
+| Dimensión | Criterio de Validación |
+| :--- | :--- |
+| **Negocio/ROI** | ¿Esta pantalla empuja el KPI principal definido en la Etapa 01? |
+| **Producto/Lógica** | ¿Respeta las Business Rules y los estados definidos en la Etapa 03? |
+| **Legal/Compliance**| ¿Contiene los disclaimers, checkboxes y textos legales obligatorios? |
+| **Voz (VOICE.md)** | ¿El microcopy (botones, errores, empty states) sigue el tono de la marca? |
+| **Stakeholders** | ¿Ha sido validada esta estructura con los tomadores de decisión? |
 
-*(Ejemplo de Wireframe ASCII)*
-```text
-+--------------------------------------------------+
-|  [Logo]                             [Avatar] (V) |
-+--------------------------------------------------+
-|                                                  |
-|  "Hola, {Nombre}. Tu saldo actual es:"           |
-|                                                  |
-|  [       $ 1,450.00       ]                      |
-|                                                  |
-|  [Botón: Transferir (Primary)]                   |
-|  [Botón: Ver Movimientos (Secondary)]            |
-|                                                  |
-+--------------------------------------------------+
-```
+## 📊 Paso 3: Actualización de la Product Master Matrix (PMM)
+Al finalizar los wireframes, el Agente debe actualizar el archivo central `PRODUCT_MASTER_MATRIX.md` (iniciado en la Etapa 04) con los nuevos datos de validación. Esta sección actúa como el contrato final para la Etapa 06:
 
-### Paso 3: Validación de Handoff a Etapa 06
-Hazle al humano las siguientes preguntas de cierre:
-- *"¿Sientes que el usuario sabe exactamente qué hacer en cada pantalla?"*
-- *"¿Hemos dejado suficiente 'respiro' (espacio negativo) alrededor de la información vital?"*
+| Pantalla | Prioridad (1-5) | Estado UX (E05) | Notas para Visual Design (UI) |
+| :--- | :--- | :--- | :--- |
+| Dashboard Principal | 1 (Máxima) | ✅ Validado | Requiere alta densidad de datos (Etapa 06 Momento 0). |
+| Registro Step 2 | 2 | ✅ Validado | Foco en CRO; evitar ruidos visuales. |
+| ... | ... | ... | ... | ... |
 
-## 📄 Salida Esperada
-Un archivo Markdown (o exportado a una herramienta de prototipado si el usuario lo prefiere y lo guía) con los wireframes funcionales de las pantallas críticas, listos para ser vestidos de **Luxury Obsidian** en la Etapa 06.
+## 🧠 Protocolo de Calidad
+- **No omitir estados:** Cada wireframe debe contemplar el estado "Loading" y "Error" (Skill 17).
+- **Consistencia:** Si una interacción se definió en el Momento 2, debe estar presente en el Wireframe.
+- **Engram Save:** Al cerrar este momento, realizar un `mem_save` con el título *"Handoff Matrix Stage 05 Finalizada"* para que la Etapa 06 tenga el contexto listo.
+
+---
+*Framework Baraldi v2.26.3 · Hardened UX Protocol.*

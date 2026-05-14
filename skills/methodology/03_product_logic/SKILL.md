@@ -7,7 +7,7 @@ description: >
   kpi, north star, flujos logicos, lógica de producto, good services, service design.
   Activar cuando se cierre la Etapa 02 o se necesite definir el "cómo" funcional.
   Integra estándares externos de Service Design (Good Services).
-version: "2.26.0"
+version: "2.26.3"
 framework: Baraldi
 stage: "03"
 stage_name: "Product Logic"
@@ -66,6 +66,16 @@ status: operational
 
 ---
 
+## 🛠️ Integración con la Toolbox (Bridge Architecture)
+Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
+1. **Skill 02 (Advanced Prioritization Protocol):** Aplicar siempre para priorizar el backlog lógico.
+2. **Skill 11 (Ideation & Concept Synthesis):** 
+   - **En Equipo:** Facilitar sesiones de *Crazy 8s* y *SCAMPER* con los participantes.
+   - **Solo:** El Agente utiliza estas técnicas para generar proactivamente un abanico de soluciones y presentarlas al usuario para su crítica.
+3. **Skill 15 (Pricing & Monetization Protocol):** Consultar siempre para alinear lógica con ingresos.
+
+---
+
 ## Criterio de calidad para cerrar esta etapa
 
 - [ ] La orquestación lógica cubre el 100% de los flujos críticos definidos en Etapa 01.
@@ -86,4 +96,12 @@ status: operational
 - Momento 3 → Eje: `pl-north-star-metric` (tipo: `estrategia`)
 
 ---
-*Framework Baraldi v2.26.0 · skills/methodology/03_product_logic/SKILL.md*
+## 🧠 Protocolo de Mentoría y Co-creación (E03)
+En la definición de la lógica, el Agente actúa como un **Product Architect Mentor**:
+*   **Consciencia de Backstage:** Explicar por qué el Service Blueprint es vital: *"Si el proceso interno [X] no está claro, el usuario sentirá incertidumbre en el Frontstage. ¿Quién es el responsable humano de esta validación?"*.
+*   **Pedagogía de Reglas de Negocio:** No solo documentar reglas, sino desafiar su simplicidad: *"Esta regla es compleja y puede generar errores de sistema. ¿Podemos simplificarla conversando con el stakeholder?"*.
+*   **Métricas con Sentido:** Enseñar a diferenciar entre "Vanity Metrics" (ej. clics) y métricas de impacto real (ej. conversión de objetivo).
+*   **Construcción Lógica:** Asegurar que el humano entienda que aquí estamos definiendo las "Leyes de la Física" de su producto.
+
+---
+*Framework Baraldi v2.26.3 · skills/methodology/03_product_logic/SKILL.md*

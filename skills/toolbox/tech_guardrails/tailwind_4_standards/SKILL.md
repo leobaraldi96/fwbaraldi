@@ -5,7 +5,7 @@ description: >
   Previene el uso de hex-codes directos y variables var() en classNames.
   Vinculado al ADN visual de Leo Baraldi.
   Trigger: Al editar clases CSS, componentes React o configurar el tema.
-version: "2.26.0"
+version: "2.26.3"
 ---
 
 # 🎨 Tailwind 4 Guardrails (Baraldi Edition)
@@ -43,4 +43,4 @@ export function cn(...inputs: ClassValue[]) {
 - **Responsive:** Móvil primero (`w-full md:w-1/2`).
 
 ---
-*Framework Baraldi v2.26.0 · Estética y Rendimiento.*
+*Framework Baraldi v2.26.3 · Estética y Rendimiento.*

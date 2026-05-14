@@ -10,7 +10,7 @@ description: >
   Úsala para el handoff a desarrollo y la creación de tickets de ejecución.
   Keywords: user story, criterios de aceptación, AC, handoff, requerimientos, funcionalidad, QA.
 skill_id: toolbox_user_stories
-version: "1.0.0"
+version: "2.26.3"
 framework: Baraldi
 type: "Toolbox / Execution & Handoff"
 trigger: "Cuando el diseño de interacción (Etapa 04) o UI (Etapa 05) está listo y se necesita documentar las funcionalidades para el equipo de desarrollo."
@@ -63,4 +63,4 @@ La IA debe generar una lista de chequeo binaria (pasa/no pasa) que incluya:
 
 ---
 
-*Framework Baraldi v2.26.0 · toolbox/09_user_story_and_acceptance_criteria_protocol.md*
+*Framework Baraldi v2.26.3 · toolbox/09_user_story_and_acceptance_criteria_protocol.md*

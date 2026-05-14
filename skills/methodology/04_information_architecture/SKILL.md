@@ -5,7 +5,7 @@ description: >
   Define la estructura, navegación y taxonomía del producto.
   Keywords: information architecture, sitemap, user flow, taxonomía, navegación, content inventory.
   Activar cuando se cierre la Etapa 03 o se necesite estructurar la navegación.
-version: "2.26.0"
+version: "2.26.3"
 framework: Baraldi
 stage: "04"
 stage_name: "Information Architecture"
@@ -54,9 +54,9 @@ Para evitar la "poda de datos" y la pérdida de resolución sistémica detectada
 ### Momento 1 — Sitemap & Navigation Strategy
 **Objetivo:** Definir el inventario de vistas y la jerarquía de navegación.
 **Produce:** 
-**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 1. **Sitemap Visual (Mermaid):** Estructura jerárquica de páginas y subsecciones.
 2. **Navigation Model:** Definición de niveles de navegación (Global, Local, Contextual).
+3. **[NUEVO] PRODUCT_MASTER_MATRIX.md:** Inicialización del artefacto de trazabilidad (Skill 39) con el listado de pantallas y sus prioridades de negocio.
 
 ### Momento 2 — User Flows & Interaction Paths
 **Objetivo:** Mapear el recorrido del usuario para completar tareas críticas, integrando a todos los actores involucrados.
@@ -87,6 +87,16 @@ Para evitar la "poda de datos" y la pérdida de resolución sistémica detectada
 
 ---
 
+## 🛠️ Integración con la Toolbox (Bridge Architecture)
+Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
+1. **Skill 17 (Universal Content Design & UX Writing):** Aplicar siempre para asegurar precisión en taxonomías y glosarios.
+2. **Skill 20 (Design Critique & Feedback Facilitation):** 
+   - **En Equipo:** Utilizar para diseñar la arquitectura del tablero (FigJam/Miro) y facilitar la validación con stakeholders.
+   - **Solo:** El Agente actúa como "crítico externo" aplicando los principios de la skill para desafiar la propuesta del usuario sin burocracia de workshop.
+3. **Skill 22 (Strategic User Flow Protocol):** Herramienta mandatoria para el **Momento 2**. Se debe usar para asegurar que los flujos cubran validaciones, estados de error y todos los actores definidos.
+
+---
+
 ## Criterio de calidad para cerrar esta etapa
 
 - [ ] El Sitemap tiene **Alta Resolución**: incluye subsecciones, estados y atributos específicos.
@@ -113,4 +123,12 @@ Para evitar la "poda de datos" y la pérdida de resolución sistémica detectada
 - Momento 4 → Eje: `ia-vocabulary-states` (tipo: `ux-writing`)
 
 ---
-*Framework Baraldi v2.26.0 · skills/methodology/04_information_architecture/SKILL.md*
+## 🧠 Protocolo de Mentoría y Co-creación (E04)
+En la fase de arquitectura, el Agente actúa como un **Arquitecto de Información Mentor**:
+*   **Justificación de Navegación:** Al proponer una estructura, explicar el **Modelo Mental** (ej. *"Propongo una navegación lateral porque tu producto tiene muchas herramientas paralelas que requieren acceso rápido, evitando la fatiga de clics"*).
+*   **Gestión de Carga Cognitiva:** Desafiar al usuario si una sección tiene demasiados niveles o ítems: *"Estamos superando la regla de 7 elementos; ¿podemos agrupar estos conceptos para no abrumar al usuario?"*.
+*   **Pedagogía de Taxonomía:** No solo definir términos, sino explicar por qué ciertas palabras facilitan la **Encontrabilidad (Findability)** basada en el perfil de usuario de la Etapa 01.
+*   **Construcción Coherente:** Asegurar que el humano entienda que lo que decidimos aquí es el "esqueleto" que sostendrá toda la UI posterior.
+
+---
+*Framework Baraldi v2.26.3 · skills/methodology/04_information_architecture/SKILL.md*

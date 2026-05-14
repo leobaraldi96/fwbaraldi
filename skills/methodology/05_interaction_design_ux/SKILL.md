@@ -5,20 +5,20 @@ description: >
   Define el comportamiento, los estados y el esqueleto de la experiencia.
 keywords: ux, interaction design, micro-interactions, states, wireframes, user experience.
 status: operational
-version: "2.26.0"
+version: "2.26.3"
 ---
 
 # Etapa 05 — Interaction Design (UX)
 
-> **Objetivo:** Definir cómo el usuario interactúa con la arquitectura creada en la Etapa 04. Pasamos del "Mapa" al "Movimiento". Aquí se diseñan los comportamientos, los estados de los componentes y el **Sistema de Contenido (VOICE.md)**.
+> **Objetivo:** Definir cómo el usuario interactúa con la arquitectura creada en la Etapa 04. Pasamos del "Mapa" al "Movimiento". Aquí se diseñan los comportamientos, los estados de los componentes, el **Sistema de Contenido (VOICE.md)** y la **Handoff Matrix** validada.
 
 ---
 
-## 🏗️ Foco en el Comportamiento
+## 🏗️ Foco en el Comportamiento y Validación
 En esta etapa no nos preocupamos por los colores, sino por:
 1. **Micro-interacciones:** Qué pasa cuando el usuario hace clic, desliza o espera.
 2. **Sistema de Estados:** Definición exhaustiva de Hover, Active, Focus, Disabled, Loading y Error para cada componente.
-3. **Esqueleto Funcional (Wireframes):** Layouts de baja fidelidad que validan la jerarquía de la información en pantalla.
+3. **Validación Multidimensional:** Alineación de cada wireframe con Negocio, Legal, Producto y Voz.
 
 ---
 
@@ -26,7 +26,18 @@ En esta etapa no nos preocupamos por los colores, sino por:
 
 1. **[MOMENTO 1] Interaction Patterns & Tone:** Definición de gestos y la personalidad del sistema (Voz).
 2. **[MOMENTO 2] State Machine & Microcopy:** Mapeo de estados y redacción de mensajes críticos (Error, Success).
-3. **[MOMENTO 3] VOICE.md & Wireframes:** Consolidación de la guía de contenido agéntica y estructura visual.
+3. **[MOMENTO 3] Handoff Matrix & Wireframes:** Creación del inventario exhaustivo de pantallas y validación final para Etapa 06.
+
+---
+
+## 🛠️ Integración con la Toolbox (Bridge Architecture)
+Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
+1. **Skill 08 (AI Interaction Design Brief):** Si el producto incluye funcionalidades de IA, es MANDATORIO aplicar este protocolo para diseñar la gestión de latencia, estados de "pensamiento" y feedback de errores de la IA.
+2. **Skill 17 (Universal Content Design & UX Writing):** Herramienta core para el Momento 2 y 3. Debe usarse para redactar el *VOICE.md* y asegurar que cada mensaje de error o estado de éxito siga principios de voz activa y sentence case.
+3. **Skill 20 (Design Critique & Feedback Facilitation):** 
+   - **En Equipo:** Facilitar sesiones de revisión con stakeholders usando el protocolo "I like / I wish / What if".
+   - **Solo:** El Agente asume el rol de crítico y aplica el protocolo para auditar los wireframes y proponer mejoras directas.
+4. **Skill 22 (Strategic User Flow Protocol):** Utilizar para mapear flujos de interacción detallados y micro-navegación antes de prototipar.
 
 ---
 
@@ -37,4 +48,11 @@ En esta etapa no nos preocupamos por los colores, sino por:
 - [ ] La navegación es intuitiva y sigue patrones de diseño establecidos.
 
 ---
-*Framework Baraldi v2.26.0 · skills/methodology/05_interaction_design_ux/SKILL.md*
+## 🧠 Protocolo de Mentoría y Co-creación (E05)
+En esta etapa, el Agente no solo dibuja; enseña y facilita la decisión arquitectónica:
+*   **Justificación de Patrones:** Al proponer un layout, el Agente debe explicar por qué ese patrón (ej. Tabs, Accordions, Sidebars) es el más eficiente para la jerarquía de información definida.
+*   **Reflexión de Flujo:** Antes de dar una pantalla por cerrada, invitar al usuario a realizar un "Mental Walkthrough": *"¿Qué siente el usuario en este paso? ¿Hay fricción innecesaria?"*.
+*   **Handoff Consciente:** Explicar al usuario que la claridad lograda aquí es lo que permitirá que la Etapa 06 sea fluida y de alta calidad.
+
+---
+*Framework Baraldi v2.26.3 · skills/methodology/05_interaction_design_ux/SKILL.md*

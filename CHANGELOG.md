@@ -5,6 +5,23 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.26.3] - 2026-05-14
+
+### 🛡️ Protocolo de Censo de Ecosistema (Setup Inicial)
+- **Añadido:** **Paso 0 - Ecosystem Setup (Etapa 01).** Ahora el framework obliga a realizar una configuración inicial del equipo y gobernanza antes de iniciar cualquier diseño. Esto garantiza que la IA sepa exactamente a quién responde y qué nivel de burocracia aplicar.
+- **Añadido:** **Mandato de Censo (Guardrails).** Se formaliza la obligación de la IA de explicar el valor de esta configuración (Adaptabilidad) y recordar que es reconfigurable en cualquier momento.
+
+## [2.26.2] - 2026-05-14
+
+### 🛡️ Inteligencia Adaptativa (Human-Centric Hardening)
+- **Añadido:** **Ley de Inteligencia Adaptativa de Perfil.** El framework ahora detecta el contexto del usuario (Lobo Solitario vs. Equipo) para ajustar el nivel de burocracia metodológica.
+- **Mejorado:** **Bridge Architecture v2.** Las integraciones con la Toolbox en las Etapas 01, 03, 04, 05 y 06 ahora son condicionales. Para usuarios solitarios, el agente actúa como "sparring" técnico directo, omitiendo la logística de workshops y facilitación grupal.
+
+## [2.26.1] - 2026-05-14
+
+### 🛡️ Core Guardrails & Comunicación
+- **Eliminado:** **Mandato de Omnipresencia de Actores.** Por decisión del autor, se simplifica el protocolo de comunicación de la IA, eliminando la obligación de personificar a los colaboradores en cada interacción para priorizar un diálogo directo y el reconocimiento de liderazgo del autor principal.
+
 ## [2.26.0] - 2026-05-13
 
 ### 🛡️ Protocolo de Recuperación y Soberanía (Recovery Tokens)
@@ -25,7 +42,7 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
 ### 💎 Arsenal de Élite y Estructura Intocable (v2.26.0 - Hardenización)
 #### Añadido
-- **Toolbox de Alta Densidad (12 Skills):** Inyección masiva de 12 herramientas tácticas hardenizadas (desde *Stakeholder Narrative* hasta *Accessibility Audit*). Cada herramienta incluye protocolos de ROI, NEVER Lists y visión senior.
+- **Toolbox de Alta Densidad (20 Skills):** Inyección masiva de 20 herramientas tácticas hardenizadas (desde *Stakeholder Narrative* hasta *Feedback Facilitation*). Cada herramienta incluye protocolos de ROI, NEVER Lists y visión senior.
 - **Cláusula de Mapa Intocable (README Integrity):** Mandato sistémico que prohíbe el resumen o poda de la estructura del repositorio. El mapa ahora es exhaustivo y transparente para garantizar la navegabilidad.
 - **Hardenización de Etapa 01 (Problem Framing):** Actualización de la metodología de visión inicial a estándar de "Alta Densidad", eliminando generalidades y enfocándose en OKRs y Estrategia de Posicionamiento.
 - **Ampliación del Muro de Colaboradores:** Incorporación de Analia Lucero, Víctor Cámara, Rodrigo Arija y Hernán Novillo en reconocimiento a su aporte multidisciplinar al ecosistema.

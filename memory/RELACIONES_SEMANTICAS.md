@@ -37,4 +37,4 @@ Al usar `mem_save` o al realizar una Auditoría de Salud, el Agente debe clasifi
 3.  **En la Auditoría de Salud:** Se usa para calcular el % de "Drift" del proyecto.
 
 ---
-*Framework Baraldi v2.26.0 · Memory Layer*
+*Framework Baraldi v2.26.3 · Memory Layer*

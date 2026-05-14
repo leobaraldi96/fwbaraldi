@@ -10,7 +10,7 @@ description: >
   Úsala para alinear al equipo y stakeholders sobre la secuencia de valor del producto.
   Keywords: roadmap, planificación, priorización, temas, iniciativas, cronograma, estrategia.
 skill_id: toolbox_product_roadmap
-version: "1.0.0"
+version: "2.26.3"
 framework: Baraldi
 type: "Toolbox / Strategy & Planning"
 trigger: "Cuando el humano necesita visualizar el futuro del producto, priorizar iniciativas a largo plazo o alinear a los stakeholders sobre el 'cuándo' de las features."
@@ -63,4 +63,4 @@ Identificación proactiva de:
 
 ---
 
-*Framework Baraldi v2.26.0 · toolbox/07_strategic_product_roadmap.md*
+*Framework Baraldi v2.26.3 · toolbox/07_strategic_product_roadmap.md*

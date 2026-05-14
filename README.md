@@ -1,6 +1,6 @@
 # Framework Baraldi (FWB) 🤖⚡
 
-![Version](https://img.shields.io/badge/version-2.26.0-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-yellow) ![Memory](https://img.shields.io/badge/memory-Engram--Powered-orange) ![Type](https://img.shields.io/badge/type-Agentic--Orchestrator-blueviolet)
+![Version](https://img.shields.io/badge/version-2.26.3-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-yellow) ![Memory](https://img.shields.io/badge/memory-Engram--Powered-orange) ![Type](https://img.shields.io/badge/type-Agentic--Orchestrator-blueviolet)
 
 > **AI-Augmented System Product Design**
 >
@@ -161,7 +161,7 @@ Si sos un modelo de IA o estás configurando un agente, **LEER PRIMERO:**
 
 ---
 
-## 🧰 El Arsenal de Élite (v2.26.0)
+## 🧰 El Arsenal de Élite (v2.26.3)
 
 La Toolbox del Framework Baraldi no es una simple carpeta de utilidades; es un conjunto de **protocolos de alto impacto** diseñados para resolver situaciones críticas de producto, negocio y política organizacional.
 
@@ -170,15 +170,23 @@ La Toolbox del Framework Baraldi no es una simple carpeta de utilidades; es un c
 | **01** | **Stakeholder Narrative** | Gestión de líderes difíciles (Anti-Lucio/Carlos/Maxi) y venta de ideas. |
 | **02** | **Advanced Prioritization** | Motor de ROI absoluto usando RICE, Kano y Score Baraldi. |
 | **03** | **Personal Impact Report** | Tu "Brag Document" automático para visibilizar tus logros. |
-| **04** | **Experimentation Lab** | Protocolo de validación científica para no diseñar por opinión. |
+| **04** | **Data Driven Design and Experimentation** | Conversión de analíticas en insights y protocolos de testeo. |
 | **05** | **Product Launch** | Orquestación total del Go-To-Market (Ingeniería + Mkt + Métricas). |
 | **06** | **Product Health QBR** | Reporte trimestral de salud para el C-Level. |
 | **07** | **Strategic Roadmap** | Planificación temporal basada en temas y horizontes. |
 | **08** | **AI-UX Design Brief** | Guía experta para diseñar experiencias con IA. |
 | **09** | **User Stories & AC** | El handoff técnico definitivo (Criterios de Aceptación blindados). |
-| **10** | **Global Readiness** | Auditoría de Internacionalización (i18n) y soporte RTL. |
+| **10** | **Responsive & Global** | Estrategia multidispositivo y auditoría de i18n/RTL. |
 | **11** | **Concept Synthesis** | Transformación de ideas sueltas en propuestas de valor. |
-| **12** | **Accessibility Audit** | Certificación ética y técnica de inclusión universal. |
+| 12 | **Accessibility Audit** | Certificación de inclusión universal (WCAG). |
+| 13 | **Screen Reader Testing** | Guía operativa para pruebas manuales con AT. |
+| 14 | **Business Strategy** | Maximización de ROI, upselling y caso de negocio. |
+| 15 | **Pricing & Monetization** | Diseño científico de tiers y captura de valor. |
+| 16 | **Sales Enablement** | Creación de decks, one-pagers y cierre de ventas. |
+| 17 | **Content Design** | Claridad, voz activa y diseño de microcopy. |
+| 18 | **SEO & Visibility** | Optimización de rastreo e indexabilidad orgánica. |
+| 19 | **Performance / Vitals** | Blindaje técnico de carga e interactividad (LCP, INP). |
+| 20 | **Feedback Facilitation** | Gobernanza de sesiones de feedback profesional. |
 
 ---
 <!-- ⚠️ ATENCIÓN MANTENIMIENTO: PROHIBIDO RESUMIR O PODAR ESTA SECCIÓN. EL MAPA DEBE SER SIEMPRE COMPLETO Y DETALLADO. -->
@@ -203,19 +211,27 @@ fwbaraldi/
 │   │   ├── 06_visual_design_ui/            ← Design System y DESIGN.md
 │   │   └── 07_handover_qa/                 ← Validación final y documentación
 │   │
-│   └── toolbox/                            ← Tu arsenal estratégico (v2.26.0)
+│   └── toolbox/                            ← Tu arsenal estratégico (v2.26.3)
 │       ├── 01_stakeholder_narrative_strategy.md
 │       ├── 02_advanced_prioritization_protocol.md
 │       ├── 03_personal_impact_report.md
-│       ├── 04_experimentation_and_ab_testing.md
+│       ├── 04_data_driven_design_and_experimentation.md
 │       ├── 05_product_launch_protocol.md
 │       ├── 06_product_health_qbr_protocol.md
 │       ├── 07_strategic_product_roadmap.md
 │       ├── 08_ai_interaction_design_brief.md
 │       ├── 09_user_story_and_acceptance_criteria_protocol.md
-│       ├── 10_localization_and_global_readiness_protocol.md
+│       ├── 10_responsive_and_global_readiness_protocol.md
 │       ├── 11_concept_synthesis_and_ideation_protocol.md
-│       └── 12_accessibility_audit_and_inclusion_protocol.md
+│       ├── 12_accessibility_audit_and_inclusion_protocol.md
+│       ├── 13_screen_reader_testing_protocol_and_runbook.md
+│       ├── 14_business_strategy_and_growth_protocol.md
+│       ├── 15_pricing_and_monetization_protocol.md
+│       ├── 16_sales_enablement_and_pitch_protocol.md
+│       ├── 17_universal_content_design_and_ux_writing_protocol.md
+│       ├── 18_technical_seo_and_visibility_audit.md
+│       ├── 19_performance_and_web_vitals_optimization.md
+│       └── 20_design_critique_and_feedback_facilitation_protocol.md
 │
 ├── scripts/
 │   ├── install.js                          ← Instalador CLI interactivo
@@ -228,9 +244,9 @@ fwbaraldi/
 
 ---
 
-## 🚀 Quick Start / Instalación (v2.26.0)
+## 🚀 Quick Start / Instalación (v2.26.3)
 
-> ⚠️ **IMPORTANTE:** A partir de la versión 2.26.0 (Modelo Cero-Copia), el Framework Baraldi dejó de ser un simple texto para copiar y pegar. Ahora es un **Orquestador Agéntico**. Para usarlo, tu IA debe soportar el uso de herramientas MCP y lectura de carpetas locales (Ej: **Antigravity de Google, Claude Code, Cursor, Windsurf**, etc.).
+> ⚠️ **IMPORTANTE:** A partir de la versión 2.26.3 (Modelo Cero-Copia), el Framework Baraldi dejó de ser un simple texto para copiar y pegar. Ahora es un **Orquestador Agéntico**. Para usarlo, tu IA debe soportar el uso de herramientas MCP y lectura de carpetas locales (Ej: **Antigravity de Google, Claude Code, Cursor, Windsurf**, etc.).
 
 ### Instalación Desatendida (Recomendado)
 Hemos construido un instalador interactivo (`baraldi-init`) que se encarga de todo el trabajo pesado. Solo necesitas tener **Node.js** instalado en tu computadora.
@@ -313,4 +329,4 @@ El Framework Baraldi es el resultado de más de 25 años de experiencia en el di
 - 📧 **Email:** [leobaraldi96@gmail.com](mailto:leobaraldi96@gmail.com)
 
 ---
-*Framework Baraldi v2.26.0 · Desarrollado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.26.3 · Desarrollado y mantenido por Leo Baraldi.*

@@ -10,7 +10,7 @@ description: >
   Úsala al final de cada ciclo (quarter) para rendir cuentas y planificar el futuro.
   Keywords: QBR, métricas, KPI, salud, retención, churn, ROI, reporte ejecutivo.
 skill_id: toolbox_qbr_protocol
-version: "1.0.0"
+version: "2.26.3"
 framework: Baraldi
 type: "Toolbox / Governance"
 trigger: "Cuando el usuario necesita presentar el estado de salud del producto a stakeholders, inversores o al final de un trimestre."
@@ -71,4 +71,4 @@ Análisis honesto de iniciativas que fallaron y qué lección nos dejaron para n
 
 ---
 
-*Framework Baraldi v2.26.0 · toolbox/06_product_health_qbr_protocol.md*
+*Framework Baraldi v2.26.3 · toolbox/06_product_health_qbr_protocol.md*

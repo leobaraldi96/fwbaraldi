@@ -4,7 +4,7 @@ description: >
   Estándares expertos para el desarrollo con Next.js 15 (App Router).
   Fuerza el uso de Server Components, Server Actions y la estructura de archivos correcta.
   Trigger: Al trabajar en archivos dentro de /app, crear rutas o manejar lógica de servidor.
-version: "2.26.0"
+version: "2.26.3"
 ---
 
 # 🚀 Next.js 15 Expert Guardrails (Baraldi Edition)
@@ -46,4 +46,4 @@ app/
 - **Suspense:** Envuelve componentes lentos en `<Suspense fallback={<Loading />}>`.
 
 ---
-*Framework Baraldi v2.26.0 · Calidad Técnica Absoluta.*
+*Framework Baraldi v2.26.3 · Calidad Técnica Absoluta.*

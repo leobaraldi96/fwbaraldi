@@ -18,7 +18,7 @@ Antes de preguntar nada al usuario, debes:
 3. **Determinar el Idioma (i18n) y Mentoría:** Pregunta en qué idioma(s) estará el producto. 
    - **[CRÍTICO - EMPATÍA]:** Muchos diseñadores o UXW no saben qué es un archivo JSON. Si el proyecto es multilingüe (o incluso de un solo idioma, para buenas prácticas), debes explicarle al usuario de forma amigable qué es un JSON de localización.
    - *Ejemplo de explicación obligatoria:* "En lugar de usar planillas de Excel para pasarle los textos a los programadores, voy a crear un archivo técnico (JSON). Es simplemente una lista ordenada que los programadores pueden conectar directamente a la app. ¿Te parece bien que armemos este archivo para ahorrarte ese trabajo manual? Te sugiero consultarlo con tu equipo Frontend para confirmar si les sirve este formato."
-4. Leer la "Guía Maestra" en `skills/toolbox/tech_guardrails/ux_writing_standards/SKILL.md` para asimilar las leyes universales de escritura del framework.
+4. Leer la "Guía Maestra" en `skills/toolbox/17_ux_writing/SKILL.md` para asimilar las leyes universales de escritura del framework.
 
 ### Paso 2: Alineación de Personalidad y Localización (El Brief)
 Presenta al usuario un análisis rápido de lo encontrado y propón **3 arquetipos de voz**.
@@ -119,4 +119,4 @@ Cuando escribas el archivo físico, usa esta estructura exacta:
 - **Engram Save:** Al generar el archivo, lanza un `mem_save` con el título *"Establecido el VOICE.md"* y el tag `ux-voice-tone`.
 
 ---
-*Framework Baraldi v2.26.0 · Etapa 05 / Momento 1*
+*Framework Baraldi v2.26.3 · Etapa 05 / Momento 1*

@@ -5,7 +5,7 @@ description: >
   Leer este archivo antes de ejecutar la sección de benchmark del Momento Feedback.
   Define las 6 secciones obligatorias, las dimensiones de análisis por player,
   el gap analysis y la estructura del plan de acción.
-version: "2.26.0"
+version: "2.26.3"
 framework: Baraldi
 stage: "01 - Problem Framing"
 tipo: reference

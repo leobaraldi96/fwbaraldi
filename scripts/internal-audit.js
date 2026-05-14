@@ -4,7 +4,7 @@ import chalk from 'chalk';
 
 const rootDir = process.cwd();
 
-console.log(chalk.bold.blue('\n🔍 Iniciando Auditoría Interna del Framework Baraldi (v2.26.0)\n'));
+console.log(chalk.bold.blue('\n🔍 Iniciando Auditoría Interna del Framework Baraldi (v2.26.3)\n'));
 
 let issues = 0;
 
@@ -72,8 +72,8 @@ toolFiles.forEach(file => {
     }
 });
 
-if (toolboxCount === 12) reportSuccess(`Conteo de Toolbox correcto (12 de 12)`);
-else reportIssue(`Se detectaron ${toolboxCount} herramientas, se esperaban 12.`);
+if (toolboxCount === 20) reportSuccess(`Conteo de Toolbox correcto (20 de 20)`);
+else reportIssue(`Se detectaron ${toolboxCount} herramientas, se esperaban 20.`);
 
 // 3. Check Guardrails
 const guardrails = fs.readFileSync(path.join(rootDir, 'skills', 'core', '00_core_guardrails', 'SKILL.md'), 'utf8');
@@ -88,9 +88,21 @@ if (!guardrailsClean.includes('prohibido resumir') && !guardrailsClean.includes(
 const methodologyDir = path.join(rootDir, 'skills', 'methodology');
 for (let i = 1; i <= 7; i++) {
     const etapa = `0${i}`;
-    const etapaDir = fs.readdirSync(methodologyDir).find(d => d.startsWith(etapa));
-    if (!etapaDir) reportIssue(`Falta la carpeta de la Etapa ${etapa} en methodology/`);
-    else reportSuccess(`Etapa ${etapa} presente: ${etapaDir}`);
+    const etapaDirName = fs.readdirSync(methodologyDir).find(d => d.startsWith(etapa));
+    if (!etapaDirName) {
+        reportIssue(`Falta la carpeta de la Etapa ${etapa} en methodology/`);
+    } else {
+        reportSuccess(`Etapa ${etapa} presente: ${etapaDirName}`);
+        
+        // Check Bridge Architecture
+        const etapaFile = path.join(methodologyDir, etapaDirName, 'SKILL.md');
+        const etapaContent = fs.readFileSync(etapaFile, 'utf8');
+        if (etapaContent.includes('## 🛠️ Integración con la Toolbox')) {
+            reportSuccess(`  ↳ Bridge Architecture verificado`);
+        } else {
+            reportIssue(`  ↳ Falta conexión con Toolbox (Bridge Architecture)`);
+        }
+    }
 }
 
 console.log('\n------------------------------------------------');

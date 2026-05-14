@@ -38,4 +38,4 @@ El framework realiza llamadas externas únicamente en los siguientes casos de "S
 4.  **Memoria Sensible:** Si un hallazgo del proyecto es extremadamente confidencial, puedes pedir a la IA que no lo guarde en la memoria persistente de Engram.
 
 ---
-*Framework Baraldi v2.26.0 · Transparencia y Ética Agéntica*
+*Framework Baraldi v2.26.3 · Transparencia y Ética Agéntica*

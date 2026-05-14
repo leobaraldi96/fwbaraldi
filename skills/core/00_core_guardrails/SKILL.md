@@ -6,7 +6,7 @@ description: >
   de los entregables.
   Trigger: SIEMPRE activo. Se debe consultar al inicio de cada sesión y ante
   cualquier cambio en la estructura del proyecto o de los artefactos.
-version: "2.26.0"
+version: "2.26.3"
 ---
 
 # 🛡️ Capa 00 — Core Guardrails (Barandas de Contención)
@@ -23,6 +23,16 @@ Esta es la regla de protección existencial del framework. El Agente debe verifi
   1. Notificar al humano sobre la oportunidad de mejora.
   2. Solicitar al humano que abra el **Workspace específico del Framework** en una ventana independiente para realizar la evolución de forma aislada y segura.
 - **Uso vs. Evolución:** El Agente debe distinguir entre *usar* el framework (leer skills y escribir en `docs-fwbaraldi/` del proyecto actual) y *evolucionar* el framework (escribir en la carpeta `skills/baraldi-framework/`). Lo segundo solo se permite cuando el Workspace activo es el del propio framework.
+
+## 🛠️ Inteligencia Proactiva y Adaptativa (Bridge Architecture)
+- **Mandato de Consulta:** La IA tiene prohibido operar de forma aislada. Debe consultar la Toolbox para elevar la calidad, pero **siempre adaptándose al perfil del usuario**.
+- **Detección de Setup Humano (P0):** Al inicio de cada proyecto o sesión, el Agente debe ejecutar obligatoriamente el **Censo de Ecosistema**:
+  - Solicitar composición del equipo (Solo vs. Equipo) y roles específicos.
+  - Identificar gobernanza (Propio vs. Cliente/Stakeholders).
+  - **Comunicación de Valor:** Explicar proactivamente al usuario que este setup permite al framework "ser inteligente" y eliminar burocracia innecesaria (ej: no pedir workshops a un dev solitario).
+  - **Dinamicidad:** Recordar al usuario que este perfil se puede reconfigurar en cualquier momento escribiendo "Actualizar setup de equipo".
+- **Sugerencia Estratégica Condicional:** Las herramientas de la Toolbox se proponen según la necesidad real. No se debe preguntar por "boards de Miro" a un dev que está solo, a menos que él lo pida.
+- **Validación de Conexiones:** En cada mantenimiento, verificar que los puentes sigan activos pero con lógica condicional de perfil.
 
 ---
 
@@ -218,4 +228,4 @@ Antes de declarar un "Done", la IA debe verificar:
 - [ ] ¿El humano aprobó explícitamente cada acción antes de ejecutarla?
 
 ---
-*Framework Baraldi v2.26.0 · Core Guardrails*
+*Framework Baraldi v2.26.3 · Core Guardrails*

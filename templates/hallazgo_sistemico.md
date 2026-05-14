@@ -71,4 +71,4 @@ Los slugs deben ser descriptivos y estables. Estructura recomendada:
 
 ---
 
-*Framework Baraldi v2.26.0 · templates/hallazgo_sistemico.md*
+*Framework Baraldi v2.26.3 · templates/hallazgo_sistemico.md*

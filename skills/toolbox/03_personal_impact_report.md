@@ -10,7 +10,7 @@ description: >
   Úsala al finalizar una etapa importante o al cerrar el proyecto completo.
   Keywords: carrera, portfolio, linkedin, STAR, logros, impacto personal, ascenso.
 skill_id: toolbox_personal_impact
-version: "1.0.0"
+version: "2.26.3"
 framework: Baraldi
 type: "Toolbox / Career Support"
 trigger: "Cuando el usuario termina una etapa o el proyecto y quiere documentar su impacto, actualizar su portfolio o prepararse para una revisión de performance."
@@ -63,4 +63,4 @@ Si el proyecto no tiene métricas reales todavía, la IA debe ayudar a proyectar
 
 ---
 
-*Framework Baraldi v2.26.0 · toolbox/03_personal_impact_report.md*
+*Framework Baraldi v2.26.3 · toolbox/03_personal_impact_report.md*

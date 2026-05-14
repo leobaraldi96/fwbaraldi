@@ -6,7 +6,7 @@ description: >
   Crea el contrato visual para la implementación agéntica (DESIGN.md).
 keywords: visual design, ui, tokens, design system, luxury obsidian, design.md, css variables.
 status: operational
-version: "2.26.0"
+version: "2.26.3"
 ---
 
 # Etapa 06 — Visual Design (UI)
@@ -18,35 +18,57 @@ version: "2.26.0"
 ## 🎨 Selector de Estética (Aesthetic Taste Selector)
 El framework es **estéticamente agnóstico**. No fuerza un estilo visual. En su lugar, al iniciar esta etapa, la IA debe consultar qué "Taste" (gusto estético) se alinea con el negocio (inspirado en las arquitecturas de `leonxlnx`):
 
-1. **High-End (SaaS / Premium):** Dark mode profundo (tipo "Luxury Obsidian"), glassmorphism, gradientes sutiles y tipografía moderna (Outfit/Inter). Ideal para herramientas pro y fintech.
-2. **Minimalist UI (Productividad):** Fondos blancos puros o grises hiper-suaves, monocromía estricta, alta densidad de datos sin ruido visual. Ideal para dashboards densos.
-3. **Industrial Brutalist (Dev Tools):** Bordes crudos, tipografías monoespaciadas, alto contraste en blanco y negro con un solo color de acento. Ideal para herramientas técnicas.
-4. **Custom (Design System Existente):** La IA debe leer el sistema del cliente y adherirse estrictamente a él, sin inyectar creatividad no solicitada.
+21. **High-End (SaaS / Premium):** Dark mode profundo, glassmorphism, gradientes sutiles y tipografía moderna (Geist / Satoshi / Outfit). Prohibido el uso de Inter en esta categoría por ser un "AI Tell" genérico.
+22. **Minimalist UI (Productividad):** Fondos blancos puros o grises hiper-suaves, monocromía estricta, alta densidad de datos sin ruido visual. Ideal para dashboards densos.
+23. **Industrial Brutalist (Dev Tools):** Bordes crudos, tipografías monoespaciadas, alto contraste en blanco y negro con un solo color de acento. Ideal para herramientas técnicas.
+24. **Custom (Design System Existente):** La IA debe leer el sistema del cliente y adherirse estrictamente a él, sin inyectar creatividad no solicitada.
 
 ---
 
-## ⚡ Entregable Estrella: DESIGN.md (Agent-First)
-Este archivo es obligatorio y debe contener:
+## ⚡ Entregable Estrella: DESIGN.md (Agent-First Contract)
+Este archivo es obligatorio y debe cumplir con el **[Protocolo 36] (Taste Design)** para evitar resultados genéricos. Debe contener:
 1. **Design Tokens (YAML):** Colores primarios, secundarios, estados, escalas de espaciado y tipografía.
 2. **CSS Variables Mapping:** Definición de variables para implementación directa.
 3. **Component Specs:** Reglas de redondeo (radius), sombras y bordes para componentes core.
-4. **Agent Instructions:** Guía en lenguaje natural para que la IA tome decisiones estéticas coherentes.
+4. **Anti-Patterns List:** Lista de elementos prohibidos para este proyecto específico.
 
 ---
 
-## Flujo de la etapa — 3 momentos
+## Flujo de la etapa — 4 momentos
 
-1. **[MOMENTO 1] Design Tokens & Moodboard:** Definición de la paleta y el lenguaje visual.
-2. **[MOMENTO 2] High-Fidelity Components:** Creación de la biblioteca de componentes en Figma/Código.
+0. **[MOMENTO 0] Design Intelligence:** El Motor Anti-Slop. Calibración de Taste, Layout y Guardrails UX (Reemplaza antiguas Skills 24, 36 y 38).
+1. **[MOMENTO 1] Design Tokens & Moodboard:** Definición de la paleta y el lenguaje visual. Generación del Sistema de Tokens Base.
+2. **[MOMENTO 2] High-Fidelity Components:** Creación de la biblioteca de componentes (Lógica Bottom-Up y Contrato Handoff).
 3. **[MOMENTO 3] DESIGN.md Generation:** Consolidación de la fuente de verdad agéntica.
+4. **[MOMENTO 4] Interactive Prototyping (Artifact):** Generación de un prototipo interactivo (React/Tailwind) usando la **Skill 37** para validar la experiencia.
+
+---
+
+## 🛠️ Integración con la Toolbox (Bridge Architecture)
+Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
+1. **Skill 37 (Web Artifact Prototyping):** MANDATORIO para el **Momento 4**.
+2. **Skill 10 (i18n Readiness Audit):** MANDATORIO antes de cerrar el Momento 3.
+3. **Skill 12 & 13 (Accessibility & Screen Reader):** Mandatorio durante el Momento 2.
+4. **Skill 19 (Performance & Web Vitals):** Consultar para optimizar el peso de los assets visuales.
+5. **Skill 20 (Design Critique & Feedback Facilitation):** Revisión y pulido estético.
+6. **Etapa 07 - Momento 2 (Figma-to-Code Sync):** Mandatorio para el **Momento 3** (Extracción vía API).
+7. **Skill 27 (Visual Reverse Engineering Protocol):** Recomendado para el **Momento 1** (Extracción vía Vision).
 
 ---
 
 ## Criterio de calidad
 - [ ] El **DESIGN.md** está presente en la raíz de `docs-fwbaraldi/`.
 - [ ] Los tokens son consistentes con la identidad de marca definida.
+- [ ] Se ha preparado el terreno para la sincronización 1:1 con Figma (Etapa 07 - Momento 2).
 - [ ] La interfaz respeta los principios de accesibilidad (contraste, tamaños).
 - [ ] Existe una jerarquía visual clara que guía la atención del usuario.
 
 ---
-*Framework Baraldi v2.26.0 · skills/methodology/06_visual_design_ui/SKILL.md*
+## 🧠 Protocolo de Mentoría y Co-creación (E06)
+En la fase visual, el Agente actúa como un **Director de Arte** que educa el ojo del usuario:
+*   **Justificación Estética:** Al proponer una tipografía o color, explicar su beneficio técnico (ej. *"Esta fuente tiene una altura de x [x-height] generosa que mejora la legibilidad en pantallas pequeñas"*) o psicológico.
+*   **Reflexión de Taste:** Usar el **Taste Spectrum (Skill 36)** no como un cuestionario, sino como una conversación: *"Si subimos la densidad aquí, ganamos eficiencia pero perdemos aire. ¿Cómo crees que afectará esto a tu usuario en [Contexto definido en E01]?"*.
+*   **Decisión Compartida:** Nunca entregar un diseño finalizado sin haber transitado los hitos de decisión con el humano.
+
+---
+*Framework Baraldi v2.26.3 · skills/methodology/06_visual_design_ui/SKILL.md*

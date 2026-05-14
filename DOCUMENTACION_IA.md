@@ -3,7 +3,7 @@
 > **⚠️ Este archivo es para HUMANOS (desarrolladores, configuradores, colaboradores).**
 > Los modelos de IA **no deben cargar este archivo** en el ciclo de boot — genera tokens redundantes sin aportar valor operativo. El agente carga directamente `SKILL.md` → `00_boot/context.md` → skills específicas.
 
-**AI-Augmented System Product Design · v2.26.0 · Leo Baraldi**
+**AI-Augmented System Product Design · v2.26.3 · Leo Baraldi**
 
 ---
 
@@ -46,8 +46,8 @@ fwbaraldi/
 │   │
 │   └── toolbox/
 │       ├── baraldi_visual_identity/  ← ADN visual (Modernist Tech, Paul Rand)
-│       └── tech_guardrails/          ← WP, Next.js, Tailwind 4, SEO, CWV,
-│                                        UXR, Competitor, Metrics, A11y, IxD...
+│       ├── 00_Product_And_UXR_Drafts/← Incubación (UXR, Métricas, Negocio)
+│       └── tech_guardrails/          ← Next.js, Tailwind 4, WP, Electron, React Native
 │
 ├── references/
 │   └── templates/
@@ -81,4 +81,4 @@ Todo lo que genera el framework vive aquí — organizado por naturaleza del con
 
 ---
 
-*Framework Baraldi v2.26.0 · DOCUMENTACION_IA.md · Referencia para humanos*
+*Framework Baraldi v2.26.3 · DOCUMENTACION_IA.md · Referencia para humanos*

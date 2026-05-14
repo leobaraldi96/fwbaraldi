@@ -1,22 +1,14 @@
-# Toolbox: Advanced Prioritization & ROI Protocol
-
 ---
-
-```yaml
 name: advanced-prioritization-roi
 description: >
-  Protocolo avanzado para priorizar iniciativas, features y pedidos de investigación.
-  Utiliza múltiples frameworks (RICE, Kano, Baraldi Score) para asegurar que el equipo trabaje en lo más valioso.
-  Úsala para transformar un backlog desordenado en un plan de ejecución con ROI claro.
-  Keywords: priorización, RICE, Kano, ROI, backlog, Quick Wins, impacto, esfuerzo.
-skill_id: toolbox_prioritization
-version: "1.1.0"
-framework: Baraldi
-type: "Toolbox / Strategic Hygiene"
-trigger: "Cuando hay un backlog masivo, recursos limitados, pedidos contradictorios de stakeholders o dudas sobre qué 'feature' moverá más la aguja."
-```
-
+  Protocolo avanzado para priorizar iniciativas, features y pedidos de investigación usando
+  múltiples frameworks (RICE, Kano, Baraldi Score). Úsalo cuando hay un backlog desordenado,
+  recursos limitados, pedidos contradictorios de stakeholders, o cuando el equipo no sabe
+  qué moverá más la aguja. Keywords: priorización, RICE, Kano, ROI, backlog, Quick Wins,
+  impacto, esfuerzo, trade-offs, scoring.
+version: "2.26.3"
 ---
+
 
 ## Rol de esta herramienta
 Esta skill actúa como un **Head of Product / Lead Strategist**. Su misión es ser el "filtro implacable" que protege el tiempo del equipo, asegurando que solo lo que tiene un ROI positivo pase a las etapas de diseño y desarrollo.
@@ -75,4 +67,4 @@ Una vez priorizados, los ítems se clasifican en:
 
 ---
 
-*Framework Baraldi v2.26.0 · toolbox/02_advanced_prioritization_protocol.md*
+*Framework Baraldi v2.26.3 · toolbox/02_advanced_prioritization_protocol.md*

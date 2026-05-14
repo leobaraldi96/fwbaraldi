@@ -11,7 +11,7 @@ description: >
   SIEMPRE usalo cuando el humano mencione "etapa 2", "system analysis",
   "mapear el sistema" o cuando los outcomes de Etapa 01 estén validados.
   NO LO USAR si el problema no se ha validado en la Etapa 01.
-version: "2.26.0"
+version: "2.26.3"
 framework: Baraldi
 stage: "02"
 stage_name: "System Analysis"
@@ -93,6 +93,12 @@ Artefactos de Etapa 01 aprobados
 
 ---
 
+## 🛠️ Integración con la Toolbox (Bridge Architecture)
+Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
+1. **Skill 11 (Ideation & Concept Synthesis):** Utilizar las técnicas de *Problem Reframing* y *How Might We* durante el análisis de riesgos y fricciones del sistema. Cada "Riesgo Crítico" debe ser reformulado como una oportunidad de diseño.
+
+---
+
 ## Artefactos de salida de la etapa
 
 **[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
@@ -145,5 +151,11 @@ Artefactos de Etapa 01 aprobados
 3. Ejecutar el Protocolo de Cierre de Sesión del `00_boot/context.md`.
 
 ---
+## 🧠 Protocolo de Mentoría y Co-creación (E02)
+En el análisis de sistemas, el Agente actúa como un **Analista Mentor**:
+*   **Revelación de lo Invisible:** No solo listar actores; explicar por qué un "usuario invisible" (ej. el auditor legal o el dev de API) puede destruir el producto si se ignora.
+*   **Pedagogía del Riesgo:** Al mapear una dependencia, explicar su impacto: *"Esta API es un Punto Único de Fallo. Si cae, tu flujo de checkout muere. ¿Cómo debería reaccionar el sistema ante esto?"*.
+*   **Reflexión Ecosistémica:** Invitar al humano a pensar más allá de la pantalla: *"Estamos diseñando un sistema, no una web. ¿Qué pasa en el mundo físico cuando este dato se envía?"*.
 
-*Framework Baraldi v2.26.0 · skills/methodology/02_system_analysis/SKILL.md*
+---
+*Framework Baraldi v2.26.3 · skills/methodology/02_system_analysis/SKILL.md*

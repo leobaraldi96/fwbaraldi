@@ -1,6 +1,6 @@
-# Framework Baraldi - Backlog Estratégico (v2.26.0)
+# Framework Baraldi - Backlog Estratégico (v2.26.3)
 Última Actualización: Mayo 2026
-Estado: **Hardening de Etapa 01 y Toolbox Completo** (v2.26.0)
+Estado: **Core, Etapas 01-04 Estables y Toolbox Refactorizado** (v2.26.3)
 
 > **Propósito:** Centralizar el scope futuro, las etapas en desarrollo (WIP) y las ideas de mejora sistémica para evitar el Scope Creep durante las sesiones actuales.
 > **Disciplina:** Revisar este archivo al inicio de cada sesión (Boot Step -3).
@@ -9,24 +9,23 @@ Estado: **Hardening de Etapa 01 y Toolbox Completo** (v2.26.0)
 
 ## 🏗️ [METODOLOGÍA] Etapas en Desarrollo (WIP)
 
-### 🟢 Etapa 01 - Problem Framing
-- **Estado:** HARDENED (v2.26.0)
-- [x] Sincronización con Protocolo de OKRs y Visión de Alta Densidad.
-- [x] Inyección de Protocolos de Moderación Senior (Think Aloud, Neutralidad).
-- [x] Transformación de Benchmarking en Estrategia de Posicionamiento. **[COMPLETADO]**
+### 🟢 Etapas Base (01 a 04)
+- **Estado:** ✅ COMPLETADAS Y ESTABLES
+- [x] Etapa 01: Problem Framing
+- [x] Etapa 02: System Analysis (Dependencias y Diagramas de Flujo)
+- [x] Etapa 03: Product Logic (Business Rules y Matriz de Orquestación)
+- [x] Etapa 04: Information Architecture (Vocabulary y Sitemap)
 
-### 🟢 Toolbox - Cross-Stage Tools
-- **Estado:** HARDENED (12 Skills de Alta Densidad)
-- [x] Gestión de Stakeholders (Protocolos Anti-Lucio, Carlos, Maxi).
-- [x] Operaciones de Producto (Launch GTM, QBR, Strategic Roadmaps).
-- [x] Calidad Global y Ética (Inclusión a11y, Localización i18n).
-- [x] Diseño de Vanguardia (Experimentación A/B, AI-UX Briefs). **[COMPLETADO]**
+### 🟢 Toolbox & Tech Guardrails
+- **Estado:** ✅ HARDENED & REFACTORED (v2.26.3)
+- [x] Consolidación de Skills de Alta Densidad (12+).
+- [x] Purga de Tech Guardrails: Separación dogmática entre ejecución técnica (Next, Tailwind) y metodológica (UXR/Producto).
 
-### 🔴 Etapa 02 - System Analysis
-- **Estado:** PRÓXIMO HIT (WIP)
-- [ ] Mapeo de Actores y Procesos Sistémicos.
-- [ ] Diagramas de Flujo de Datos y Dependencias.
-- [ ] Identificación de Cuellos de Botella y Puntos de Falla.
+### 🟢 Etapas de Diseño Visual y Handoff (05, 06, 07)
+- **Estado:** ✅ HARDENED VISUAL FLOW (v2.26.3)
+- [ ] **Etapa 05 - Interaction Design:** Completar Voice, Tone y flujos de wireframes agénticos.
+- [x] **Etapa 06 - Visual Design UI:** Design tokens (Momento 0) y Prototipado Interactivo (Skill 37). **[COMPLETADO]**
+- [ ] **Etapa 07 - Handover QA:** Auditorías finales y exportación de tickets.
 
 ---
 
@@ -44,4 +43,4 @@ Estado: **Hardening de Etapa 01 y Toolbox Completo** (v2.26.0)
 
 ---
 
-*Última actualización: 2026-05-14 · Sincronizado con v2.26.0*
+*Última actualización: 2026-05-14 · Sincronizado con v2.26.3*

@@ -1,22 +1,14 @@
-# Toolbox: Stakeholder Narrative & Pitch Strategy
-
 ---
-
-```yaml
 name: stakeholder-narrative-strategy
 description: >
   Estrategia de comunicación y narrativa para presentaciones a Stakeholders.
   Transforma hallazgos técnicos en historias de impacto de negocio.
-  Úsala para preparar reuniones de cierre de etapa, pedidos de inversión o alineación de equipo.
-  Keywords: pitch, stakeholders, presentación, narrativa, audiencia, Q&A, deck.
-skill_id: toolbox_stakeholder_pitch
-version: "1.0.0"
-framework: Baraldi
-type: "Toolbox / Cross-Stage"
-trigger: "Cuando el usuario pide ayuda para presentar hallazgos, armar una deck o prepararse para una reunión con socios/stakeholders."
-```
-
+  Úsala para preparar reuniones de cierre de etapa, pedidos de inversión, alineación de equipo
+  o cuando el usuario pide armar una deck, preparar un Q&A o defenderse ante stakeholders tóxicos.
+  Keywords: pitch, stakeholders, presentación, narrativa, audiencia, Q&A, deck, Anti-Lucio, Anti-Charly.
+version: "2.26.3"
 ---
+
 
 ## Rol de esta herramienta
 Esta skill actúa como un **Consultor de Comunicación Estratégica**. Su misión es asegurar que el trabajo realizado en el framework no solo sea técnicamente impecable, sino que sea comprendido y aprobado por quienes toman las decisiones.
@@ -195,4 +187,4 @@ La IA debe presentar al menos 2-3 caminos posibles con este desglose:
 
 ---
 
-*Framework Baraldi v2.26.0 · toolbox/01_stakeholder_narrative_strategy.md*
+*Framework Baraldi v2.26.3 · toolbox/01_stakeholder_narrative_strategy.md*

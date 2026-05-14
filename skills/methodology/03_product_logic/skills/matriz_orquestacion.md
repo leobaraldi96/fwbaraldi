@@ -23,4 +23,4 @@ Antes de terminar la Matriz, la IA debe realizar el **Cross-Check de Relaciones*
 3.  **¿Esta lógica `supersedes` a una propuesta anterior?**
 
 ---
-*Framework Baraldi v2.26.0 · Product Logic SDD Flow*
+*Framework Baraldi v2.26.3 · Product Logic SDD Flow*
