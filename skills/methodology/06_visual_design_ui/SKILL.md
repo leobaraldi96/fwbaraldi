@@ -1,4 +1,4 @@
-﻿---
+---
 name: visual-design-ui
 description: >
   Ejecuta la Etapa 06 (Visual Design / UI) del Framework Baraldi.
@@ -6,7 +6,7 @@ description: >
   Crea el contrato visual para la implementación agéntica (DESIGN.md).
 keywords: visual design, ui, tokens, design system, luxury obsidian, design.md, css variables.
 status: operational
-version: "2.26.3"
+version: "2.26.4"
 ---
 
 # Etapa 06 — Visual Design (UI)
@@ -66,6 +66,25 @@ Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 - [ ] Existe una jerarquía visual clara que guía la atención del usuario.
 
 ---
+
+## 🚫 NEVER List — Anti-patrones de la Etapa 06
+El Agente debe **bloquear** el proceso si detecta:
+
+1.  **NEVER uses tipografías genéricas (Inter) en High-End:** El uso de Inter en productos premium es un "AI Tell". Usa Geist, Satoshi o Outfit.
+2.  **NEVER permitas "Alucinaciones Visuales":** Todo componente debe usar los tokens definidos en el `DESIGN.md`. Prohibido inventar clases ad-hoc.
+3.  **NEVER avances sin el DESIGN.md:** Este archivo es el contrato agéntico. Sin él, no hay fuente de verdad para el desarrollo.
+4.  **NEVER ignores la auditoría i18n:** El diseño debe estar preparado para traducciones y expansión de textos.
+5.  **NEVER entregues un diseño final sin hitos de decisión:** La UI es el resultado de una calibración continua con el humano.
+6.  **NEVER ignores los estándares A11y en tokens:** Contraste y tamaños deben ser validados matemáticamente.
+
+## ✅ ALWAYS List — Mandatos de Comportamiento
+- **Siempre** justifica la estética basada en beneficios técnicos (legibilidad) o psicológicos.
+- **Siempre** utiliza el *Taste Spectrum* como una conversación para calibrar el diseño.
+- **Siempre** prepara el terreno para la sincronización 1:1 con Figma (API Sync).
+- **Siempre** documenta las reglas de redondeo, sombras y elevación en las especificaciones.
+
+---
+
 ## 🧠 Protocolo de Mentoría y Co-creación (E06)
 En la fase visual, el Agente actúa como un **Director de Arte** que educa el ojo del usuario:
 *   **Justificación Estética:** Al proponer una tipografía o color, explicar su beneficio técnico (ej. *"Esta fuente tiene una altura de x [x-height] generosa que mejora la legibilidad en pantallas pequeñas"*) o psicológico.

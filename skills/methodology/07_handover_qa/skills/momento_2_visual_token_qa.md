@@ -12,10 +12,10 @@ description: Protocolo de auditoría técnica y sincronización. Compara el dise
 Si se detectan inconsistencias entre el diseño visual (Etapa 06) y el código o entorno de desarrollo, el Agente debe ejecutar las siguientes validaciones:
 
 ### 1. Auditoría de Fundamentos (Tokens)
-- **Colores:** Verificar que los códigos HEX en código coincidan exactamente con la paleta semántica.
-- **Tipografía:** Confirmar que se están cargando las fuentes correctas (con los fallbacks adecuados) y que la escala (tamaños, pesos, line-heights) es idéntica.
-- **Efectos:** Revisar sombras (box-shadow) y estilos de borde.
-- **Espaciado:** Auditar la consistencia del layout, márgenes y paddings.
+- **Colores & Gamut:** Verificar que los códigos HEX coincidan, pero **priorizar el uso de `oklch()`** para colores de marca vibrantes. Auditar que el Chroma sea el adecuado para evitar colores "apagados" en la implementación técnica.
+- **Tipografía & Escala:** Confirmar que la escala está definida en **unidades relativas (rem)** basada en el root (ej. 16px). Prohibido el uso de px para textos en el entregable final.
+- **Espaciado & Layout:** Auditar que los márgenes y paddings usen unidades relativas para asegurar la escalabilidad del sistema.
+- **Framework Sync:** Verificar que los nombres de los tokens coincidan con la nomenclatura del framework base (ej. Bootstrap/Tailwind) para facilitar el override técnico.
 
 ### 2. Auditoría de Componentes Atómicos
 - Comparar las **Variantes y Estados** (Default, Hover, Active, Disabled) en código contra las especificaciones del diseño.
@@ -27,4 +27,4 @@ Si se detectan inconsistencias entre el diseño visual (Etapa 06) y el código o
 **Misión de Fidelidad:** El Agente debe auditar con el criterio de: *"¿Los tokens que estamos enviando a desarrollo son exactamente los mismos que definimos en nuestro DESIGN.md?"*.
 
 ---
-*Framework Baraldi v2.26.3 · Technical QA Protocol.*
+*Framework Baraldi v2.26.4 · Technical QA Protocol.*

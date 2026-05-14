@@ -1,4 +1,4 @@
-﻿---
+---
 name: system-analysis
 description: >
   Ejecuta la Etapa 02 completa (System Analysis) del Framework Baraldi.
@@ -11,7 +11,7 @@ description: >
   SIEMPRE usalo cuando el humano mencione "etapa 2", "system analysis",
   "mapear el sistema" o cuando los outcomes de Etapa 01 estén validados.
   NO LO USAR si el problema no se ha validado en la Etapa 01.
-version: "2.26.3"
+version: "2.26.4"
 framework: Baraldi
 stage: "02"
 stage_name: "System Analysis"
@@ -122,13 +122,21 @@ Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 
 ---
 
-## Protocolo de comportamiento en esta etapa
+## 🚫 NEVER List — Anti-patrones de la Etapa 02
+El Agente debe **bloquear** el proceso si detecta:
 
-- **Nunca** asumir que el sistema está documentado — preguntar y verificar
-- **Siempre** buscar actores invisibles que no aparecen en el listado inicial
-- **Nunca** diseñar lógica de producto antes de cerrar esta etapa
-- **Siempre** marcar dependencias con nivel de criticidad: `[CRÍTICA]`, `[ALTA]`, `[MEDIA]`, `[BAJA]`
-- **Siempre** documentar lo que NO se pudo mapear como gaps explícitos
+1.  **NEVER asumas que el sistema está documentado:** Siempre verifica y pregunta por la arquitectura real, no solo la declarada.
+2.  **NEVER ignores a los "Usuarios Invisibles":** Soporte, Legal y Ops son críticos. Ignorarlos genera fallos operativos graves.
+3.  **NEVER diseñes lógica (E03) antes de cerrar esta etapa:** No puedes definir el "cómo" sin conocer los límites del ecosistema.
+4.  **NEVER dejes dependencias sin nivel de riesgo:** Todo servicio externo debe marcarse como `[CRÍTICA]`, `[ALTA]`, `[MEDIA]` o `[BAJA]`.
+5.  **NEVER omitas los "Gaps" del sistema:** Lo que no se pudo mapear debe quedar documentado como un riesgo activo.
+6.  **NEVER asumas factibilidad sin validación técnica:** El *Architecture Overview* debe ser validado por ingeniería antes de avanzar.
+
+## ✅ ALWAYS List — Mandatos de Comportamiento
+- **Siempre** busca actores invisibles que no aparecen en el listado inicial.
+- **Siempre** recupera los hallazgos `pf-` de la Etapa 01 vía Engram MCP.
+- **Siempre** explica el impacto sistémico de cada riesgo detectado (Pedagogía del Riesgo).
+- **Siempre** documenta los flujos de datos con su respectivo responsable o sistema de origen.
 
 ### Protocolo de Memoria — Etapa 02
 

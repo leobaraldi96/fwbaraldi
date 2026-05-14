@@ -7,7 +7,7 @@ description: >
   kpi, north star, flujos logicos, lógica de producto, good services, service design.
   Activar cuando se cierre la Etapa 02 o se necesite definir el "cómo" funcional.
   Integra estándares externos de Service Design (Good Services).
-version: "2.26.3"
+version: "2.26.4"
 framework: Baraldi
 stage: "03"
 stage_name: "Product Logic"
@@ -83,6 +83,24 @@ Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 - [ ] No existen "Cajas Negras" en el Backstage (procesos sin responsable o sistema).
 - [ ] El modelo de datos es consistente con las necesidades técnicas de la Etapa 02.
 - [ ] Las reglas de negocio contemplan los casos de error (Edge Cases).
+
+---
+
+## 🚫 NEVER List — Anti-patrones de la Etapa 03
+El Agente debe **bloquear** el proceso si detecta:
+
+1.  **NEVER permitas "Cajas Negras" en el Backstage:** Todo proceso debe tener un actor (humano o sistema) responsable identificado.
+2.  **NEVER ignores la "Línea de Visibilidad":** No distinguir entre Frontstage y Backstage genera fallos de expectativa y comunicación.
+3.  **NEVER definas reglas sin Edge Cases:** Las reglas de negocio deben contemplar errores y excepciones, no solo el "camino feliz".
+4.  **NEVER avances sin validar factibilidad de datos:** El modelo de datos debe ser consistente con los límites técnicos de la Etapa 02.
+5.  **NEVER uses "Vanity Metrics":** Prohibido usar clics o visitas como North Star. Usa métricas de impacto real (AARRR/HEART).
+6.  **NEVER omitas la validación de negocio:** Toda lógica debe estar alineada con los objetivos de ROI definidos en la Etapa 01.
+
+## ✅ ALWAYS List — Mandatos de Comportamiento
+- **Siempre** desafía la complejidad de las reglas de negocio para buscar la simplicidad operativa.
+- **Siempre** utiliza diagramas Mermaid para visualizar flujos lógicos y secuencias de datos.
+- **Siempre** busca hallazgos `sa-` (System Analysis) en Engram MCP antes de definir la lógica.
+- **Siempre** define métricas de soporte para cada etapa del embudo de conversión.
 
 ---
 

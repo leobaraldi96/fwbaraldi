@@ -45,7 +45,6 @@ fwbaraldi/
 │   │   └── 07_handover_qa/           ← 🔄 WIP
 │   │
 │   └── toolbox/
-│       ├── baraldi_visual_identity/  ← ADN visual (Modernist Tech, Paul Rand)
 │       ├── 00_Product_And_UXR_Drafts/← Incubación (UXR, Métricas, Negocio)
 │       └── tech_guardrails/          ← Next.js, Tailwind 4, WP, Electron, React Native
 │

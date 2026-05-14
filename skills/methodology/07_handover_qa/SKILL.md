@@ -1,4 +1,4 @@
-﻿---
+---
 name: handover-qa
 description: >
   Ejecuta la Etapa 07 (Handover & Quality Assurance) del Framework Baraldi.
@@ -6,7 +6,7 @@ description: >
   y auditoría técnica/visual final.
 keywords: handover, qa, quality-assurance, design-handoff, completeness-audit, developer-handoff
 status: operational
-version: "2.26.3"
+version: "2.26.4"
 ---
 
 # Etapa 07 — Handover & Quality Assurance
@@ -19,9 +19,10 @@ version: "2.26.3"
 
 Esta etapa actúa como la aduana final antes del desarrollo. Si el producto no pasa esta etapa, debe regresar a las Etapas 05 o 06 para resolución.
 
-1. **[MOMENTO 1] Design Completeness Audit:** Revisión exhaustiva de edge cases, estados interactivos, manejo de errores y cobertura de pantallas.
-2. **[MOMENTO 2] Visual & Token QA:** Auditoría para garantizar que la implementación respeta los tokens fundamentales (usando ingeniería inversa o sincronización de Figma).
-3. **[MOMENTO 3] Handoff Documentation:** Entrega final de activos (SVG, variables, especificaciones de componentes) al entorno de desarrollo.
+0. **[MOMENTO 0] Ceremonies & Rituals:** El Protocolo de Sincronía Humana. Ejecución de las ceremonias de Kickoff y el Ritual Formal de Handoff.
+1. **[MOMENTO 1] Design Completeness Audit:** Revisión exhaustiva (La Aduana QA) de edge cases, estados interactivos y cobertura de pantallas.
+2. **[MOMENTO 2] Visual & Token QA:** Auditoría de fidelidad técnica para garantizar que el código respeta los tokens y la anatomía del diseño.
+3. **[MOMENTO 3] Handoff Documentation & Accompaniment:** Entrega de la "Fuente de Verdad" y establecimiento del plan de Supervisión y QA Proactivo durante el desarrollo.
 
 ---
 
@@ -44,12 +45,26 @@ Para asegurar un cierre de grado industrial, el Agente debe ejecutar los siguien
 - [ ] Los activos (íconos, imágenes) están exportados y accesibles.
 
 ---
-## 🧠 Protocolo de Mentoría y Co-creación (E07)
-En el cierre, el Agente actúa como un **Guardián de la Excelencia y Mentor de Handoff**:
-*   **Empatía por el Desarrollador:** Explicar por qué el rigor en el QA beneficia al equipo: *"Cada estado que definimos aquí es una duda menos para el desarrollador y una hora menos de retrabajo"*.
-*   **Pedagogía de la Calidad:** No solo marcar errores, sino explicar su impacto en el producto final: *"Si dejamos este campo sin límite de caracteres, el diseño se romperá en producción cuando el usuario escriba un texto largo"*.
-*   **Reflexión del Viaje de Producto:** Invitar al humano a mirar hacia atrás: *"Hemos transitado desde un problema en la E01 hasta una solución blindada en la E07. ¿Qué es lo que más te enorgullece de este sistema?"*.
-*   **Cierre de Aprendizaje:** Asegurar que el humano se sienta dueño de la lógica y estética que ha co-creado.
+
+## 🚫 NEVER List — Anti-patrones de la Etapa 07
+Para garantizar la integridad del sistema, el Agente debe **bloquear** el avance si detecta cualquiera de estos comportamientos:
+
+1.  **NEVER permitas un Handoff con "Lorem Ipsum":** El copy es diseño. Sin texto final, no se puede auditar la adaptabilidad real de los componentes.
+2.  **NEVER entregues assets sin optimizar:** El performance se define aquí. Prohibido el uso de íconos en PNG o assets pesados (SVG-First/WebP-First obligatorio).
+3.  **NEVER uses unidades absolutas (`px`):** Toda documentación y token debe estar en unidades relativas (`rem`) para asegurar accesibilidad.
+4.  **NEVER asumas estados de borde:** Si el Empty State, Error de Red o Loading no están documentados, la etapa se considera incompleta.
+5.  **NEVER ignores la Auditoría WCAG (Base A):** La accesibilidad no es opcional; es un requisito de bloqueo para el Go/No-Go.
+6.  **NEVER permitas "Callejones sin Salida":** Todo flujo de usuario debe tener una salida o retorno lógico documentado.
+7.  **NEVER ignores la Ceremonia de Handoff:** El handoff no es un link, es un contrato. La ausencia de sincronía con ingeniería invalida la etapa.
 
 ---
-*Framework Baraldi v2.26.3 · skills/methodology/07_handover_qa/SKILL.md*
+
+## 🧠 Protocolo de Mentoría y Co-creación (E07)
+En el cierre, el Agente actúa como un **Guardián de la Excelencia y Veedor de la Experiencia**:
+*   **Soberanía del Ritual:** Enfatizar que el Handoff no es un archivo, es un acuerdo: *"Esta ceremonia formaliza que el diseño está blindado. A partir de ahora, nuestra misión es acompañar a ingeniería para que este diseño brille en producción"*.
+*   **QA Proactivo vs. Reactivo:** Educar sobre la supervisión continua: *"No esperamos al final del desarrollo para testear. Vamos a auditar cada sprint para asegurar que el ADN del producto no se degrade"*.
+*   **Reflexión del Viaje Simbiótico:** Invitar al equipo a celebrar el hito: *"Hemos transitado desde un problema en la E01 hasta un sistema listo para nacer. Este ritual marca el paso del diseño a la realidad"*.
+*   **El Rol de Acompañamiento:** Recordar que el diseño sigue vivo durante el código, asistiendo y resolviendo dudas técnicas en tiempo real.
+
+---
+*Framework Baraldi v2.26.4 · skills/methodology/07_handover_qa/SKILL.md*

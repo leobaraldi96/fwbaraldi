@@ -10,7 +10,7 @@ description: >
   SIEMPRE usalo cuando el humano mencione "arrancamos", "nuevo proyecto", "etapa 1",
   "problem framing" o provea el contexto inicial de un proyecto.
   NO LO USAR con proyectos que ya tienen la Etapa 01 cerrada.
-version: "2.26.3"
+version: "2.26.4"
 framework: Baraldi
 stage: "01"
 stage_name: "Problem Framing"
@@ -233,13 +233,21 @@ Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 
 ---
 
-## Protocolo de comportamiento en esta etapa
+## 🚫 NEVER List — Anti-patrones de la Etapa 01
+El Agente debe **bloquear** el proceso si detecta:
 
-- **Nunca** diseñar soluciones o features — esto es etapa de diagnóstico
-- **Nunca** presentar hipótesis como hechos validados
-- **Siempre** mostrar el proceso de divergencia antes del output
-- **Siempre** entregar artefactos como documentos Markdown, no en el chat
-- **Siempre** marcar `[HIPÓTESIS]`, `[VALIDADO]`, `[SUPUESTO]` explícitamente
+1.  **NEVER diseñes soluciones:** Esta etapa es de diagnóstico. Proponer features prematuras contamina el encuadre y genera sesgos.
+2.  **NEVER presentes hipótesis como hechos:** Todo debe ser `[HIPÓTESIS]` hasta que la evidencia real lo transforme en `[VALIDADO]`.
+3.  **NEVER saltees la divergencia:** Es obligatorio mostrar el abanico de posibilidades exploradas antes de converger en un Problem Statement.
+4.  **NEVER realices síntesis vaga:** Cada hallazgo debe estar anclado a un dato o cita específica de la Matriz de Evidencia.
+5.  **NEVER esperes que el humano defina la metodología:** El framework tiene la iniciativa. Debes recomendar métodos basados en trade-offs proactivamente.
+6.  **NEVER ocultes datos por asunción:** Si usas formato Dashboard, presenta siempre un Brief de Filtrado para aprobación.
+
+## ✅ ALWAYS List — Mandatos de Comportamiento
+- **Siempre** entrega artefactos como documentos Markdown estructurados, nunca solo en el chat.
+- **Siempre** marca explícitamente el estado del conocimiento: `[HIPÓTESIS]`, `[VALIDADO]`, `[SUPUESTO]`.
+- **Siempre** busca en Engram MCP hallazgos previos con prefijo `pf-` al iniciar.
+- **Siempre** explica el "porqué" técnico de cada recomendación metodológica.
 
 ### Protocolo de Memoria — Etapa 01
 

@@ -5,7 +5,7 @@ description: >
   Define la estructura, navegación y taxonomía del producto.
   Keywords: information architecture, sitemap, user flow, taxonomía, navegación, content inventory.
   Activar cuando se cierre la Etapa 03 o se necesite estructurar la navegación.
-version: "2.26.3"
+version: "2.26.4"
 framework: Baraldi
 stage: "04"
 stage_name: "Information Architecture"
@@ -18,14 +18,21 @@ status: operational
 
 ---
 
-## ⚡ Reglas de Comportamiento Críticas (Anti-Degradación)
+## 🚫 NEVER List — Anti-patrones de la Etapa 04
+El Agente debe **bloquear** el proceso si detecta:
 
-Para evitar la "poda de datos" y la pérdida de resolución sistémica detectada en versiones anteriores, el Agente debe seguir estas reglas bajo pena de fallo metodológico:
+1.  **NEVER realices una "Poda de Datos":** Toda actualización debe ser aditiva. No resumas ni limpies información validada anteriormente.
+2.  **NEVER generes sitemaps "genéricos":** La alta resolución es mandatoria. Mapea cada sección, estado y atributo técnico discutido.
+3.  **NEVER ignores la omnipresencia de actores:** Los flujos deben mostrar la interacción de todos los actores definidos (Front vs Backstage).
+4.  **NEVER permitas inconsistencias terminológicas:** Si un término está en el Glosario (M04), debe ser idéntico en todo el sistema.
+5.  **NEVER omitas los estados de los objetos core:** La State Machine es obligatoria para entender el ciclo de vida del producto.
+6.  **NEVER permitas navegación de más de 3 clics:** Las tareas críticas deben ser eficientes y directas.
 
-1. **Mandato de Alta Resolución (Deep Mapping):** Queda terminantemente prohibido generar sitemaps o inventarios "genéricos". Se debe mapear cada sección, subsección, estado y atributo técnico discutido en la Etapa 03. Si una sección es "estándar" (ej: Auth, Perfil), se mapea con todo su detalle, no se omite por obviedad.
-2. **Prohibición de Resumen/Poda (Anti-Reductive Rule):** Toda actualización de los archivos de esta etapa debe ser **ADITIVA**. Queda prohibido eliminar, resumir o "limpiar" información previa sin un pedido explícito del humano. Si el humano pide un cambio en el Flujo A, el Flujo B debe permanecer intacto y con su resolución original.
-3. **Estrategia de Redundancia:** En esta etapa, el objetivo es **Expandir, Redundar y Documentar**. Es preferible el exceso de detalle que la síntesis. La síntesis es para el humano; la documentación es para el sistema.
-4. **Verificación de Integridad Pre-Guardado:** Antes de aplicar un `replace_file_content` o crear una nueva versión, el Agente debe auto-auditar que no ha "borrado por accidente" ninguna rama del sitemap o paso del flujo anteriormente validado.
+## ✅ ALWAYS List — Mandatos de Comportamiento
+- **Siempre** busca expandir y redundar el detalle informativo antes de sintetizar.
+- **Siempre** verifica la integridad del sitemap para no borrar ramas validadas por accidente.
+- **Siempre** integra activamente el Actor Map de las etapas 02/03 en los flujos de usuario.
+- **Siempre** justifica la navegación basada en modelos mentales y carga cognitiva.
 
 ---
 

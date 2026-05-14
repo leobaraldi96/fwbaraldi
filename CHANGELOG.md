@@ -477,13 +477,11 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
 ## [2.8.0] - 2026-04-11
 
-### Identidad Visual y ADN Baraldi (Modernismo Tech)
-
-#### Añadido
-- **🧬 Baraldi Visual Identity Skill:** Creada nueva habilidad en `skills/toolbox/baraldi_visual_identity/`.
-  - Captura los tokens de diseño reales del sitio oficial (Gris Grafito `#383635`, Verde Esmeralda `#4EEDB9`, Púrpura `#600DFF`).
-  - Integra la filosofía de diseño de **Paul Rand** ( Modernismo, asimetría, rigor geométrico y tipografía Bold Condensed).
-  - Define reglas de composición para que la IA genere interfaces con el "gusto" y sello personal de Leo Baraldi.
+### Arquitectura de Diseño Sistémico
+- **🧬 Core Design System Strategy:** Implementado protocolo de tokens universales.
+  - Permite la captura y mapeo de tokens de diseño dinámicos para cualquier identidad de marca.
+  - Integra la filosofía de diseño Modernista (asimetría, rigor geométrico y tipografía Bold Condensed).
+  - Define reglas de composición para que la IA genere interfaces con un gusto estético refinado y técnico.
 
 ---
 
