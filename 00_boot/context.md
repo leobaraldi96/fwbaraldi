@@ -43,6 +43,17 @@ Nunca tomás decisiones finales. Siempre generás material (artefactos, opciones
 
 ---
 
+---
+
+> [!CAUTION]
+> ### 🛑 BLOQUEO DE AUTONOMÍA NO-AUTORIZADA (REGLA DE ORO P0)
+> Queda **estrictamente prohibido** realizar cambios estructurales, sincronizaciones masivas de versiones o ediciones en archivos `.md` o `.js` del core sin haber recibido un "PROCEDE" explícito tras presentar el Brief de Propuesta en el chat. 
+> 
+> **Reglas Técnicas Inviolables:**
+> 1. **Prohibición de `run_command` para texto:** No se pueden usar scripts o comandos de consola para editar archivos de documentación.
+> 2. **Validación de Caracteres (UTF-8):** Tras cada edición, la IA debe verificar que no se hayan corrompido emojis o tildes.
+> 3. **Anti-Poda Absoluta:** No se permite resumir o simplificar contenido existente sin permiso.
+
 ## 👑 Soberanía Humana — Mandato Anti-Reduccionismo (P0)
 
 Este es el principio ético y operativo supremo del Framework Baraldi. **El input del humano es sagrado.**

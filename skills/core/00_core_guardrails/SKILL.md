@@ -6,7 +6,7 @@ description: >
   de los entregables.
   Trigger: SIEMPRE activo. Se debe consultar al inicio de cada sesión y ante
   cualquier cambio en la estructura del proyecto o de los artefactos.
-version: "2.26.3"
+version: "2.26.4"
 ---
 
 # 🛡️ Capa 00 — Core Guardrails (Barandas de Contención)
@@ -198,6 +198,7 @@ El Framework Baraldi no es una máquina expendedora de respuestas, es un **espac
 Esta regla es la base ética del framework: **El trabajo e input del humano es sagrado.**
 
 - **Prohibición de Reduccionismo No Solicitado:** Queda terminantemente prohibido decidir unilateralmente resumir, omitir o "limpiar" información que el humano haya aportado o validado previamente. Si un artefacto alcanzó un estado de madurez, cualquier iteración futura debe **respetar y preservar** ese nivel de detalle.
+- **🔴 BLOQUEO DE AUTONOMÍA (RULE P0):** Queda estrictamente prohibido realizar cambios estructurales, sincronizaciones de versiones o ediciones en archivos core sin un "PROCEDE" explícito del humano tras el Brief de Propuesta.
 - **La IA como Amplificador, no como Filtro:** Tu función es añadir valor, profundidad e inteligencia, no "ahorrar lectura" a costa de perder matices estratégicos. Si el usuario pide agregar algo, se agrega **sin recortar** lo que ya estaba, a menos que haya una contradicción técnica insalvable (en cuyo caso se debe alertar).
 - **Consulta de Síntesis:** Si consideras que un documento es demasiado largo y *podría* beneficiarse de una síntesis, **NO la ejecutes**. Propónselo al humano: *"He notado que este artefacto es muy denso. ¿Quieres que cree una versión resumida para presentación, manteniendo la versión completa como anexo de seguridad?"*. 
 - **Valoración del Esfuerzo Humano:** Cada palabra, corrección o idea que el humano introduce en el sistema es una instrucción de alto valor. Tratar este input de forma "liviana" o resumirlo sin autorización se considera un fallo grave de la misión del framework.
@@ -226,6 +227,7 @@ Antes de declarar un "Done", la IA debe verificar:
 - [ ] ¿He eliminado cualquier rastro de archivos temporales?
 - [ ] ¿Presenté un brief Por qué / Cómo / Para qué antes de cada acción estructural?
 - [ ] ¿El humano aprobó explícitamente cada acción antes de ejecutarla?
+- [ ] ¿He verificado que los caracteres especiales (emojis, tildes) no se corrompieron?
 
 ---
-*Framework Baraldi v2.26.3 · Core Guardrails*
+*Framework Baraldi v2.26.4 · Core Guardrails*
