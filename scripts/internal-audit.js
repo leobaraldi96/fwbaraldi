@@ -4,7 +4,7 @@ import chalk from 'chalk';
 
 const rootDir = process.cwd();
 
-console.log(chalk.bold.blue('\n🔍 Iniciando Auditoría Interna del Framework Baraldi (v2.26.3)\n'));
+console.log(chalk.bold.blue('\n🔍 Iniciando Auditoría Interna del Framework Baraldi (v2.26.4)\n'));
 
 let issues = 0;
 
@@ -72,8 +72,8 @@ toolFiles.forEach(file => {
     }
 });
 
-if (toolboxCount === 20) reportSuccess(`Conteo de Toolbox correcto (20 de 20)`);
-else reportIssue(`Se detectaron ${toolboxCount} herramientas, se esperaban 20.`);
+if (toolboxCount === 13) reportSuccess(`Conteo de Toolbox correcto (13 de 13)`);
+else reportIssue(`Se detectaron ${toolboxCount} herramientas, se esperaban 13.`);
 
 // 3. Check Guardrails
 const guardrails = fs.readFileSync(path.join(rootDir, 'skills', 'core', '00_core_guardrails', 'SKILL.md'), 'utf8');
@@ -97,7 +97,7 @@ for (let i = 1; i <= 7; i++) {
         // Check Bridge Architecture
         const etapaFile = path.join(methodologyDir, etapaDirName, 'SKILL.md');
         const etapaContent = fs.readFileSync(etapaFile, 'utf8');
-        if (etapaContent.includes('## 🛠️ Integración con la Toolbox')) {
+        if (etapaContent.includes('## 🛠️ Integración con la Toolbox') || etapaContent.includes('(Bridge Architecture)')) {
             reportSuccess(`  ↳ Bridge Architecture verificado`);
         } else {
             reportIssue(`  ↳ Falta conexión con Toolbox (Bridge Architecture)`);

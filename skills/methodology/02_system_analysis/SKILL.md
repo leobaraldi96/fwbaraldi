@@ -1,4 +1,4 @@
----
+﻿---
 name: system-analysis
 description: >
   Ejecuta la Etapa 02 completa (System Analysis) del Framework Baraldi.
@@ -87,21 +87,6 @@ Artefactos de Etapa 01 aprobados
 
 ### Momento 3 — Documentación del Sistema
 **Archivo:** `skills/momento_3_documentacion.md`
-**Activar cuando:** El Dependency Map y Risk Map están completos.
-**Produce:** Architecture Overview, Service Blueprint, documentación técnica lista para Etapa 03.
-**Regla clave:** El output de esta etapa es el input de Product Logic. Si falta algo, Product Logic va a tomar decisiones sobre supuestos — documentar los gaps explícitamente.
-
----
-
-## 🛠️ Integración con la Toolbox (Bridge Architecture)
-Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
-1. **Skill 11 (Ideation & Concept Synthesis):** Utilizar las técnicas de *Problem Reframing* y *How Might We* durante el análisis de riesgos y fricciones del sistema. Cada "Riesgo Crítico" debe ser reformulado como una oportunidad de diseño.
-
----
-
-## Artefactos de salida de la etapa
-
-**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 | Artefacto | Momento | Formato |
 |---|---|---|
 | Actor Map Consolidado | 1 | Documento Markdown |
@@ -110,6 +95,15 @@ Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 | Risk Map | 2 | Documento Markdown |
 | Architecture Overview | 3 | Documento Markdown |
 | Service Blueprint | 3 | Documento Markdown |
+
+## u{1F6E0}u{FE0F} Motores de Análisis (Bridge Architecture)
+Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
+1. **Concept Synthesis (Toolbox):** Técnicas de *Problem Reframing* para convertir riesgos en oportunidades de diseño.
+2. **UX Audit Engine (`skills/engines/ux_audit_rethink_engine/`):** Motor de Auditoría Holística de UX. Activar cuando se analiza un producto **legado** con UI preexistente que necesita diagnóstico antes de rediseñar.
+3. **DS Audit Engine (`skills/engines/ds_audit_engine.md`):** Auditoría de Design Systems. Activar cuando el producto legado tiene un DS existente (Figma, Storybook) que debe evaluarse antes de asumir la Etapa 06.
+4. **Competitor Intelligence Engine (`skills/engines/competitor_intelligence_engine/`):** Análisis de brechas competitivas, SEO/GEO y battlecards. Activar durante el **Momento 1** para completar el análisis del ecosistema.
+5. **Service Blueprint Engine (`skills/engines/service_blueprint_engine/`):** Conecta experiencia frontstage con operación backstage. Activar en el **Momento 3** (Documentación del Sistema).
+6. **Good Services Engine (`skills/engines/good_services_engine/`):** Estándares de diseño de servicios de alta calidad (Louise Downe). Consultar como guardrail de calidad sistémica.
 
 ---
 

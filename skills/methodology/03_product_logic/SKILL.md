@@ -66,13 +66,13 @@ status: operational
 
 ---
 
-## 🛠️ Integración con la Toolbox (Bridge Architecture)
+## 🛠️ Motores de Lógica de Producto (Bridge Architecture)
 Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
-1. **Skill 02 (Advanced Prioritization Protocol):** Aplicar siempre para priorizar el backlog lógico.
-2. **Skill 11 (Ideation & Concept Synthesis):** 
-   - **En Equipo:** Facilitar sesiones de *Crazy 8s* y *SCAMPER* con los participantes.
-   - **Solo:** El Agente utiliza estas técnicas para generar proactivamente un abanico de soluciones y presentarlas al usuario para su crítica.
-3. **Skill 15 (Pricing & Monetization Protocol):** Consultar siempre para alinear lógica con ingresos.
+1. **Advanced Prioritization Protocol (Toolbox):** Aplicar para priorizar el backlog lógico.
+2. **Concept Synthesis and Ideation (Toolbox):** Generar abanico de soluciones lógicas y presentarlas al usuario para su crítica.
+3. **Pricing & Monetization Protocol (Toolbox):** Consultar siempre para alinear lógica con ingresos.
+4. **Product Metrics Engine (`skills/engines/product_metrics_engine/`):** Motor de definición de North Star Metric, HEART y AARRR. Mandatorio para el **Momento 3** (Flujogramas y KPIs).
+5. **Service Blueprint Engine (`../02_system_analysis/skills/service_blueprint_engine/`):** Si el Service Blueprint no fue completado en E02, ejecutar aquí antes de iniciar E03.
 
 ---
 

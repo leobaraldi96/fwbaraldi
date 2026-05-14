@@ -51,7 +51,7 @@ Para el fix más crítico (Top 1), el Agente debe describir con detalle milimét
 ---
 ## 💡 Cómo usar esta Skill (Bridge Architecture)
 - **Cuándo invocar:** En la **Etapa 06 (Momento de Pulido)**, después de ensamblar la UI y justo antes de pasar a la etapa de Handoff (QA).
-- **Input:** Una imagen de la UI (vía *Skill 27 - Vision*) o una descripción muy exhaustiva del layout.
+- **Input:** Una imagen de la UI (vía *Motor de Ingesta Visual*) o una descripción muy exhaustiva del layout.
 - **Sinergia:** Actúa como el supervisor de la Inteligencia de Layout (Etapa 06 Momento 0). Si el Momento 0 es el arquitecto, la Skill 20 es el inspector de obra.
 
 ---

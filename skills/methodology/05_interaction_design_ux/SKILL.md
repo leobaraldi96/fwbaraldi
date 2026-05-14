@@ -1,4 +1,4 @@
----
+﻿---
 name: interaction-design-ux
 description: >
   Ejecuta la Etapa 05 (Interaction Design / UX) del Framework Baraldi.
@@ -32,12 +32,11 @@ En esta etapa no nos preocupamos por los colores, sino por:
 
 ## 🛠️ Integración con la Toolbox (Bridge Architecture)
 Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
-1. **Skill 08 (AI Interaction Design Brief):** Si el producto incluye funcionalidades de IA, es MANDATORIO aplicar este protocolo para diseñar la gestión de latencia, estados de "pensamiento" y feedback de errores de la IA.
-2. **Skill 17 (Universal Content Design & UX Writing):** Herramienta core para el Momento 2 y 3. Debe usarse para redactar el *VOICE.md* y asegurar que cada mensaje de error o estado de éxito siga principios de voz activa y sentence case.
-3. **Skill 20 (Design Critique & Feedback Facilitation):** 
-   - **En Equipo:** Facilitar sesiones de revisión con stakeholders usando el protocolo "I like / I wish / What if".
-   - **Solo:** El Agente asume el rol de crítico y aplica el protocolo para auditar los wireframes y proponer mejoras directas.
-4. **Skill 22 (Strategic User Flow Protocol):** Utilizar para mapear flujos de interacción detallados y micro-navegación antes de prototipar.
+1. **AI Interaction Engine (`skills/engines/ai_interaction_engine/`):** Si el producto incluye funcionalidades de IA, es MANDATORIO aplicar este protocolo para diseñar la gestión de latencia, estados de "pensamiento" y feedback de errores de la IA.
+2. **UX Writing Engine (`skills/engines/ux_writing_engine/`):** Herramienta core para el Momento 2 y 3. Debe usarse para redactar el *VOICE.md* y asegurar que cada mensaje de error o estado de éxito siga principios de voz activa y sentence case.
+3. **Design Critique (Consultar Momento 0 de E06):** Facilitar sesiones de revisión con stakeholders usando el protocolo "I like / I wish / What if".
+4. **Layers Interaction Engine (`skills/engines/layers_interaction_engine/`):** Utilizar para mapear flujos de interacción detallados y micro-navegación antes de prototipar.
+5. **Multimodal Feedback Engine (`skills/engines/multimodal_feedback_engine/`):** Protocolos de feedback multimodal (gestos, audio, haptics, animaciones). Activar cuando el producto tenga interacciones táctiles, de voz o gestuales complejas.
 
 ---
 

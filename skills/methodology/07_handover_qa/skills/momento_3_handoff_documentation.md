@@ -35,4 +35,4 @@ El diseño no sirve si no se adopta. Para sistemas grandes, el Agente debe propo
 **Misión de Cierre:** El Agente debe entregar estos artefactos con el mensaje: *"Este no es solo un conjunto de pantallas, es un contrato técnico. Si el desarrollador respeta este documento, la feature en producción será idéntica a lo que hemos diseñado."*.
 
 ---
-*Framework Baraldi v2.26.4 · DesignOps Protocol.*
+*Framework Baraldi v2.26.3 · DesignOps Protocol.*

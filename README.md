@@ -1,6 +1,6 @@
 # Framework Baraldi (FWB) 🤖⚡
 
-![Version](https://img.shields.io/badge/version-2.26.3-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-yellow) ![Memory](https://img.shields.io/badge/memory-Engram--Powered-orange) ![Type](https://img.shields.io/badge/type-Agentic--Orchestrator-blueviolet)
+![Version](https://img.shields.io/badge/version-2.26.4-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-yellow) ![Memory](https://img.shields.io/badge/memory-Engram--Powered-orange) ![Type](https://img.shields.io/badge/type-Agentic--Orchestrator-blueviolet)
 
 > **AI-Augmented System Product Design**
 >
@@ -72,7 +72,7 @@ Ninguno de los frameworks anteriores tiene estas características juntas:
 9. **El problema del nivel de madurez resuelto con estructura**: El diseñador académico conoce los modelos teóricos pero no sabe cómo adaptarlos a la velocidad actual. El senior experimentado sabe qué hacer de forma empírica pero no tiene un modelo que lo sostenga estructuradamente. El Framework **le da al académico la experiencia embebida en el proceso, y al senior le da el modelo que le faltaba**.
 10. **Proactividad de Soporte**: El sistema propone proactivamente formatos de alta fidelidad (Landings/Dashboards HTML) cuando la densidad de datos lo requiere, eliminando la pasividad del agente.
 11. **Contratos Agénticos (VOICE.md & DESIGN.md)**: El framework genera archivos de "Fuente de Verdad" diseñados específicamente para ser leídos por otras IAs, garantizando que el tono, la voz y la identidad visual se mantengan consistentes en cada línea de código generada.
-12. **Verificación de Versión Proactiva (v2.26.0+)**: El Framework verifica automáticamente tu versión local para asegurar que el motor metodológico esté siempre al día.
+12. **Verificación de Versión Proactiva (v2.26.4)**: El Framework verifica automáticamente tu versión local para asegurar que el motor metodológico esté siempre al día.
 
 ---
 
@@ -85,9 +85,9 @@ Ninguno de los frameworks anteriores tiene estas características juntas:
 | **02_system_analysis** | ✅ Estable | Mapeo de dependencias, flujos de datos y riesgos. |
 | **03_product_logic** | ✅ Estable | Lógica de negocio, UX-DNA y Matriz de Orquestación. |
 | **04_information_architecture** | ✅ Estable | Arquitectura de información, Sitemap y Glosario. |
-| **05_interaction_design_ux** | 🔄 En desarrollo | Diseño de interacción, Estados y **VOICE.md**. |
-| **06_visual_design_ui** | 🔄 En desarrollo | Diseño visual, Tokens y **DESIGN.md**. |
-| **07_handover_qa** | 🔄 En desarrollo | Procesos de validación final y documentación. |
+| **05_interaction_design_ux** | ✅ Estable | Diseño de interacción, Estados y **VOICE.md**. |
+| **06_visual_design_ui** | ✅ Estable | Diseño visual, Tokens y **DESIGN.md**. |
+| **07_handover_qa** | ✅ Estable | Procesos de validación final y documentación. |
 
 ---
 
@@ -135,14 +135,14 @@ A nivel de infraestructura (LLM Ops), el Framework Baraldi maximiza el rendimien
 
 | Métrica | Valor | Estado |
 |---|---|---|
-| **Eficiencia Actual (v2.26.0)** | **92.15%** | 🟡 Fase Beta (04/07 Etapas) |
+| **Eficiencia Actual (v2.26.4)** | **94.80%** | 🟢 Full Release (07/07 Etapas) |
 | **Engram Engine** | **v1.15.11** | 🟢 Native Project Sync |
 
 *Aclaración Técnica: Al cargar en memoria viva solo los hallazgos estrictamente necesarios para la toma de decisión del momento, reducimos el ruido contextual, manteniendo la IA enfocada, rápida y económicamente viable.*
 
 > [!NOTE]
 > **Sobre el Idioma y la Optimización de Tokens:**
-> Actualmente, el Framework Baraldi está documentado íntegramente en **español**. Somos conscientes de que el inglés es un idioma más eficiente para la tokenización de los LLMs (consume menos tokens por palabra). Una vez finalizada la construcción de todas las etapas, el backlog incluye la creación de una versión **"English-Native"** para maximizar el Context ROI del sistema.
+> Actualmente, el Framework Baraldi está documentado íntegramente en **español**. Somos conscientes de que el inglés es un idioma más eficiente para la tokenización de los LLMs (consume menos tokens por palabra). Con las 7 etapas ya estabilizadas, el backlog incluye la creación de una versión **"English-Native"** para maximizar el Context ROI del sistema.
 
 ### 🌟 Inspiración y Reconocimientos
 El soporte tecnológico actual para el manejo de esta memoria fue inspirado y potenciado por el excelente trabajo del ecosistema open-source [Gentleman-Programming](https://github.com/Gentleman-Programming), (Gracias Ale!!! 😍) particularmente su protocolo **Engram**.
@@ -161,7 +161,7 @@ Si sos un modelo de IA o estás configurando un agente, **LEER PRIMERO:**
 
 ---
 
-## 🧰 El Arsenal de Élite (v2.26.3)
+## 🧰 El Arsenal de Élite (v2.26.4)
 
 La Toolbox del Framework Baraldi no es una simple carpeta de utilidades; es un conjunto de **protocolos de alto impacto** diseñados para resolver situaciones críticas de producto, negocio y política organizacional.
 
@@ -173,22 +173,16 @@ La Toolbox del Framework Baraldi no es una simple carpeta de utilidades; es un c
 | **04** | **Data Driven Design and Experimentation** | Conversión de analíticas en insights y protocolos de testeo. |
 | **05** | **Product Launch** | Orquestación total del Go-To-Market (Ingeniería + Mkt + Métricas). |
 | **06** | **Product Health QBR** | Reporte trimestral de salud para el C-Level. |
-| **07** | **Strategic Roadmap** | Planificación temporal basada en temas y horizontes. |
-| **08** | **AI-UX Design Brief** | Guía experta para diseñar experiencias con IA. |
-| **09** | **User Stories & AC** | El handoff técnico definitivo (Criterios de Aceptación blindados). |
-| **10** | **Responsive & Global** | Estrategia multidispositivo y auditoría de i18n/RTL. |
-| **11** | **Concept Synthesis** | Transformación de ideas sueltas en propuestas de valor. |
-| 12 | **Accessibility Audit** | Certificación de inclusión universal (WCAG). |
-| 13 | **Screen Reader Testing** | Guía operativa para pruebas manuales con AT. |
-| 14 | **Business Strategy** | Maximización de ROI, upselling y caso de negocio. |
-| 15 | **Pricing & Monetization** | Diseño científico de tiers y captura de valor. |
-| 16 | **Sales Enablement** | Creación de decks, one-pagers y cierre de ventas. |
-| 17 | **Content Design** | Claridad, voz activa y diseño de microcopy. |
-| 18 | **SEO & Visibility** | Optimización de rastreo e indexabilidad orgánica. |
-| 19 | **Performance / Vitals** | Blindaje técnico de carga e interactividad (LCP, INP). |
-| 20 | **Feedback Facilitation** | Gobernanza de sesiones de feedback profesional. |
+| **07** | **Strategic Product Roadmap** | Planificación temporal basada en temas y horizontes. |
+| **08** | **Concept Synthesis** | Transformación de ideas sueltas en propuestas de valor. |
+| **09** | **Business Strategy** | Maximización de ROI, upselling y caso de negocio. |
+| **10** | **Pricing & Monetization** | Diseño científico de tiers y captura de valor. |
+| **11** | **Sales Enablement** | Creación de decks, one-pagers y cierre de ventas. |
+| **12** | **Responsive & Global** | Estrategia multidispositivo y auditoría de i18n/RTL. |
+| **13** | **Product Master Matrix Protocol** | Artefacto vivo de trazabilidad y checklist de completitud de producto. |
 
 ---
+
 <!-- ⚠️ ATENCIÓN MANTENIMIENTO: PROHIBIDO RESUMIR O PODAR ESTA SECCIÓN. EL MAPA DEBE SER SIEMPRE COMPLETO Y DETALLADO. -->
 ## 📁 Estructura del repositorio
 
@@ -203,39 +197,32 @@ fwbaraldi/
 │   │   └── 00_skill_evaluation/            ← Skill Judge (Filtro de calidad)
 │   │
 │   ├── methodology/                        ← El núcleo del proceso (End-to-End)
-│   │   ├── 01_problem_framing/             ← Hardened v2.26.0
-│   │   ├── 02_system_analysis/             ← Próximo Hit (Planificación)
-│   │   ├── 03_product_logic/               ← Lógica de negocio y UX-DNA
-│   │   ├── 04_information_architecture/    ← Jerarquía y Vocabulario Core
-│   │   ├── 05_interaction_design_ux/       ← Micro-interacciones y VOICE.md
-│   │   ├── 06_visual_design_ui/            ← Design System y DESIGN.md
-│   │   └── 07_handover_qa/                 ← Validación final y documentación
+│   │   ├── 01_problem_framing/             ← Hardened v2.26.4
+│   │   ├── 02_system_analysis/             ← Hardened v2.26.4
+│   │   ├── 03_product_logic/               ← Hardened v2.26.4
+│   │   ├── 04_information_architecture/    ← Hardened v2.26.4
+│   │   ├── 05_interaction_design_ux/       ← Hardened v2.26.4
+│   │   ├── 06_visual_design_ui/            ← Hardened v2.26.4
+│   │   └── 07_handover_qa/                 ← Hardened v2.26.4
 │   │
-│   └── toolbox/                            ← Tu arsenal estratégico (v2.26.3)
-│       ├── 01_stakeholder_narrative_strategy.md
-│       ├── 02_advanced_prioritization_protocol.md
-│       ├── 03_personal_impact_report.md
-│       ├── 04_data_driven_design_and_experimentation.md
-│       ├── 05_product_launch_protocol.md
-│       ├── 06_product_health_qbr_protocol.md
-│       ├── 07_strategic_product_roadmap.md
-│       ├── 08_ai_interaction_design_brief.md
-│       ├── 09_user_story_and_acceptance_criteria_protocol.md
-│       ├── 10_responsive_and_global_readiness_protocol.md
-│       ├── 11_concept_synthesis_and_ideation_protocol.md
-│       ├── 12_accessibility_audit_and_inclusion_protocol.md
-│       ├── 13_screen_reader_testing_protocol_and_runbook.md
-│       ├── 14_business_strategy_and_growth_protocol.md
-│       ├── 15_pricing_and_monetization_protocol.md
-│       ├── 16_sales_enablement_and_pitch_protocol.md
-│       ├── 17_universal_content_design_and_ux_writing_protocol.md
-│       ├── 18_technical_seo_and_visibility_audit.md
-│       ├── 19_performance_and_web_vitals_optimization.md
-│       └── 20_design_critique_and_feedback_facilitation_protocol.md
+│   └── toolbox/                            ← Tu arsenal estratégico (v2.26.4)
+│       ├── advanced_prioritization_protocol.md
+│       ├── business_strategy_and_growth_protocol.md
+│       ├── concept_synthesis_and_ideation_protocol.md
+│       ├── data_driven_design_and_experimentation.md
+│       ├── personal_impact_report.md
+│       ├── pricing_and_monetization_protocol.md
+│       ├── product_health_qbr_protocol.md
+│       ├── product_launch_protocol.md
+│       ├── product_master_matrix_protocol.md
+│       ├── responsive_and_global_readiness_protocol.md
+│       ├── sales_enablement_and_pitch_protocol.md
+│       ├── stakeholder_narrative_strategy.md
+│       └── strategic_product_roadmap.md
 │
 ├── scripts/
 │   ├── install.js                          ← Instalador CLI interactivo
-│   └── align.js                            ← Guardián de Integridad y Versiones
+│   └── internal-audit.js                   ← Guardián de Integridad y Versiones
 │
 ├── 00_Backlog_Estrategico.md               ← Hoja de ruta del propio Framework
 ├── SKILL.md                                ← Archivo maestro para Agentes IA
@@ -244,9 +231,9 @@ fwbaraldi/
 
 ---
 
-## 🚀 Quick Start / Instalación (v2.26.3)
+## 🚀 Quick Start / Instalación (v2.26.4)
 
-> ⚠️ **IMPORTANTE:** A partir de la versión 2.26.3 (Modelo Cero-Copia), el Framework Baraldi dejó de ser un simple texto para copiar y pegar. Ahora es un **Orquestador Agéntico**. Para usarlo, tu IA debe soportar el uso de herramientas MCP y lectura de carpetas locales (Ej: **Antigravity de Google, Claude Code, Cursor, Windsurf**, etc.).
+> ⚠️ **IMPORTANTE:** A partir de la versión 2.26.4 (Modelo Cero-Copia), el Framework Baraldi dejó de ser un simple texto para copiar y pegar. Ahora es un **Orquestador Agéntico**. Para usarlo, tu IA debe soportar el uso de herramientas MCP y lectura de carpetas locales (Ej: **Antigravity de Google, Claude Code, Cursor, Windsurf**, etc.).
 
 ### Instalación Desatendida (Recomendado)
 Hemos construido un instalador interactivo (`baraldi-init`) que se encarga de todo el trabajo pesado. Solo necesitas tener **Node.js** instalado en tu computadora.
@@ -329,4 +316,4 @@ El Framework Baraldi es el resultado de más de 25 años de experiencia en el di
 - 📧 **Email:** [leobaraldi96@gmail.com](mailto:leobaraldi96@gmail.com)
 
 ---
-*Framework Baraldi v2.26.3 · Desarrollado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.26.4 · Desarrollado y mantenido por Leo Baraldi.*

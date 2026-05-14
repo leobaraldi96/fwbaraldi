@@ -6,7 +6,7 @@ description: >
   para ir más allá del diseño de interfaces y enfocarse en sistemas y outcomes.
   Úsalo cuando el usuario quiera iniciar un proceso de diseño de producto estructurado.
 keywords: product-design, framework-baraldi, problem-framing, system-analysis, ux-strategy, systems-thinking
-version: "2.26.3"
+version: "2.26.4"
 ---
 
 # Framework Baraldi — Orquestador Global
@@ -23,33 +23,21 @@ Guiar al equipo de producto a través de fases estructuradas de descubrimiento, 
    - Empezar siempre por la **Etapa 01 — Problem Framing** (`skills/methodology/01_problem_framing/SKILL.md`) para validar el "para qué" antes del "cómo".
    - Avanzar a **Etapa 02 — System Analysis** (`skills/methodology/02_system_analysis/SKILL.md`) para mapear el ecosistema completo.
 
-## Toolbox de Alta Densidad (v2.26.3)
+## Toolbox Estratégica (v2.26.4)
 El framework cuenta con una caja de herramientas transversal para la ejecución táctica y estratégica:
-1.  **01_Stakeholder Narrative Strategy:** Estrategia de venta, pitch y protocolos de gestión de stakeholders críticos.
-2.  **02_Advanced Prioritization Protocol:** Motor de ROI basado en RICE, Kano y Score Baraldi.
-3.  **03_Personal Impact Report:** Sistematización de logros y visibilidad de carrera.
-4.  **04_Data Driven Design and Experimentation:** Insights analíticos y protocolos de validación.
-5.  **05_Product Launch Protocol:** Orquestación técnica y estratégica de lanzamientos.
-6.  **06_Product Health QBR Protocol:** Gobernanza y reporte de salud trimestral.
-7.  **07_Strategic Product Roadmap:** Planificación de productos por horizontes.
-8.  **08_AI Interaction Design Brief:** Diseño de experiencias potenciadas por IA.
-9.  **09_User Story and Acceptance Criteria Protocol:** Contratos de ejecución técnica blindados.
-10. **10_Responsive and Global Readiness Protocol:** Adaptabilidad multidispositivo y global.
-11. **11_Concept Synthesis and Ideation Protocol:** Motor de convergencia de ideas y valor.
-12. **12_Accessibility Audit and Inclusion Protocol:** Certificación de inclusión universal (WCAG).
-13. **13_Screen Reader Testing Protocol and Runbook:** Guía operativa para pruebas manuales con AT.
-14. **14_Business Strategy and Growth Protocol:** Maximización de ROI, upselling y caso de negocio.
-15. **15_Pricing and Monetization Protocol:** Diseño científico de tiers y captura de valor.
-16. **16_Sales Enablement and Pitch Protocol:** Creación de decks, one-pagers y cierre de ventas.
-17. **17_Universal Content Design and UX Writing Protocol:** Claridad, voz activa y diseño de microcopy.
-18. **18_Technical SEO and Visibility Audit:** Optimización de rastreo e indexabilidad orgánica.
-19. **19_Performance and Web Vitals Optimization:** Blindaje técnico de carga e interactividad (LCP, INP).
-20. **20_Design Critique and Feedback Facilitation Protocol:** Gobernanza de sesiones de feedback.
-...
-36. **36_Premium Design Taste Protocol:** Motor de "buen gusto" y eliminación de AI Slop en UI.
-37. **37_Web Artifact Prototyping Protocol:** Suite para crear prototipos interactivos de alta fidelidad (React + shadcn/ui).
-38. **38_UI/UX Pro Max — Design Intelligence:** Guía exhaustiva de inteligencia de diseño (50+ estilos, 97 paletas, 99 reglas UX).
-39. **39_Product Master Matrix Protocol:** Artefacto vivo de trazabilidad y checklist de completitud de producto.
+1.  **Stakeholder Narrative Strategy:** Gestión de líderes difíciles (Anti-Lucio/Carlos/Maxi) y venta de ideas.
+2.  **Advanced Prioritization Protocol:** Motor de ROI absoluto basado en RICE, Kano y Score Baraldi.
+3.  **Personal Impact Report:** Sistematización de logros y visibilidad de carrera.
+4.  **Data Driven Design and Experimentation:** Insights analíticos y protocolos de validación.
+5.  **Product Launch Protocol:** Orquestación técnica y estratégica de lanzamientos.
+6.  **Product Health QBR Protocol:** Gobernanza y reporte de salud trimestral.
+7.  **Strategic Product Roadmap:** Planificación de productos por horizontes.
+8.  **Concept Synthesis and Ideation Protocol:** Motor de convergencia de ideas y valor.
+9.  **Business Strategy and Growth Protocol:** Maximización de ROI, upselling y caso de negocio.
+10. **Pricing and Monetization Protocol:** Diseño científico de tiers y captura de valor.
+11. **Sales Enablement and Pitch Protocol:** Creación de decks, one-pagers y cierre de ventas.
+12. **Responsive and Global Readiness Protocol:** Adaptabilidad multidispositivo y global.
+13. **Product Master Matrix Protocol:** Artefacto vivo de trazabilidad y checklist de completitud de producto.
 
 ---
 
@@ -65,7 +53,7 @@ El Framework Baraldi **rechaza** el modelo de "IA Generadora de Resultados Final
 *   **Misión Pedagógica:** El framework enseña a diseñar y pensar productos mientras se ejecutan. Si el humano no entiende el "porqué" de una decisión, el framework ha fallado.
 
 ---
-*Framework Baraldi v2.26.3 · Sistema Operativo de Producto.*
+*Framework Baraldi v2.26.4 · Sistema Operativo de Producto.*
 
 ## Reglas de Oro del Framework
 - **Divergencia Obligatoria:** Antes de converger en una solución, se debe expandir la visión estratégica (Momentos "Divergencia").
@@ -79,4 +67,4 @@ El Framework Baraldi **rechaza** el modelo de "IA Generadora de Resultados Final
 - **Ley de No-Degradación Sistémica:** Queda prohibido eliminar, resumir o "limpiar" secciones de documentación que contengan filosofía, principios de diseño o especificaciones técnicas. Toda actualización debe ser ADITIVA o de REEMPLAZO ENRIQUECEDOR. Ante la duda, CONSULTAR antes de borrar.
 
 ---
-*Framework Baraldi v2.26.3 · Creado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.26.4 · Creado y mantenido por Leo Baraldi.*

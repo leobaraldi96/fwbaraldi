@@ -87,13 +87,12 @@ Para evitar la "poda de datos" y la pérdida de resolución sistémica detectada
 
 ---
 
-## 🛠️ Integración con la Toolbox (Bridge Architecture)
+## 🛠️ Motores Integrados (Bridge Architecture)
 Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
-1. **Skill 17 (Universal Content Design & UX Writing):** Aplicar siempre para asegurar precisión en taxonomías y glosarios.
-2. **Skill 20 (Design Critique & Feedback Facilitation):** 
-   - **En Equipo:** Utilizar para diseñar la arquitectura del tablero (FigJam/Miro) y facilitar la validación con stakeholders.
-   - **Solo:** El Agente actúa como "crítico externo" aplicando los principios de la skill para desafiar la propuesta del usuario sin burocracia de workshop.
-3. **Skill 22 (Strategic User Flow Protocol):** Herramienta mandatoria para el **Momento 2**. Se debe usar para asegurar que los flujos cubran validaciones, estados de error y todos los actores definidos.
+1. **UX Writing Engine (`../05_interaction_design_ux/skills/ux_writing_engine/`):** Aplicar para asegurar precisión semántica en taxonomías y glosarios.
+2. **Design Critique Engine (`../06_visual_design_ui/skills/design_critique_engine.md`):** Aplicar para validar la arquitectura con stakeholders o como auditoría crítica interna.
+3. **Layers Interaction Engine (`../05_interaction_design_ux/skills/layers_interaction_engine/`):** Mandatorio para el **Momento 2**. Asegura que los flujos cubran validaciones, estados de error y todos los actores definidos.
+4. **User Story Engine (`skills/engines/user_story_engine.md`):** Mandatorio para el **cierre de Etapa 04**. Transforma los flujos aprobados en tickets BDD listos para el equipo de desarrollo.
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: product-master-matrix-protocol
 description: Protocolo para la gestión del artefacto vivo de trazabilidad de producto (PMM).
-version: "1.0.0"
+version: "2.26.3"
 ---
 
 # 📊 [SKILL 39] Product Master Matrix (PMM) Protocol

@@ -1,7 +1,7 @@
 ---
 name: web-artifact-prototyping-protocol
 description: Suite de ingeniería para crear artefactos React de alta fidelidad con shadcn/ui y empaquetado autónomo.
-version: "2.0.0"
+version: "2.26.3"
 ---
 
 # 🚀 [SKILL 37] Web Artifact Prototyping (Engineering Engine)

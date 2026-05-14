@@ -5,7 +5,16 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.26.4] - 2026-05-14
+
+### 🛡️ Arquitectura y Hardening Final (Toolbox Cleanup)
+- **Cambiado:** **Bridge Architecture v3.** Reorganización total de las etapas metodológicas. Los motores tácticos (Engines) ahora residen en subcarpetas `/engines` dentro de cada etapa, separando el flujo secuencial (Momentos) de las herramientas opcionales.
+- **Eliminado:** **Deprecación de Tech Guardrails.** Se eliminaron del Toolbox todas las herramientas de implementación técnica (React, Next.js, Tailwind) para mantener el framework agnóstico y enfocado 100% en Lógica de Producto y Diseño Sistémico.
+- **Sincronizado:** Versión global `v2.26.4` unificada en todos los archivos core y skills.
+- **Corregido:** Reparación de enlaces internos en los índices de las 7 etapas tras la migración a la estructura `/engines`.
+
 ## [2.26.3] - 2026-05-14
+
 
 ### 🛡️ Protocolo de Censo de Ecosistema (Setup Inicial)
 - **Añadido:** **Paso 0 - Ecosystem Setup (Etapa 01).** Ahora el framework obliga a realizar una configuración inicial del equipo y gobernanza antes de iniciar cualquier diseño. Esto garantiza que la IA sepa exactamente a quién responde y qué nivel de burocracia aplicar.

@@ -99,7 +99,7 @@ Antes de iniciar el Problem Framing, el Agente debe solicitar y documentar:
 **Regla clave:** Mostrar siempre el proceso de divergencia antes del output. Nunca saltear.
 
 ### Momento Feedback — Research Planning Checkpoint (Metodología y Soportes)
-**Archivo:** `skills/momento_feedback_metodologia.md`
+**Archivo:** `skills/momento_2_feedback_metodologia.md`
 **Referencia benchmark:** `references/benchmark_guide.md`
 **Activar cuando:** El humano aprueba los artefactos del Momento 1 y escribe "Solicitud continuar".
 **Produce:** Plan de metodología + guión de entrevistas/encuestas + informe de benchmark (6 secciones) + base de datos de entrevistados.
@@ -143,13 +143,13 @@ Antes de diseñar el plan, el framework debe ejecutar el siguiente interrogatori
 **Regla anti-pasividad:** Si el humano llega a este momento sin un plan de research definido, **la IA es la responsable de guiarlo**. El framework nunca debe limitarse a esperar que el humano proponga la metodología. La iniciativa es del framework, no del humano.
 
 ### Momento 2 — IA Auxiliar / Asistente on Vivo
-**Archivo:** `skills/momento_2_live_assistant.md`
+**Archivo:** `skills/momento_3_live_assistant.md`
 **Activar cuando:** El humano aprueba los soportes y está listo para ejecutar entrevistas.
 **Produce:** Briefs por entrevistado, notas estructuradas en tiempo real, informe de research completo con **Matriz de Evidencia** (Hipótesis vs. Dato real vs. Hallazgo). Incluye la identificación de hallazgos sutiles por parte del humano.
 **Regla clave:** Marcar evidencia con `[CONFIRMA H1]`, `[REFUTA H2]`, `[NUEVO INSIGHT]`. Prohibida la síntesis vaga; cada hallazgo debe asociarse a una pregunta o dato específico. Dar espacio proactivo para que el humano indique hallazgos sutiles o intuitivos.
 
 ### Momento 3 — Evaluación de Cierre + Output Format Selection
-**Archivo:** `skills/momento_3_cierre.md`
+**Archivo:** `skills/momento_4_cierre.md`
 **Activar cuando:** El humano aprueba el Informe de Research y declara cierre de recolección.
 **Produce:** Informe de Cierre con recomendación: avanzar / iterar / pivotar.
 **Regla clave:** Ejecutar los 4 pasos visibles siempre. La honestidad del informe es no negociable.
@@ -184,12 +184,13 @@ Si el humano selecciona la ruta **"Dashboard"**, el framework tiene la regla est
 
 ---
 
-## 🛠️ Integración con la Toolbox (Bridge Architecture)
+## 🛠️ Motores de Investigación (Bridge Architecture)
 Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
-1. **Skill 01 (Stakeholder Narrative Strategy):** 
-   - **En Equipo:** Aplicar para blindar el *Stakeholder Map* y anticipar resistencias políticas.
-   - **Solo:** Utilizar para refinar la narrativa del producto ante inversores, partners o el mercado.
-2. **Skill 14 (Business Strategy & Growth):** Aplicar siempre para asegurar que el problema detectado tenga impacto directo en el ROI.
+1. **Stakeholder Narrative Strategy (Toolbox):** Aplicar para blindar el *Stakeholder Map* y anticipar resistencias políticas.
+2. **Business Strategy & Growth (Toolbox):** Aplicar para asegurar que el problema detectado tenga impacto directo en el ROI.
+3. **UXR Discovery Engine (`skills/engines/uxr_discovery_engine/`):** Motor de investigación cualitativa y JTBD (Teresa Torres/Cagan). Mandatorio para el **Momento Feedback**: blindar el diseño de entrevistas y evitar sesgos de confirmación.
+4. **UXR Scientific Testing Engine (`skills/engines/uxr_scientific_testing_engine/`):** Protocolos de testeo cuantitativo y validación de hipótesis. Activar en el **Momento 2** para triangular con datos.
+5. **UXR Synthesis Engine (`skills/engines/uxr_synthesis_engine/`):** Motor de síntesis de insights cualitativos. Activar al cerrar el **Momento 2** para generar el Informe de Research consolidado.
 
 ---
 

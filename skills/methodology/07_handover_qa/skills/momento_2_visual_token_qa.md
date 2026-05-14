@@ -27,4 +27,4 @@ Si se detectan inconsistencias entre el diseño visual (Etapa 06) y el código o
 **Misión de Fidelidad:** El Agente debe auditar con el criterio de: *"¿Los tokens que estamos enviando a desarrollo son exactamente los mismos que definimos en nuestro DESIGN.md?"*.
 
 ---
-*Framework Baraldi v2.26.4 · Technical QA Protocol.*
+*Framework Baraldi v2.26.3 · Technical QA Protocol.*

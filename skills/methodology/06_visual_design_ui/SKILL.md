@@ -1,4 +1,4 @@
----
+﻿---
 name: visual-design-ui
 description: >
   Ejecuta la Etapa 06 (Visual Design / UI) del Framework Baraldi.
@@ -40,19 +40,21 @@ Este archivo es obligatorio y debe cumplir con el **[Protocolo 36] (Taste Design
 1. **[MOMENTO 1] Design Tokens & Moodboard:** Definición de la paleta y el lenguaje visual. Generación del Sistema de Tokens Base.
 2. **[MOMENTO 2] High-Fidelity Components:** Creación de la biblioteca de componentes (Lógica Bottom-Up y Contrato Handoff).
 3. **[MOMENTO 3] DESIGN.md Generation:** Consolidación de la fuente de verdad agéntica.
-4. **[MOMENTO 4] Interactive Prototyping (Artifact):** Generación de un prototipo interactivo (React/Tailwind) usando la **Skill 37** para validar la experiencia.
+4. **[MOMENTO 4] Interactive Prototyping (Artifact):** Generación de un prototipo interactivo (React/Tailwind) listo para testeo.
 
 ---
 
 ## 🛠️ Integración con la Toolbox (Bridge Architecture)
 Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
-1. **Skill 37 (Web Artifact Prototyping):** MANDATORIO para el **Momento 4**.
+1. **Momento 4 (Interactive Prototyping):** MANDATORIO para testeo de alta fidelidad.
 2. **Skill 10 (i18n Readiness Audit):** MANDATORIO antes de cerrar el Momento 3.
 3. **Skill 12 & 13 (Accessibility & Screen Reader):** Mandatorio durante el Momento 2.
 4. **Skill 19 (Performance & Web Vitals):** Consultar para optimizar el peso de los assets visuales.
-5. **Skill 20 (Design Critique & Feedback Facilitation):** Revisión y pulido estético.
+5. **Design Critique Engine (`skills/engines/design_critique_engine.md`):** Revisión y pulido estético.
 6. **Etapa 07 - Momento 2 (Figma-to-Code Sync):** Mandatorio para el **Momento 3** (Extracción vía API).
-7. **Skill 27 (Visual Reverse Engineering Protocol):** Recomendado para el **Momento 1** (Extracción vía Vision).
+7. **Visual Reverse Engineering Engine (`skills/engines/visual_reverse_engineering_engine.md`):** Recomendado para el **Momento 1** (Extracción vía Vision).
+8. **Token Audit Engine (`skills/engines/design_token_audit_engine.md`):** Auditoría matemática de consistencia de tokens.
+9. **Component Inventory Engine (`skills/engines/component_inventory_engine.md`):** Priorización estratégica de construcción.
 
 ---
 
@@ -67,7 +69,7 @@ Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 ## 🧠 Protocolo de Mentoría y Co-creación (E06)
 En la fase visual, el Agente actúa como un **Director de Arte** que educa el ojo del usuario:
 *   **Justificación Estética:** Al proponer una tipografía o color, explicar su beneficio técnico (ej. *"Esta fuente tiene una altura de x [x-height] generosa que mejora la legibilidad en pantallas pequeñas"*) o psicológico.
-*   **Reflexión de Taste:** Usar el **Taste Spectrum (Skill 36)** no como un cuestionario, sino como una conversación: *"Si subimos la densidad aquí, ganamos eficiencia pero perdemos aire. ¿Cómo crees que afectará esto a tu usuario en [Contexto definido en E01]?"*.
+*   **Reflexión de Taste:** Usar el **Taste Spectrum (Momento 0)** no como un cuestionario, sino como una conversación: *"Si subimos la densidad aquí, ganamos eficiencia pero perdemos aire. ¿Cómo crees que afectará esto a tu usuario en [Contexto definido en E01]?"*.
 *   **Decisión Compartida:** Nunca entregar un diseño finalizado sin haber transitado los hitos de decisión con el humano.
 
 ---
