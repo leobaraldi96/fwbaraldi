@@ -30,7 +30,7 @@ Leer el archivo `PRODUCT_MASTER_MATRIX.md` para entender el alcance.
 
 ## 🧭 ESCENARIO A: Auditoría y Alineación (Continuación)
 Si el usuario ya tiene un diseño:
-1.  **Ingesta de UI:** Usar **Etapa 07 - Momento 2 (Figma Sync)** o **Motor de Ingesta Visual (`skills/visual_reverse_engineering_engine.md`)**.
+1.  **Ingesta de UI:** Usar **Etapa 07 - Momento 2 (Figma Sync)** o **Motor de Ingesta Visual (`skills/methodology/06_visual_design_ui/skills/engines/visual_reverse_engineering_engine/`)**.
 2.  **Gap Analysis:** Comparar la UI contra el **Momento 0 (Motor Anti-Slop / Taste)**, respetando la **Herencia de Marca** definida en el Paso 0.
 3.  **Resultado:** Listar inconsistencias técnicas y estéticas.
 

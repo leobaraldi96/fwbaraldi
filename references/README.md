@@ -11,9 +11,9 @@ Un recurso va en `references/` global cuando:
 
 ## Cuándo NO va acá
 
-Si el recurso es específico de una etapa, va en `skills/[etapa]/references/`.
-Por ejemplo: `benchmark_guide.md` está en `skills/methodology/01_problem_framing/references/`
-porque solo aplica a la Etapa 01.
+Si el recurso es específico de una etapa, va en el directorio de esa etapa.
+Por ejemplo: El `Competitor Intelligence Engine` vive en `skills/methodology/02_system_analysis/skills/engines/`
+porque es una herramienta específica de análisis sistémico.
 
 ## Archivos previstos (en desarrollo)
 

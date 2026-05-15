@@ -128,8 +128,7 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
  
 ### Operacionalización de la Etapa 03 (Product Logic)
 - **Añadido:** Estructura completa de la **Etapa 03** (Product Logic) con 3 Momentos operativos: Blueprint, Entidades/Reglas y Flujos/Métricas.
-- **Añadido:** **Guía de Lógica de Producto:** [product_logic_guide.md](skills/methodology/03_product_logic/references/product_logic_guide.md).
-- **Integrado:** Migración de la skill de **Good Services** a la carpeta `skills/toolbox/tech_guardrails/` para garantizar la autonomía del framework y la disponibilidad inmediata para nuevos usuarios sin dependencias externas.
+- **Integrado:** Migración de la skill de **Good Services** a la carpeta `skills/methodology/02_system_analysis/skills/engines/good_services_engine/` para garantizar la autonomía del framework.
 - **Sincronizado:** Backlog estratégico actualizado marcando la Etapa 03 como operacional.
 
 ## [2.25.11] - 2026-04-22
@@ -382,8 +381,7 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
 #### Añadido
 - **⚡ Core Web Vitals Expert:** Integración de guardrail especializado para optimizar LCP, INP y CLS. Incluye fragmentos de código para debugging proactivo.
-- **🔍 SEO Audit Expert:** Integración de metodología de auditoría senior. Incluye la advertencia crítica sobre la detección de Schema Markup en entornos de IA.
-- **📂 Actualización de Toolbox:** Expansión de los `tech_guardrails` para cubrir el ciclo de vida completo de la calidad de producto.
+- **🔍 SEO Audit Expert:** Integración de metodología de auditoría senior.
 
 ---
 
@@ -392,7 +390,7 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 ### Optimización de Herramientas Legadas (WordPress Expert)
 
 #### Añadido
-- **🐘 WordPress Performance Expert:** Integración de un Índice Experto en la `toolbox/tech_guardrails/`. Permite a la IA actuar como un Senior WordPress Developer aplicando reglas críticas de performance y seguridad.
+- **🐘 WordPress Performance Expert:** Integración de un Índice Experto en la Toolbox. Permite a la IA actuar como un Senior WordPress Developer aplicando reglas críticas de performance y seguridad.
 - **🧠 On-Demand Knowledge Protocol:** Implementación de la carga de conocimiento pesado bajo demanda. La IA solo lee el manual completo (131KB) cuando detecta una tarea de WordPress, optimizando el uso de tokens en otros proyectos.
 
 ---
@@ -458,8 +456,7 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 ### Expansión de Plataformas (Desktop & Mobile)
 
 #### Añadido
-- **🛡️ Electron Standards:** Nueva skill en `skills/toolbox/tech_guardrails/electron_standards/` para el diseño y desarrollo de apps de escritorio seguras y nativas.
-- **🛡️ React Native Standards:** Nueva skill en `skills/toolbox/tech_guardrails/react_native_standards/` para el desarrollo móvil con Expo y NativeWind.
+- **🛡️ Multi-platform Standards:** Integración de estándares expertos para el diseño y desarrollo de apps de escritorio y móviles seguras y nativas.
 
 ---
 
@@ -468,10 +465,7 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 ### Blindaje Técnico (Tech Guardrails)
 
 #### Añadido
-- **🛡️ Technical Guardrails Group:** Nueva subcarpeta en `skills/toolbox/tech_guardrails/` con estándares expertos para prevenir obsolescencia:
-  - **Next.js 15 Standards:** Forzando App Router, Server Actions y fetching moderno.
-  - **Tailwind 4 Standards:** Reglas de estilización semántica vinculadas al ADN visual Baraldi.
-  - **Jira Strategic Tasks:** Protocolo de puentes entre Producto e IT (Parent/Child structure).
+- **🛡️ Technical Guardrails Group:** Estándares expertos para prevenir obsolescencia (Next.js, Tailwind, Jira Strategic Tasks).
 
 ---
 

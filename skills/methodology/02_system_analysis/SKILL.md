@@ -132,10 +132,10 @@ El mapa debe contener siempre 5 capas divididas por la Línea de Interacción y 
 ## 🛠️ Motores de Análisis (Bridge Architecture)
 Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 1. **Concept Synthesis:** Técnicas de *Problem Reframing* para convertir riesgos en oportunidades de diseño.
-2. **UX Audit Engine (`skills/engines/ux_audit_rethink_engine/`):** Motor de Auditoría Holística de UX. Activar en rediseños de productos legados.
-3. **DS Audit Engine (`skills/engines/ds_audit_engine.md`):** Auditoría de Design Systems para evaluar escalabilidad.
-4. **Competitor Intelligence Engine (`skills/engines/competitor_intelligence_engine/`):** Análisis de brechas competitivas (Momento 1).
-5. **Good Services Engine (`skills/engines/good_services_engine/`):** 15 principios de Louise Downe (Estándar de calidad sistémica).
+2. **UX Audit Engine (`./skills/engines/ux_audit_rethink_engine/`):** Motor de Auditoría Holística de UX. Activar en rediseños de productos legados.
+3. **DS Audit Engine (`./skills/engines/ux_audit_rethink_engine/`):** Auditoría de Design Systems para evaluar escalabilidad.
+4. **Competitor Intelligence Engine (`skills/methodology/02_system_analysis/skills/engines/competitor_intelligence_engine/`):** Análisis de brechas competitivas (Momento 1).
+5. **Good Services Engine (`./skills/engines/good_services_engine/`):** 15 principios de Louise Downe (Estándar de calidad sistémica).
 
 ---
 
