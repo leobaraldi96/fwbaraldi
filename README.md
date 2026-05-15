@@ -167,7 +167,7 @@ La Toolbox del Framework Baraldi no es una simple carpeta de utilidades; es un c
 
 | Skill | Nombre | Propósito Estratégico |
 | :--- | :--- | :--- |
-| **01** | **Stakeholder Narrative** | Gestión de líderes difíciles (Anti-Lucio/Carlos/Maxi) y venta de ideas. |
+| **01** | **Stakeholder Narrative** | Gestión de líderes difíciles y venta de ideas. |
 | **02** | **Advanced Prioritization** | Motor de ROI absoluto usando RICE, Kano y Score Baraldi. |
 | **03** | **Personal Impact Report** | Tu "Brag Document" automático para visibilizar tus logros. |
 | **04** | **Data Driven Design and Experimentation** | Conversión de analíticas en insights y protocolos de testeo. |
