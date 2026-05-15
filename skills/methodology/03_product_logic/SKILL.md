@@ -61,6 +61,25 @@ status: operational
 1. **Logical Flowcharts (Mermaid):** Diagramas de flujo lógico para procesos complejos (ej. Checkout, Registro).
 2. **Product KPI Strategy:** Definición de North Star Metric y métricas de soporte (ej. HEART o AARRR).
 
+> 🔑 **Regla de Clasificación de Métricas:** Priorizar siempre **métricas Leading** (uso de features, tickets abiertos — avisan *antes* del problema) sobre **métricas Lagging** (MRR, Churn — miran el pasado y no pueden corregirse a tiempo). Si la métrica sube y no sabés qué acción tomar, es Vanidad.
+
+### Momento 3.5 — Validación de Implementabilidad (Matriz SDD)
+**Activar cuando:** Se cierra el Momento 3 y antes de entregar la lógica a desarrollo.
+**Propósito:** Asegurar que la lógica definida no sea solo "teórica" sino **implementable**. Esta matriz actúa como contrato entre diseño y desarrollo.
+
+**📐 La Matriz SDD (Baraldi Edition):**
+Cada funcionalidad crítica debe pasar por este flujo antes de darse por aprobada:
+
+| Funcionalidad | Explore (Riesgos) | Propose (Alcance) | Apply (Lógica Core) | Verify (Criterio de Aceptación) |
+|:---|:---|:---|:---|:---|
+| **[Nombre Feature]** | ¿Qué dependencias técnicas o bloqueos tiene? | ¿Qué se hace y qué queda fuera (Scope)? | ¿Cuál es la regla de negocio central? | ¿Cómo sabemos que funciona correctamente? |
+
+**🔬 Cross-Check de Integridad Semántica:**
+Antes de cerrar la matriz, verificar para cada feature:
+1. **¿Es `scoped`?** — ¿Aparece en los artefactos de la Etapa 01 (Problem Framing)?
+2. **¿Hay `conflicts_with`?** — ¿Contradice alguna limitación técnica detectada en la Etapa 02?
+3. **¿Esta lógica `supersedes` a una propuesta anterior?** — Si sí, documentar cuál y por qué.
+
 ---
 
 ## 🛠️ Motores y Herramientas (Bridge Architecture)
@@ -79,8 +98,9 @@ El Agente debe **bloquear** el proceso si detecta:
 1.  **NEVER definas roles genéricos:** Los permisos (CRUD) deben ser granulares y específicos por cada tipo de actor.
 2.  **NEVER definas reglas sin Edge Cases:** Las reglas de negocio deben contemplar errores y excepciones, no solo el "camino feliz".
 3.  **NEVER avances sin validar factibilidad de datos:** El modelo de datos lógico debe poder ser construido por el equipo de ingeniería.
-4.  **NEVER uses "Vanity Metrics":** Prohibido usar clics o visitas como North Star. Usa métricas de conversión o retención real.
+4.  **NEVER uses "Vanity Metrics":** Prohibido usar clics o visitas como North Star. Usa métricas de conversión o retención real. Recordar: las métricas **Lagging** (MRR, Churn) miran el pasado — complementar siempre con **Leading** (uso de features, activación) que permiten actuar antes.
 5.  **NEVER omitas la estrategia de monetización:** La lógica del producto (ej. paywalls, límites de uso) debe estar conectada al modelo de negocio.
+6.  **NEVER uses Pie Charts para datos similares:** Usar Pie Charts solo si los componentes difieren en más del 20-30%. Si los segmentos son similares en tamaño, usar Bar Chart apilado horizontal (Bullet Graph). Un Pie Chart con 5 segmentos similares es ciego.
 
 ## ✅ ALWAYS List — Mandatos de Comportamiento
 - **Siempre** utiliza diagramas Mermaid para visualizar *State Machines* (cambios de estado) y *Flowcharts*.

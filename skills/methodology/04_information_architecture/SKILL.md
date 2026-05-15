@@ -99,7 +99,7 @@ Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 1. **UX Writing Engine (`../05_interaction_design_ux/skills/ux_writing_engine/`):** Aplicar para asegurar precisión semántica en taxonomías y glosarios.
 2. **Design Critique Engine (`../06_visual_design_ui/skills/design_critique_engine.md`):** Aplicar para validar la arquitectura con stakeholders o como auditoría crítica interna.
 3. **Layers Interaction Engine (`../05_interaction_design_ux/skills/layers_interaction_engine/`):** Mandatorio para el **Momento 2**. Asegura que los flujos cubran validaciones, estados de error y todos los actores definidos.
-4. **User Story Engine (`skills/engines/user_story_engine.md`):** Mandatorio para el **cierre de Etapa 04**. Transforma los flujos aprobados en tickets BDD listos para el equipo de desarrollo.
+4. **User Story Engine (`skills/engines/user_story_engine/`):** Mandatorio para el **cierre de Etapa 04**. Transforma los flujos aprobados en tickets BDD listos para desarrollo. Aplicar siempre las **3 Reglas de Oro**: (1) **INVEST** — cada story debe ser Independent, Negotiable, Valuable, Estimable, Small y Testable; (2) **Sin Supuestos** — si no está en el AC no se desarrolla; (3) **Diseño Incluido** — nunca handoffear sin link al diseño aprobado en Figma.
 
 ---
 
