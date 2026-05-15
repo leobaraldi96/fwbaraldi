@@ -100,9 +100,8 @@ Antes de iniciar el Problem Framing, el Agente debe solicitar y documentar:
 
 ### Momento Feedback — Research Planning Checkpoint (Metodología y Soportes)
 **Archivo:** `skills/momento_2_feedback_metodologia.md`
-**Referencia benchmark:** `references/benchmark_guide.md`
 **Activar cuando:** El humano aprueba los artefactos del Momento 1 y escribe "Solicitud continuar".
-**Produce:** Plan de metodología + guión de entrevistas/encuestas + informe de benchmark (6 secciones) + base de datos de entrevistados.
+**Produce:** Plan de metodología + guión de entrevistas/encuestas + informe de benchmark + base de datos de entrevistados.
 
 **⚡ PROACTIVIDAD OBLIGATORIA — Research Planning Checkpoint:**
 Antes de diseñar el plan, el framework debe ejecutar el siguiente interrogatorio en este orden. **No asumas que el humano ya tiene el plan definido. Tu rol aquí es guiar, no esperar.**
@@ -114,83 +113,95 @@ Antes de diseñar el plan, el framework debe ejecutar el siguiente interrogatori
 → Si NO: continuar al Checkpoint 2.
 
 [CHECKPOINT 2 — ¿Hay datos existentes?]
-→ "¿Contás con datos previos? (encuestas anteriores, feedback de clientes,
-   análisis de soporte, reviews públicas, métricas de uso)"
+→ "¿Contás con datos previos? (encuestas, feedback, soporte, reviews, analítica)"
 → Si SÍ: incorporarlos como evidencia base antes de diseñar nuevas metodologías.
 → Si NO: continuar al Checkpoint 3.
 
-[CHECKPOINT 3 — Recomendación Metodológica Proactiva]
-→ Basándote en la hipótesis central y el tipo de problema definidos en el Momento 1,
-   recomendar proactivamente una combinación de métodos:
-   - Problema de DESCUBRIMIENTO → Entrevistas en profundidad (N ≥ 5-8) + Desk Research
-   - Problema de VALIDACIÓN → Encuesta cuantitativa (N ≥ 30) + Test de concepto
-   - Problema MIXTO → Entrevistas exploratorias (N=5) + Encuesta de validación posterior
-   - Presentar las opciones con sus trade-offs (tiempo, costo, profundidad del insight)
+[CHECKPOINT 3 — Recomendación Metodológica Proactiva (Research Matrix)]
+→ Basándote en la hipótesis central, recomendar el método adecuado:
+   - Hipótesis de Comportamiento (Qué hacen) → Analytics + Obs (N > 100)
+   - Hipótesis de Motivación (Por qué lo hacen) → Entrevistas Cualitativas (N = 8-15)
+   - Hipótesis de Usabilidad (Qué tan bien lo hacen) → Test de Usabilidad (N = 5-8)
+   - Hipótesis de Preferencia (Qué prefieren) → Encuesta + A/B Test (N > 50)
+   - Validación de Mercado (Existe el dolor) → Entrevistas exploratorias (N = 8-12)
 
 [CHECKPOINT 4 — ¿Hay plan de encuesta?]
 → Si el método incluye encuesta: "¿Ya tenés las preguntas diseñadas?"
-→ Si SÍ: revisarlas y sugerir mejoras (evitar preguntas leading, añadir escalas, etc.)
-→ Si NO: ofrecerse a diseñar el cuestionario completo con escala,
-   formato de respuesta recomendado (Likert, abierta, NPS) y soporte sugerido
-   (Google Forms, Typeform, u otro). Generar el guión listo para usar.
+→ Si SÍ: revisarlas y sugerir mejoras (evitar leading questions, añadir Likert, etc.)
+→ Si NO: ofrecerse a diseñar el cuestionario completo con escala.
 
 [CHECKPOINT 5 — Soporte de distribución]
 → "¿Tenés pensado cómo vas a reclutar o distribuir la investigación?"
 → Si NO: sugerir canales concretos según el perfil del usuario target del proyecto.
 ```
 
-**Regla clave:** El benchmark es un informe completo de 6 secciones. Leer `references/benchmark_guide.md` antes de ejecutarlo.
-**Regla anti-pasividad:** Si el humano llega a este momento sin un plan de research definido, **la IA es la responsable de guiarlo**. El framework nunca debe limitarse a esperar que el humano proponga la metodología. La iniciativa es del framework, no del humano.
+**Regla clave (El Benchmark Competitivo):** Si se requiere un Benchmark, **NUNCA** entregar una tabla simple. El entregable obligatorio debe tener 6 secciones:
+1. **Objetivos y KPIs:** Hipótesis a validar y métricas de comparación.
+2. **Players:** Incluir Directos, Referentes Funcionales y Referentes Aspiracionales.
+3. **Fichas por Player:** Datos cuantitativos (con fuente o marcados `[ESTIMADO]`) y cualitativos.
+4. **Gap Analysis:** Matriz de posicionamiento y brecha contra nuestro proyecto.
+5. **Oportunidades:** Plan de acción (Qué vamos a capitalizar).
+6. **Conclusiones:** Qué hipótesis confirma o refuta este benchmark.
 
-### Momento 2 — IA Auxiliar / Asistente on Vivo
+**Regla anti-pasividad:** Si el humano llega a este momento sin un plan de research definido, **la IA es la responsable de guiarlo**. El framework nunca debe limitarse a esperar que el humano proponga la metodología.
+
+### Momento 2 — IA Auxiliar / Asistente on Vivo (Research Execution)
 **Archivo:** `skills/momento_3_live_assistant.md`
-**Activar cuando:** El humano aprueba los soportes y está listo para ejecutar entrevistas.
-**Produce:** Briefs por entrevistado, notas estructuradas en tiempo real, informe de research completo con **Matriz de Evidencia** (Hipótesis vs. Dato real vs. Hallazgo). Incluye la identificación de hallazgos sutiles por parte del humano.
-**Regla clave:** Marcar evidencia con `[CONFIRMA H1]`, `[REFUTA H2]`, `[NUEVO INSIGHT]`. Prohibida la síntesis vaga; cada hallazgo debe asociarse a una pregunta o dato específico. Dar espacio proactivo para que el humano indique hallazgos sutiles o intuitivos.
+**Activar cuando:** El humano aprueba los soportes y está listo para ejecutar entrevistas o encuestas.
+**Produce:** Briefs por entrevistado, notas estructuradas en tiempo real, matriz de evidencia.
 
-### Momento 3 — Evaluación de Cierre + Output Format Selection
+**⚡ REGLAS DE ORO PARA ENTREVISTAS (Discovery & JTBD):**
+Al generar o analizar guiones de entrevistas cualitativas, el Agente debe aplicar el rigor metodológico de Teresa Torres y Marty Cagan:
+1. **Recolectar Historias, NO Opiniones:** Nunca preguntar "¿Qué te gusta?". Preguntar "Cuéntame la última vez que tú...".
+2. **Focus Behavior (No Hipotéticos):** Lo que dicen que harán es mentira. Solo el comportamiento pasado revela la verdad. Evitar preguntas como *"¿Usarías esta herramienta si...?".
+3. **Falsificar, NO Validar:** Buscamos equivocarnos rápido. Buscar solo validar genera sesgo de confirmación.
+4. **Jobs-to-be-Done (JTBD):** Evaluar el "Empuje" (dolor actual), "Atracción" (deseo), "Ansiedad" (dudas) y "Hábito" (inercia).
+
+**Regla clave de registro:** Marcar evidencia con `[CONFIRMA H1]`, `[REFUTA H2]`, `[NUEVO INSIGHT]`. Prohibida la síntesis vaga; cada hallazgo debe asociarse a un dato específico.
+
+### Momento 3 — Evaluación de Cierre + Output Format Selection (Synthesis)
 **Archivo:** `skills/momento_4_cierre.md`
 **Activar cuando:** El humano aprueba el Informe de Research y declara cierre de recolección.
 **Produce:** Informe de Cierre con recomendación: avanzar / iterar / pivotar.
-**Regla clave:** Ejecutar los 4 pasos visibles siempre. La honestidad del informe es no negociable.
+
+**⚡ REGLAS ESTRICTAS DE SÍNTESIS ANALÍTICA:**
+1. **Thematic Analysis:** No mezclar insights. Agrupar por afinidad, no por categorías pre-creadas.
+2. **El Valor del "Outlier":** Si hay un dato contradictorio, no lo promedies. Reporta la contradicción (Ej: Distribuciones bimodales donde la mitad ama algo y la mitad lo odia).
+3. **Opportunity Sizing:** Todo problema debe dimensionarse: `Impacto = Usuarios Afectados x Frecuencia x Severidad`. (Un bug catastrófico 1 vez al año vs. botón feo 1000 veces al día).
+4. **Triangulación:** Nunca confiar en una sola fuente. Encuestas dicen el *QUÉ*, entrevistas el *POR QUÉ*.
 
 **⚡ OUTPUT DIMENSIONS CHECKPOINT (OBLIGATORIO antes de generar el informe):**
-Antes de generar cualquier entregable de datos, el framework DEBE interrogar al usuario sobre las 4 dimensiones de salida. Esto es crítico para no confundir un dashboard con un informe.
+Antes de generar cualquier entregable de datos, el framework DEBE interrogar al usuario sobre las 4 dimensiones de salida.
 
 ```
 📊 Tenemos los datos procesados. Antes de construirlos, necesito definir 4 variables clave:
 
 1. Naturaleza Analítica: ¿Dashboard o Informe Profundo?
-   → Dashboard Ágil: Economía visual, 5-7 métricas clave máximo, para consumo rápido y accionar inmediato.
-   → Informe Profundo (Deep Report): Densidad analítica, cruces de datos complejos, pensado para el entendimiento exhaustivo y decisiones a largo plazo.
+   → Dashboard Ágil (Ley de Miller): Máximo 5-7 métricas clave por vista. Economía visual estricta.
+   → Informe Profundo (Max-Juice Doctrine): Exhaustividad absoluta. Muestra interconectividad y contexto profundo.
 
 2. Formato Técnico (Soporte):
    → HTML interactivo, Exportación (CSV/JSON), Documento estático, Infografía.
-   *(Nota: Si es un Dashboard exportable para BI como PowerBI/Tableau, por favor indícame qué schema/estructura requiere ese software).*
 
 3. Audiencia (¿Quién lo consume?):
-   → Técnico (quiere ver el dato crudo), Ejecutivo C-Level (quiere ver la conclusión rápida), Público general (quiere narrativa accesible).
+   → Técnico (dato crudo), Ejecutivo (conclusión rápida), Público (narrativa accesible).
 
 4. Contexto Físico de Uso:
-   → ¿Bajo qué condiciones se leerá esto? (Ej: "En una iPad en el exterior con sol directo", "En pantallas industriales lejanas", "En una oficina tranquila"). Esto dictará mis reglas de contraste tipográfico y ui-tokens.
+   → ¿Bajo qué condiciones se leerá esto? Determina contraste y densidad visual.
 ```
 
 → **Protocolo de Transparencia de Exclusión (Brief de Filtrado):** 
 Si el humano selecciona la ruta **"Dashboard"**, el framework tiene la regla estricta de NO mostrarlo todo. Pero NUNCA debe ocultar datos por asunción. Antes de generar el código, presentá un **Brief de Filtrado**:
 *"Dado que es un Dashboard y requerimos economía visual, propongo mantener estas 5 métricas primarias [listar] y dejar fuera estas 3 [listar] porque [motivo]. ¿Estás de acuerdo o preferís cambiar el liderazgo de los datos?"*
 
-→ **Proactividad de Soporte:** Si se elige HTML, ofrecer generar el código (Tailwind, Chart.js) acorde a las elecciones de contraste (Contexto) y densidad (Naturaleza).
-
-
 ---
 
-## 🛠️ Motores de Investigación (Bridge Architecture)
+## 🛠️ Herramientas de Estrategia Adicional
 Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
-1. **Stakeholder Narrative Strategy (Toolbox):** Aplicar para blindar el *Stakeholder Map* y anticipar resistencias políticas.
-2. **Business Strategy & Growth (Toolbox):** Aplicar para asegurar que el problema detectado tenga impacto directo en el ROI.
-3. **UXR Discovery Engine (`skills/engines/uxr_discovery_engine/`):** Motor de investigación cualitativa y JTBD (Teresa Torres/Cagan). Mandatorio para el **Momento Feedback**: blindar el diseño de entrevistas y evitar sesgos de confirmación.
-4. **UXR Scientific Testing Engine (`skills/engines/uxr_scientific_testing_engine/`):** Protocolos de testeo cuantitativo y validación de hipótesis. Activar en el **Momento 2** para triangular con datos.
-5. **UXR Synthesis Engine (`skills/engines/uxr_synthesis_engine/`):** Motor de síntesis de insights cualitativos. Activar al cerrar el **Momento 2** para generar el Informe de Research consolidado.
+1. **Stakeholder Narrative Strategy:** Aplicar para blindar el *Stakeholder Map* y anticipar resistencias políticas.
+2. **Business Strategy & Growth:** Aplicar para asegurar que el problema detectado tenga impacto directo en el ROI.
+
+*(Nota: Los motores de Discovery, Scientific Testing y Synthesis operan de forma nativa a través de las reglas heurísticas de esta etapa).*
 
 ---
 

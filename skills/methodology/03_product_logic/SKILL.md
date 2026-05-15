@@ -2,11 +2,10 @@
 name: product-logic
 description: >
   Ejecuta la Etapa 03 (Product Logic) del Framework Baraldi.
-  Define la inteligencia, reglas de negocio y modelo de datos antes del diseño visual.
-  Keywords: product logic, service blueprint, reglas de negocio, modelo de datos, entidades,
-  kpi, north star, flujos logicos, lógica de producto, good services, service design.
-  Activar cuando se cierre la Etapa 02 o se necesite definir el "cómo" funcional.
-  Integra estándares externos de Service Design (Good Services).
+  Define la inteligencia, reglas de negocio, permisos y modelo de datos antes del diseño visual.
+  Keywords: product logic, reglas de negocio, modelo de datos, entidades,
+  kpi, north star, flujos logicos, state machine, permisos.
+  Activar cuando se cierre la Etapa 02 (System Analysis).
 version: "2.26.4"
 framework: Baraldi
 stage: "03"
@@ -16,110 +15,82 @@ status: operational
 
 # Etapa 03 — Product Logic
 
-> **Objetivo:** Construir el "Cerebro" del producto. Definir los flujos lógicos, las entidades de datos y las reglas de negocio que gobiernan el sistema antes de diseñar interfaces.
+> **Objetivo:** Construir el "Cerebro" del producto. Definir los flujos lógicos, las entidades de datos, los permisos por actor y las reglas de negocio que gobiernan el sistema antes de diseñar interfaces.
 
 ---
 
 ## Flujo de la etapa — 3 momentos en secuencia
 
 ```
-[MOMENTO 1] Product Logic Orchestration (Actor & Service Blueprint)
+[MOMENTO 1] Actor Logic & Permissions (Quién hace qué)
         ↓
-  Validar alineación con el Negocio
+  Validar viabilidad de roles
         ↓
 [MOMENTO 2] Entidades de Datos & Business Rules (Rules Engine)
         ↓
-  Validar integridad del modelo
+  Validar integridad lógica
         ↓
-[MOMENTO 3] Flujogramas Lógicos & North Star Metrics
+[MOMENTO 3] Flujogramas Lógicos & Product KPIs
         ↓
-      Etapa 04 (UX Experience)
+      Etapa 04 (Information Architecture)
 ```
 
 ---
 
 ## Los 3 momentos — cuándo activar cada uno
 
-### Momento 1 — Product Logic Orchestration (Actor & Service Blueprint)
-**Archivo:** `skills/momento_1_blueprint.md`
-**Objetivo:** Definir la jurisdicción de los actores y coreografiar su interacción temporal (Frontstage vs Backstage).
+### Momento 1 — Actor Logic & Permissions
+**Objetivo:** Definir la jurisdicción de los actores en el sistema (Roles y Permisos).
 **Produce:** 
-**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
-1. **Actor Logic Matrix:** Alcance y reglas funcionales por actor.
-2. **Service Blueprint:** Flujo temporal con Línea de Visibilidad.
+1. **Actor Logic Matrix:** Tabla de alcance y reglas de permisos (CRUD) por actor.
+2. **State Machines (Estados):** Diagramas de cómo un objeto (ej. "Pedido") pasa de un estado a otro (Pendiente -> Pagado).
 
 ### Momento 2 — Entidades de Datos & Business Rules
-**Archivo:** `skills/momento_2_entities_rules.md`
-**Objetivo:** Definir el "Diccionario" del sistema y las leyes que lo rigen.
+**Objetivo:** Definir el "Diccionario" del sistema y las leyes condicionales que lo rigen.
 **Produce:** 
-**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
-1. **Data Schema (Lite):** Listado de entidades, atributos y relaciones (1:N, N:N).
-2. **Business Rules Matrix:** Matriz de condiciones y consecuencias (If/Then).
+1. **Data Schema (Lite):** Listado de entidades, atributos principales y relaciones (1:1, 1:N, N:N). No requiere SQL, solo estructura lógica.
+2. **Business Rules Matrix:** Matriz de condiciones y consecuencias lógicas (If/Then), validaciones y derivaciones.
 
-### Momento 3 — Flujogramas Lógicos & North Star Metrics
-**Archivo:** `skills/momento_3_flows_metrics.md`
-**Objetivo:** Visualizar el movemento de la información y definir el éxito.
+### Momento 3 — Flujogramas Lógicos & Product KPIs
+**Objetivo:** Visualizar el movimiento de la información y definir la medición de éxito del producto.
 **Produce:**
-**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
-1. **Logical Flowcharts (Mermaid):** Diagramas de secuencia y flujo lógico.
-2. **Product KPI Strategy:** Definición de North Star Metric y métricas de soporte (HEART/AARRR).
+1. **Logical Flowcharts (Mermaid):** Diagramas de flujo lógico para procesos complejos (ej. Checkout, Registro).
+2. **Product KPI Strategy:** Definición de North Star Metric y métricas de soporte (ej. HEART o AARRR).
 
 ---
 
-## 🛠️ Motores de Lógica de Producto (Bridge Architecture)
+## 🛠️ Motores y Herramientas (Bridge Architecture)
 Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
-1. **Advanced Prioritization Protocol (Toolbox):** Aplicar para priorizar el backlog lógico.
-2. **Concept Synthesis and Ideation (Toolbox):** Generar abanico de soluciones lógicas y presentarlas al usuario para su crítica.
-3. **Pricing & Monetization Protocol (Toolbox):** Consultar siempre para alinear lógica con ingresos.
-4. **Product Metrics Engine (`skills/engines/product_metrics_engine/`):** Motor de definición de North Star Metric, HEART y AARRR. Mandatorio para el **Momento 3** (Flujogramas y KPIs).
-5. **Service Blueprint Engine (`../02_system_analysis/skills/service_blueprint_engine/`):** Si el Service Blueprint no fue completado en E02, ejecutar aquí antes de iniciar E03.
+1. **Advanced Prioritization Protocol:** Aplicar para priorizar el backlog de reglas lógicas.
+2. **Pricing & Monetization Protocol:** Consultar siempre para alinear lógica de accesos/permisos con la estrategia de ingresos.
+3. **Product Metrics Engine:** Motor mandatorio para el **Momento 3** (KPIs).
 
----
-
-## Criterio de calidad para cerrar esta etapa
-
-- [ ] La orquestación lógica cubre el 100% de los flujos críticos definidos en Etapa 01.
-- [ ] El Service Blueprint incluye una clara Línea de Visibilidad y flujos temporales.
-- [ ] No existen "Cajas Negras" en el Backstage (procesos sin responsable o sistema).
-- [ ] El modelo de datos es consistente con las necesidades técnicas de la Etapa 02.
-- [ ] Las reglas de negocio contemplan los casos de error (Edge Cases).
+*(Nota: Si se requiere mapear un Service Blueprint con línea de visibilidad, se debe invocar a la Etapa 02, no a la 03).*
 
 ---
 
 ## 🚫 NEVER List — Anti-patrones de la Etapa 03
 El Agente debe **bloquear** el proceso si detecta:
 
-1.  **NEVER permitas "Cajas Negras" en el Backstage:** Todo proceso debe tener un actor (humano o sistema) responsable identificado.
-2.  **NEVER ignores la "Línea de Visibilidad":** No distinguir entre Frontstage y Backstage genera fallos de expectativa y comunicación.
-3.  **NEVER definas reglas sin Edge Cases:** Las reglas de negocio deben contemplar errores y excepciones, no solo el "camino feliz".
-4.  **NEVER avances sin validar factibilidad de datos:** El modelo de datos debe ser consistente con los límites técnicos de la Etapa 02.
-5.  **NEVER uses "Vanity Metrics":** Prohibido usar clics o visitas como North Star. Usa métricas de impacto real (AARRR/HEART).
-6.  **NEVER omitas la validación de negocio:** Toda lógica debe estar alineada con los objetivos de ROI definidos en la Etapa 01.
+1.  **NEVER definas roles genéricos:** Los permisos (CRUD) deben ser granulares y específicos por cada tipo de actor.
+2.  **NEVER definas reglas sin Edge Cases:** Las reglas de negocio deben contemplar errores y excepciones, no solo el "camino feliz".
+3.  **NEVER avances sin validar factibilidad de datos:** El modelo de datos lógico debe poder ser construido por el equipo de ingeniería.
+4.  **NEVER uses "Vanity Metrics":** Prohibido usar clics o visitas como North Star. Usa métricas de conversión o retención real.
+5.  **NEVER omitas la estrategia de monetización:** La lógica del producto (ej. paywalls, límites de uso) debe estar conectada al modelo de negocio.
 
 ## ✅ ALWAYS List — Mandatos de Comportamiento
-- **Siempre** desafía la complejidad de las reglas de negocio para buscar la simplicidad operativa.
-- **Siempre** utiliza diagramas Mermaid para visualizar flujos lógicos y secuencias de datos.
-- **Siempre** busca hallazgos `sa-` (System Analysis) en Engram MCP antes de definir la lógica.
-- **Siempre** define métricas de soporte para cada etapa del embudo de conversión.
+- **Siempre** utiliza diagramas Mermaid para visualizar *State Machines* (cambios de estado) y *Flowcharts*.
+- **Siempre** redacta las Business Rules en formato `Condición -> Acción -> Excepción`.
+- **Siempre** busca los diagramas de sistema `sa-` (System Analysis) en Engram MCP antes de definir la lógica de permisos.
+- **Siempre** define la *North Star Metric* antes de cerrar la etapa.
 
 ---
 
 ## Protocolo de Memoria — Etapa 03
 
-**Al iniciar:** Buscar en `Engram MCP` por `sa-` (System Analysis) para entender los límites técnicos.
+**Al iniciar:** Buscar en `Engram MCP` los blueprints de Etapa 02 para entender el ecosistema.
 
 **Al cerrar cada Momento:**
-- Momento 1 → Eje: `pl-orchestration-logic` (tipo: `arquitectura`)
+- Momento 1 → Eje: `pl-permissions` (tipo: `arquitectura`)
 - Momento 2 → Eje: `pl-business-rules` (tipo: `decisión`)
 - Momento 3 → Eje: `pl-north-star-metric` (tipo: `estrategia`)
-
----
-## 🧠 Protocolo de Mentoría y Co-creación (E03)
-En la definición de la lógica, el Agente actúa como un **Product Architect Mentor**:
-*   **Consciencia de Backstage:** Explicar por qué el Service Blueprint es vital: *"Si el proceso interno [X] no está claro, el usuario sentirá incertidumbre en el Frontstage. ¿Quién es el responsable humano de esta validación?"*.
-*   **Pedagogía de Reglas de Negocio:** No solo documentar reglas, sino desafiar su simplicidad: *"Esta regla es compleja y puede generar errores de sistema. ¿Podemos simplificarla conversando con el stakeholder?"*.
-*   **Métricas con Sentido:** Enseñar a diferenciar entre "Vanity Metrics" (ej. clics) y métricas de impacto real (ej. conversión de objetivo).
-*   **Construcción Lógica:** Asegurar que el humano entienda que aquí estamos definiendo las "Leyes de la Física" de su producto.
-
----
-*Framework Baraldi v2.26.3 · skills/methodology/03_product_logic/SKILL.md*
