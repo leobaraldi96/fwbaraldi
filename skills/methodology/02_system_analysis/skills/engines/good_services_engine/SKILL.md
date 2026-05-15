@@ -118,6 +118,15 @@ Cuando el usuario pida "Mapear el servicio", la IA NO debe hacer una tabla gené
 - [ ] Manejo de excepciones (¿qué pasa fuera del happy path?).
 - [ ] Trazabilidad de decisiones (¿quedan registros auditables?).
 
+**🔑 Reglas de Oro del Blueprint Técnico** (aplicar en cada paso del backstage):
+- **Mapeo de Errores de Backend:** Por cada acción del usuario, documentar qué sucede si el servidor devuelve un `500` (error interno), `403` (sin permiso) o `401` (no autenticado). Un blueprint sin rutas de error es incompleto.
+- **Latency Design:** Si una tarea de backstage tarda más de 2 segundos, el blueprint **DEBE** incluir un estado de interacción intermedio (skeleton screen, spinner con mensaje, progress bar). Nunca dejar al usuario sin feedback.
+- **Data Provenance:** Identificar de dónde viene cada dato que se muestra en la UI. Si el backend no puede proveer ese campo, no puede existir en el diseño. Nunca inventar datos sin fuente confirmada.
+
+> 🧠 **Regla de Juicio Senior:** *"Un gran diseño frente a un mal proceso de backstage genera una mala experiencia de cliente."* Siempre auditar si el proceso interno es tan fluido como la interfaz que lo representa.
+
+
+
 ### 3. Journey Map (Vista del Usuario)
 Cuando se quiera mapear la experiencia desde la perspectiva del usuario (sin el backstage):
 

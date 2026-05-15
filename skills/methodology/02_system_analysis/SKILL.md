@@ -79,10 +79,15 @@ Artefactos de Etapa 01 aprobados
 
 **⚡ REGLAS DE MAPEO DE ACTORES (Búsqueda Activa):**
 El Agente debe buscar activamente actores invisibles que el humano suele olvidar:
-1. **Equipo técnico:** Devs, QA, DevOps (Son los primeros usuarios; ignorarlos genera deuda).
-2. **Operaciones / Negocio:** Soporte, Admin, Finanzas (Mantienen el sistema vivo).
-3. **Sistemas Externos:** APIs de pago, Auth, Motores de búsqueda.
-4. **Regulaciones:** AFIP, GDPR, Políticas de App Store.
+
+| Categoría | Actores típicos | Por qué importa mapearlos |
+|---|---|---|
+| **Equipo técnico** | Dev Frontend, Dev Backend, DevOps, QA | Son los primeros usuarios invisibles — diseñar sin ellos genera deuda técnica |
+| **Equipo de negocio** | Product Manager, Owner, Finanzas | Sus restricciones definen límites del sistema que el diseño no puede ignorar |
+| **Operaciones** | Soporte, Admin, Moderación | Mantienen el sistema vivo — si su trabajo no está diseñado, el sistema se degrada |
+| **Sistemas externos** | APIs de pago, motores de búsqueda, servicios de auth | Tienen sus propias reglas, costos y puntos de falla independientes |
+| **Regulaciones** | AFIP, GDPR, App Store policies | Imponen restricciones que **no son negociables** y pueden invalidar el diseño entero |
+| **Usuarios futuros** | Quienes se incorporarán cuando el sistema escale | Sus necesidades deben estar en la arquitectura desde el inicio — no como parche posterior |
 
 ### Momento 2 — Análisis de Dependencias y Riesgos
 **Archivo:** `skills/momento_2_dependencias.md`
@@ -97,6 +102,12 @@ El Agente debe buscar activamente actores invisibles que el humano suele olvidar
   4. **Bidireccional Fuerte (`A ↔ B`):** Alto acoplamiento. Un cambio en A rompe B. *Mitigación:* Contratos de API estrictos.
 - **Criticidad Obligatoria:** Todo nodo debe etiquetarse como `[CRÍTICA]` (bloquea todo), `[ALTA]` (bloquea core), `[MEDIA]` (degrada experiencia), `[BAJA]` (invisible).
 - **Tipos de Riesgo a Auditar:** Técnicos (Deuda, Escalabilidad), de Datos (Pérdida, GDPR), de Negocio (Vendor lock-in) y Externos (Leyes, App Store).
+
+> ⚠️ **Señales de Alerta de Riesgo — Frases que activan bandera roja inmediata:**
+> - *Técnico:* "siempre lo hicimos así", "ese módulo nadie lo toca", "si cambiamos eso se rompe todo".
+> - *Datos:* "no tenemos backup", "esos datos los guardamos por si acaso", "no sé exactamente qué hay en esa tabla".
+> - *Negocio:* "dependemos de un solo proveedor para eso", "si ellos cambian el precio, cerramos".
+> Cuando el equipo dice alguna de estas frases, documentar el riesgo como `[CRÍTICA]` hasta que se pruebe lo contrario.
 
 ### Momento 3 — Documentación del Sistema (Service Blueprint)
 **Archivo:** `skills/momento_3_documentacion.md`
@@ -131,11 +142,30 @@ Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 ## Modelo de decisión para avanzar a Etapa 03 (Checklist de Completitud)
 
 **Avanzar a Etapa 03 — Product Logic** cuando:
-- [ ] Actor Map cubre a todos los actores visibles, invisibles y sistemas externos.
-- [ ] Dependency Map tiene niveles de riesgo y SPOFs con plan de mitigación.
-- [ ] Dependencias circulares están resueltas o documentadas como riesgo.
-- [ ] Data Flow Map detalla quién crea, lee, modifica y elimina cada entidad.
-- [ ] Gaps de arquitectura o desconocimientos están marcados explícitamente como riesgos activos.
+
+**Actor Map:**
+- [ ] Actores visibles, invisibles y sistemas externos están incluidos.
+- [ ] Los sistemas externos están tratados como actores con sus propias restricciones.
+- [ ] Las motivaciones y fricciones de cada actor están documentadas.
+- [ ] Las tensiones entre actores están identificadas.
+- [ ] Regulaciones aplicables están mapeadas como actores no negociables.
+
+**Dependency Map:**
+- [ ] Cada dependencia tiene nivel de criticidad asignado (`[CRÍTICA]` a `[BAJA]`).
+- [ ] Los SPOF están identificados con plan de mitigación documentado.
+- [ ] Las dependencias circulares están resueltas o documentadas como riesgo activo.
+- [ ] Las restricciones de cada servicio externo (costos, SLAs, contrato de API) están documentadas.
+
+**Data Flow Map:**
+- [ ] Los flujos más críticos están documentados paso a paso.
+- [ ] Queda claro quién crea, lee, modifica y elimina (CRUD) cada entidad principal.
+- [ ] Los estados posibles de las entidades principales están listados.
+
+**Architecture Overview:**
+- [ ] Las decisiones de stack tienen justificación documentada (no solo "lo sabemos usar").
+- [ ] Las restricciones técnicas conocidas están listadas.
+- [ ] Los gaps de arquitectura no resueltos están marcados explícitamente como riesgos activos.
+- [ ] Validado por ingeniería antes de avanzar.
 
 **No avanzar** si:
 - Hay dependencias técnicas críticas sin resolver que bloquearían la lógica del producto.
