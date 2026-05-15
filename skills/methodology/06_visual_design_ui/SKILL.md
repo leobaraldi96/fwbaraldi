@@ -50,11 +50,11 @@ Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 2. **Skill 10 (i18n Readiness Audit):** MANDATORIO antes de cerrar el Momento 3.
 3. **Skill 12 & 13 (Accessibility & Screen Reader):** Mandatorio durante el Momento 2.
 4. **Skill 19 (Performance & Web Vitals):** Consultar para optimizar el peso de los assets visuales.
-5. **Design Critique Engine (`skills/engines/design_critique_engine.md`):** Revisión y pulido estético.
+5. **Design Critique Engine (`skills/engines/design_critique_engine/`):** Revisión y pulido estético.
 6. **Etapa 07 - Momento 2 (Figma-to-Code Sync):** Mandatorio para el **Momento 3** (Extracción vía API).
-7. **Visual Reverse Engineering Engine (`skills/engines/visual_reverse_engineering_engine.md`):** Recomendado para el **Momento 1** (Extracción vía Vision).
-8. **Token Audit Engine (`skills/engines/design_token_audit_engine.md`):** Auditoría matemática de consistencia de tokens.
-9. **Component Inventory Engine (`skills/engines/component_inventory_engine.md`):** Priorización estratégica de construcción.
+7. **Visual Reverse Engineering Engine (`skills/engines/visual_reverse_engineering_engine/`):** Recomendado para el **Momento 1** (Extracción vía Vision).
+8. **Token Audit Engine (`skills/engines/design_token_audit_engine/`):** Auditoría matemática de consistencia de tokens.
+9. **Component Inventory Engine (`skills/engines/component_inventory_engine/`):** Priorización estratégica de construcción.
 
 ---
 
@@ -92,4 +92,4 @@ En la fase visual, el Agente actúa como un **Director de Arte** que educa el oj
 *   **Decisión Compartida:** Nunca entregar un diseño finalizado sin haber transitado los hitos de decisión con el humano.
 
 ---
-*Framework Baraldi v2.26.3 · skills/methodology/06_visual_design_ui/SKILL.md*
+*Framework Baraldi v2.26.4 · skills/methodology/06_visual_design_ui/SKILL.md*

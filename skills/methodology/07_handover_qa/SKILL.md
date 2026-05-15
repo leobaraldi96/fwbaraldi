@@ -30,10 +30,10 @@ Esta etapa actúa como la aduana final antes del desarrollo. Si el producto no p
 Para asegurar un cierre de grado industrial, el Agente debe ejecutar los siguientes protocolos:
 
 1. **Momento 1 & 2 (Obligatorios):** Son bloqueantes. No se puede escribir código sin esto.
-2. **AI System Prompt Compiler (`skills/engines/ai_system_prompt_compiler_engine.md`):** Generador de instrucciones para IAs de desarrollo (v0, Cursor).
-3. **AI UI Compliance Audit (`skills/engines/ai_ui_compliance_audit_engine.md`):** Protocolo para auditar el output de las IAs contra el diseño.
+2. **AI System Prompt Compiler (`skills/engines/ai_system_prompt_compiler_engine/`):** Generador de instrucciones para IAs de desarrollo (v0, Cursor).
+3. **AI UI Compliance Audit (`skills/engines/ai_ui_compliance_audit_engine/`):** Protocolo para auditar el output de las IAs contra el diseño.
 4. **WCAG Accessibility Audit (`skills/engines/wcag_accessibility_audit_engine/`):** Auditoría completa de accesibilidad (WCAG 2.2, principios POUR). **MANDATORIO** antes de aprobar el Momento 1.
-5. **Screen Reader Testing Engine (`skills/engines/screen_reader_testing_engine.md`):** Guía operativa para pruebas manuales con tecnología asistiva (AT). Activar al cerrar el Momento 2.
+5. **Screen Reader Testing Engine (`skills/engines/screen_reader_testing_engine/`):** Guía operativa para pruebas manuales con tecnología asistiva (AT). Activar al cerrar el Momento 2.
 6. **Jira Tasks Engine (`skills/engines/jira_tasks_engine/`):** Protocolo de creación de tickets estratégicos (Parent/Child). **Último paso del Momento 3** antes del Go/No-Go final.
 
 ---

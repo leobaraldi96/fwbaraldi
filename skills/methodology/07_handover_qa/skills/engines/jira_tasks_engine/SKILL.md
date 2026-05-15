@@ -4,7 +4,7 @@ description: >
   Protocolo para la creación de tareas en Jira que puentean Diseño y Desarrollo.
   Divide el "Qué" (Producto/UX) del "Cómo" (Implementación técnica).
   Trigger: Al redactar tickets, historias de usuario o especificaciones técnicas.
-version: "2.26.3"
+version: "2.26.4"
 ---
 
 # 📋 Jira Strategic Tasks (Baraldi Edition)
