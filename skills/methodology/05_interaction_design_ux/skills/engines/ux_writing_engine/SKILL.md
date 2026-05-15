@@ -48,6 +48,47 @@ El Agente **debe** aplicar siempre las siguientes heurísticas al redactar:
 
 ---
 
+## 🎨 Patrones de Redacción Obligatorios (Templates)
+
+**1. El Patrón "Empty State" (Páginas vacías sin datos):**
+Nunca uses textos técnicos o callejones sin salida. Usa esta estructura exacta:
+- **Título (Qué está vacío):** "Aún no tienes reportes guardados"
+- **Cuerpo (Beneficio/Qué pasará):** "Guarda reportes para acceder a tu información más rápido."
+- **Botón (Acción Específica):** "Crear mi primer reporte"
+
+**2. El Patrón "Error Message" (Mensajes de Error):**
+Nunca culpes al usuario o uses jerga técnica (Ej. "ERR_TIMEOUT").
+- **Qué falló:** "No pudimos enviar tu invitación."
+- **Por qué (Contexto):** "El correo electrónico no existe o está mal escrito."
+- **Qué hacer ahora (Solución):** "Revisa que incluya un '@' e intenta nuevamente."
+
+**3. El Patrón "Onboarding Flow":**
+Un onboarding no es un manual de usuario. Debe ser rápido y accionable:
+- **Paso 1:** Bienvenida + Propuesta de Valor.
+- **Paso 2:** Setup mínimo indispensable (Solo información crítica).
+- **Paso 3:** Feature 1 + CTA para probarlo ahora mismo.
+- **Paso 4:** Celebración + Siguiente paso claro.
+
+---
+
+## 🗣️ Voz vs. Tono — La Distinción Fundamental
+
+> **Regla de Oro:** La **VOZ** es invariante (la personalidad del producto). El **TONO** es contextual (cómo suena esa personalidad según el estado emocional del usuario).
+
+**Ejemplos de Voz aplicada a distintos productos:**
+| Atributo de Voz | Producto Utilitario (ej. App de Transporte) | Producto Social (ej. App de Juegos) | Producto Premium (ej. Club Exclusivo) |
+| :--- | :--- | :--- | :--- |
+| **Directa** | "El colectivo llega en 3 min." | "¡3 jugadores esperan tu movida!" | "Su mesa estará disponible a las 20h." |
+| **Empática** | "La línea 5 tiene demoras. Sugerimos la 7." | "¡Casi! Un punto más y subes de nivel." | "Entendemos su inconveniente. Nuestro equipo lo contactará." |
+| **Positiva** | "Llegaste. Descarga aquí tu comprobante." | "¡Ganaste 50 puntos! ¿Seguimos?" | "Todo listo para su experiencia." |
+
+**Cómo construir la Voz de un producto (Voice Chart):**
+1. Elegir 3-5 atributos (Ej: Directo, Experto, Cálido).
+2. Para cada uno: definir qué SÍ hace, qué NO hace, y un ejemplo de interfaz real.
+3. Testear la Voz contra 3 escenarios distintos: Error, Onboarding y Éxito.
+
+---
+
 ## 🧠 Matriz de Adaptación de Tono
 La **Voz** del producto (personalidad) es constante y se define en la Etapa 05 (VOICE.md), pero el **Tono** debe adaptarse al estado emocional del usuario:
 

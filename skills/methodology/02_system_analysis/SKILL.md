@@ -76,17 +76,39 @@ Artefactos de Etapa 01 aprobados
 **Archivo:** `skills/momento_1_mapeo.md`
 **Activar cuando:** Se cierra Etapa 01 y se inicia Etapa 02.
 **Produce:** Actor Map Consolidado (Actores Visibles, Invisibles y del Sistema) y solicitudes de stack tecnológico.
-**Regla clave:** Siempre incluir usuarios invisibles (devs, QA, ops, negocio, soporte). Son tan importantes como los usuarios finales.
+
+**⚡ REGLAS DE MAPEO DE ACTORES (Búsqueda Activa):**
+El Agente debe buscar activamente actores invisibles que el humano suele olvidar:
+1. **Equipo técnico:** Devs, QA, DevOps (Son los primeros usuarios; ignorarlos genera deuda).
+2. **Operaciones / Negocio:** Soporte, Admin, Finanzas (Mantienen el sistema vivo).
+3. **Sistemas Externos:** APIs de pago, Auth, Motores de búsqueda.
+4. **Regulaciones:** AFIP, GDPR, Políticas de App Store.
 
 ### Momento 2 — Análisis de Dependencias y Riesgos
 **Archivo:** `skills/momento_2_dependencias.md`
-**Referencia:** `references/system_mapping_guide.md`
 **Activar cuando:** El Actor Map y System Map inicial están aprobados por el equipo.
 **Produce:** Dependency Map, Data Flow Map, Risk Map.
-**Regla clave:** Las dependencias ocultas son más peligrosas que las visibles. Buscar activamente lo que no está documentado.
 
-### Momento 3 — Documentación del Sistema
+**⚡ REGLAS DE MAPEO DE DEPENDENCIAS Y RIESGOS:**
+- **Patrones de Dependencia a Detectar (Buscar estas topologías):**
+  1. **Lineal (`A → B → C`):** Si B falla, C muere (Cascada). *Mitigación:* Fallbacks en B.
+  2. **Estrella / SPOF (`A → HUB ← C`):** Un HUB central. Si cae, tira todo el sistema. *Mitigación:* Abstraer con capa intermedia o redundancia.
+  3. **Circular (`A → B → C → A`):** El más peligroso. Genera loops y estados inconsistentes. *Mitigación:* Romper el ciclo obligatoriamente.
+  4. **Bidireccional Fuerte (`A ↔ B`):** Alto acoplamiento. Un cambio en A rompe B. *Mitigación:* Contratos de API estrictos.
+- **Criticidad Obligatoria:** Todo nodo debe etiquetarse como `[CRÍTICA]` (bloquea todo), `[ALTA]` (bloquea core), `[MEDIA]` (degrada experiencia), `[BAJA]` (invisible).
+- **Tipos de Riesgo a Auditar:** Técnicos (Deuda, Escalabilidad), de Datos (Pérdida, GDPR), de Negocio (Vendor lock-in) y Externos (Leyes, App Store).
+
+### Momento 3 — Documentación del Sistema (Service Blueprint)
 **Archivo:** `skills/momento_3_documentacion.md`
+
+**⚡ FORMATO ESTRICTO DEL SERVICE BLUEPRINT:**
+El mapa debe contener siempre 5 capas divididas por la Línea de Interacción y la Línea de Visibilidad:
+1. **Evidencia Física:** Qué ve/toca el usuario (Pantalla, email).
+2. **Acciones del Usuario:** Qué hace (Clic, navega).
+3. **Frontstage (Visible):** Qué hace el sistema de cara al usuario.
+4. **Backstage (Invisible):** Qué hace el sistema internamente (Valida, procesa).
+5. **Soporte/Sistemas:** Bases de datos, APIs de terceros, Staff.
+
 | Artefacto | Momento | Formato |
 |---|---|---|
 | Actor Map Consolidado | 1 | Documento Markdown |
@@ -96,29 +118,29 @@ Artefactos de Etapa 01 aprobados
 | Architecture Overview | 3 | Documento Markdown |
 | Service Blueprint | 3 | Documento Markdown |
 
-## u{1F6E0}u{FE0F} Motores de Análisis (Bridge Architecture)
+## 🛠️ Motores de Análisis (Bridge Architecture)
 Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
-1. **Concept Synthesis (Toolbox):** Técnicas de *Problem Reframing* para convertir riesgos en oportunidades de diseño.
-2. **UX Audit Engine (`skills/engines/ux_audit_rethink_engine/`):** Motor de Auditoría Holística de UX. Activar cuando se analiza un producto **legado** con UI preexistente que necesita diagnóstico antes de rediseñar.
-3. **DS Audit Engine (`skills/engines/ds_audit_engine.md`):** Auditoría de Design Systems. Activar cuando el producto legado tiene un DS existente (Figma, Storybook) que debe evaluarse antes de asumir la Etapa 06.
-4. **Competitor Intelligence Engine (`skills/engines/competitor_intelligence_engine/`):** Análisis de brechas competitivas, SEO/GEO y battlecards. Activar durante el **Momento 1** para completar el análisis del ecosistema.
-5. **Service Blueprint Engine (`skills/engines/service_blueprint_engine/`):** Conecta experiencia frontstage con operación backstage. Activar en el **Momento 3** (Documentación del Sistema).
-6. **Good Services Engine (`skills/engines/good_services_engine/`):** Estándares de diseño de servicios de alta calidad (Louise Downe). Consultar como guardrail de calidad sistémica.
+1. **Concept Synthesis:** Técnicas de *Problem Reframing* para convertir riesgos en oportunidades de diseño.
+2. **UX Audit Engine (`skills/engines/ux_audit_rethink_engine/`):** Motor de Auditoría Holística de UX. Activar en rediseños de productos legados.
+3. **DS Audit Engine (`skills/engines/ds_audit_engine.md`):** Auditoría de Design Systems para evaluar escalabilidad.
+4. **Competitor Intelligence Engine (`skills/engines/competitor_intelligence_engine/`):** Análisis de brechas competitivas (Momento 1).
+5. **Good Services Engine (`skills/engines/good_services_engine/`):** 15 principios de Louise Downe (Estándar de calidad sistémica).
 
 ---
 
-## Modelo de decisión para avanzar a Etapa 03
+## Modelo de decisión para avanzar a Etapa 03 (Checklist de Completitud)
 
 **Avanzar a Etapa 03 — Product Logic** cuando:
-- El Actor Map cubre a todos los actores visibles, invisibles y del sistema
-- Las dependencias críticas están identificadas con nivel de riesgo
-- Los flujos de datos principales están documentados
-- Los gaps del sistema están explícitamente marcados como riesgos activos
+- [ ] Actor Map cubre a todos los actores visibles, invisibles y sistemas externos.
+- [ ] Dependency Map tiene niveles de riesgo y SPOFs con plan de mitigación.
+- [ ] Dependencias circulares están resueltas o documentadas como riesgo.
+- [ ] Data Flow Map detalla quién crea, lee, modifica y elimina cada entidad.
+- [ ] Gaps de arquitectura o desconocimientos están marcados explícitamente como riesgos activos.
 
 **No avanzar** si:
-- Hay dependencias técnicas críticas sin resolver que bloquearían la lógica del producto
-- Los usuarios invisibles no fueron identificados (producirá diseño con deuda técnica)
-- El equipo técnico no validó el Architecture Overview
+- Hay dependencias técnicas críticas sin resolver que bloquearían la lógica del producto.
+- Los usuarios invisibles no fueron identificados.
+- El equipo técnico no validó el Architecture Overview.
 
 ---
 

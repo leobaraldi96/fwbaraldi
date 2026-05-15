@@ -41,33 +41,120 @@ El Agente **debe** aplicar estas reglas al generar mapas o auditorías:
 ---
 
 ## 🧠 Los 15 Principios de Good Services (Auditoría)
-Cuando se solicite una **"Auditoría de Servicio"**, el Agente debe puntuar la experiencia (o la propuesta) contra estas 15 reglas de Lou Downe:
+Cuando se solicite una **"Auditoría de Servicio"**, la IA evaluará el flujo contra estas 15 reglas de Lou Downe. 
+**Regla de Auditoría:** Para cada principio violado, la IA DEBE documentar el **Failure Mode** (cómo falla hoy) y el **Improvement Move** (cómo arreglarlo sistémicamente).
 
 1. Es fácil de encontrar.
 2. Explica claramente su propósito.
-3. Establece las expectativas del usuario (tiempo, costo, requisitos).
-4. Permite al usuario completar la tarea que se propuso.
-5. Funciona de una manera que resulta familiar.
-6. No requiere conocimiento previo para ser usado.
-7. Es **agnóstico a las estructuras organizacionales**.
-8. Requiere la menor cantidad de pasos posibles.
-9. Es consistente en todos los canales (omnicanalidad).
-10. **No tiene callejones sin salida** (No Dead-Ends).
-11. Es utilizable por todas las personas, equitativamente.
-12. Fomenta los comportamientos correctos de usuarios y empleados (Incentivos).
-13. Puede responder rápidamente al cambio.
-14. Explica claramente por qué se ha tomado una decisión (Ej. en rechazos).
-15. Hace que sea **fácil obtener asistencia humana**.
+3. Establece expectativas (tiempo, costo, requisitos).
+4. Permite completar la tarea.
+5. Funciona de manera familiar.
+6. No requiere conocimiento previo.
+7. **Agnóstico a estructuras organizacionales** (Silos).
+8. Requiere la menor cantidad de pasos.
+9. Consistente en todos los canales.
+10. **Sin callejones sin salida (No Dead-Ends).**
+11. Utilizable por todas las personas equitativamente.
+12. Fomenta comportamientos correctos.
+13. Responde rápidamente al cambio.
+14. Explica por qué se tomó una decisión (rechazos).
+15. **Hace fácil obtener asistencia humana.**
+
+**🎯 El Triple Estándar de Calidad — Un servicio es "Good" cuando es:**
+- **Bueno para el Usuario:** Lo ayuda a lograr su objetivo sin esfuerzo innecesario.
+- **Bueno para la Organización:** Sostenible (costo, riesgo, capacidad) y alineado con los objetivos de negocio.
+- **Bueno para la Sociedad:** No genera daño evitable (exclusión, sesgo, impacto ambiental).
+> Usar este trío al priorizar mejoras y elegir métricas de éxito.
+
+**📊 Scorecard de Auditoría — Formato Obligatorio:**
+Cuando se audite un servicio, documentar cada principio con esta tabla:
+
+| # | Principio | Score (0-2) | Evidencia (dato/investigación) | Dónde falla en el journey | Fix ideas |
+|---|---|---|---|---|---|
+| 1 | Fácil de encontrar | | | | |
+| 7 | Agnóstico a org. | | | | |
+| 10 | Sin callejones | | | | |
+| 15 | Asistencia humana | | | | |
+| ... | *resto de principios* | | | | |
+
+**Resumen Final de Auditoría:**
+- Top 5 principios fallidos (por impacto/daño):
+- Causa sistémica más común (lenguaje, datos, política, ops):
+- Quick wins (alto impacto / bajo esfuerzo):
 
 ---
 
-## 🛠️ Protocolo de Ejecución (Service Blueprint)
-Cuando el usuario pida "Mapear el servicio" o "Hacer un Blueprint", el Agente debe responder con la siguiente estructura tabular:
+## 🛠️ Protocolos de Ejecución (Templates)
 
-**Estructura Esperada (Formato Markdown):**
+### 1. Service Definition Canvas
+Antes de hacer un Blueprint complejo, el Agente debe definir el servicio respondiendo estrictamente a estas dimensiones:
+- **Nombre (Verbo):** Ej. "Solicitar permiso de construcción".
+- **Trigger:** Qué detona la necesidad del usuario.
+- **Scope (Alcance):** Cuándo empieza y cuándo termina exactamente (End condition).
+- **Expectativas:** Costo, tiempo estimado y requisitos previos.
+- **Canales (Touchpoints):** Digital, telefónico, presencial.
+- **Operational Reality:** Equipos internos y sistemas técnicos involucrados.
+- **Medición de Éxito:** Completion rate, Cost-to-serve, Tasa de errores.
 
-| Paso del Usuario | Frontstage (Touchpoint) | Backstage (Empleado/Operación) | Sistemas de Soporte | Puntos de Dolor / Fricción |
-| :--- | :--- | :--- | :--- | :--- |
-| *Acción que intenta hacer* | *Pantalla, email, local* | *Qué hace el staff para cumplir* | *APIs, CRMs, BDs* | *Principio violado o riesgo* |
+### 2. Service Blueprint Canvas
+Cuando el usuario pida "Mapear el servicio", la IA NO debe hacer una tabla genérica. Debe usar la siguiente estructura de 7 capas, marcando claramente las líneas de visibilidad e interacción:
+
+**Estructura Obligatoria del Blueprint:**
+1. **Evidencia Física (Physical Evidence):** Lo que el usuario toca/ve (Pantalla, Notificación, Local).
+2. **Acciones del Usuario (Customer Actions):** Lo que el usuario hace paso a paso.
+*(--- Línea de Interacción ---)*
+3. **Frontstage (Onstage Contact):** Lo que hace el empleado/sistema de cara al usuario.
+*(--- Línea de Visibilidad ---)*
+4. **Backstage (Invisible Contact):** Acciones internas invisibles que habilitan el frontstage.
+*(--- Línea de Interacción Interna ---)*
+5. **Soporte y Sistemas (Support Processes):** Bases de datos, APIs de terceros, Proveedores.
+6. **Métricas de Tiempo / Fallo:** Cuánto tarda cada paso y dónde se cae el usuario.
+7. **Oportunidades (Improvement Moves):** Qué principio de Good Service se está violando y cómo arreglarlo.
+
+**⚠️ Checklist de Riesgos Operativos del Blueprint** (revisar siempre antes de cerrar):
+- [ ] Handoffs de datos entre equipos (duplicación, desincronización, latencia).
+- [ ] Desalineación de políticas entre departamentos u organizaciones.
+- [ ] Restricciones de capacidad (colas, staffing, tiempo de respuesta).
+- [ ] Manejo de excepciones (¿qué pasa fuera del happy path?).
+- [ ] Trazabilidad de decisiones (¿quedan registros auditables?).
+
+### 3. Journey Map (Vista del Usuario)
+Cuando se quiera mapear la experiencia desde la perspectiva del usuario (sin el backstage):
+
+| Paso | Objetivo del usuario | Tareas | Canal | Info/Evidencia necesaria | Pain points | Dónde busca ayuda | Riesgos/Handoffs |
+|---|---|---|---|---|---|---|---|
+| 1 | | | | | | | |
+| 2 | | | | | | | |
+
+**Al cerrar el Journey Map, documentar:**
+- Top 3 puntos de abandono (drop-offs).
+- Top 3 causas de contacto a soporte.
+- Restricciones de política/operación conocidas.
+
+### 4. Service Standard (Principios 14 y 15)
+Para servicios donde las decisiones automáticas o rechazos son frecuentes, documentar obligatoriamente:
+
+**Decision Policy (Principio 14 — Explicar decisiones):**
+- ¿Qué decisiones toma el servicio de forma automática?
+- ¿Qué inputs usa y por qué importan?
+- ¿Cómo se le explica al usuario la decisión?
+- ¿Cómo puede el usuario apelar o corregir sus datos?
+
+**Human Assistance Model (Principio 15 — Asistencia humana fácil):**
+- Puntos de entrada a ayuda humana (dónde y cómo se accede).
+- Reglas de triage y escalada.
+- Qué puede decidir/hacer el staff sin escalar.
+- ¿El knowledge base del staff está alineado con el journey digital?
+
+### 5. Improvement Backlog (Post-Auditoría)
+Al cerrar la auditoría, convertir los fallos en ítems de backlog orientados a outcomes:
+
+| Prioridad | Problema del usuario / Outcome esperado | Principio(s) fallidos | Cambio propuesto | Impacto (A/M/B) | Esfuerzo (A/M/B) | Owner | Criterio de aceptación observable |
+|---|---|---|---|---|---|---|---|
+| Ahora | | | | | | | |
+| Próximo | | | | | | | |
+| Después | | | | | | | |
+
+> ⚠️ Marcar los ítems que requieren cambios de política/legal vs. cambios de diseño/ops. Para ítems cross-org, documentar qué estándares o incentivos compartidos son necesarios.
 
 > **Protocolo de Memoria:** Si durante el mapeo se detectan dependencias técnicas críticas o silos organizacionales que bloquean la experiencia, la IA debe usar `mem_save` para registrar este "Riesgo Sistémico" antes de avanzar a la Etapa 03.

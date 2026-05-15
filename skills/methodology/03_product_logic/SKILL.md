@@ -49,7 +49,11 @@ status: operational
 **Objetivo:** Definir el "Diccionario" del sistema y las leyes condicionales que lo rigen.
 **Produce:** 
 1. **Data Schema (Lite):** Listado de entidades, atributos principales y relaciones (1:1, 1:N, N:N). No requiere SQL, solo estructura lógica.
-2. **Business Rules Matrix:** Matriz de condiciones y consecuencias lógicas (If/Then), validaciones y derivaciones.
+2. **Business Rules Matrix:** Matriz de condiciones y consecuencias. Debe incluir estos 4 tipos de reglas:
+   - *Validación:* "No se puede [Acción] si no se cumple [Condición]".
+   - *Derivación:* "Si el usuario es Premium, aplicar 20% de descuento".
+   - *Estado (State Machine):* "Un pedido pasa a Pagado SOLO si la API de pago devuelve éxito".
+   - *Restricción de Tiempo:* "Las cancelaciones deben ocurrir con 24h de antelación".
 
 ### Momento 3 — Flujogramas Lógicos & Product KPIs
 **Objetivo:** Visualizar el movimiento de la información y definir la medición de éxito del producto.

@@ -139,8 +139,8 @@ Antes de diseñar el plan, el framework debe ejecutar el siguiente interrogatori
 1. **Objetivos y KPIs:** Hipótesis a validar y métricas de comparación.
 2. **Players:** Incluir Directos, Referentes Funcionales y Referentes Aspiracionales.
 3. **Fichas por Player:** Datos cuantitativos (con fuente o marcados `[ESTIMADO]`) y cualitativos.
-4. **Gap Analysis:** Matriz de posicionamiento y brecha contra nuestro proyecto.
-5. **Oportunidades:** Plan de acción (Qué vamos a capitalizar).
+4. **Gap Analysis (El Valor Central):** Matriz de posicionamiento evaluando **Nuestra Brecha** vs referente y el **Esfuerzo de Sistema** (Alto/Medio/Bajo) para cerrarla.
+5. **Oportunidades:** Plan de acción accionable.
 6. **Conclusiones:** Qué hipótesis confirma o refuta este benchmark.
 
 **Regla anti-pasividad:** Si el humano llega a este momento sin un plan de research definido, **la IA es la responsable de guiarlo**. El framework nunca debe limitarse a esperar que el humano proponga la metodología.
@@ -151,11 +151,33 @@ Antes de diseñar el plan, el framework debe ejecutar el siguiente interrogatori
 **Produce:** Briefs por entrevistado, notas estructuradas en tiempo real, matriz de evidencia.
 
 **⚡ REGLAS DE ORO PARA ENTREVISTAS (Discovery & JTBD):**
-Al generar o analizar guiones de entrevistas cualitativas, el Agente debe aplicar el rigor metodológico de Teresa Torres y Marty Cagan:
-1. **Recolectar Historias, NO Opiniones:** Nunca preguntar "¿Qué te gusta?". Preguntar "Cuéntame la última vez que tú...".
-2. **Focus Behavior (No Hipotéticos):** Lo que dicen que harán es mentira. Solo el comportamiento pasado revela la verdad. Evitar preguntas como *"¿Usarías esta herramienta si...?".
+Al generar o analizar guiones cualitativos, el Agente debe aplicar el rigor de Teresa Torres:
+1. **Recolectar Historias, NO Opiniones:** 
+   - ❌ *Mala Pregunta:* "¿Qué te gusta de esta herramienta?"
+   - ✅ *Buena Pregunta:* "Cuéntame paso a paso cómo hiciste X la última vez."
+2. **Focus Behavior (No Hipotéticos):**
+   - ❌ *Mala Pregunta:* "¿Usarías esta herramienta si costara $10?" (La gente miente sobre el futuro).
+   - ✅ *Buena Pregunta:* "¿Qué alternativas pagas has intentado en el último mes?"
 3. **Falsificar, NO Validar:** Buscamos equivocarnos rápido. Buscar solo validar genera sesgo de confirmación.
-4. **Jobs-to-be-Done (JTBD):** Evaluar el "Empuje" (dolor actual), "Atracción" (deseo), "Ansiedad" (dudas) y "Hábito" (inercia).
+4. **No a las Personas Demográficas:** Las "Personas" (ej. *Marketing Sarah, 35 años*) son inútiles. Define a los usuarios por sus **Jobs-to-be-Done (JTBD)**, sus dolores reales y los "Workarounds" (atajos) que inventan hoy.
+
+**📋 Tabla de Tipos de Preguntas Cualitativas:**
+Usar este menú al construir guiones de entrevistas. Ordenadas de mayor a menor confiabilidad del dato obtenido:
+
+| Tipo | Ejemplo | Para qué usarla |
+|---|---|---|
+| **Comportamiento** *(más confiable)* | "Mostrándome, ¿cómo harías X?" | Observar acciones reales, no declaradas |
+| **Contexto** | "Contame cómo es tu día típico cuando hacés X" | Entender el ambiente de uso real |
+| **Objetivo** | "¿Qué estás tratando de lograr cuando hacés X?" | Descubrir motivaciones profundas |
+| **Dolor** | "¿Cuál es la parte más difícil de X?" | Identificar fricciones reales |
+| **Reflexión** *(menos confiable)* | "¿Qué cambiarías de cómo hacés X hoy?" | Generar ideas sin sugerir soluciones |
+
+> ⚠️ **Alerta crítica:** Las preguntas de **Comportamiento** ("mostrándome") producen datos más confiables que las de **Reflexión** ("¿qué cambiarías?"). Lo que la gente dice que haría y lo que realmente hace suelen diferir. Registrar también si el dolor emergió de una pregunta directa o espontáneamente — es la diferencia entre `[CONFIRMA H1]` e `[CONFIRMA-ESPONTÁNEO H1]`.
+
+**🚫 Anti-Patrones Estrictos del Research Cualitativo:**
+1. **Anti-Muestra Mínima:** Nunca tomar decisiones macro en base a 2-3 entrevistas. El mínimo para extraer temas cualitativos sólidos es **7 a 14 participantes**. Menos es anecdótico; más tiene rendimientos decrecientes.
+2. **Anti-Fans-Only:** Nunca entrevistar solo a usuarios satisfechos. El "oro" metodológico está en los detractores, los que abandonaron el onboarding y los que churnearon. Ignorarlos genera sesgo de supervivencia.
+3. **Anti-Delegación:** Los diseñadores y PMs deben estar presentes en las entrevistas. Leer un reporte de una agencia de investigación no construye empatía profunda real ni detecta lo no dicho.
 
 **Regla clave de registro:** Marcar evidencia con `[CONFIRMA H1]`, `[REFUTA H2]`, `[NUEVO INSIGHT]`. Prohibida la síntesis vaga; cada hallazgo debe asociarse a un dato específico.
 
@@ -163,6 +185,23 @@ Al generar o analizar guiones de entrevistas cualitativas, el Agente debe aplica
 **Archivo:** `skills/momento_4_cierre.md`
 **Activar cuando:** El humano aprueba el Informe de Research y declara cierre de recolección.
 **Produce:** Informe de Cierre con recomendación: avanzar / iterar / pivotar.
+
+**⚡ PROTOCOLO DE TESTING CIENTÍFICO (cuando se ejecuten tests de usabilidad):**
+Si el research incluye tests de usabilidad cuantitativa, aplicar este protocolo estrictamente:
+
+1. **Diseño del Experimento:**
+   - *Forced Error:* Diseñar al menos una ruta donde el sistema falla para observar cómo reacciona el usuario.
+   - *Critical Path:* Mapear la ruta mínima viable al éxito y medir fricciones en esa ruta.
+
+2. **Protocolo de Ejecución:**
+   - *Think-Aloud:* Instruir al usuario a verbalizar su proceso mental en tiempo real.
+   - *Intervención Cero:* El moderador no ayuda nunca. El sistema debe hablar por sí mismo.
+
+3. **Síntesis de Hallazgos:**
+   - No listar "quejas". Listar **Barreras de Interacción**.
+   - Cada hallazgo debe incluir: `Severidad (1-4) + Evidencia + Recomendación de Cambio`.
+
+> 🧠 **Regla de Juicio Senior:** Antes de validar resultados, preguntarse: *"¿Estamos testeando la interfaz o estamos testeando si el usuario entiende el valor del producto?"*. Separar siempre la **usabilidad** (¿puede hacerlo?) de la **deseabilidad** (¿quiere hacerlo?).
 
 **⚡ REGLAS ESTRICTAS DE SÍNTESIS ANALÍTICA:**
 1. **Thematic Analysis:** No mezclar insights. Agrupar por afinidad, no por categorías pre-creadas.
