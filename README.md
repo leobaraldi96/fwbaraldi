@@ -205,20 +205,20 @@ fwbaraldi/
 │   │   ├── 06_visual_design_ui/            ← Hardened v2.26.4
 │   │   └── 07_handover_qa/                 ← Hardened v2.26.4
 │   │
-│   └── toolbox/                            ← Tu arsenal estratégico (v2.26.4)
-│       ├── advanced_prioritization_protocol.md
-│       ├── business_strategy_and_growth_protocol.md
-│       ├── concept_synthesis_and_ideation_protocol.md
-│       ├── data_driven_design_and_experimentation.md
-│       ├── personal_impact_report.md
-│       ├── pricing_and_monetization_protocol.md
-│       ├── product_health_qbr_protocol.md
-│       ├── product_launch_protocol.md
-│       ├── product_master_matrix_protocol.md
-│       ├── responsive_and_global_readiness_protocol.md
-│       ├── sales_enablement_and_pitch_protocol.md
-│       ├── stakeholder_narrative_strategy.md
-│       └── strategic_product_roadmap.md
+│       └── toolbox/                            ← Tu arsenal estratégico (v2.26.4)
+│           ├── advanced_prioritization_protocol/
+│           ├── business_strategy_and_growth_protocol/
+│           ├── concept_synthesis_and_ideation_protocol/
+│           ├── data_driven_design_and_experimentation/
+│           ├── personal_impact_report/
+│           ├── pricing_and_monetization_protocol/
+│           ├── product_health_qbr_protocol/
+│           ├── product_launch_protocol/
+│           ├── product_master_matrix_protocol/
+│           ├── responsive_and_global_readiness_protocol/
+│           ├── sales_enablement_and_pitch_protocol/
+│           ├── stakeholder_narrative_strategy/
+│           └── strategic_product_roadmap/
 │
 ├── scripts/
 │   ├── install.js                          ← Instalador CLI interactivo
