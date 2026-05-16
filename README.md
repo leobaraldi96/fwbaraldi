@@ -72,7 +72,7 @@ Ninguno de los frameworks anteriores tiene estas características juntas:
 9. **El problema del nivel de madurez resuelto con estructura**: El diseñador académico conoce los modelos teóricos pero no sabe cómo adaptarlos a la velocidad actual. El senior experimentado sabe qué hacer de forma empírica pero no tiene un modelo que lo sostenga estructuradamente. El Framework **le da al académico la experiencia embebida en el proceso, y al senior le da el modelo que le faltaba**.
 10. **Proactividad de Soporte**: El sistema propone proactivamente formatos de alta fidelidad (Landings/Dashboards HTML) cuando la densidad de datos lo requiere, eliminando la pasividad del agente.
 11. **Contratos Agénticos (VOICE.md & DESIGN.md)**: El framework genera archivos de "Fuente de Verdad" diseñados específicamente para ser leídos por otras IAs, garantizando que el tono, la voz y la identidad visual se mantengan consistentes en cada línea de código generada.
-12. **Verificación de Versión Proactiva (v2.26.4)**: El Framework verifica automáticamente tu versión local para asegurar que el motor metodológico esté siempre al día.
+12. **Verificación de Versión Proactiva (v2.26.5)**: El Framework verifica automáticamente tu versión local para asegurar que el motor metodológico esté siempre al día.
 
 ---
 
@@ -171,7 +171,7 @@ Si sos un modelo de IA o estás configurando un agente, **LEER PRIMERO:**
 
 ---
 
-## 🧰 El Arsenal de Élite (v2.26.4)
+## 🧰 El Arsenal de Élite (v2.26.5)
 
 La Toolbox del Framework Baraldi no es una simple carpeta de utilidades; es un conjunto de **protocolos de alto impacto** diseñados para resolver situaciones críticas de producto, negocio y política organizacional.
 
@@ -205,18 +205,18 @@ fwbaraldi/
 │   │   ├── 00_operational_hygiene/         ← Protocolos de ramas y handoff
 │   │   ├── 00_project_health_audit/        ← Framework Doctor (Auditoría de salud)
 │   │   ├── 00_skill_evaluation/            ← Skill Judge (Filtro de calidad)
-│   │   └── 00_system_awareness/            ← Consciencia Sistémica y Memoria (v2.26.4)
+│   │   └── 00_system_awareness/            ← Consciencia Sistémica y Memoria (v2.26.5)
 │   │
 │   ├── methodology/                        ← El núcleo del proceso (End-to-End)
-│   │   ├── 01_problem_framing/             ← Hardened v2.26.4
-│   │   ├── 02_system_analysis/             ← Hardened v2.26.4
-│   │   ├── 03_product_logic/               ← Hardened v2.26.4
-│   │   ├── 04_information_architecture/    ← Hardened v2.26.4
-│   │   ├── 05_interaction_design_ux/       ← Hardened v2.26.4
-│   │   ├── 06_visual_design_ui/            ← Hardened v2.26.4
-│   │   └── 07_handover_qa/                 ← Hardened v2.26.4
+│   │   ├── 01_problem_framing/             ← Hardened v2.26.5
+│   │   ├── 02_system_analysis/             ← Hardened v2.26.5
+│   │   ├── 03_product_logic/               ← Hardened v2.26.5
+│   │   ├── 04_information_architecture/    ← Hardened v2.26.5
+│   │   ├── 05_interaction_design_ux/       ← Hardened v2.26.5
+│   │   ├── 06_visual_design_ui/            ← Hardened v2.26.5
+│   │   └── 07_handover_qa/                 ← Hardened v2.26.5
 │   │
-│       └── toolbox/                            ← Tu arsenal estratégico (v2.26.4)
+│       └── toolbox/                            ← Tu arsenal estratégico (v2.26.5)
 │           ├── advanced_prioritization_protocol/
 │           ├── business_strategy_and_growth_protocol/
 │           ├── concept_synthesis_and_ideation_protocol/
@@ -242,9 +242,9 @@ fwbaraldi/
 
 ---
 
-## 🚀 Quick Start / Instalación (v2.26.4)
+## 🚀 Quick Start / Instalación (v2.26.5)
 
-> ⚠️ **IMPORTANTE:** A partir de la versión 2.26.4 (Modelo Cero-Copia), el Framework Baraldi dejó de ser un simple texto para copiar y pegar. Ahora es un **Orquestador Agéntico**. Para usarlo, tu IA debe soportar el uso de herramientas MCP y lectura de carpetas locales (Ej: **Antigravity de Google, Claude Code, Cursor, Windsurf**, etc.).
+> ⚠️ **IMPORTANTE:** A partir de la versión 2.26.5 (Modelo Cero-Copia), el Framework Baraldi dejó de ser un simple texto para copiar y pegar. Ahora es un **Orquestador Agéntico**. Para usarlo, tu IA debe soportar el uso de herramientas MCP y lectura de carpetas locales (Ej: **Antigravity de Google, Claude Code, Cursor, Windsurf**, etc.).
 
 ### Instalación Desatendida (Recomendado)
 Hemos construido un instalador interactivo (`baraldi-init`) que se encarga de todo el trabajo pesado. Solo necesitas tener **Node.js** instalado en tu computadora.

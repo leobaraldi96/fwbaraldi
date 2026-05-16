@@ -2,7 +2,7 @@
 
 > **Bienvenido al Cerebro Estratégico de tu Producto.**
 
-Esta carpeta ha sido creada automáticamente por el **Framework Baraldi** (v2.25.27). Su existencia responde a uno de los principios fundamentales de nuestra metodología: la **Arquitectura Cero-Copia (Zero-Copy)**.
+Esta carpeta ha sido creada automáticamente por el **Framework Baraldi** (v2.26.5). Su existencia responde a uno de los principios fundamentales de nuestra metodología: la **Arquitectura Cero-Copia (Zero-Copy)**.
 
 ## 💎 El Activo más Valioso de tu Proyecto
 
@@ -18,12 +18,16 @@ Aquí reside la "verdad estratégica" de tu producto. Ignorar el contenido de es
 Los archivos aquí dentro están organizados por la **naturaleza del contenido**, siguiendo las etapas del framework:
 
 - **`00_Backlog_Estrategico.md`**: El guardián del scope. Aquí anotamos las ideas que surgen pero que no pertenecen a la fase actual para evitar distracciones.
-- **`01_Problem_Framing/`**: Documentos sobre el "Por qué" y "Para quién" (Visión, Stakeholders, Métricas).
-- **`02_System_Analysis/`**: Mapeo técnico y de ecosistema (Actores, Dependencias).
+- **`01_Problem_Framing/`**: El "Para Qué" (Visión, Stakeholders, Métricas).
+- **`02_System_Analysis/`**: El ecosistema (Mapeo de Actores, Riesgos, Dependencias).
 - **`03_Product_Logic/`**: El cerebro funcional (Blueprint, UX-DNA, Business Rules).
-- **`UXR/`**: Todo el User Research, entrevistas y encuestas.
-- **`UX/` & `UI/`**: Flujos de experiencia y especificaciones visuales.
-- **`IA/`**: Los prompts y contextos que usamos para que otras IAs entiendan este proyecto.
+- **`04_Information_Architecture/`**: El esqueleto (Vocabulario, Jerarquía, Taxonomía).
+- **`05_Interaction_Design/`**: El movimiento (Flujos, Estados, VOICE.md).
+- **`06_Visual_Design/`**: La piel (Design System, Tokens, DESIGN.md).
+- **`07_Handover_QA/`**: La entrega (Auditoría, Checklist, Handoff).
+- **`UXR/`**: Repositorio de User Research (Entrevistas, Encuestas, Insights).
+- **`UXW/`**: Documentación de UX Writing y Estrategia de Contenidos.
+- **`IA/`**: Contextos y Prompts para orquestación de otras IAs (v0, Cursor, etc.).
 
 ## 🛡️ ¿Por qué es importante para ti?
 

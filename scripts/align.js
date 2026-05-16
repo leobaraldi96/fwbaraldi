@@ -18,10 +18,12 @@ const MANDATORY_FOLDERS = [
     '01_Problem_Framing',
     '02_System_Analysis',
     '03_Product_Logic',
+    '04_Information_Architecture',
+    '05_Interaction_Design',
+    '06_Visual_Design',
+    '07_Handover_QA',
     'UXR',
-    'UX',
     'UXW',
-    'UI',
     'IA'
 ];
 
