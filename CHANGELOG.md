@@ -5,7 +5,15 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
-## [2.26.4] - 2026-05-14
+## [2.26.5] - 2026-05-16
+ 
+ ### 📄 Evolución Documental y Protocolo de Lanzamiento
+ - **Mapa de Artefactos:** Creación del catálogo oficial `MAPA_DE_ARTEFACTOS.md` que detalla todos los entregables físicos y digitales del framework por etapa, facilitando el onboarding y la transparencia con stakeholders.
+ - **Evolución del Lanzamiento:** Integración de la estrategia de **Lanzamiento Gradual** (Interno/F&F/Público) en el `product_launch_protocol`, incluyendo el bucle de "Regreso al Lápiz" para casos de uso no mapeados detectados en producción.
+ - **Puente Metodológico (Bridge):** Conexión formal entre la Etapa 07 (Handover) y el Protocolo de Lanzamiento para asegurar un aterrizaje suave del producto.
+ - **Sincronización de README:** Integración de accesos directos al Mapa de Artefactos y clarificación de la carpeta `docs-fwbaraldi/` como contenedor de soberanía.
+
+ ## [2.26.4] - 2026-05-14
 
 ### 🛡️ Arquitectura y Hardening Metodológico Final
 - **Añadido:** **Sprint de Hardening Metodológico (Skill Judge Audit).** Se integraron bloques de **NEVER Lists** (Anti-patrones) y **ALWAYS Lists** (Mandatos) en las 7 etapas metodológicas, elevando el scoring a **10/10**.

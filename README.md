@@ -1,6 +1,6 @@
 # Framework Baraldi (FWB) 🤖⚡
 
-![Version](https://img.shields.io/badge/version-2.26.4-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-yellow) ![Memory](https://img.shields.io/badge/memory-Engram--Powered-orange) ![Type](https://img.shields.io/badge/type-Agentic--Orchestrator-blueviolet)
+![Version](https://img.shields.io/badge/version-2.26.5-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-yellow) ![Memory](https://img.shields.io/badge/memory-Engram--Powered-orange) ![Type](https://img.shields.io/badge/type-Agentic--Orchestrator-blueviolet)
 
 > **AI-Augmented System Product Design**
 >
@@ -91,6 +91,16 @@ Ninguno de los frameworks anteriores tiene estas características juntas:
 
 ---
 
+## 🗺️ Mapa de Artefactos (Catálogo de Entregables)
+
+Para responder a la pregunta recurrente: *"¿Qué entrega exactamente el framework?"*, hemos consolidado un catálogo detallado de todos los outputs, tanto físicos como digitales.
+
+Este mapa te permite entender la utilidad estratégica de cada documento, qué información registra y cómo aprovecharlo para el éxito del producto. Cubre desde los artefactos de soberanía hasta el registro invisible en la memoria de la IA.
+
+👉 **[Ver Mapa de Artefactos y Entregables (MAPA_DE_ARTEFACTOS.md)](./MAPA_DE_ARTEFACTOS.md)**
+
+---
+
 ## 🧠 Sistema de Memoria Global (Engram MCP)
 
 El Framework delega la retención de conocimiento a través de sesiones y proyectos utilizando [Engram](https://github.com/Gentleman-Programming/engram), un motor de base de datos SQLite persistente expuesto como servidor MCP.
@@ -135,7 +145,7 @@ A nivel de infraestructura (LLM Ops), el Framework Baraldi maximiza el rendimien
 
 | Métrica | Valor | Estado |
 |---|---|---|
-| **Eficiencia Actual (v2.26.4)** | **94.80%** | 🟢 Full Release (07/07 Etapas) |
+| **Eficiencia Actual (v2.26.5)** | **95.20%** | 🟢 Full Release (07/07 Etapas) |
 | **Engram Engine** | **v1.15.11** | 🟢 Native Project Sync |
 
 *Aclaración Técnica: Al cargar en memoria viva solo los hallazgos estrictamente necesarios para la toma de decisión del momento, reducimos el ruido contextual, manteniendo la IA enfocada, rápida y económicamente viable.*
@@ -317,4 +327,4 @@ El Framework Baraldi es el resultado de más de 25 años de experiencia en el di
 - 📧 **Email:** [leobaraldi96@gmail.com](mailto:leobaraldi96@gmail.com)
 
 ---
-*Framework Baraldi v2.26.4 · Desarrollado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.26.5 · Desarrollado y mantenido por Leo Baraldi.*
