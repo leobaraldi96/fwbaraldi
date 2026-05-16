@@ -18,8 +18,9 @@ Guiar al equipo de producto a través de fases estructuradas de descubrimiento, 
 
 ## Cómo Iniciar
 1. **Identidad:** Cargar siempre primero las reglas en `00_boot/context.md`.
-2. **Descubrimiento:** El framework se compone de múltiples sub-skills organizadas por etapas.
-3. **Flujo Sugerido:**
+2. **Consciencia Sistémica:** Activar `skills/core/00_system_awareness/SKILL.md` para sincronizar la memoria de Engram y las relaciones semánticas.
+3. **Disciplina Operativa:** Cargar `skills/core/00_core_guardrails/SKILL.md` para asegurar la pureza del workspace y la higiene de documentación.
+4. **Flujo Sugerido:**
    - Empezar siempre por la **Etapa 01 — Problem Framing** (`skills/methodology/01_problem_framing/SKILL.md`) para validar el "para qué" antes del "cómo".
    - Avanzar a **Etapa 02 — System Analysis** (`skills/methodology/02_system_analysis/SKILL.md`) para mapear el ecosistema completo.
 
