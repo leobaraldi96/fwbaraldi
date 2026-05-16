@@ -27,7 +27,7 @@ El Framework Baraldi ha evolucionado de ser una colección de prompts a converti
 > 
 | Rol | Responsabilidad | Aporte al Ecosistema |
 | :--- | :--- | :--- |
-| **Humano (Director)** | Intuición, ética, émpatía y visión de negocio. | El "Para qué" y el sabor único del producto. |
+| **Humano (Architect)** | Intuición, empatía, ética, diseño de ontologías y visión de negocio. | El "Para qué" y la arquitectura sistémica del producto. |
 | **IA (Orquestador)** | Estructura, memoria sistémica, lógica y rigor dogmático. | El "cómo", la consistencia y la protección contra sesgos. |
 
 ---

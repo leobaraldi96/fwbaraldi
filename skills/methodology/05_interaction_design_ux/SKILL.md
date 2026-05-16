@@ -10,7 +10,7 @@ version: "2.26.4"
 
 # Etapa 05 — Interaction Design (UX)
 
-> **Objetivo:** Definir cómo el usuario interactúa con la arquitectura creada en la Etapa 04. Pasamos del "Mapa" al "Movimiento". Aquí se diseñan los comportamientos, los estados de los componentes, el **Sistema de Contenido (VOICE.md)** y la **Handoff Matrix** validada.
+> **Objetivo:** Definir cómo el usuario interactúa con la arquitectura creada en la Etapa 04. Pasamos del "Mapa" al "Movimiento". Aquí se diseñan los comportamientos, los estados de los componentes, el **Sistema de Contenido (Content Systems Architecture)** y la **Handoff Matrix** validada.
 
 ---
 
@@ -25,7 +25,7 @@ En esta etapa no nos preocupamos por los colores, sino por:
 ## Flujo de la etapa — 3 momentos
 
 1. **[MOMENTO 1] Interaction Patterns & Tone:** Definición de gestos y la personalidad del sistema (Voz).
-2. **[MOMENTO 2] State Machine & Microcopy:** Mapeo de estados y redacción de mensajes críticos (Error, Success).
+2. **[MOMENTO 2] State Machine & Content Refactoring:** Mapeo de estados y optimización sistémica del microcopy (Error, Success).
 3. **[MOMENTO 3] Handoff Matrix & Wireframes:** Creación del inventario exhaustivo de pantallas y validación final para Etapa 06.
 
 ---
@@ -70,7 +70,8 @@ El Agente debe **bloquear** el proceso si detecta:
 En esta etapa, el Agente no solo dibuja; enseña y facilita la decisión arquitectónica:
 *   **Justificación de Patrones:** Al proponer un layout, el Agente debe explicar por qué ese patrón (ej. Tabs, Accordions, Sidebars) es el más eficiente para la jerarquía de información definida.
 *   **Reflexión de Flujo:** Antes de dar una pantalla por cerrada, invitar al usuario a realizar un "Mental Walkthrough": *"¿Qué siente el usuario en este paso? ¿Hay fricción innecesaria?"*.
+*   **Content Refactoring:** Al redactar, el Agente debe tratar el texto como código. Refactorizar significa eliminar lo innecesario sin perder el significado, asegurando que el contenido sea una pieza de arquitectura funcional, no solo decoración.
 *   **Handoff Consciente:** Explicar al usuario que la claridad lograda aquí es lo que permitirá que la Etapa 06 sea fluida y de alta calidad.
 
 ---
-*Framework Baraldi v2.26.3 · skills/methodology/05_interaction_design_ux/SKILL.md*
+*Framework Baraldi v2.26.4 · skills/methodology/05_interaction_design_ux/SKILL.md*
