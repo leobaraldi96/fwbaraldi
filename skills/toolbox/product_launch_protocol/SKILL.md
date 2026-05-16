@@ -13,13 +13,33 @@ Esta skill actúa como un **Launch Director / GTM Manager**. Su misión es orque
 
 ---
 
-## 🛠️ 1. Orquestación Técnica (The Runbook)
+## 🛠️ 1. Estrategia de Despliegue Gradual (The Progressive Rollout)
 
-### A. Checklist Pre-vuelo (Go/No-Go)
+Para minimizar riesgos y garantizar la estabilidad, el lanzamiento debe seguir una secuencia de anillos de confianza:
+
+### A. Fases de Lanzamiento
+1.  **Fase 01: Alpha Interna (Dogfooding):** Despliegue en servidor de prueba para el equipo core.
+    *   **Misión:** Mapear errores de flujo, bugs técnicos y validar la **Estabilidad** (no solo que funcione, sino que sea sólido).
+    *   **Técnica:** El equipo debe ponerse los "Sombreros de Usuario" (Roleplay) para testear desde diferentes perfiles y contextos.
+2.  **Fase 02: Beta Controlada (Friends & Family):** Extensión a un grupo reducido de usuarios de confianza.
+    *   **Misión:** Validar usabilidad en condiciones reales y detectar **Casos de Uso no Mapeados**.
+3.  **Fase 03: Puertas Abiertas (Lanzamiento Público):** Apertura total con monitoreo intensivo y herramientas de feedback activas.
+
+### B. El Bucle de "Regreso al Lápiz"
+Si durante las fases 01 o 02 se detectan casos de uso críticos no previstos:
+*   **Registro Obligatorio:** Documentar el escenario, el impacto y la frecuencia.
+*   **Valoración de Urgencia:** Si el caso rompe la propuesta de valor o la seguridad, se ejecuta un **Hito de Rediseño** (volver al lápiz) antes de pasar a la siguiente fase.
+
+---
+
+## 🚦 2. Orquestación Técnica y Seguridad
+
+### A. Checklist de Vuelo (Go/No-Go)
 Antes de autorizar el despliegue, el Agente debe validar:
-- [ ] **QA & Staging:** Smoke tests pasados al 100% y paridad total de ambiente.
+- [ ] **Seguridad & Flujos Críticos:** Validación de encriptación, auth y rutas de éxito/error.
+- [ ] **Estabilidad de Entorno:** Monitoreo de latencia y errores ocultos bajo carga.
+- [ ] **Planes de Contingencia:** Documento de Rollback y procedimientos de emergencia ("Qué hacer si todo falla").
 - [ ] **Feature Flags:** Configuradas y testeadas para despliegue progresivo.
-- [ ] **Monitoreo:** Dashboards de errores y performance activos.
 - [ ] **Soporte:** FAQ interna actualizada y equipo "on-call" asignado.
 
 ### B. Gestión de Crisis (Matriz de Severidad)
