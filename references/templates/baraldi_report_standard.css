@@ -1,5 +1,5 @@
 /* 
-   BARALDI REPORT DESIGN SYSTEM v2.0
+   BARALDI REPORT DESIGN SYSTEM v2.26.4
    Dark Mode Canonical Style — UXR Informe Standard
    
    REGLAS DE LEGIBILIDAD (NO NEGOCIABLES):
@@ -7,9 +7,15 @@
    ✅ Font-size mínimo en texto de lectura continua: 15px (0.9375rem)
    ✅ Contraste mínimo texto/fondo: 4.5:1 (WCAG AA)
    ✅ Toda gráfica debe tener copy contextual debajo (class="chart-copy")
+
+   MANDATOS DE GENERACIÓN (ANTI-SLOP):
+   ALWAYS: Usar unidades REM para espaciado y fuentes (basado en root 16px).
+   ALWAYS: Envolver toda gráfica en un .chart-wrapper con su .chart-copy respectivo.
+   NEVER: Bajar de 13px en cualquier texto, incluso en tooltips o captions.
+   NEVER: Usar colores fuera de la paleta de tokens definida en :root.
    
    Colors: Graphite #383635 | Electric Purple #600DFF | Emerald #4EEDB9
-   Versión: 2.0 | Actualizado: 2026-04-17
+   Versión: 2.26.4 | Actualizado: 2026-05-15
 */
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');

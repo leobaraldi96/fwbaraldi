@@ -12,6 +12,7 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 - **Cambiado:** **Bridge Architecture v3.** Reorganización total de las etapas metodológicas. Los motores tácticos (Engines) ahora residen en subcarpetas `/engines` dentro de cada etapa.
 - **Eliminado:** **Deprecación de Tech Guardrails.** Se eliminaron herramientas de implementación (React, Next.js, Tailwind) para mantener el framework agnóstico.
 - **Sincronizado:** Versión global `v2.26.4` unificada en todos los archivos core, skills y metodologías tras la auditoría de integridad y reparación de enlaces internos.
+- **Hardening:** Elevación del **Baraldi Report Design System** a la `v2.26.4`. Se inyectaron mandatos Anti-Slop (`ALWAYS/NEVER`) para garantizar la accesibilidad WCAG AA y la coherencia visual en todos los entregables generados por IA.
 
 ## [2.26.3] - 2026-05-14
 
