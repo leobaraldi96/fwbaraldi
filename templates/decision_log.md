@@ -1,9 +1,9 @@
-# Decision Log — [Nombre del Proyecto]
+# Decision Log — [Nombre del Proyecto] (v2.26.4)
 
 > Registro cronológico de decisiones significativas tomadas durante el proyecto.
-> Este documento es complementario a `memory/baraldi_knowledge_base.md`.
-> Mientras la base de conocimiento agrupa por Eje Estratégico, el Decision Log
-> mantiene el hilo cronológico de por qué el proyecto evolucionó como lo hizo.
+> Este documento es complementario a la memoria persistente en Engram MCP.
+> Mientras la base de conocimiento en Engram agrupa por Eje Estratégico, el Decision Log
+> mantiene el hilo cronológico de por qué el producto evolucionó como lo hizo.
 
 ---
 
@@ -62,4 +62,4 @@
 
 ---
 
-*Framework Baraldi v2.26.3 · templates/decision_log.md*
+*Framework Baraldi v2.26.4 · templates/decision_log.md*

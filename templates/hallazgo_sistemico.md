@@ -1,16 +1,15 @@
-# Template — Hallazgo Sistémico
+# Template — Hallazgo Sistémico (v2.26.4)
 
-> Usar este template para registrar conocimiento valioso en `memory/baraldi_knowledge_base.md`.
-> Cada hallazgo vive dentro de la sección del proyecto activo `## [Proyecto: ...]`.
+> Usar este template para registrar conocimiento valioso mediante `mem_save` de Engram MCP.
+> Consultar protocolos en `skills/core/00_system_awareness/SKILL.md`.
 
 ---
 
 ## Cómo usar este template
 
-1. Copiar el bloque de código de abajo completo (incluyendo los backticks)
-2. Pegar al final de la sección del proyecto activo en `memory/baraldi_knowledge_base.md`
-3. Si el `Eje Estratégico` ya existe, **actualizar** el bloque existente e incrementar `Revisión:`
-4. Nunca duplicar un Eje Estratégico dentro del mismo proyecto
+1. Copiar el bloque de código del hallazgo completo.
+2. Ejecutar la herramienta `mem_save` de Engram para persistir el conocimiento.
+3. Si el `Eje Estratégico` (topic_key) ya existe, Engram lo actualizará automáticamente.
 
 ---
 
@@ -71,4 +70,4 @@ Los slugs deben ser descriptivos y estables. Estructura recomendada:
 
 ---
 
-*Framework Baraldi v2.26.3 · templates/hallazgo_sistemico.md*
+*Framework Baraldi v2.26.4 · templates/hallazgo_sistemico.md*

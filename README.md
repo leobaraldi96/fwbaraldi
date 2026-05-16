@@ -194,7 +194,8 @@ fwbaraldi/
 │   │   ├── 00_core_guardrails/             ← Barandas de contención y disciplina
 │   │   ├── 00_operational_hygiene/         ← Protocolos de ramas y handoff
 │   │   ├── 00_project_health_audit/        ← Framework Doctor (Auditoría de salud)
-│   │   └── 00_skill_evaluation/            ← Skill Judge (Filtro de calidad)
+│   │   ├── 00_skill_evaluation/            ← Skill Judge (Filtro de calidad)
+│   │   └── 00_system_awareness/            ← Consciencia Sistémica y Memoria (v2.26.4)
 │   │
 │   ├── methodology/                        ← El núcleo del proceso (End-to-End)
 │   │   ├── 01_problem_framing/             ← Hardened v2.26.4

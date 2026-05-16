@@ -235,7 +235,7 @@ Antes de entregar, verificá:
 
 **Eje Estratégico a guardar al cerrar este momento:** `pf-decision-cierre`
 
-Al generar el Informe de Cierre y el humano firma su decisión, guardar en `memory/baraldi_knowledge_base.md`:
+Al generar el Informe de Cierre y el humano firma su decisión, ejecutar `mem_save` en Engram MCP:
 - **Tipo:** `cierre-de-etapa`
 - **Qué:** Camino elegido (Avanzar / Iterar / Pivotar) y nivel de confianza de la hipótesis central
 - **Por qué:** Razonamiento del Informe de Cierre sintetizado en 1-2 oraciones

@@ -234,7 +234,7 @@ Este mapeo es el cimiento de tu arquitectura. Te invito a que **uses esta inform
 
 **Eje Estratégico a guardar al cerrar este momento:** `sa-actor-map`
 
-Cuando el humano valida las tres plantillas y se consolida el Actor Map, guardar en `memory/baraldi_knowledge_base.md`:
+Cuando el humano valida las tres plantillas y se consolida el Actor Map, ejecutar `mem_save` en Engram MCP:
 - **Tipo:** `artefacto`
 - **Qué:** Cantidad de actores mapeados (visibles, invisibles, del sistema) y el actor invisible más crítico detectado
 - **Por qué:** Por qué ese actor es crítico para el sistema

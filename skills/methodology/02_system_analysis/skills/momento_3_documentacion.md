@@ -195,7 +195,7 @@ Fecha:
 
 **Eje Estratégico a guardar al cerrar este momento:** `sa-decision-cierre`
 
-Cuando el humano firma el Informe de Cierre de Etapa 02, guardar en `memory/baraldi_knowledge_base.md`:
+Cuando el humano firma el Informe de Cierre de Etapa 02, ejecutar `mem_save` en Engram MCP:
 - **Tipo:** `cierre-de-etapa`
 - **Qué:** Decisión de avance (Avanzar a Etapa 03 / No avanzar) + estado del Architecture Overview
 - **Por qué:** Resumen de lo que aprendió el equipo sobre el sistema que no sabía al cierre de Etapa 01

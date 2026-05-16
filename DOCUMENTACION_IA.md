@@ -3,7 +3,7 @@
 > **⚠️ Este archivo es para HUMANOS (desarrolladores, configuradores, colaboradores).**
 > Los modelos de IA **no deben cargar este archivo** en el ciclo de boot — genera tokens redundantes sin aportar valor operativo. El agente carga directamente `SKILL.md` → `00_boot/context.md` → skills específicas.
 
-**AI-Augmented System Product Design · v2.26.3 · Leo Baraldi**
+**AI-Augmented System Product Design · v2.26.4 · Leo Baraldi**
 
 ---
 
@@ -33,20 +33,20 @@ fwbaraldi/
 │   ├── core/
 │   │   ├── 00_core_guardrails/       ← Reglas de disciplina y comunicación
 │   │   ├── 00_operational_hygiene/   ← Branches, commits semánticos, handoff
-│   │   └── 00_skill_evaluation/      ← La "Aduana": anti-obesidad cognitiva
+│   │   ├── 00_project_health_audit/  ← Framework Doctor (Auditoría de salud)
+│   │   ├── 00_skill_evaluation/      ← Skill Judge (Filtro de calidad)
+│   │   └── 00_system_awareness/      ← Consciencia Sistémica y Memoria (Engram)
 │   │
 │   ├── methodology/
-│   │   ├── 01_problem_framing/       ← ✅ Completa
-│   │   ├── 02_system_analysis/       ← ✅ Completa
-│   │   ├── 03_product_logic/         ← ✅ Completa
-│   │   ├── 04_information_architecture/ ← ✅ Estable
-│   │   ├── 05_interaction_design_ux/ ← 🔄 WIP
-│   │   ├── 06_visual_design_ui/      ← 🔄 WIP
-│   │   └── 07_handover_qa/           ← 🔄 WIP
+│   │   ├── 01_problem_framing/       ← Hardened v2.26.4
+│   │   ├── 02_system_analysis/       ← Hardened v2.26.4
+│   │   ├── 03_product_logic/         ← Hardened v2.26.4
+│   │   ├── 04_information_architecture/ ← Hardened v2.26.4
+│   │   ├── 05_interaction_design_ux/ ← Hardened v2.26.4
+│   │   ├── 06_visual_design_ui/      ← Hardened v2.26.4
+│   │   └── 07_handover_qa/           ← Hardened v2.26.4
 │   │
-│   └── toolbox/
-│       ├── 00_Product_And_UXR_Drafts/← Incubación (UXR, Métricas, Negocio)
-│       └── tech_guardrails/          ← Next.js, Tailwind 4, WP, Electron, React Native
+│   └── toolbox/                      ← Arsenal de 13 protocolos estratégicos
 │
 ├── references/
 │   └── templates/
@@ -80,4 +80,4 @@ Todo lo que genera el framework vive aquí — organizado por naturaleza del con
 
 ---
 
-*Framework Baraldi v2.26.3 · DOCUMENTACION_IA.md · Referencia para humanos*
+*Framework Baraldi v2.26.4 · DOCUMENTACION_IA.md · Referencia para humanos*

@@ -167,7 +167,7 @@ Ver Etapa 03 (Product Logic) para el modelo de estados completo.
 - `sa-riesgos-criticos` — Riesgos que bloquean Etapa 03
 - `sa-dependencias-clave` — Dependencias externas críticas sin alternativa
 
-Al completar el Dependency Map, Data Flow Map y Risk Map, guardar en `memory/baraldi_knowledge_base.md`:
+Al completar el Dependency Map, Data Flow Map y Risk Map, ejecutar `mem_save` en Engram MCP:
 
 **Para `sa-riesgos-criticos`:**
 - **Tipo:** `riesgo`

@@ -226,7 +226,7 @@ No pedís más contexto si:
 
 **Eje Estratégico a guardar al cerrar este momento:** `pf-hipotesis-central`
 
-Cuando el humano aprueba los 5 artefactos de este momento, guardar en `memory/baraldi_knowledge_base.md`:
+Cuando el humano aprueba los 5 artefactos de este momento, ejecutar `mem_save` en Engram MCP:
 - **Tipo:** `decisión` o `validación` según qué tan respaldada esté la hipótesis central
 - **Qué:** La hipótesis central del proyecto en una oración
 - **Por qué:** El razonamiento que llevó a ese framing del problema

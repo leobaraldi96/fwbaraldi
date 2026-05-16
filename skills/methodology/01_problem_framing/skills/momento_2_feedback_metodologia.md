@@ -553,7 +553,7 @@ Antes de entregar, verificás:
 
 **Eje Estratégico a guardar al cerrar este momento:** `pf-metodologia-research`
 
-Cuando el humano aprueba el plan de metodología y los soportes, guardar en `memory/baraldi_knowledge_base.md`:
+Cuando el humano aprueba el plan de metodología y los soportes, ejecutar `mem_save` en Engram MCP:
 - **Tipo:** `decisión`
 - **Qué:** El método de recolección elegido (ej: entrevistas + benchmark, N=8)
 - **Por qué:** Razón de esa combinación de métodos y ese tamaño de muestra

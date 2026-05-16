@@ -449,7 +449,7 @@ Este es el momento más operativo del framework. No analizás estrategia — eje
 
 **Eje Estratégico a guardar al cerrar este momento:** `pf-insight-principal`
 
-Al generar el Informe de Research final (Sub-tarea D), guardar en `memory/baraldi_knowledge_base.md`:
+Al generar el Informe de Research final (Sub-tarea D), ejecutar `mem_save` en Engram MCP:
 - **Tipo:** `validación`
 - **Qué:** Los patrones de alta tracción (saturación/hipótesis) y los insights sutiles identificados por el humano.
 - **Por qué:** Cómo impactan en la hipótesis central (confirman / refuta / matiza) y relevancia estratégica.
