@@ -2,6 +2,9 @@
 
 ![Version](https://img.shields.io/badge/version-2.26.5-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-yellow) ![Memory](https://img.shields.io/badge/memory-Engram--Powered-orange) ![Type](https://img.shields.io/badge/type-Agentic--Orchestrator-blueviolet)
 
+> [!NOTE]
+> **¿Hola, no entendés un carajo de lo que hay acá?** 👉 **[¡Siga por aquí! (Guía de bienvenida fácil para humanos)](./NO_ENTIENDO_NADA.md)** 🚀
+
 > **AI-Augmented System Product Design**
 >
 > Un framework metodológico diseñado para potenciar el diseño de productos digitales utilizando Inteligencia Artificial como copiloto estratégico en todas las etapas del proceso.
