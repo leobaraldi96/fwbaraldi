@@ -24,7 +24,7 @@ Guiar al equipo de producto a través de fases estructuradas de descubrimiento, 
    - Empezar siempre por la **Etapa 01 — Problem Framing** (`skills/methodology/01_problem_framing/SKILL.md`) para validar el "para qué" antes del "cómo".
    - Avanzar a **Etapa 02 — System Analysis** (`skills/methodology/02_system_analysis/SKILL.md`) para mapear el ecosistema completo.
 
-## Toolbox Estratégica (v2.26.4)
+## Toolbox Estratégica (v2.26.5)
 El framework cuenta con una caja de herramientas transversal para la ejecución táctica y estratégica:
 1.  **Stakeholder Narrative Strategy:** Gestión de líderes difíciles (Anti-Lucio/Carlos/Maxi) y venta de ideas.
 2.  **Advanced Prioritization Protocol:** Motor de ROI absoluto basado en RICE, Kano y Score Baraldi.
@@ -42,6 +42,18 @@ El framework cuenta con una caja de herramientas transversal para la ejecución 
 
 ---
 
+## ⚡ Slash Commands (Atajos Semánticos para el Agente)
+Como agente de IA operando el framework, debes reconocer y ejecutar inmediatamente las siguientes directivas rápidas ingresadas por el usuario, evitando rodeos conversacionales:
+*   `/init` ➔ Inicializa la estructura conceptual del framework, explicando el mapa de carpetas y los primeros pasos prácticos.
+*   `/etapa [1-7]` ➔ Salta directamente al contexto operativo de la etapa especificada (ej. `/etapa 1` activa Problem Framing), cargando sus reglas y entregables.
+*   `/align` ➔ Ejecuta una auditoría de la carpeta del proyecto actual (`docs-fwbaraldi`) y notifica al usuario si falta alguna taxonomía o alineamiento.
+*   `/upgrade` ➔ Lee `docs-fwbaraldi/.UPGRADE_REPORT.md` e inicia la Refactorización Guiada. OBLIGATORIO: 1) Aconsejar backup de `docs-fwbaraldi` (ofrecer instrucciones manuales o hacerlo por consola). 2) Mostrar un plan detallado de qué se modificará. 3) Refactorizar archivo por archivo preservando 100% del valor original y esperando el "OK" humano en cada paso. NUNCA tocar código fuera de `docs-fwbaraldi`.
+*   `/backlog` ➔ Lee, analiza y resume de forma priorizada el estado actual de `00_Backlog_Estrategico.md`.
+*   `/toolbox` ➔ Lista las herramientas estratégicas disponibles y solicita al usuario cuál de ellas desea aplicar al proyecto.
+*   `/help` ➔ Muestra este menú de atajos semánticos y un resumen de tres líneas de la North Star del FWB.
+
+---
+
 ## 🧭 Fidelidad de Ejecución (Uso de MCP/Herramientas)
 El Agente debe adaptar su nivel de detalle visual según la etapa actual:
 *   **Etapas 01-05 (Análisis y Estructura):** El foco es la **Información, Diagramas, Flujos y Wording**. El diseño visual debe ser básico/funcional. No aplicar estilos premium.
@@ -54,7 +66,6 @@ El Framework Baraldi **rechaza** el modelo de "IA Generadora de Resultados Final
 *   **Misión Pedagógica:** El framework enseña a diseñar y pensar productos mientras se ejecutan. Si el humano no entiende el "porqué" de una decisión, el framework ha fallado.
 
 ---
-*Framework Baraldi v2.26.4 · Sistema Operativo de Producto.*
 
 ## Reglas de Oro del Framework
 - **Divergencia Obligatoria:** Antes de converger en una solución, se debe expandir la visión estratégica (Momentos "Divergencia").
@@ -66,6 +77,7 @@ El Framework Baraldi **rechaza** el modelo de "IA Generadora de Resultados Final
 - **Sincronización Atómica de Versiones:** Cualquier cambio en la versión del framework debe ser replicado simultáneamente en `SKILL.md`, `README.md`, `CHANGELOG.md` y `ARQUITECTURA_CORE.md`. No se permiten estados de versión inconsistentes entre archivos core.
 - **Protocolo de Templates y Ejemplos:** Toda tabla o estructura de ejemplo en la metodología debe ser ignorada como dato real. La IA debe generar siempre contenido original basado exclusivamente en el contexto del proyecto activo.
 - **Ley de No-Degradación Sistémica:** Queda prohibido eliminar, resumir o "limpiar" secciones de documentación que contengan filosofía, principios de diseño o especificaciones técnicas. Toda actualización debe ser ADITIVA o de REEMPLAZO ENRIQUECEDOR. Ante la duda, CONSULTAR antes de borrar.
+- **Exhaustividad Obligatoria (Anti-Shortcuts):** Al generar artefactos (como Matrices, User Flows o Micro-interacciones), la IA tiene PROHIBIDO tomar atajos, resumir u omitir actores/flujos previamente relevados. Si en etapas anteriores se listaron 5 actores y 10 flujos, en los artefactos subsecuentes se DEBEN mapear exhaustivamente todos los casos sin excepciones. La completitud sistémica es innegociable.
 
 ---
-*Framework Baraldi v2.26.4 · Creado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.26.5 · Creado y mantenido por Leo Baraldi.*

@@ -144,14 +144,18 @@ async function runAlign() {
     }
 
     if (report.versionMismatches.length > 0) {
-        console.log(chalk.cyan('\n🔄 Actualizaciones de versión:'));
+        console.log(chalk.cyan('\n🔄 Actualizaciones de versión detectadas:'));
+        console.log(chalk.dim('  ¡Hola! Detectamos que tus documentos están en una versión anterior y hay'));
+        console.log(chalk.dim('  actualizaciones y mejoras disponibles (esto lo llamamos un "Version Bump").'));
+        console.log(chalk.dim('  Te recomendamos preguntarle a tu agente de IA "¿qué trae de nuevo esta versión?"'));
+        console.log(chalk.dim('  o consultar el CHANGELOG para ver cómo impactan estas mejoras en tu proyecto.\n'));
         report.versionMismatches.forEach(m => {
             console.log(`  ~ ${m.file}: ${chalk.dim(m.old)} → ${chalk.green(m.new)}`);
         });
     }
 
     console.log('');
-    const proceed = await confirm({ message: '¿Deseas aplicar estos alineamientos ahora?' });
+    const proceed = await confirm({ message: '¿Todo listo? ¿Deseas aplicar estos alineamientos en tus archivos ahora?' });
 
     if (proceed) {
         const applySpinner = ora('Aplicando alineamientos...').start();
@@ -205,7 +209,16 @@ async function runAlign() {
             fs.writeFileSync(fullPath, content);
         });
 
+        const reportPath = path.join(docsPath, '.UPGRADE_REPORT.md');
+        const reportContent = `# 🚀 FWB Upgrade Report (v${FRAMEWORK_VERSION})\n\n**Estado Estructural:** Alineado físicamente por consola.\n**Carpetas Creadas:** ${report.foldersToAdd.length ? report.foldersToAdd.join(', ') : 'Ninguna'}\n**Archivos Inicializados:** ${report.filesToUpdate.length ? report.filesToUpdate.join(', ') : 'Ningunos'}\n**Archivos que requieren refactorización de contenido (por salto de versión):**\n${report.versionMismatches.length ? report.versionMismatches.map(m => `- ${m.file} (saltó de ${m.old} a v${FRAMEWORK_VERSION})`).join('\n') : '- Ninguno. Todo está al día.'}\n\n**Directiva para la IA:** Cuando el usuario ejecute '/upgrade', lee este reporte. Sugiere un backup de 'docs-fwbaraldi'. Luego, presenta un plan de refactorización para actualizar el contenido de los archivos listados arriba, preservando el 100% del valor original y esperando confirmación archivo por archivo. Nunca operes fuera de 'docs-fwbaraldi'.\n`;
+        fs.writeFileSync(reportPath, reportContent);
+
         applySpinner.succeed(chalk.green('✓ Proyecto alineado con éxito a la v' + FRAMEWORK_VERSION));
+        
+        console.log(chalk.bold.magenta('\n🤖 ¡El trabajo de la consola terminó, ahora le toca a tu Agente IA!'));
+        console.log(chalk.cyan('   Escribí el comando ') + chalk.white.bgMagenta.bold(' /upgrade ') + chalk.cyan(' en el chat de tu editor'));
+        console.log(chalk.cyan('   para que la IA lea el reporte de actualización y te guíe paso a paso'));
+        console.log(chalk.cyan('   refactorizando el contenido de tus archivos viejos de forma segura.\n'));
     } else {
         console.log(chalk.yellow('\nAlineación cancelada por el usuario.'));
     }
