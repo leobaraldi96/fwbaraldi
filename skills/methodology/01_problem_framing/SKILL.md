@@ -235,7 +235,7 @@ Si el humano selecciona la ruta **"Dashboard"**, el framework tiene la regla est
 
 ---
 
-## 🛠️ Herramientas de Estrategia Adicional
+## 🛠️ Herramientas de Estrategia Adicional (Bridge Architecture)
 Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 1. **Stakeholder Narrative Strategy:** Aplicar para blindar el *Stakeholder Map* y anticipar resistencias políticas.
 2. **Business Strategy & Growth:** Aplicar para asegurar que el problema detectado tenga impacto directo en el ROI.

@@ -24,6 +24,7 @@ El framework opera bajo la **Bridge Architecture v3** y se compone de **7 etapas
 - **Strategic Alignment Layer:** Asegurar que cada pixel responda al negocio.
 - **System Awareness Layer:** Memoria persistente vía Engram.
 - **Design Skills Library:** Acceso a la Toolbox estratégica.
+- **Behavior Calibration Layer (Kalman):** Control y mitigación de la deriva agéntica (desactivable).
 
 ---
 
@@ -163,6 +164,7 @@ Antes de realizar cualquier acción técnica o estratégica, debes asegurar la e
 0. **[MEMORIA Y GUARDRAILS — Paso 0]**
    - **Memoria Global:** Llamar `mem_context(project="fw-baraldi-core", limit=10)` para obtener reglas del framework.
    - **Memoria de Proyecto:** Si el Paso -3 ya ejecutó `mem_context` del proyecto activo, NO repetirlo. Usar la información ya cargada. **NUNCA** uses el ID genérico `baraldi-framework` para guardar datos de un producto específico.
+   - **Calibración de Comportamiento:** Cargar la skill `skills/core/00_kalman_guardrail/SKILL.md`. Verificar el flag `enabled` en su frontmatter. Si es `true`, aplicar estrictamente sus directivas de control de deriva y completitud. Si es `false`, ignorar el archivo.
    - **Disciplina:** Cargar la skill `skills/core/00_core_guardrails/SKILL.md`. Estas son tus "Barandas de Contención" (Docs-Alignment, Naming, Pureza, Backlog). Debes seguirlas como instintos básicos.
 1. **Identificá en qué etapa del framework estás consultando.** Si es un proyecto nuevo, iniciá en Etapa 01.
 2. **Verificá que tenés el input necesario.**

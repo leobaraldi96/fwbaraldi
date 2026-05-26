@@ -4,7 +4,7 @@ import chalk from 'chalk';
 
 const rootDir = process.cwd();
 
-console.log(chalk.bold.blue('\n🔍 Iniciando Auditoría Interna del Framework Baraldi (v2.26.4)\n'));
+console.log(chalk.bold.blue('\n🔍 Iniciando Auditoría Interna del Framework Baraldi (v2.26.5)\n'));
 
 let issues = 0;
 
@@ -38,24 +38,30 @@ else reportSuccess(`Entrada encontrada en CHANGELOG.md`);
 
 // 2. Check Toolbox Integrity
 const toolboxDir = path.join(rootDir, 'skills', 'toolbox');
-const toolFiles = fs.readdirSync(toolboxDir).filter(f => f.endsWith('.md') && f !== 'SKILL.md');
-const toolboxCount = toolFiles.length;
+const toolDirs = fs.readdirSync(toolboxDir).filter(f => {
+    const fullPath = path.join(toolboxDir, f);
+    return fs.statSync(fullPath).isDirectory();
+});
+const toolboxCount = toolDirs.length;
 
 console.log(chalk.yellow(`\n📦 Auditando Toolbox (${toolboxCount} herramientas detectadas)...`));
 
-toolFiles.forEach(file => {
-    // Normalizamos el nombre del archivo para la búsqueda
-    const toolName = file.replace('.md', ''); // ej: 01_stakeholder_narrative_strategy
-    const toolNameNoNumber = file.split('_').slice(1).join('_').replace('.md', ''); // ej: stakeholder_narrative_strategy
+toolDirs.forEach(dir => {
+    // Normalizamos el nombre del directorio para la búsqueda
+    const toolName = dir;
+    let toolNameNoNumber = dir;
+    if (/^\d+_/.test(dir)) {
+        toolNameNoNumber = dir.replace(/^\d+_/, '');
+    }
     const toolClean = toolNameNoNumber.replace(/_/g, ' '); // ej: stakeholder narrative strategy
 
     // Buscamos todas las variaciones posibles
     const searchPatterns = [
-        toolName.toLowerCase(), // 01_stakeholder_narrative_strategy
-        toolName.toLowerCase().replace(/_/g, ' '), // 01 stakeholder narrative strategy
+        toolName.toLowerCase(), // advanced_prioritization_protocol
+        toolName.toLowerCase().replace(/_/g, ' '), // advanced prioritization protocol
         toolClean.toLowerCase(), // stakeholder narrative strategy
-        toolClean.toLowerCase().replace(/ab/g, 'a b'), // stakeholder narrative a b testing
-        toolNameNoNumber.toLowerCase() // stakeholder_narrative_strategy
+        toolClean.toLowerCase().replace(/ab/g, 'a b'), // a b testing if matches
+        toolNameNoNumber.toLowerCase()
     ];
 
     const readmeLow = readme.toLowerCase().replace(/\//g, ' ');
@@ -65,10 +71,10 @@ toolFiles.forEach(file => {
     const foundInSkill = searchPatterns.some(p => skillLow.includes(p));
 
     if (!foundInReadme) {
-        reportIssue(`Herramienta '${file}' no está listada correctamente en el README.md`);
+        reportIssue(`Herramienta '${dir}' no está listada correctamente en el README.md`);
     }
     if (!foundInSkill) {
-        reportIssue(`Herramienta '${file}' no está listada correctamente en el SKILL.md maestro`);
+        reportIssue(`Herramienta '${dir}' no está listada correctamente en el SKILL.md maestro`);
     }
 });
 
