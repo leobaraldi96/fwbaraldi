@@ -71,4 +71,4 @@ Si el proyecto es multi-idioma:
 **Misión de Bloqueo:** El Agente debe decir: *"He encontrado 3 casos de borde sin resolver (Error de red, Estado vacío y texto largo en el título). Por protocolo, no podemos hacer Handoff hasta que dibujemos estas resoluciones."*.
 
 ---
-*Framework Baraldi v2.26.3 · Quality Assurance Protocol.*
+*Framework Baraldi v2.26.6 · Quality Assurance Protocol.*

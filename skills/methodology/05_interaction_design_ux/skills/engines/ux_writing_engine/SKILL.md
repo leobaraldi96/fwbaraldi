@@ -6,7 +6,7 @@ description: >
   (botones, errores, empty states, onboarding). Asegura que el contenido sea accesible, 
   conciso y alinee con la voz del producto.
 keywords: ux-writing, microcopy, accessibility, tone-of-voice, error-messages
-version: "2.26.4"
+version: "2.26.6"
 ---
 
 # ✍️ UX Writing Engine

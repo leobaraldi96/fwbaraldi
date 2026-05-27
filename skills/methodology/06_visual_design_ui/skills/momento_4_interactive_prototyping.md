@@ -1,7 +1,7 @@
 ---
 name: web-artifact-prototyping-protocol
 description: Suite de ingeniería para crear artefactos React de alta fidelidad con shadcn/ui y empaquetado autónomo.
-version: "2.26.3"
+version: "2.26.6"
 ---
 
 # 🚀 [SKILL 37] Web Artifact Prototyping (Engineering Engine)
@@ -36,4 +36,4 @@ Ejecutar la construcción técnica de prototipos interactivos que validan el `DE
 *   **Estados:** Implementar Skeleton Loaders reales que coincidan con la geometría del componente.
 
 ---
-*Framework Baraldi v2.26.3 · High-Fidelity Engineering Protocol.*
+*Framework Baraldi v2.26.6 · High-Fidelity Engineering Protocol.*

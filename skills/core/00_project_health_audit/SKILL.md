@@ -6,7 +6,7 @@ description: >
   hipótesis sin validar y brechas en la arquitectura de información.
   Trigger: "Auditar proyecto", "Salud del proyecto", "Framework Doctor", 
   "Estado de coherencia".
-version: "2.26.4"
+version: "2.26.6"
 ---
 
 # 🩺 Capa 00 — Project Health Audit (Framework Doctor)
@@ -66,4 +66,4 @@ El output de esta skill **SIEMPRE** debe ser un documento estructurado con el si
 - Si el humano decide ignorar un conflicto semántico, documéntalo como una "Decisión Consciente de Riesgo".
 
 ---
-*Framework Baraldi v2.26.4 · Project Health Audit*
+*Framework Baraldi v2.26.6 · Project Health Audit*

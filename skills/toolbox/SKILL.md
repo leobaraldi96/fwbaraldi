@@ -35,4 +35,4 @@ Todas las herramientas de este inventario deben ser invocadas bajo la **Filosof�
 El humano puede pedir: *"Usa el protocolo Anti-Lucio para este feedback"* o *"Ejecuta el Product Launch Protocol"*. La IA debe cargar inmediatamente el archivo correspondiente desde `skills/toolbox/`.
 
 ---
-*Framework Baraldi v2.26.3 · Toolbox Central Orchestrator.*
+*Framework Baraldi v2.26.6 · Toolbox Central Orchestrator.*

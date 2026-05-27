@@ -62,4 +62,4 @@
 
 ---
 
-*Framework Baraldi v2.26.4 · templates/decision_log.md*
+*Framework Baraldi v2.26.6 · templates/decision_log.md*

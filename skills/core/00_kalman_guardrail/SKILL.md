@@ -1,7 +1,7 @@
 ---
 name: kalman-guardrail
 description: Protocolo de calibración agéntica para prevenir la deriva de comportamiento, atajos e iniciativas no autorizadas.
-version: "2.26.5"
+version: "2.26.6"
 enabled: true
 ---
 
@@ -76,4 +76,4 @@ Si en cualquier momento del diálogo el usuario indica que la IA cometió un err
 *   **Siempre** prioriza la exactitud y la directiva explícita del humano por sobre cualquier razonamiento intuitivo de la IA.
 
 ---
-*Framework Baraldi v2.26.5 · skills/core/00_kalman_guardrail/SKILL.md*
+*Framework Baraldi v2.26.6 · skills/core/00_kalman_guardrail/SKILL.md*

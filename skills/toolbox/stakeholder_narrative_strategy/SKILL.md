@@ -5,7 +5,7 @@ description: >
   Transforma hallazgos técnicos en historias de éxito de negocio y proporciona protocolos 
   de defensa ante perfiles tóxicos (Anti-Lucio/Charly/Maxi).
 keywords: pitch, stakeholders, narrativa, defensa, Q&A, Anti-Lucio, gestión política, visibilidad
-version: "2.26.4"
+version: "2.26.6"
 ---
 
 # 🗣️ Skill 01 — Estrategia Narrativa y Gestión de Stakeholders
@@ -75,4 +75,4 @@ Generar una lista de "preguntas difíciles" basadas en el contexto actual y ensa
 4. **Q&A Cheat Sheet:** Respuestas blindadas para la sesión de preguntas.
 
 ---
-*Framework Baraldi v2.26.4 · Skill 01 · Estrategia Narrativa*
+*Framework Baraldi v2.26.6 · Skill 01 · Estrategia Narrativa*

@@ -5,6 +5,13 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.26.6] - 2026-05-27
+
+### 🔄 Adopción Retroactiva y Consistencia DRY UI
+- **Protocolo de Adopción Retroactiva (Retrofit):** Integración de un flujo mandatorio en `00_boot/context.md` para proyectos preexistentes, forzando la auditoría de activos actuales, mapeo de equivalencias metodológicas y planes de alineación mínima.
+- **Consistencia Transversal de Diseño (DRY UI):** Nueva directiva en `skills/core/00_core_guardrails/SKILL.md` que obliga a heredar de forma automática los tokens de diseño y la línea de estilo definidos previamente (ej. en el Home).
+- **Reutilización Obligatoria de Componentes:** Inserción de mandatos estrictos contra la duplicación de código e interfaces para componentes comunes reutilizables (navs, footers, etc.), agregando las respectivas casillas en la lista de verificación final.
+
 ## [2.26.5] - 2026-05-16
  
  ### 📄 Evolución Documental y Protocolo de Lanzamiento

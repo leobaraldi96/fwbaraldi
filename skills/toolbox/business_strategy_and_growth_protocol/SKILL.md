@@ -4,7 +4,7 @@ description: >
   Protocolo de Estrategia de Negocio y Crecimiento. Actúa como el Chief Growth Officer 
   para asegurar que el diseño esté alineado con la captura de ingresos, ROI y escalabilidad.
 keywords: crecimiento, ROI, business-strategy, upselling, auditoría-negocio, escalabilidad, métricas
-version: "2.26.4"
+version: "2.26.6"
 ---
 
 # 📈 Skill 09 — Protocolo de Estrategia de Negocio y Crecimiento
@@ -55,4 +55,4 @@ Justificación económica de la inversión técnica.
 3. **ROI Projection:** Estimación de impacto en KPIs de negocio tras la implementación.
 
 ---
-*Framework Baraldi v2.26.4 · Skill 09 · Estrategia de Negocio*
+*Framework Baraldi v2.26.6 · Skill 09 · Estrategia de Negocio*

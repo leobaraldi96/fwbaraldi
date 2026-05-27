@@ -119,4 +119,4 @@ Cuando escribas el archivo físico, usa esta estructura exacta:
 - **Engram Save:** Al generar el archivo, lanza un `mem_save` con el título *"Establecido el VOICE.md"* y el tag `ux-voice-tone`.
 
 ---
-*Framework Baraldi v2.26.3 · Etapa 05 / Momento 1*
+*Framework Baraldi v2.26.6 · Etapa 05 / Momento 1*
