@@ -5,7 +5,7 @@ description: >
   Se utiliza durante la Etapa 02 (System Analysis) para mapear servicios de extremo a extremo (Service Blueprints),
   diagnosticar fricciones operativas y asegurar que la experiencia sea agnóstica a la estructura organizacional.
 keywords: service-design, blueprint, good-services, journey-map, system-analysis
-version: "2.26.6"
+version: "2.26.7"
 ---
 
 # 🗺️ Good Services Engine

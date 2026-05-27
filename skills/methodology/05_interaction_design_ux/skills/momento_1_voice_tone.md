@@ -110,6 +110,14 @@ Cuando escribas el archivo físico, usa esta estructura exacta:
 ## 4. Diccionario de Términos (Naming)
 *Conectado con la Etapa 04 (Vocabulary).*
 - **Sí decir:** [Término A] -> **NO decir:** [Término B]
+
+## 5. Guardrails de Escritura Humana (Anti-Slop de Interfaz)
+*Heredados del manual de la organización.*
+Toda redacción de interfaz (títulos, modales, alertas, correos) debe regirse bajo los principios del manual de escritura humana:
+- **Tono conversacional y ritmo natural:** Evitar la neutralidad estéril de chatbot; tomar una postura de marca clara y variar la longitud de las oraciones.
+- **Lista de palabras prohibidas de IA:** Queda prohibido usar palabras del vocabulario redundante de LLM (ej. "crucial", "vibrante", "tapiz", "delve").
+- **Directivas gramaticales:** No usar guiones largos (—) en exceso, comillas tipográficas curvas o emojis decorativos en títulos. Usar el verbo directo "es/tiene" en lugar de rodear con "sirve como/actúa como".
+- Para ver ejemplos prácticos de antes/después, consúltese la guía universal [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) o las directivas del manual de escritura humana del framework.
 ```
 
 ---
@@ -119,4 +127,4 @@ Cuando escribas el archivo físico, usa esta estructura exacta:
 - **Engram Save:** Al generar el archivo, lanza un `mem_save` con el título *"Establecido el VOICE.md"* y el tag `ux-voice-tone`.
 
 ---
-*Framework Baraldi v2.26.6 · Etapa 05 / Momento 1*
+*Framework Baraldi v2.26.7 · Etapa 05 / Momento 1*

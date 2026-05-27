@@ -7,7 +7,7 @@ description: >
   Activar en rediseños de productos legados, evaluaciones estratégicas o como
   punto de entrada antes de auditorías específicas.
   Keywords: ux-audit, usabilidad, IxDF, honeycomb, interacción, rediseño, evaluación.
-version: "2.26.6"
+version: "2.26.7"
 framework: Baraldi
 stage: "02 - System Analysis"
 ---
@@ -546,4 +546,4 @@ Este motor incorpora Design Thinking de forma nativa:
 > **Recordar**: Esta auditoría holística provee una línea base completa de UX. Para inmersiones más profundas, complementar con auditorías especializadas: Nielsen para usabilidad, WCAG para accesibilidad, Cognitive Walkthrough para tareas específicas, y UI Design Review para pulido visual.
 
 ---
-*Framework Baraldi v2.26.6 · Etapa 02 / System Analysis / UX Audit & Rethink Engine*
+*Framework Baraldi v2.26.7 · Etapa 02 / System Analysis / UX Audit & Rethink Engine*

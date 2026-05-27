@@ -3,7 +3,7 @@ name: product_metrics_expert
 description: >
   Definición técnica y estratégica de métricas de producto.
   Desde Frameworks (North Star, HEART, AARRR) hasta visualización de datos en React (Recharts).
-version: "2.26.6"
+version: "2.26.7"
 ---
 
 # 📈 Product Metrics & Analytics Expert
@@ -40,4 +40,4 @@ El producto debe tener **UNA sola métrica de la estrella polar** que resuma de 
 - **Gráficos de Pastel (Pie Charts) Engañosos:** Úsalos SOLO si los componentes superan el 20-30% de diferencia. Si es complejo, prefiere un Bar Chart apilado horizontal (*Bullet graph*).
 
 ---
-*Framework Baraldi v2.26.6 · Core / Tech Guardrails / Product Metrics*
+*Framework Baraldi v2.26.7 · Core / Tech Guardrails / Product Metrics*

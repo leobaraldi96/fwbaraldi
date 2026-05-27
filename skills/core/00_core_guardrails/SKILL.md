@@ -6,7 +6,7 @@ description: >
   de los entregables.
   Trigger: SIEMPRE activo. Se debe consultar al inicio de cada sesión y ante
   cualquier cambio en la estructura del proyecto o de los artefactos.
-version: "2.26.6"
+version: "2.26.7"
 ---
 
 # 🛡️ Capa 00 — Core Guardrails (Barandas de Contención)
@@ -180,82 +180,16 @@ El Framework Baraldi no es una máquina expendedora de respuestas, es un **espac
 
 ### Guardrails anti-slop y sabor humano (anti-AI writing patterns)
 
-Basado en la guía de Wikipedia "Signs of AI writing" (WikiProject AI Cleanup), que proviene de analizar miles de textos generados por IA. La IA debe auditar sus salidas contra estos patrones antes de considerar cualquier artefacto listo.
+Toda comunicación del agente y todo entregable generado para el proyecto debe estar libre de patrones artificiales de escritura de IA y tener voz, ritmo y personalidad humana.
 
-**Insight raíz:** los LLMs producen el resultado estadísticamente más probable para el rango más amplio de casos posibles. Eso genera textos que suenan correctos pero vacíos, predecibles y artificiales. La humanización requiere resistir esa gravedad estadística.
+La fuente de verdad absoluta de estas directivas, con todos los ejemplos prácticos de *Antes* y *Después*, es el manual unificado del framework: **[references/humanizer.md](../../../references/humanizer.md)**.
 
-#### Patrones de contenido
-
-1. **Inflación de significado:** prohibido engordar hechos simples con frases de grandiosidad.
-   - Antes: "marcando un momento pivotal en la evolución del diseño de producto"
-   - Después: describir el hecho concreto y dejarlo hablar por sí mismo
-
-2. **Atribuciones vagas:** prohibido citar "expertos" o "estudios" sin nombre, fecha o fuente real.
-   - Antes: "los expertos coinciden en que juega un papel crucial"
-   - Después: "según el informe de Nielsen Norman Group (2023)..." o simplemente no citar
-
-3. **Lenguaje promocional:** prohibido embellecer contextos con adjetivos de folleto turístico o pitch de startup.
-   - Antes: "situada en el corazón de un ecosistema tecnológico vibrante y dinámico"
-   - Después: "es una empresa de Buenos Aires fundada en 2019"
-
-4. **Estructura de desafío formulaica:** prohibida la construcción "a pesar de los desafíos, continúa prosperando" sin datos reales sobre esos desafíos.
-   - Después: nombrar el desafío específico con datos o eliminarlo
-
-#### Patrones de lenguaje
-
-5. **Verbo de sustitución del "es" / "tiene":** prohibido reemplazar verbos simples con perífrasis que suenan más elaboradas.
-   - Antes: "sirve como... actúa como... funciona como... se presenta como..."
-   - Después: "es" o "tiene". Siempre el verbo más simple que sea correcto.
-
-6. **Negativos paralelos y negaciones de cola:** prohibido el patrón "no es solo X, es Y" o terminar frases con negaciones innecesarias.
-   - Antes: "no es solo autocompletar; es desbloquear la creatividad a escala, sin conjeturas"
-   - Después: enunciar directamente el punto
-
-7. **Regla de tres automática:** la IA defaultea a exactamente tres ítems en listas y enumeraciones aunque el número natural sea dos o cuatro. Usar la cantidad que corresponde.
-   - Antes: "innovación, inspiración e insights"
-   - Después: los ítems que realmente aplican
-
-8. **Ciclo de sinónimos:** prohibido alternar entre sinónimos del mismo concepto para "no repetirse". Repetir la palabra más clara.
-   - Antes: "el usuario... el cliente... el individuo... la persona..."
-   - Después: "el usuario" (o la palabra más precisa para el contexto) repetida cuantas veces haga falta
-
-9. **Hedging excesivo:** prohibido apilar modificadores de incertidumbre.
-   - Antes: "podría potencialmente llegar a tener algún efecto positivo"
-   - Después: "puede tener un efecto positivo" o bien no afirmarlo si no hay datos
-
-#### Patrones de estilo
-
-10. **Exceso de guiones em/en (—):** los guiones largos son el símbolo visual más detectado en textos de IA. Reemplazarlos por puntos, comas, dos puntos o paréntesis según el caso.
-    - Antes: "el equipo—no la empresa—tiene la responsabilidad—aunque esto varía"
-    - Después: "el equipo tiene la responsabilidad. La empresa también incide, aunque en menor medida."
-
-11. **Negrita en exceso:** prohibido poner en negrita términos técnicos o siglas solo por serlo. La negrita señala lo que el lector debe retener si no lee el párrafo completo.
-
-12. **Frases de señalización y puertas de entrada:** prohibidas las introducciones que anuncian lo que viene en lugar de empezar directamente.
-    - Antes: "vamos a explorar...", "aquí lo que necesitás saber:", "analicemos en profundidad..."
-    - Después: empezar directamente con el contenido
-
-13. **Conclusiones genéricas:** prohibido cerrar secciones con frases de futuro vacío.
-    - Antes: "el futuro del diseño de producto es prometedor"
-    - Después: un hecho concreto, un próximo paso o nada
-
-#### Patrones de comunicación
-
-14. **Artefactos de chatbot:** prohibidas frases de cierre características de asistentes virtuales.
-    - Eliminados sin excepciones: "¡espero que esto ayude!", "avisame si necesitás algo más", "no dudes en consultar"
-
-15. **Tono servil o sycophancy:** prohibido responder con validaciones vacías antes del contenido.
-    - Eliminados: "¡excelente pregunta!", "tiene mucha razón", "absolutamente"
-
-#### Frases de relleno y hedging
-
-16. **Frases de relleno:** reemplazar siempre por su forma directa.
-    - "con el fin de" → "para"
-    - "debido al hecho de que" → "porque"
-    - "en el contexto de" → "en" o nada
-    - "a nivel de" → depende del caso, casi siempre se elimina
-
-17. **Vocabulario IA recurrente:** las siguientes palabras son estadísticamente sobre-representadas en textos generados. Usar con conciencia y solo cuando sean la opción más precisa: "paisaje" (landscape), "robusto", "aprovechar" (leverage), "delicado equilibrio", "sin problemas" (seamlessly), "testament", "tesoro", "integral", "holístico", "pivotal", "dinámica", "reimaginar", "desbloquear", "navegar por el cambiante".
+La IA debe auditar sus salidas contra los siguientes pilares de dicho manual:
+1. **Personality and Soul:** Inyectar voz, ritmo sintáctico asimétrico y posturas claras.
+2. **Patrones de Contenido:** Eliminar la inflación de trascendencia, lenguaje promocional, gerundios de falso análisis e historias de superación formulaicas.
+3. **Patrones Gramaticales:** Prohibir el vocabulario recurrente de IA (como "crucial", "delve", "tapiz"), la elusión de verbos simples (como abusar de "sirve como"), y paralelismos mecánicos.
+4. **Patrones de Estilo:** Evitar el uso excesivo de negritas, guiones largos (—), comillas curvas y emojis innecesarios.
+5. **Patrones Conversacionales:** Eliminar muletillas serviles de chatbot ("¡Espero que esto ayude!", "¡Por supuesto!").
 
 
 ### 🔔 Protocolo de Transparencia Operativa (Por qué / Cómo / Para qué)
@@ -338,5 +272,5 @@ Antes de declarar un "Done", la IA debe verificar:
 - [ ] ¿He reutilizado los componentes comunes existentes (ej: nav, footer, botones) en lugar de duplicar código o crear variantes independientes sin permiso?
 
 ---
-*Framework Baraldi v2.26.6 · Core Guardrails*
+*Framework Baraldi v2.26.7 · Core Guardrails*
 

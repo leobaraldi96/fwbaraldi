@@ -5,6 +5,14 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.26.7] - 2026-05-27
+
+### ✍️ Estándar de Escritura Humana y Personalidad (Humanizer)
+- **Creación de references/humanizer.md:** Integración del manual maestro en español basado en Wikipedia AI Cleanup para eliminar la redacción artificial de IA, promoviendo el ritmo asimétrico, la inyección de voz ("Personality and Soul") y la toma de posturas claras.
+- **Transversalidad Global (Boot Context):** Adición de la directiva de escritura en `00_boot/context.md` para forzar que toda comunicación conversacional y entregables cumplan con el estándar.
+- **Refactorización de Guardrails:** Simplificación de `skills/core/00_core_guardrails/SKILL.md` delegando la especificación al manual unificado y evitando redundancias.
+- **Alineación de UX Writing y VOICE.md (Etapa 05):** Inclusión de la directiva en el `ux_writing_engine` y en la plantilla de `VOICE.md` para garantizar que la interfaz del producto herede nativamente los guardrails anti-slop humanos.
+
 ## [2.26.6] - 2026-05-27
 
 ### 🔄 Adopción Retroactiva y Consistencia DRY UI

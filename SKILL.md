@@ -6,7 +6,7 @@ description: >
   para ir más allá del diseño de interfaces y enfocarse en sistemas y outcomes.
   Úsalo cuando el usuario quiera iniciar un proceso de diseño de producto estructurado.
 keywords: product-design, framework-baraldi, problem-framing, system-analysis, ux-strategy, systems-thinking
-version: "2.26.6"
+version: "2.26.7"
 ---
 
 # Framework Baraldi — Orquestador Global
@@ -80,4 +80,4 @@ El Framework Baraldi **rechaza** el modelo de "IA Generadora de Resultados Final
 - **Exhaustividad Obligatoria (Anti-Shortcuts):** Al generar artefactos (como Matrices, User Flows o Micro-interacciones), la IA tiene PROHIBIDO tomar atajos, resumir u omitir actores/flujos previamente relevados. Si en etapas anteriores se listaron 5 actores y 10 flujos, en los artefactos subsecuentes se DEBEN mapear exhaustivamente todos los casos sin excepciones. La completitud sistémica es innegociable.
 
 ---
-*Framework Baraldi v2.26.6 · Creado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.26.7 · Creado y mantenido por Leo Baraldi.*

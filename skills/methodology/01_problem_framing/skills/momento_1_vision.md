@@ -12,7 +12,7 @@ description: >
   Keywords: problem framing, hipótesis, stakeholders, métricas, divergencia, producto.
   NO LO USES para diseñar soluciones, features o interfaces.
 skill_id: problem_framing_momento_1
-version: "2.26.6"
+version: "2.26.7"
 framework: Baraldi
 stage: "01 - Problem Framing"
 momento: 1
@@ -235,4 +235,4 @@ Cuando el humano aprueba los 5 artefactos de este momento, ejecutar `mem_save` e
 
 ---
 
-*Framework Baraldi v2.26.6 · skills/methodology/01_problem_framing/skills/momento_1_vision.md*
+*Framework Baraldi v2.26.7 · skills/methodology/01_problem_framing/skills/momento_1_vision.md*

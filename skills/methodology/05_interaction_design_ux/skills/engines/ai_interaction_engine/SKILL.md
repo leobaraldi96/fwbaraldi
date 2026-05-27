@@ -5,7 +5,7 @@ description: >
   Define el comportamiento, la transparencia, la gestión de errores y los patrones de interacción
   específicos para features de IA (LLMs, Generative AI, etc.).
 keywords: ai-ux, ai-interaction, trust-patterns, error-handling-ai, ai-design-brief
-version: "2.26.6"
+version: "2.26.7"
 ---
 
 # 🤖 Skill 08 — AI Interaction Design Brief
@@ -62,4 +62,4 @@ Este protocolo se activa cuando el producto incluye funcionalidades de IA. Su ob
 - **Output:** Se debe generar un documento `AI_Design_Brief_[FeatureName].md` en la carpeta de documentación o artefactos del proyecto actual.
 
 ---
-*Framework Baraldi v2.26.6 · Skill 08*
+*Framework Baraldi v2.26.7 · Skill 08*

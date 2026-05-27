@@ -1,7 +1,7 @@
 ---
 name: kalman-guardrail
 description: Protocolo de calibración agéntica para prevenir la deriva de comportamiento, atajos e iniciativas no autorizadas.
-version: "2.26.6"
+version: "2.26.7"
 enabled: true
 ---
 
@@ -28,8 +28,8 @@ La predicción es el paso lógico que la IA asume que debe dar basándose en el 
 ### 2. Fase de Medición (El Sensor Humano y de Entorno)
 El sensor es el conjunto de lecturas estables del entorno que validan el rumbo. Se compone de:
 *   El prompt explícito y literal del usuario en el chat.
-*   El backlog estratégico actual ([00_Backlog_Estrategico.md](file:///c:/Users/leoba/.gemini/config/skills/baraldi-framework/00_Backlog_Estrategico.md)).
-*   Las directivas del plan de tareas aprobado ([task.md](file:///c:/Users/leoba/.gemini/antigravity-ide/brain/6df1bd57-9158-43ef-be36-8a665b7d87ea/task.md)).
+*   El backlog estratégico actual ([00_Backlog_Estrategico.md](../../../00_Backlog_Estrategico.md)).
+*   Las directivas del plan de tareas de la sesión actual (`task.md` en el directorio de la conversación).
 
 ---
 
@@ -76,4 +76,4 @@ Si en cualquier momento del diálogo el usuario indica que la IA cometió un err
 *   **Siempre** prioriza la exactitud y la directiva explícita del humano por sobre cualquier razonamiento intuitivo de la IA.
 
 ---
-*Framework Baraldi v2.26.6 · skills/core/00_kalman_guardrail/SKILL.md*
+*Framework Baraldi v2.26.7 · skills/core/00_kalman_guardrail/SKILL.md*

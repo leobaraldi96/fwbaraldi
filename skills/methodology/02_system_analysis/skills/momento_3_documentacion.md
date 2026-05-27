@@ -11,7 +11,7 @@ description: >
   Usalo cuando Dependency Map y Risk Map estén completos y aprobados.
   NO LO USES sin los artefactos del Momento 2 aprobados.
 skill_id: system_analysis_momento_3
-version: "2.26.6"
+version: "2.26.7"
 framework: Baraldi
 stage: "02 - System Analysis"
 momento: 3
@@ -206,4 +206,4 @@ Además, si el Architecture Overview tiene decisiones técnicas registradas, gua
 
 ---
 
-*Framework Baraldi v2.26.6 · skills/methodology/02_system_analysis/skills/momento_3_documentacion.md*
+*Framework Baraldi v2.26.7 · skills/methodology/02_system_analysis/skills/momento_3_documentacion.md*

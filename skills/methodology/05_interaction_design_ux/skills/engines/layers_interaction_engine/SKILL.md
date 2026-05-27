@@ -3,7 +3,7 @@ name: layers-interaction-flow
 description: >
   Mapea la estructura y el flujo de interacción. Produce notación de breadboarding
   con casos de borde, rutas de fallo y decisiones abiertas.
-version: "2.26.6"
+version: "2.26.7"
 framework: Baraldi
 stage: "05 - Interaction Design"
 ---
@@ -137,4 +137,4 @@ Produce:
 Cierra con: *"Este breadboard define la lógica de interacción sin comprometerse con la forma visual. Lo que venga después —trabajar en código o diseño visual detallado— requiere que el modelo conceptual debajo de este flujo esté estable primero."*
 
 ---
-*Framework Baraldi v2.26.6 · Etapa 05 / Interaction Design / Layers Interaction Engine*
+*Framework Baraldi v2.26.7 · Etapa 05 / Interaction Design / Layers Interaction Engine*

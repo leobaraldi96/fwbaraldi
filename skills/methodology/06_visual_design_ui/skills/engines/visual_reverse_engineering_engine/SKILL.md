@@ -5,7 +5,7 @@ Protocolo para la extracciÃ³n de sistemas de diseÃ±o y tokens a partir de im
 o capturas de pantalla mediante IA Vision. Ideal para benchmarking, migraciÃ³n 
 de legados y moodboarding tÃ©cnico.
 keywords: vision, reverse-engineering, screenshot-to-code, design-tokens, benchmarking, ui-analysis
-version: "2.26.6"
+version: "2.26.7"
 ---
 
 # ðŸ‘ï¸ Skill 27 â€” Visual Reverse Engineering Protocol (Vision)
@@ -47,4 +47,4 @@ Al ejecutar este protocolo sobre una imagen, el Agente debe extraer:
 - **Etapa 04 (IA):** Puede usarse para validar si la arquitectura de informaciÃ³n propuesta coincide visualmente con referencias exitosas del sector.
 
 ---
-*Framework Baraldi v2.26.6 Â· Skill 27*
+*Framework Baraldi v2.26.7 Â· Skill 27*

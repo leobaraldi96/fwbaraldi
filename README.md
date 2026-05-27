@@ -330,4 +330,4 @@ El Framework Baraldi es el resultado de más de 25 años de experiencia en el di
 - 📧 **Email:** [leobaraldi96@gmail.com](mailto:leobaraldi96@gmail.com)
 
 ---
-*Framework Baraldi v2.26.6 · Desarrollado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.26.7 · Desarrollado y mantenido por Leo Baraldi.*

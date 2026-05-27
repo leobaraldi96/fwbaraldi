@@ -10,7 +10,7 @@ description: >
   SIEMPRE usalo cuando el humano mencione "arrancamos", "nuevo proyecto", "etapa 1",
   "problem framing" o provea el contexto inicial de un proyecto.
   NO LO USAR con proyectos que ya tienen la Etapa 01 cerrada.
-version: "2.26.6"
+version: "2.26.7"
 framework: Baraldi
 stage: "01"
 stage_name: "Problem Framing"
@@ -316,4 +316,4 @@ El Agente debe **bloquear** el proceso si detecta:
 
 ---
 
-*Framework Baraldi v2.26.6 · skills/methodology/01_problem_framing/SKILL.md*
+*Framework Baraldi v2.26.7 · skills/methodology/01_problem_framing/SKILL.md*

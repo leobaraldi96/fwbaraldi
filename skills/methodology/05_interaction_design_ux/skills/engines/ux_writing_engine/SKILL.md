@@ -6,7 +6,7 @@ description: >
   (botones, errores, empty states, onboarding). Asegura que el contenido sea accesible, 
   conciso y alinee con la voz del producto.
 keywords: ux-writing, microcopy, accessibility, tone-of-voice, error-messages
-version: "2.26.6"
+version: "2.26.7"
 ---
 
 # ✍️ UX Writing Engine
@@ -26,6 +26,7 @@ El Agente tiene **estrictamente prohibido** cometer los siguientes errores de re
 3. **Anti-Click-Here:** Nunca usar etiquetas de botón genéricas o sin contexto para Screen Readers. (Ej. *Prohibido:* "Haz clic aquí", "Enviar". *Correcto:* "Leer política de privacidad", "Enviar solicitud").
 4. **Anti-Passive:** Nunca abusar de la voz pasiva. El producto hace cosas por el usuario, o el usuario hace cosas en el producto. (Ej. *Prohibido:* "Tu cuenta ha sido creada", *Correcto:* "Creamos tu cuenta").
 5. **Anti-Color-Only:** Nunca depender exclusivamente del color para comunicar estado (Ej. *Prohibido:* Un texto rojo para error. *Correcto:* Texto rojo + Icono de Alerta + Mensaje descriptivo).
+6. **Anti-AI Writing (Anti-Slop):** Queda estrictamente prohibido usar vocabulario artificial de LLM ("crucial", "vibrante", "delve"), rodeos sofisticados (como "sirve como" en lugar de "es/tiene"), guiones em en exceso, emojis decorativos en títulos o comillas curvas en los copys del producto. Consulta la guía y los ejemplos de corrección en [references/humanizer.md](../../../../../../references/humanizer.md).
 
 ---
 
@@ -45,6 +46,7 @@ El Agente **debe** aplicar siempre las siguientes heurísticas al redactar:
    - *Ejemplo:* "No pudimos guardar los cambios. Revisa tu conexión a internet e intenta nuevamente."
 4. **Escritura para Traducción (i18n):** Redactar asumiendo que los botones se expandirán un 30% en otros idiomas (como el alemán). Evitar modismos locales o metáforas deportivas.
 5. **Front-Loading:** Colocar el verbo o la información más importante al inicio de la oración. (Ej. *Correcto:* "La contraseña debe tener 8 caracteres" vs *Incorrecto:* "Para mayor seguridad, asegúrate de que tu contraseña tenga 8 caracteres").
+6. **Sabor y Personalidad Humana (Personality and Soul):** Variar la longitud de las oraciones para darle ritmo natural al texto, tomar una postura clara en el tono cuando corresponda, evitar la simetría artificial de viñetas y asegurar que el microcopy del sistema suene como si un ser humano real estuviese hablando con el usuario.
 
 ---
 
