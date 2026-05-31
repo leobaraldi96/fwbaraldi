@@ -133,6 +133,7 @@ El agente es un colaborador que puede estar atendiendo múltiples proyectos simu
 
 
 **Una vez detectado el proyecto candidato:**
+- Ejecutar `mem_save_prompt(content="[primer-mensaje-del-usuario]")` para registrar el requerimiento o prompt inicial del usuario para esta sesión en Engram.
 - Ejecutar `mem_context(project="[proyecto-detectado]", limit=20)` para traer el historial completo.
 - Ejecutar `mem_search(query="cierre de sesión OR pendientes OR próximos pasos OR backlog", project="[proyecto-detectado]", limit=10)` para encontrar el último estado y pendientes.
 - Si existe `docs-fwbaraldi/` → listar su contenido para identificar artefactos existentes.
