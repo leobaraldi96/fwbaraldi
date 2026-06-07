@@ -63,4 +63,4 @@ Usar `mem_save` proactivamente en los siguientes hitos:
 
 ---
 
-*Framework Baraldi v2.26.7 · 00_system_awareness · Orquestador de Memoria Sistémica.*
+*Framework Baraldi v2.26.8 · 00_system_awareness · Orquestador de Memoria Sistémica.*

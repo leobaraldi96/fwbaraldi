@@ -10,7 +10,7 @@ description: >
   SIEMPRE usalo al iniciar la Etapa 02 o cuando el humano diga "mapeemos el sistema".
   NO LO USES antes de cerrar Etapa 01 con outcomes validados.
 skill_id: system_analysis_momento_1
-version: "2.26.7"
+version: "2.26.8"
 framework: Baraldi
 stage: "02 - System Analysis"
 momento: 1
@@ -243,4 +243,4 @@ Cuando el humano valida las tres plantillas y se consolida el Actor Map, ejecuta
 
 ---
 
-*Framework Baraldi v2.26.7 · skills/methodology/02_system_analysis/skills/momento_1_mapeo.md*
+*Framework Baraldi v2.26.8 · skills/methodology/02_system_analysis/skills/momento_1_mapeo.md*

@@ -1,6 +1,6 @@
-# Framework Baraldi - Backlog Estratégico (v2.26.5)
-Última Actualización: 2026-05-16
-Estado: **Sistema Totalmente Hardened (v2.26.5)**
+# Framework Baraldi - Backlog Estratégico (v2.26.8)
+Última Actualización: 2026-06-07
+Estado: **Sistema Totalmente Hardened (v2.26.8)**
 
 > **Propósito:** Centralizar el scope futuro, las etapas en desarrollo (WIP) y las ideas de mejora sistémica para evitar el Scope Creep durante las sesiones actuales.
 > **Disciplina:** Revisar este archivo al inicio de cada sesión (Boot Step -3).
@@ -41,4 +41,4 @@ Estado: **Sistema Totalmente Hardened (v2.26.5)**
 
 ---
 
-*Última actualización: 2026-05-16 · Sincronizado con v2.26.5*
+*Última actualización: 2026-06-07 · Sincronizado con v2.26.8*

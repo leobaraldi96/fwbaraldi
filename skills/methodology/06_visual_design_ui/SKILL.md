@@ -6,7 +6,7 @@ description: >
   Crea el contrato visual para la implementación agéntica (DESIGN.md).
 keywords: visual design, ui, tokens, design system, luxury obsidian, design.md, css variables.
 status: operational
-version: "2.26.7"
+version: "2.26.8"
 ---
 
 # Etapa 06 — Visual Design (UI)
@@ -92,4 +92,4 @@ En la fase visual, el Agente actúa como un **Director de Arte** que educa el oj
 *   **Decisión Compartida:** Nunca entregar un diseño finalizado sin haber transitado los hitos de decisión con el humano.
 
 ---
-*Framework Baraldi v2.26.7 · skills/methodology/06_visual_design_ui/SKILL.md*
+*Framework Baraldi v2.26.8 · skills/methodology/06_visual_design_ui/SKILL.md*

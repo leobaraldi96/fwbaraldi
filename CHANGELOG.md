@@ -5,6 +5,19 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.26.8] - 2026-06-07
+
+### ✍️ Integración de Estándares de Content Design y UX Writing
+- **Mitigación de Sesgo WEIRD:** Inyección de guardrails contra la asunción por defecto de conectividad constante, bancarización internacional y alta confianza institucional para productos enfocados en LatAm.
+- **Estandarización de Llaves i18n:** Definición de reglas de jerarquía de traducción (`generic.*`, `featureArea.subArea.element`) para agilizar el handoff de textos.
+- **Endurecimiento de Reglas de Redacción:** Prohibición explícita de emojis en la interfaz del producto, enlaces genéricos ("haz clic aquí"), gerundios decorativos de cierre y abreviaciones latinas en inglés.
+- **Glosario de UX e Integración:** Creación de una matriz de equivalencia para palabras críticas de interfaz (ej. *Settings* -> *Ajustes*) y ejemplos de código.
+- **Patrones de Auditoría Automáticos:** Adición de patrones Grep de escaneo rápido para plantillas HTML y JSON de localización.
+
+### 🛡️ Mantenimiento y Estabilidad del Ecosistema
+- **Purga de Pencil en E05:** Eliminación de la mención obsoleta a "Pencil" en la etapa de diseño de interacción.
+- **Exclusión de Temporales en Health Check:** Modificación de `health-check.js` para ignorar la carpeta de base de datos local `temp-Engram-v1.15.11`, limpiando falsos positivos de obesidad cognitiva.
+
 ## [2.26.7] - 2026-05-27
 
 ### ✍️ Estándar de Escritura Humana y Personalidad (Humanizer)

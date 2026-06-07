@@ -11,7 +11,7 @@ description: >
   SIEMPRE usalo cuando el humano mencione "etapa 2", "system analysis",
   "mapear el sistema" o cuando los outcomes de Etapa 01 estén validados.
   NO LO USAR si el problema no se ha validado en la Etapa 01.
-version: "2.26.7"
+version: "2.26.8"
 framework: Baraldi
 stage: "02"
 stage_name: "System Analysis"
@@ -212,4 +212,4 @@ En el análisis de sistemas, el Agente actúa como un **Analista Mentor**:
 *   **Reflexión Ecosistémica:** Invitar al humano a pensar más allá de la pantalla: *"Estamos diseñando un sistema, no una web. ¿Qué pasa en el mundo físico cuando este dato se envía?"*.
 
 ---
-*Framework Baraldi v2.26.7 · skills/methodology/02_system_analysis/SKILL.md*
+*Framework Baraldi v2.26.8 · skills/methodology/02_system_analysis/SKILL.md*

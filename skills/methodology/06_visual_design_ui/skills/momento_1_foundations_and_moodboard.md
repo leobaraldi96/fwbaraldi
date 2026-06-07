@@ -81,4 +81,4 @@ Resultado: Un contrato visual consolidado que incluye:
 - **Formato:** Preparado para CSS Variables o exportación JSON.
 
 ---
-*Framework Baraldi v2.26.7 · Design Director Protocol (Clean).*
+*Framework Baraldi v2.26.8 · Design Director Protocol (Clean).*

@@ -5,7 +5,7 @@ description: >
   Define el comportamiento, los estados y el esqueleto de la experiencia.
 keywords: ux, interaction design, micro-interactions, states, wireframes, user experience.
 status: operational
-version: "2.26.7"
+version: "2.26.8"
 ---
 
 # Etapa 05 — Interaction Design (UX)
@@ -74,7 +74,7 @@ En esta etapa, el Agente no solo dibuja; enseña y facilita la decisión arquite
 *   **Content Refactoring:** Al redactar, el Agente debe tratar el texto como código. Refactorizar significa eliminar lo innecesario sin perder el significado, asegurando que el contenido sea una pieza de arquitectura funcional, no solo decoración.
 *   **Validación Obligatoria de Voz (VOICE.md):** Antes de invitar al humano a dibujar, la IA DEBE redactar y presentarle el artefacto `VOICE.md`. Este documento DEBE generarse desde el primer intento con máxima profundidad arquitectónica (Regla Anti-Shortcuts). Es MANDATORIO que incluya: 1) **Diccionario del Sistema Completo** (importando el 100% de los términos core de la Etapa 04, sin omitir ninguno), 2) **Mapeo de Microcopy Crítico** cruzado de forma exhaustiva con el 100% de los User Flows y el Sitemap (redactando el copy exacto para empty states, errores de infraestructura, notificaciones legales, bifurcaciones de pago y edge cases), y 3) **Guardrails Gramaticales** (Voz Activa, prohibición estricta de Robot Speak). Queda terminantemente prohibido entregar resúmenes o versiones parciales. Sin la validación y aprobación explícita del humano sobre este Contrato Maestro, el Handoff de Diseño Visual queda **bloqueado**.
 *   **Handoff Consciente:** Explicar al usuario que la claridad lograda aquí en texto es la base innegociable de la Etapa 06.
-*   **Traspaso de Dibujo (Handoff Visual al Humano):** Al finalizar de entregar los artefactos, la IA debe detenerse y delegar explícitamente el diseño al humano con este enfoque: *"Listo, tenés todos los artefactos de la Etapa 05. Ahora te toca a vos diseñar los wireframes (en baja o media fidelidad) basándote en estas definiciones. Tenés dos opciones para que trabajemos juntos: 1) Si usás el protocolo MCP (Figma, Pencil, Stitch), nos conectamos al lienzo y lo armamos en equipo. 2) Si preferís hacerlo por tu cuenta, no es obligatorio usar MCP: podés pasarme capturas de pantalla por acá, o ir guardando tus exportaciones dentro de la carpeta 'docs-fwbaraldi/05_Interaction_Design/wireframes/' y avisarme para que yo las revise, critique y vayamos iterando versión a versión."*
+*   **Traspaso de Dibujo (Handoff Visual al Humano):** Al finalizar de entregar los artefactos, la IA debe detenerse y delegar explícitamente el diseño al humano con este enfoque: *"Listo, tenés todos los artefactos de la Etapa 05. Ahora te toca a vos diseñar los wireframes (en baja o media fidelidad) basándote en estas definiciones. Tenés dos opciones para que trabajemos juntos: 1) Si usás el protocolo MCP (Figma, Stitch), nos conectamos al lienzo y lo armamos en equipo. 2) Si preferís hacerlo por tu cuenta, no es obligatorio usar MCP: podés pasarme capturas de pantalla por acá, o ir guardando tus exportaciones dentro de la carpeta 'docs-fwbaraldi/05_Interaction_Design/wireframes/' y avisarme para que yo las revise, critique y vayamos iterando versión a versión."*
 
 ---
-*Framework Baraldi v2.26.7 · skills/methodology/05_interaction_design_ux/SKILL.md*
+*Framework Baraldi v2.26.8 · skills/methodology/05_interaction_design_ux/SKILL.md*
