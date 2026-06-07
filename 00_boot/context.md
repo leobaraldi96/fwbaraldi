@@ -1,4 +1,4 @@
-# Framework Baraldi — Boot Context (v2.26.10)
+# Framework Baraldi — Boot Context (v2.26.12)
 > Cargá este archivo antes de ejecutar cualquier skill o prompt del framework.
 > Este es el contrato de identidad y comportamiento de la IA dentro del Framework Baraldi.
 
@@ -10,7 +10,7 @@ El Framework Baraldi es una metodología de diseño de producto de alto rendimie
 
 El framework opera bajo la **Bridge Architecture v3** y se compone de **7 etapas operativas** obligatorias:
 
-### Etapas Core (v2.26.10)
+### Etapas Core (v2.26.12)
 1. **Problem Framing:** Encuadre estratégico y detección de la "North Star".
 2. **System Analysis:** Mapeo de dependencias, riesgos y ecosistema.
 3. **Product Logic:** UX-DNA, lógica de negocio y matrices de orquestación.
@@ -19,7 +19,7 @@ El framework opera bajo la **Bridge Architecture v3** y se compone de **7 etapas
 6. **Visual Design (UI):** Identidad visual, tokens y DESIGN.md.
 7. **Handover & QA:** Validación técnica, auditoría de cables y entrega final.
 
-### Capas transversales (v2.26.10)
+### Capas transversales (v2.26.12)
 - **AI Orchestration Layer:** Gestión de la simbiosis humano-IA.
 - **Strategic Alignment Layer:** Asegurar que cada pixel responda al negocio.
 - **System Awareness Layer:** Memoria persistente vía Engram.
@@ -128,7 +128,7 @@ El agente es un colaborador que puede estar atendiendo múltiples proyectos simu
 **Algoritmo de Detección (en orden de prioridad):**
 1. **Identidad Nativa Engram (P0 - Máxima Prioridad):** Ejecutar `mem_current_project()`. 
    - **Caso Normal:** Si devuelve un nombre de proyecto válido (vía git remote o `.engram/config.json`) → usar ese nombre obligatoriamente.
-   - **Caso de Ambigüedad (Novedad v2.26.10):** Si devuelve `error_code: "ambiguous_project"`, el Agente **DEBE DETENERSE**. No asumas ningún proyecto. Informa al usuario de los `available_projects`, pide la selección manual y guarda el `recovery_token` para la siguiente operación de escritura.
+   - **Caso de Ambigüedad (Novedad v2.26.12):** Si devuelve `error_code: "ambiguous_project"`, el Agente **DEBE DETENERSE**. No asumas ningún proyecto. Informa al usuario de los `available_projects`, pide la selección manual y guarda el `recovery_token` para la siguiente operación de escritura.
 2. **Señal Explícita (P1):** ¿El humano mencionó el nombre del proyecto en su primer mensaje? Si sí → comparar con la detección nativa. Si hay conflicto, pedir aclaración.
 3. **Señal de Memoria (P2):** Ejecutar `mem_context(limit=5)` sin filtro de proyecto. Identificar el **proyecto más reciente** como candidato.
 4. **Sin Señal (P3):** Si no se puede detectar el proyecto por ningún medio → **preguntar explícitamente** al humano.
@@ -405,4 +405,4 @@ Si el Paso -3 NO encontró memoria de ningún proyecto existente:
 
 ---
 
-*Framework Baraldi v2.26.10 · context.md · Boot Layer 00 (Sincronía Atómica Certificada)*
+*Framework Baraldi v2.26.12 · context.md · Boot Layer 00 (Sincronía Atómica Certificada)*

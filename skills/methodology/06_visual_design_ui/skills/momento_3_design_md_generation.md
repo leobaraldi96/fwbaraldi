@@ -42,36 +42,86 @@ Una vez tengas los datos visuales, debes procesarlos usando estas reglas de **Ta
 ---
 
 ### Paso 3: Generación del Artefacto (DESIGN.md - Premium Version)
-Crea o actualiza el archivo `docs-fwbaraldi/DESIGN.md` con esta estructura blindada:
+Crea o actualiza el archivo `docs-fwbaraldi/DESIGN.md` con esta estructura blindada, normalizada y compatible con las especificaciones de getdesign.md:
 
 ```markdown
+---
+# Design Tokens (YAML Schema compatible con @google/design.md y getdesign.md)
+tokens:
+  colors:
+    primary: "[Hex de color principal, ej: #1d4ed8]"
+    primary-dark: "[Hex de color principal activo, ej: #172554]"
+    secondary: "[Hex de color secundario]"
+    background: "[Hex de fondo, sin negros puros #000000]"
+    text: "[Hex de texto principal]"
+    text-on-primary: "[Hex de texto sobre fondo primario]"
+    accent: "[Hex de acento]"
+    danger: "[Hex de error/destructivo]"
+  typography:
+    fonts:
+      display: "[Nombre tipografía display, ej: Satoshi, sans-serif]"
+      body: "[Nombre tipografía body, ej: Geist, sans-serif]"
+    sizes:
+      base: "16px"
+      scale: ["12px", "14px", "16px", "20px", "24px", "32px", "48px"]
+  spacing:
+    scale: ["4px", "8px", "12px", "16px", "24px", "32px", "48px", "64px"]
+  borders:
+    radius:
+      default: "[Bordes por defecto, ej: 8px]"
+      round: "9999px"
+
+# Definición estructurada de Componentes (Discrete YAML Entries)
+components:
+  button-primary:
+    background: "{tokens.colors.primary}"
+    text: "{tokens.colors.text-on-primary}"
+    radius: "{tokens.borders.radius.default}"
+    states:
+      active:
+        background: "{tokens.colors.primary-dark}"
+      disabled:
+        opacity: "0.5"
+  card:
+    background: "{tokens.colors.background}"
+    border: "1px solid {tokens.colors.secondary}"
+    radius: "{tokens.borders.radius.default}"
+---
+
 # Design System: [Nombre del Proyecto]
 **Reference ID/URL:** [ID o Link de Figma/Stitch]
 
 ## 1. Visual Theme & Atmosphere
-(Descripción del mood basada en el Taste Spectrum: Densidad, Varianza, Movimiento).
+(Descripción del mood basada en el Taste Spectrum: Densidad, Varianza, Movimiento. Establece la vibra y filosofía visual).
 
 ## 2. Color Palette & Roles
-(Lista de colores: Nombre Descriptivo + Hex Code + Rol Funcional. Sin negros puros).
+(Lista de colores: Nombre Descriptivo + Hex Code + Rol Funcional. Sin negros puros. Cada entrada en la prosa DEBE referenciar `{tokens.colors.primary}`, etc. Prohibido usar HEX planos aquí).
 
 ## 3. Typography Rules
-- **Display:** [Font Name] - Track-tight hierarchy.
-- **Body:** [Font Name] - Relaxed leading, 65ch max-width.
-- **Banned:** Inter, generic system fonts.
+- **Display:** {tokens.typography.fonts.display} - Track-tight hierarchy.
+- **Body:** {tokens.typography.fonts.body} - Relaxed leading, 65ch max-width.
+- **Banned:** Inter, generic system fonts (en productos High-End).
 
 ## 4. Component Stylings
-- **Buttons:** Flat, tactile active state, no outer glow.
-- **Cards/Containers:** Rounded, soft shadow, hierarchy-driven use.
+- **Buttons:** Base style `{components.button-primary}`. States: Active `{components.button-primary.states.active}` and Disabled `{components.button-primary.states.disabled}`.
+- **Cards/Containers:** Base style `{components.card}`. Soft shadows, hierarchy-driven use.
 - **Inputs:** Label above, error below, accent focus ring.
 
-## 5. Hero Section & Layout
-(Reglas de asimetría, espaciado con CSS Grid, y contenedores max-width).
+## 5. Layout Principles
+(Principios de grillas y estructuración visual usando CSS Grid y Flexbox. Uso de la escala `{tokens.spacing.scale}`).
 
-## 6. Motion & Interaction
-(Spring physics, micro-loops perpetuos, transform/opacity-only).
+## 6. Depth & Elevation
+(Categorización de sombras, bordes y materiales. Uso de z-index y capas tridimensionales para la jerarquía visual).
 
-## 7. Anti-Patterns (BANNED)
-(Lista explícita de lo que NO debe hacer la IA: No emojis, no Inter, no neon glows, no John Doe).
+## 7. Responsive Behavior
+(Definición de breakpoints, tamaños mínimos de áreas táctiles [mínimo 44x44px] y reacomodamiento del layout en dispositivos móviles).
+
+## 8. Do's and Don'ts (Anti-Patterns / BANNED)
+(Lista explícita de lo que NO debe hacer la IA: No emojis en UI técnica, no usar valores HEX o px inline, no bordes redondeados inconsistentes).
+
+## 9. Agent Prompt Guide
+- **Copy/Style Lock Rule:** "You are an AI developer implementing this UI. You must NEVER inline any colors, margins, or padding values. You MUST reference CSS variables or Tailwind utility classes mapped exactly to this design system's tokens."
+- **Bias Clauses:** Evitar el uso de tipografía por defecto o bordes genéricos. Mantener la asimetría del layout.
 ```
 
 ---
@@ -79,4 +129,5 @@ Crea o actualiza el archivo `docs-fwbaraldi/DESIGN.md` con esta estructura blind
 ## 🧠 Protocolo de Memoria y Guardrails
 - **Lenguaje Obligatorio:** Usa terminología de diseño descriptiva y natural. Prohibido usar solo jerga técnica sin traducción ("rounded-xl").
 - **Explicar el Por Qué:** Siempre explica la razón detrás de los elementos de diseño, no solo el "qué".
-- **Engram Save:** Al finalizar la generación del archivo, lanza un `mem_save` con el título *"Establecido el DESIGN.md"* y el tag `visual-design-system`.
+- **Validación Técnica Obligatoria (Linter CLI):** Tras generar o actualizar el `DESIGN.md`, el Agente **debe** ejecutar localmente el linter oficial: `npx @google/design.md lint docs-fwbaraldi/DESIGN.md` para garantizar la compatibilidad semántica, verificar contrastes WCAG y corregir cualquier error estructural reportado.
+- **Engram Save:** Al finalizar la generación del archivo y su verificación, lanza un `mem_save` con el título *"Establecido el DESIGN.md"* y el tag `visual-design-system`.

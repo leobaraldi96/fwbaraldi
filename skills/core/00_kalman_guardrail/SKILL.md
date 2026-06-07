@@ -1,11 +1,11 @@
 ---
 name: kalman-guardrail
 description: Protocolo de calibración agéntica para prevenir la deriva de comportamiento, atajos e iniciativas no autorizadas.
-version: "2.26.10"
+version: "2.26.12"
 enabled: true
 ---
 
-# 🧠 Filtro de Kalman Agéntico — Calibración de Comportamiento (v2.26.10)
+# 🧠 Filtro de Kalman Agéntico — Calibración de Comportamiento (v2.26.12)
 
 Este documento define el protocolo de control de comportamiento de la IA dentro del **Framework Baraldi**. Utiliza un modelo de **Predicción-Corrección** inspirado en el Filtro de Kalman para evitar la deriva agéntica, la asunción de contexto no confirmada y la entrega de tareas incompletas.
 
@@ -76,4 +76,4 @@ Si en cualquier momento del diálogo el usuario indica que la IA cometió un err
 *   **Siempre** prioriza la exactitud y la directiva explícita del humano por sobre cualquier razonamiento intuitivo de la IA.
 
 ---
-*Framework Baraldi v2.26.10 · skills/core/00_kalman_guardrail/SKILL.md*
+*Framework Baraldi v2.26.12 · skills/core/00_kalman_guardrail/SKILL.md*

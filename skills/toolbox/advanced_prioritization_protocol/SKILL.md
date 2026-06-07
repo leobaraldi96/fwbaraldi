@@ -4,7 +4,7 @@ description: >
   Protocolo avanzado de priorización sistémica. Utiliza RICE, Kano y el Baraldi Score 
   para filtrar backlogs, resolver conflictos de intereses y maximizar el ROI.
 keywords: priorización, RICE, Kano, Baraldi Score, ROI, backlog, Quick Wins, trade-offs
-version: "2.26.10"
+version: "2.26.12"
 ---
 
 # ⚖️ Skill 02 — Protocolo de Priorización Avanzada y ROI
@@ -67,4 +67,4 @@ Todo ítem priorizado debe caer en una de estas categorías:
 3. **Draft de Comunicación:** Guion para alinear al equipo y stakeholders sobre el nuevo orden.
 
 ---
-*Framework Baraldi v2.26.10 · Skill 02 · Priorización Estratégica*
+*Framework Baraldi v2.26.12 · Skill 02 · Priorización Estratégica*

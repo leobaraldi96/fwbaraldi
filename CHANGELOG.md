@@ -5,6 +5,22 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.26.12] - 2026-06-07
+
+### ⚡ Integración de Estándar Avanzado DESIGN.md (getdesign.md)
+- **9 Secciones Canónicas:** Ampliación del estándar de `DESIGN.md` para cubrir las 9 secciones oficiales del ecosistema abierto: *Depth & Elevation*, *Responsive Behavior* y *Agent Prompt Guide*.
+- **No Inline Values (Copy/Style Lock):** Implementación de la prohibición absoluta de valores de estilo en bruto (HEX, px) en la prosa explicativa, forzando el uso obligatorio de referencias cruzadas `{tokens.xxx}`.
+- **Esquema de Componentes YAML:** Inclusión de definiciones discretas de componentes (`components:`) y estados (`active`, `disabled`) directamente en el front-matter de YAML.
+- **Motores de QA Actualizados:**
+  - *Compiler Engine:* Traduce el nuevo YAML de componentes en micro-prompts de estados específicos.
+  - *Compliance Audit Engine:* Comprueba de forma automatizada las violaciones al principio "No Inline Values", contrastes WCAG y dimensiones mínimas de áreas táctiles en móviles (44x44px).
+
+## [2.26.11] - 2026-06-07
+
+### 📐 Normalización de DESIGN.md y Linter CLI (Google Labs)
+- **Estructura YAML Normalizada:** Inserción del bloque YAML de tokens en la plantilla de `DESIGN.md` para hacerlo completamente compatible con el estándar abierto y analizable por agentes de IA.
+- **Validación Automatizada (Linter CLI):** Incorporación del mandato de auditoría `npx @google/design.md lint docs-fwbaraldi/DESIGN.md` en la Etapa 06 (Momento 3) y criterios de calidad para comprobar errores estructurales y contrastes WCAG.
+
 ## [2.26.10] - 2026-06-07
 
 ### 🛡️ Consistencia Visual y de Voz Automática (DESIGN.md & VOICE.md)

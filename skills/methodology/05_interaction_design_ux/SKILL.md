@@ -5,7 +5,7 @@ description: >
   Define el comportamiento, los estados y el esqueleto de la experiencia.
 keywords: ux, interaction design, micro-interactions, states, wireframes, user experience.
 status: operational
-version: "2.26.10"
+version: "2.26.12"
 ---
 
 # Etapa 05 — Interaction Design (UX)
@@ -77,4 +77,4 @@ En esta etapa, el Agente no solo dibuja; enseña y facilita la decisión arquite
 *   **Traspaso de Dibujo (Handoff Visual al Humano):** Al finalizar de entregar los artefactos, la IA debe detenerse y delegar explícitamente el diseño al humano con este enfoque: *"Listo, tenés todos los artefactos de la Etapa 05. Ahora te toca a vos diseñar los wireframes (en baja o media fidelidad) basándote en estas definiciones. Tenés dos opciones para que trabajemos juntos: 1) Si usás el protocolo MCP (Figma, Stitch), nos conectamos al lienzo y lo armamos en equipo. 2) Si preferís hacerlo por tu cuenta, no es obligatorio usar MCP: podés pasarme capturas de pantalla por acá, o ir guardando tus exportaciones dentro de la carpeta 'docs-fwbaraldi/05_Interaction_Design/wireframes/' y avisarme para que yo las revise, critique y vayamos iterando versión a versión."*
 
 ---
-*Framework Baraldi v2.26.10 · skills/methodology/05_interaction_design_ux/SKILL.md*
+*Framework Baraldi v2.26.12 · skills/methodology/05_interaction_design_ux/SKILL.md*

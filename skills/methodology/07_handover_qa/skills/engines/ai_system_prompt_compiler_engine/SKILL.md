@@ -5,7 +5,7 @@ description: >
   (DESIGN.md) en un System Prompt hiper-detallado para guiar a IAs codificadoras 
   (v0, Cursor, Claude) en la generación de UI sin alucinaciones.
 keywords: prompt-engineering, ai-coder, v0, cursor, system-prompt, design-system-compiler, handoff
-version: "2.26.10"
+version: "2.26.12"
 ---
 
 # 🪄 Skill 32 — Protocolo de Generación de System Prompt para IA (Compilador)
@@ -16,42 +16,42 @@ Este protocolo se activa durante el Handoff (**Etapa 07**) cuando el desarrollo 
 
 Al ejecutar este protocolo sobre un sistema de diseño, el Agente debe generar un Mega-Prompt estructurado con las siguientes secciones:
 
-### 1. Rol y Restricciones del Sistema (System Role)
+### 1. Rol y Restricciones del Sistema (System Role & Copy/Style Lock)
 - **Definición de Rol:** "Eres un Design Engineer experto. Tu objetivo es escribir código que cumpla estrictamente con el sistema de diseño provisto."
-- **Restricción Absoluta:** Prohibición explícita de inventar colores, márgenes o tipografías fuera de los tokens definidos.
+- **Restricción Inviolable (Copy/Style Lock):** Prohibición explícita de "inventar" valores (HEX, px, rem) en el código. El código generado DEBE usar exclusivamente variables CSS o clases de Tailwind mapeadas directamente a los tokens. Ningún valor en bruto (No Inline Values) debe existir en los componentes.
 
 ### 2. Inyección de Tokens (Design System Injection)
-Transcripción en formato "Machine-Readable" (Ej. listas de Tailwind o variables CSS) de:
-- **Color Palette:** Mapeo exacto de HEX/OKLCH a clases (ej. `brand-500: #FF3366`).
-- **Typography:** Familias de fuentes, escalas modulares (text-sm, text-xl) y pesos permitidos.
-- **Spacing & Layout:** Escala estricta (p-4, m-8) y variables de gap (múltiplos de 4/8).
-- **Shape & Elevation:** Valores exactos de `border-radius` y `box-shadow`.
+Transcripción en formato "Machine-Readable" (Ej. variables CSS o configuraciones de Tailwind) de:
+- **Color Palette & Roles:** Mapeo exacto de HEX a variables semánticas (ej. `--color-primary`, `--color-background` sin negros puros).
+- **Typography:** Familias display/body, pesos y escala tipográfica modular.
+- **Spacing & Layout:** Escala estricta de espaciado y márgenes (`{tokens.spacing.scale}`).
+- **Depth & Elevation:** Valores exactos de `box-shadow`, bordes y jerarquía de capas (z-index).
 
-### 3. Patrones de Componentes Core (Micro-Prompts)
-Generación de "Sub-prompts" que se invocan al crear elementos específicos:
-- **Button Prompt:** "Cuando crees un botón, debe tener radius X, transition Y, y los estados Hover/Active Z."
-- **Input Prompt:** "Los campos de formulario deben tener border color A, y un focus ring de tamaño B con color C."
-- **Card Prompt:** "Las tarjetas usan shadow D, padding E y background F."
+### 3. Patrones de Componentes Semánticos (YAML-to-Prompt)
+Traducción directa de la sección `components:` del `DESIGN.md` en especificaciones de código:
+- **Mapeo de Estados:** Generar micro-prompts exigiendo la implementación de los estados exactos definidos en YAML (`default`, `active`, `disabled`), asegurando que no se asuman estilos genéricos de hover y que se respete el tactilidad/opacidad definida.
+- **Validación de Componente:** "El componente X debe tener exactamente el background Y y bordes Z definidos en la estructura YAML."
 
-### 4. Guías de Estilo y Composición
-- **Dark Mode Logic:** Instrucciones de cómo invertir los colores semánticos.
-- **Responsividad:** Breakpoints permitidos y comportamiento de colapso de grillas.
+### 4. Guías de Composición y Responsive Behavior
+- **Responsive System:** Breakpoints permitidos y reglas de reacomodamiento.
+- **Áreas Táctiles:** Garantizar un tamaño mínimo de interacción física de `44x44px` en móviles.
+- **Dark Mode Logic:** Inversión de colores semánticos basada en tokens de fondo/texto.
 
-### 5. Check de Autovalidación (Self-Correction)
-Instrucción final para la IA:
-> *"Antes de entregar el código, verifica internamente: 1. ¿Usé algún color genérico de Tailwind? Si sí, reemplázalo por el token correspondiente. 2. ¿El focus state está presente en elementos interactivos? 3. ¿El padding es múltiplo de 4?"*
+### 5. Check de Autovalidación (Self-Correction Audit)
+Instrucción final para la IA implementadora:
+> *"Antes de entregar el código, verifica internamente: 1. ¿Utilicé algún color HEX o pixelaje plano (en duro) en el código? Si es así, corrígelo por el token correspondiente. 2. ¿Los estados del componente (default, active, disabled) coinciden con el YAML de DESIGN.md? 3. ¿El contraste WCAG cumple con las relaciones mínimas de accesibilidad?"*
 
 ---
 
 ## 🚫 NEVER List — Anti-patrones del Compilador
-- **NUNCA** generes un prompt genérico sin inyectar los tokens reales del proyecto.
-- **NUNCA** permitas que la IA de desarrollo asuma valores por defecto si no están en el `DESIGN.md`.
-- **NUNCA** ignores la lógica de accesibilidad (aria-labels, focus states) en la instrucción generada.
+- **NUNCA** generes un prompt genérico sin inyectar la estructura YAML real de tokens y componentes.
+- **NUNCA** permitas que la IA de desarrollo asuma valores por defecto si no están definidos en el `DESIGN.md`.
+- **NUNCA** ignores las restricciones de accesibilidad física (mínimo 44x44px) ni la legibilidad de contraste WCAG.
 
 ## ✅ ALWAYS List — Mandatos del Compilador
-- **SIEMPRE** usa unidades relativas (`rem`) en el prompt generado para asegurar accesibilidad.
-- **SIEMPRE** incluye una sección de "Restricciones Inviolables" al inicio del prompt.
-- **SIEMPRE** verifica que los nombres de los tokens coincidan exactamente con la implementación técnica deseada (Tailwind Config o CSS Variables).
+- **SIEMPRE** impón la regla "Copy/Style Lock" de no usar valores en bruto (No Inline Values) al inicio de las instrucciones.
+- **SIEMPRE** traduce las variantes y estados del YAML a clases CSS dinámicas equivalentes en el prompt generado.
+- **SIEMPRE** comprueba que los nombres de los tokens generados sigan una nomenclatura coherente y estándar con el proyecto destino.
 
 ---
 ## 💡 Cómo usar esta Skill (Bridge Architecture)
@@ -61,4 +61,4 @@ Instrucción final para la IA:
 - **Sinergia:** El output generado por la IA usando este prompt será posteriormente auditado por el **AI UI Compliance Audit Engine** para verificar cumplimiento.
 
 ---
-*Framework Baraldi v2.26.10 · Skill 32 · Engine de Compilación AI*
+*Framework Baraldi v2.26.12 · Skill 32 · Engine de Compilación AI*

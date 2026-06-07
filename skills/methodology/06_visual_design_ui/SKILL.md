@@ -6,7 +6,7 @@ description: >
   Crea el contrato visual para la implementación agéntica (DESIGN.md).
 keywords: visual design, ui, tokens, design system, luxury obsidian, design.md, css variables.
 status: operational
-version: "2.26.10"
+version: "2.26.12"
 ---
 
 # Etapa 06 — Visual Design (UI)
@@ -59,7 +59,8 @@ Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 ---
 
 ## Criterio de calidad
-- [ ] El **DESIGN.md** está presente en la raíz de `docs-fwbaraldi/`.
+- [ ] El **DESIGN.md** está presente en la raíz de `docs-fwbaraldi/` con la estructura YAML normalizada de tokens.
+- [ ] El **DESIGN.md** ha sido lintiado y auditado con éxito usando `npx @google/design.md lint docs-fwbaraldi/DESIGN.md`.
 - [ ] Los tokens son consistentes con la identidad de marca definida.
 - [ ] Se ha preparado el terreno para la sincronización 1:1 con Figma (Etapa 07 - Momento 2).
 - [ ] La interfaz respeta los principios de accesibilidad (contraste, tamaños).
@@ -92,4 +93,4 @@ En la fase visual, el Agente actúa como un **Director de Arte** que educa el oj
 *   **Decisión Compartida:** Nunca entregar un diseño finalizado sin haber transitado los hitos de decisión con el humano.
 
 ---
-*Framework Baraldi v2.26.10 · skills/methodology/06_visual_design_ui/SKILL.md*
+*Framework Baraldi v2.26.12 · skills/methodology/06_visual_design_ui/SKILL.md*

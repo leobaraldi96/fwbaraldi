@@ -5,7 +5,7 @@ description: >
   de alta calidad. Asegura que el diseño se traduzca fielmente a requerimientos técnicos sin pérdida
   de contexto. Mandatorio para el cierre de Etapa 04 y handoff a desarrollo.
   Keywords: user story, criterios de aceptación, AC, handoff, requerimientos, funcionalidad, QA, BDD.
-version: "2.26.10"
+version: "2.26.12"
 framework: Baraldi
 stage: "04 - Information Architecture"
 type: engine
@@ -66,4 +66,4 @@ Generar siempre una lista de chequeo binaria (pasa/no pasa) que incluya:
 - **Omitir Error States:** El happy path sin manejo de errores es diseño incompleto.
 
 ---
-*Framework Baraldi v2.26.10 · Etapa 04 / Information Architecture / User Story Engine*
+*Framework Baraldi v2.26.12 · Etapa 04 / Information Architecture / User Story Engine*

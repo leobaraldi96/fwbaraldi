@@ -4,7 +4,7 @@ description: >
   Protocolo para la generación de reportes de salud trimestrales (QBR). 
   Consolida métricas de adopción, retención, negocio y calidad para la rendición de cuentas.
 keywords: QBR, métricas, KPI, salud, retención, churn, ROI, gobernanza, reporte ejecutivo
-version: "2.26.10"
+version: "2.26.12"
 ---
 
 # 🩺 Skill 12 — Protocolo de Salud de Producto (QBR)
@@ -48,4 +48,4 @@ El reporte debe estructurarse en torno a estos tres pilares de métricas:
 3. **Strategic Pivot Plan:** Recomendaciones de cambio de rumbo basadas en el análisis del trimestre.
 
 ---
-*Framework Baraldi v2.26.10 · Skill 12 · Salud y Gobernanza*
+*Framework Baraldi v2.26.12 · Skill 12 · Salud y Gobernanza*

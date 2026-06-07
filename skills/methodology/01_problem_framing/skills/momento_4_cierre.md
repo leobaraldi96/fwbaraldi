@@ -13,7 +13,7 @@ description: >
   Keywords: cierre, evaluación, hipótesis, confianza, decisión, avanzar, pivotar, iterar.
   NO LO USES sin tener el Informe de Research completo como input.
 skill_id: problem_framing_momento_4
-version: "2.26.10"
+version: "2.26.12"
 framework: Baraldi
 stage: "01 - Problem Framing"
 momento: 4
@@ -246,4 +246,4 @@ Si el camino elegido fue **Pivotar**, guardar también bajo el Eje `pf-pivot-[fe
 
 ---
 
-*Framework Baraldi v2.26.10 · skills/methodology/01_problem_framing/skills/momento_4_cierre.md*
+*Framework Baraldi v2.26.12 · skills/methodology/01_problem_framing/skills/momento_4_cierre.md*

@@ -6,7 +6,7 @@ description: >
   (botones, errores, empty states, onboarding). Asegura que el contenido sea accesible, 
   conciso, mitigue el sesgo WEIRD en LatAm y alinee con la voz del producto.
 keywords: ux-writing, content-design, microcopy, accessibility, tone-of-voice, weird-bias, error-messages
-version: "2.26.10"
+version: "2.26.12"
 ---
 
 # ✍️ UX Writing & Content Design Engine
@@ -162,4 +162,4 @@ Antes de finalizar cualquier microcopy, verifica:
 - [ ] **Sesgo WEIRD:** Se contempla la realidad de LatAm (baja conectividad, pasarelas locales).
 
 ---
-*Framework Baraldi v2.26.10 · skills/methodology/05_interaction_design_ux/skills/engines/ux_writing_engine/SKILL.md*
+*Framework Baraldi v2.26.12 · skills/methodology/05_interaction_design_ux/skills/engines/ux_writing_engine/SKILL.md*
