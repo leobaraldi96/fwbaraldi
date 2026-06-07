@@ -11,7 +11,7 @@ description: >
   2. Service Blueprint (Temporal): Flujo paso a paso con línea de visibilidad.
   Keywords: product logic, actor logic, service blueprint, backstage, frontstage, línea de visibilidad.
 skill_id: product_logic_momento_1
-version: "2.26.8"
+version: "2.26.9"
 framework: Baraldi
 stage: "03 - Product Logic"
 momento: 1

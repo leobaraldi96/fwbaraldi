@@ -5,7 +5,7 @@ description: >
   desorganizados. Identifica duplicados, brechas de cobertura y establece un plan de 
   migraciÃ³n hacia una arquitectura de tokens limpia.
 keywords: design-tokens, audit, refactoring, technical-debt, linter, migration, consistency
-version: "2.26.8"
+version: "2.26.9"
 ---
 
 # ðŸ§¹ Skill 29 â€” Design Token Audit & Refactoring Protocol
@@ -49,5 +49,5 @@ Al analizar un sistema existente, el Agente debe documentar y estructurar el rep
 - **Output:** Un documento `Token_Audit_Report.md` con el estado actual y la hoja de ruta de refactorizaciÃ³n.
 
 ---
-*Framework Baraldi v2.26.8 Â· Skill 29*
+*Framework Baraldi v2.26.9 Â· Skill 29*
 

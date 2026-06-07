@@ -140,6 +140,29 @@ Evitar palabras robóticas es solo la mitad del trabajo. La redacción estéril,
 
 ---
 
+## Evasión Avanzada de Detectores de IA (Bypass Algorítmico)
+
+Los detectores de texto de IA analizan la predictibilidad matemática del texto (Perplejidad y Burstiness). Para escribir textos de formato largo (artículos, especificaciones, perfiles) que conserven autenticidad y pasen desapercibidos ante estos detectores, el Agente debe aplicar las siguientes directivas:
+
+### A. Burstiness (Variabilidad Extrema del Ritmo)
+*   La IA tiende a escribir oraciones con longitudes y estructuras homogéneas. La redacción humana es asimétrica.
+*   **Regla:** Alternar deliberadamente oraciones largas y explicativas (de 25 a 35 palabras) con afirmaciones ultra cortas y directas (de 2 a 5 palabras).
+*   *Ejemplo:* "Cuando diseñas un sistema complejo que interactúa con múltiples bases de datos de manera síncrona, la latencia se convierte en tu mayor cuello de botella si no implementas una caché intermedia. De punta a punta. No hay otra salida."
+
+### B. Ruptura de Simetría en Listas (Asimetría Narrativa)
+*   La IA tiende a generar listas verticales con la misma estructura gramatical e inicios idénticos en cada ítem.
+*   **Regla:** Reemplazar las listas clásicas de viñetas estructuradas por párrafos narrativos asimétricos con conectores más orgánicos y conjugaciones variadas (ej. *"Si el equipo necesita..."*, *"Cuando..."*, *"Y si tu..."*). En caso de usar listas, varía la longitud, estructura y verbos iniciales de cada punto para romper la probabilidad predictiva de tokens.
+
+### C. Evitar Clichés de IA en Textos Largos
+*   Existen ciertos verbos y tecnicismos que las IAs abusan sistemáticamente al describir flujos o tareas.
+*   **Regla:** Evitar términos deladores como *"barrer"* (aplicado a actividades o tareas), *"Sin vueltas"* (utilizado como muletilla robótica), o el uso excesivo de tecnicismos repetidos sin valor analítico (ej. *"de APIs"*, *"de sistemas"*, *"solución robusta"*) en cada frase. Preferir verbos específicos y términos de negocio precisos (ej. *"conectar"*, *"analizar"*, *"auditar"*).
+
+### D. Calibración del Estilo y Límites de Evasión
+*   **Regla:** Las pautas de humanización no deben aplicarse forzadamente como una lista de control en un solo texto (ej: inyectar jergas o tecnicismos exóticos juntos sin justificación real). Esto caricaturiza el tono y le resta seniority al escrito.
+*   La claridad técnica, la precisión del negocio y la utilidad real del mensaje para el lector siempre tienen prioridad sobre ganarle matemáticamente a los detectores de IA.
+
+---
+
 ## Proceso de Aplicación
 
 1. **Lectura Crítica:** Lee el texto prestando atención a cómo suena al ser leído en voz alta.

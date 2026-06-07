@@ -4,7 +4,7 @@ import chalk from 'chalk';
 
 const rootDir = process.cwd();
 
-console.log(chalk.bold.blue('\n🔍 Iniciando Auditoría Interna del Framework Baraldi (v2.26.5)\n'));
+console.log(chalk.bold.blue('\n🔍 Iniciando Auditoría Interna del Framework Baraldi (v2.26.9)\n'));
 
 let issues = 0;
 

@@ -4,7 +4,7 @@ description: >
   Protocolo para traducir el trabajo técnico realizado en el framework a logros profesionales 
   tangibles (Formato STAR). Ideal para portfolios, LinkedIn y revisiones de performance.
 keywords: carrera, impacto, STAR, logros, visibilidad, ascenso, portafolio, narrativa personal
-version: "2.26.8"
+version: "2.26.9"
 ---
 
 # 🏆 Skill 05 — Reporte de Impacto Personal y Carrera (Brag Protocol)
@@ -51,4 +51,4 @@ El Agente mapeará las tareas del framework a competencias de mercado:
 3. **LinkedIn Update Draft:** Post o descripción de experiencia lista para publicar.
 
 ---
-*Framework Baraldi v2.26.8 · Skill 05 · Gestión de Impacto*
+*Framework Baraldi v2.26.9 · Skill 05 · Gestión de Impacto*

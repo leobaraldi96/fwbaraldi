@@ -1,4 +1,4 @@
-# 🗺️ Mapa de Artefactos — Framework Baraldi (v2.26.5)
+# 🗺️ Mapa de Artefactos — Framework Baraldi (v2.26.9)
 
 Este documento es el catálogo oficial de todos los **outputs** que genera el framework. Sirve como guía para que el equipo de producto, diseño y desarrollo entienda qué se ha construido, para qué sirve y cómo aprovechar cada pieza de información.
 

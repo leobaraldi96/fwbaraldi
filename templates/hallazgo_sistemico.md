@@ -1,4 +1,4 @@
-# Template — Hallazgo Sistémico (v2.26.4)
+# Template — Hallazgo Sistémico (v2.26.9)
 
 > Usar este template para registrar conocimiento valioso mediante `mem_save` de Engram MCP.
 > Consultar protocolos en `skills/core/00_system_awareness/SKILL.md`.
@@ -70,4 +70,4 @@ Los slugs deben ser descriptivos y estables. Estructura recomendada:
 
 ---
 
-*Framework Baraldi v2.26.8 · templates/hallazgo_sistemico.md*
+*Framework Baraldi v2.26.9 · templates/hallazgo_sistemico.md*

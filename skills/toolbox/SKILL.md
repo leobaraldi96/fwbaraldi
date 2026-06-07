@@ -1,4 +1,4 @@
-# 🧰 Toolbox Core (v2.26.0)
+# 🧰 Toolbox Core (v2.26.9)
 
 Este es el arsenal estratégico del **Framework Baraldi**. Estas herramientas son transversales y pueden ser invocadas en cualquier etapa del proyecto mediante su nombre o ID.
 
@@ -35,4 +35,4 @@ Todas las herramientas de este inventario deben ser invocadas bajo la **Filosof�
 El humano puede pedir: *"Usa el protocolo Anti-Lucio para este feedback"* o *"Ejecuta el Product Launch Protocol"*. La IA debe cargar inmediatamente el archivo correspondiente desde `skills/toolbox/`.
 
 ---
-*Framework Baraldi v2.26.8 · Toolbox Central Orchestrator.*
+*Framework Baraldi v2.26.9 · Toolbox Central Orchestrator.*

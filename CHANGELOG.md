@@ -5,6 +5,16 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.26.9] - 2026-06-07
+
+### 🌐 Hito de Core Agnóstico y Evasión Avanzada de IA
+- **Core 100% Agnóstico:** Refactorización de la sección en español del `ux_writing_engine` para eliminar referencias personales a Leo Baraldi. Ahora se enfoca en principios universales de voz humana, trato directo y adaptabilidad al tratamiento gramatical del proyecto.
+- **Evasión Avanzada de Detectores de IA (Bypass Algorítmico):** Integración de pautas técnicas en `references/humanizer.md` para redactar textos de formato largo que no sean detectados como IA:
+  - *Burstiness:* Directivas para variar intencionadamente la longitud de las oraciones.
+  - *Asimetría Narrativa:* Reemplazo de viñetas estructuradas por párrafos con conectores orgánicos dinámicos.
+  - *Erradicación de Clichés:* Identificación de palabras deladoras comunes (ej: "barrer" aplicado a tareas).
+  - *Límites de Evasión:* Establecimiento de un guardrail que prioriza la claridad técnica y del negocio sobre ganarle matemáticamente a los detectores de IA, previniendo la caricaturización del tono.
+
 ## [2.26.8] - 2026-06-07
 
 ### ✍️ Integración de Estándares de Content Design y UX Writing

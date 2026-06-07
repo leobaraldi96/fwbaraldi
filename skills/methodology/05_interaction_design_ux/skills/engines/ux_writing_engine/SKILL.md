@@ -6,7 +6,7 @@ description: >
   (botones, errores, empty states, onboarding). Asegura que el contenido sea accesible, 
   conciso, mitigue el sesgo WEIRD en LatAm y alinee con la voz del producto.
 keywords: ux-writing, content-design, microcopy, accessibility, tone-of-voice, weird-bias, error-messages
-version: "2.26.8"
+version: "2.26.9"
 ---
 
 # ✍️ UX Writing & Content Design Engine
@@ -92,12 +92,11 @@ El tono del producto debe modularse según el contexto y el estado de la tarea:
 
 ---
 
-## 🇦🇷 Guías para Español (Voz y Tono Leo Baraldi)
-Cuando el usuario solicite redactar, revisar o auditar copys en español, aplica las siguientes reglas adaptadas de la identidad del framework:
-*   **Voseo cordobés natural:** Usar siempre voseo ("sabés", "hacés", "usás", "arrancás") con sus tildes correctas. Sumar modismos cotidianos con sutileza ("pechar", "de una", "bocha", "tranca", "macana"). Nunca usar el artículo antes de nombres propios ("el Leo", "la Nati").
-*   **Voz Pasiva Reflexiva:** A diferencia del inglés, en español es natural usar la pasiva reflexiva para indicar estados del sistema (ej. *"Se guardaron los cambios"*, *"No se pudo conectar"*), evitando sonar corporativo o robótico.
-*   **Evitar la complacencia corporativa:** Dirigirse al usuario de manera horizontal, directa y honesta. Mantener la cotidianidad y el trato de igual a igual, rechazando el tono condescendiente u obsecuente típico de Silicon Valley.
-
+## 🌐 Guías de Redacción Humana en Español
+Cuando el usuario solicite redactar, revisar o auditar copys en español, aplica las siguientes directivas:
+*   **Tratamiento Consistente:** Adaptarse al pronombre definido en la configuración del proyecto (tú, vos o usted). Evitar modismos locales de una sola región a menos que el proyecto lo exija explícitamente.
+*   **Voz Pasiva Reflexiva:** A diferencia del inglés, en español es natural y correcto usar la pasiva reflexiva para indicar estados del sistema (ej. *"Se guardaron los cambios"*, *"No se pudo conectar"*), evitando que la oración suene robótica o artificial.
+*   **Evitar la Complacencia Corporativa:** Dirigirse al usuario de manera horizontal, directa y honesta. Usar un trato directo y natural, rechazando el tono condescendiente u obsecuente (típico de las traducciones literales de Silicon Valley).
 ---
 
 ## 🗺️ Mitigación de Sesgo WEIRD (UX/Producto en LatAm)
@@ -163,4 +162,4 @@ Antes de finalizar cualquier microcopy, verifica:
 - [ ] **Sesgo WEIRD:** Se contempla la realidad de LatAm (baja conectividad, pasarelas locales).
 
 ---
-*Framework Baraldi v2.26.8 · skills/methodology/05_interaction_design_ux/skills/engines/ux_writing_engine/SKILL.md*
+*Framework Baraldi v2.26.9 · skills/methodology/05_interaction_design_ux/skills/engines/ux_writing_engine/SKILL.md*

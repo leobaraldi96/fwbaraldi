@@ -1,7 +1,7 @@
 ---
 name: wcag-accessibility-audit
 description: Auditoría exhaustiva de accesibilidad web utilizando las pautas WCAG 2.1/2.2. Evalúa el cumplimiento a través de los 4 principios POUR (Perceptible, Operable, Comprensible, Robusto) con niveles de conformidad A, AA, AAA.
-version: "2.26.8"
+version: "2.26.9"
 ---
 
 # ♿ Skill 29 — Auditoría de Accesibilidad WCAG
@@ -103,4 +103,4 @@ Al finalizar la auditoría, genera este cuadro de mando:
 | **Robusto** | ⚠️ Riesgo | Estados de carga no anunciados. | Implementar `role="status"`. |
 
 ---
-*Framework Baraldi v2.26.8 · Skill 29 · Engine de Accesibilidad WCAG*
+*Framework Baraldi v2.26.9 · Skill 29 · Engine de Accesibilidad WCAG*
