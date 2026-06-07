@@ -4,7 +4,7 @@ description: >
   Protocolo de Habilitación de Ventas y Pitch. Creación de materiales (Pitch Decks, One-pagers) 
   y entrenamiento para el cierre de ventas y manejo de objeciones.
 keywords: ventas, pitch, deck, one-pager, objeciones, sales-enablement, evangelización
-version: "2.26.13"
+version: "2.26.14"
 ---
 
 # 🤝 Skill 11 — Protocolo de Habilitación de Ventas y Pitch
@@ -61,4 +61,4 @@ Utilizar el framework de respuesta: **Validar → Redirigir → Probar → Avanz
 3. **Objection Battle Card:** Respuestas preparadas para los 5 bloqueos más comunes.
 
 ---
-*Framework Baraldi v2.26.13 · Skill 11 · Habilitación de Ventas*
+*Framework Baraldi v2.26.14 · Skill 11 · Habilitación de Ventas*

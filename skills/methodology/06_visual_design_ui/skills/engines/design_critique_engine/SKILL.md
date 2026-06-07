@@ -1,59 +1,58 @@
-﻿---
+---
 name: design-critique-audit
 description: >
-  Protocolo de diagnÃ³stico visual actuando como Lead Art Director. EvalÃºa jerarquÃ­a, 
-  contraste, flujo de atenciÃ³n y uso del espacio en blanco. Detecta problemas de UI 
+  Protocolo de diagnóstico visual actuando como Lead Art Director. Evalúa jerarquía, 
+  contraste, flujo de atención y uso del espacio en blanco. Detecta problemas de UI 
   antes del Handoff y genera soluciones accionables.
 keywords: design-critique, visual-hierarchy, ui-audit, contrast, art-direction, layout-fixes
-version: "2.26.13"
+version: "2.26.14"
 ---
 
-# ðŸ‘ï¸ Skill 20 â€” Design Critique & Visual Hierarchy Audit Protocol
+# 👁️ Skill 20 — Design Critique & Visual Hierarchy Audit Protocol
 
-Este protocolo se invoca al finalizar el diseÃ±o de una interfaz (o al evaluar un producto legado) para realizar una auditorÃ­a clÃ­nica de su comunicaciÃ³n visual. El Agente asume el rol de **Lead Visual Designer**, enfocado implacablemente en la claridad, la jerarquÃ­a y el contraste.
+Este protocolo se invoca al finalizar el diseño de una interfaz (o al evaluar un producto legado) para realizar una auditoría clínica de su comunicación visual. El Agente asume el rol de **Lead Visual Designer**, enfocado implacablemente en la claridad, la jerarquía y el contraste.
 
-## ðŸ”¬ Dimensiones del DiagnÃ³stico Visual
+## 🔬 Dimensiones del Diagnóstico Visual
 
-Al evaluar una pantalla (mediante captura de imagen vÃ­a visiÃ³n o descripciÃ³n estructural detallada), el Agente debe generar un reporte de crÃ­tica de diseÃ±o en los siguientes ejes:
+Al evaluar una pantalla (mediante captura de imagen vía visión o descripción estructural detallada), el Agente debe generar un reporte de crítica de diseño en los siguientes ejes:
 
-### 1. AnÃ¡lisis del Flujo de AtenciÃ³n (Attention Flow)
+### 1. Análisis del Flujo de Atención (Attention Flow)
 - **Primer Impacto:** Identificar el elemento exacto donde el ojo aterriza primero (y verificar si coincide con el objetivo primario del usuario).
-- **Mapeo de PatrÃ³n:** Predecir el flujo visual (PatrÃ³n F, PatrÃ³n Z, centrado) e identificar si hay elementos compitiendo (canibalizando) la atenciÃ³n del CTA principal.
+- **Mapeo de Patrón:** Predecir el flujo visual (Patrón F, Patrón Z, centrado) e identificar si hay elementos compitiendo (canibalizando) la atención del CTA principal.
 
-### 2. Scoring de JerarquÃ­a Visual (1 al 5)
-Calificar y justificar (una lÃ­nea) cada dimensiÃ³n:
-- **Contraste de TamaÃ±o:** (Diferencia entre el elemento mÃ¡s grande y el mÃ¡s pequeÃ±o).
-- **Contraste de Color:** (Uso del color para denotar importancia vs. ruido cromÃ¡tico).
-- **JerarquÃ­a Espacial:** (Proximidad, agrupaciones y leyes de Gestalt).
-- **JerarquÃ­a TipogrÃ¡fica:** (Clara distinciÃ³n visual entre TÃ­tulo, Cuerpo y Labels).
-- **Foco Claro:** (Â¿Existe un protagonista dominante o todo grita al mismo tiempo?).
+### 2. Scoring de Jerarquía Visual (1 al 5)
+Calificar y justificar (una línea) cada dimensión:
+- **Contraste de Tamaño:** (Diferencia entre el elemento más grande y el más pequeño).
+- **Contraste de Color:** (Uso del color para denotar importancia vs. ruido cromático).
+- **Jerarquía Espacial:** (Proximidad, agrupaciones y leyes de Gestalt).
+- **Jerarquía Tipográfica:** (Clara distinción visual entre Título, Cuerpo y Labels).
+- **Foco Claro:** (¿Existe un protagonista dominante o todo grita al mismo tiempo?).
 
-### 3. Registro de Problemas CrÃ­ticos (Issue Flags)
-- **P1 (Bloqueadores CrÃ­ticos):** Problemas de jerarquÃ­a que evitan que el usuario logre su objetivo principal. Causa visual y su Fix especÃ­fico.
-- **P2 (Claridad Secundaria):** Problemas de fricciÃ³n visual que no rompen el flujo, pero causan carga cognitiva. Causa visual y Fix.
+### 3. Registro de Problemas Críticos (Issue Flags)
+- **P1 (Bloqueadores Críticos):** Problemas de jerarquía que evitan que el usuario logre su objetivo principal. Causa visual y su Fix específico.
+- **P2 (Claridad Secundaria):** Problemas de fricción visual que no rompen el flujo, pero causan carga cognitiva. Causa visual y Fix.
 
-### 4. EvaluaciÃ³n de Accesibilidad (A11y Visual)
+### 4. Evaluación de Accesibilidad (A11y Visual)
 - **WCAG Flags:** Textos o fondos que claramente fallan el contraste AA.
-- **SeÃ±ales Mudas:** Elementos interactivos (links/botones) que no se distinguen visualmente del contenido estÃ¡tico.
-- **Trampas de Color:** InformaciÃ³n transmitida *Ãºnicamente* por color (ej. un borde rojo sin icono de alerta).
+- **Señales Mudas:** Elementos interactivos (links/botones) que no se distinguen visualmente del contenido estático.
+- **Trampas de Color:** Información transmitida *únicamente* por color (ej. un borde rojo sin icono de alerta).
 
-### 5. AuditorÃ­a de Espacio en Blanco (Whitespace)
-- DiagnÃ³stico del uso del "Aire" (Negative Space). Â¿Permite respirar a la interfaz o es errÃ¡tico?
-- IdentificaciÃ³n de las 2 Ã¡reas mÃ¡s claustrofÃ³bicas (Cramped areas) con sugerencias de padding exacto.
+### 5. Auditoría de Espacio en Blanco (Whitespace)
+- Diagnóstico del uso del "Aire" (Negative Space). ¿Permite respirar a la interfaz o es errático?
+- Identificación de las 2 áreas más claustrofóbicas (Cramped areas) con sugerencias de padding exacto.
 
-### 6. Matriz de RefactorizaciÃ³n (Prioritized Fix List)
-Un top 3 a 5 de los cambios mÃ¡s impactantes a realizar inmediatamente en Figma.
+### 6. Matriz de Refactorización (Prioritized Fix List)
+Un top 3 a 5 de los cambios más impactantes a realizar inmediatamente en Figma.
 - *Ejemplo: "Aumentar margen superior del Hero H1 a 64px para separarlo del Nav."*
 
-### 7. SimulaciÃ³n Before/After (Mental Render)
-Para el fix mÃ¡s crÃ­tico (Top 1), el Agente debe describir con detalle milimÃ©trico cÃ³mo se ve la interfaz ahora y cÃ³mo deberÃ­a verse tras aplicar la soluciÃ³n.
+### 7. Simulación Before/After (Mental Render)
+Para el fix más crítico (Top 1), el Agente debe describir con detalle milimétrico cómo se ve la interfaz ahora y cómo debería verse tras aplicar la solución.
 
 ---
-## ðŸ’¡ CÃ³mo usar esta Skill (Bridge Architecture)
-- **CuÃ¡ndo invocar:** En la **Etapa 06 (Momento de Pulido)**, despuÃ©s de ensamblar la UI y justo antes de pasar a la etapa de Handoff (QA).
-- **Input:** Una imagen de la UI (vÃ­a *Motor de Ingesta Visual*) o una descripciÃ³n muy exhaustiva del layout.
-- **Sinergia:** ActÃºa como el supervisor de la Inteligencia de Layout (Etapa 06 Momento 0). Si el Momento 0 es el arquitecto, la Skill 20 es el inspector de obra.
+## 💡 Cómo usar esta Skill (Bridge Architecture)
+- **Cuándo invocar:** En la **Etapa 06 (Momento de Pulido)**, después de ensamblar la UI y justo antes de pasar a la etapa de Handoff (QA).
+- **Input:** Una imagen de la UI (vía Motor de Ingesta Visual) o una descripción muy exhaustiva del layout.
+- **Sinergia:** Actúa como el supervisor de la Inteligencia de Layout (Etapa 06 Momento 0). Si el Momento 0 es el arquitecto, la Skill 20 es el inspector de obra.
 
 ---
-*Framework Baraldi v2.26.13 Â· Skill 20*
-
+*Framework Baraldi v2.26.14 · Skill 20*

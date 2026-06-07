@@ -1,4 +1,4 @@
-# System Awareness Engine (v2.26.13)
+# System Awareness Engine (v2.26.14)
 # Framework Baraldi — Core Skill
 
 Este motor orquesta la **Consciencia Sistémica** del framework, gestionando la memoria persistente y las relaciones semánticas entre decisiones, hallazgos y artefactos. Su objetivo es eliminar la amnesia agéntica y garantizar la trazabilidad total desde la Etapa 01 hasta la 07.
@@ -63,4 +63,4 @@ Usar `mem_save` proactivamente en los siguientes hitos:
 
 ---
 
-*Framework Baraldi v2.26.13 · 00_system_awareness · Orquestador de Memoria Sistémica.*
+*Framework Baraldi v2.26.14 · 00_system_awareness · Orquestador de Memoria Sistémica.*

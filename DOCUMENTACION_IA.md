@@ -3,7 +3,7 @@
 > **⚠️ Este archivo es para HUMANOS (desarrolladores, configuradores, colaboradores).**
 > Los modelos de IA **no deben cargar este archivo** en el ciclo de boot — genera tokens redundantes sin aportar valor operativo. El agente carga directamente `SKILL.md` → `00_boot/context.md` → skills específicas.
 
-**AI-Augmented System Product Design · v2.26.13 · Leo Baraldi**
+**AI-Augmented System Product Design · v2.26.14 · Leo Baraldi**
 
 ---
 
@@ -21,7 +21,7 @@ README.md  →  ARQUITECTURA_CORE.md  →  CHANGELOG.md
 
 ---
 
-## 📁 Mapa del repositorio (v2.26.13)
+## 📁 Mapa del repositorio (v2.26.14)
 
 ```
 fwbaraldi/
@@ -38,13 +38,13 @@ fwbaraldi/
 │   │   └── 00_system_awareness/      ← Consciencia Sistémica y Memoria (Engram)
 │   │
 │   ├── methodology/
-│   │   ├── 01_problem_framing/       ← Hardened v2.26.13
-│   │   ├── 02_system_analysis/       ← Hardened v2.26.13
-│   │   ├── 03_product_logic/         ← Hardened v2.26.13
-│   │   ├── 04_information_architecture/ ← Hardened v2.26.13
-│   │   ├── 05_interaction_design_ux/ ← Hardened v2.26.13
-│   │   ├── 06_visual_design_ui/      ← Hardened v2.26.13
-│   │   └── 07_handover_qa/           ← Hardened v2.26.13
+│   │   ├── 01_problem_framing/       ← Hardened v2.26.14
+│   │   ├── 02_system_analysis/       ← Hardened v2.26.14
+│   │   ├── 03_product_logic/         ← Hardened v2.26.14
+│   │   ├── 04_information_architecture/ ← Hardened v2.26.14
+│   │   ├── 05_interaction_design_ux/ ← Hardened v2.26.14
+│   │   ├── 06_visual_design_ui/      ← Hardened v2.26.14
+│   │   └── 07_handover_qa/           ← Hardened v2.26.14
 │   │
 │   └── toolbox/                      ← Arsenal de 13 protocolos estratégicos
 │
@@ -80,4 +80,4 @@ Todo lo que genera el framework vive aquí — organizado por naturaleza del con
 
 ---
 
-*Framework Baraldi v2.26.13 · DOCUMENTACION_IA.md · Referencia para humanos*
+*Framework Baraldi v2.26.14 · DOCUMENTACION_IA.md · Referencia para humanos*

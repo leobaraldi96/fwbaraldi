@@ -5,7 +5,7 @@ description: >
   generado por IA respeta estrictamente el sistema de diseño (tokens) y no 
   introduce "alucinaciones" visuales o clases genéricas no aprobadas.
 keywords: ai-coding, compliance, linter, design-tokens, ui-engineering, feedback-loop, qa
-version: "2.26.13"
+version: "2.26.14"
 ---
 
 # 🤖 Skill 30 — Protocolo de Auditoría de Cumplimiento de UI Generada por IA
@@ -59,4 +59,4 @@ Generar un **Prompt de Corrección Exacto** para que la IA corrija su código au
 - **Output:** Reporte de validación técnica + Prompt de autocorrección para la IA.
 
 ---
-*Framework Baraldi v2.26.13 · Skill 30 · Engine de Auditoría AI*
+*Framework Baraldi v2.26.14 · Skill 30 · Engine de Auditoría AI*

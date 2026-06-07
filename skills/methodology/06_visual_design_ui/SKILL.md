@@ -6,7 +6,7 @@ description: >
   Crea el contrato visual para la implementación agéntica (DESIGN.md).
 keywords: visual design, ui, tokens, design system, luxury obsidian, design.md, css variables.
 status: operational
-version: "2.26.13"
+version: "2.26.14"
 ---
 
 # Etapa 06 — Visual Design (UI)
@@ -83,6 +83,7 @@ El Agente debe **bloquear** el proceso si detecta:
 - **Siempre** utiliza el *Taste Spectrum* como una conversación para calibrar el diseño.
 - **Siempre** prepara el terreno para la sincronización 1:1 con Figma (API Sync).
 - **Siempre** documenta las reglas de redondeo, sombras y elevación en las especificaciones.
+- **Siempre** en proyectos comenzados (Retrofit), detecta y solicita al usuario indicarte una o más "Vistas Semilla de Referencia" (código de componentes React/Vue/HTML ya aprobados) para autocompletar los tokens y estilos base de `DESIGN.md` de forma precisa y evitar discrepancias.
 
 ---
 
@@ -93,4 +94,4 @@ En la fase visual, el Agente actúa como un **Director de Arte** que educa el oj
 *   **Decisión Compartida:** Nunca entregar un diseño finalizado sin haber transitado los hitos de decisión con el humano.
 
 ---
-*Framework Baraldi v2.26.13 · skills/methodology/06_visual_design_ui/SKILL.md*
+*Framework Baraldi v2.26.14 · skills/methodology/06_visual_design_ui/SKILL.md*

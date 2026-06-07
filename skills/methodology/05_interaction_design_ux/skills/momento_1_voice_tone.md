@@ -127,4 +127,4 @@ Toda redacción de interfaz (títulos, modales, alertas, correos) debe regirse b
 - **Engram Save:** Al generar el archivo, lanza un `mem_save` con el título *"Establecido el VOICE.md"* y el tag `ux-voice-tone`.
 
 ---
-*Framework Baraldi v2.26.13 · Etapa 05 / Momento 1*
+*Framework Baraldi v2.26.14 · Etapa 05 / Momento 1*

@@ -6,7 +6,7 @@ description: >
   Keywords: product logic, reglas de negocio, modelo de datos, entidades,
   kpi, north star, flujos logicos, state machine, permisos.
   Activar cuando se cierre la Etapa 02 (System Analysis).
-version: "2.26.13"
+version: "2.26.14"
 framework: Baraldi
 stage: "03"
 stage_name: "Product Logic"

@@ -60,4 +60,4 @@ El Handoff no es el fin, es un cambio de rol. El equipo de diseño (y el Agente)
 *   **Velar por el Outcome:** Asegurar que lo que se lanza coincida con lo que se diseñó para cumplir los objetivos de negocio.
 
 ---
-*Framework Baraldi v2.26.13 · Ceremonies & Rituals Engine.*
+*Framework Baraldi v2.26.14 · Ceremonies & Rituals Engine.*

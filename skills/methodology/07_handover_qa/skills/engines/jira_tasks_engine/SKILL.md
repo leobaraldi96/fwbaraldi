@@ -4,7 +4,7 @@ description: >
   Protocolo para la creación de tareas en Jira que puentean Diseño y Desarrollo.
   Divide el "Qué" (Producto/UX) del "Cómo" (Implementación técnica).
   Trigger: Al redactar tickets, historias de usuario o especificaciones técnicas.
-version: "2.26.13"
+version: "2.26.14"
 ---
 
 # 📋 Jira Strategic Tasks (Baraldi Edition)
@@ -67,4 +67,4 @@ Formato: `[TYPE] Descripción corta (Componente)`
 - `[HANDOFF]` - Tareas exclusivas de entrega de diseño a dev.
 
 ---
-*Framework Baraldi v2.26.13 · Disciplina Colaborativa.*
+*Framework Baraldi v2.26.14 · Disciplina Colaborativa.*

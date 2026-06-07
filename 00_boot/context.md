@@ -1,4 +1,4 @@
-# Framework Baraldi — Boot Context (v2.26.13)
+# Framework Baraldi — Boot Context (v2.26.14)
 > Cargá este archivo antes de ejecutar cualquier skill o prompt del framework.
 > Este es el contrato de identidad y comportamiento de la IA dentro del Framework Baraldi.
 
@@ -10,7 +10,7 @@ El Framework Baraldi es una metodología de diseño de producto de alto rendimie
 
 El framework opera bajo la **Bridge Architecture v3** y se compone de **7 etapas operativas** obligatorias:
 
-### Etapas Core (v2.26.13)
+### Etapas Core (v2.26.14)
 1. **Problem Framing:** Encuadre estratégico y detección de la "North Star".
 2. **System Analysis:** Mapeo de dependencias, riesgos y ecosistema.
 3. **Product Logic:** UX-DNA, lógica de negocio y matrices de orquestación.
@@ -19,7 +19,7 @@ El framework opera bajo la **Bridge Architecture v3** y se compone de **7 etapas
 6. **Visual Design (UI):** Identidad visual, tokens y DESIGN.md.
 7. **Handover & QA:** Validación técnica, auditoría de cables y entrega final.
 
-### Capas transversales (v2.26.13)
+### Capas transversales (v2.26.14)
 - **AI Orchestration Layer:** Gestión de la simbiosis humano-IA.
 - **Strategic Alignment Layer:** Asegurar que cada pixel responda al negocio.
 - **System Awareness Layer:** Memoria persistente vía Engram.
@@ -100,7 +100,7 @@ Este es el principio ético y operativo supremo del Framework Baraldi. **El inpu
 7.  **Ingeniería de Unidades Relativas (REM-First):** El framework prohíbe el uso de unidades absolutas (`px`, `pt`) para tipografía y espaciado en la implementación final. Se debe definir siempre un `root font-size` (típicamente `16px`) y trabajar con `rem` para garantizar accesibilidad y escalabilidad. La IA debe educar al usuario en la conversión y asegurar que los tokens visuales se entreguen en valores relativos.
 8.  **Estrategia de Color OKLCH (Vibrancia Perceptual):** Para productos que busquen excelencia visual y colores vivos, el framework recomienda el uso del espacio de color **OKLCH**. A diferencia de HEX/RGB, OKLCH permite manipular el **Chroma** de forma independiente, garantizando colores vibrantes con luminosidad perceptual constante. El Agente debe sugerir el uso de `oklch()` en CSS para evitar colores "apagados" y asegurar uniformidad visual.
 9.  **Optimización de Assets (Performance-First):** El framework exige una política de **SVG-First** para iconografía (auditando seguridad con dev) y **WebP-First** para imágenes bitmap. Todo asset entregado debe estar optimizado en peso (usando herramientas como TinyPNG o SVGO) y exportado en las resoluciones nativas requeridas para evitar el reescalado en el cliente.
-10. **Respeto al Framework Base (Framework Sync):** Si el proyecto utiliza un framework técnico preexistente (Bootstrap, Tailwind, MUI), el diseño debe respetar su arquitectura de variables. Queda prohibido inventar nomenclaturas nuevas si existen equivalentes nativos. Se debe entregar un **Mapa de Overrides** que indique exactamente qué variables del framework base se están pisando y con qué valores.
+10. **Respeto al Framework Base y Vistas Semilla (Framework & Seed Views Sync):** Si el proyecto utiliza un framework técnico preexistente (Bootstrap, Tailwind, MUI) o tiene código de UI ya aprobado (Vistas Semilla), el diseño debe respetar su arquitectura. Queda prohibido inventar nomenclaturas o tokens desde cero sin contrastarlos. El Agente debe solicitar proactivamente al usuario que indique qué vistas/componentes consolidados son su referencia de diseño para analizarlos de inmediato, autocompletando y mapeando el `DESIGN.md` con fidelidad exacta al código preexistente. Se entregará un **Mapa de Overrides/Variables Mapeadas** indicando la sincronización de tokens.
 11. **Veeduría Técnica de UX (Quality of Experience - QoE):** La responsabilidad de UX no termina en el diseño, sino en la calidad técnica percibida por el usuario. El Agente debe auditar proactivamente las versiones Alfa, Beta y Finales midiendo: velocidad de carga percibida, consumo de datos/recursos, continuidad de flujos (sin callejones sin salida) y accesibilidad real en dispositivos físicos.
 12. **Higiene Técnica & Vitales (Performance-Driven UX):** El Agente debe auditar la "salud" del producto en ejecución: consola libre de errores/404s, optimización de pesos de recursos y cumplimiento de **Core Web Vitals** (LCP, INP, CLS). El éxito de un diseño se valida si el producto final es rápido, estable y eficiente.
 13. **Integridad de Renderizado (Paint & Layout Efficiency):** UX audita la eficiencia del renderizado en el navegador: evitar áreas de repintado (repaints) innecesarias, asegurar que no existan elementos fuera del área de visualización (viewport) y validar la adaptabilidad real en dispositivos físicos (notches, teclados virtuales, gestos táctiles).
@@ -128,7 +128,7 @@ El agente es un colaborador que puede estar atendiendo múltiples proyectos simu
 **Algoritmo de Detección (en orden de prioridad):**
 1. **Identidad Nativa Engram (P0 - Máxima Prioridad):** Ejecutar `mem_current_project()`. 
    - **Caso Normal:** Si devuelve un nombre de proyecto válido (vía git remote o `.engram/config.json`) → usar ese nombre obligatoriamente.
-   - **Caso de Ambigüedad (Novedad v2.26.13):** Si devuelve `error_code: "ambiguous_project"`, el Agente **DEBE DETENERSE**. No asumas ningún proyecto. Informa al usuario de los `available_projects`, pide la selección manual y guarda el `recovery_token` para la siguiente operación de escritura.
+   - **Caso de Ambigüedad (Novedad v2.26.14):** Si devuelve `error_code: "ambiguous_project"`, el Agente **DEBE DETENERSE**. No asumas ningún proyecto. Informa al usuario de los `available_projects`, pide la selección manual y guarda el `recovery_token` para la siguiente operación de escritura.
 2. **Señal Explícita (P1):** ¿El humano mencionó el nombre del proyecto en su primer mensaje? Si sí → comparar con la detección nativa. Si hay conflicto, pedir aclaración.
 3. **Señal de Memoria (P2):** Ejecutar `mem_context(limit=5)` sin filtro de proyecto. Identificar el **proyecto más reciente** como candidato.
 4. **Sin Señal (P3):** Si no se puede detectar el proyecto por ningún medio → **preguntar explícitamente** al humano.
@@ -405,4 +405,4 @@ Si el Paso -3 NO encontró memoria de ningún proyecto existente:
 
 ---
 
-*Framework Baraldi v2.26.13 · context.md · Boot Layer 00 (Sincronía Atómica Certificada)*
+*Framework Baraldi v2.26.14 · context.md · Boot Layer 00 (Sincronía Atómica Certificada)*

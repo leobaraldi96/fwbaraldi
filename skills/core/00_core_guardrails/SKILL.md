@@ -6,7 +6,7 @@ description: >
   de los entregables.
   Trigger: SIEMPRE activo. Se debe consultar al inicio de cada sesión y ante
   cualquier cambio en la estructura del proyecto o de los artefactos.
-version: "2.26.13"
+version: "2.26.14"
 ---
 
 # 🛡️ Capa 00 — Core Guardrails (Barandas de Contención)
@@ -283,5 +283,5 @@ Antes de declarar un "Done", la IA debe verificar:
 - [ ] ¿He reutilizado los componentes comunes existentes (ej: nav, footer, botones) en lugar de duplicar código o crear variantes independientes sin permiso?
 
 ---
-*Framework Baraldi v2.26.13 · Core Guardrails*
+*Framework Baraldi v2.26.14 · Core Guardrails*
 

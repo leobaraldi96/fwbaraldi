@@ -6,7 +6,7 @@ description: >
   para ir más allá del diseño de interfaces y enfocarse en sistemas y outcomes.
   Úsalo cuando el usuario quiera iniciar un proceso de diseño de producto estructurado.
 keywords: product-design, framework-baraldi, problem-framing, system-analysis, ux-strategy, systems-thinking
-version: "2.26.13"
+version: "2.26.14"
 ---
 
 # Framework Baraldi — Orquestador Global
@@ -24,7 +24,7 @@ Guiar al equipo de producto a través de fases estructuradas de descubrimiento, 
    - Empezar siempre por la **Etapa 01 — Problem Framing** (`skills/methodology/01_problem_framing/SKILL.md`) para validar el "para qué" antes del "cómo".
    - Avanzar a **Etapa 02 — System Analysis** (`skills/methodology/02_system_analysis/SKILL.md`) para mapear el ecosistema completo.
 
-## Toolbox Estratégica (v2.26.13)
+## Toolbox Estratégica (v2.26.14)
 El framework cuenta con una caja de herramientas transversal para la ejecución táctica y estratégica:
 1.  **Stakeholder Narrative Strategy:** Gestión de líderes difíciles (Anti-Lucio/Carlos/Maxi) y venta de ideas.
 2.  **Advanced Prioritization Protocol:** Motor de ROI absoluto basado en RICE, Kano y Score Baraldi.
@@ -80,4 +80,4 @@ El Framework Baraldi **rechaza** el modelo de "IA Generadora de Resultados Final
 - **Exhaustividad Obligatoria (Anti-Shortcuts):** Al generar artefactos (como Matrices, User Flows o Micro-interacciones), la IA tiene PROHIBIDO tomar atajos, resumir u omitir actores/flujos previamente relevados. Si en etapas anteriores se listaron 5 actores y 10 flujos, en los artefactos subsecuentes se DEBEN mapear exhaustivamente todos los casos sin excepciones. La completitud sistémica es innegociable.
 
 ---
-*Framework Baraldi v2.26.13 · Creado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.26.14 · Creado y mantenido por Leo Baraldi.*

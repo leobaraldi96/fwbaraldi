@@ -5,6 +5,13 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.26.14] - 2026-06-07
+
+### ⚡ Soporte para Vistas Semilla de Referencia (Seed Views Sync)
+- **Vistas Semilla (Seed Views):** Incorporación del concepto de "Vistas Semilla" (archivos de componentes o vistas de código HTML/JS ya validadas y aprobadas). Se obliga al agente a preguntar explícitamente en el chat por ellas al inicio de la Etapa 06.
+- **Autocompletado Automatizado:** Configuración para que el agente lea estas vistas semilla y autocomplete la definición de tokens y componentes del `DESIGN.md` basándose directamente en el código de producción.
+- **Higiene en Contexto Boot:** Integrado el mandato en el punto 10 de `00_boot/context.md` y en las directivas de comportamiento `ALWAYS` de la Etapa 06 para asegurar sincronía de variables y evitar discrepancias.
+
 ## [2.26.13] - 2026-06-07
 
 ### ⚡ Detección de CSS Base e Integración de Proyectos Existentes (Retrofit)

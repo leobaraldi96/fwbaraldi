@@ -12,21 +12,20 @@ description: >
 
 ## 🏁 Instrucciones para el Agente (Cómo conducir este momento)
 
-### Paso 1: Detección y Recuperación de Activos (Retrofit & Existing Code Check)
+### Paso 1: Detección y Recuperación de Activos (Retrofit, Seed Views & Existing CSS)
 Antes de generar el sistema de diseño, debes verificar si el proyecto ya está en desarrollo para evitar discrepancias con el código existente:
-1. **Verificación de Proyecto Comenzado:** Inspecciona el espacio de trabajo en busca de archivos de configuración de frameworks de diseño (`tailwind.config.js`, `tailwind.config.ts`, `postcss.config.js`, `bootstrap.css`) o archivos de estilos globales (`index.css`, `globals.css`, `main.css`, `App.css`).
-2. **Extracción Automática de Variables:** Si detectas estos archivos, léelos y extrae las variables CSS personalizadas (variables `--*`), la paleta de colores configurada y los tamaños de tipografía o espaciado existentes.
-3. **Mapeo Obligatorio:** Registra estas variables base. El `DESIGN.md` final deberá mapear de forma explícita estos tokens existentes para asegurar consistencia técnica y evitar sobrescribir estilos en producción.
-4. **Opción Adicional (Figma/Stitch):** Si el usuario proporciona una fuente de diseño externa, usa el servidor MCP `figma-developer-mcp` o Stitch para obtener ID de nodos, componentes, colores, sombras y radios de los bordes.
+1. **Detección de Frameworks y CSS:** Inspecciona el espacio de trabajo en busca de archivos de configuración de frameworks de diseño (`tailwind.config.js`, `bootstrap.css`) o estilos globales (`index.css`, `globals.css`).
+2. **Detección de Vistas Semilla (Seed Views):** Si el proyecto ya está iniciado, **debes preguntar explícitamente al usuario en el chat**:
+   > *"Dado que este es un proyecto ya comenzado, ¿tienes alguna vista o componente específico (ej. un archivo `Home.jsx`, `index.html`, `Dashboard.vue` o similar) que ya esté 100% alineado al diseño y que debamos usar como base semilla de referencia?"*
+3. **Autocompletado desde Vistas Semilla:** Si el usuario te indica estas vistas semilla, analízalas prioritariamente. Extrae de ellas las clases de estilo, variables y estructuras aplicadas y utilízalas para **autocompletar e importar automáticamente** los valores base de colores, fuentes, radios de borde y espaciado del `DESIGN.md`.
+4. **Extracción Automática de Variables:** Extrae las variables CSS personalizadas (variables `--*`) y paletas configuradas de los archivos del proyecto detectados.
+5. **Mapeo Obligatorio:** Registra estas variables en la sección de sincronización para asegurar consistencia técnica y evitar reescribir estilos.
 
 ### Paso 2: Alineación Estética y Calibración (Taste Alignment & Intake)
-*El framework es estéticamente agnóstico y no debe imponer una línea de diseño predefinida.* Debes solicitar activamente el input del usuario o sugerir una calibración basada en el CSS base detectado:
-1. **Intake del Usuario:** Pregunta en el chat qué estética o "vibe" busca el usuario, o si prefiere mantener y documentar estrictamente la línea estética actual del proyecto existente.
-2. **Calibrar el Espectro de Gusto (Taste Spectrum):** Dialoga para definir los valores (1-10) del proyecto:
-   - **Density:** UI compacta vs espaciada.
-   - **Variance:** Asimetría y disrupción vs simetría tradicional.
-   - **Motion:** Transiciones sutiles vs cinemáticas fluidas.
-3. **Neutralidad Tipográfica y de Color:** No impongas tipografías (como Satoshi o Geist) o colores por defecto. Solicita al usuario definir su fuente display/body o extrae las declaradas en el CSS base. Si es un producto High-End sin estilos previos, sugiere opciones premium justificando el motivo (legibilidad, peso visual).
+*El framework es estéticamente agnóstico y no debe imponer una línea de diseño predefinida.* Debes solicitar activamente el input del usuario o sugerir una calibración basada en el CSS y las Vistas Semilla detectadas:
+1. **Intake del Usuario:** Pregunta en el chat qué estética o "vibe" busca el usuario, o si prefiere mantener y documentar estrictamente la línea estética de las Vistas Semilla indicadas.
+2. **Calibrar el Espectro de Gusto (Taste Spectrum):** Define con el usuario los valores (1-10) del proyecto (Density, Variance, Motion).
+3. **Neutralidad Tipográfica y de Color:** No impongas tipografías ni colores. Si se detectó una tipografía o paleta en la Vista Semilla, incorpórala de inmediato. Si no hay estilos previos, sugiere opciones premium acordes al segmento.
 4. **Mapeo de Paleta y Estructura:** Diseña los tokens de color asignando nombres descriptivos coherentes con los HEX/OKLCH existentes. Elimina el uso de negros puros (`#000000`) si buscas un look moderno y premium.
 
 ---
