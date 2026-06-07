@@ -4,7 +4,7 @@ description: >
   Protocolo operativo para la ejecución de pruebas con lectores de pantalla (VoiceOver, NVDA, TalkBack).
   Proporciona scripts de prueba, comandos esenciales y criterios de éxito para validar la experiencia de usuario con tecnología asistiva.
 keywords: a11y, screen reader, VoiceOver, NVDA, TalkBack, testing script, runbook, accesibilidad manual.
-version: "2.26.12"
+version: "2.26.13"
 ---
 
 # 🔊 Skill 31 — Protocolo de Pruebas con Lector de Pantalla & Runbook
@@ -82,4 +82,4 @@ Este protocolo transforma la evaluación de accesibilidad de una "lista de deseo
 ```
 
 ---
-*Framework Baraldi v2.26.12 · Skill 31 · Engine de Pruebas AT*
+*Framework Baraldi v2.26.13 · Skill 31 · Engine de Pruebas AT*

@@ -76,4 +76,4 @@ El Handoff marca el fin de la construcción de diseño, pero el inicio de la **V
 **Misión de Cierre:** El Agente debe entregar estos artefactos durante la **Ceremonia de Handoff** con el mensaje: *"Este hito formaliza nuestra transición de diseñadores a Veedores de la Experiencia. No entregamos archivos, entregamos un compromiso de acompañamiento hasta que el producto esté en manos del usuario"*.
 
 ---
-*Framework Baraldi v2.26.12 · DesignOps & Accompaniment Protocol.*
+*Framework Baraldi v2.26.13 · DesignOps & Accompaniment Protocol.*

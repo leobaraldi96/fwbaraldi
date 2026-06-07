@@ -12,37 +12,27 @@ description: >
 
 ## 🏁 Instrucciones para el Agente (Cómo conducir este momento)
 
-### Paso 1: Recuperación de Activos (Retrieval & Networking)
-Para analizar la estética, debes consumir la fuente visual. Pregúntale al usuario de dónde vas a extraer el diseño:
-1. **Opción A (Figma):** Usa el servidor MCP `figma-developer-mcp` para obtener el ID del proyecto, nodos y componentes. Extrae colores, sombras y radios de los bordes.
-2. **Opción B (Código Front-End):** Usa `read_url_content` o lee los archivos locales del repositorio (Tailwind config, archivos CSS globales).
-3. **Opción C (Stitch o herramientas externas):** Si el usuario usa Google Stitch, pídele el ID del proyecto y extrae el HTML/Screenshot para auditar la "vibe".
+### Paso 1: Detección y Recuperación de Activos (Retrofit & Existing Code Check)
+Antes de generar el sistema de diseño, debes verificar si el proyecto ya está en desarrollo para evitar discrepancias con el código existente:
+1. **Verificación de Proyecto Comenzado:** Inspecciona el espacio de trabajo en busca de archivos de configuración de frameworks de diseño (`tailwind.config.js`, `tailwind.config.ts`, `postcss.config.js`, `bootstrap.css`) o archivos de estilos globales (`index.css`, `globals.css`, `main.css`, `App.css`).
+2. **Extracción Automática de Variables:** Si detectas estos archivos, léelos y extrae las variables CSS personalizadas (variables `--*`), la paleta de colores configurada y los tamaños de tipografía o espaciado existentes.
+3. **Mapeo Obligatorio:** Registra estas variables base. El `DESIGN.md` final deberá mapear de forma explícita estos tokens existentes para asegurar consistencia técnica y evitar sobrescribir estilos en producción.
+4. **Opción Adicional (Figma/Stitch):** Si el usuario proporciona una fuente de diseño externa, usa el servidor MCP `figma-developer-mcp` o Stitch para obtener ID de nodos, componentes, colores, sombras y radios de los bordes.
 
-### Paso 2: Análisis y Síntesis (Extracción Estética & Taste Audit)
-Una vez tengas los datos visuales, debes procesarlos usando estas reglas de **Taste Design (Momento 0)**:
-
-#### 1. Calibrar el Espectro de Gusto (Taste Spectrum)
-- Define los valores (1-10) para el proyecto:
-  - **Density:** ¿Qué tan cargada está la UI?
-  - **Variance:** ¿Qué tan asimétrico u "offset" es el diseño?
-  - **Motion:** ¿Qué tan fluida y "cinemática" es la transición?
-
-#### 2. Definir la Atmósfera y Tipografía (The Vibe)
-- **Obligatorio:** Usa adjetivos evocativos.
-- **Guardrail:** Si es un proyecto Premium, prohíbe explícitamente el uso de `Inter`. Sugiere `Geist`, `Satoshi` o `Outfit`.
-
-#### 3. Mapear la Paleta de Colores (Color Palette)
-- Identifica los colores clave. Por cada uno: Nombre Poético + HEX + Rol.
-- **Prohibición:** Elimina cualquier rastro de "AI Neon" o negros puros (#000000).
-
-#### 4. Componentes y Hero (Structure)
-- Define reglas para el Hero (asimetría, sin overlapping).
-- Detalla el estilo de botones y tarjetas (tactile feedback, no neon glows).
+### Paso 2: Alineación Estética y Calibración (Taste Alignment & Intake)
+*El framework es estéticamente agnóstico y no debe imponer una línea de diseño predefinida.* Debes solicitar activamente el input del usuario o sugerir una calibración basada en el CSS base detectado:
+1. **Intake del Usuario:** Pregunta en el chat qué estética o "vibe" busca el usuario, o si prefiere mantener y documentar estrictamente la línea estética actual del proyecto existente.
+2. **Calibrar el Espectro de Gusto (Taste Spectrum):** Dialoga para definir los valores (1-10) del proyecto:
+   - **Density:** UI compacta vs espaciada.
+   - **Variance:** Asimetría y disrupción vs simetría tradicional.
+   - **Motion:** Transiciones sutiles vs cinemáticas fluidas.
+3. **Neutralidad Tipográfica y de Color:** No impongas tipografías (como Satoshi o Geist) o colores por defecto. Solicita al usuario definir su fuente display/body o extrae las declaradas en el CSS base. Si es un producto High-End sin estilos previos, sugiere opciones premium justificando el motivo (legibilidad, peso visual).
+4. **Mapeo de Paleta y Estructura:** Diseña los tokens de color asignando nombres descriptivos coherentes con los HEX/OKLCH existentes. Elimina el uso de negros puros (`#000000`) si buscas un look moderno y premium.
 
 ---
 
 ### Paso 3: Generación del Artefacto (DESIGN.md - Premium Version)
-Crea o actualiza el archivo `docs-fwbaraldi/DESIGN.md` con esta estructura blindada, normalizada y compatible con las especificaciones de getdesign.md:
+Crea o actualiza el archivo `docs-fwbaraldi/DESIGN.md` con esta estructura blindada, normalizada y compatible con las especificaciones de getdesign.md. **La plantilla debe ser neutra, sin valores estéticos inducidos por defecto:**
 
 ```markdown
 ---
@@ -53,23 +43,34 @@ tokens:
     primary-dark: "[Hex de color principal activo, ej: #172554]"
     secondary: "[Hex de color secundario]"
     background: "[Hex de fondo, sin negros puros #000000]"
-    text: "[Hex de texto principal]"
-    text-on-primary: "[Hex de texto sobre fondo primario]"
-    accent: "[Hex de acento]"
-    danger: "[Hex de error/destructivo]"
+    text: "[Hex de texto principal, ej: #xxxxxx]"
+    text-on-primary: "[Hex de texto sobre color primario, ej: #xxxxxx]"
+    accent: "[Hex de acento, ej: #xxxxxx]"
+    danger: "[Hex de error/destructivo, ej: #xxxxxx]"
   typography:
     fonts:
-      display: "[Nombre tipografía display, ej: Satoshi, sans-serif]"
-      body: "[Nombre tipografía body, ej: Geist, sans-serif]"
+      display: "[Familia tipografía display, ej: 'Nombre de Fuente', sans-serif]"
+      body: "[Familia tipografía texto body, ej: 'Nombre de Fuente', sans-serif]"
     sizes:
-      base: "16px"
-      scale: ["12px", "14px", "16px", "20px", "24px", "32px", "48px"]
+      base: "[Medida base, ej: 16px o 1rem]"
+      scale: ["[Escala tipográfica ordenada de menor a mayor, ej: 12px, 14px, 16px...]"]
   spacing:
-    scale: ["4px", "8px", "12px", "16px", "24px", "32px", "48px", "64px"]
+    scale: ["[Escala de espaciado ordenada de menor a mayor, ej: 4px, 8px, 12px...]"]
   borders:
     radius:
-      default: "[Bordes por defecto, ej: 8px]"
+      default: "[Radio de borde estándar por defecto, ej: 8px]"
       round: "9999px"
+
+# Sincronización con Frameworks y Código CSS Existente (Retrofit Integration)
+framework_sync:
+  base_framework: "[Nombre del framework CSS si existe, ej: Tailwind / Bootstrap / Custom]"
+  import_files:
+    - "[Ruta del archivo CSS que define la base, ej: src/index.css]"
+  variables_mapping:
+    # Vincula los tokens del DESIGN.md con las variables CSS/Tailwind reales del proyecto
+    primary: "[Nombre de la variable CSS mapeada, ej: var(--color-primary)]"
+    secondary: "[Nombre de la variable CSS mapeada, ej: var(--color-secondary)]"
+    background: "[Nombre de la variable CSS mapeada, ej: var(--color-bg)]"
 
 # Definición estructurada de Componentes (Discrete YAML Entries)
 components:
@@ -94,33 +95,39 @@ components:
 ## 1. Visual Theme & Atmosphere
 (Descripción del mood basada en el Taste Spectrum: Densidad, Varianza, Movimiento. Establece la vibra y filosofía visual).
 
-## 2. Color Palette & Roles
+## 2. Base Framework & CSS Integration
+*   **Base Framework:** {framework_sync.base_framework}
+*   **CSS Files Imported:** [Listado de archivos CSS base importados]
+*   **Mapeo de Variables:** (Detalla cómo se relacionan los tokens del DESIGN.md con las variables CSS del proyecto preexistente. Explica si se pisan o heredan variables nativas de Bootstrap/Tailwind para no romper la consistencia del código preexistente).
+
+## 3. Color Palette & Roles
 (Lista de colores: Nombre Descriptivo + Hex Code + Rol Funcional. Sin negros puros. Cada entrada en la prosa DEBE referenciar `{tokens.colors.primary}`, etc. Prohibido usar HEX planos aquí).
 
-## 3. Typography Rules
+## 4. Typography Rules
 - **Display:** {tokens.typography.fonts.display} - Track-tight hierarchy.
 - **Body:** {tokens.typography.fonts.body} - Relaxed leading, 65ch max-width.
-- **Banned:** Inter, generic system fonts (en productos High-End).
+- **Banned:** [Lista de tipografías prohibidas para este proyecto]
 
-## 4. Component Stylings
+## 5. Component Stylings
 - **Buttons:** Base style `{components.button-primary}`. States: Active `{components.button-primary.states.active}` and Disabled `{components.button-primary.states.disabled}`.
 - **Cards/Containers:** Base style `{components.card}`. Soft shadows, hierarchy-driven use.
 - **Inputs:** Label above, error below, accent focus ring.
 
-## 5. Layout Principles
+## 6. Layout Principles
 (Principios de grillas y estructuración visual usando CSS Grid y Flexbox. Uso de la escala `{tokens.spacing.scale}`).
 
-## 6. Depth & Elevation
+## 7. Depth & Elevation
 (Categorización de sombras, bordes y materiales. Uso de z-index y capas tridimensionales para la jerarquía visual).
 
-## 7. Responsive Behavior
+## 8. Responsive Behavior
 (Definición de breakpoints, tamaños mínimos de áreas táctiles [mínimo 44x44px] y reacomodamiento del layout en dispositivos móviles).
 
-## 8. Do's and Don'ts (Anti-Patterns / BANNED)
-(Lista explícita de lo que NO debe hacer la IA: No emojis en UI técnica, no usar valores HEX o px inline, no bordes redondeados inconsistentes).
+## 9. Do's and Don'ts (Anti-Patterns / BANNED)
+(Lista explícita de lo que NO debe hacer la IA: No emojis en UI técnica, no usar valores HEX o px inline en el código, no crear variables CSS redundantes).
 
-## 9. Agent Prompt Guide
+## 10. Agent Prompt Guide
 - **Copy/Style Lock Rule:** "You are an AI developer implementing this UI. You must NEVER inline any colors, margins, or padding values. You MUST reference CSS variables or Tailwind utility classes mapped exactly to this design system's tokens."
+- **Framework Base Rule:** "Respect the existing base framework ({framework_sync.base_framework}). Before introducing new utility classes or styles, verify if they exist in the imported files ({framework_sync.import_files}) or if they should be mapped via ({framework_sync.variables_mapping})."
 - **Bias Clauses:** Evitar el uso de tipografía por defecto o bordes genéricos. Mantener la asimetría del layout.
 ```
 

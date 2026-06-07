@@ -6,7 +6,7 @@ description: >
   y auditoría técnica/visual final.
 keywords: handover, qa, quality-assurance, design-handoff, completeness-audit, developer-handoff
 status: operational
-version: "2.26.12"
+version: "2.26.13"
 ---
 
 # Etapa 07 — Handover & Quality Assurance
@@ -76,4 +76,4 @@ En el cierre, el Agente actúa como un **Guardián de la Excelencia y Veedor de 
 *   **El Rol de Acompañamiento:** Recordar que el diseño sigue vivo durante el código, asistiendo y resolviendo dudas técnicas en tiempo real.
 
 ---
-*Framework Baraldi v2.26.12 · skills/methodology/07_handover_qa/SKILL.md*
+*Framework Baraldi v2.26.13 · skills/methodology/07_handover_qa/SKILL.md*

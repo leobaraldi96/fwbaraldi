@@ -5,6 +5,14 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.26.13] - 2026-06-07
+
+### ⚡ Detección de CSS Base e Integración de Proyectos Existentes (Retrofit)
+- **Retrofit & Existing CSS Check:** Agregada directiva operativa en la Etapa 06 (Momento 3) para escanear y extraer variables base (`--*`) y configuraciones de frameworks (`tailwind.config.js`, `bootstrap.css`) en proyectos preexistentes.
+- **Mapeo de Variables CSS:** Integrada la sección `framework_sync` y `variables_mapping` en el YAML del `DESIGN.md` para mapear los tokens con variables CSS existentes, previniendo discrepancias y duplicaciones de estilos.
+- **Neutralidad Estética Absoluta:** Limpieza del template del `DESIGN.md` para eliminar valores y tipografías sugeridas por defecto (como "Satoshi"), convirtiéndolo en un lienzo neutro. Se obliga a la IA a pedir el input estético al usuario o derivarlo del CSS existente.
+- **Compilador de Prompt de IA:** Actualizado el motor en la Etapa 07 para instruir a la IA programadora sobre el uso estricto de las variables mapeadas (`variables_mapping`) y clases del framework base detectado.
+
 ## [2.26.12] - 2026-06-07
 
 ### ⚡ Integración de Estándar Avanzado DESIGN.md (getdesign.md)

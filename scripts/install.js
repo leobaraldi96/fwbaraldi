@@ -15,7 +15,7 @@ const __dirname = path.dirname(__filename);
 const packageRoot = path.join(__dirname, '..');
 
 // Configuración de versión fuerte
-const ENGRAM_VERSION = 'v1.15.11'; // Sincronizado con FWB v2.26.12
+const ENGRAM_VERSION = 'v1.15.11'; // Sincronizado con FWB v2.26.13
 const REPO_ORIGEN = 'Gentleman-Programming';
 
 async function downloadBinary(osType, arch) {
@@ -93,7 +93,7 @@ async function run() {
 |   __| | | | __ -|     |    -|     |  |__|  |  |-   -|
 |__|  |_____|_____|__|__|__|__|__|__|_____|____/|_____|
 
-  -- FRAMEWORK BARALDI (v2.26.12) --
+  -- FRAMEWORK BARALDI (v2.26.13) --
   AI-Augmented System Product Design
   `;
     console.log(chalk.bold.magenta(logo));

@@ -4,7 +4,7 @@ description: >
   Protocolo para la gestión de la Product Master Matrix (PMM). El "Cerebro de Trazabilidad" 
   que registra cada vista, componente e interacción desde la concepción hasta el QA final.
 keywords: trazabilidad, matriz, PMM, seguimiento, inventario, QA, Handover, consistencia
-version: "2.26.12"
+version: "2.26.13"
 ---
 
 # 📊 Skill 06 — Protocolo de Matriz Maestra de Producto (PMM)
@@ -52,4 +52,4 @@ El archivo debe residir en la raíz del proyecto y seguir este formato de tabla 
 3. **Drill-down Report:** Generación de un reporte de "Puntos Ciegos" (vistas sin documentación UX o UI).
 
 ---
-*Framework Baraldi v2.26.12 · Skill 06 · Trazabilidad de Producto*
+*Framework Baraldi v2.26.13 · Skill 06 · Trazabilidad de Producto*

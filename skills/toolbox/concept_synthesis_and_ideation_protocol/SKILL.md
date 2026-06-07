@@ -4,7 +4,7 @@ description: >
   Motor de facilitación creativa y síntesis de conceptos de producto. Utiliza el Doble Diamante 
   (HMW, Crazy 8s, SCAMPER) para pasar de insights de investigación a soluciones validadas.
 keywords: ideación, facilitación, HMW, Crazy 8s, SCAMPER, doble diamante, síntesis, concepto
-version: "2.26.12"
+version: "2.26.13"
 ---
 
 # 💡 Skill 04 — Protocolo de Síntesis e Ideación (Creative Engine)
@@ -51,4 +51,4 @@ Filtrar y estructurar las ideas con mayor potencial.
 3. **Validation Plan:** Hipótesis crítica y diseño del experimento de guerrilla.
 
 ---
-*Framework Baraldi v2.26.12 · Skill 04 · Motor de Ideación*
+*Framework Baraldi v2.26.13 · Skill 04 · Motor de Ideación*

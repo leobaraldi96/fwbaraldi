@@ -4,7 +4,7 @@ description: >
   Protocolo de Adaptabilidad Total. Estrategia para asegurar productos líquidos (Responsive) 
   y culturalmente relevantes (i18n/L10n) en cualquier mercado y dispositivo.
 keywords: responsive, mobile-first, i18n, l10n, global-readiness, breakpoints, RTL, localización
-version: "2.26.12"
+version: "2.26.13"
 ---
 
 # 🌍 Skill 08 — Protocolo de Adaptabilidad Total (Global Readiness)
@@ -49,4 +49,4 @@ Esta skill actúa como un **Estratega de Producto Global**. Su misión es asegur
 3. **i18n Tracking List:** Listado de strings con contexto para traductores.
 
 ---
-*Framework Baraldi v2.26.12 · Skill 08 · Adaptabilidad Global*
+*Framework Baraldi v2.26.13 · Skill 08 · Adaptabilidad Global*

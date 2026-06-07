@@ -4,7 +4,7 @@ description: >
   Protocolo integral para la orquestación técnica (Runbook) y comercial (GTM) de lanzamientos. 
   Asegura estabilidad operativa y máximo impacto mediante comunicación segmentada y gestión de crisis.
 keywords: launch, runbook, GTM, comunicación, deploy, QA, Go/No-Go, rollback, métricas
-version: "2.26.12"
+version: "2.26.13"
 ---
 
 # 🚀 Skill 03 — Protocolo de Lanzamiento y GTM (Go-to-Market)
@@ -85,4 +85,4 @@ Definir eventos de tracking para medir:
 4. **Post-Launch Analytics Spec:** Listado de eventos y dashboards esperados.
 
 ---
-*Framework Baraldi v2.26.12 · Skill 03 · Orquestación de Lanzamientos*
+*Framework Baraldi v2.26.13 · Skill 03 · Orquestación de Lanzamientos*
