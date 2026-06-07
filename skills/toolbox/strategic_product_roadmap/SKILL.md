@@ -4,7 +4,7 @@ description: >
   Protocolo para la creación y mantenimiento de Roadmaps Estratégicos. Transforma OKRs 
   en secuencias lógicas de entrega de valor (Now/Next/Later) para alinear al equipo.
 keywords: roadmap, estrategia, planificación, iniciativas, Now-Next-Later, ROI, horizontes
-version: "2.26.9"
+version: "2.26.10"
 ---
 
 # 🗺️ Skill 13 — Protocolo de Roadmap Estratégico de Producto
@@ -51,4 +51,4 @@ Identificación proactiva de bloqueos:
 3. **Dependency & Risk Map:** Análisis de posibles bloqueos y planes de mitigación.
 
 ---
-*Framework Baraldi v2.26.9 · Skill 13 · Roadmap Estratégico*
+*Framework Baraldi v2.26.10 · Skill 13 · Roadmap Estratégico*

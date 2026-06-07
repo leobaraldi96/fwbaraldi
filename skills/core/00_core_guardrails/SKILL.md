@@ -6,7 +6,7 @@ description: >
   de los entregables.
   Trigger: SIEMPRE activo. Se debe consultar al inicio de cada sesión y ante
   cualquier cambio en la estructura del proyecto o de los artefactos.
-version: "2.26.9"
+version: "2.26.10"
 ---
 
 # 🛡️ Capa 00 — Core Guardrails (Barandas de Contención)
@@ -244,7 +244,7 @@ La IA debe actuar como un curador de información, aplicando estos principios en
 
 ## 🧩 8. Consistencia Transversal y Reutilización (DRY UI & Design Tokens)
 
-Para evitar interfaces fragmentadas o código redundante e insostenible, la IA debe adherirse estrictamente a estas dos leyes de construcción de interfaz:
+Para evitar interfaces fragmentadas o código redundante e insostenible, la IA debe adherirse estrictamente a las siguientes leyes de construcción de interfaz:
 
 1.  **Herencia de Estilo y Línea de Diseño Transversal:**
     - Toda guía, estilo, token, color, tipografía, espaciado o patrón de diseño establecido en una página (como la Home) **aplica automáticamente por defecto al resto de las páginas y nuevas secciones**, a menos que se indique explícitamente lo contrario.
@@ -253,6 +253,17 @@ Para evitar interfaces fragmentadas o código redundante e insostenible, la IA d
     - Los componentes de interfaz comunes (como `nav` de navegación, `footer` de pie de página, menús, layouts de página o botones) son **activos reutilizables únicos**, no elementos independientes clonados con el mismo código.
     - Al crear una nueva vista o página, la IA debe importar o reutilizar la misma estructura y archivos del componente ya definido en la Home o vistas previas.
     - La duplicación de lógica o de marcado CSS/HTML para componentes semánticamente idénticos se considera un fallo grave en la calidad del desarrollo.
+3.  **El Contrato Visual Agéntico (DESIGN.md):**
+    - El archivo `DESIGN.md` es un documento de texto estructurado en lenguaje Markdown que describe el sistema de diseño visual del proyecto. Actúa como una guía de referencia rápida, pero está optimizado específicamente para que los agentes de Inteligencia Artificial lo lean y lo comprendan. 
+    - Sus propósitos son:
+      * **Consistencia visual:** Almacena reglas de diseño para que, cuando la IA genere interfaces, pantallas o componentes, estos mantengan el mismo estilo (colores, tipografías, márgenes, redondeo de bordes).
+      * **Portabilidad:** Permite exportar e importar estas reglas de diseño entre diferentes proyectos o herramientas de IA sin tener que empezar desde cero.
+      * **Estructura:** Contiene especificaciones técnicas (como códigos hexadecimales de color o valores de espaciado en CSS) combinadas con lenguaje natural.
+    - El Agente **debe** crear este artefacto en la Etapa 06 (o proponer su creación en modo retrofit al comenzar a diseñar o codificar) y mantenerlo actualizado.
+    - Antes de diseñar o codificar cualquier nueva vista, componente o sección, la IA **DEBE** leer obligatoriamente el `DESIGN.md` existente en el workspace para alinear la nueva pantalla y evitar desviaciones de la línea de diseño.
+4.  **Alineación Proactiva de Voz y Contenido (Copy & Voice Lock):**
+    - Al generar maquetados, layouts, prototipos o código de interfaz frontend (HTML, CSS, Vue, React, etc.), la IA **debe** verificar proactivamente la existencia de `docs-fwbaraldi/VOICE.md` o directivas en `docs-fwbaraldi/UXW/`.
+    - Si existen, queda prohibida la inserción de textos genéricos, "Lorem Ipsum" o copys sueltos no alineados. La IA debe adaptar los copys al estándar de voz definido y ofrecer esta alineación preguntando explícitamente en el chat: *"He detectado que tenemos definidas directivas de voz en VOICE.md. ¿Querés que alinee automáticamente los copys de la interfaz a este estándar al generar el código?"*.
 
 ---
 
@@ -272,5 +283,5 @@ Antes de declarar un "Done", la IA debe verificar:
 - [ ] ¿He reutilizado los componentes comunes existentes (ej: nav, footer, botones) en lugar de duplicar código o crear variantes independientes sin permiso?
 
 ---
-*Framework Baraldi v2.26.9 · Core Guardrails*
+*Framework Baraldi v2.26.10 · Core Guardrails*
 

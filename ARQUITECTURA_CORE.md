@@ -1,6 +1,6 @@
 # Arquitectura Core del Framework Baraldi
 
-> Este documento detalla la estructura lógica, la arquitectura tecnológica y el ciclo de vida de adopción del **Framework Baraldi** (v2.26.9). El framework ha evolucionado de un repositorio de prompts a un **Ecosistema Agéntico Simbiótico** donde la infraestructura tecnológica y la maestría humana convergen.
+> Este documento detalla la estructura lógica, la arquitectura tecnológica y el ciclo de vida de adopción del **Framework Baraldi** (v2.26.10). El framework ha evolucionado de un repositorio de prompts a un **Ecosistema Agéntico Simbiótico** donde la infraestructura tecnológica y la maestría humana convergen.
 
 ---
 
@@ -100,11 +100,11 @@ sequenceDiagram
     
     note over IA,Humano: FASE DE LÓGICA SISTÉMICA (Etapa 03)
     IA->>IA: Ejecuta Product Logic (Brain Integration)
-    IA->>FS: Genera Blueprint y Business Rules Matrix (v2.26.9)
+    IA->>FS: Genera Blueprint y Business Rules Matrix (v2.26.10)
 ```
 
 ### 3.1 El Rol de la Etapa 03 (Product Logic)
-Tras completar la actualización v2.26.9, la Etapa 03 se consolida como el **"Cerebro del Producto"**. Su función es blindar la viabilidad funcional antes de que el equipo de diseño entre a la fase visual, integrando el estándar **UX-DNA (Experience Anatomy)**. 
+Tras completar la actualización v2.26.10, la Etapa 03 se consolida como el **"Cerebro del Producto"**. Su función es blindar la viabilidad funcional antes de que el equipo de diseño entre a la fase visual, integrando el estándar **UX-DNA (Experience Anatomy)**. 
 
 **Entregables clave al usuario:**
 - **Product Logic Orchestration:** Matriz de Actores, Matriz de Orquestación de Backlog y Service Blueprint.

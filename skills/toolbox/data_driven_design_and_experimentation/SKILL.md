@@ -4,7 +4,7 @@ description: >
   Protocolo para transformar datos analíticos (Google Analytics, Mixpanel, Hotjar) 
   en insights de diseño accionables y ejecutar experimentos validados con rigor estadístico.
 keywords: analytics, data-driven, insights, experimentation, a/b testing, métricas, conversión, SRM
-version: "2.26.9"
+version: "2.26.10"
 ---
 
 # 📊 Skill 07 — Protocolo de Diseño Basado en Datos y Experimentación
@@ -50,4 +50,4 @@ Para validar cambios mediante Tests A/B o multivariante:
 3. **Analytics Tracking Spec:** Listado de eventos y propiedades a trackear.
 
 ---
-*Framework Baraldi v2.26.9 · Skill 07 · Diseño Basado en Datos*
+*Framework Baraldi v2.26.10 · Skill 07 · Diseño Basado en Datos*

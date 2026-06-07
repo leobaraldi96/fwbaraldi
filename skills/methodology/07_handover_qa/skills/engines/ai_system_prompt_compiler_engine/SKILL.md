@@ -5,7 +5,7 @@ description: >
   (DESIGN.md) en un System Prompt hiper-detallado para guiar a IAs codificadoras 
   (v0, Cursor, Claude) en la generación de UI sin alucinaciones.
 keywords: prompt-engineering, ai-coder, v0, cursor, system-prompt, design-system-compiler, handoff
-version: "2.26.9"
+version: "2.26.10"
 ---
 
 # 🪄 Skill 32 — Protocolo de Generación de System Prompt para IA (Compilador)
@@ -61,4 +61,4 @@ Instrucción final para la IA:
 - **Sinergia:** El output generado por la IA usando este prompt será posteriormente auditado por el **AI UI Compliance Audit Engine** para verificar cumplimiento.
 
 ---
-*Framework Baraldi v2.26.9 · Skill 32 · Engine de Compilación AI*
+*Framework Baraldi v2.26.10 · Skill 32 · Engine de Compilación AI*

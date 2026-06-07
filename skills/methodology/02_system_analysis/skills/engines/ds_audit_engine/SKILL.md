@@ -5,7 +5,7 @@ description: >
   Evalúa coherencia visual, cobertura de biblioteca, accesibilidad, calidad de 
   documentación e implementación técnica en código.
 keywords: design-system, health-check, audit, macro-audit, design-ops, scalability
-version: "2.26.9"
+version: "2.26.10"
 ---
 
 # 🏥 Skill 31 — Comprehensive Design System Audit Protocol (Health Check)
@@ -62,4 +62,4 @@ El output final debe consolidarse en:
 - **Sinergia:** Detecta problemas a gran escala que luego serán resueltos quirúrgicamente por las **Skills 25, 29 y 30**.
 
 ---
-*Framework Baraldi v2.26.9 · Skill 31*
+*Framework Baraldi v2.26.10 · Skill 31*

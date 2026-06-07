@@ -32,4 +32,4 @@ El Agente tiene prohibido proponer o permitir la inyección de "clichés de IA".
 *   **Performance:** Respetar Core Web Vitals (reservar espacio para evitar layout shifts).
 
 ---
-*Framework Baraldi v2.26.9 · Design Intelligence Engine (Clean).*
+*Framework Baraldi v2.26.10 · Design Intelligence Engine (Clean).*

@@ -5,6 +5,12 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.26.10] - 2026-06-07
+
+### 🛡️ Consistencia Visual y de Voz Automática (DESIGN.md & VOICE.md)
+- **Mandato de Contrato Visual (DESIGN.md):** Definición explícita de `DESIGN.md` en el boot context y core guardrails como el contrato visual del proyecto optimizado para IAs (consistencia, portabilidad y estructura técnica). Se obliga al agente a crearlo, mantenerlo y consultarlo obligatoriamente antes de codificar o diseñar cualquier nueva sección o vista.
+- **Alineación Proactiva de Voz y Texto (VOICE.md):** Directiva estricta que exige al agente verificar de forma proactiva la presencia de `VOICE.md` al generar maquetados, layouts o código frontend, obligando a ofrecer de forma proactiva alinear los textos del producto y prevenir copys genéricos.
+
 ## [2.26.9] - 2026-06-07
 
 ### 🌐 Hito de Core Agnóstico y Evasión Avanzada de IA
