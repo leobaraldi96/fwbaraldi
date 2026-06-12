@@ -27,8 +27,8 @@ La IA debe:
 
 ---
 
-## ⚡ Entregable Estrella: DESIGN.md (Agent-First Contract)
-Este archivo es obligatorio y debe cumplir con el **[Momento 0] (Design Intelligence)** para evitar resultados genéricos. Debe contener:
+## Entregable Estrella: DESIGN.md (Agent-First Contract)
+Este archivo es obligatorio y debe cumplir con el **[Protocolo 36] (Taste Design)** para evitar resultados genéricos. Debe contener:
 1. **Design Tokens (YAML):** Colores primarios, secundarios, estados, escalas de espaciado y tipografía.
 2. **CSS Variables Mapping:** Definición de variables para implementación directa.
 3. **Component Specs:** Reglas de redondeo (radius), sombras y bordes para componentes core.
