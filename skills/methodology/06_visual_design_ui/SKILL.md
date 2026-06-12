@@ -15,18 +15,20 @@ version: "2.26.14"
 
 ---
 
-## 🎨 Selector de Estética (Aesthetic Taste Selector)
-El framework es **estéticamente agnóstico**. No fuerza un estilo visual. En su lugar, al iniciar esta etapa, la IA debe consultar qué "Taste" (gusto estético) se alinea con el negocio (inspirado en las arquitecturas de `leonxlnx`):
+## Definición de Atmósfera Visual (Aesthetic Definition)
+Al ser el framework **estéticamente agnóstico**, no impone estilos, temas ni tipografías predefinidas. En su lugar, el equipo de producto define libremente la dirección estética y los principios visuales alineados a la estrategia de negocio. 
 
-21. **High-End (SaaS / Premium):** Dark mode profundo, glassmorphism, gradientes sutiles y tipografía moderna (Geist / Satoshi / Outfit). Prohibido el uso de Inter en esta categoría por ser un "AI Tell" genérico.
-22. **Minimalist UI (Productividad):** Fondos blancos puros o grises hiper-suaves, monocromía estricta, alta densidad de datos sin ruido visual. Ideal para dashboards densos.
-23. **Industrial Brutalist (Dev Tools):** Bordes crudos, tipografías monoespaciadas, alto contraste en blanco y negro con un solo color de acento. Ideal para herramientas técnicas.
-24. **Custom (Design System Existente):** La IA debe leer el sistema del cliente y adherirse estrictamente a él, sin inyectar creatividad no solicitada.
+La IA debe:
+1. **Consultar y relevar la estética:** Interrogar de forma obligatoria al usuario sobre sus definiciones estéticas, líneas de arte, estilos deseados y características visuales claves antes de definir cualquier artefacto visual.
+2. **Capturar la dirección de diseño:** Analizar las respuestas del usuario o el código de UI preexistente para mapear la atmósfera visual deseada.
+3. **Respetar los sistemas existentes:** Si ya existe un sistema de diseño o biblioteca de componentes en uso, la IA debe adherirse estrictamente a sus reglas y documentar las variables correspondientes sin introducir cambios no solicitados.
+4. **Traducir a especificaciones técnicas:** Documentar la dirección acordada en tokens de diseño dentro del `DESIGN.md` para garantizar la consistencia en el código.
+5. **Presentar resumen de carga y actualización:** Cada vez que el agente escriba por primera vez o realice una actualización en `DESIGN.md`, debe entregar obligatoriamente al usuario en el chat un resumen claro y estructurado de los tokens, componentes y cambios que se acaban de guardar.
 
 ---
 
 ## ⚡ Entregable Estrella: DESIGN.md (Agent-First Contract)
-Este archivo es obligatorio y debe cumplir con el **[Protocolo 36] (Taste Design)** para evitar resultados genéricos. Debe contener:
+Este archivo es obligatorio y debe cumplir con el **[Momento 0] (Design Intelligence)** para evitar resultados genéricos. Debe contener:
 1. **Design Tokens (YAML):** Colores primarios, secundarios, estados, escalas de espaciado y tipografía.
 2. **CSS Variables Mapping:** Definición de variables para implementación directa.
 3. **Component Specs:** Reglas de redondeo (radius), sombras y bordes para componentes core.

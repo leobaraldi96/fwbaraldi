@@ -22,11 +22,11 @@ Antes de generar el sistema de diseño, debes verificar si el proyecto ya está 
 5. **Mapeo Obligatorio:** Registra estas variables en la sección de sincronización para asegurar consistencia técnica y evitar reescribir estilos.
 
 ### Paso 2: Alineación Estética y Calibración (Taste Alignment & Intake)
-*El framework es estéticamente agnóstico y no debe imponer una línea de diseño predefinida.* Debes solicitar activamente el input del usuario o sugerir una calibración basada en el CSS y las Vistas Semilla detectadas:
-1. **Intake del Usuario:** Pregunta en el chat qué estética o "vibe" busca el usuario, o si prefiere mantener y documentar estrictamente la línea estética de las Vistas Semilla indicadas.
-2. **Calibrar el Espectro de Gusto (Taste Spectrum):** Define con el usuario los valores (1-10) del proyecto (Density, Variance, Motion).
-3. **Neutralidad Tipográfica y de Color:** No impongas tipografías ni colores. Si se detectó una tipografía o paleta en la Vista Semilla, incorpórala de inmediato. Si no hay estilos previos, sugiere opciones premium acordes al segmento.
-4. **Mapeo de Paleta y Estructura:** Diseña los tokens de color asignando nombres descriptivos coherentes con los HEX/OKLCH existentes. Elimina el uso de negros puros (`#000000`) si buscas un look moderno y premium.
+*El framework es estéticamente agnóstico y no debe imponer una línea de diseño predefinida.* Debes solicitar activamente el input del usuario:
+1. **Intake del Usuario (Consulta Estética Obligatoria):** Pregunta obligatoriamente en el chat cuáles son las definiciones estéticas, líneas de arte, estilos deseados y características visuales clave que el usuario visualiza para el proyecto, o si prefiere mantener y documentar estrictamente la línea estética de las Vistas Semilla indicadas.
+2. **Calibrar el Espectro de Gusto (Taste Spectrum):** Define con el usuario los valores (1-10) del proyecto (Density, Variance, Motion) para guiar la atmósfera visual.
+3. **Neutralidad Tipográfica y de Color:** No impongas tipografías ni colores de forma unilateral. Si se detectó una tipografía o paleta en la Vista Semilla, incorpórala de inmediato. Si no hay estilos previos, sugiere opciones premium acordes al segmento una vez recibida la respuesta de la consulta de estética.
+4. **Mapeo de Paleta y Estructura:** Diseña los tokens de color asignando nombres descriptivos coherentes con los HEX/OKLCH existentes.
 
 ---
 
@@ -136,4 +136,6 @@ components:
 - **Lenguaje Obligatorio:** Usa terminología de diseño descriptiva y natural. Prohibido usar solo jerga técnica sin traducción ("rounded-xl").
 - **Explicar el Por Qué:** Siempre explica la razón detrás de los elementos de diseño, no solo el "qué".
 - **Validación Técnica Obligatoria (Linter CLI):** Tras generar o actualizar el `DESIGN.md`, el Agente **debe** ejecutar localmente el linter oficial: `npx @google/design.md lint docs-fwbaraldi/DESIGN.md` para garantizar la compatibilidad semántica, verificar contrastes WCAG y corregir cualquier error estructural reportado.
+- **Resumen en el Chat (Mandatorio ante cada escritura o actualización):** Al finalizar la generación o cualquier actualización del `DESIGN.md`, el Agente **debe entregar obligatoriamente en el chat un resumen detallado y estructurado** de lo que se cargó, los tokens definidos (paleta, fuentes) y los cambios específicos realizados frente a la versión anterior.
 - **Engram Save:** Al finalizar la generación del archivo y su verificación, lanza un `mem_save` con el título *"Establecido el DESIGN.md"* y el tag `visual-design-system`.
+

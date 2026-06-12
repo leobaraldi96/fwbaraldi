@@ -264,6 +264,10 @@ Para evitar interfaces fragmentadas o código redundante e insostenible, la IA d
 4.  **Alineación Proactiva de Voz y Contenido (Copy & Voice Lock):**
     - Al generar maquetados, layouts, prototipos o código de interfaz frontend (HTML, CSS, Vue, React, etc.), la IA **debe** verificar proactivamente la existencia de `docs-fwbaraldi/VOICE.md` o directivas en `docs-fwbaraldi/UXW/`.
     - Si existen, queda prohibida la inserción de textos genéricos, "Lorem Ipsum" o copys sueltos no alineados. La IA debe adaptar los copys al estándar de voz definido y ofrecer esta alineación preguntando explícitamente en el chat: *"He detectado que tenemos definidas directivas de voz en VOICE.md. ¿Querés que alinee automáticamente los copys de la interfaz a este estándar al generar el código?"*.
+5.  **Validación Obligatoria Pre-entrega (QA de Diseño y Voz):**
+    - Al crear una vista o componente nuevo, **está estrictamente prohibido finalizar la tarea o darla por completada** hasta que no se realice de manera automática un check de alineación con el `docs-fwbaraldi/DESIGN.md` (si ya existe) y `docs-fwbaraldi/VOICE.md` (si ya existe).
+    - Esta validación debe contrastar que los tokens de color, espaciado fluidos (unidades relativas `rem`) y tipografía se alineen exactamente con el `DESIGN.md`, y que la redacción, ortografía y microcopy sigan las directrices del `VOICE.md` (Sentence case obligatorio en español y anti-slop).
+    - Se debe notificar y detallar explícitamente al usuario en el chat que este proceso de QA ha sido realizado de forma exitosa antes de entregar la salida.
 
 ---
 
@@ -281,6 +285,7 @@ Antes de declarar un "Done", la IA debe verificar:
 - [ ] ¿He verificado que los caracteres especiales (emojis, tildes) no se corrompieron?
 - [ ] ¿Las nuevas vistas y componentes heredan de forma 100% consistente la línea de diseño, estilos y tokens ya establecidos?
 - [ ] ¿He reutilizado los componentes comunes existentes (ej: nav, footer, botones) en lugar de duplicar código o crear variantes independientes sin permiso?
+- [ ] Si existen `DESIGN.md` o `VOICE.md` en `docs-fwbaraldi/`, ¿he realizado de forma mandatoria y automática la validación y check de alineación de la vista o código entregado antes de finalizar la tarea?
 
 ---
 *Framework Baraldi v2.26.14 · Core Guardrails*
