@@ -1,6 +1,6 @@
 # Framework Baraldi (FWB) 🤖⚡
 
-![Version](https://img.shields.io/badge/version-2.26.14-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-yellow) ![Memory](https://img.shields.io/badge/memory-Engram--Powered-orange) ![Type](https://img.shields.io/badge/type-Agentic--Orchestrator-blueviolet)
+![Version](https://img.shields.io/badge/version-2.26.15-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-yellow) ![Memory](https://img.shields.io/badge/memory-Engram--Powered-orange) ![Type](https://img.shields.io/badge/type-Agentic--Orchestrator-blueviolet)
 
 > [!NOTE]
 > **¿Hola, no entendés un carajo de lo que hay acá?** 👉 **[¡Siga por aquí! (Guía de bienvenida fácil para humanos)](./NO_ENTIENDO_NADA.md)** 🚀
@@ -75,7 +75,7 @@ Ninguno de los frameworks anteriores tiene estas características juntas:
 9. **El problema del nivel de madurez resuelto con estructura**: El diseñador académico conoce los modelos teóricos pero no sabe cómo adaptarlos a la velocidad actual. El senior experimentado sabe qué hacer de forma empírica pero no tiene un modelo que lo sostenga estructuradamente. El Framework **le da al académico la experiencia embebida en el proceso, y al senior le da el modelo que le faltaba**.
 10. **Proactividad de Soporte**: El sistema propone proactivamente formatos de alta fidelidad (Landings/Dashboards HTML) cuando la densidad de datos lo requiere, eliminando la pasividad del agente.
 11. **Contratos Agénticos (VOICE.md & DESIGN.md)**: El framework genera archivos de "Fuente de Verdad" diseñados específicamente para ser leídos por otras IAs, garantizando que el tono, la voz y la identidad visual se mantengan consistentes en cada línea de código generada.
-12. **Verificación de Versión Proactiva (v2.26.14)**: El Framework verifica automáticamente tu versión local para asegurar que el motor metodológico esté siempre al día.
+12. **Verificación de Versión Proactiva (v2.26.15)**: El Framework verifica automáticamente tu versión local para asegurar que el motor metodológico esté siempre al día.
 
 ---
 
@@ -148,7 +148,7 @@ A nivel de infraestructura (LLM Ops), el Framework Baraldi maximiza el rendimien
 
 | Métrica | Valor | Estado |
 |---|---|---|
-| **Eficiencia Actual (v2.26.14)** | **95.20%** | 🟢 Full Release (07/07 Etapas) |
+| **Eficiencia Actual (v2.26.15)** | **95.20%** | 🟢 Full Release (07/07 Etapas) |
 | **Engram Engine** | **v1.15.11** | 🟢 Native Project Sync |
 
 *Aclaración Técnica: Al cargar en memoria viva solo los hallazgos estrictamente necesarios para la toma de decisión del momento, reducimos el ruido contextual, manteniendo la IA enfocada, rápida y económicamente viable.*
@@ -174,7 +174,7 @@ Si sos un modelo de IA o estás configurando un agente, **LEER PRIMERO:**
 
 ---
 
-## 🧰 El Arsenal de Élite (v2.26.14)
+## 🧰 El Arsenal de Élite (v2.26.15)
 
 La Toolbox del Framework Baraldi no es una simple carpeta de utilidades; es un conjunto de **protocolos de alto impacto** diseñados para resolver situaciones críticas de producto, negocio y política organizacional.
 
@@ -208,18 +208,18 @@ fwbaraldi/
 │   │   ├── 00_operational_hygiene/         ← Protocolos de ramas y handoff
 │   │   ├── 00_project_health_audit/        ← Framework Doctor (Auditoría de salud)
 │   │   ├── 00_skill_evaluation/            ← Skill Judge (Filtro de calidad)
-│   │   └── 00_system_awareness/            ← Consciencia Sistémica y Memoria (v2.26.14)
+│   │   └── 00_system_awareness/            ← Consciencia Sistémica y Memoria (v2.26.15)
 │   │
 │   ├── methodology/                        ← El núcleo del proceso (End-to-End)
-│   │   ├── 01_problem_framing/             ← Hardened v2.26.14
-│   │   ├── 02_system_analysis/             ← Hardened v2.26.14
-│   │   ├── 03_product_logic/               ← Hardened v2.26.14
-│   │   ├── 04_information_architecture/    ← Hardened v2.26.14
-│   │   ├── 05_interaction_design_ux/       ← Hardened v2.26.14
-│   │   ├── 06_visual_design_ui/            ← Hardened v2.26.14
-│   │   └── 07_handover_qa/                 ← Hardened v2.26.14
+│   │   ├── 01_problem_framing/             ← Hardened v2.26.15
+│   │   ├── 02_system_analysis/             ← Hardened v2.26.15
+│   │   ├── 03_product_logic/               ← Hardened v2.26.15
+│   │   ├── 04_information_architecture/    ← Hardened v2.26.15
+│   │   ├── 05_interaction_design_ux/       ← Hardened v2.26.15
+│   │   ├── 06_visual_design_ui/            ← Hardened v2.26.15
+│   │   └── 07_handover_qa/                 ← Hardened v2.26.15
 │   │
-│       └── toolbox/                            ← Tu arsenal estratégico (v2.26.14)
+│       └── toolbox/                            ← Tu arsenal estratégico (v2.26.15)
 │           ├── advanced_prioritization_protocol/
 │           ├── business_strategy_and_growth_protocol/
 │           ├── concept_synthesis_and_ideation_protocol/
@@ -245,55 +245,57 @@ fwbaraldi/
 
 ---
 
-## 🚀 Quick Start / Instalación (v2.26.14)
+## 🚀 Quick Start / Instalación (v2.26.15)
 
-> ⚠️ **IMPORTANTE:** A partir de la versión 2.26.14 (Modelo Cero-Copia), el Framework Baraldi dejó de ser un simple texto para copiar y pegar. Ahora es un **Orquestador Agéntico**. Para usarlo, tu IA debe soportar el uso de herramientas MCP y lectura de carpetas locales (Ej: **Antigravity de Google, Claude Code, Cursor, Windsurf**, etc.).
+> ⚠️ **IMPORTANTE:** A partir de la versión 2.26.15 (Modelo Cero-Copia), el Framework Baraldi opera como un **Único Orquestador Agéntico Global (`baraldi-framework`)**. Todas las etapas y la toolbox viven encapsuladas internamente para mantener limpio el entorno y evitar la fragmentación de habilidades.
 
-### Instalación Desatendida (Recomendado)
-Hemos construido un instalador interactivo (`baraldi-init`) que se encarga de todo el trabajo pesado. Solo necesitas tener **Node.js** instalado en tu computadora.
+### Instalación Automática (Recomendado)
+Hemos construido un instalador CLI (`fwbaraldi` / `baraldi-init`) que se encarga de todo el trabajo pesado. Solo necesitas tener **Node.js** instalado en tu computadora.
 
-Abrí tu terminal y ejecutá (directo desde este repositorio):
+Abrí tu terminal y ejecutá:
 ```bash
 npx github:leobaraldi96/fwbaraldi
 ```
+*(Para instalación desatendida automática sin preguntas, agrega el flag `-y`: `npx github:leobaraldi96/fwbaraldi -y`)*
 
-**El instalador CLI interactivo se ocupará de:**
-1. Preguntarte qué Agente usas (soporta *Antigravity*, *Claude Code* o instalación local).
-2. Descargar de forma segura el binario compilado de **Engram** específico para tu OS.
-3. Auto-copiar el Framework a la carpeta `skills` de tu Agente.
-4. Imprimirte el bloque de código exacto para tu `mcp_config.json`.
+**El instalador se ocupa automáticamente de:**
+1. Descargar e instalar el binario oficial del motor **Engram** en `~/.fwbaraldi/bin/`.
+2. Desplegar el framework como **1 única Skill Global** en `~/.gemini/config/skills/baraldi-framework/` (limpiando automáticamente cualquier sub-skill huérfana).
+3. Configurar de forma segura el servidor MCP `engram` en `~/.gemini/config/mcp_config.json`.
+4. Vincular las reglas operativas globales en `~/.gemini/config/AGENTS.md`.
+
+---
 
 ### Paso 2: Ejecución
 1. Abre tu terminal o IDE en la carpeta de tu proyecto.
 2. Inicia tu Agente (Ej: [Antigravity](https://antigravity.google/)).
 3. Escribe en el chat: *"Iniciemos un proyecto nuevo usando el Framework Baraldi"*.
 
-### 🔄 ¿Cómo actualizar tu proyecto? (Mantenimiento)
+---
+
+### 🔄 ¿Cómo actualizar o alinear tu proyecto? (Mantenimiento)
 Si ya tienes un proyecto en curso y quieres asegurarte de que tus carpetas y archivos sigan los últimos estándares (nuevas etapas, versiones, etc.), tienes dos formas de hacerlo:
 
-#### Opción A: Pedirle a la IA (Recomendado para Diseñadores) ⚡
-No necesitas copiar códigos. Simplemente escribe esto en el chat de tu Agente:
+#### Opción A: Pedirle a la IA (Recomendado) ⚡
+Simplemente escribe esto en el chat de tu Agente:
 > *"Por favor, ejecuta el script de alineación (baraldi-align) para sincronizar mi proyecto con la última versión del framework."*
 
-**Tu Agente se encargará de:**
-1. Buscar dónde está instalado el framework.
-2. Ejecutar la auditoría de tu carpeta `docs-fwbaraldi/`.
-3. Informarte qué falta y pedirte permiso para actualizarlo automáticamente.
-
 #### Opción B: Uso de Terminal (Manual)
-Si te sientes cómodo usando la terminal, puedes ejecutar el comando directo. 
-
+Si tienes el framework instalado globalmente:
+```bash
+baraldi-align
+```
+O directamente con Node:
 **En Windows (PowerShell):**
 ```powershell
-node "$env:USERPROFILE\.gemini\antigravity\skills\baraldi-framework\scripts\align.js"
+node "$env:USERPROFILE\.gemini\config\skills\baraldi-framework\scripts\align.js"
 ```
-
 **En macOS/Linux:**
 ```bash
-node ~/.fwbaraldi/scripts/align.js
+node ~/.gemini/config/skills/baraldi-framework/scripts/align.js
 ```
 
-Este proceso auditará tus archivos Markdown, actualizará los números de versión y creará las carpetas de las nuevas etapas que hayamos añadido en esta versión.
+Este proceso auditará tus artefactos en `docs-fwbaraldi/`, verificará la identidad blindada de Engram y mantendrá tu entorno perfectamente higienizado.
 
 ---
 
@@ -330,4 +332,4 @@ El Framework Baraldi es el resultado de más de 25 años de experiencia en el di
 - 📧 **Email:** [leobaraldi96@gmail.com](mailto:leobaraldi96@gmail.com)
 
 ---
-*Framework Baraldi v2.26.14 · Desarrollado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.26.15 · Desarrollado y mantenido por Leo Baraldi.*

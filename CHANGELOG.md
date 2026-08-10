@@ -5,6 +5,20 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.26.15] - 2026-08-10
+
+### 🛡️ Blindaje Anti-Fragmentación del Instalador y Orquestador Único
+- **Single Skill Root Container:** Estandarización obligatoria del despliegue del framework como una **única skill global orquestadora** (`baraldi-framework`), prohibiendo la dispersión de sub-habilidades en la raíz del entorno.
+- **Instalador Auto-Higienizante (`scripts/install.js`):**
+  - Corrección de la ruta estándar hacia `~/.gemini/config/skills/baraldi-framework`.
+  - Limpieza automática (`cleanupFragmentedSkills`) de sub-skills huérfanas en la raíz global.
+  - Autoconfiguración atómica de `mcp_config.json` (nodo `engram`) y `AGENTS.md`.
+  - Resiliencia ante bloqueos de archivos `EBUSY`/`EPERM` en Windows cuando el motor Engram está en ejecución.
+  - Soporte para banderas no-interactivas (`--yes`, `-y`, `--agent`, `--silent`, `--help`).
+- **Guardián de Higiene en Alineación (`scripts/align.js`):** Chequeo y reporte preventivo de sub-skills fragmentadas durante la auditoría de proyectos con limpieza asistida.
+- **Directivas Mandatorias para Agentes de IA (`DOCUMENTACION_IA.md`):** Inyección del protocolo de instalación unificada para que cualquier IA que lea el repositorio de GitHub instale el framework bajo el patrón de contenedor único.
+- **Actualización Documental Core:** Sincronización de `README.md` y `ARQUITECTURA_CORE.md` con el nuevo flujo de instalación y arquitectura de skill unificada.
+
 ## [2.26.14] - 2026-06-07
 
 ### ⚡ Soporte para Vistas Semilla de Referencia (Seed Views Sync)

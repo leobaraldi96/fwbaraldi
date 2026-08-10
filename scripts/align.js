@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from 'fs';
 import path from 'path';
+import os from 'os';
 import chalk from 'chalk';
 import ora from 'ora';
 import { select, confirm } from '@inquirer/prompts';
@@ -13,6 +14,35 @@ const frameworkRoot = path.join(__dirname, '..');
 // Cargar versión oficial del framework
 const pkg = JSON.parse(fs.readFileSync(path.join(frameworkRoot, 'package.json'), 'utf8'));
 const FRAMEWORK_VERSION = pkg.version;
+
+const KNOWN_FWB_SUB_SKILLS = [
+    '00_core_guardrails',
+    '00_kalman_guardrail',
+    '00_operational_hygiene',
+    '00_project_health_audit',
+    '00_skill_evaluation',
+    '00_system_awareness',
+    '01_problem_framing',
+    '02_system_analysis',
+    '03_product_logic',
+    '04_information_architecture',
+    '05_interaction_design_ux',
+    '06_visual_design_ui',
+    '07_handover_qa',
+    'advanced_prioritization_protocol',
+    'business_strategy_and_growth_protocol',
+    'concept_synthesis_and_ideation_protocol',
+    'data_driven_design_and_experimentation',
+    'personal_impact_report',
+    'pricing_and_monetization_protocol',
+    'product_health_qbr_protocol',
+    'product_launch_protocol',
+    'product_master_matrix_protocol',
+    'responsive_and_global_readiness_protocol',
+    'sales_enablement_and_pitch_protocol',
+    'stakeholder_narrative_strategy',
+    'strategic_product_roadmap'
+];
 
 const MANDATORY_FOLDERS = [
     '01_Problem_Framing',
@@ -51,8 +81,21 @@ async function runAlign() {
         filesToUpdate: [],
         versionMismatches: [],
         engramConfig: false,
-        gitIgnoreUpdate: false
+        gitIgnoreUpdate: false,
+        fragmentedSkills: []
     };
+
+    // -1. Verificar Higiene Global de Skills (Anti-Fragmentación)
+    const homeDir = os.homedir();
+    const globalSkillsDir = path.join(homeDir, '.gemini', 'config', 'skills');
+    if (fs.existsSync(globalSkillsDir)) {
+        const globalEntries = fs.readdirSync(globalSkillsDir, { withFileTypes: true });
+        for (const entry of globalEntries) {
+            if (entry.isDirectory() && entry.name !== 'baraldi-framework' && KNOWN_FWB_SUB_SKILLS.includes(entry.name)) {
+                report.fragmentedSkills.push(entry.name);
+            }
+        }
+    }
 
     // 0. Verificar Identidad Blindada (Engram Config)
     const engramDir = path.join(projectPath, '.engram');
@@ -116,12 +159,19 @@ async function runAlign() {
     spinner.stop();
 
     // Mostrar Reporte
-    if (report.foldersToAdd.length === 0 && report.filesToUpdate.length === 0 && report.versionMismatches.length === 0 && !report.engramConfig && !report.gitIgnoreUpdate) {
-        console.log(chalk.green.bold('\n✅ ¡Tu proyecto está perfectamente alineado con la v' + FRAMEWORK_VERSION + '!\n'));
+    if (report.foldersToAdd.length === 0 && report.filesToUpdate.length === 0 && report.versionMismatches.length === 0 && !report.engramConfig && !report.gitIgnoreUpdate && report.fragmentedSkills.length === 0) {
+        console.log(chalk.green.bold('\n✅ ¡Tu proyecto y entorno están perfectamente alineados con la v' + FRAMEWORK_VERSION + '!\n'));
         process.exit(0);
     }
 
     console.log(chalk.bold.blue('📋 Resumen de cambios sugeridos:'));
+
+    if (report.fragmentedSkills.length > 0) {
+        console.log(chalk.yellow('\n🧹 Higiene de Entorno Global (Anti-Fragmentación):'));
+        console.log(chalk.dim('  Se detectaron sub-skills sueltas en ~/.gemini/config/skills/.'));
+        console.log(chalk.dim('  El framework debe existir únicamente como 1 skill global unificada (baraldi-framework).'));
+        report.fragmentedSkills.forEach(s => console.log(`  - ${s} (Consolidar en baraldi-framework)`));
+    }
     
     if (report.engramConfig) {
         console.log(chalk.cyan('\n🔐 Seguridad e Identidad:'));
@@ -155,11 +205,21 @@ async function runAlign() {
     }
 
     console.log('');
-    const proceed = await confirm({ message: '¿Todo listo? ¿Deseas aplicar estos alineamientos en tus archivos ahora?' });
+    const proceed = await confirm({ message: '¿Todo listo? ¿Deseas aplicar estos alineamientos ahora?' });
 
     if (proceed) {
         const applySpinner = ora('Aplicando alineamientos...').start();
         
+        // -1. Limpiar sub-skills fragmentadas si las hubiera
+        if (report.fragmentedSkills.length > 0 && fs.existsSync(globalSkillsDir)) {
+            report.fragmentedSkills.forEach(subSkill => {
+                const subSkillPath = path.join(globalSkillsDir, subSkill);
+                try {
+                    fs.rmSync(subSkillPath, { recursive: true, force: true });
+                } catch (e) {}
+            });
+        }
+
         // 0. Aplicar Identidad Blindada
         if (report.engramConfig) {
             if (!fs.existsSync(engramDir)) fs.mkdirSync(engramDir, { recursive: true });

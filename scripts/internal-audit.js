@@ -4,7 +4,11 @@ import chalk from 'chalk';
 
 const rootDir = process.cwd();
 
-console.log(chalk.bold.blue('\n🔍 Iniciando Auditoría Interna del Framework Baraldi (v2.26.14)\n'));
+// 1. Check Versiones
+const pkg = JSON.parse(fs.readFileSync(path.join(rootDir, 'package.json'), 'utf8'));
+const currentVersion = pkg.version;
+
+console.log(chalk.bold.blue(`\n🔍 Iniciando Auditoría Interna del Framework Baraldi (v${currentVersion})\n`));
 
 let issues = 0;
 
@@ -16,10 +20,6 @@ function reportIssue(msg) {
 function reportSuccess(msg) {
     console.log(chalk.green(`  ✅ [OK] ${msg}`));
 }
-
-// 1. Check Versiones
-const pkg = JSON.parse(fs.readFileSync(path.join(rootDir, 'package.json'), 'utf8'));
-const currentVersion = pkg.version;
 
 // Check README
 const readme = fs.readFileSync(path.join(rootDir, 'README.md'), 'utf8');

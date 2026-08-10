@@ -1,6 +1,6 @@
 # Arquitectura Core del Framework Baraldi
 
-> Este documento detalla la estructura lógica, la arquitectura tecnológica y el ciclo de vida de adopción del **Framework Baraldi** (v2.26.14). El framework ha evolucionado de un repositorio de prompts a un **Ecosistema Agéntico Simbiótico** donde la infraestructura tecnológica y la maestría humana convergen.
+> Este documento detalla la estructura lógica, la arquitectura tecnológica y el ciclo de vida de adopción del **Framework Baraldi** (v2.26.15). El framework ha evolucionado de un repositorio de prompts a un **Ecosistema Agéntico Simbiótico** donde la infraestructura tecnológica y la maestría humana convergen.
 
 ---
 
@@ -66,8 +66,8 @@ flowchart TD
     classDef localfile fill:#1a3022,stroke:#28a745,stroke-width:1px,color:#fff
 ```
 
-* **Motor Global (Skill Directory):** Vive oculto en tu gestor de IA (Antigravity). Contiene el ADN de comportamiento y las instrucciones puras.
-* **Memoria Sistémica (Engram MCP):** Actúa como la base de datos centralizada. En lugar de guardar archivos `.md` de memoria repartidos por tu PC, todos los hallazgos y en qué etapa está un proyecto viven aquí. El protocolo **Identidad Blindada (Project Locking)** mediante `.engram/config.json` garantiza que la memoria de diferentes proyectos nunca se cruce.
+* **Motor Global (Single Skill Container):** Vive instalado como una **única skill orquestadora** en `~/.gemini/config/skills/baraldi-framework`. El archivo raíz `SKILL.md` actúa como punto de entrada y orquestador dinámico que carga bajo demanda las sub-habilidades (`skills/core/`, `skills/methodology/`, `skills/toolbox/`), evitando la polución o fragmentación en la interfaz del entorno.
+* **Memoria Sistémica (Engram MCP):** Actúa como la base de datos centralizada SQLite. En lugar de guardar archivos `.md` de memoria repartidos por tu PC, todos los hallazgos y en qué etapa está un proyecto viven aquí. El protocolo **Identidad Blindada (Project Locking)** mediante `.engram/config.json` garantiza que la memoria de diferentes proyectos nunca se cruce.
 * **Workspace Local:** Tu carpeta. El Agente tiene orden estricta de dirigir todo entregable final a un folder ordenado y semántico (`docs-fwbaraldi/`).
 
 ---
@@ -100,11 +100,11 @@ sequenceDiagram
     
     note over IA,Humano: FASE DE LÓGICA SISTÉMICA (Etapa 03)
     IA->>IA: Ejecuta Product Logic (Brain Integration)
-    IA->>FS: Genera Blueprint y Business Rules Matrix (v2.26.14)
+    IA->>FS: Genera Blueprint y Business Rules Matrix (v2.26.15)
 ```
 
 ### 3.1 El Rol de la Etapa 03 (Product Logic)
-Tras completar la actualización v2.26.14, la Etapa 03 se consolida como el **"Cerebro del Producto"**. Su función es blindar la viabilidad funcional antes de que el equipo de diseño entre a la fase visual, integrando el estándar **UX-DNA (Experience Anatomy)**. 
+Tras completar la actualización v2.26.15, la Etapa 03 se consolida como el **"Cerebro del Producto"**. Su función es blindar la viabilidad funcional antes de que el equipo de diseño entre a la fase visual, integrando el estándar **UX-DNA (Experience Anatomy)**. 
 
 **Entregables clave al usuario:**
 - **Product Logic Orchestration:** Matriz de Actores, Matriz de Orquestación de Backlog y Service Blueprint.
