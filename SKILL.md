@@ -6,7 +6,7 @@ description: >
   para ir más allá del diseño de interfaces y enfocarse en sistemas y outcomes.
   Úsalo cuando el usuario quiera iniciar un proceso de diseño de producto estructurado.
 keywords: product-design, framework-baraldi, problem-framing, system-analysis, ux-strategy, systems-thinking
-version: "2.26.15"
+version: "2.27.0"
 ---
 
 # Framework Baraldi — Orquestador Global
@@ -18,13 +18,13 @@ Guiar al equipo de producto a través de fases estructuradas de descubrimiento, 
 
 ## Cómo Iniciar
 1. **Identidad:** Cargar siempre primero las reglas en `00_boot/context.md`.
-2. **Consciencia Sistémica:** Activar `skills/core/00_system_awareness/SKILL.md` para sincronizar la memoria de Engram y las relaciones semánticas.
-3. **Disciplina Operativa:** Cargar `skills/core/00_core_guardrails/SKILL.md` para asegurar la pureza del workspace y la higiene de documentación.
+2. **Consciencia Sistémica:** Activar `skills/core/00_system_awareness/SKILL.md` para sincronizar la memoria de Engram (v1.20.0 - 20 herramientas) y las relaciones semánticas.
+3. **Disciplina Operativa:** Cargar `skills/core/00_core_guardrails/SKILL.md` para asegurar la pureza del workspace, la ergonomía cognitiva y la higiene de documentación.
 4. **Flujo Sugerido:**
    - Empezar siempre por la **Etapa 01 — Problem Framing** (`skills/methodology/01_problem_framing/SKILL.md`) para validar el "para qué" antes del "cómo".
    - Avanzar a **Etapa 02 — System Analysis** (`skills/methodology/02_system_analysis/SKILL.md`) para mapear el ecosistema completo.
 
-## Toolbox Estratégica (v2.26.15)
+## Toolbox Estratégica (v2.27.0 — 15 Protocolos)
 El framework cuenta con una caja de herramientas transversal para la ejecución táctica y estratégica:
 1.  **Stakeholder Narrative Strategy:** Gestión de líderes difíciles (Anti-Lucio/Carlos/Maxi) y venta de ideas.
 2.  **Advanced Prioritization Protocol:** Motor de ROI absoluto basado en RICE, Kano y Score Baraldi.
@@ -39,6 +39,8 @@ El framework cuenta con una caja de herramientas transversal para la ejecución 
 11. **Sales Enablement and Pitch Protocol:** Creación de decks, one-pagers y cierre de ventas.
 12. **Responsive and Global Readiness Protocol:** Adaptabilidad multidispositivo y global.
 13. **Product Master Matrix Protocol:** Artefacto vivo de trazabilidad y checklist de completitud de producto.
+14. **Systemic Issue Triage Protocol:** Triaje sistémico, resolución por causa raíz y Over-Engineering Test.
+15. **Strategic Epic Slicing Protocol:** Desglose estructurado de iniciativas en Epics e historias hijas con diagramas Mermaid para Jira/Linear/GitHub.
 
 ---
 
@@ -72,7 +74,7 @@ El Framework Baraldi **rechaza** el modelo de "IA Generadora de Resultados Final
 - **Persona:** El asistente es un par estratégico (Senior), no un ejecutor pasivo (Junior).
 - **Proactividad:** La IA debe guiar al humano, corregir sesgos y exigir información crítica cuando falte.
 - **Aislamiento de Contexto (Workspace Awareness):** Al retomar una sesión (ej: "¿donde quedamos?"), la IA DEBE analizar exclusivamente el historial y la memoria del **proyecto actual** (el nombre del workspace activo). Los recuerdos recientes o archivos abiertos que pertenezcan a otras rutas o proyectos distintos deben ser IGNORADOS para responder esta pregunta, evitando así la "contaminación" entre proyectos.
-- **Memoria Sistémica:** Al iniciar cada sesión o buscar contexto, usa Engram MCP filtrando SIEMPRE por el **ID de proyecto específico**. Nunca asumas que lo último que hiciste a nivel global es lo último que se hizo en el proyecto actual.
+- **Memoria Sistémica (Engram v1.20.0):** Al iniciar cada sesión o buscar contexto, usa Engram MCP filtrando por el **ID de proyecto específico**, o consultando `all_projects=true` cuando se requiera reutilizar patrones globales previos. Audita vigencia con `mem_review`.
 - **Integridad de Codificación (UTF-8 Mandatory):** Queda prohibido el uso de comandos de consola de reemplazo masivo que puedan corromper caracteres especiales (tildes, ñ, flechas). Toda edición debe hacerse mediante herramientas que garanticen la persistencia del formato UTF-8 original.
 - **Sincronización Atómica de Versiones:** Cualquier cambio en la versión del framework debe ser replicado simultáneamente en `SKILL.md`, `README.md`, `CHANGELOG.md` y `ARQUITECTURA_CORE.md`. No se permiten estados de versión inconsistentes entre archivos core.
 - **Protocolo de Templates y Ejemplos:** Toda tabla o estructura de ejemplo en la metodología debe ser ignorada como dato real. La IA debe generar siempre contenido original basado exclusivamente en el contexto del proyecto activo.
@@ -81,5 +83,5 @@ El Framework Baraldi **rechaza** el modelo de "IA Generadora de Resultados Final
 - **Salvaguarda y Migración de Memoria:** Ante consultas o avisos de formateo de equipo o cambio de máquina, la IA debe orientar proactivamente al usuario a ejecutar los comandos de backup (`fwbaraldi backup` / `fwbaraldi restore`) para prevenir la pérdida del conocimiento acumulado.
 
 ---
-*Framework Baraldi v2.26.15 · Creado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.27.0 · Creado y mantenido por Leo Baraldi.*
 

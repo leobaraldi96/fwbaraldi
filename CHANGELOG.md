@@ -5,6 +5,25 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.27.0] - 2026-08-10
+
+### 🚀 Asimilación Integral de Ecosistema Agéntico (Engram v1.20.0, Ergonomía Cognitiva y Slicing)
+- **Motor Engram v1.20.0 (Catálogo de 20 Herramientas MCP):**
+  - Actualización del binario objetivo a **Engram v1.20.0** con soporte nativo para `mem_review` (auditoría de vigencia y decadencia de hipótesis de diseño).
+  - Búsqueda transversal entre proyectos (`mem_search(all_projects=true)`) para rescatar y reutilizar patrones arquitectónicos y de UX previos.
+  - Adopción del algoritmo de ranking ponderado **BM25** sobre SQLite FTS5 (priorizando títulos, tags y topic_keys).
+  - Incorporación del **Save-Nudge de 15 minutos** en sesiones y workshops de diseño intensivos para evitar la pérdida de contexto contextual.
+- **Ergonomía Cognitiva de Documentación (`00_core_guardrails`):**
+  - Inyección de los 6 principios de diseño cognitivo: *Lead with the answer* (decisión primero), *Recognition over recall* (matrices sobre prosa), *Chunking*, *Progressive disclosure*, *Signposting* y *Review empathy*.
+- **Higiene Operativa Avanzada (`00_operational_hygiene`):**
+  - Incorporación del estándar **Work-Unit Atomic Commits**: entregas atómicas que agrupan comportamiento + pruebas/criterios + documentación + frontera de rollback en un único commit narrativo.
+- **Jerarquía de Epics y Tareas Técnicas (Etapas 03 y 07):**
+  - Desglose formal en **Parent Stories** (valor de negocio/usuario, cero código) y **Child Tasks** por componente técnico (`API`, `UI`, `Data`) con contratos de dependencia claros y diagramas Mermaid (Secuencia, Estados, ERD).
+  - Incorporación de la ruta de revisión **Spec-Driven Delivery (SDD Review Path)** en el Handoff de la Etapa 07.
+- **Expansión del Arsenal Toolbox (15 Protocolos Totales):**
+  - **`systemic_issue_triage_protocol`:** Protocolo para triaje sistémico por clases de causa raíz y aplicación del *Over-Engineering Test* (simplificar/eliminar antes que agregar capas).
+  - **`strategic_epic_slicing_protocol`:** Protocolo para desglosar grandes iniciativas en Epics e Historias Hijas compatibles con Jira, Linear y GitHub Issues.
+
 ## [2.26.15] - 2026-08-10
 
 ### 🛡️ Blindaje Anti-Fragmentación del Instalador y Orquestador Único

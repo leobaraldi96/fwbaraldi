@@ -11,7 +11,7 @@ description: >
   2. Service Blueprint (Temporal): Flujo paso a paso con línea de visibilidad.
   Keywords: product logic, actor logic, service blueprint, backstage, frontstage, línea de visibilidad.
 skill_id: product_logic_momento_1
-version: "2.26.14"
+version: "2.27.0"
 framework: Baraldi
 stage: "03 - Product Logic"
 momento: 1
@@ -111,6 +111,25 @@ Entregás un documento Markdown con esta estructura:
 ## 4. Puntos de Falla y Momentos de la Verdad
 - **Fail Points:** Donde la lógica puede romperse (ej: caída de API de pago).
 - **Moments of Truth:** Donde la respuesta del backstage define la satisfacción (ej: velocidad de validación de QR).
+
+---
+
+## 5. Desglose Estructurado de Historias y Componentes (Epic & Story Slicing)
+> Desglose en jerarquía Parent-Child para ingeniería (compatible con Jira, Linear y GitHub Issues):
+
+### Feature: [Nombre de la Característica]
+- **Parent Story (Perspectiva Usuario / PM):** *"Como [tipo de usuario], quiero [acción] para [beneficio estratégico]"*.
+- **Criterios de Aceptación (User Perspective):**
+  - [ ] El usuario puede [acción].
+  - [ ] El sistema responde visualmente con [estado].
+- **Fuera de Alcance (Out of Scope):** [Lo que NO incluye esta entrega].
+
+#### Tareas Hijas por Componente Técnico (Child Tasks):
+| # | Tarea Hija | Componente | Dependencia / Bloqueada por | Criterio Técnico |
+|---|---|---|---|---|
+| 1 | `[FEATURE] Modelo y Endpoints de Datos` | API / Backend | - | Schema SQL + validaciones |
+| 2 | `[FEATURE] Componente UI y Estados` | Frontend / UI | Tarea 1 (API) | Tokens de DESIGN.md + A11y |
+| 3 | `[FEATURE] Integración y Telemetría` | Fullstack | Tarea 2 (UI) | Eventos analíticos + tests E2E |
 
 ---
 

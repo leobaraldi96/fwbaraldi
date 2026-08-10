@@ -3,7 +3,7 @@
 > **⚠️ Este archivo es para HUMANOS (desarrolladores, configuradores, colaboradores).**
 > Los modelos de IA **no deben cargar este archivo** en el ciclo de boot — genera tokens redundantes sin aportar valor operativo. El agente carga directamente `SKILL.md` → `00_boot/context.md` → skills específicas.
 
-**AI-Augmented System Product Design · v2.26.15 · Leo Baraldi**
+**AI-Augmented System Product Design · v2.27.0 · Leo Baraldi**
 
 ---
 
@@ -21,7 +21,7 @@ README.md  →  ARQUITECTURA_CORE.md  →  CHANGELOG.md
 
 ---
 
-## 📁 Mapa del repositorio (v2.26.15)
+## 📁 Mapa del repositorio (v2.27.0)
 
 ```
 fwbaraldi/
@@ -31,22 +31,22 @@ fwbaraldi/
 │
 ├── skills/
 │   ├── core/
-│   │   ├── 00_core_guardrails/       ← Reglas de disciplina y comunicación
-│   │   ├── 00_operational_hygiene/   ← Branches, commits semánticos, handoff
+│   │   ├── 00_core_guardrails/       ← Reglas de disciplina, ergonomía cognitiva y comunicación
+│   │   ├── 00_operational_hygiene/   ← Branches, commits semánticos/work-units, handoff
 │   │   ├── 00_project_health_audit/  ← Framework Doctor (Auditoría de salud)
 │   │   ├── 00_skill_evaluation/      ← Skill Judge (Filtro de calidad)
-│   │   └── 00_system_awareness/      ← Consciencia Sistémica y Memoria (Engram)
+│   │   └── 00_system_awareness/      ← Consciencia Sistémica y Memoria (Engram v1.20.0)
 │   │
 │   ├── methodology/
-│   │   ├── 01_problem_framing/       ← Hardened v2.26.15
-│   │   ├── 02_system_analysis/       ← Hardened v2.26.15
-│   │   ├── 03_product_logic/         ← Hardened v2.26.15
-│   │   ├── 04_information_architecture/ ← Hardened v2.26.15
-│   │   ├── 05_interaction_design_ux/ ← Hardened v2.26.15
-│   │   ├── 06_visual_design_ui/      ← Hardened v2.26.15
-│   │   └── 07_handover_qa/           ← Hardened v2.26.15
+│   │   ├── 01_problem_framing/       ← Hardened v2.27.0
+│   │   ├── 02_system_analysis/       ← Hardened v2.27.0
+│   │   ├── 03_product_logic/         ← Hardened v2.27.0 (Parent/Child Slicing)
+│   │   ├── 04_information_architecture/ ← Hardened v2.27.0
+│   │   ├── 05_interaction_design_ux/ ← Hardened v2.27.0
+│   │   ├── 06_visual_design_ui/      ← Hardened v2.27.0
+│   │   └── 07_handover_qa/           ← Hardened v2.27.0 (SDD Review Path)
 │   │
-│   └── toolbox/                      ← Arsenal de 13 protocolos estratégicos
+│   └── toolbox/                      ← Arsenal de 15 protocolos estratégicos
 │
 ├── references/
 │   └── templates/
@@ -103,4 +103,4 @@ Si el usuario menciona que va a formatear su equipo, migrar de equipo o pide un 
 
 ---
 
-*Framework Baraldi v2.26.15 · DOCUMENTACION_IA.md · Referencia de Arquitectura e Instalación*
+*Framework Baraldi v2.27.0 · DOCUMENTACION_IA.md · Referencia de Arquitectura e Instalación*

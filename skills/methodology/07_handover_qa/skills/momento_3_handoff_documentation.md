@@ -69,11 +69,22 @@ El Handoff marca el fin de la construcción de diseño, pero el inicio de la **V
     - **Core Web Vitals Audit:** Verificación de LCP (carga), INP (interactividad) y CLS (estabilidad visual).
     - **Real-Device Adaptation:** Validación en dispositivos físicos de: notches/muescas, teclados virtuales, áreas táctiles y gestos nativos.
     - **Performance & TTFB:** Verificación de usabilidad y respuesta de servidor en entornos reales.
-3.  **Iteración Técnica:** Si ingeniería encuentra un bloqueador, diseño asume el compromiso de pivotar la solución manteniendo el outcome de negocio.
 4.  **Cierre de Hito (Lanzamiento):** Presencia de diseño en el testeo final con usuarios reales para validar que la implementación cumple con la North Star definida en la Etapa 01.
+
+## 📦 Parte 4: Ruta de Revisión Spec-Driven Delivery (SDD Review Path)
+Para reducir la sobrecarga cognitiva de los desarrolladores e ingenieros de QA, todo Handoff debe incluir una **Ruta de Revisión Explícita**:
+
+1. **Ruta Crítica de Revisión (Qué revisar primero):**
+   - 1º Contrato de Props y Eventos (Frontstage).
+   - 2º Reglas de Validación y Permisos RLS (Backstage).
+   - 3º Tokens y Estilos Visuales (`DESIGN.md`).
+2. **Límites de Alcance (Out of Scope):**
+   - Declarar explícitamente qué flujos o features no están cubiertos en esta entrega para evitar debates innecesarios durante el Pull Request.
+3. **Criterios de Aceptación Verificables (Definition of Done):**
+   - Checklists binarias (Pasa / No Pasa) para validación en staging.
 
 ---
 **Misión de Cierre:** El Agente debe entregar estos artefactos durante la **Ceremonia de Handoff** con el mensaje: *"Este hito formaliza nuestra transición de diseñadores a Veedores de la Experiencia. No entregamos archivos, entregamos un compromiso de acompañamiento hasta que el producto esté en manos del usuario"*.
 
 ---
-*Framework Baraldi v2.26.14 · DesignOps & Accompaniment Protocol.*
+*Framework Baraldi v2.27.0 · DesignOps & Accompaniment Protocol.*

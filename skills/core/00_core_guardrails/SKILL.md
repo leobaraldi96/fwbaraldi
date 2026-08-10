@@ -6,7 +6,7 @@ description: >
   de los entregables.
   Trigger: SIEMPRE activo. Se debe consultar al inicio de cada sesión y ante
   cualquier cambio en la estructura del proyecto o de los artefactos.
-version: "2.26.14"
+version: "2.27.0"
 ---
 
 # 🛡️ Capa 00 — Core Guardrails (Barandas de Contención)
@@ -271,6 +271,21 @@ Para evitar interfaces fragmentadas o código redundante e insostenible, la IA d
 
 ---
 
+## 🧠 8. Ergonomía Cognitiva de Documentación (Cognitive Doc Ergonomics)
+
+Todo documento, reporte de cierre o especificación generada por el framework debe diseñarse para minimizar la carga cognitiva de humanos e IAs mediante estos 6 principios:
+
+| Principio | Regla de Oro | Aplicación en FWB |
+|---|---|---|
+| **Lead with the answer** | Decisión, entregable y acción van primero. El contexto va después. | Los reportes inician con un *Resumen Ejecutivo* y tabla de estado antes del detalle. |
+| **Recognition over recall** | Priorizar matrices, checklists y tablas sobre prosa densa que deba memorizarse. | Toda especificación técnica o de negocio usa tablas con columnas de estado y criterio. |
+| **Chunking** | Agrupar la información en bloques semánticos pequeños (máximo 5 a 7 ítems por lista). | Desglosar flujos largos en momentos o sub-secciones temáticas. |
+| **Progressive disclosure** | Empezar por el "Happy path" y presentar los edge cases de forma jerarquizada. | Diagramas de alto nivel primero, diagramas de excepción después. |
+| **Signposting** | Encabezados claros, alertas visuales y etiquetas de estado explícitas. | Uso estratégico de GitHub alerts (`[!NOTE]`, `[!WARNING]`, `[!TIP]`). |
+| **Review empathy** | Diseñar para que un revisor pueda validar el entregable en menos de 2 minutos. | Incluir siempre una sección de *Criterios de Aceptación* con casillas verificables. |
+
+---
+
 ## ✅ Checklist de Verificación de Guardrails
 
 Antes de declarar un "Done", la IA debe verificar:
@@ -286,7 +301,8 @@ Antes de declarar un "Done", la IA debe verificar:
 - [ ] ¿Las nuevas vistas y componentes heredan de forma 100% consistente la línea de diseño, estilos y tokens ya establecidos?
 - [ ] ¿He reutilizado los componentes comunes existentes (ej: nav, footer, botones) en lugar de duplicar código o crear variantes independientes sin permiso?
 - [ ] Si existen `DESIGN.md` o `VOICE.md` en `docs-fwbaraldi/`, ¿he realizado de forma mandatoria y automática la validación y check de alineación de la vista o código entregado antes de finalizar la tarea?
+- [ ] ¿El documento respeta la Ergonomía Cognitiva (*Lead with the answer*, tablas de verificación y checklists)?
 
 ---
-*Framework Baraldi v2.26.14 · Core Guardrails*
+*Framework Baraldi v2.27.0 · Core Guardrails*
 

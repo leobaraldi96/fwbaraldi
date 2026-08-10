@@ -5,7 +5,7 @@ description: >
   Define las reglas críticas para la nomenclatura de ramas (branches), commits semánticos
   y auditorías profundas (Deep Reviews), adaptadas al diseño y estrategia de producto.
   Trigger: Al crear commits, ramas de trabajo, o al revisar el trabajo entre etapas.
-version: "2.26.14"
+version: "2.27.0"
 ---
 
 # Higiene Operativa — Framework Baraldi
@@ -39,9 +39,9 @@ Prohibido mantener el trabajo en ramas genéricas (`bocetos`, `nueva-pantalla`, 
 
 ---
 
-## 2. Commits Semánticos para Diseño
+## 2. Commits Semánticos y Unidades Atómicas de Trabajo (Work-Unit Commits)
 
-Cada cambio en el repositorio (archivos de requisitos, JSONs de diseño, documentación, actas de decisión) debe quedar registrado con un formato semántico claro.
+Cada cambio en el repositorio (archivos de requisitos, JSONs de diseño, documentación, actas de decisión o código) debe quedar registrado como una **unidad atómica de valor**.
 
 **Patrón:** `<type>(<scope opcional>): <descripción clara>`
 
@@ -55,7 +55,10 @@ Cada cambio en el repositorio (archivos de requisitos, JSONs de diseño, documen
 | `chore` | Limpieza, organización de archivos en Figma/Repo | `chore(assets): restructure icon library` |
 | `review` | Cambios aplicados tras feedback o validación | `review(ui): adjust contrast for accessibility` |
 
-> ⚠️ **Regla de Oro:** Un commit por cada unidad lógica de trabajo. Nunca agrupes un cambio de arquitectura de información (UX) con un ajuste de componentes (UI) en el mismo commit.
+### 📦 Reglas del Work-Unit Commit
+1. **Compromiso por unidad de valor:** Cada commit representa un comportamiento entregable completo. Prohibido hacer commits por capas técnicas (`add models`, luego `add tests`).
+2. **Documentación y pruebas integradas:** Los criterios de aceptación, pruebas o documentación de usuario pertenecen al **mismo commit** que introduce el cambio.
+3. **Frontera de Rollback definida:** Cada commit debe poder revertirse sin romper piezas no relacionadas.
 
 ---
 
@@ -79,4 +82,4 @@ Para garantizar una experiencia premium, el agente tiene prohibido cerrar un tur
 
 ---
 
-*Framework Baraldi v2.26.14 · Higiene Operativa.*
+*Framework Baraldi v2.27.0 · Higiene Operativa.*

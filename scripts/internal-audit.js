@@ -78,8 +78,8 @@ toolDirs.forEach(dir => {
     }
 });
 
-if (toolboxCount === 13) reportSuccess(`Conteo de Toolbox correcto (13 de 13)`);
-else reportIssue(`Se detectaron ${toolboxCount} herramientas, se esperaban 13.`);
+if (toolboxCount === 15) reportSuccess(`Conteo de Toolbox correcto (15 de 15)`);
+else reportIssue(`Se detectaron ${toolboxCount} herramientas, se esperaban 15.`);
 
 // 3. Check Guardrails
 const guardrails = fs.readFileSync(path.join(rootDir, 'skills', 'core', '00_core_guardrails', 'SKILL.md'), 'utf8');

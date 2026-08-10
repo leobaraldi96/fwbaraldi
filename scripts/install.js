@@ -22,7 +22,7 @@ const pkg = JSON.parse(fs.readFileSync(path.join(packageRoot, 'package.json'), '
 const FRAMEWORK_VERSION = pkg.version;
 
 // Configuración de versión fuerte
-const ENGRAM_VERSION = 'v1.15.11'; // Sincronizado con FWB v2.26.15
+const ENGRAM_VERSION = 'v1.20.0'; // Sincronizado con FWB v2.27.0
 const REPO_ORIGEN = 'Gentleman-Programming';
 
 // Lista de sub-habilidades de FWB que JAMÁS deben quedar sueltas en la raíz global de skills
@@ -52,7 +52,9 @@ const KNOWN_FWB_SUB_SKILLS = [
   'responsive_and_global_readiness_protocol',
   'sales_enablement_and_pitch_protocol',
   'stakeholder_narrative_strategy',
-  'strategic_product_roadmap'
+  'strategic_epic_slicing_protocol',
+  'strategic_product_roadmap',
+  'systemic_issue_triage_protocol'
 ];
 
 function cleanupFragmentedSkills(parentSkillsDir) {

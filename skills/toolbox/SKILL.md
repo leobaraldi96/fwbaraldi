@@ -1,8 +1,8 @@
-# 🧰 Toolbox Core (v2.26.14)
+# 🧰 Toolbox Core (v2.27.0)
 
 Este es el arsenal estratégico del **Framework Baraldi**. Estas herramientas son transversales y pueden ser invocadas en cualquier etapa del proyecto mediante su nombre o ID.
 
-## 🛠️ Inventario de Herramientas de Alta Densidad
+## 🛠️ Inventario de Herramientas de Alta Densidad (15 Protocolos)
 
 - **Stakeholder Narrative Strategy:** Gestión política, narrativa de impacto y protocolos de defensa (Anti-Lucio/Carlos/Maxi).
 - **Advanced Prioritization Protocol:** Scoring basado en RICE, Kano y ROI Baraldi.
@@ -17,6 +17,8 @@ Este es el arsenal estratégico del **Framework Baraldi**. Estas herramientas so
 - **Pricing and Monetization Protocol:** Diseño científico de tiers y captura de valor.
 - **Sales Enablement and Pitch Protocol:** Creación de decks, one-pagers y cierre de ventas.
 - **Product Master Matrix Protocol:** Artefacto vivo de trazabilidad y checklist de completitud de producto.
+- **Systemic Issue Triage Protocol:** Triaje sistémico, resolución por causa raíz y Over-Engineering Test.
+- **Strategic Epic Slicing Protocol:** Desglose estructurado de iniciativas en Epics e historias hijas con diagramas Mermaid para Jira/Linear/GitHub.
 
 > ⚠️ **Nota:** WCAG, Screen Reader, UX Audit, DS Audit, User Stories, Performance, SEO, UX Writing, Layers Flow, AI Interaction, Design Critique, Token Audit, Component Inventory, Visual Reverse Engineering y Prototyping ahora son **Motores Nativos** de sus respectivas Etapas Metodológicas (E02–E07). No buscarlos aquí.
 
@@ -32,7 +34,7 @@ Todas las herramientas de este inventario deben ser invocadas bajo la **Filosof�
 
 ---
 ## 🚀 Cómo invocar una herramienta
-El humano puede pedir: *"Usa el protocolo Anti-Lucio para este feedback"* o *"Ejecuta el Product Launch Protocol"*. La IA debe cargar inmediatamente el archivo correspondiente desde `skills/toolbox/`.
+El humano puede pedir: *"Usa el protocolo Anti-Lucio para este feedback"*, *"Ejecuta el Product Launch Protocol"* o *"Usa el protocolo de triaje sistémico"*. La IA debe cargar inmediatamente el archivo correspondiente desde `skills/toolbox/`.
 
 ---
-*Framework Baraldi v2.26.14 · Toolbox Central Orchestrator.*
+*Framework Baraldi v2.27.0 · Toolbox Central Orchestrator.*

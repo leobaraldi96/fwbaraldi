@@ -1,6 +1,6 @@
 # Framework Baraldi (FWB) 🤖⚡
 
-![Version](https://img.shields.io/badge/version-2.26.15-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-yellow) ![Memory](https://img.shields.io/badge/memory-Engram--Powered-orange) ![Type](https://img.shields.io/badge/type-Agentic--Orchestrator-blueviolet)
+![Version](https://img.shields.io/badge/version-2.27.0-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-yellow) ![Memory](https://img.shields.io/badge/memory-Engram--v1.20.0-orange) ![Type](https://img.shields.io/badge/type-Agentic--Orchestrator-blueviolet)
 
 > [!NOTE]
 > **¿Hola, no entendés un carajo de lo que hay acá?** 👉 **[¡Siga por aquí! (Guía de bienvenida fácil para humanos)](./NO_ENTIENDO_NADA.md)** 🚀
@@ -112,9 +112,13 @@ A diferencia del pasado donde te perdías el contexto entre chats, el Agente uti
 
 | Herramienta (MCP) | Qué hace | Cuándo usarlo (o cuándo lo usa la IA) |
 |---|---|---|
+| `mem_current_project` | Detecta el slug de proyecto activo y el contexto de git. | **Primero al iniciar sesión** para fijar la memoria sin ambigüedad. |
 | `mem_context` | Trae el contexto reciente del proyecto activo. | Se usa al iniciar la IDE para saber en qué quedamos. |
-| `mem_search` | Búsqueda Full-Text sobre actas y hallazgos. | *"Buscá qué decidimos sobre la arquitectura hace 2 meses"*. |
+| `mem_search` | Búsqueda Full-Text (BM25) sobre actas y hallazgos. | *"Buscá qué decidimos sobre la arquitectura"* (soporta `all_projects=true`). |
 | `mem_save` | Guarda una observación estructurada (Decisión, Riesgo). | La IA lo lanza al finalizar cada hito crucial para crear actas. |
+| `mem_review` | **Audita vigencia de hipótesis** (`review_after`). | Para revalidar decisiones o supuestos estratégicos vencidos. |
+| `mem_judge` | Registra veredictos sobre conflictos de memoria detectados. | Resuelve contradicciones entre decisiones pasadas y nuevas. |
+| `mem_compare` | Compara semánticamente dos memorias y graba la relación. | Clasifica relaciones (`supersedes`, `conflicts_with`, `compatible`). |
 | `mem_update` | Actualiza una observación existente por ID. | Para corregir o ampliar decisiones o descubrimientos previos. |
 | `mem_timeline` | Muestra el contexto cronológico de un hallazgo. | Para entender qué pasó justo antes y después de una decisión. |
 | `mem_get_observation` | Obtiene el contenido completo de una memoria. | Cuando el resumen de búsqueda no es suficiente para decidir. |
@@ -123,7 +127,11 @@ A diferencia del pasado donde te perdías el contexto entre chats, el Agente uti
 | `mem_suggest_topic_key`| Sugiere una clave estable para el tema. | Evita duplicados al actualizar temas evolutivos. |
 | `mem_save_prompt` | Guarda lo que el usuario preguntó literalmente. | Registra la intención original detrás de los cambios. |
 | `mem_stats` | Muestra estadísticas globales del sistema. | Ver el volumen de proyectos e insights grabados en el cerebro. |
-| `mem_delete` | Borra una observación (soft-delete). | Limpieza de datos erróneos o redundantes. |
+| `mem_doctor` | Diagnóstico de salud operativa de la memoria. | Verifica integridad de SQLite, tablas y consistencia. |
+| `mem_merge_projects` | Fusiona variantes de proyectos en un slug canónico. | Higiene de nombres y consolidación de proyectos dispersos. |
+| `mem_session_start` | Registra el inicio formal de una sesión de trabajo. | Inicialización de sesión temporal. |
+| `mem_session_end` | Cierra formalmente la sesión de trabajo. | Conclusión de sesión temporal. |
+| `mem_delete` | Borra una observación (soft-delete o hard-delete). | Limpieza de datos erróneos o redundantes. |
 
 ### 💻 Uso desde la Terminal (CLI)
 Además de los comandos que usa la IA, puedes gestionar tu memoria directamente:
@@ -179,8 +187,10 @@ Si prefieres respaldar tus archivos manualmente:
 *Todo esto ocurre en tu disco duro (zero-cloud) y hace que saltar de un proyecto a otro sea una experiencia de inteligencia continua.*
 
 > [!NOTE]
-> ### 🔒 Robustez y Estabilidad (v1.15.1+)
-> El Framework Baraldi ahora utiliza el motor **Engram v1.15.1**, que introduce mejoras críticas de arquitectura:
+> ### 🔒 Robustez y Estabilidad (v1.20.0+)
+> El Framework Baraldi ahora utiliza el motor **Engram v1.20.0**, que introduce mejoras críticas de arquitectura:
+> - **20 Herramientas MCP Nativas:** Protocolo integral con soporte para `mem_review` (ciclo de vida de hipótesis) y búsqueda transversal `all_projects: true`.
+> - **Ranking Ponderado BM25:** Algoritmo optimizado sobre SQLite FTS5 que prioriza títulos, tags y topic_keys para máxima precisión de búsqueda.
 > - **Project Locking:** Mediante un archivo `.engram/config.json` mandatorio, puedes forzar un nombre de proyecto único, eliminando definitivamente la fragmentación de la memoria (Project Drift).
 > - **Windows Hardening:** Optimización específica para entornos PowerShell y Git Bash, garantizando que la memoria nunca se bloquee.
 > - **Escritura Atómica:** Implementación de colas de procesos para evitar conflictos en la base de datos SQLite durante sesiones de alta intensidad.
@@ -190,8 +200,8 @@ A nivel de infraestructura (LLM Ops), el Framework Baraldi maximiza el rendimien
 
 | Métrica | Valor | Estado |
 |---|---|---|
-| **Eficiencia Actual (v2.26.15)** | **95.20%** | 🟢 Full Release (07/07 Etapas) |
-| **Engram Engine** | **v1.15.11** | 🟢 Native Project Sync |
+| **Eficiencia Actual (v2.27.0)** | **95.60%** | 🟢 Full Release (07/07 Etapas) |
+| **Engram Engine** | **v1.20.0** | 🟢 20 MCP Tools & BM25 Ranking |
 
 *Aclaración Técnica: Al cargar en memoria viva solo los hallazgos estrictamente necesarios para la toma de decisión del momento, reducimos el ruido contextual, manteniendo la IA enfocada, rápida y económicamente viable.*
 
@@ -216,9 +226,9 @@ Si sos un modelo de IA o estás configurando un agente, **LEER PRIMERO:**
 
 ---
 
-## 🧰 El Arsenal de Élite (v2.26.15)
+## 🧰 El Arsenal de Élite (v2.27.0 — 15 Protocolos)
 
-La Toolbox del Framework Baraldi no es una simple carpeta de utilidades; es un conjunto de **protocolos de alto impacto** diseñados para resolver situaciones críticas de producto, negocio y política organizacional.
+La Toolbox del Framework Baraldi no es una simple carpeta de utilidades; es un conjunto de **15 protocolos de alto impacto** diseñados para resolver situaciones críticas de producto, negocio y política organizacional.
 
 | Skill | Nombre | Propósito Estratégico |
 | :--- | :--- | :--- |
@@ -235,6 +245,8 @@ La Toolbox del Framework Baraldi no es una simple carpeta de utilidades; es un c
 | **11** | **Sales Enablement** | Creación de decks, one-pagers y cierre de ventas. |
 | **12** | **Responsive & Global** | Estrategia multidispositivo y auditoría de i18n/RTL. |
 | **13** | **Product Master Matrix Protocol** | Artefacto vivo de trazabilidad y checklist de completitud de producto. |
+| **14** | **Systemic Issue Triage Protocol** | Triaje sistémico, resolución por causa raíz y Over-Engineering Test. |
+| **15** | **Strategic Epic Slicing Protocol** | Desglose estructurado de iniciativas en Epics e historias hijas con diagramas Mermaid para Jira/Linear/GitHub. |
 
 ---
 
@@ -255,13 +267,13 @@ fwbaraldi/
 │   ├── methodology/                        ← El núcleo del proceso (End-to-End)
 │   │   ├── 01_problem_framing/             ← Hardened v2.26.15
 │   │   ├── 02_system_analysis/             ← Hardened v2.26.15
-│   │   ├── 03_product_logic/               ← Hardened v2.26.15
-│   │   ├── 04_information_architecture/    ← Hardened v2.26.15
-│   │   ├── 05_interaction_design_ux/       ← Hardened v2.26.15
-│   │   ├── 06_visual_design_ui/            ← Hardened v2.26.15
-│   │   └── 07_handover_qa/                 ← Hardened v2.26.15
+│   │   ├── 03_product_logic/               ← Hardened v2.27.0
+│   │   ├── 04_information_architecture/    ← Hardened v2.27.0
+│   │   ├── 05_interaction_design_ux/       ← Hardened v2.27.0
+│   │   ├── 06_visual_design_ui/            ← Hardened v2.27.0
+│   │   └── 07_handover_qa/                 ← Hardened v2.27.0
 │   │
-│       └── toolbox/                            ← Tu arsenal estratégico (v2.26.15)
+│       └── toolbox/                            ← Tu arsenal estratégico (v2.27.0)
 │           ├── advanced_prioritization_protocol/
 │           ├── business_strategy_and_growth_protocol/
 │           ├── concept_synthesis_and_ideation_protocol/
@@ -274,9 +286,13 @@ fwbaraldi/
 │           ├── responsive_and_global_readiness_protocol/
 │           ├── sales_enablement_and_pitch_protocol/
 │           ├── stakeholder_narrative_strategy/
-│           └── strategic_product_roadmap/
+│           ├── strategic_epic_slicing_protocol/
+│           ├── strategic_product_roadmap/
+│           └── systemic_issue_triage_protocol/
 │
 ├── scripts/
+│   ├── backup.js                           ← Asistente de Backup de Memoria
+│   ├── restore.js                          ← Asistente de Restauración de Memoria
 │   ├── install.js                          ← Instalador CLI interactivo
 │   └── internal-audit.js                   ← Guardián de Integridad y Versiones
 │
@@ -287,9 +303,9 @@ fwbaraldi/
 
 ---
 
-## 🚀 Quick Start / Instalación (v2.26.15)
+## 🚀 Quick Start / Instalación (v2.27.0)
 
-> ⚠️ **IMPORTANTE:** A partir de la versión 2.26.15 (Modelo Cero-Copia), el Framework Baraldi opera como un **Único Orquestador Agéntico Global (`baraldi-framework`)**. Todas las etapas y la toolbox viven encapsuladas internamente para mantener limpio el entorno y evitar la fragmentación de habilidades.
+> ⚠️ **IMPORTANTE:** A partir de la versión 2.27.0 (Modelo Cero-Copia), el Framework Baraldi opera como un **Único Orquestador Agéntico Global (`baraldi-framework`)**. Todas las etapas y la toolbox viven encapsuladas internamente para mantener limpio el entorno y evitar la fragmentación de habilidades.
 
 ### Instalación Automática (Recomendado)
 Hemos construido un instalador CLI (`fwbaraldi` / `baraldi-init`) que se encarga de todo el trabajo pesado. Solo necesitas tener **Node.js** instalado en tu computadora.
