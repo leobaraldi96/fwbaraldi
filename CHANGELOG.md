@@ -14,10 +14,12 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
   - Limpieza automática (`cleanupFragmentedSkills`) de sub-skills huérfanas en la raíz global.
   - Autoconfiguración atómica de `mcp_config.json` (nodo `engram`) y `AGENTS.md`.
   - Resiliencia ante bloqueos de archivos `EBUSY`/`EPERM` en Windows cuando el motor Engram está en ejecución.
-  - Soporte para banderas no-interactivas (`--yes`, `-y`, `--agent`, `--silent`, `--help`).
-- **Guardián de Higiene en Alineación (`scripts/align.js`):** Chequeo y reporte preventivo de sub-skills fragmentadas durante la auditoría de proyectos con limpieza asistida.
-- **Directivas Mandatorias para Agentes de IA (`DOCUMENTACION_IA.md`):** Inyección del protocolo de instalación unificada para que cualquier IA que lea el repositorio de GitHub instale el framework bajo el patrón de contenedor único.
-- **Actualización Documental Core:** Sincronización de `README.md` y `ARQUITECTURA_CORE.md` con el nuevo flujo de instalación y arquitectura de skill unificada.
+- **Sistema Integrado de Backup y Salvaguarda de Memoria (`scripts/backup.js` & `scripts/restore.js`):**
+  - Comandos CLI dedicados (`fwbaraldi backup`, `fwbaraldi restore`, `fwb-backup`, `fwb-restore`, `baraldi-backup`, `baraldi-restore`) para respaldar y recuperar la base de datos de conocimiento de Engram ante formateos o migraciones de equipo.
+  - Empaquetado dual: genera archivos comprimidos `.zip` con volcado SQLite (`engram.db`) y exportación universal JSON (`engram-export.json`) acompañada de `manifest.json`.
+  - **Safety Net Preventivo:** La restauración genera automáticamente un snapshot de seguridad previo de la memoria actual antes de sobrescribir.
+  - Alerta y recordatorio de salvaguarda de memoria en la pantalla post-instalación de `scripts/install.js`.
+  - Documentación completa en `README.md`, `NO_ENTIENDO_NADA.md`, `SECURITY.md`, `DOCUMENTACION_IA.md` y `SKILL.md`.
 
 ## [2.26.14] - 2026-06-07
 

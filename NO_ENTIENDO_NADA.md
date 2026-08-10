@@ -55,6 +55,30 @@ El objetivo de este socio es llevarte a realizar la tarea: no te va a dejar de p
 
 ---
 
+## 4. ¡Pará! ¿Y qué pasa si tengo que formatear la compu o cambiarme de máquina?
+
+¡Pregunta del millón! Como te conté arriba, la memoria de Engram **vive en tu propia computadora** (para cuidar tu privacidad y que no dependas de ninguna nube). 
+
+Pero ojo: **si formateás la compu de una, se borra todo**. Sería como tirar a la basura el cuaderno donde anotaste todos los secretos de tus proyectos.
+
+Para que no te pase eso, tenés una salvaguarda automática súper fácil:
+
+1. **Antes de formatear (Crear el salvavidas):**
+   Abrís la terminal o le decís a tu agente:
+   ```bash
+   fwbaraldi backup
+   ```
+   *(O si no tenés nada instalado: `npx github:leobaraldi96/fwbaraldi backup`)*.
+   Esto te va a escupir un archivo comprimido `.zip` con todos tus recuerdos. Te lo guardás en un pendrive o en tu Google Drive/Dropbox.
+2. **En tu compu nueva o recién formateada (Recuperar la magia):**
+   Instalás el framework de nuevo y ejecutás:
+   ```bash
+   fwbaraldi restore -f "ruta/a/tu/archivo-backup.zip"
+   ```
+   ¡Y listo! Tu agente vuelve a saber todo exactamente como antes de formatear.
+
+---
+
 **PD:** Una más: esto es código abierto... Entonces... ponele que sos un cocinero (cómo llegaste acá no sé, no voy a preguntar). ¿Quiere decir que si al agente le digo: *"mirá esto que hizo Leo, pero armemos un framework que me ayude con mi cocina y producción... como yo lo hago, donde pueda colocar mis secretos, cómo les gusta a mis clientes y cómo me gusta hacerlo a mí"*... funciona? ¡SÍ! ¡Heeee, está bueno, ¿no?!!!! Animáte, ¡te vas a volver loco!
 
 ---

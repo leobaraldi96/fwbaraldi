@@ -45,6 +45,10 @@ Usar `mem_save` proactivamente en los siguientes hitos:
 - **MANDATORIO:** Ejecutar `mem_session_summary()` antes de cerrar.
 - **ORDEN:** 1. Guardar memorias sueltas → 2. Resumen de sesión → 3. Mensaje humano final.
 
+### 4. Salvaguarda de Memoria (Formateo y Migración)
+- **Detección Activa:** Si el usuario comenta que formateará su equipo, migrará a otra computadora o solicita respaldo de sus proyectos, la IA debe orientarlo de inmediato a ejecutar `fwbaraldi backup` (o `npx github:leobaraldi96/fwbaraldi backup`).
+- **Restauración:** Guiarlo para usar `fwbaraldi restore -f "<backup.zip>"` en el nuevo entorno para no perder el grafo de conocimiento histórico.
+
 ---
 
 ## 🛡️ Mandatos de Consciencia (ALWAYS/NEVER)
@@ -54,6 +58,7 @@ Usar `mem_save` proactivamente en los siguientes hitos:
 - **Higiene Semántica:** Usar los verbos de relación (`scoped`, `supersedes`, etc.) en cada acta de decisión.
 - **Verificación de Conflictos:** Buscar activamente contradicciones en la memoria antes de proponer cambios estructurales.
 - **Privacidad:** Censurar datos sensibles (tokens, passwords) antes de guardar en Engram.
+- **Salvaguarda Preventiva:** Recordar al usuario la posibilidad de backup cuando se cierren hitos importantes o se hable de migraciones.
 
 ### NEVER:
 - **Reduccionismo:** Nunca borres o resumas memorias antiguas para ahorrar tokens. El historial completo es sagrado.
@@ -63,4 +68,4 @@ Usar `mem_save` proactivamente en los siguientes hitos:
 
 ---
 
-*Framework Baraldi v2.26.14 · 00_system_awareness · Orquestador de Memoria Sistémica.*
+*Framework Baraldi v2.26.15 · 00_system_awareness · Orquestador de Memoria Sistémica.*

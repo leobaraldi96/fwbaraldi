@@ -36,6 +36,7 @@ El framework realiza llamadas externas únicamente en los siguientes casos de "S
 2.  **Identidad Blindada (Project Locking):** El framework utiliza un archivo `.engram/config.json` en la raíz del proyecto para asegurar que la memoria nunca se mezcle entre diferentes trabajos.
 3.  **Rutas Absolutas:** El framework utiliza rutas absolutas locales para interactuar con tus archivos, asegurando que el agente solo trabaje dentro del perímetro autorizado.
 4.  **Memoria Sensible:** Si un hallazgo del proyecto es extremadamente confidencial, puedes pedir a la IA que no lo guarde en la memoria persistente de Engram.
+5.  **Custodia de Backups:** Los archivos generados por `fwbaraldi backup` contienen la totalidad de las memorias locales del sistema. Guárdalos en ubicaciones cifradas o de acceso controlado (como nubes privadas o discos externos protegidos) para evitar accesos no autorizados a tus actas estratégicas.
 
 ---
 *Framework Baraldi v2.26.15 · Transparencia y Ética Agéntica*

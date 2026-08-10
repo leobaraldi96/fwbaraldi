@@ -10,6 +10,9 @@ import * as tar from 'tar';
 import { pipeline } from 'stream/promises';
 import { fileURLToPath } from 'url';
 
+import { runBackup } from './backup.js';
+import { runRestore } from './restore.js';
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const packageRoot = path.join(__dirname, '..');
@@ -204,6 +207,18 @@ function configureGlobalAgentsRule() {
 
 async function run() {
   const args = process.argv.slice(2);
+  const firstArg = args[0]?.toLowerCase();
+
+  if (firstArg === 'backup') {
+    await runBackup(args.slice(1));
+    return;
+  }
+
+  if (firstArg === 'restore') {
+    await runRestore(args.slice(1));
+    return;
+  }
+
   const isHelp = args.includes('--help') || args.includes('-h');
   const isSilent = args.includes('--silent') || args.includes('-s');
   const isNonInteractive = args.includes('--yes') || args.includes('-y') || args.includes('--non-interactive');
@@ -221,11 +236,18 @@ async function run() {
 
   if (isHelp) {
     console.log(`
-Framework Baraldi (v${FRAMEWORK_VERSION}) — Instalador CLI
+Framework Baraldi (v${FRAMEWORK_VERSION}) — CLI
 
 Uso:
   npx github:leobaraldi96/fwbaraldi [opciones]
   fwbaraldi [opciones]
+  fwbaraldi backup [opciones]
+  fwbaraldi restore [opciones]
+
+Comandos:
+  (default)             Instala y despliega el orquestador global
+  backup                Crea una copia de seguridad (.zip) de la memoria Engram
+  restore               Restaura una copia de seguridad de la memoria Engram
 
 Opciones:
   -y, --yes             Instalación desatendida/automática (Antigravity por defecto)
@@ -320,7 +342,7 @@ Opciones:
     const gitignorePath = path.join(destPath, '.gitignore');
 
     if (!fs.existsSync(engramDir)) fs.mkdirSync(engramDir, { recursive: true });
-    
+
     if (!fs.existsSync(engramConfigPath)) {
       const projectName = path.basename(destPath);
       fs.writeFileSync(engramConfigPath, JSON.stringify({ project: projectName }, null, 2));
@@ -340,7 +362,7 @@ Opciones:
   spinner.succeed(chalk.green(`✓ Orquestador Baraldi desplegado como Skill Única en: `) + chalk.cyan(destPath));
 
   console.log(chalk.bold('\n[3/3] ⚙️ Autoconfiguración de MCP y Reglas Globales...'));
-  
+
   if (agenteDestino === 'antigravity') {
     const mcpFile = configureMcpServer(binaryAbsolutePath);
     console.log(chalk.green('✓ Servidor MCP Engram configurado en: ') + chalk.cyan(mcpFile));
@@ -370,6 +392,14 @@ Opciones:
   console.log(chalk.white(' 1. Abre tu proyecto en el editor.'));
   console.log(chalk.white(' 2. Llama a tu IA y dile: ') + chalk.italic.cyan('"Inicia el Framework Baraldi"'));
   console.log(chalk.white(' 3. ¡Disfruta del diseño de producto sistémico!\n'));
+
+  console.log(chalk.bold.yellow('🛡️  IMPORTANTE — Salvaguarda de Memoria (Formateos o Migración de equipo):'));
+  console.log(chalk.dim('   Toda la memoria de tus proyectos se almacena localmente en tu equipo (~/.engram).'));
+  console.log(chalk.dim('   Si alguna vez vas a formatear tu PC o cambiarte de máquina, ejecuta antes:'));
+  console.log(chalk.cyan('     npx github:leobaraldi96/fwbaraldi backup') + chalk.dim('  o  ') + chalk.cyan('fwbaraldi backup'));
+  console.log(chalk.dim('   Y luego de reinstalar tu entorno, restáurala fácilmente con:'));
+  console.log(chalk.cyan('     fwbaraldi restore'));
+  console.log(chalk.dim('   ¡No pierdas meses de decisiones y aprendizajes estratégicos!\n'));
 
   console.log(chalk.dim('─'.repeat(60)));
   console.log(chalk.dim('🌎 Web: ') + chalk.cyan('http://leobaraldi.com.ar/'));

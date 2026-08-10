@@ -95,6 +95,12 @@ Si un usuario te pide: *"Lee este repositorio de GitHub e instala el Framework B
 2. **Skill Global:** Clonar/copiar el repositorio completo en `~/.gemini/config/skills/baraldi-framework`.
 3. **Reglas Globales:** Añadir en `~/.gemini/config/AGENTS.md` el bloque de integración del Framework Baraldi.
 
+### 💾 Protocolo de Salvaguarda de Memoria (Formateo / Migración)
+Si el usuario menciona que va a formatear su equipo, migrar de equipo o pide un backup de sus proyectos/memorias:
+1. **Instruir o ejecutar:** Invocar `fwbaraldi backup` (o `node scripts/backup.js`) para empaquetar `~/.engram` en un archivo `.zip` portable.
+2. **Indicar custodia:** Explicar al usuario que guarde el archivo `.zip` fuera del disco a formatear (Drive, Pendrive).
+3. **Restauración:** Tras la reinstalación, guiarlo para ejecutar `fwbaraldi restore -f "<archivo.zip>"`.
+
 ---
 
 *Framework Baraldi v2.26.15 · DOCUMENTACION_IA.md · Referencia de Arquitectura e Instalación*

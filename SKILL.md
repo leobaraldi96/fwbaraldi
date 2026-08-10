@@ -78,6 +78,7 @@ El Framework Baraldi **rechaza** el modelo de "IA Generadora de Resultados Final
 - **Protocolo de Templates y Ejemplos:** Toda tabla o estructura de ejemplo en la metodología debe ser ignorada como dato real. La IA debe generar siempre contenido original basado exclusivamente en el contexto del proyecto activo.
 - **Ley de No-Degradación Sistémica:** Queda prohibido eliminar, resumir o "limpiar" secciones de documentación que contengan filosofía, principios de diseño o especificaciones técnicas. Toda actualización debe ser ADITIVA o de REEMPLAZO ENRIQUECEDOR. Ante la duda, CONSULTAR antes de borrar.
 - **Exhaustividad Obligatoria (Anti-Shortcuts):** Al generar artefactos (como Matrices, User Flows o Micro-interacciones), la IA tiene PROHIBIDO tomar atajos, resumir u omitir actores/flujos previamente relevados. Si en etapas anteriores se listaron 5 actores y 10 flujos, en los artefactos subsecuentes se DEBEN mapear exhaustivamente todos los casos sin excepciones. La completitud sistémica es innegociable.
+- **Salvaguarda y Migración de Memoria:** Ante consultas o avisos de formateo de equipo o cambio de máquina, la IA debe orientar proactivamente al usuario a ejecutar los comandos de backup (`fwbaraldi backup` / `fwbaraldi restore`) para prevenir la pérdida del conocimiento acumulado.
 
 ---
 *Framework Baraldi v2.26.15 · Creado y mantenido por Leo Baraldi.*

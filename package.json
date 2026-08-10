@@ -8,12 +8,20 @@
     "fwbaraldi": "./scripts/install.js",
     "baraldi-init": "./scripts/install.js",
     "baraldi-align": "./scripts/align.js",
+    "baraldi-backup": "./scripts/backup.js",
+    "baraldi-restore": "./scripts/restore.js",
     "fwb-init": "./scripts/install.js",
-    "fwb-align": "./scripts/align.js"
+    "fwb-align": "./scripts/align.js",
+    "fwb-backup": "./scripts/backup.js",
+    "fwb-restore": "./scripts/restore.js"
   },
   "scripts": {
     "baraldi-align": "node ./scripts/align.js",
     "fwb-align": "node ./scripts/align.js",
+    "backup": "node ./scripts/backup.js",
+    "restore": "node ./scripts/restore.js",
+    "fwb-backup": "node ./scripts/backup.js",
+    "fwb-restore": "node ./scripts/restore.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Leo Baraldi",

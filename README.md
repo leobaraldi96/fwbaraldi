@@ -134,6 +134,48 @@ Además de los comandos que usa la IA, puedes gestionar tu memoria directamente:
 *   `engram export/import`: Backup y restauración de tu base de datos en JSON.
 *   `engram projects consolidate`: Mezcla nombres de proyectos similares para evitar dispersión.
 
+---
+
+### 💾 Backup, Salvaguarda y Migración de Memoria (¿Vas a formatear tu PC o cambiar de equipo?)
+
+> [!WARNING]
+> **Toda tu memoria reside localmente en tu computadora:**
+> Engram almacena las decisiones, riesgos, actas y aprendizajes de todos tus proyectos en tu disco local (carpeta `~/.engram/`). Si formateas tu equipo o cambias de máquina sin hacer un backup, **perderás todo el conocimiento acumulado de tus proyectos**.
+
+El Framework Baraldi incluye herramientas automáticas integradas para respaldar y recuperar tu memoria en segundos:
+
+#### 1. Crear una Copia de Seguridad (Backup)
+Antes de formatear o cambiar de equipo, ejecuta en tu terminal:
+
+```bash
+# Si tienes el framework instalado globalmente:
+fwbaraldi backup
+
+# O directamente vía npx sin instalar nada:
+npx github:leobaraldi96/fwbaraldi backup
+```
+*Esto generará un archivo comprimido timestamped (ej: `fwb-memory-backup-2026-08-10_16-30-00.zip`) en tu carpeta actual con la base SQLite y la exportación universal JSON. Guarda este archivo en un pendrive, Google Drive o Dropbox.*
+
+#### 2. Restaurar tu Memoria en tu Nueva PC
+Una vez que hayas instalado tu nuevo sistema operativo o te encuentres en tu nueva máquina:
+
+```bash
+# 1. Instala el framework en el nuevo entorno:
+npx github:leobaraldi96/fwbaraldi
+
+# 2. Restaura tu archivo de backup:
+fwbaraldi restore -f "ruta/al/archivo/fwb-memory-backup-xxx.zip"
+```
+*El asistente restaurará todas tus memorias, verificará la integridad y mantendrá una copia de seguridad preventiva automática.*
+
+#### 📂 Método Manual (Para usuarios avanzados)
+Si prefieres respaldar tus archivos manualmente:
+* **Windows:** Copia la carpeta `C:\Users\<tu-usuario>\.engram` a tu almacenamiento externo.
+* **macOS / Linux:** Copia el directorio `~/.engram/` a tu almacenamiento externo.
+* Al restaurar, simplemente vuelve a pegar la carpeta `.engram` en tu directorio de usuario antes de iniciar tus agentes.
+
+---
+
 *Todo esto ocurre en tu disco duro (zero-cloud) y hace que saltar de un proyecto a otro sea una experiencia de inteligencia continua.*
 
 > [!NOTE]
