@@ -7,13 +7,18 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
 ## [2.28.0] - 2026-08-22
 
-### 📚 Compilador de Base de Conocimiento y Ayuda de Producto (Zero-Waste Help Center & RAG Ready)
+### 📚 Compilador de Base de Conocimiento y Suite Completa de Contratos Vivos
+- **Suite Completa de Contratos Vivos de Soberanía:**
+  - Formalización y creación de plantillas canónicas en `templates/` para blindar el producto en todos sus niveles:
+    - `BUSINESS.md`: Contrato de Lógica de Negocio, tiers/planes, límites e invariantes sagradas (`templates/business_md.md`).
+    - `SECURITY.md`: Contrato de Ciberseguridad, matriz RBAC granular, políticas Row-Level Security (RLS) y sanitización (`templates/security_md.md`).
+    - `LEGAL.md`: Contrato de Privacidad, consentimiento de cookies, retención/derecho al olvido y compliance de pagos (`templates/legal_md.md`).
+    - `UX.md`: Contrato de Ergonomía, leyes de tiempo de respuesta, Optimistic UI y mandato de "Zero Dead-Ends" (`templates/ux_md.md`).
+    - `KNOWLEDGE.md`: Base de Conocimiento y Manual Vivo del Producto (`templates/knowledge_md.md`).
+  - Actualización oficial en `MAPA_DE_ARTEFACTOS.md`.
 - **Protocolo de Compilación de Conocimiento (`product_knowledge_compiler_protocol`):**
   - Incorporado al Toolbox (Arsenal de 16 Protocolos) para traducir de forma automática toda la inteligencia validada en las Etapas 01 a 07 hacia artefactos de ayuda y soporte.
   - Elimina el "Handoff Ciego" hacia los equipos de CX y redactores de manuales.
-- **Nuevo Artefacto de Soberanía (`docs-fwbaraldi/KNOWLEDGE.md`):**
-  - Estructuración canónica en 4 capas operativas: (1) Descubrimiento y Preventa / FAQ de Landing, (2) Glosario y Taxonomía oficial, (3) Manuales de usuario por rol/actor, y (4) Troubleshooting y matriz de resolución de errores.
-  - Plantilla oficial incorporada en `templates/knowledge_md.md`.
 - **Doble Salida RAG para Asistentes de IA:**
   - Generación de System Prompts y chunks de contexto para dos modalidades de copiloto: Modo Público / Landing (preventa y alcance) y Modo In-App / Dashboard (guía contextual y soporte operativo paso a paso).
 - **Integración con Etapa 07 (Handover & QA):**
