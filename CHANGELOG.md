@@ -19,7 +19,9 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 - **Protocolo de Compilación de Conocimiento (`product_knowledge_compiler_protocol`):**
   - Incorporado al Toolbox (Arsenal de 16 Protocolos) para traducir de forma automática toda la inteligencia validada en las Etapas 01 a 07 hacia artefactos de ayuda y soporte.
   - Elimina el "Handoff Ciego" hacia los equipos de CX y redactores de manuales.
-  - Inyección de los 4 pilares de excelencia en redacción técnica: (1) Filosofía *Sense-making* y *Every Page is Page One*, (2) Regla de oro *"Un paso = Una sola acción"*, Plain Language y voz activa, (3) Modulación de tono contextual (Quickstart inspirador vs Troubleshooting empático y *blameless*), y (4) Guías Quickstart (< 5 min) y matrices de error.
+  - Arquitectura basada en **ISO/IEC/IEEE 26514:2022** (8 atributos de calidad) e **ISO/IEC/IEEE 26515** (sincronía ágil con User Stories).
+  - Inyección de metodologías científicas de estructuración: **Information Mapping®** (6 bloques semánticos y límite digital $5 \pm 1$ ítems), **Precision Content** (propósito técnico único) y separación de cuadrantes **Diátaxis**.
+  - Higiene lingüística estricta (filtros anti-slop, erradicación de adjetivos promocionales y adverbios condescendientes, máx. 25 palabras por oración) y tubería multiagente secuencial con bucle de guardrails (*Iterative Refinement* ante `REJECTED_INPUT`).
 - **Doble Salida RAG para Asistentes de IA:**
   - Generación de System Prompts y chunks de contexto para dos modalidades de copiloto: Modo Público / Landing (preventa y alcance) y Modo In-App / Dashboard (guía contextual y soporte operativo paso a paso).
 - **Selector Interactivo de Perfiles de Rigor Operativo (`/init` & Boot Step -1):**
