@@ -1,10 +1,13 @@
-# 🗺️ Mapa de Artefactos — Framework Baraldi (v2.27.0)
+# 🗺️ Mapa de Artefactos — Framework Baraldi (v2.28.0)
 
 Este documento es el catálogo oficial de todos los **outputs** que genera el framework. Sirve como guía para que el equipo de producto, diseño y desarrollo entienda qué se ha construido, para qué sirve y cómo aprovechar cada pieza de información.
 
 > [!IMPORTANT]
 > **Ubicación de los Artefactos:** Todos los archivos físicos detallados a continuación se generan y organizan automáticamente dentro de la carpeta **`docs-fwbaraldi/`** en la raíz de tu proyecto.
-
+> **Elasticidad Modular:** Los Contratos de Soberanía se activan según el **Perfil de Rigor** elegido al iniciar (`/init`):
+> * **⚡ Lean:** `DESIGN.md` + `VOICE.md`.
+> * **🚀 Standard:** `DESIGN.md` + `VOICE.md` + `BUSINESS.md` + `UX.md` + `KNOWLEDGE.md`.
+> * **🛡️ Enterprise:** Suite Completa (`DESIGN`, `VOICE`, `BUSINESS`, `SECURITY`, `LEGAL`, `UX`, `KNOWLEDGE`).
 
 ---
 

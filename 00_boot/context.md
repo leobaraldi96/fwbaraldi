@@ -155,7 +155,7 @@ Antes de saludar, realiza un chequeo silencioso de integridad:
 4. **Si existe una versión más reciente:** Incluir en el Panel de Reingreso una propuesta proactiva:
    > ⚠️ **Nueva versión del Framework disponible (vX.X.X):** Se han detectado mejoras metodológicas. ¿Quieres que me encargue de actualizar tu proyecto automáticamente con el script de alineación?
 
-**-1. [CARPETA DE TRABAJO Y ORGANIZACIÓN — Protocolo de Aislamiento Sistémico]**
+**-1. [CARPETA DE TRABAJO, ORGANIZACIÓN Y CALIBRACIÓN DE RIGOR — Protocolo de Aislamiento Sistémico]**
 Antes de realizar cualquier acción técnica o estratégica, debes asegurar la existencia de la subcarpeta `docs-fwbaraldi/` en la raíz del proyecto.
 - **Utilidad y Transparencia:** Explica al usuario que esta carpeta no es solo un almacén de archivos, sino el **Activo Estratégico más rico del proyecto**. Es el resultado de la co-construcción Humano/IA donde reside la inteligencia que guiará el diseño, desarrollo y estrategia de negocio. Advierte que ignorar su contenido es perder el objetivo del framework.
 - **Validación de Existencia:** Si el Paso -3 detectó un proyecto existente pero la carpeta no está presente o el agente no tiene acceso, **NO escribas nada**. Pide al usuario confirmación para inicializarla.
@@ -163,7 +163,21 @@ Antes de realizar cualquier acción técnica o estratégica, debes asegurar la e
 - **Transparencia de Identidad:** Explica al usuario que esta carpeta oculta (`.engram/`) funciona como la **"Cédula de Identidad"** del proyecto. Su única función es garantizar que la IA siempre reconozca este proyecto correctamente, evitando que la memoria se disperse o se mezcle con otros trabajos.
 - **Higiene de Repositorio:** Tras crear la configuración de Engram, añade automáticamente las reglas al `.gitignore` para ignorar la base de datos local: `.engram/` e `!.engram/config.json`. **Debes explicar al usuario** que esto se hace para mantener el repositorio limpio, asegurando que solo la "Identidad" se comparta, mientras que los datos pesados de la base de datos local se quedan fuera del control de versiones.
 
-- **Archivo README Mandatorio:** Al inicializar, el primer archivo que **DEBES** generar es `docs-fwbaraldi/README.md` usando la plantilla de utilidad. Esto elimina la confusión del usuario sobre "qué es esto".
+- **Calibración de Perfil de Rigor Operativo (Project Rigor Profiling):**
+  Al inicializar (`/init` o arranque de Etapa 01), la IA **DEBE preguntar interactivamente** al usuario qué perfil de rigor aplica para este proyecto antes de generar los contratos de soberanía:
+  1. **⚡ Modo Lean / MVP Express (Velocidad pura):**
+     * *Contratos provistos:* Solo `DESIGN.md` + `VOICE.md`.
+     * *Documentación:* Ligera, sin burocracia de CX ni manuales.
+  2. **🚀 Modo Standard Product (SaaS / App Digital - Recomendado):**
+     * *Contratos provistos:* `DESIGN.md` + `VOICE.md` + `BUSINESS.md` + `UX.md`.
+     * *Documentación:* Compilación de `KNOWLEDGE.md` al cierre de la Etapa 07.
+  3. **🛡️ Modo Enterprise / Hardened (Fintech, Salud, Multi-Tenant, Regulado):**
+     * *Contratos provistos:* Suite Completa (`DESIGN.md`, `VOICE.md`, `BUSINESS.md`, `SECURITY.md`, `LEGAL.md`, `UX.md`, `KNOWLEDGE.md`).
+     * *Documentación:* Full Help Center + Manuales por Rol + RAG Context Chunks para Asistente IA.
+  4. **🎛️ Modo Custom / Modular:**
+     * El usuario selecciona manualmente qué contratos y qué etapas encender o apagar.
+
+- **Archivo README Mandatorio:** Al inicializar, el primer archivo que **DEBES** generar es `docs-fwbaraldi/README.md` usando la plantilla de utilidad, reflejando el Perfil de Rigor seleccionado.
 - **Enrutamiento Obligatorio:** Todo archivo generado por ti (investigación, lógica, backlog) debe guardarse **exclusivamente** dentro de `docs-fwbaraldi/`. Ignorar esta regla se considera una violación grave del protocolo de higiene operacional.
 - **Zero-Copy:** No copies archivos internos del framework (instrucciones, MDs maestros) a esta carpeta. Solo guarda outputs originales del proyecto activo.
 

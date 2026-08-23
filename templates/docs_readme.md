@@ -7,6 +7,24 @@ Este archivo es un mapa para vos y para tu agente de IA. Resume exactamente qué
 
 ---
 
+## 🎛️ Perfil de Rigor Operativo del Proyecto
+* **Perfil Seleccionado:** `{PERFIL_ACTIVO: Lean | Standard | Enterprise | Custom}`
+* **Contratos Vivos Activos:** `{LISTA_CONTRATOS_ACTIVOS}`
+* **Estrategia de Documentación:** `{ESTRATEGIA_DOCS}`
+
+---
+
+## 💎 Contratos Vivos de Soberanía (Raíz de `docs-fwbaraldi/`)
+* 🎨 **`DESIGN.md`**: Contrato Visual, Tokens de Color, Tipografía, Espaciados y Especificaciones YAML.
+* ✍️ **`VOICE.md`**: Contrato de Personalidad, Tono, Reglas Gramaticales y Glosario de Microcopy.
+* 💼 **`BUSINESS.md`**: Contrato de Lógica de Negocio, Tiers/Planes, Invariantes y Reglas Sagradas.
+* 🛡️ **`SECURITY.md`**: Contrato de Ciberseguridad, Matriz RBAC y Políticas Row-Level Security (RLS).
+* ⚖️ **`LEGAL.md`**: Contrato Regulatorio, Privacidad, Cookies, Derecho al Olvido y Compliance.
+* 🧭 **`UX.md`**: Contrato de Ergonomía, Tiempos de Feedback, Optimistic UI y Cero Callejones sin Salida.
+* 📖 **`KNOWLEDGE.md`**: Base de Conocimiento, Manuales por Rol y Prompts RAG para Copilotos IA.
+
+---
+
 ## 🗺️ Mapa de Carpetas y Artefactos
 
 ### `01_Problem_Framing/`

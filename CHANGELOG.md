@@ -21,6 +21,12 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
   - Elimina el "Handoff Ciego" hacia los equipos de CX y redactores de manuales.
 - **Doble Salida RAG para Asistentes de IA:**
   - Generación de System Prompts y chunks de contexto para dos modalidades de copiloto: Modo Público / Landing (preventa y alcance) y Modo In-App / Dashboard (guía contextual y soporte operativo paso a paso).
+- **Selector Interactivo de Perfiles de Rigor Operativo (`/init` & Boot Step -1):**
+  - Calibración interactiva al inicializar un proyecto para adaptar el scope y la carga cognitiva:
+    - *⚡ Modo Lean / MVP Express:* Activación mínima (`DESIGN.md` + `VOICE.md`), sin burocracia de CX.
+    - *🚀 Modo Standard Product:* Suite equilibrada (`DESIGN` + `VOICE` + `BUSINESS` + `UX` + `KNOWLEDGE.md`).
+    - *🛡️ Modo Enterprise / Hardened:* Suite completa para proyectos regulados (`DESIGN`, `VOICE`, `BUSINESS`, `SECURITY`, `LEGAL`, `UX`, `KNOWLEDGE`).
+    - *🎛️ Modo Custom:* Selección granular de contratos y etapas activas.
 - **Integración con Etapa 07 (Handover & QA):**
   - Mapeo del compilador en el Momento 3 y en los Próximos Pasos del Handoff como paso previo al Go-To-Market.
 
