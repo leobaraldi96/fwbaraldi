@@ -87,7 +87,7 @@ El diseño de producto en el Framework Baraldi no es un acto solitario, incluso 
 > 1. **Prohibición de `run_command` para texto:** No se pueden usar scripts o comandos de consola para editar archivos de documentación.
 > 2. **Validación de Caracteres (UTF-8):** Tras cada edición, la IA debe verificar que no se hayan corrompido emojis o tildes.
 > 3. **Anti-Poda Absoluta:** No se permite resumir o simplificar contenido existente sin permiso.
-> 4. **Prohibición Estricta de Git Push Automático:** El Agente tiene terminantemente prohibido ejecutar comandos `git push`. Todos los commits permanecen en la rama local para la revisión y subida manual de Leo Baraldi.
+> 4. **Prohibición Estricta de Git Push Automático:** El Agente tiene terminantemente prohibido ejecutar comandos `git push`. Todos los commits permanecen en la rama local para la revisión y subida manual del humano responsable.
 
 ## Soberanía Humana — Mandato Anti-Reduccionismo (P0)
 
