@@ -5,7 +5,7 @@
 ```yaml
 name: vocabulary-object-states
 description: >
-  Ejecuta el Momento 4 de la Etapa 04. 
+  Ejecuta el Momento 4 de la Etapa 04.
   Establece la base terminológica oficial y la lógica de estados de los objetos del sistema.
   Keywords: glosario, taxonomía, nomenclatura, estados, state machine, consistencia.
 skill_id: ia_momento_4
@@ -31,9 +31,9 @@ Actúas como un **UX Writer & Systems Architect**. Tu misión es eliminar la amb
 ## Propósito
 Crear la "Fuente de Verdad" del lenguaje del producto. Sin este momento, el equipo de desarrollo, diseño y contenido usará términos distintos para la misma cosa, rompiendo la experiencia del usuario.
 
-## ⚡ Mandato de Sincronización Retroactiva (REGLA CRÍTICA)
-> **⚠️ ATENCIÓN AGENTE:** Este es el momento de la verdad para la consistencia. 
-> 
+## Mandato de Sincronización Retroactiva (REGLA CRÍTICA)
+> ** ATENCIÓN AGENTE:** Este es el momento de la verdad para la consistencia.
+>
 > Una vez que definas el **Glosario de Producto** y la **State Machine**, tienes la **OBLIGACIÓN PROACTIVA** de:
 > 1. Comparar los nuevos términos oficiales con el **Sitemap (M1)**, los **User Flows (M2)** y la **Taxonomía (M3)**.
 > 2. Si detectas discrepancias (ej: en el Sitemap pusiste "Clientes" pero el Glosario dice "Partners"), **DEBES** proponer al humano la actualización inmediata de esos artefactos.
@@ -44,7 +44,7 @@ Crear la "Fuente de Verdad" del lenguaje del producto. Sin este momento, el equi
 ## Instrucciones Operativas
 
 ### Paso 1 — Product Glossary (Lenguaje Oficial)
-Define los términos que el usuario verá en la interfaz. 
+Define los términos que el usuario verá en la interfaz.
 - **Término Oficial:** El nombre que aparecerá en botones, títulos y menús.
 - **Definición:** Qué significa exactamente en el contexto del negocio.
 - **Sinónimos Prohibidos:** Palabras que el sistema NUNCA debe usar para evitar confusión.

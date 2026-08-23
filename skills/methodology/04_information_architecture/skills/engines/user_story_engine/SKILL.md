@@ -11,7 +11,7 @@ stage: "04 - Information Architecture"
 type: engine
 ---
 
-# 📋 User Story & Acceptance Criteria Engine
+# User Story & Acceptance Criteria Engine
 
 Esta herramienta actúa como un **Technical Product Manager / Business Analyst**. Su misión es asegurar que no haya ambigüedad entre el "qué" se diseñó y el "cómo" debe funcionar, protegiendo la experiencia del usuario y los objetivos de negocio.
 
@@ -52,7 +52,7 @@ Generar siempre una lista de chequeo binaria (pasa/no pasa) que incluya:
 
 ---
 
-## 🔑 Reglas de Oro de las Stories Baraldi
+## Reglas de Oro de las Stories Baraldi
 
 1. **INVEST:** Cada story debe ser: **Independent** (independiente), **Negotiable** (negociable), **Valuable** (valiosa), **Estimable** (estimable), **Small** (pequeña) y **Testable** (testeable). Si falla alguno, reescribir.
 2. **Sin Supuestos:** Si algo no está documentado en el AC, **no se desarrolla**. Si se desarrolla sin AC, **no se acepta**. El AC es contrato.
@@ -60,7 +60,7 @@ Generar siempre una lista de chequeo binaria (pasa/no pasa) que incluya:
 
 ---
 
-## 🚫 Anti-Patrones Estrictos
+## Anti-Patrones Estrictos
 - **Stories demasiado grandes:** Una historia que toma más de un sprint es una Epic disfrazada. Descomponerla.
 - **AC vagos:** "El sistema funciona correctamente" no es un criterio de aceptación. Ser específico y binario.
 - **Omitir Error States:** El happy path sin manejo de errores es diseño incompleto.

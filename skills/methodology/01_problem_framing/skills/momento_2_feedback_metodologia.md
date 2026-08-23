@@ -192,8 +192,8 @@ Para cada competidor principal:
 ## 5. Tabla Comparativa de Features Estratégicas
 | Capacidad / Feature | Nosotros | Competidor A | Competidor B | Valor para el Usuario |
 | :--- | :---: | :---: | :---: | :--- |
-| [Feature 1] | ✅ | ❌ | ⚠️ | [Impacto real] |
-| [Feature 2] | ✅ | ✅ | ❌ | [Impacto real] |
+| [Feature 1] |  |  |  | [Impacto real] |
+| [Feature 2] |  |  |  | [Impacto real] |
 **URL:** [url]
 
 **Datos cuantitativos:**
@@ -458,7 +458,7 @@ Gracias,
 
 ## Parte 2 — Formulario de consentimiento informado
 
-> ⚠️ **Por qué es obligatorio:** El consentimiento protege al participante (sabe para qué se usan sus datos) y al investigador (evidencia de participación voluntaria). Sin esto, las citas del Informe de Research no tienen respaldo ético.
+>  **Por qué es obligatorio:** El consentimiento protege al participante (sabe para qué se usan sus datos) y al investigador (evidencia de participación voluntaria). Sin esto, las citas del Informe de Research no tienen respaldo ético.
 
 **[El investigador lee este texto en voz alta al inicio de la sesión, o lo envía por escrito antes]**
 

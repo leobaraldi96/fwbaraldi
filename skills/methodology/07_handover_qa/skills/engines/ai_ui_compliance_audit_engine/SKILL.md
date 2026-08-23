@@ -1,18 +1,18 @@
 ---
 name: ai-ui-compliance-audit
 description: >
-  Protocolo de auditoría cruzada (Cross-Check) para validar que el código de UI 
-  generado por IA respeta estrictamente el sistema de diseño (tokens) y no 
+  Protocolo de auditoría cruzada (Cross-Check) para validar que el código de UI
+  generado por IA respeta estrictamente el sistema de diseño (tokens) y no
   introduce "alucinaciones" visuales o clases genéricas no aprobadas.
 keywords: ai-coding, compliance, linter, design-tokens, ui-engineering, feedback-loop, qa
 version: "2.26.14"
 ---
 
-# 🤖 Skill 30 — Protocolo de Auditoría de Cumplimiento de UI Generada por IA
+# Skill 30 — Protocolo de Auditoría de Cumplimiento de UI Generada por IA
 
 Este protocolo se activa durante la fase de implementación o prototyping para evaluar el código generado por herramientas de IA. Actúa como un "Linter de Alucinaciones Visuales", asegurando que la IA programadora utilice los tokens del `DESIGN.md` y no invente estilos ad-hoc.
 
-## 🕵️‍♂️ Dimensiones de la Auditoría
+## Dimensiones de la Auditoría
 
 Al analizar un componente o vista generada por IA, el Agente debe contrastar el código contra la fuente de verdad (DESIGN.md / Tokens) y estructurar su reporte así:
 
@@ -36,24 +36,24 @@ Por cada componente clave detectado en el código:
 - **Responsive Behavior:** Verificar breakpoints y transiciones según la sección 7 del `DESIGN.md`.
 - **Áreas Táctiles Mínimas:** Asegurar que los botones y enlaces interactivos tengan un tamaño físico de interacción mínimo de `44x44px` en móviles.
 
-### 5. Recomendaciones de Refactorización y Bucle de Corrección (Refined AI Prompt) ⚡
+### 5. Recomendaciones de Refactorización y Bucle de Corrección (Refined AI Prompt)
 Generar un **Prompt de Corrección Exacto** para que la IA corrija su código automáticamente:
 > *"Reescribe el componente. Te has desviado del contrato visual de DESIGN.md. Reglas mandatorias: 1. No uses valores en bruto (HEX o px), reemplaza X por la variable de token Y. 2. Los estados del componente (default, active, disabled) deben alinearse estrictamente al YAML. 3. Incrementa el área táctil en móviles a un mínimo de 44x44px."*
 
 ---
 
-## 🚫 NEVER List — Anti-patrones de la Auditoría
+## NEVER List — Anti-patrones de la Auditoría
 - **NUNCA** ignores un valor en duro (HEX o pixelaje plano) en el código. El sistema es binario: o consume el token o es una alucinación (violación de Copy/Style Lock).
 - **NUNCA** apruebes componentes interactivos que carezcan de estados de foco (`:focus`, `:focus-visible`) o estados deshabilitados (`:disabled`).
 - **NUNCA** dejes pasar elementos táctiles que no cumplan con el estándar mínimo de `44x44px` en interfaces adaptativas.
 
-## ✅ ALWAYS List — Mandatos de la Auditoría
+## ALWAYS List — Mandatos de la Auditoría
 - **SIEMPRE** vincula cada falla a un token o componente específico de la estructura YAML del `DESIGN.md`.
 - **SIEMPRE** prioriza la validación de la accesibilidad y el contraste de colores sobre la coincidencia visual subjetiva.
 - **SIEMPRE** genera el prompt de corrección técnica si se detectan violaciones al principio de "No Inline Values".
 
 ---
-## 💡 Cómo usar esta Skill (Bridge Architecture)
+## Cómo usar esta Skill (Bridge Architecture)
 - **Cuándo invocar:** Durante el desarrollo (Post-Etapa 07), inmediatamente después de que un LLM (o un Junior Dev) genere el código de una UI.
 - **Sinergia:** Esta skill cruza los outputs técnicos con los contratos creados en las Etapas 04, 05 y 06.
 - **Output:** Reporte de validación técnica + Prompt de autocorrección para la IA.

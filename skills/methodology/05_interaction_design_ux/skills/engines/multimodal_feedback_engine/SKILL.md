@@ -1,17 +1,17 @@
 ---
 name: ixd-multimodal-feedback
 description: >
-  Habilidad experta en Diseño de Interacción y Feedback Sensorial. 
-  Úsala para definir el comportamiento físico, visual y auditivo de la 
+  Habilidad experta en Diseño de Interacción y Feedback Sensorial.
+  Úsala para definir el comportamiento físico, visual y auditivo de la
   interfaz, asegurando una experiencia táctil y fluida.
 version: "2.26.14"
 ---
 
-# ⚡ Interaction & Multimodal Feedback Expert
+# Interaction & Multimodal Feedback Expert
 
 Esta habilidad asegura que la interfaz no sea solo un dibujo, sino un **objeto físico digital**.
 
-## 🧠 Los 3 Canales de Feedback
+## Los 3 Canales de Feedback
 
 1.  **Visual:** Transiciones, micro-animaciones, cambios de estado (Hover, Active, Loading, Success).
 2.  **Háptico (Vibración):** Definir patrones de vibración para dispositivos móviles (ej: "Impact light" al confirmar, "Heavy error").
@@ -19,7 +19,7 @@ Esta habilidad asegura que la interfaz no sea solo un dibujo, sino un **objeto f
 
 ---
 
-## 🕒 Reglas de Timing y Movimiento
+## Reglas de Timing y Movimiento
 
 - **Duration Standard:** 200ms - 300ms para la mayoría de las transiciones. Más lento se siente pesado, más rápido es imperceptible.
 - **Easing:** Usar siempre `Cubic Bezier` (Out-Quint o Out-Expo) para movimientos orgánicos. NUNCA usar animaciones lineales.
@@ -27,7 +27,7 @@ Esta habilidad asegura que la interfaz no sea solo un dibujo, sino un **objeto f
 
 ---
 
-## 🛠️ Especificación de Interactividad
+## Especificación de Interactividad
 
 **[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 Al definir un componente, debes especificar:
@@ -38,7 +38,7 @@ Al definir un componente, debes especificar:
 
 ---
 
-## 🔍 Regla de Juicio Senior
+## Regla de Juicio Senior
 *"Si el usuario tiene que preguntarse si su clic funcionó, el diseño falló"*. El feedback debe ocurrir en menos de 100ms después de la interacción.
 
 ---

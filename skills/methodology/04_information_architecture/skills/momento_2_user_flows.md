@@ -9,7 +9,7 @@ description: >
 
 > **Misión:** Mapear el recorrido interactivo paso a paso de los actores para completar las tareas críticas del sistema. Este momento conecta el "Qué" (Sitemap) con el "Cómo" (Secuencia).
 
-## 🏁 Instrucciones para el Agente (Cómo conducir este momento)
+## Instrucciones para el Agente (Cómo conducir este momento)
 
 ### Paso 1: Recuperación de la Matriz de Actores (Anti-Amnesia)
 Antes de diagramar, la IA tiene una **obligación de memoria crítica**:
@@ -33,7 +33,7 @@ Ejemplo:
 ### Paso 4: Generación de Diagramas (Mermaid) con Mapeo Negativo Obligatorio
 **[MANDATO DE PROACTIVIDAD]:** Tienes estrictamente PROHIBIDO entregar un diagrama de flujo que solo muestre el "Happy Path". Estás **obligado** a mapear proactivamente, por iniciativa propia, las bifurcaciones negativas (Unhappy Paths, Edge Cases, Errores de Servidor, Timeout, Rechazo de Pago) sin esperar a que el usuario te lo pida. Si omites los flujos de error, estás fallando en tu rol metodológico.
 
-Debes generar los diagramas en sintaxis `mermaid`. 
+Debes generar los diagramas en sintaxis `mermaid`.
 Usa `graph TD` o `sequenceDiagram`.
 Ejemplo de `sequenceDiagram` para un pago:
 ```mermaid
@@ -42,7 +42,7 @@ sequenceDiagram
     participant S as Frontend
     participant B as Backend
     participant P as Payment Gateway
-    
+
     U->>S: Click en "Pagar"
     S->>B: Solicitud de checkout
     B->>P: Token request

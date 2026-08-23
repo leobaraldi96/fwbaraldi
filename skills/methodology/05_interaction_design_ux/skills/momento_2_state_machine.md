@@ -8,7 +8,7 @@ description: >
 
 > **Misión:** Mapear cómo responde el sistema a las acciones del usuario. Un producto "Luxury Obsidian" no tiene estados muertos; cada interacción tiene feedback visual y funcional.
 
-## 🏁 Instrucciones para el Agente
+## Instrucciones para el Agente
 
 ### Paso 1: Mapeo de Componentes Críticos
 1. Basado en los *User Flows* (Etapa 04), identifica los 3-5 componentes interactivos más importantes del producto (ej: Botón de Pago, Tarjeta de Suscripción, Input de Búsqueda).
@@ -27,5 +27,5 @@ Define con el usuario las leyes de movimiento:
 - **Tiempos (Easings & Durations):** ¿Las animaciones son rápidas y secantes (Eficiencia) o fluidas y elásticas (Calidez)?
 - **Feedback Sensorial:** Si es una app móvil, ¿hay retroalimentación háptica (vibración) en errores o éxitos?
 
-## 📄 Salida Esperada
+## Salida Esperada
 Generar una matriz en Markdown detallando el comportamiento de los componentes críticos en todos sus estados. Esto servirá de input directo para los Wireframes (Momento 3) y el Visual Design (Etapa 06).

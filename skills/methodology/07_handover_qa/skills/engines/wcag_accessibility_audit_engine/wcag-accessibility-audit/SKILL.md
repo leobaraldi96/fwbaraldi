@@ -77,7 +77,7 @@ Content must be robust enough that it can be interpreted by a wide variety of us
 WCAG defines three levels of conformance:
 
 - **Level A**: Minimum level (essential accessibility features)
-- **Level AA**: Target level for most organizations (addresses major barriers) ⭐ **MOST COMMON**
+- **Level AA**: Target level for most organizations (addresses major barriers)  **MOST COMMON**
 - **Level AAA**: Highest level (enhanced accessibility, not always achievable for all content)
 
 **Legal Requirements**: Most laws require Level AA compliance.
@@ -424,9 +424,9 @@ Generate comprehensive, prioritized report.
 ## Executive Summary
 
 ### Conformance Status
-**Level A**: ❌ Not Conformant (X issues)
-**Level AA**: ❌ Not Conformant (X issues)
-**Level AAA**: ⚪ Not Evaluated
+**Level A**:  Not Conformant (X issues)
+**Level AA**:  Not Conformant (X issues)
+**Level AAA**:  Not Evaluated
 
 ### Critical Findings
 - **Total Issues**: [X]
@@ -451,7 +451,7 @@ Generate comprehensive, prioritized report.
 
 ### 1. Perceivable
 
-#### ❌ FAIL: 1.1.1 Non-text Content (Level A)
+#### FAIL: 1.1.1 Non-text Content (Level A)
 **Severity**: Critical
 **Impact**: Screen reader users cannot understand image content
 
@@ -472,21 +472,21 @@ Generate comprehensive, prioritized report.
    - **Recommendation**: Add aria-label: `<button aria-label="Open menu"><svg>...</svg></button>`
    - **Effort**: Low (10-15 instances)
 
-#### ❌ FAIL: 1.4.3 Contrast (Minimum) (Level AA)
+#### FAIL: 1.4.3 Contrast (Minimum) (Level AA)
 **Severity**: Critical
 **Impact**: Low vision users cannot read text
 
 **Issues Found:**
 1. **Low contrast on primary buttons**
    - **Location**: Call-to-action buttons throughout site
-   - **Current**: #999999 on #FFFFFF (2.85:1) ❌
+   - **Current**: #999999 on #FFFFFF (2.85:1)
    - **Required**: 4.5:1 for normal text, 3:1 for large text
-   - **Recommendation**: Change to #595959 on #FFFFFF (7.0:1) ✅
+   - **Recommendation**: Change to #595959 on #FFFFFF (7.0:1)
    - **Effort**: Low (CSS update)
 
 [Continue for all failed criteria...]
 
-#### ✅ PASS: 1.4.4 Resize Text (Level AA)
+#### PASS: 1.4.4 Resize Text (Level AA)
 **Status**: Conformant
 **Notes**: Content reflows properly at 200% zoom, no horizontal scrolling
 
@@ -494,7 +494,7 @@ Generate comprehensive, prioritized report.
 
 ### 2. Operable
 
-#### ❌ FAIL: 2.1.1 Keyboard (Level A)
+#### FAIL: 2.1.1 Keyboard (Level A)
 **Severity**: Critical
 **Impact**: Keyboard-only users cannot access functionality
 
@@ -573,17 +573,17 @@ Generate comprehensive, prioritized report.
 ## Testing Tools Used
 
 ### Automated Tools
-- ✅ axe DevTools 4.x - 45 issues detected
-- ✅ WAVE - 38 issues detected
-- ✅ Lighthouse - Accessibility score: 64/100
-- ✅ W3C Validator - 12 HTML errors
+-  axe DevTools 4.x - 45 issues detected
+-  WAVE - 38 issues detected
+-  Lighthouse - Accessibility score: 64/100
+-  W3C Validator - 12 HTML errors
 
 ### Manual Testing
-- ✅ Keyboard navigation (Chrome)
-- ✅ Screen reader (NVDA 2025.1)
-- ✅ Zoom to 200% (Chrome, Firefox)
-- ✅ Mobile reflow at 320px
-- ✅ Color contrast analyzer
+-  Keyboard navigation (Chrome)
+-  Screen reader (NVDA 2025.1)
+-  Zoom to 200% (Chrome, Firefox)
+-  Mobile reflow at 320px
+-  Color contrast analyzer
 
 ### Assistive Technologies
 - NVDA 2025.1 (Windows screen reader)

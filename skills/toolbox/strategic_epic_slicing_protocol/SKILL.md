@@ -7,13 +7,13 @@ keywords: epic, user story, task slicing, jira, linear, github issues, mermaid, 
 version: "2.27.0"
 ---
 
-# 📐 Protocolo — Desglose Estratégico de Epics e Historias Hijas
+# Protocolo — Desglose Estratégico de Epics e Historias Hijas
 
 Este protocolo actúa como el puente definitivo entre el **Product Design** y la **Ingeniería de Software**. Su objetivo es tomar grandes iniciativas estratégicas y dividirlas en unidades de trabajo atómicas, comprensibles y ejecutables sin fricciones.
 
 ---
 
-## 🏗️ 1. Jerarquía de Desglose: Parent vs Child Tasks
+## 1. Jerarquía de Desglose: Parent vs Child Tasks
 
 Todo requerimiento se desglosa en dos capas bien diferenciadas:
 
@@ -34,7 +34,7 @@ Todo requerimiento se desglosa en dos capas bien diferenciadas:
 
 ---
 
-## 📋 2. Plantilla Canónica de Epic / Parent Feature
+## 2. Plantilla Canónica de Epic / Parent Feature
 
 ```markdown
 # [EPIC] {Nombre de la Característica}
@@ -85,12 +85,12 @@ sequenceDiagram
 
 ---
 
-## 🚫 NEVER List — Anti-patrones
+## NEVER List — Anti-patrones
 - **NUNCA** crees un ticket gigante de "Hacer feature X" sin separar las responsabilidades de frontend y backend.
 - **NUNCA** mezcles detalles técnicos de base de datos en la historia del usuario (Parent Story).
 - **NUNCA** omitas la relación de dependencias ("La UI no puede terminarse sin el contrato de la API").
 
-## ✅ ALWAYS List — Mandatos
+## ALWAYS List — Mandatos
 - **SIEMPRE** adjunta el enlace a Figma o al `DESIGN.md` en las tareas de UI.
 - **SIEMPRE** incluye diagramas Mermaid de secuencia o estados en flujos con lógica asíncrona.
 - **SIEMPRE** numera los criterios de aceptación en formato de checklist binario (`[ ]`).

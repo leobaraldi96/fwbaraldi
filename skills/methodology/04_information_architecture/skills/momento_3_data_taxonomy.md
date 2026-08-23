@@ -9,7 +9,7 @@ description: >
 
 > **Misión:** Organizar y clasificar el contenido del producto. Si el Sitemap (Momento 1) es el edificio y los Flujos (Momento 2) son los pasillos, la Taxonomía es el mobiliario y la información que vive dentro de cada habitación.
 
-## 🏁 Instrucciones para el Agente (Cómo conducir este momento)
+## Instrucciones para el Agente (Cómo conducir este momento)
 
 ### Paso 1: Mapeo de Entidades (Data Schema cruzado)
 1. Revisa la base de datos o el modelo técnico definido en la Etapa 03.

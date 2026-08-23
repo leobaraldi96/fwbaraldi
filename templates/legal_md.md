@@ -1,10 +1,10 @@
-# ⚖️ Contrato Legal & Compliance — {NOMBRE_DEL_PRODUCTO}
+# Contrato Legal & Compliance — {NOMBRE_DEL_PRODUCTO}
 
 > **Fuente de Verdad Regulatoria:** Este documento define los compromisos de cumplimiento legal, privacidad de datos y normativas vigentes (GDPR, LGPD, CCPA, Defensa del Consumidor).
 
 ---
 
-## 🍪 1. Privacidad y Gestión de Consentimiento
+## 1. Privacidad y Gestión de Consentimiento
 
 * **Banner de Cookies:** Consentimiento granular previo a la activación de scripts de terceros (Marketing, Analítica, Esenciales).
 * **Base Legal del Tratamiento:** {Ejecución contractual / Consentimiento explícito / Interés legítimo}.
@@ -16,7 +16,7 @@
 
 ---
 
-## 🗑️ 2. Derecho al Olvido y Retención de Datos
+## 2. Derecho al Olvido y Retención de Datos
 
 1. **Solicitud de Eliminación de Cuenta:**
    - El usuario debe poder solicitar la baja y eliminación de sus datos desde su panel de ajustes o vía soporte.
@@ -28,14 +28,14 @@
 
 ---
 
-## 💳 3. Cumplimiento de Pagos y Transacciones (PCI-DSS & Facturación)
+## 3. Cumplimiento de Pagos y Transacciones (PCI-DSS & Facturación)
 
 * **Tokens de Pago:** Ningún dato sensible de tarjetas de crédito o CVV toca nuestros servidores ni base de datos; la tokenización se delega 100% en la pasarela certificada (PCI-DSS Level 1).
 * **Términos de Facturación:** Especificación clara de períodos de prueba (Free Trial), cargos automáticos recurrentes y política de cancelación visible antes del checkout.
 
 ---
 
-## 🚫 NEVER List — Prohibiciones Legales
+## NEVER List — Prohibiciones Legales
 - **NUNCA** suscribas a un usuario a comunicaciones comerciales sin su consentimiento explícito previo (Checkbox desmarcado por defecto / Opt-in).
 - **NUNCA** compartas o vendas bases de datos de clientes a terceros.
 - **NUNCA** ocultes el enlace a los Términos y Condiciones o Política de Privacidad en los flujos de registro.

@@ -1,10 +1,10 @@
-# 💼 Contrato de Negocio & Invariantes — {NOMBRE_DEL_PRODUCTO}
+# Contrato de Negocio & Invariantes — {NOMBRE_DEL_PRODUCTO}
 
 > **Fuente de Verdad de Lógica de Negocio:** Este documento define las reglas e invariantes sagradas del modelo de negocio. **Ningún cambio de código, refactorización o propuesta de IA puede violar estas directivas.**
 
 ---
 
-## 🎯 1. Modelo de Monetización y Tiers / Planes
+## 1. Modelo de Monetización y Tiers / Planes
 
 | Dimensión / Límite | Plan Free / Starter | Plan Pro / Growth | Plan Enterprise / Custom |
 | :--- | :--- | :--- | :--- |
@@ -16,7 +16,7 @@
 
 ---
 
-## 🛡️ 2. Invariantes Sagradas del Sistema (Non-Negotiable Rules)
+## 2. Invariantes Sagradas del Sistema (Non-Negotiable Rules)
 
 Estas afirmaciones deben cumplirse siempre en base de datos, backend y frontend:
 
@@ -32,7 +32,7 @@ Estas afirmaciones deben cumplirse siempre en base de datos, backend y frontend:
 
 ---
 
-## 🔄 3. Matriz de Estados de Transacciones Críticas
+## 3. Matriz de Estados de Transacciones Críticas
 
 ```mermaid
 stateDiagram-v2
@@ -49,7 +49,7 @@ stateDiagram-v2
 
 ---
 
-## 🚫 NEVER List — Prohibiciones de Negocio
+## NEVER List — Prohibiciones de Negocio
 - **NUNCA** permitas que un usuario consuma recursos de un tier superior sin validación en el backend (no confiar solo en validación de UI).
 - **NUNCA** apliques descuentos acumulativos salvo que la regla de promociones lo declare explícitamente.
 - **NUNCA** expongas datos o reportes de un Tenant a otro (Aislamiento absoluto).

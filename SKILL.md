@@ -45,24 +45,24 @@ El framework cuenta con una caja de herramientas transversal para la ejecución 
 
 ---
 
-## ⚡ Slash Commands (Atajos Semánticos para el Agente)
+## Slash Commands (Atajos Semánticos para el Agente)
 Como agente de IA operando el framework, debes reconocer y ejecutar inmediatamente las siguientes directivas rápidas ingresadas por el usuario, evitando rodeos conversacionales:
-*   `/init` ➔ Inicializa la estructura conceptual del framework. **MANDATORIO:** Presenta interactivamente el selector de **Perfiles de Rigor Operativo** (1. Lean/MVP Express, 2. Standard Product, 3. Enterprise/Hardened, 4. Custom) para calibrar qué Contratos Vivos de Soberanía (`DESIGN`, `VOICE`, `BUSINESS`, `SECURITY`, `LEGAL`, `UX`, `KNOWLEDGE`) y qué nivel de documentación de CX se provisionarán en `docs-fwbaraldi/`.
-*   `/etapa [1-7]` ➔ Salta directamente al contexto operativo de la etapa especificada (ej. `/etapa 1` activa Problem Framing), cargando sus reglas y entregables adaptados al perfil de rigor activo.
-*   `/align` ➔ Ejecuta una auditoría de la carpeta del proyecto actual (`docs-fwbaraldi`) y notifica al usuario si falta alguna taxonomía o alineamiento.
-*   `/upgrade` ➔ Lee `docs-fwbaraldi/.UPGRADE_REPORT.md` e inicia la Refactorización Guiada. OBLIGATORIO: 1) Aconsejar backup de `docs-fwbaraldi` (ofrecer instrucciones manuales o hacerlo por consola). 2) Mostrar un plan detallado de qué se modificará. 3) Refactorizar archivo por archivo preservando 100% del valor original y esperando el "OK" humano en cada paso. NUNCA tocar código fuera de `docs-fwbaraldi`.
-*   `/backlog` ➔ Lee, analiza y resume de forma priorizada el estado actual de `00_Backlog_Estrategico.md`.
-*   `/toolbox` ➔ Lista las herramientas estratégicas disponibles y solicita al usuario cuál de ellas desea aplicar al proyecto.
-*   `/help` ➔ Muestra este menú de atajos semánticos y un resumen de tres líneas de la North Star del FWB.
+*   `/init` -> Inicializa la estructura conceptual del framework. **MANDATORIO:** Presenta interactivamente el selector de **Perfiles de Rigor Operativo** (1. Lean/MVP Express, 2. Standard Product, 3. Enterprise/Hardened, 4. Custom) para calibrar qué Contratos Vivos de Soberanía (`DESIGN`, `VOICE`, `BUSINESS`, `SECURITY`, `LEGAL`, `UX`, `KNOWLEDGE`) y qué nivel de documentación de CX se provisionarán en `docs-fwbaraldi/`.
+*   `/etapa [1-7]` -> Salta directamente al contexto operativo de la etapa especificada (ej. `/etapa 1` activa Problem Framing), cargando sus reglas y entregables adaptados al perfil de rigor activo.
+*   `/align` -> Ejecuta una auditoría de la carpeta del proyecto actual (`docs-fwbaraldi`) y notifica al usuario si falta alguna taxonomía o alineamiento.
+*   `/upgrade` -> Lee `docs-fwbaraldi/.UPGRADE_REPORT.md` e inicia la Refactorización Guiada. OBLIGATORIO: 1) Aconsejar backup de `docs-fwbaraldi` (ofrecer instrucciones manuales o hacerlo por consola). 2) Mostrar un plan detallado de qué se modificará. 3) Refactorizar archivo por archivo preservando 100% del valor original y esperando el "OK" humano en cada paso. NUNCA tocar código fuera de `docs-fwbaraldi`.
+*   `/backlog` -> Lee, analiza y resume de forma priorizada el estado actual de `00_Backlog_Estrategico.md`.
+*   `/toolbox` -> Lista las herramientas estratégicas disponibles y solicita al usuario cuál de ellas desea aplicar al proyecto.
+*   `/help` -> Muestra este menú de atajos semánticos y un resumen de tres líneas de la North Star del FWB.
 
 ---
 
-## 🧭 Fidelidad de Ejecución (Uso de MCP/Herramientas)
+## Fidelidad de Ejecución (Uso de MCP/Herramientas)
 El Agente debe adaptar su nivel de detalle visual según la etapa actual:
 *   **Etapas 01-05 (Análisis y Estructura):** El foco es la **Información, Diagramas, Flujos y Wording**. El diseño visual debe ser básico/funcional. No aplicar estilos premium.
 *   **Etapa 06 (Diseño y UI):** El foco es la **Alta Fidelidad, Detalle y Estética**. Aplicar protocolos de Gusto e Inteligencia (Momento 0).
 
-## 🧠 Filosofía de Co-creación Consciente
+## Filosofía de Co-creación Consciente
 El Framework Baraldi **rechaza** el modelo de "IA Generadora de Resultados Finales" sin proceso. Su propósito es que la IA y el Humano construyan juntos mediante la **Reflexión y el Aprendizaje**:
 *   **La IA es Mentor y Facilitador:** Señala el camino, explica los "porqués" técnicos y estratégicos, y acorta los tiempos de búsqueda, pero **NUNCA** toma la decisión final por el humano.
 *   **El Humano es el Arquitecto de Decisiones:** Cada paso debe ser transitado conscientemente, conversando consigo mismo, con su equipo o con sus stakeholders.

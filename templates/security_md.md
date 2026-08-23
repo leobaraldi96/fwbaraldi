@@ -1,10 +1,10 @@
-# 🛡️ Contrato de Seguridad & Permisos — {NOMBRE_DEL_PRODUCTO}
+# Contrato de Seguridad & Permisos — {NOMBRE_DEL_PRODUCTO}
 
 > **Fuente de Verdad de Ciberseguridad & Acceso:** Este documento establece las directivas de seguridad, autenticación, autorización y protección de datos. Todo código backend, endpoints y reglas de base de datos deben auditarse contra este estándar.
 
 ---
 
-## 🔑 1. Autenticación & Manejo de Sesión
+## 1. Autenticación & Manejo de Sesión
 
 * **Proveedor de Auth:** {Supabase Auth / NextAuth / Custom JWT / OAuth2}
 * **Estrategia de Tokens:** Access Token corto ({N} minutos) + Refresh Token rotativo ({N} días).
@@ -13,7 +13,7 @@
 
 ---
 
-## 👥 2. Matriz de Control de Acceso Basado en Roles (RBAC)
+## 2. Matriz de Control de Acceso Basado en Roles (RBAC)
 
 | Recurso / Entidad | Rol: SuperAdmin | Rol: Tenant Owner | Rol: Staff / Operador | Rol: Cliente / Usuario | Rol: Anónimo |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -26,7 +26,7 @@
 
 ---
 
-## 🗄️ 3. Guardrails de Base de Datos y Row-Level Security (RLS)
+## 3. Guardrails de Base de Datos y Row-Level Security (RLS)
 
 1. **Aislamiento Multi-Tenant:**
    - Toda tabla con datos de clientes **DEBE** incluir la columna `tenant_id uuid NOT NULL`.
@@ -40,7 +40,7 @@
 
 ---
 
-## 🚫 NEVER List — Prohibiciones de Seguridad
+## NEVER List — Prohibiciones de Seguridad
 - **NUNCA** devuelvas contraseñas (ni hashes), tokens sensibles o datos de pago en respuestas de API.
 - **NUNCA** deshabilites RLS en tablas de producción.
 - **NUNCA** confíes en datos de sesión que provengan únicamente del `localStorage` sin verificación criptográfica en backend.

@@ -1,21 +1,21 @@
 ---
 name: ux_writing_engine
 description: >
-  Motor táctico de UX Writing y Content Design. Se utiliza durante la Etapa 05 (Interaction Design) 
-  o de forma independiente cuando se necesite auditar, redactar o corregir textos de interfaz 
-  (botones, errores, empty states, onboarding). Asegura que el contenido sea accesible, 
+  Motor táctico de UX Writing y Content Design. Se utiliza durante la Etapa 05 (Interaction Design)
+  o de forma independiente cuando se necesite auditar, redactar o corregir textos de interfaz
+  (botones, errores, empty states, onboarding). Asegura que el contenido sea accesible,
   conciso, mitigue el sesgo WEIRD en LatAm y alinee con la voz del producto.
 keywords: ux-writing, content-design, microcopy, accessibility, tone-of-voice, weird-bias, error-messages
 version: "2.26.14"
 ---
 
-# ✍️ UX Writing & Content Design Engine
+# UX Writing & Content Design Engine
 
 Este motor táctico provee las reglas algorítmicas y heurísticas para redactar textos de interfaz (Microcopy). Todo texto generado por la IA para una interfaz debe pasar por este filtro de calidad antes de considerarse "Handoff-Ready".
 
 ---
 
-## ⚙️ Configuración Inicial (Project Context Setup)
+## Configuración Inicial (Project Context Setup)
 Antes de redactar, revisar o auditar cualquier texto, el Agente debe definir o solicitar al usuario que aclare los siguientes parámetros del proyecto actual si no están documentados:
 
 | Parámetro | Definición / Opciones |
@@ -28,7 +28,7 @@ Antes de redactar, revisar o auditar cualquier texto, el Agente debe definir o s
 
 ---
 
-## 🚫 NEVER List (Anti-Patrones de Redacción)
+## NEVER List (Anti-Patrones de Redacción)
 Queda **estrictamente prohibido** cometer los siguientes errores de redacción en las interfaces del producto:
 
 1. **Anti-Robotic:** Nunca usar jerga de sistema, códigos de error en crudo o tono robótico (Ej. *Prohibido:* "Error 404: Input inválido", *Correcto:* "No pudimos encontrar esa página").
@@ -44,7 +44,7 @@ Queda **estrictamente prohibido** cometer los siguientes errores de redacción e
 
 ---
 
-## ✅ ALWAYS List (Mandatos Operativos)
+## ALWAYS List (Mandatos Operativos)
 El Agente **debe** aplicar siempre las siguientes heurísticas al redactar:
 
 1. **Las 4 Reglas de Oro:** Todo microcopy debe ser:
@@ -52,7 +52,7 @@ El Agente **debe** aplicar siempre las siguientes heurísticas al redactar:
    - **Conciso (Concise):** Usa la menor cantidad de palabras posibles.
    - **Conversacional (Conversational):** Suena como un ser humano real.
    - **Claro (Clear):** No deja lugar a la ambigüedad.
-2. **Límites de Longitud (Cognitive A11y):** 
+2. **Límites de Longitud (Cognitive A11y):**
    - *Botones:* 2 a 4 palabras máximo.
    - *Instrucciones:* Máximo 14 palabras (garantiza 90%+ de comprensión).
    - *Mensajes de Error:* 12 a 18 palabras (explicación + solución clara).
@@ -64,7 +64,7 @@ El Agente **debe** aplicar siempre las siguientes heurísticas al redactar:
 
 ---
 
-## 🗂️ Convención de Nomenclatura i18n
+## Convención de Nomenclatura i18n
 Al organizar los diccionarios de traducción (JSON), el Agente sugerirá la nomenclatura basada en dot-notation:
 
 | Patrón | Ejemplo | Cuándo usar |
@@ -75,7 +75,7 @@ Al organizar los diccionarios de traducción (JSON), el Agente sugerirá la nome
 
 ---
 
-## 🗣️ Voz vs. Tono — La Distinción Fundamental
+## Voz vs. Tono — La Distinción Fundamental
 > **Regla de Oro:** La **VOZ** es invariante (la personalidad del producto). El **TONO** es contextual (cómo suena esa personalidad según el estado emocional del usuario).
 
 ### Matriz de Adaptación de Tono
@@ -92,14 +92,14 @@ El tono del producto debe modularse según el contexto y el estado de la tarea:
 
 ---
 
-## 🌐 Guías de Redacción Humana en Español
+## Guías de Redacción Humana en Español
 Cuando el usuario solicite redactar, revisar o auditar copys en español, aplica las siguientes directivas:
 *   **Tratamiento Consistente:** Adaptarse al pronombre definido en la configuración del proyecto (tú, vos o usted). Evitar modismos locales de una sola región a menos que el proyecto lo exija explícitamente.
 *   **Voz Pasiva Reflexiva:** A diferencia del inglés, en español es natural y correcto usar la pasiva reflexiva para indicar estados del sistema (ej. *"Se guardaron los cambios"*, *"No se pudo conectar"*), evitando que la oración suene robótica o artificial.
 *   **Evitar la Complacencia Corporativa:** Dirigirse al usuario de manera horizontal, directa y honesta. Usar un trato directo y natural, rechazando el tono condescendiente u obsecuente (típico de las traducciones literales de Silicon Valley).
 ---
 
-## 🗺️ Mitigación de Sesgo WEIRD (UX/Producto en LatAm)
+## Mitigación de Sesgo WEIRD (UX/Producto en LatAm)
 Queda terminantemente prohibido asumir que el usuario promedio cuenta con la infraestructura o hábitos de los centros tecnológicos globales:
 *   **Conectividad y Hardware:** No asumir conectividad constante, velocidad ultra alta o dispositivos de última generación. Todo flujo debe contemplar estados sin conexión, carga diferida o interfaces optimizadas para baja transferencia de datos.
 *   **Bancarización y Confianza:** No asumir que el 100% de los usuarios cuenta con tarjetas de crédito internacionales o billeteras de integración nativa. Proveer claridad absoluta sobre métodos de pago locales, transferencias manuales y validaciones de seguridad.
@@ -107,7 +107,7 @@ Queda terminantemente prohibido asumir que el usuario promedio cuenta con la inf
 
 ---
 
-## 📖 Glosario UX (UX Writing Glossary)
+## Glosario UX (UX Writing Glossary)
 
 | Concepto (Inglés) | Español Recomendado | Evitar en Español | Notas |
 | :--- | :--- | :--- | :--- |
@@ -124,7 +124,7 @@ Queda terminantemente prohibido asumir que el usuario promedio cuenta con la inf
 
 ---
 
-## 🛠️ Protocolo de Ejecución (UX Audit)
+## Protocolo de Ejecución (UX Audit)
 Cuando el usuario pida "Auditar los textos de esta pantalla" o "Aplicar el UX Writing Engine", responde con la siguiente estructura de tabla:
 
 | Texto Original | Texto Optimizado (UXW) | Racional (Regla Aplicada) |
@@ -134,7 +134,7 @@ Cuando el usuario pida "Auditar los textos de esta pantalla" o "Aplicar el UX Wr
 
 ---
 
-## 🔍 Patrones de Auditoría Automáticos (Grep)
+## Patrones de Auditoría Automáticos (Grep)
 Para auditorías automáticas en localizaciones JSON o plantillas de frontend, el Agente y los scripts locales deben buscar estos patrones de violación:
 
 | Tipo de Violación | Expresión Regular | Notas |
@@ -147,7 +147,7 @@ Para auditorías automáticas en localizaciones JSON o plantillas de frontend, e
 
 ---
 
-## ✅ Checklist de Control de Calidad
+## Checklist de Control de Calidad
 Antes de finalizar cualquier microcopy, verifica:
 - [ ] **Mayúsculas:** Sentence case obligatorio en todos los encabezados y botones.
 - [ ] **Voz Activa:** Ausencia de voz pasiva y front-loading aplicado (acción primero).

@@ -7,7 +7,7 @@ description: La Aduana Final. Protocolo de auditoría para verificar la completi
 
 > **Misión:** Actuar como el "Design QA Expert". Esta es la aduana final antes de pasar a código. Si el diseño no supera este checklist al 100%, no puede avanzar a desarrollo y debe devolverse a las Etapas 05 o 06.
 
-## 🎯 Checklist de Completitud (Aduana QA)
+## Checklist de Completitud (Aduana QA)
 
 El Agente debe auditar y verificar las siguientes 7 dimensiones:
 

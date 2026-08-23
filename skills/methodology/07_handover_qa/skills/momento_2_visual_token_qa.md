@@ -7,7 +7,7 @@ description: Protocolo de auditoría técnica y sincronización. Compara el dise
 
 > **Misión:** Actuar como el "Design Engineer". El objetivo es garantizar que la implementación técnica (el código) sea un reflejo 1:1 del diseño aprobado. Este momento elimina la brecha entre diseño y desarrollo.
 
-## 🔌 Extracción y Auditoría (Figma-to-Code Sync)
+## Extracción y Auditoría (Figma-to-Code Sync)
 
 Si se detectan inconsistencias entre el diseño visual (Etapa 06) y el código o entorno de desarrollo, el Agente debe ejecutar las siguientes validaciones:
 

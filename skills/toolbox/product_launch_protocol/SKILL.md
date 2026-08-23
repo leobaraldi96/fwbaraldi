@@ -1,19 +1,19 @@
 ---
 name: product-launch-gtm-orchestration
 description: >
-  Protocolo integral para la orquestación técnica (Runbook) y comercial (GTM) de lanzamientos. 
+  Protocolo integral para la orquestación técnica (Runbook) y comercial (GTM) de lanzamientos.
   Asegura estabilidad operativa y máximo impacto mediante comunicación segmentada y gestión de crisis.
 keywords: launch, runbook, GTM, comunicación, deploy, QA, Go/No-Go, rollback, métricas
 version: "2.26.14"
 ---
 
-# 🚀 Skill 03 — Protocolo de Lanzamiento y GTM (Go-to-Market)
+# Skill 03 — Protocolo de Lanzamiento y GTM (Go-to-Market)
 
 Esta skill actúa como un **Launch Director / GTM Manager**. Su misión es orquestar a Ingeniería, Marketing, Ventas y Soporte para que el lanzamiento sea fluido, el equipo esté entrenado y el mercado perciba el valor de inmediato.
 
 ---
 
-## 🛠️ 1. Estrategia de Despliegue Gradual (The Progressive Rollout)
+## 1. Estrategia de Despliegue Gradual (The Progressive Rollout)
 
 Para minimizar riesgos y garantizar la estabilidad, el lanzamiento debe seguir una secuencia de anillos de confianza:
 
@@ -32,7 +32,7 @@ Si durante las fases 01 o 02 se detectan casos de uso críticos no previstos:
 
 ---
 
-## 🚦 2. Orquestación Técnica y Seguridad
+## 2. Orquestación Técnica y Seguridad
 
 ### A. Checklist de Vuelo (Go/No-Go)
 Antes de autorizar el despliegue, el Agente debe validar:
@@ -49,7 +49,7 @@ Antes de autorizar el despliegue, el Agente debe validar:
 
 ---
 
-## 📢 2. Estrategia de Comunicación (GTM)
+## 2. Estrategia de Comunicación (GTM)
 
 ### A. Messaging Framework por Audiencia
 - **Usuarios:** Foco en beneficios ("Cómo esto te ahorra tiempo").
@@ -64,13 +64,13 @@ Definir eventos de tracking para medir:
 
 ---
 
-## 🚫 NEVER List — Anti-patrones de Lanzamiento
+## NEVER List — Anti-patrones de Lanzamiento
 - **NUNCA** lances un viernes por la tarde o antes de un feriado (No Friday Deploys).
 - **NUNCA** lances sin un plan de **Rollback** probado y documentado.
 - **NUNCA** asumas que el usuario entenderá la feature sin un **Onboarding** in-product o comunicación clara.
 - **NUNCA** ignores la tasa de errores en los primeros 15 minutos del lanzamiento.
 
-## ✅ ALWAYS List — Mandatos de GTM
+## ALWAYS List — Mandatos de GTM
 - **SIEMPRE** define una **North Star de Lanzamiento** (una sola métrica de éxito).
 - **SIEMPRE** prepara una "War Room" (canal de comunicación rápida) para el día del deploy.
 - **SIEMPRE** comunica el éxito (o los aprendizajes del fallo) a todos los stakeholders tras 24hs.
@@ -78,7 +78,7 @@ Definir eventos de tracking para medir:
 
 ---
 
-## 📄 Formatos de Entrega
+## Formatos de Entrega
 1. **Launch Master Plan:** Runbook técnico + Cronograma T-Minus.
 2. **Internal Enablement Kit:** FAQ de soporte y Battle Cards de ventas.
 3. **Rollback & Crisis Manual:** Guía de "Qué hacer si todo falla".

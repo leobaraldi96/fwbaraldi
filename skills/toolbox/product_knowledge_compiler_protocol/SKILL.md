@@ -8,13 +8,13 @@ keywords: knowledge base, help center, manual de usuario, copilot rag, cx, sopor
 version: "2.28.0"
 ---
 
-# 📚 Protocolo — Compilador de Base de Conocimiento y Ayuda de Producto
+# Protocolo — Compilador de Base de Conocimiento y Ayuda de Producto
 
 Este protocolo elimina el **"Handoff Ciego"** hacia los equipos de CX, Soporte y Documentación. Su objetivo es tomar toda la inteligencia estructurada generada durante las Etapas 01 a 07 del **Framework Baraldi** y compilarla de forma automática en un sistema de conocimiento vivo para humanos y agentes de IA.
 
 ---
 
-## 🧬 1. Filosofía "Zero-Waste": El Conocimiento ya está Escrito
+## 1. Filosofía "Zero-Waste": El Conocimiento ya está Escrito
 
 No se redacta ayuda desde cero. La documentación de soporte es la **traducción pedagógica** de los artefactos de diseño e ingeniería ya validados:
 
@@ -34,24 +34,24 @@ No se redacta ayuda desde cero. La documentación de soporte es la **traducción
 
 ---
 
-## 🏛️ 2. Estructura Canónica de `docs-fwbaraldi/KNOWLEDGE.md`
+## 2. Estructura Canónica de `docs-fwbaraldi/KNOWLEDGE.md`
 
 El compilador genera un artefacto maestro estructurado en 4 capas de consumo:
 
 ```markdown
-# 📖 Base de Conocimiento & Manual del Producto — {Nombre del Producto}
+# Base de Conocimiento & Manual del Producto — {Nombre del Producto}
 
-## 🎯 Capa 1: Descubrimiento & Preventa (Landing / Logged-Out)
+## Capa 1: Descubrimiento & Preventa (Landing / Logged-Out)
 - **Propuesta de Valor:** {Resumen claro del dolor que resuelve derivado de E01}
 - **Público Objetivo:** {Perfiles y casos de uso principales}
 - **FAQ Comercial & Planes:** {Respuestas directas a dudas de precios, límites y características}
 
-## 🧭 Capa 2: Glosario & Conceptos Clave (Taxonomía)
+## Capa 2: Glosario & Conceptos Clave (Taxonomía)
 | Término Oficial | ¿Qué significa en este producto? | Términos NO recomendados (Evitar) |
 | :--- | :--- | :--- |
 | {Entidad de E04} | {Definición clara y concisa} | {Sinónimos confusos} |
 
-## 👥 Capa 3: Guías de Uso y Manuales por Rol (Actor Manuals)
+## Capa 3: Guías de Uso y Manuales por Rol (Actor Manuals)
 ### Para {Rol A - Ej: Administrador / Dueño}
 1. **Flujo de Configuración Inicial:** {Paso a paso derivado de E02/E05}
 2. **Gestión Diaria:** {Acciones clave y atajos}
@@ -62,7 +62,7 @@ El compilador genera un artefacto maestro estructurado en 4 capas de consumo:
 ### Para {Rol C - Ej: Cliente / Usuario Final}
 1. **Cómo {Acción Principal - Ej: Reservar o Comprar}:** {Paso a paso sin fricción}
 
-## 🛠️ Capa 4: Troubleshooting, Errores y Casos de Borde (Self-Service)
+## Capa 4: Troubleshooting, Errores y Casos de Borde (Self-Service)
 | Situación / Error en Pantalla | Causa de Negocio (E03) | Cómo Resolverlo (Paso a Paso) |
 | :--- | :--- | :--- |
 | Botón de acción deshabilitado | No se cumplió la regla {Regla X} | Completar el campo requerido {Y} |
@@ -72,7 +72,7 @@ El compilador genera un artefacto maestro estructurado en 4 capas de consumo:
 
 ---
 
-## 🤖 3. Compilación para Asistentes de IA (Dual RAG Prompts)
+## 3. Compilación para Asistentes de IA (Dual RAG Prompts)
 
 El protocolo genera adicionalmente las directivas y chunks de contexto para desplegar copilotos de IA en el producto:
 
@@ -96,13 +96,13 @@ Eres el Copilot de Soporte dentro de la plataforma {Producto}.
 
 ---
 
-## 🚫 NEVER List — Anti-patrones
+## NEVER List — Anti-patrones
 1. **NUNCA** redactes la documentación de ayuda como prosa genérica desconectada de los nombres reales de la UI.
 2. **NUNCA** uses capturas de pantalla o instrucciones que contradigan los tokens de `DESIGN.md` o el glosario de `E04`.
 3. **NUNCA** dejes un mensaje de error o limitación de negocio sin su correspondiente camino de recuperación en la Capa 4.
 4. **NUNCA** compiles el centro de ayuda ignorando el tono y tratamiento gramatical fijado en `VOICE.md`.
 
-## ✅ ALWAYS List — Mandatos
+## ALWAYS List — Mandatos
 1. **SIEMPRE** organiza las guías operativas divididas por el **Actor Map** de la Etapa 02.
 2. **SIEMPRE** traduce las reglas de negocio de la Etapa 03 en explicaciones pedagógicas de causa y efecto.
 3. **SIEMPRE** entrega el archivo `KNOWLEDGE.md` listo para ser exportado a Markdown, Notion, Intercom o HelpScout.

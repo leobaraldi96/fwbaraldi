@@ -27,6 +27,8 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
     - *🚀 Modo Standard Product:* Suite equilibrada (`DESIGN` + `VOICE` + `BUSINESS` + `UX` + `KNOWLEDGE.md`).
     - *🛡️ Modo Enterprise / Hardened:* Suite completa para proyectos regulados (`DESIGN`, `VOICE`, `BUSINESS`, `SECURITY`, `LEGAL`, `UX`, `KNOWLEDGE`).
     - *🎛️ Modo Custom:* Selección granular de contratos y etapas activas.
+- **Higiene de Contexto y Optimización de Tokens (Emoji Purge):**
+  - Eliminación de 780+ emojis decorativos en 77 archivos de instrucciones internas (`skills/`, `00_boot/`, `templates/` y `SKILL.md`), reduciendo drásticamente el consumo de tokens y el ruido en el arnés cognitivo de la IA sin perder legibilidad ni estructura.
 - **Integración con Etapa 07 (Handover & QA):**
   - Mapeo del compilador en el Momento 3 y en los Próximos Pasos del Handoff como paso previo al Go-To-Market.
 

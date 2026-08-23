@@ -1,7 +1,7 @@
 ---
 name: fwbaraldi-operational-hygiene
 description: >
-  Protocolo de Higiene Operativa del Framework Baraldi. 
+  Protocolo de Higiene Operativa del Framework Baraldi.
   Define las reglas críticas para la nomenclatura de ramas (branches), commits semánticos
   y auditorías profundas (Deep Reviews), adaptadas al diseño y estrategia de producto.
   Trigger: Al crear commits, ramas de trabajo, o al revisar el trabajo entre etapas.
@@ -14,9 +14,9 @@ Este skill actúa como guardián de la prolijidad técnica en todo el ciclo de v
 
 ## Cuándo usar este skill
 
-- 📝 **Al hacer Commits:** Cuando necesitas registrar un progreso, artefacto o avance.
-- 🌿 **Al crear Branches:** Cuando abres una nueva línea de trabajo (ej. una iteración de UX o un nuevo flujo funcional).
-- 🔍 **Al hacer Handoff o Auditorías (Deep Review):** Cuando pasas de una etapa del framework a otra, o le entregas material a Desarrollo.
+-  **Al hacer Commits:** Cuando necesitas registrar un progreso, artefacto o avance.
+-  **Al crear Branches:** Cuando abres una nueva línea de trabajo (ej. una iteración de UX o un nuevo flujo funcional).
+-  **Al hacer Handoff o Auditorías (Deep Review):** Cuando pasas de una etapa del framework a otra, o le entregas material a Desarrollo.
 
 ---
 
@@ -55,7 +55,7 @@ Cada cambio en el repositorio (archivos de requisitos, JSONs de diseño, documen
 | `chore` | Limpieza, organización de archivos en Figma/Repo | `chore(assets): restructure icon library` |
 | `review` | Cambios aplicados tras feedback o validación | `review(ui): adjust contrast for accessibility` |
 
-### 📦 Reglas del Work-Unit Commit
+### Reglas del Work-Unit Commit
 1. **Compromiso por unidad de valor:** Cada commit representa un comportamiento entregable completo. Prohibido hacer commits por capas técnicas (`add models`, luego `add tests`).
 2. **Documentación y pruebas integradas:** Los criterios de aceptación, pruebas o documentación de usuario pertenecen al **mismo commit** que introduce el cambio.
 3. **Frontera de Rollback definida:** Cada commit debe poder revertirse sin romper piezas no relacionadas.

@@ -103,7 +103,7 @@ Antes de iniciar el Problem Framing, el Agente debe solicitar y documentar:
 **Activar cuando:** El humano aprueba los artefactos del Momento 1 y escribe "Solicitud continuar".
 **Produce:** Plan de metodología + guión de entrevistas/encuestas + informe de benchmark + base de datos de entrevistados.
 
-**⚡ PROACTIVIDAD OBLIGATORIA — Research Planning Checkpoint:**
+** PROACTIVIDAD OBLIGATORIA — Research Planning Checkpoint:**
 Antes de diseñar el plan, el framework debe ejecutar el siguiente interrogatorio en este orden. **No asumas que el humano ya tiene el plan definido. Tu rol aquí es guiar, no esperar.**
 
 ```
@@ -150,18 +150,18 @@ Antes de diseñar el plan, el framework debe ejecutar el siguiente interrogatori
 **Activar cuando:** El humano aprueba los soportes y está listo para ejecutar entrevistas o encuestas.
 **Produce:** Briefs por entrevistado, notas estructuradas en tiempo real, matriz de evidencia.
 
-**⚡ REGLAS DE ORO PARA ENTREVISTAS (Discovery & JTBD):**
+** REGLAS DE ORO PARA ENTREVISTAS (Discovery & JTBD):**
 Al generar o analizar guiones cualitativos, el Agente debe aplicar el rigor de Teresa Torres:
-1. **Recolectar Historias, NO Opiniones:** 
-   - ❌ *Mala Pregunta:* "¿Qué te gusta de esta herramienta?"
-   - ✅ *Buena Pregunta:* "Cuéntame paso a paso cómo hiciste X la última vez."
+1. **Recolectar Historias, NO Opiniones:**
+   -  *Mala Pregunta:* "¿Qué te gusta de esta herramienta?"
+   -  *Buena Pregunta:* "Cuéntame paso a paso cómo hiciste X la última vez."
 2. **Focus Behavior (No Hipotéticos):**
-   - ❌ *Mala Pregunta:* "¿Usarías esta herramienta si costara $10?" (La gente miente sobre el futuro).
-   - ✅ *Buena Pregunta:* "¿Qué alternativas pagas has intentado en el último mes?"
+   -  *Mala Pregunta:* "¿Usarías esta herramienta si costara $10?" (La gente miente sobre el futuro).
+   -  *Buena Pregunta:* "¿Qué alternativas pagas has intentado en el último mes?"
 3. **Falsificar, NO Validar:** Buscamos equivocarnos rápido. Buscar solo validar genera sesgo de confirmación.
 4. **No a las Personas Demográficas:** Las "Personas" (ej. *Marketing Sarah, 35 años*) son inútiles. Define a los usuarios por sus **Jobs-to-be-Done (JTBD)**, sus dolores reales y los "Workarounds" (atajos) que inventan hoy.
 
-**📋 Tabla de Tipos de Preguntas Cualitativas:**
+** Tabla de Tipos de Preguntas Cualitativas:**
 Usar este menú al construir guiones de entrevistas. Ordenadas de mayor a menor confiabilidad del dato obtenido:
 
 | Tipo | Ejemplo | Para qué usarla |
@@ -172,9 +172,9 @@ Usar este menú al construir guiones de entrevistas. Ordenadas de mayor a menor 
 | **Dolor** | "¿Cuál es la parte más difícil de X?" | Identificar fricciones reales |
 | **Reflexión** *(menos confiable)* | "¿Qué cambiarías de cómo hacés X hoy?" | Generar ideas sin sugerir soluciones |
 
-> ⚠️ **Alerta crítica:** Las preguntas de **Comportamiento** ("mostrándome") producen datos más confiables que las de **Reflexión** ("¿qué cambiarías?"). Lo que la gente dice que haría y lo que realmente hace suelen diferir. Registrar también si el dolor emergió de una pregunta directa o espontáneamente — es la diferencia entre `[CONFIRMA H1]` e `[CONFIRMA-ESPONTÁNEO H1]`.
+>  **Alerta crítica:** Las preguntas de **Comportamiento** ("mostrándome") producen datos más confiables que las de **Reflexión** ("¿qué cambiarías?"). Lo que la gente dice que haría y lo que realmente hace suelen diferir. Registrar también si el dolor emergió de una pregunta directa o espontáneamente — es la diferencia entre `[CONFIRMA H1]` e `[CONFIRMA-ESPONTÁNEO H1]`.
 
-**🚫 Anti-Patrones Estrictos del Research Cualitativo:**
+** Anti-Patrones Estrictos del Research Cualitativo:**
 1. **Anti-Muestra Mínima:** Nunca tomar decisiones macro en base a 2-3 entrevistas. El mínimo para extraer temas cualitativos sólidos es **7 a 14 participantes**. Menos es anecdótico; más tiene rendimientos decrecientes.
 2. **Anti-Fans-Only:** Nunca entrevistar solo a usuarios satisfechos. El "oro" metodológico está en los detractores, los que abandonaron el onboarding y los que churnearon. Ignorarlos genera sesgo de supervivencia.
 3. **Anti-Delegación:** Los diseñadores y PMs deben estar presentes en las entrevistas. Leer un reporte de una agencia de investigación no construye empatía profunda real ni detecta lo no dicho.
@@ -186,7 +186,7 @@ Usar este menú al construir guiones de entrevistas. Ordenadas de mayor a menor 
 **Activar cuando:** El humano aprueba el Informe de Research y declara cierre de recolección.
 **Produce:** Informe de Cierre con recomendación: avanzar / iterar / pivotar.
 
-**⚡ PROTOCOLO DE TESTING CIENTÍFICO (cuando se ejecuten tests de usabilidad):**
+** PROTOCOLO DE TESTING CIENTÍFICO (cuando se ejecuten tests de usabilidad):**
 Si el research incluye tests de usabilidad cuantitativa, aplicar este protocolo estrictamente:
 
 1. **Diseño del Experimento:**
@@ -201,19 +201,19 @@ Si el research incluye tests de usabilidad cuantitativa, aplicar este protocolo 
    - No listar "quejas". Listar **Barreras de Interacción**.
    - Cada hallazgo debe incluir: `Severidad (1-4) + Evidencia + Recomendación de Cambio`.
 
-> 🧠 **Regla de Juicio Senior:** Antes de validar resultados, preguntarse: *"¿Estamos testeando la interfaz o estamos testeando si el usuario entiende el valor del producto?"*. Separar siempre la **usabilidad** (¿puede hacerlo?) de la **deseabilidad** (¿quiere hacerlo?).
+>  **Regla de Juicio Senior:** Antes de validar resultados, preguntarse: *"¿Estamos testeando la interfaz o estamos testeando si el usuario entiende el valor del producto?"*. Separar siempre la **usabilidad** (¿puede hacerlo?) de la **deseabilidad** (¿quiere hacerlo?).
 
-**⚡ REGLAS ESTRICTAS DE SÍNTESIS ANALÍTICA:**
+** REGLAS ESTRICTAS DE SÍNTESIS ANALÍTICA:**
 1. **Thematic Analysis:** No mezclar insights. Agrupar por afinidad, no por categorías pre-creadas.
 2. **El Valor del "Outlier":** Si hay un dato contradictorio, no lo promedies. Reporta la contradicción (Ej: Distribuciones bimodales donde la mitad ama algo y la mitad lo odia).
 3. **Opportunity Sizing:** Todo problema debe dimensionarse: `Impacto = Usuarios Afectados x Frecuencia x Severidad`. (Un bug catastrófico 1 vez al año vs. botón feo 1000 veces al día).
 4. **Triangulación:** Nunca confiar en una sola fuente. Encuestas dicen el *QUÉ*, entrevistas el *POR QUÉ*.
 
-**⚡ OUTPUT DIMENSIONS CHECKPOINT (OBLIGATORIO antes de generar el informe):**
+** OUTPUT DIMENSIONS CHECKPOINT (OBLIGATORIO antes de generar el informe):**
 Antes de generar cualquier entregable de datos, el framework DEBE interrogar al usuario sobre las 4 dimensiones de salida.
 
 ```
-📊 Tenemos los datos procesados. Antes de construirlos, necesito definir 4 variables clave:
+ Tenemos los datos procesados. Antes de construirlos, necesito definir 4 variables clave:
 
 1. Naturaleza Analítica: ¿Dashboard o Informe Profundo?
    → Dashboard Ágil (Ley de Miller): Máximo 5-7 métricas clave por vista. Economía visual estricta.
@@ -229,13 +229,13 @@ Antes de generar cualquier entregable de datos, el framework DEBE interrogar al 
    → ¿Bajo qué condiciones se leerá esto? Determina contraste y densidad visual.
 ```
 
-→ **Protocolo de Transparencia de Exclusión (Brief de Filtrado):** 
+→ **Protocolo de Transparencia de Exclusión (Brief de Filtrado):**
 Si el humano selecciona la ruta **"Dashboard"**, el framework tiene la regla estricta de NO mostrarlo todo. Pero NUNCA debe ocultar datos por asunción. Antes de generar el código, presentá un **Brief de Filtrado**:
 *"Dado que es un Dashboard y requerimos economía visual, propongo mantener estas 5 métricas primarias [listar] y dejar fuera estas 3 [listar] porque [motivo]. ¿Estás de acuerdo o preferís cambiar el liderazgo de los datos?"*
 
 ---
 
-## 🛠️ Herramientas de Estrategia Adicional (Bridge Architecture)
+## Herramientas de Estrategia Adicional (Bridge Architecture)
 Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 1. **Stakeholder Narrative Strategy:** Aplicar para blindar el *Stakeholder Map* y anticipar resistencias políticas.
 2. **Business Strategy & Growth:** Aplicar para asegurar que el problema detectado tenga impacto directo en el ROI.
@@ -283,7 +283,7 @@ Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 
 ---
 
-## 🚫 NEVER List — Anti-patrones de la Etapa 01
+## NEVER List — Anti-patrones de la Etapa 01
 El Agente debe **bloquear** el proceso si detecta:
 
 1.  **NEVER diseñes soluciones:** Esta etapa es de diagnóstico. Proponer features prematuras contamina el encuadre y genera sesgos.
@@ -293,7 +293,7 @@ El Agente debe **bloquear** el proceso si detecta:
 5.  **NEVER esperes que el humano defina la metodología:** El framework tiene la iniciativa. Debes recomendar métodos basados en trade-offs proactivamente.
 6.  **NEVER ocultes datos por asunción:** Si usas formato Dashboard, presenta siempre un Brief de Filtrado para aprobación.
 
-## ✅ ALWAYS List — Mandatos de Comportamiento
+## ALWAYS List — Mandatos de Comportamiento
 - **Siempre** entrega artefactos como documentos Markdown estructurados, nunca solo en el chat.
 - **Siempre** marca explícitamente el estado del conocimiento: `[HIPÓTESIS]`, `[VALIDADO]`, `[SUPUESTO]`.
 - **Siempre** busca en Engram MCP hallazgos previos con prefijo `pf-` al iniciar.
@@ -309,9 +309,9 @@ El Agente debe **bloquear** el proceso si detecta:
 - Momento 2 → Eje: `pf-insight-principal` (tipo: `validación`) — Patrones de alta tracción + insights humanos sutiles.
 - Momento 3 → Eje: `pf-decision-cierre` (tipo: `cierre-de-etapa`)
 
-**Al cerrar la etapa:** 
+**Al cerrar la etapa:**
 1. Ejecutar el Protocolo de Cierre de Ubicación Sistémica del `00_boot/context.md`.
-2. Mostrar Mapa de Progreso: `✅ 01 Problem Framing | 🚧 02 System Analysis | 🔲 03 Product Logic`.
+2. Mostrar Mapa de Progreso: ` 01 Problem Framing |  02 System Analysis |  03 Product Logic`.
 3. Ejecutar el Protocolo de Cierre de Sesión del `00_boot/context.md`.
 
 ---

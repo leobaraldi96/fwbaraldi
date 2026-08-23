@@ -135,7 +135,7 @@ Context: On-the-go, multitasking, time-sensitive
 
 For each factor, assess and rate 1-5:
 
-#### 1. Useful ⭐⭐⭐⭐⚪ (4/5)
+#### 1. Useful  (4/5)
 
 **Question**: Does the product solve real user problems and provide value?
 
@@ -159,7 +159,7 @@ For each factor, assess and rate 1-5:
 
 ---
 
-#### 2. Usable ⭐⭐⭐⚪⚪ (3/5)
+#### 2. Usable  (3/5)
 
 **Question**: Is it easy to use and navigate?
 
@@ -179,7 +179,7 @@ For each factor, assess and rate 1-5:
 
 ---
 
-#### 3. Findable ⭐⭐⚪⚪⚪ (2/5)
+#### 3. Findable  (2/5)
 
 **Question**: Can users easily locate content and features?
 
@@ -197,7 +197,7 @@ For each factor, assess and rate 1-5:
 
 ---
 
-#### 4. Credible ⭐⭐⭐⭐⚪ (4/5)
+#### 4. Credible  (4/5)
 
 **Question**: Does it inspire trust and confidence?
 
@@ -219,7 +219,7 @@ For each factor, assess and rate 1-5:
 
 ---
 
-#### 5. Desirable ⭐⭐⭐⚪⚪ (3/5)
+#### 5. Desirable  (3/5)
 
 **Question**: Is it aesthetically appealing and emotionally engaging?
 
@@ -238,7 +238,7 @@ For each factor, assess and rate 1-5:
 
 ---
 
-#### 6. Accessible ⭐⭐⚪⚪⚪ (2/5)
+#### 6. Accessible  (2/5)
 
 **Question**: Is it inclusive for all users, including those with disabilities?
 
@@ -259,7 +259,7 @@ For each factor, assess and rate 1-5:
 
 ---
 
-#### 7. Valuable ⭐⭐⭐⭐⚪ (4/5)
+#### 7. Valuable  (4/5)
 
 **Question**: Does it deliver value to both users and the business?
 
@@ -279,13 +279,13 @@ For each factor, assess and rate 1-5:
 
 | Factor | Rating | Status | Priority |
 |--------|--------|--------|----------|
-| Useful | 4/5 | ✅ Good | Medium |
-| Usable | 3/5 | ⚠️ Needs work | High |
-| Findable | 2/5 | ❌ Poor | Critical |
-| Credible | 4/5 | ✅ Good | Low |
-| Desirable | 3/5 | ⚠️ Needs work | Medium |
-| Accessible | 2/5 | ❌ Poor | High |
-| Valuable | 4/5 | ✅ Good | Low |
+| Useful | 4/5 |  Good | Medium |
+| Usable | 3/5 |  Needs work | High |
+| Findable | 2/5 |  Poor | Critical |
+| Credible | 4/5 |  Good | Low |
+| Desirable | 3/5 |  Needs work | Medium |
+| Accessible | 2/5 |  Poor | High |
+| Valuable | 4/5 |  Good | Low |
 
 **Overall UX Factor Score**: 22/35 (63%) - **Acceptable, significant improvement needed**
 
@@ -293,7 +293,7 @@ For each factor, assess and rate 1-5:
 
 ### Step 3: Assess 5 Usability Characteristics (30 minutes)
 
-#### 1. Effectiveness ⭐⭐⭐⭐⚪ (4/5)
+#### 1. Effectiveness  (4/5)
 
 **Definition**: Can users achieve their goals accurately and completely?
 
@@ -313,7 +313,7 @@ For each factor, assess and rate 1-5:
 
 ---
 
-#### 2. Efficiency ⭐⭐⭐⚪⚪ (3/5)
+#### 2. Efficiency  (3/5)
 
 **Definition**: Can users complete tasks quickly with minimal effort?
 
@@ -336,7 +336,7 @@ For each factor, assess and rate 1-5:
 
 ---
 
-#### 3. Engagement ⭐⭐⭐⚪⚪ (3/5)
+#### 3. Engagement  (3/5)
 
 **Definition**: Is the interface pleasant, satisfying, and enjoyable to use?
 
@@ -354,7 +354,7 @@ For each factor, assess and rate 1-5:
 
 ---
 
-#### 4. Error Tolerance ⭐⭐⚪⚪⚪ (2/5)
+#### 4. Error Tolerance  (2/5)
 
 **Definition**: Can users easily prevent, recognize, and recover from errors?
 
@@ -373,7 +373,7 @@ For each factor, assess and rate 1-5:
 
 ---
 
-#### 5. Ease of Learning ⭐⭐⭐⚪⚪ (3/5)
+#### 5. Ease of Learning  (3/5)
 
 **Definition**: Can new users quickly learn to use the product without extensive training?
 
@@ -396,11 +396,11 @@ For each factor, assess and rate 1-5:
 
 | Characteristic | Rating | Status | Impact |
 |---------------|--------|--------|--------|
-| Effectiveness | 4/5 | ✅ Good | High |
-| Efficiency | 3/5 | ⚠️ Needs work | High |
-| Engagement | 3/5 | ⚠️ Needs work | Medium |
-| Error Tolerance | 2/5 | ❌ Poor | Critical |
-| Ease of Learning | 3/5 | ⚠️ Needs work | High |
+| Effectiveness | 4/5 |  Good | High |
+| Efficiency | 3/5 |  Needs work | High |
+| Engagement | 3/5 |  Needs work | Medium |
+| Error Tolerance | 2/5 |  Poor | Critical |
+| Ease of Learning | 3/5 |  Needs work | High |
 
 **Overall Usability Score**: 15/25 (60%) - **Below target, improvement essential**
 
@@ -833,13 +833,13 @@ Mobile: Hamburger menu with same structure
 
 | Factor | Score | Status | Priority |
 |--------|-------|--------|----------|
-| Useful | 4/5 | ✅ Good | Medium |
-| Usable | 3/5 | ⚠️ Needs work | High |
-| Findable | 2/5 | ❌ Poor | Critical |
-| Credible | 4/5 | ✅ Good | Low |
-| Desirable | 3/5 | ⚠️ Needs work | Medium |
-| Accessible | 2/5 | ❌ Poor | High |
-| Valuable | 4/5 | ✅ Good | Low |
+| Useful | 4/5 |  Good | Medium |
+| Usable | 3/5 |  Needs work | High |
+| Findable | 2/5 |  Poor | Critical |
+| Credible | 4/5 |  Good | Low |
+| Desirable | 3/5 |  Needs work | Medium |
+| Accessible | 2/5 |  Poor | High |
+| Valuable | 4/5 |  Good | Low |
 
 **Total**: 22/35 (63%)
 
@@ -853,15 +853,15 @@ Mobile: Hamburger menu with same structure
 
 | Characteristic | Score | Status | Impact |
 |---------------|-------|--------|--------|
-| Effectiveness | 4/5 | ✅ Good | High |
-| Efficiency | 3/5 | ⚠️ Needs work | High |
-| Engagement | 3/5 | ⚠️ Needs work | Medium |
-| Error Tolerance | 2/5 | ❌ Poor | Critical |
-| Ease of Learning | 3/5 | ⚠️ Needs work | High |
+| Effectiveness | 4/5 |  Good | High |
+| Efficiency | 3/5 |  Needs work | High |
+| Engagement | 3/5 |  Needs work | Medium |
+| Error Tolerance | 2/5 |  Poor | Critical |
+| Ease of Learning | 3/5 |  Needs work | High |
 
 **Total**: 15/25 (60%)
 
-**Utility Assessment**: Features present match user needs ✅
+**Utility Assessment**: Features present match user needs
 **Usefulness**: Utility (Good) + Usability (Fair) = **Acceptable but improvable**
 
 [Detailed analysis...]

@@ -16,7 +16,7 @@ version: "2.26.14"
 ---
 
 ## Definición de Atmósfera Visual (Aesthetic Definition)
-Al ser el framework **estéticamente agnóstico**, no impone estilos, temas ni tipografías predefinidas. En su lugar, el equipo de producto define libremente la dirección estética y los principios visuales alineados a la estrategia de negocio. 
+Al ser el framework **estéticamente agnóstico**, no impone estilos, temas ni tipografías predefinidas. En su lugar, el equipo de producto define libremente la dirección estética y los principios visuales alineados a la estrategia de negocio.
 
 La IA debe:
 1. **Consultar y relevar la estética:** Interrogar de forma obligatoria al usuario sobre sus definiciones estéticas, líneas de arte, estilos deseados y características visuales claves antes de definir cualquier artefacto visual.
@@ -46,7 +46,7 @@ Este archivo es obligatorio y debe cumplir con el **[Protocolo 36] (Taste Design
 
 ---
 
-## 🛠️ Integración con la Toolbox (Bridge Architecture)
+## Integración con la Toolbox (Bridge Architecture)
 Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 1. **Momento 4 (Interactive Prototyping):** MANDATORIO para testeo de alta fidelidad.
 2. **Skill 10 (i18n Readiness Audit):** MANDATORIO antes de cerrar el Momento 3.
@@ -70,7 +70,7 @@ Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 
 ---
 
-## 🚫 NEVER List — Anti-patrones de la Etapa 06
+## NEVER List — Anti-patrones de la Etapa 06
 El Agente debe **bloquear** el proceso si detecta:
 
 1.  **NEVER uses tipografías genéricas (Inter) en High-End:** El uso de Inter en productos premium es un "AI Tell". Usa Geist, Satoshi o Outfit.
@@ -80,7 +80,7 @@ El Agente debe **bloquear** el proceso si detecta:
 5.  **NEVER entregues un diseño final sin hitos de decisión:** La UI es el resultado de una calibración continua con el humano.
 6.  **NEVER ignores los estándares A11y en tokens:** Contraste y tamaños deben ser validados matemáticamente.
 
-## ✅ ALWAYS List — Mandatos de Comportamiento
+## ALWAYS List — Mandatos de Comportamiento
 - **Siempre** justifica la estética basada en beneficios técnicos (legibilidad) o psicológicos.
 - **Siempre** utiliza el *Taste Spectrum* como una conversación para calibrar el diseño.
 - **Siempre** prepara el terreno para la sincronización 1:1 con Figma (API Sync).
@@ -89,7 +89,7 @@ El Agente debe **bloquear** el proceso si detecta:
 
 ---
 
-## 🧠 Protocolo de Mentoría y Co-creación (E06)
+## Protocolo de Mentoría y Co-creación (E06)
 En la fase visual, el Agente actúa como un **Director de Arte** que educa el ojo del usuario:
 *   **Justificación Estética:** Al proponer una tipografía o color, explicar su beneficio técnico (ej. *"Esta fuente tiene una altura de x [x-height] generosa que mejora la legibilidad en pantallas pequeñas"*) o psicológico.
 *   **Reflexión de Taste:** Usar el **Taste Spectrum (Momento 0)** no como un cuestionario, sino como una conversación: *"Si subimos la densidad aquí, ganamos eficiencia pero perdemos aire. ¿Cómo crees que afectará esto a tu usuario en [Contexto definido en E01]?"*.

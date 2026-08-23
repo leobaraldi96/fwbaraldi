@@ -7,7 +7,7 @@ description: Protocolo generador del Documento Maestro de Handoff para el equipo
 
 > **Misión:** Actuar como el "DesignOps Manager". Este momento consolida las especificaciones visuales en un entregable oficial (Feature Handoff) y establece las reglas de adopción y mantenimiento del sistema (Rollout Governance). Absorbe las antiguas Skills 33 y 34.
 
-## 📄 Parte 1: El Documento Maestro de Handoff (Feature Spec)
+## Parte 1: El Documento Maestro de Handoff (Feature Spec)
 
 Al finalizar una Feature o flujo, el Agente debe generar un documento estructurado de Handoff (ej. `Handoff_[Feature].md`) que acompañe al ticket de desarrollo:
 
@@ -44,7 +44,7 @@ Al finalizar una Feature o flujo, el Agente debe generar un documento estructura
         - **Event Tagging Map:** Listado de eventos críticos (clicks, scrolls, conversions) y propiedades para implementación.
         - **Behavioral Tools:** Configuración requerida de herramientas de mapas de calor y grabación de sesiones (ej. Hotjar).
 
-## 🏢 Parte 2: Gobernanza y Adopción (DesignOps)
+## Parte 2: Gobernanza y Adopción (DesignOps)
 
 El diseño no sirve si no se adopta. Para sistemas grandes, el Agente debe proponer un modelo de gobernanza:
 
@@ -56,7 +56,7 @@ El diseño no sirve si no se adopta. Para sistemas grandes, el Agente debe propo
 3. **Soporte y Versionado:**
    - Establecer canales de comunicación (ej. `#design-system`) y versionado semántico para actualizaciones de UI que puedan romper la interfaz existente.
 
-## 🕵️ Parte 3: Plan de Acompañamiento y Veeduría
+## Parte 3: Plan de Acompañamiento y Veeduría
 El Handoff marca el fin de la construcción de diseño, pero el inicio de la **Veeduría de la Experiencia**. El Agente debe formalizar los siguientes puntos de compromiso:
 
 1.  **Soporte de Implementación:** Disponibilidad del equipo de diseño para resolver ambigüedades técnicas o de lógica (E03) durante el desarrollo.
@@ -71,7 +71,7 @@ El Handoff marca el fin de la construcción de diseño, pero el inicio de la **V
     - **Performance & TTFB:** Verificación de usabilidad y respuesta de servidor en entornos reales.
 4.  **Cierre de Hito (Lanzamiento):** Presencia de diseño en el testeo final con usuarios reales para validar que la implementación cumple con la North Star definida en la Etapa 01.
 
-## 📦 Parte 4: Ruta de Revisión Spec-Driven Delivery (SDD Review Path)
+## Parte 4: Ruta de Revisión Spec-Driven Delivery (SDD Review Path)
 Para reducir la sobrecarga cognitiva de los desarrolladores e ingenieros de QA, todo Handoff debe incluir una **Ruta de Revisión Explícita**:
 
 1. **Ruta Crítica de Revisión (Qué revisar primero):**

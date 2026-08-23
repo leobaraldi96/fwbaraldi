@@ -5,7 +5,7 @@
 ```yaml
 name: product-logic-orchestration
 description: >
-  Ejecuta el Momento 1 de la Etapa 03. 
+  Ejecuta el Momento 1 de la Etapa 03.
   Orquesta la maquinaria del producto mediante dos capas:
   1. Actor Logic (Estática): Alcance, permisos y reglas de negocio por actor.
   2. Service Blueprint (Temporal): Flujo paso a paso con línea de visibilidad.
@@ -32,8 +32,8 @@ estado_artefacto: BORRADOR
 Definir la **Jurisdicción de Lógica** (quién puede hacer qué) y la **Orquestación Temporal** (cuándo sucede cada acción) para TODOS los actores identificados en el sistema.
 
 ## Pre-requisitos (Bloqueo)
-> **⚠️ REGLA DE ORO:** Antes de proceder, la IA **DEBE** realizar una auditoría exhaustiva de los artefactos de la **Etapa 02 (System Analysis)**. 
-> 
+> ** REGLA DE ORO:** Antes de proceder, la IA **DEBE** realizar una auditoría exhaustiva de los artefactos de la **Etapa 02 (System Analysis)**.
+>
 > **Protocolo de Inicio Obligatorio:**
 > 1. Listar TODOS los actores (Humanos y Sistemas) detectados en el "Mapa de Actores" o "Ecosistema" de la Etapa 02.
 > 2. No omitir actores secundarios ni integraciones externas (APIs de terceros, Logística, etc.).

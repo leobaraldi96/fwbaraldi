@@ -6,11 +6,11 @@ description: >
 version: "2.26.14"
 ---
 
-# 📈 Product Metrics & Analytics Expert
+# Product Metrics & Analytics Expert
 
 Este guardián fusiona la estrategia de producto (Qué medimos) con la ejecución de desarrollo (Cómo lo visualizamos). Asegura que el producto sea gobernable por métricas accionables (Etapa 03 y Etapa 05).
 
-## 🧭 Estrategia de Métricas (Qué Medimos)
+## Estrategia de Métricas (Qué Medimos)
 
 ### 1. El Marco North Star (NSM)
 El producto debe tener **UNA sola métrica de la estrella polar** que resuma de manera perfecta que el usuario obtuvo el valor por el cual "contrató" la solución (ej: Spotify = Minutos escuchados). A esta la siguen 3-4 Input Metrics que el equipo puede afectar directamente.
@@ -24,9 +24,9 @@ El producto debe tener **UNA sola métrica de la estrella polar** que resuma de 
 - **HEART (Google):** Happiness (Satisfacción), Engagement (Uso), Adoption (Nuevos), Retention (Regresos), Task Success (Éxito).
 - **AARRR (Pirate Metrics):** Acquisition, Activation, Retention, Referral, Revenue. Fundamental para el Funnel analysis.
 
-## 📐 Visualización de Métricas (Principios de Diseño)
+## Visualización de Métricas (Principios de Diseño)
 
-> ⚠️ **Nota:** El código de implementación de dashboards (Recharts, React, Next.js) pertenece al **Baraldi Engineering Framework**. Aquí definimos el *qué* mostrar y *por qué*, no el *cómo* programarlo.
+>  **Nota:** El código de implementación de dashboards (Recharts, React, Next.js) pertenece al **Baraldi Engineering Framework**. Aquí definimos el *qué* mostrar y *por qué*, no el *cómo* programarlo.
 
 **Principios para el diseño de dashboards:**
 - **Jerarquía visual:** La métrica North Star debe dominar visualmente (tamaño, posición, color). Las input metrics van subordinadas.
@@ -35,7 +35,7 @@ El producto debe tener **UNA sola métrica de la estrella polar** que resuma de 
 - **Patrones de carga:** Usar Skeletons en dashboards. Nunca bloquear toda la UI mientras cargan los datos.
 
 
-## 🚫 Anti-Patrones Estrictos
+## Anti-Patrones Estrictos
 - **Síndrome "Tengo que Medir Todo":** Un Dashboard con 50 KPIs es ciego. Obliga al humano a podar. Solo entre 5 a 10 métricas que importen a nivel Board.
 - **Gráficos de Pastel (Pie Charts) Engañosos:** Úsalos SOLO si los componentes superan el 20-30% de diferencia. Si es complejo, prefiere un Bar Chart apilado horizontal (*Bullet graph*).
 

@@ -14,7 +14,7 @@ version: "2.26.14"
 
 ---
 
-## 🏗️ Foco en el Comportamiento y Validación
+## Foco en el Comportamiento y Validación
 En esta etapa no nos preocupamos por los colores, sino por:
 1. **Micro-interacciones:** Qué pasa cuando el usuario hace clic, desliza o espera.
 2. **Sistema de Estados:** Definición exhaustiva de Hover, Active, Focus, Disabled, Loading y Error para cada componente.
@@ -30,7 +30,7 @@ En esta etapa no nos preocupamos por los colores, sino por:
 
 ---
 
-## 🛠️ Integración con la Toolbox (Bridge Architecture)
+## Integración con la Toolbox (Bridge Architecture)
 Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 1. **AI Interaction Engine (`skills/engines/ai_interaction_engine/`):** Si el producto incluye funcionalidades de IA, es MANDATORIO aplicar este protocolo para diseñar la gestión de latencia, estados de "pensamiento" y feedback de errores de la IA.
 2. **UX Writing Engine (`skills/engines/ux_writing_engine/`):** Herramienta core para el Momento 2 y 3. Debe usarse para redactar el *VOICE.md* y asegurar que cada mensaje de error o estado de éxito siga principios de voz activa y sentence case.
@@ -49,7 +49,7 @@ Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 
 ---
 
-## 🚫 NEVER List — Anti-patrones de la Etapa 05
+## NEVER List — Anti-patrones de la Etapa 05
 El Agente debe **bloquear** el proceso si detecta:
 
 1.  **NEVER diseñes estética (UI):** Esta etapa es de comportamiento. El foco es el movimiento y la lógica de interacción, no el maquillaje.
@@ -59,7 +59,7 @@ El Agente debe **bloquear** el proceso si detecta:
 5.  **NEVER ignores la latencia en IA:** Prohibido no diseñar los estados de "pensamiento" y los fallos de modelo si el producto usa IA.
 6.  **NEVER avances sin Handoff Matrix:** El inventario de pantallas debe ser exhaustivo y validado antes de la alta fidelidad.
 
-## ✅ ALWAYS List — Mandatos de Comportamiento
+## ALWAYS List — Mandatos de Comportamiento
 - **Siempre** justifica la elección de patrones (Tabs, Accordions) basada en la jerarquía de información.
 - **Siempre** realiza un "Mental Walkthrough" con el usuario para detectar fricciones antes de cerrar una pantalla.
 - **Siempre** redacta el **VOICE.md** definiendo Tono, Voz y reglas gramaticales del sistema.
@@ -67,7 +67,7 @@ El Agente debe **bloquear** el proceso si detecta:
 
 ---
 
-## 🧠 Protocolo de Mentoría y Co-creación (E05)
+## Protocolo de Mentoría y Co-creación (E05)
 En esta etapa, el Agente no solo dibuja; enseña y facilita la decisión arquitectónica:
 *   **Justificación de Patrones:** Al proponer un layout, el Agente debe explicar por qué ese patrón (ej. Tabs, Accordions, Sidebars) es el más eficiente para la jerarquía de información definida.
 *   **Reflexión de Flujo:** Antes de dar una pantalla por cerrada, invitar al usuario a realizar un "Mental Walkthrough": *"¿Qué siente el usuario en este paso? ¿Hay fricción innecesaria?"*.

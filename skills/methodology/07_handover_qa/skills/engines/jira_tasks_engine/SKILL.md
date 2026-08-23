@@ -7,11 +7,11 @@ description: >
 version: "2.26.14"
 ---
 
-# 📋 Jira Strategic Tasks (Baraldi Edition)
+# Jira Strategic Tasks (Baraldi Edition)
 
 Este skill asegura que cada tarea en Jira sea una herramienta de comunicación infalible entre el equipo de Producto y el equipo de IT. Evitamos el "over-engineering" en la descripción y la ambigüedad en la técnica.
 
-## 🧠 La Regla de Oro: Separación de Responsabilidades
+## La Regla de Oro: Separación de Responsabilidades
 
 Nunca crees una tarea técnica gigante. Divide siempre el trabajo en:
 1.  **Parent Task (Estratégico/UX):** Para los Stakeholders. Describe el problema del usuario y el beneficio esperado.
@@ -19,45 +19,45 @@ Nunca crees una tarea técnica gigante. Divide siempre el trabajo en:
 
 ---
 
-## 🎨 Plantilla de Tarea de Producto (Parent)
+## Plantilla de Tarea de Producto (Parent)
 
 **[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```markdown
-## 🎯 Objetivo / User Story
+## Objetivo / User Story
 Como un {perfil de usuario}, quiero {acción} para que {beneficio estratégico}.
 
-## 📦 Alcance (User Perspective)
+## Alcance (User Perspective)
 - [ ] El usuario puede {funcionalidad principal}.
 - [ ] Se visualiza {elemento visual clave}.
 - [ ] {Comportamiento esperado en casos de error}.
 
-## 🖼️ Diseño y Referencias
+## Diseño y Referencias
 - **Link a Figma:** {URL del prototipo focalizado}
 - **Referencia Visual:** Ver etapa 05 del Framework Baraldi.
 ```
 
 ---
 
-## ⚙️ Plantilla de Tarea Técnica (Child)
+## Plantilla de Tarea Técnica (Child)
 
 **[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```markdown
-## 🛠️ Detalles de Implementación (Tech)
+## Detalles de Implementación (Tech)
 Implementación técnica del flujo {nombre} para el componente {API/UI}.
 
-## 🚥 Criterios de Aceptación Técnica
+## Criterios de Aceptación Técnica
 - [ ] Endpoints afectados: `{ruta_api}`
 - [ ] Componentes UI: `{ruta_componente}`
 - [ ] Lógica de validación: {ej: Usar Zod para esquemas}.
 
-## 🧪 Plan de Pruebas
+## Plan de Pruebas
 - [ ] Prueba de "Happy Path".
 - [ ] Validación de {Edge Case detectado en etapa 01/02}.
 ```
 
 ---
 
-## 🏷️ Convención de Títulos (Baraldi Sync)
+## Convención de Títulos (Baraldi Sync)
 
 Formato: `[TYPE] Descripción corta (Componente)`
 

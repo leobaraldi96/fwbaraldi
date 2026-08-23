@@ -4,16 +4,16 @@ description: >
   Skill experta para auditar la salud, coherencia y deudas del proyecto activo.
   Actúa como el "Framework Doctor", detectando conflictos semánticos,
   hipótesis sin validar y brechas en la arquitectura de información.
-  Trigger: "Auditar proyecto", "Salud del proyecto", "Framework Doctor", 
+  Trigger: "Auditar proyecto", "Salud del proyecto", "Framework Doctor",
   "Estado de coherencia".
 version: "2.26.14"
 ---
 
-# 🩺 Capa 00 — Project Health Audit (Framework Doctor)
+# Capa 00 — Project Health Audit (Framework Doctor)
 
 > **Misión:** Garantizar que el producto mantenga su integridad sistémica a lo largo de todas las etapas, evitando el "Drift" (desviación) entre la visión inicial y la implementación actual.
 
-## 🔬 Protocolo de Auditoría (El Diagnóstico)
+## Protocolo de Auditoría (El Diagnóstico)
 
 Cuando el usuario solicita un diagnóstico, el Agente debe ejecutar los siguientes pasos en orden:
 
@@ -36,31 +36,31 @@ Cuando el usuario solicita un diagnóstico, el Agente debe ejecutar los siguient
 
 ---
 
-## 📊 Formato del Informe: "The Health Score"
+## Formato del Informe: "The Health Score"
 
 El output de esta skill **SIEMPRE** debe ser un documento estructurado con el siguiente formato visual:
 
-### 🏥 Diagnóstico del Proyecto: [NOMBRE]
+### Diagnóstico del Proyecto: [NOMBRE]
 
 **Salud Sistémica Global: [XX%]**
 
 | Área | Estado | Hallazgo del Doctor |
 | :--- | :---: | :--- |
-| **Integridad Docs** | 🟢 | Todos los artefactos están sincronizados. |
-| **Coherencia** | 🟡 | Se detectó una feature en E03 no mapeada en E01. |
-| **Validación** | 🔴 | 5 Hipótesis críticas sin evidencia de respaldo. |
-| **Backlog** | 🟢 | El Scope Creep está bajo control. |
+| **Integridad Docs** |  | Todos los artefactos están sincronizados. |
+| **Coherencia** |  | Se detectó una feature en E03 no mapeada en E01. |
+| **Validación** |  | 5 Hipótesis críticas sin evidencia de respaldo. |
+| **Backlog** |  | El Scope Creep está bajo control. |
 
 ---
 
-### 💊 Tratamiento Recomendado (Próximos Pasos)
+### Tratamiento Recomendado (Próximos Pasos)
 1. **Acción Prioritaria:** [Ej: Validar la hipótesis de pago antes de seguir con el UI].
 2. **Higiene:** [Ej: Sincronizar el Glosario con la nueva Taxonomía].
 3. **Guardrail:** [Ej: Aplicar Ley de Respiro en el próximo Dashboard].
 
 ---
 
-## 👑 Mandato de Soberanía en la Auditoría
+## Mandato de Soberanía en la Auditoría
 - El Doctor **informa**, el Humano **cura**.
 - Nunca borres un archivo por un diagnóstico negativo. Propón la corrección.
 - Si el humano decide ignorar un conflicto semántico, documéntalo como una "Decisión Consciente de Riesgo".

@@ -7,7 +7,7 @@ description: Construcción de la biblioteca de componentes e inventario visual b
 
 > **Misión:** Transformar los tokens del Momento 1 en piezas funcionales de interfaz. El objetivo no es solo "dibujar", sino construir un sistema que se adapte al tamaño real del problema.
 
-## 🏁 Paso 0: Calibración de Escala (UI Kit vs Design System)
+## Paso 0: Calibración de Escala (UI Kit vs Design System)
 Antes de construir el primer componente, el Agente debe facilitar la decisión de escalamiento con el humano:
 
 ### Escenario A: UI Kit (Velocidad & Foco en MVP)
@@ -30,7 +30,7 @@ Antes de construir el primer componente, el Agente debe facilitar la decisión d
 
 **Misión Pedagógica:** El Agente debe desafiar el trabajo redundante: *"¿Por qué vamos a diseñar este componente desde cero si Metronic ya lo resuelve con accesibilidad nativa? Mejor definamos las variables de personalización para adecuarlo a la marca y ahorremos tiempo de desarrollo"*.
 
-## 🤝 Documentación como Servicio (Handoff Experience)
+## Documentación como Servicio (Handoff Experience)
 La documentación no es para nosotros, es para los **Consumidores del Sistema** (Front-end, QA, otros Diseñadores).
 *   **Empatía Técnica:** El Agente debe asegurar que los nombres de los componentes y tokens en Figma coincidan 1:1 con la arquitectura de código definida en la Etapa 01.
 *   **Claridad Operativa:** Cada componente documentado debe responder:
@@ -42,22 +42,22 @@ La documentación no es para nosotros, es para los **Consumidores del Sistema** 
 
 ---
 
-## 🏗️ Paso 0.5: Arquitectura de Archivo & Gobernanza
+## Paso 0.5: Arquitectura de Archivo & Gobernanza
 Antes de dibujar, el Agente debe proponer (y documentar en la PMM) la estructura del archivo de diseño (ej. Figma). La higiene del archivo es parte de la documentación.
 
 ### Estructura Recomendada (Figma):
-1.  **📜 Index / Cover:** Información del proyecto, estado actual y links rápidos.
-2.  **🎨 Foundations / Tokens:** Definición visual de colores, tipografía y efectos.
-3.  **🧩 Components (Main):** El "Santuario". Solo componentes principales organizados por categorías atómicas. Prohibido dibujar pantallas aquí.
-4.  **💻 Screens / Playground:** Espacio de trabajo donde se ensamblan las vistas usando instancias de los componentes.
-5.  **✅ Ready for Dev (Handoff):** Páginas finales, auditadas y bloqueadas para implementación.
-6.  **📦 Archive / Sandbox:** Basurero ordenado para versiones obsoletas o experimentos.
+1.  ** Index / Cover:** Información del proyecto, estado actual y links rápidos.
+2.  ** Foundations / Tokens:** Definición visual de colores, tipografía y efectos.
+3.  ** Components (Main):** El "Santuario". Solo componentes principales organizados por categorías atómicas. Prohibido dibujar pantallas aquí.
+4.  ** Screens / Playground:** Espacio de trabajo donde se ensamblan las vistas usando instancias de los componentes.
+5.  ** Ready for Dev (Handoff):** Páginas finales, auditadas y bloqueadas para implementación.
+6.  ** Archive / Sandbox:** Basurero ordenado para versiones obsoletas o experimentos.
 
 **Misión Pedagógica:** El Agente explica: *"Organizar el archivo así no es burocracia, es **Empatía Técnica**. Si un desarrollador o un nuevo diseñador entra al archivo, debe saber exactamente dónde está la verdad y dónde está el experimento"*.
 
 ---
 
-## 🔗 Paso 0.7: Contrato de Paridad Técnica
+## Paso 0.7: Contrato de Paridad Técnica
 Antes de construir el primer átomo, el Agente debe sincronizar los "Guardrails" con el equipo de desarrollo (o con las definiciones de la Etapa 01):
 1.  **Nomenclatura:** ¿Usamos `PrimaryButton`, `btn-primary`, o una convención específica? El diseño debe usar el mismo nombre que el código.
 2.  **Restricciones de Plataforma:** ¿Web, Mobile (iOS/Android), Desktop? No inventar interacciones que la plataforma nativa no soporte o que el equipo de dev no pueda implementar con el stack actual.
@@ -68,7 +68,7 @@ Antes de construir el primer átomo, el Agente debe sincronizar los "Guardrails"
 
 ---
 
-## 🏗️ Paso 1: Secuencia de Construcción Atómica Estricta (Bottom-Up)
+## Paso 1: Secuencia de Construcción Atómica Estricta (Bottom-Up)
 La construcción debe seguir una secuencia inquebrantable de lo micro a lo macro. El Agente tiene el mandato de bloquear el progreso si el humano intenta diseñar un componente complejo sin haber resuelto sus dependencias previas.
 
 1.  **Nivel 0: Validación de Tokens (La Materia Prima):** Antes de diseñar cualquier cosa, confirmar que los tokens del Momento 1 (Colores, Tipografía, Espaciados, Radios, Sombras) están definidos y aplicados en el archivo. *No se puede diseñar una Card sin saber qué token de sombra usa.*
@@ -80,7 +80,7 @@ La construcción debe seguir una secuencia inquebrantable de lo micro a lo macro
 
 ---
 
-## 🗣️ Paso 1.5: Fusión Semántico-Visual (Sujeción a la Matriz)
+## Paso 1.5: Fusión Semántico-Visual (Sujeción a la Matriz)
 El diseño visual en alta fidelidad no es una isla; es la ejecución final de un ecosistema semántico previamente aprobado. La UI debe someterse a las definiciones de *wording* de las Etapas 04 y 05.
 
 *   **Prohibición de Lorem Ipsum:** Queda estrictamente prohibido diseñar componentes o vistas con texto simulado. Un botón que dice "Lipsum" carece de significado y rompe la trazabilidad del producto.
@@ -93,13 +93,13 @@ El diseño visual en alta fidelidad no es una isla; es la ejecución final de un
 
 ---
 
-## ⚖️ Paso 2: Auditoría de Consistencia (Skill 29)
+## Paso 2: Auditoría de Consistencia (Skill 29)
 *   Verificar que cada componente use exclusivamente los tokens del Momento 1.
 *   Asegurar que no se inyecten estilos "ad-hoc" fuera del sistema elegido.
 
 ---
 
-## 📋 Anexo: Especificación de Componentes (El Contrato Handoff)
+## Anexo: Especificación de Componentes (El Contrato Handoff)
 *Esta sección rige la especificación atómica. Cada componente core debe documentarse siguiendo esta anatomía:*
 
 ### 1. Visión General (Overview)

@@ -171,7 +171,7 @@ Con base en los tres pasos anteriores, recomendás uno de tres caminos:
 
 ---
 
-### 💡 Soporte Opcional — Preparación de Pitch
+### Soporte Opcional — Preparación de Pitch
 Si necesitas presentar estos hallazgos a socios, inversores o stakeholders, podés solicitar:
 - **"Preparame la narrativa para presentar esto"**: Activará la estrategia de Stakeholder Pitch para armar tus talking points y sugerencias de slides.
 - **"Armame un Q&A de este cierre"**: Para anticipar preguntas difíciles basadas en los gaps detectados.
@@ -184,7 +184,7 @@ Si necesitas presentar estos hallazgos a socios, inversores o stakeholders, pod�
 
 ```
 Camino elegido: [ ] Avanzar  [ ] Iterar  [ ] Pivotar
-Motivo (si difiere de la recomendación): 
+Motivo (si difiere de la recomendación):
 Fecha de decisión:
 Firmado por:
 ```

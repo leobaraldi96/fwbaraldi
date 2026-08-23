@@ -1,18 +1,18 @@
 ---
 name: design-critique-audit
 description: >
-  Protocolo de diagnóstico visual actuando como Lead Art Director. Evalúa jerarquía, 
-  contraste, flujo de atención y uso del espacio en blanco. Detecta problemas de UI 
+  Protocolo de diagnóstico visual actuando como Lead Art Director. Evalúa jerarquía,
+  contraste, flujo de atención y uso del espacio en blanco. Detecta problemas de UI
   antes del Handoff y genera soluciones accionables.
 keywords: design-critique, visual-hierarchy, ui-audit, contrast, art-direction, layout-fixes
 version: "2.26.14"
 ---
 
-# 👁️ Skill 20 — Design Critique & Visual Hierarchy Audit Protocol
+# Skill 20 — Design Critique & Visual Hierarchy Audit Protocol
 
 Este protocolo se invoca al finalizar el diseño de una interfaz (o al evaluar un producto legado) para realizar una auditoría clínica de su comunicación visual. El Agente asume el rol de **Lead Visual Designer**, enfocado implacablemente en la claridad, la jerarquía y el contraste.
 
-## 🔬 Dimensiones del Diagnóstico Visual
+## Dimensiones del Diagnóstico Visual
 
 Al evaluar una pantalla (mediante captura de imagen vía visión o descripción estructural detallada), el Agente debe generar un reporte de crítica de diseño en los siguientes ejes:
 
@@ -49,7 +49,7 @@ Un top 3 a 5 de los cambios más impactantes a realizar inmediatamente en Figma.
 Para el fix más crítico (Top 1), el Agente debe describir con detalle milimétrico cómo se ve la interfaz ahora y cómo debería verse tras aplicar la solución.
 
 ---
-## 💡 Cómo usar esta Skill (Bridge Architecture)
+## Cómo usar esta Skill (Bridge Architecture)
 - **Cuándo invocar:** En la **Etapa 06 (Momento de Pulido)**, después de ensamblar la UI y justo antes de pasar a la etapa de Handoff (QA).
 - **Input:** Una imagen de la UI (vía Motor de Ingesta Visual) o una descripción muy exhaustiva del layout.
 - **Sinergia:** Actúa como el supervisor de la Inteligencia de Layout (Etapa 06 Momento 0). Si el Momento 0 es el arquitecto, la Skill 20 es el inspector de obra.

@@ -77,7 +77,7 @@ Artefactos de Etapa 01 aprobados
 **Activar cuando:** Se cierra Etapa 01 y se inicia Etapa 02.
 **Produce:** Actor Map Consolidado (Actores Visibles, Invisibles y del Sistema) y solicitudes de stack tecnológico.
 
-**⚡ REGLAS DE MAPEO DE ACTORES (Búsqueda Activa):**
+** REGLAS DE MAPEO DE ACTORES (Búsqueda Activa):**
 El Agente debe buscar activamente actores invisibles que el humano suele olvidar:
 
 | Categoría | Actores típicos | Por qué importa mapearlos |
@@ -94,7 +94,7 @@ El Agente debe buscar activamente actores invisibles que el humano suele olvidar
 **Activar cuando:** El Actor Map y System Map inicial están aprobados por el equipo.
 **Produce:** Dependency Map, Data Flow Map, Risk Map.
 
-**⚡ REGLAS DE MAPEO DE DEPENDENCIAS Y RIESGOS:**
+** REGLAS DE MAPEO DE DEPENDENCIAS Y RIESGOS:**
 - **Patrones de Dependencia a Detectar (Buscar estas topologías):**
   1. **Lineal (`A → B → C`):** Si B falla, C muere (Cascada). *Mitigación:* Fallbacks en B.
   2. **Estrella / SPOF (`A → HUB ← C`):** Un HUB central. Si cae, tira todo el sistema. *Mitigación:* Abstraer con capa intermedia o redundancia.
@@ -103,7 +103,7 @@ El Agente debe buscar activamente actores invisibles que el humano suele olvidar
 - **Criticidad Obligatoria:** Todo nodo debe etiquetarse como `[CRÍTICA]` (bloquea todo), `[ALTA]` (bloquea core), `[MEDIA]` (degrada experiencia), `[BAJA]` (invisible).
 - **Tipos de Riesgo a Auditar:** Técnicos (Deuda, Escalabilidad), de Datos (Pérdida, GDPR), de Negocio (Vendor lock-in) y Externos (Leyes, App Store).
 
-> ⚠️ **Señales de Alerta de Riesgo — Frases que activan bandera roja inmediata:**
+>  **Señales de Alerta de Riesgo — Frases que activan bandera roja inmediata:**
 > - *Técnico:* "siempre lo hicimos así", "ese módulo nadie lo toca", "si cambiamos eso se rompe todo".
 > - *Datos:* "no tenemos backup", "esos datos los guardamos por si acaso", "no sé exactamente qué hay en esa tabla".
 > - *Negocio:* "dependemos de un solo proveedor para eso", "si ellos cambian el precio, cerramos".
@@ -112,7 +112,7 @@ El Agente debe buscar activamente actores invisibles que el humano suele olvidar
 ### Momento 3 — Documentación del Sistema (Service Blueprint)
 **Archivo:** `skills/momento_3_documentacion.md`
 
-**⚡ FORMATO ESTRICTO DEL SERVICE BLUEPRINT:**
+** FORMATO ESTRICTO DEL SERVICE BLUEPRINT:**
 El mapa debe contener siempre 5 capas divididas por la Línea de Interacción y la Línea de Visibilidad:
 1. **Evidencia Física:** Qué ve/toca el usuario (Pantalla, email).
 2. **Acciones del Usuario:** Qué hace (Clic, navega).
@@ -129,7 +129,7 @@ El mapa debe contener siempre 5 capas divididas por la Línea de Interacción y 
 | Architecture Overview | 3 | Documento Markdown |
 | Service Blueprint | 3 | Documento Markdown |
 
-## 🛠️ Motores de Análisis (Bridge Architecture)
+## Motores de Análisis (Bridge Architecture)
 Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 1. **Concept Synthesis:** Técnicas de *Problem Reframing* para convertir riesgos en oportunidades de diseño.
 2. **UX Audit Engine (`./skills/engines/ux_audit_rethink_engine/`):** Motor de Auditoría Holística de UX. Activar en rediseños de productos legados.
@@ -174,7 +174,7 @@ Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 
 ---
 
-## 🚫 NEVER List — Anti-patrones de la Etapa 02
+## NEVER List — Anti-patrones de la Etapa 02
 El Agente debe **bloquear** el proceso si detecta:
 
 1.  **NEVER asumas que el sistema está documentado:** Siempre verifica y pregunta por la arquitectura real, no solo la declarada.
@@ -184,7 +184,7 @@ El Agente debe **bloquear** el proceso si detecta:
 5.  **NEVER omitas los "Gaps" del sistema:** Lo que no se pudo mapear debe quedar documentado como un riesgo activo.
 6.  **NEVER asumas factibilidad sin validación técnica:** El *Architecture Overview* debe ser validado por ingeniería antes de avanzar.
 
-## ✅ ALWAYS List — Mandatos de Comportamiento
+## ALWAYS List — Mandatos de Comportamiento
 - **Siempre** busca actores invisibles que no aparecen en el listado inicial.
 - **Siempre** recupera los hallazgos `pf-` de la Etapa 01 vía Engram MCP.
 - **Siempre** explica el impacto sistémico de cada riesgo detectado (Pedagogía del Riesgo).
@@ -199,13 +199,13 @@ El Agente debe **bloquear** el proceso si detecta:
 - Momento 2 → Eje: `sa-riesgos-criticos` (tipo: `riesgo`) y `sa-dependencias-clave` (tipo: `patrón`)
 - Momento 3 → Eje: `sa-decision-cierre` (tipo: `cierre-de-etapa`)
 
-**Al cerrar la etapa:** 
+**Al cerrar la etapa:**
 1. Ejecutar el Protocolo de Cierre de Ubicación Sistémica del `00_boot/context.md`.
-2. Mostrar Mapa de Progreso: `✅ 01 Problem Framing | ✅ 02 System Analysis | 🚧 03 Product Logic`.
+2. Mostrar Mapa de Progreso: ` 01 Problem Framing |  02 System Analysis |  03 Product Logic`.
 3. Ejecutar el Protocolo de Cierre de Sesión del `00_boot/context.md`.
 
 ---
-## 🧠 Protocolo de Mentoría y Co-creación (E02)
+## Protocolo de Mentoría y Co-creación (E02)
 En el análisis de sistemas, el Agente actúa como un **Analista Mentor**:
 *   **Revelación de lo Invisible:** No solo listar actores; explicar por qué un "usuario invisible" (ej. el auditor legal o el dev de API) puede destruir el producto si se ignora.
 *   **Pedagogía del Riesgo:** Al mapear una dependencia, explicar su impacto: *"Esta API es un Punto Único de Fallo. Si cae, tu flujo de checkout muere. ¿Cómo debería reaccionar el sistema ante esto?"*.

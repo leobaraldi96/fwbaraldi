@@ -7,13 +7,13 @@ keywords: a11y, screen reader, VoiceOver, NVDA, TalkBack, testing script, runboo
 version: "2.26.14"
 ---
 
-# 🔊 Skill 31 — Protocolo de Pruebas con Lector de Pantalla & Runbook
+# Skill 31 — Protocolo de Pruebas con Lector de Pantalla & Runbook
 
 Este protocolo transforma la evaluación de accesibilidad de una "lista de deseos" en un **Script de Pruebas ejecutable**. Su objetivo es que cualquier miembro del equipo (QA, Dev o Designer) pueda auditar sistemáticamente la experiencia auditiva del producto.
 
 ---
 
-## 🛠️ 1. Configuración del Entorno (Test Lab)
+## 1. Configuración del Entorno (Test Lab)
 
 ### Combinaciones Navegador/Lector (Mandatorias para Certificación):
 | OS | Lector de Pantalla | Navegador Sugerido |
@@ -30,7 +30,7 @@ Este protocolo transforma la evaluación de accesibilidad de una "lista de deseo
 
 ---
 
-## 📋 2. Checklists de Prueba Sistémica
+## 2. Checklists de Prueba Sistémica
 
 ### A. Estructura y Landmarks
 - [ ] **Landmarks:** ¿Se anuncian correctamente las regiones (`main`, `nav`, `header`, `footer`)?
@@ -49,27 +49,27 @@ Este protocolo transforma la evaluación de accesibilidad de una "lista de deseo
 
 ---
 
-## 🚫 NEVER List — Lo que NUNCA debemos hacer
+## NEVER List — Lo que NUNCA debemos hacer
 - **NUNCA** confíes solo en herramientas automáticas (Lighthouse/Axe); el 70% de la accesibilidad es semántica y lógica que solo se detecta escuchando.
 - **NUNCA** uses un `tabindex` mayor a 0; rompe el orden natural de lectura y desorienta al usuario.
 - **NUNCA** dejes imágenes sin atributo `alt` (si son decorativas, usa `alt=""` para que el lector las ignore).
 - **NUNCA** incluyas frases como "Imagen de..." en el texto alternativo; el lector ya anuncia que el elemento es una imagen.
 
-## ✅ ALWAYS List — Mandatos de Accesibilidad Auditiva
+## ALWAYS List — Mandatos de Accesibilidad Auditiva
 - **SIEMPRE** verifica que el nombre accesible (`aria-label`) coincida con la intención visual del botón.
 - **SIEMPRE** anuncia los cambios de contenido dinámico que ocurren sin recargar la página.
 - **SIEMPRE** prueba los flujos críticos (Compra, Registro, Login) de principio a fin solo con el lector activado.
 
 ---
 
-## 💰 El Valor de Negocio (Business Outcome)
+## El Valor de Negocio (Business Outcome)
 - **Reducción de Deuda Técnica:** Corregir accesibilidad en la fase de QA es 10 veces más barato que hacerlo después del lanzamiento.
 - **Mejora del SEO:** La estructura semántica requerida por un lector de pantalla es la que usan los bots de Google para indexar el sitio.
 - **Inclusión Real:** Cumplimiento con normativas legales y apertura del mercado a usuarios con diversas capacidades.
 
 ---
 
-## 📄 Plantilla de Reporte de Hallazgo (Issue)
+## Plantilla de Reporte de Hallazgo (Issue)
 ```markdown
 ### Issue #[X]: [Título Descriptivo]
 - **Lector/Navegador:** [ej: NVDA + Firefox]

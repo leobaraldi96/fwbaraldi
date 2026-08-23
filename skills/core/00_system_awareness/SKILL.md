@@ -5,7 +5,7 @@ Este motor orquesta la **Consciencia Sistémica** del framework, gestionando la 
 
 ---
 
-## 🔗 Gramática de Relaciones (Verbos de Trazabilidad)
+## Gramática de Relaciones (Verbos de Trazabilidad)
 
 Al usar `mem_save`, `mem_compare` o realizar auditorías, el Agente DEBE clasificar la conexión entre la nueva información y la existente usando estos verbos:
 
@@ -19,7 +19,7 @@ Al usar `mem_save`, `mem_compare` o realizar auditorías, el Agente DEBE clasifi
 
 ---
 
-## ⚙️ Protocolo Operativo de Memoria (Engram v1.20.0 — 20 Herramientas)
+## Protocolo Operativo de Memoria (Engram v1.20.0 — 20 Herramientas)
 
 ### 1. Carga de Contexto e Inicio de Sesión
 - **SILENT:** Ejecutar `mem_current_project()` para detectar el slug activo.
@@ -57,7 +57,7 @@ Usar `mem_save` proactivamente en los siguientes hitos:
 
 ---
 
-## 🛡️ Mandatos de Consciencia (ALWAYS/NEVER)
+## Mandatos de Consciencia (ALWAYS/NEVER)
 
 ### ALWAYS:
 - **Trazabilidad:** Conectar cada nueva feature con su origen en el Problem Framing (E01).

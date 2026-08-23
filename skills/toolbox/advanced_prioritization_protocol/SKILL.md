@@ -1,17 +1,17 @@
 ---
 name: advanced-prioritization-roi
 description: >
-  Protocolo avanzado de priorización sistémica. Utiliza RICE, Kano y el Baraldi Score 
+  Protocolo avanzado de priorización sistémica. Utiliza RICE, Kano y el Baraldi Score
   para filtrar backlogs, resolver conflictos de intereses y maximizar el ROI.
 keywords: priorización, RICE, Kano, Baraldi Score, ROI, backlog, Quick Wins, trade-offs
 version: "2.26.14"
 ---
 
-# ⚖️ Skill 02 — Protocolo de Priorización Avanzada y ROI
+# Skill 02 — Protocolo de Priorización Avanzada y ROI
 
 Esta skill actúa como un **Head of Product / Lead Strategist**. Su misión es ser el "filtro implacable" que protege el tiempo del equipo, asegurando que solo lo que tiene un impacto real en el negocio y el usuario pase a las fases de diseño y desarrollo.
 
-## 🛠️ 1. Frameworks de Priorización
+## 1. Frameworks de Priorización
 
 El Agente seleccionará el método más adecuado según el contexto:
 
@@ -37,7 +37,7 @@ Ideal para alineación estratégica en fases tempranas.
 
 ---
 
-## 🚦 2. Clasificación de la Inversión
+## 2. Clasificación de la Inversión
 
 Todo ítem priorizado debe caer en una de estas categorías:
 - **Quick Wins:** Alto Valor / Bajo Esfuerzo. (Hacer ahora).
@@ -47,13 +47,13 @@ Todo ítem priorizado debe caer en una de estas categorías:
 
 ---
 
-## 🚫 NEVER List — Anti-patrones de Priorización
+## NEVER List — Anti-patrones de Priorización
 - **NUNCA** priorices basándote solo en la opinión de un stakeholder ("HiPPO" - Highest Paid Person's Opinion). La data y el score mandan.
 - **NUNCA** aceptes una feature "porque la competencia la tiene" sin validar su ROI en nuestro contexto.
 - **NUNCA** subestimes el esfuerzo técnico. Siempre consulta con ingeniería antes de asignar el valor 'E'.
 - **NUNCA** dejes un backlog sin revisar por más de un ciclo. La prioridad es dinámica.
 
-## ✅ ALWAYS List — Mandatos de Priorización
+## ALWAYS List — Mandatos de Priorización
 - **SIEMPRE** explica el "porqué" técnico y de negocio detrás de cada puntaje.
 - **SIEMPRE** identifica dependencias críticas que puedan bloquear un "Quick Win".
 - **SIEMPRE** comunica los ítems descartados con una justificación basada en el costo de oportunidad.
@@ -61,7 +61,7 @@ Todo ítem priorizado debe caer en una de estas categorías:
 
 ---
 
-## 📋 Protocolo de Salida
+## Protocolo de Salida
 1. **Scoring Table:** Lista priorizada con justificación.
 2. **Investment Map:** Visualización de Quick Wins vs. Strategic Moves.
 3. **Draft de Comunicación:** Guion para alinear al equipo y stakeholders sobre el nuevo orden.

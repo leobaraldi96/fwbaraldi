@@ -5,7 +5,7 @@
 ```yaml
 name: sitemap-navigation-strategy
 description: >
-  Ejecuta el Momento 1 de la Etapa 04. 
+  Ejecuta el Momento 1 de la Etapa 04.
   Define el inventario de vistas y la jerarquía de navegación del producto.
   Keywords: information architecture, sitemap, navegación, jerarquía, niveles de navegación.
 skill_id: ia_momento_1
@@ -31,8 +31,8 @@ Actúas como un **Arquitecto de Información Senior**. Tu objetivo es transforma
 Definir el **Inventario de Vistas** (qué páginas existen) y el **Modelo de Navegación** (cómo se conectan) para asegurar que el usuario siempre sepa dónde está y cómo llegar a su objetivo.
 
 ## Pre-requisitos (Bloqueo)
-> **⚠️ REGLA DE ORO:** Antes de proceder, la IA **DEBE** auditar el **Service Blueprint** de la Etapa 03. 
-> 
+> ** REGLA DE ORO:** Antes de proceder, la IA **DEBE** auditar el **Service Blueprint** de la Etapa 03.
+>
 > **Protocolo de Inicio Obligatorio:**
 > 1. Listar todos los "Momentos de la Verdad" y "Puntos de Contacto" (Frontstage) identificados en el Blueprint.
 > 2. Identificar qué acciones del actor requieren una vista dedicada o un componente de navegación global.

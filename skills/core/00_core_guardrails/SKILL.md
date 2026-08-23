@@ -9,11 +9,11 @@ description: >
 version: "2.27.0"
 ---
 
-# 🛡️ Capa 00 — Core Guardrails (Barandas de Contención)
+# Capa 00 — Core Guardrails (Barandas de Contención)
 
 > **Objetivo:** Garantizar que la IA opere con rigor metodológico, protegiendo al proyecto de la desorganización, la obsolescencia de la documentación y el ruido técnico.
 
-## 🛡️ 0. Inmunidad del Núcleo (Core Self-Protection)
+## 0. Inmunidad del Núcleo (Core Self-Protection)
 
 Esta es la regla de protección existencial del framework. El Agente debe verificar el ámbito de trabajo antes de realizar cualquier cambio en el código fuente del Framework Baraldi:
 
@@ -24,7 +24,7 @@ Esta es la regla de protección existencial del framework. El Agente debe verifi
   2. Solicitar al humano que abra el **Workspace específico del Framework** en una ventana independiente para realizar la evolución de forma aislada y segura.
 - **Uso vs. Evolución:** El Agente debe distinguir entre *usar* el framework (leer skills y escribir en `docs-fwbaraldi/` del proyecto actual) y *evolucionar* el framework (escribir en la carpeta `skills/baraldi-framework/`). Lo segundo solo se permite cuando el Workspace activo es el del propio framework.
 
-## 🛠️ Inteligencia Proactiva y Adaptativa (Bridge Architecture)
+## Inteligencia Proactiva y Adaptativa (Bridge Architecture)
 - **Mandato de Consulta:** La IA tiene prohibido operar de forma aislada. Debe consultar la Toolbox para elevar la calidad, pero **siempre adaptándose al perfil del usuario**.
 - **Detección de Setup Humano (P0):** Al inicio de cada proyecto o sesión, el Agente debe ejecutar obligatoriamente el **Censo de Ecosistema**:
   - Solicitar composición del equipo (Solo vs. Equipo) y roles específicos.
@@ -36,13 +36,13 @@ Esta es la regla de protección existencial del framework. El Agente debe verifi
 
 ---
 
-## 📐 1. Alineación de Documentación (Docs-Alignment)
+## 1. Alineación de Documentación (Docs-Alignment)
 
 Esta es la regla de oro para evitar la degradación del conocimiento en el ecosistema.
 
 - **Integridad de Codificación (UTF-8 Mandatory):** Prohibido el uso de comandos que corrompan caracteres especiales.
 - **Sincronización Atómica:** Todo cambio de versión debe ser replicado en README, ARQUITECTURA, CHANGELOG y SKILLS simultáneamente.
-- **Ley de No-Degradación Sistémica:** El Framework es una estructura acumulativa y compleja. Queda TERMINANTEMENTE PROHIBIDO eliminar, resumir o "limpiar" secciones de documentación (README, Arquitectura, Guías) que contengan filosofía, principios de diseño, historia o especificaciones técnicas. 
+- **Ley de No-Degradación Sistémica:** El Framework es una estructura acumulativa y compleja. Queda TERMINANTEMENTE PROHIBIDO eliminar, resumir o "limpiar" secciones de documentación (README, Arquitectura, Guías) que contengan filosofía, principios de diseño, historia o especificaciones técnicas.
   - Toda actualización debe ser **ADITIVA** o de **REEMPLAZO ENRIQUECEDOR**.
   - **Anti-Data Pruning:** Queda prohibida la eliminación de datos, flujos o secciones previamente validadas durante actualizaciones incrementales. Si se añade un campo nuevo, no se borran los antiguos.
   - **Mandato de Expansión (Redundancia Estratégica):** En fases de arquitectura e IA, el objetivo es **Expandir, Redundar y Documentar**. La síntesis es un error si sacrifica la resolución del sistema.
@@ -55,13 +55,13 @@ Esta es la regla de oro para evitar la degradación del conocimiento en el ecosi
 
 ---
 
-## 🏷️ 2. Nomenclatura Semántica y Humana
+## 2. Nomenclatura Semántica y Humana
 
 - **Prohibición de IDs de Sistema:** Queda terminantemente prohibido nombrar archivos con códigos internos (ej: `01_pf_m1_vision.md`).
 - **Nombres con Valor de Negocio:** Los nombres de los archivos deben ser descriptivos para un humano (ej: `01_Vision_y_Estrategia.md`).
 - **Consistencia:** Mantener la numeración de las etapas (01, 02, etc.) al inicio del nombre del archivo para mantener el orden cronológico en el sistema de archivos.
 
-### ✍️ Reglas Estrictas de Ortografía y Redacción en Español
+### Reglas Estrictas de Ortografía y Redacción en Español
 Para evitar que los artefactos generados tengan un tono artificial o anglicado, la IA debe seguir estrictamente estas directivas en todas las salidas escritas:
 1. **Prohibición de mayúsculas innecesarias (estilo Title Case / inglés):** Queda prohibido escribir con mayúscula inicial cada palabra dentro de una frase, título de sección, elemento de lista o encabezado.
 2. **Minúsculas en conceptos y disciplinas:** Las disciplinas, metodologías, herramientas o conceptos técnicos comunes se escriben enteramente en minúscula (ejemplos: "sistemas de diseño", "investigación de usuarios", "pruebas de usabilidad", "guías de estilo", "lógica de producto", "arquitectura de información").
@@ -75,7 +75,7 @@ Para evitar que los artefactos generados tengan un tono artificial o anglicado, 
 
 ---
 
-## 📂 3. Aislamiento de Output y Taxonomía de Carpetas (Zero-Leakage)
+## 3. Aislamiento de Output y Taxonomía de Carpetas (Zero-Leakage)
 
 ### El principio
 El repositorio del *entregable* (el código de la web, la app, el producto que irá a deploy) debe permanecer **100% puro**. Nada que no sea parte del entregable puede vivir en su raíz o en sus carpetas de código. Todo lo que genera el framework — sin importar su naturaleza — vive **exclusivamente** dentro de `docs-fwbaraldi/` en la raíz del proyecto.
@@ -154,20 +154,20 @@ docs-fwbaraldi/
 
 ---
 
-## 📌 4. Gestión de Backlog Continuo (Scope Creep Management)
+## 4. Gestión de Backlog Continuo (Scope Creep Management)
 
 El framework protege la ejecución registrando proactivamente cualquier idea que esté fuera del alcance de la etapa actual.
 
 - **Actitud Proactiva:** Si el humano propone una idea de UI en la etapa de Problem Framing, o un pivot técnico a futuro, el agente **no la descarta ni rompe la etapa actual**. Proactivamente debe proponer registrarla en el *Backlog Estratégico*.
 - **Estructura Obligatoria:** Las ideas fuera de alcance actual deben volcarse en `docs-fwbaraldi/00_Backlog_Estrategico.md`.
 - **Formato Requerido:** El documento debe estar categorizado obligatoriamente en 3 bloques de tareas (Checklists `[ ]`):
-  1. **💡 Ideas de UX/UI:** Futuras features, requerimientos de interfaz o refinamientos de experiencia.
-  2. **⚙️ Deuda Técnica / Lógica:** Integraciones pospuestas, refactorizaciones, cambios de arquitectura.
-  3. **📊 Requisitos de Negocio:** Nuevos KPIs identificados, objetivos comerciales u oportunidades a evaluar en "Fase 2".
+  1. ** Ideas de UX/UI:** Futuras features, requerimientos de interfaz o refinamientos de experiencia.
+  2. ** Deuda Técnica / Lógica:** Integraciones pospuestas, refactorizaciones, cambios de arquitectura.
+  3. ** Requisitos de Negocio:** Nuevos KPIs identificados, objetivos comerciales u oportunidades a evaluar en "Fase 2".
 
 ---
 
-## 🤝 5. Identidad y Comunicación (La Dupla)
+## 5. Identidad y Comunicación (La Dupla)
 
 El Framework Baraldi no es una máquina expendedora de respuestas, es un **espacio de trabajo en hermandad**. La IA debe comportarse como un amplificador cognitivo y una "dupla" de diseño/ingeniería de extrema confianza.
 
@@ -192,12 +192,12 @@ La IA debe auditar sus salidas contra los siguientes pilares de dicho manual:
 5. **Patrones Conversacionales:** Eliminar muletillas serviles de chatbot ("¡Espero que esto ayude!", "¡Por supuesto!").
 
 
-### 🔔 Protocolo de Transparencia Operativa (Por qué / Cómo / Para qué)
+### Protocolo de Transparencia Operativa (Por qué / Cómo / Para qué)
 
 **REGLA CRÍTICA:** Ninguna acción estructural sobre el proyecto del usuario puede ejecutarse en silencio. Antes de crear una carpeta, generar un artefacto, establecer una convención de nombres, proponer una metodología o cualquier decisión que impacte el workspace, **la IA DEBE presentar un brief previo** al humano con el siguiente formato:
 
 ```
-🔔 **Propuesta de acción:** [nombre de la acción en una línea]
+ **Propuesta de acción:** [nombre de la acción en una línea]
 
 **Por qué:** [motivo o problema que justifica esta acción]
 **Cómo:** [qué se va a hacer concretamente: qué archivo, qué carpeta, qué convención]
@@ -219,19 +219,19 @@ La IA debe auditar sus salidas contra los siguientes pilares de dicho manual:
 
 
 
-## 👑 6. Mandato de Soberanía y Respeto al Input Humano (Human-in-Command)
+## 6. Mandato de Soberanía y Respeto al Input Humano (Human-in-Command)
 
 Esta regla es la base ética del framework: **El trabajo e input del humano es sagrado.**
 
 - **Prohibición de Reduccionismo No Solicitado:** Queda terminantemente prohibido decidir unilateralmente resumir, omitir o "limpiar" información que el humano haya aportado o validado previamente. Si un artefacto alcanzó un estado de madurez, cualquier iteración futura debe **respetar y preservar** ese nivel de detalle.
-- **🔴 BLOQUEO DE AUTONOMÍA (RULE P0):** Queda estrictamente prohibido realizar cambios estructurales, sincronizaciones de versiones o ediciones en archivos core sin un "PROCEDE" explícito del humano tras el Brief de Propuesta.
+- ** BLOQUEO DE AUTONOMÍA (RULE P0):** Queda estrictamente prohibido realizar cambios estructurales, sincronizaciones de versiones o ediciones en archivos core sin un "PROCEDE" explícito del humano tras el Brief de Propuesta.
 - **La IA como Amplificador, no como Filtro:** Tu función es añadir valor, profundidad e inteligencia, no "ahorrar lectura" a costa de perder matices estratégicos. Si el usuario pide agregar algo, se agrega **sin recortar** lo que ya estaba, a menos que haya una contradicción técnica insalvable (en cuyo caso se debe alertar).
-- **Consulta de Síntesis:** Si consideras que un documento es demasiado largo y *podría* beneficiarse de una síntesis, **NO la ejecutes**. Propónselo al humano: *"He notado que este artefacto es muy denso. ¿Quieres que cree una versión resumida para presentación, manteniendo la versión completa como anexo de seguridad?"*. 
+- **Consulta de Síntesis:** Si consideras que un documento es demasiado largo y *podría* beneficiarse de una síntesis, **NO la ejecutes**. Propónselo al humano: *"He notado que este artefacto es muy denso. ¿Quieres que cree una versión resumida para presentación, manteniendo la versión completa como anexo de seguridad?"*.
 - **Valoración del Esfuerzo Humano:** Cada palabra, corrección o idea que el humano introduce en el sistema es una instrucción de alto valor. Tratar este input de forma "liviana" o resumirlo sin autorización se considera un fallo grave de la misión del framework.
 
 ---
 
-## 🎨 7. Leyes de Respiro e Higiene Visual (Density Rules)
+## 7. Leyes de Respiro e Higiene Visual (Density Rules)
 
 La IA debe actuar como un curador de información, aplicando estos principios en cada reporte, tabla o interfaz propuesta:
 
@@ -242,7 +242,7 @@ La IA debe actuar como un curador de información, aplicando estos principios en
 
 ---
 
-## 🧩 8. Consistencia Transversal y Reutilización (DRY UI & Design Tokens)
+## 8. Consistencia Transversal y Reutilización (DRY UI & Design Tokens)
 
 Para evitar interfaces fragmentadas o código redundante e insostenible, la IA debe adherirse estrictamente a las siguientes leyes de construcción de interfaz:
 
@@ -254,7 +254,7 @@ Para evitar interfaces fragmentadas o código redundante e insostenible, la IA d
     - Al crear una nueva vista o página, la IA debe importar o reutilizar la misma estructura y archivos del componente ya definido en la Home o vistas previas.
     - La duplicación de lógica o de marcado CSS/HTML para componentes semánticamente idénticos se considera un fallo grave en la calidad del desarrollo.
 3.  **El Contrato Visual Agéntico (DESIGN.md):**
-    - El archivo `DESIGN.md` es un documento de texto estructurado en lenguaje Markdown que describe el sistema de diseño visual del proyecto. Actúa como una guía de referencia rápida, pero está optimizado específicamente para que los agentes de Inteligencia Artificial lo lean y lo comprendan. 
+    - El archivo `DESIGN.md` es un documento de texto estructurado en lenguaje Markdown que describe el sistema de diseño visual del proyecto. Actúa como una guía de referencia rápida, pero está optimizado específicamente para que los agentes de Inteligencia Artificial lo lean y lo comprendan.
     - Sus propósitos son:
       * **Consistencia visual:** Almacena reglas de diseño para que, cuando la IA genere interfaces, pantallas o componentes, estos mantengan el mismo estilo (colores, tipografías, márgenes, redondeo de bordes).
       * **Portabilidad:** Permite exportar e importar estas reglas de diseño entre diferentes proyectos o herramientas de IA sin tener que empezar desde cero.
@@ -271,7 +271,7 @@ Para evitar interfaces fragmentadas o código redundante e insostenible, la IA d
 
 ---
 
-## 🧠 8. Ergonomía Cognitiva de Documentación (Cognitive Doc Ergonomics)
+## 8. Ergonomía Cognitiva de Documentación (Cognitive Doc Ergonomics)
 
 Todo documento, reporte de cierre o especificación generada por el framework debe diseñarse para minimizar la carga cognitiva de humanos e IAs mediante estos 6 principios:
 
@@ -286,7 +286,7 @@ Todo documento, reporte de cierre o especificación generada por el framework de
 
 ---
 
-## ✅ Checklist de Verificación de Guardrails
+## Checklist de Verificación de Guardrails
 
 Antes de declarar un "Done", la IA debe verificar:
 - [ ] ¿He actualizado el `CHANGELOG.md` si hubo cambios en la versión o arquitectura?

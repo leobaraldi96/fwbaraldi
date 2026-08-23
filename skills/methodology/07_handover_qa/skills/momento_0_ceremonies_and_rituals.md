@@ -7,13 +7,13 @@ description: El Protocolo de Sincronía Humana. Define las ceremonias críticas 
 
 > **Misión:** Disciplinar el modo "lobo solitario" y potenciar el trabajo en equipo. Este protocolo asegura que el diseño sea una construcción consciente y que el Handoff sea una **Ceremonia de Hito** (ya sea grupal o individual) que marque el inicio de la veeduría de la experiencia.
 
-## 🤝 1. El Ciclo de Ceremonias (Modo Dual)
+## 1. El Ciclo de Ceremonias (Modo Dual)
 El framework adapta su rigor al tamaño del equipo, pero nunca elimina la consciencia del hito:
 
-### 👥 Modo Equipo (Colaboración)
+### Modo Equipo (Colaboración)
 Las ceremonias son encuentros sincrónicos para evitar silos y asegurar la sincronía humana.
 
-### 🐺 Modo Lobo Solitario (Solo-Pilot)
+### Modo Lobo Solitario (Solo-Pilot)
 Las ceremonias se transforman en **Checkpoints de Autoconsciencia**. Son momentos de pausa obligatoria donde el usuario "cambia de sombrero" (ej. de Diseñador a Dev) y formaliza el hito ante la IA para actualizar la memoria del proyecto.
 
 ### A. Kickoff del Proyecto (El Alineamiento Inicial)
@@ -33,8 +33,8 @@ Las ceremonias se transforman en **Checkpoints de Autoconsciencia**. Son momento
 
 ---
 
-## 🎭 2. El Ritual de Handoff (Hito de Traspaso)
-Este es el punto de inflexión del proyecto. 
+## 2. El Ritual de Handoff (Hito de Traspaso)
+Este es el punto de inflexión del proyecto.
 
 - **En Equipo:** Reunión formal de cierre de diseño y entrega de posta a ingeniería.
 - **En Solitario:** Sesión de **Alineamiento de Ejecución**. El usuario le dicta a la IA el "Resumen de Batalla": qué se diseñó, qué compromisos lógicos se asumen y qué debe vigilar la IA durante el desarrollo.
@@ -52,7 +52,7 @@ Este es el punto de inflexión del proyecto.
 
 ---
 
-## 🕵️ 3. Fase de Acompañamiento (Post-Handoff)
+## 3. Fase de Acompañamiento (Post-Handoff)
 El Handoff no es el fin, es un cambio de rol. El equipo de diseño (y el Agente) pasan a:
 *   **Supervisión y Soporte:** Asistir a desarrollo en dudas de lógica o casos de borde no previstos.
 *   **QA Proactivo:** Realizar pruebas de "Visual vs. Code" en cada etapa de desarrollo (no esperar al final).

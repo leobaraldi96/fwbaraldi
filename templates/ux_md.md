@@ -1,10 +1,10 @@
-# 🧭 Contrato de Ergonomía & UX — {NOMBRE_DEL_PRODUCTO}
+# Contrato de Ergonomía & UX — {NOMBRE_DEL_PRODUCTO}
 
 > **Fuente de Verdad de Experiencia de Usuario:** Este documento formaliza las leyes de comportamiento interactivo, tiempos de respuesta, feedback sensorial y ergonomía para garantizar un producto de alto impacto y cero fricción.
 
 ---
 
-## ⚡ 1. Leyes de Tiempo y Feedback Interactivo
+## 1. Leyes de Tiempo y Feedback Interactivo
 
 | Rango de Tiempo | Comportamiento Requerido de UI | Ejemplo de Implementación |
 | :--- | :--- | :--- |
@@ -15,7 +15,7 @@
 
 ---
 
-## 🚀 2. Filosofía de Optimistic UI
+## 2. Filosofía de Optimistic UI
 
 1. **Mutaciones Inmediatas:**
    - Acciones simples como dar "Like", archivar un elemento, marcar una casilla o cambiar un toggle se reflejan en la interfaz de forma instantánea, **antes** de que el backend responda.
@@ -26,7 +26,7 @@
 
 ---
 
-## 🛑 3. Mandato de "Zero Dead-Ends" (Cero Callejones sin Salida)
+## 3. Mandato de "Zero Dead-Ends" (Cero Callejones sin Salida)
 
 Ninguna pantalla o estado del sistema puede dejar al usuario bloqueado sin una vía de acción:
 
@@ -44,7 +44,7 @@ Ninguna pantalla o estado del sistema puede dejar al usuario bloqueado sin una v
 
 ---
 
-## 📱 4. Ergonomía Táctil y Accesibilidad Física
+## 4. Ergonomía Táctil y Accesibilidad Física
 
 * **Dimensiones de Hit Targets:** Mínimo `44x44px` (o `2.75rem`) para cualquier elemento clickeable o interactivo en interfaces móviles/táctiles.
 * **Separación entre Targets:** Al menos `8px` de separación entre dos botones contiguos para evitar toques accidentales (*fat finger protection*).
@@ -52,7 +52,7 @@ Ninguna pantalla o estado del sistema puede dejar al usuario bloqueado sin una v
 
 ---
 
-## 🚫 NEVER List — Prohibiciones de UX
+## NEVER List — Prohibiciones de UX
 - **NUNCA** bloquees la pantalla completa con un loader bloqueante si solo se está actualizando una tarjeta o sección puntual.
 - **NUNCA** cierres un modal o pierdas información ingresada por un clic accidental fuera del área (*backdrop click*) sin confirmación previa si hay cambios sin guardar.
 - **NUNCA** muestres modales apilados (un modal abriendo otro modal).

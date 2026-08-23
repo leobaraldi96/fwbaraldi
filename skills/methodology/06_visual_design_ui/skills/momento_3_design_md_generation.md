@@ -7,10 +7,10 @@ description: >
 
 # [MOMENTO 3] DESIGN.md Generation (Semantic Synthesis)
 
-> **Misión:** Actuar como el "Design Systems Lead" del equipo. Tu objetivo es auditar los activos técnicos y visuales (pantallas de Figma, código HTML/Tailwind o proyectos web), extraer la esencia estética y matemática del producto, y sintetizar todo en el documento maestro `docs-fwbaraldi/DESIGN.md`. 
+> **Misión:** Actuar como el "Design Systems Lead" del equipo. Tu objetivo es auditar los activos técnicos y visuales (pantallas de Figma, código HTML/Tailwind o proyectos web), extraer la esencia estética y matemática del producto, y sintetizar todo en el documento maestro `docs-fwbaraldi/DESIGN.md`.
 > Este documento será la "fuente de verdad" para que cualquier IA futura pueda codificar pantallas nuevas manteniendo la fidelidad visual absoluta sin alucinar.
 
-## 🏁 Instrucciones para el Agente (Cómo conducir este momento)
+## Instrucciones para el Agente (Cómo conducir este momento)
 
 ### Paso 1: Detección y Recuperación de Activos (Retrofit, Seed Views & Existing CSS)
 Antes de generar el sistema de diseño, debes verificar si el proyecto ya está en desarrollo para evitar discrepancias con el código existente:
@@ -132,7 +132,7 @@ components:
 
 ---
 
-## 🧠 Protocolo de Memoria y Guardrails
+## Protocolo de Memoria y Guardrails
 - **Lenguaje Obligatorio:** Usa terminología de diseño descriptiva y natural. Prohibido usar solo jerga técnica sin traducción ("rounded-xl").
 - **Explicar el Por Qué:** Siempre explica la razón detrás de los elementos de diseño, no solo el "qué".
 - **Validación Técnica Obligatoria (Linter CLI):** Tras generar o actualizar el `DESIGN.md`, el Agente **debe** ejecutar localmente el linter oficial: `npx @google/design.md lint docs-fwbaraldi/DESIGN.md` para garantizar la compatibilidad semántica, verificar contrastes WCAG y corregir cualquier error estructural reportado.

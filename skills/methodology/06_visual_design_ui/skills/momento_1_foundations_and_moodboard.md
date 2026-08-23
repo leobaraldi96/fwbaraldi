@@ -7,7 +7,7 @@ description: Protocolo operativo para auditar activos de marca existentes y esta
 
 > **Misión:** Actuar como el "Design Director" del equipo. Tu objetivo es asegurar que la UI en alta fidelidad sea una extensión lógica de la marca y la arquitectura, evitando retrabajos por ignorar definiciones previas.
 
-## 🏁 Paso 0: Herencia de Marca & Definiciones Técnicas (Brand Inheritance)
+## Paso 0: Herencia de Marca & Definiciones Técnicas (Brand Inheritance)
 Antes de auditar o proponer, el Agente debe confirmar si existen activos heredados. Pregunta al usuario:
 1.  **Brandbook / Manual de Marca:** ¿Existen colores corporativos, logotipos o tipografías mandatorias?
 2.  **Librería de Iconos:** ¿Hay una preferencia por alguna librería específica (ej. Lucide, FontAwesome, Phosphor)?
@@ -20,7 +20,7 @@ Antes de auditar o proponer, el Agente debe confirmar si existen activos heredad
 
 ---
 
-## 🏁 Paso 1: Auditoría de la Product Master Matrix (The Blueprint)
+## Paso 1: Auditoría de la Product Master Matrix (The Blueprint)
 Leer el archivo `PRODUCT_MASTER_MATRIX.md` para entender el alcance.
 1.  **Identificación del Escenario:**
     *   **ESCENARIO A:** "Ya tengo un diseño/DS iniciado (Figma/Code) y quiero continuarlo/auditarlo".
@@ -28,7 +28,7 @@ Leer el archivo `PRODUCT_MASTER_MATRIX.md` para entender el alcance.
 
 ---
 
-## 🧭 ESCENARIO A: Auditoría y Alineación (Continuación)
+## ESCENARIO A: Auditoría y Alineación (Continuación)
 Si el usuario ya tiene un diseño:
 1.  **Ingesta de UI:** Usar **Etapa 07 - Momento 2 (Figma Sync)** o **Motor de Ingesta Visual (`skills/methodology/06_visual_design_ui/skills/engines/visual_reverse_engineering_engine/`)**.
 2.  **Gap Analysis:** Comparar la UI contra el **Momento 0 (Motor Anti-Slop / Taste)**, respetando la **Herencia de Marca** definida en el Paso 0.
@@ -36,16 +36,16 @@ Si el usuario ya tiene un diseño:
 
 ---
 
-## 🏗️ ESCENARIO B: Cimentación Sistémica (Desde Cero)
+## ESCENARIO B: Cimentación Sistémica (Desde Cero)
 Si no hay activos visuales, el Agente guía la construcción:
 1.  **Calibración del Taste Spectrum (Momento 0):** Definir Densidad, Varianza y Movimiento.
-2.  **Selección de Ingredientes (Guardrails UX):** Proponer Paleta Funcional y Stack Tipográfico. 
+2.  **Selección de Ingredientes (Guardrails UX):** Proponer Paleta Funcional y Stack Tipográfico.
     *   *Nota:* Si hay **Herencia de Marca**, solo proponer lo que falte para completar el sistema.
 3.  **Definición de la "Ancla Visual":** Identificar el componente que dictará las reglas estéticas.
 
 ---
 
-## 🏁 Paso Final: El "Visual North" (Handoff a Momento 2)
+## Paso Final: El "Visual North" (Handoff a Momento 2)
 Resultado: Un contrato visual consolidado que incluye:
 - **Tokens de Marca:** Colores y Fuentes heredadas + sugeridas.
 - **Iconografía:** Librería seleccionada.
@@ -54,7 +54,7 @@ Resultado: Un contrato visual consolidado que incluye:
 
 ---
 
-## 📋 Anexo: Arquitectura de Tokens (El Sistema Base)
+## Anexo: Arquitectura de Tokens (El Sistema Base)
 *Esta sección define los fundamentos visuales. En el Escenario B, el "Visual North" debe traducirse en la definición de estos 6 sistemas de tokens:*
 
 ### 1. Sistema de Color (Color Tokens)

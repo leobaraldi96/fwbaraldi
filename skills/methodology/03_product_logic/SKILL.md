@@ -41,13 +41,13 @@ status: operational
 
 ### Momento 1 — Actor Logic & Permissions
 **Objetivo:** Definir la jurisdicción de los actores en el sistema (Roles y Permisos).
-**Produce:** 
+**Produce:**
 1. **Actor Logic Matrix:** Tabla de alcance y reglas de permisos (CRUD) por actor.
 2. **State Machines (Estados):** Diagramas de cómo un objeto (ej. "Pedido") pasa de un estado a otro (Pendiente -> Pagado).
 
 ### Momento 2 — Entidades de Datos & Business Rules
 **Objetivo:** Definir el "Diccionario" del sistema y las leyes condicionales que lo rigen.
-**Produce:** 
+**Produce:**
 1. **Data Schema (Lite):** Listado de entidades, atributos principales y relaciones (1:1, 1:N, N:N). No requiere SQL, solo estructura lógica.
 2. **Business Rules Matrix:** Matriz de condiciones y consecuencias. Debe incluir estos 4 tipos de reglas:
    - *Validación:* "No se puede [Acción] si no se cumple [Condición]".
@@ -61,20 +61,20 @@ status: operational
 1. **Logical Flowcharts (Mermaid):** Diagramas de flujo lógico para procesos complejos (ej. Checkout, Registro).
 2. **Product KPI Strategy:** Definición de North Star Metric y métricas de soporte (ej. HEART o AARRR).
 
-> 🔑 **Regla de Clasificación de Métricas:** Priorizar siempre **métricas Leading** (uso de features, tickets abiertos — avisan *antes* del problema) sobre **métricas Lagging** (MRR, Churn — miran el pasado y no pueden corregirse a tiempo). Si la métrica sube y no sabés qué acción tomar, es Vanidad.
+>  **Regla de Clasificación de Métricas:** Priorizar siempre **métricas Leading** (uso de features, tickets abiertos — avisan *antes* del problema) sobre **métricas Lagging** (MRR, Churn — miran el pasado y no pueden corregirse a tiempo). Si la métrica sube y no sabés qué acción tomar, es Vanidad.
 
 ### Momento 3.5 — Validación de Implementabilidad (Matriz SDD)
 **Activar cuando:** Se cierra el Momento 3 y antes de entregar la lógica a desarrollo.
 **Propósito:** Asegurar que la lógica definida no sea solo "teórica" sino **implementable**. Esta matriz actúa como contrato entre diseño y desarrollo.
 
-**📐 La Matriz SDD (Baraldi Edition):**
+** La Matriz SDD (Baraldi Edition):**
 Cada funcionalidad crítica debe pasar por este flujo antes de darse por aprobada:
 
 | Funcionalidad | Explore (Riesgos) | Propose (Alcance) | Apply (Lógica Core) | Verify (Criterio de Aceptación) |
 |:---|:---|:---|:---|:---|
 | **[Nombre Feature]** | ¿Qué dependencias técnicas o bloqueos tiene? | ¿Qué se hace y qué queda fuera (Scope)? | ¿Cuál es la regla de negocio central? | ¿Cómo sabemos que funciona correctamente? |
 
-**🔬 Cross-Check de Integridad Semántica:**
+** Cross-Check de Integridad Semántica:**
 Antes de cerrar la matriz, verificar para cada feature:
 1. **¿Es `scoped`?** — ¿Aparece en los artefactos de la Etapa 01 (Problem Framing)?
 2. **¿Hay `conflicts_with`?** — ¿Contradice alguna limitación técnica detectada en la Etapa 02?
@@ -82,7 +82,7 @@ Antes de cerrar la matriz, verificar para cada feature:
 
 ---
 
-## 🛠️ Motores y Herramientas (Bridge Architecture)
+## Motores y Herramientas (Bridge Architecture)
 Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 1. **Advanced Prioritization Protocol:** Aplicar para priorizar el backlog de reglas lógicas.
 2. **Pricing & Monetization Protocol:** Consultar siempre para alinear lógica de accesos/permisos con la estrategia de ingresos.
@@ -92,7 +92,7 @@ Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 
 ---
 
-## 🚫 NEVER List — Anti-patrones de la Etapa 03
+## NEVER List — Anti-patrones de la Etapa 03
 El Agente debe **bloquear** el proceso si detecta:
 
 1.  **NEVER definas roles genéricos:** Los permisos (CRUD) deben ser granulares y específicos por cada tipo de actor.
@@ -102,7 +102,7 @@ El Agente debe **bloquear** el proceso si detecta:
 5.  **NEVER omitas la estrategia de monetización:** La lógica del producto (ej. paywalls, límites de uso) debe estar conectada al modelo de negocio.
 6.  **NEVER uses Pie Charts para datos similares:** Usar Pie Charts solo si los componentes difieren en más del 20-30%. Si los segmentos son similares en tamaño, usar Bar Chart apilado horizontal (Bullet Graph). Un Pie Chart con 5 segmentos similares es ciego.
 
-## ✅ ALWAYS List — Mandatos de Comportamiento
+## ALWAYS List — Mandatos de Comportamiento
 - **Siempre** utiliza diagramas Mermaid para visualizar *State Machines* (cambios de estado) y *Flowcharts*.
 - **Siempre** redacta las Business Rules en formato `Condición -> Acción -> Excepción`.
 - **Siempre** busca los diagramas de sistema `sa-` (System Analysis) en Engram MCP antes de definir la lógica de permisos.

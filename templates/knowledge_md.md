@@ -1,10 +1,10 @@
-# 📖 Base de Conocimiento & Manual de Producto — {NOMBRE_DEL_PRODUCTO}
+# Base de Conocimiento & Manual de Producto — {NOMBRE_DEL_PRODUCTO}
 
 > **Fuente de Verdad Operativa:** Este documento fue compilado automáticamente por el **Framework Baraldi** a partir de los acuerdos y definiciones validados en las Etapas 01 a 07.
 
 ---
 
-## 🎯 1. Descubrimiento y Preventa (Landing & Presales)
+## 1. Descubrimiento y Preventa (Landing & Presales)
 
 ### Propuesta de Valor Central
 {Definición concisa del problema que resuelve y el beneficio principal obtenido en E01}.
@@ -20,7 +20,7 @@
 
 ---
 
-## 🧭 2. Glosario Oficial y Taxonomía del Sistema
+## 2. Glosario Oficial y Taxonomía del Sistema
 
 | Término Oficial | ¿Qué significa en la plataforma? | Evitar / No usar |
 | :--- | :--- | :--- |
@@ -30,9 +30,9 @@
 
 ---
 
-## 👥 3. Guías de Uso y Manual Operativo por Rol
+## 3. Guías de Uso y Manual Operativo por Rol
 
-### 👑 Para el Rol: {Administrador / Dueño}
+### Para el Rol: {Administrador / Dueño}
 1. **Primeros Pasos / Configuración Inicial:**
    - Ingresar a `{Ruta}` y completar `{Campos}`.
    - Activar las integraciones necesarias en `{Sección}`.
@@ -40,12 +40,12 @@
    - Cómo consultar métricas y reportes en `{Vista}`.
    - Cómo gestionar permisos de usuarios en `{Vista}`.
 
-### 🛠️ Para el Rol: {Operador / Staff / Empleado}
+### Para el Rol: {Operador / Staff / Empleado}
 1. **Flujo de Trabajo Diario:**
    - Abrir `{Vista}` para revisar pendientes.
    - Marcar el estado de `{Entidad}` haciendo clic en `{Botón}`.
 
-### 👤 Para el Rol: {Cliente / Usuario Final}
+### Para el Rol: {Cliente / Usuario Final}
 1. **Cómo {Acción Principal - Ej: Realizar una Reserva / Pedido}:**
    - Paso 1: {Seleccionar ítem}.
    - Paso 2: {Confirmar datos}.
@@ -53,7 +53,7 @@
 
 ---
 
-## 🛠️ 4. Guía de Troubleshooting y Resolución de Errores
+## 4. Guía de Troubleshooting y Resolución de Errores
 
 | Qué ve el usuario en pantalla | Por qué ocurre (Regla de Negocio E03) | Acción Correctiva Inmediata |
 | :--- | :--- | :--- |
@@ -63,7 +63,7 @@
 
 ---
 
-## 🤖 5. Chunks de Contexto para Asistentes de IA (RAG Readiness)
+## 5. Chunks de Contexto para Asistentes de IA (RAG Readiness)
 
 ### Directiva de Tono y Personalidad (VOICE.md Sync)
 * **Tratamiento:** {Tú / Vos / Usted}

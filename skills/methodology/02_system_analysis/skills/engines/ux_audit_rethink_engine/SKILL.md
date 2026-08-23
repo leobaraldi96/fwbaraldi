@@ -12,7 +12,7 @@ framework: Baraldi
 stage: "02 - System Analysis"
 ---
 
-# 🔍 Auditoría y Rediseño de UX (UX Audit & Rethink)
+# Auditoría y Rediseño de UX (UX Audit & Rethink)
 
 Este motor permite a los agentes de IA realizar una **auditoría holística y completa de UX** basada en la metodología de la Interaction Design Foundation (IxDF) de "The Basics of User Experience Design". Evalúa productos en múltiples dimensiones y propone recomendaciones estratégicas de rediseño.
 
@@ -79,7 +79,7 @@ De Gillian Crampton Smith y Kevin Silver:
 
 ---
 
-## ⚠️ Aviso de Seguridad
+## Aviso de Seguridad
 
 **Manejo de Inputs No Confiables** (OWASP LLM01 – Prevención de Prompt Injection):
 
@@ -133,7 +133,7 @@ Contexto: En movimiento, multitarea, sensible al tiempo
 
 Para cada factor, evaluar y puntuar 1-5:
 
-#### 1. Útil ⭐⭐⭐⭐⚪ (4/5)
+#### 1. Útil  (4/5)
 **Pregunta**: ¿El producto resuelve problemas reales del usuario y provee valor?
 
 **Evaluar:** Aborda necesidades genuinas, funcionalidades alineadas con objetivos, propuesta de valor clara, resuelve mejor que alternativas.
@@ -147,7 +147,7 @@ Para cada factor, evaluar y puntuar 1-5:
 
 ---
 
-#### 2. Usable ⭐⭐⭐⚪⚪ (3/5)
+#### 2. Usable  (3/5)
 **Pregunta**: ¿Es fácil de usar y navegar?
 
 **Evaluar:** Interfaz intuitiva, navegación clara, patrones consistentes, baja carga cognitiva, prevención de errores.
@@ -156,7 +156,7 @@ Para cada factor, evaluar y puntuar 1-5:
 
 ---
 
-#### 3. Encontrable ⭐⭐⚪⚪⚪ (2/5)
+#### 3. Encontrable  (2/5)
 **Pregunta**: ¿Pueden los usuarios localizar fácilmente contenido y funcionalidades?
 
 **Evaluar:** Búsqueda efectiva, arquitectura de información lógica, jerarquía de contenido clara, funcionalidades descubribles.
@@ -165,21 +165,21 @@ Para cada factor, evaluar y puntuar 1-5:
 
 ---
 
-#### 4. Creíble ⭐⭐⭐⭐⚪ (4/5)
+#### 4. Creíble  (4/5)
 **Pregunta**: ¿Inspira confianza y seguridad?
 
 **Evaluar:** Diseño profesional, sin errores, HTTPS y política de privacidad, prueba social (reseñas, testimonios), contenido actualizado.
 
 ---
 
-#### 5. Deseable ⭐⭐⭐⚪⚪ (3/5)
+#### 5. Deseable  (3/5)
 **Pregunta**: ¿Es estéticamente atractivo y emocionalmente engaging?
 
 **Evaluar:** Atractivo visual, diseño emocional memorable, expresión de personalidad de marca, estándares de diseño modernos.
 
 ---
 
-#### 6. Accesible ⭐⭐⚪⚪⚪ (2/5)
+#### 6. Accesible  (2/5)
 **Pregunta**: ¿Es inclusivo para todos los usuarios, incluyendo quienes tienen discapacidades?
 
 **Evaluar:** Cumplimiento WCAG, navegación por teclado, lectores de pantalla, contraste de color, texto alternativo.
@@ -188,7 +188,7 @@ Para cada factor, evaluar y puntuar 1-5:
 
 ---
 
-#### 7. Valioso ⭐⭐⭐⭐⚪ (4/5)
+#### 7. Valioso  (4/5)
 **Pregunta**: ¿Entrega valor tanto a usuarios como al negocio?
 
 **Evaluar:**
@@ -201,13 +201,13 @@ Para cada factor, evaluar y puntuar 1-5:
 
 | Factor | Puntuación | Estado | Prioridad |
 |--------|------------|--------|-----------|
-| Útil | 4/5 | ✅ Bueno | Media |
-| Usable | 3/5 | ⚠️ Necesita trabajo | Alta |
-| Encontrable | 2/5 | ❌ Deficiente | Crítica |
-| Creíble | 4/5 | ✅ Bueno | Baja |
-| Deseable | 3/5 | ⚠️ Necesita trabajo | Media |
-| Accesible | 2/5 | ❌ Deficiente | Alta |
-| Valioso | 4/5 | ✅ Bueno | Baja |
+| Útil | 4/5 |  Bueno | Media |
+| Usable | 3/5 |  Necesita trabajo | Alta |
+| Encontrable | 2/5 |  Deficiente | Crítica |
+| Creíble | 4/5 |  Bueno | Baja |
+| Deseable | 3/5 |  Necesita trabajo | Media |
+| Accesible | 2/5 |  Deficiente | Alta |
+| Valioso | 4/5 |  Bueno | Baja |
 
 **Puntaje Total**: 22/35 (63%) — **Aceptable, mejoras significativas necesarias**
 
@@ -215,23 +215,23 @@ Para cada factor, evaluar y puntuar 1-5:
 
 ### Paso 3: Evaluar las 5 Características de Usabilidad
 
-#### 1. Efectividad ⭐⭐⭐⭐⚪ (4/5)
+#### 1. Efectividad  (4/5)
 **Definición**: ¿Pueden los usuarios alcanzar sus objetivos con precisión y completitud?
 **Métricas:** % de usuarios que completan tareas exitosamente, errores por tarea, satisfacción con resultados.
 
-#### 2. Eficiencia ⭐⭐⭐⚪⚪ (3/5)
+#### 2. Eficiencia  (3/5)
 **Definición**: ¿Pueden los usuarios completar tareas rápidamente con mínimo esfuerzo?
 **Problemas:** Procesos multi-paso que podrían simplificarse, atajos faltantes, tiempos de carga lentos.
 
-#### 3. Engagement ⭐⭐⭐⚪⚪ (3/5)
+#### 3. Engagement  (3/5)
 **Definición**: ¿Es la interfaz agradable, satisfactoria y disfrutable?
 **Evaluar:** Atractivo estético, respuesta emocional positiva, deseo de regresar, momentos de deleite.
 
-#### 4. Tolerancia al Error ⭐⭐⚪⚪⚪ (2/5)
+#### 4. Tolerancia al Error  (2/5)
 **Definición**: ¿Pueden los usuarios fácilmente prevenir, reconocer y recuperarse de errores?
 **Problemas Comunes:** Mensajes genéricos ("Error 500"), sin confirmación para acciones destructivas, pérdida de datos.
 
-#### 5. Facilidad de Aprendizaje ⭐⭐⭐⚪⚪ (3/5)
+#### 5. Facilidad de Aprendizaje  (3/5)
 **Definición**: ¿Pueden los nuevos usuarios aprender rápidamente sin entrenamiento extensivo?
 **Evaluar:** Primer uso intuitivo, onboarding efectivo, consistente con convenciones, divulgación progresiva.
 
@@ -241,11 +241,11 @@ Para cada factor, evaluar y puntuar 1-5:
 
 | Característica | Puntuación | Estado | Impacto |
 |----------------|------------|--------|---------|
-| Efectividad | 4/5 | ✅ Bueno | Alto |
-| Eficiencia | 3/5 | ⚠️ Necesita trabajo | Alto |
-| Engagement | 3/5 | ⚠️ Necesita trabajo | Medio |
-| Tolerancia al Error | 2/5 | ❌ Deficiente | Crítico |
-| Facilidad de Aprendizaje | 3/5 | ⚠️ Necesita trabajo | Alto |
+| Efectividad | 4/5 |  Bueno | Alto |
+| Eficiencia | 3/5 |  Necesita trabajo | Alto |
+| Engagement | 3/5 |  Necesita trabajo | Medio |
+| Tolerancia al Error | 2/5 |  Deficiente | Crítico |
+| Facilidad de Aprendizaje | 3/5 |  Necesita trabajo | Alto |
 
 **Puntaje Total**: 15/25 (60%) — **Bajo el objetivo, mejora esencial**
 

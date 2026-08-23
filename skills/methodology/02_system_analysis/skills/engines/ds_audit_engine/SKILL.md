@@ -1,18 +1,18 @@
 ---
 name: comprehensive-ds-audit
 description: >
-  Protocolo macro para auditar el estado de salud de un Sistema de Diseño completo. 
-  Evalúa coherencia visual, cobertura de biblioteca, accesibilidad, calidad de 
+  Protocolo macro para auditar el estado de salud de un Sistema de Diseño completo.
+  Evalúa coherencia visual, cobertura de biblioteca, accesibilidad, calidad de
   documentación e implementación técnica en código.
 keywords: design-system, health-check, audit, macro-audit, design-ops, scalability
 version: "2.26.14"
 ---
 
-# 🏥 Skill 31 — Comprehensive Design System Audit Protocol (Health Check)
+# Skill 31 — Comprehensive Design System Audit Protocol (Health Check)
 
 Este protocolo se activa para realizar una evaluación de alto nivel (macro) sobre la salud integral de un sistema de diseño o producto maduro. El Agente actúa como un **Design Operations (DesignOps) Lead**, diagnosticando el ecosistema completo para identificar áreas de degradación o deuda técnica estructural.
 
-## 📋 Ejes de la Auditoría Macro
+## Ejes de la Auditoría Macro
 
 Al ejecutar este diagnóstico, el Agente debe analizar y generar un reporte estructurado en las siguientes 7 dimensiones:
 
@@ -50,13 +50,13 @@ Al ejecutar este diagnóstico, el Agente debe analizar y generar un reporte estr
 El output final debe consolidarse en:
 - **Missing Patterns:** Patrones recurrentes que deberían ser un componente.
 - **Inconsistencias a Reparar:** Errores que dañan la experiencia de usuario o complican el desarrollo.
-- **Matriz de Prioridades (Roadmap):** 
+- **Matriz de Prioridades (Roadmap):**
   - *High:* Reparaciones urgentes (A11y, bugs críticos).
   - *Medium:* Expansión de la biblioteca y refactorización.
   - *Low:* Mejoras de calidad de vida y documentación.
 
 ---
-## 💡 Cómo usar esta Skill (Bridge Architecture)
+## Cómo usar esta Skill (Bridge Architecture)
 - **Cuándo invocar:** En la **Etapa 02 (System Analysis)** para realizar el Onboarding de un producto legado o como revisión trimestral ("Health Check") en productos activos.
 - **Output:** Un informe `Design_System_Health_Report.md` que justifica el roadmap de la fase de rediseño o mantenimiento.
 - **Sinergia:** Detecta problemas a gran escala que luego serán resueltos quirúrgicamente por las **Skills 25, 29 y 30**.

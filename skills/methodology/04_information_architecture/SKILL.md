@@ -18,7 +18,7 @@ status: operational
 
 ---
 
-## 🚫 NEVER List — Anti-patrones de la Etapa 04
+## NEVER List — Anti-patrones de la Etapa 04
 El Agente debe **bloquear** el proceso si detecta:
 
 1.  **NEVER realices una "Poda de Datos":** Toda actualización debe ser aditiva. No resumas ni limpies información validada anteriormente.
@@ -28,7 +28,7 @@ El Agente debe **bloquear** el proceso si detecta:
 5.  **NEVER omitas los estados de los objetos core:** La State Machine es obligatoria para entender el ciclo de vida del producto.
 6.  **NEVER permitas navegación de más de 3 clics:** Las tareas críticas deben ser eficientes y directas.
 
-## ✅ ALWAYS List — Mandatos de Comportamiento
+## ALWAYS List — Mandatos de Comportamiento
 - **Siempre** busca expandir y redundar el detalle informativo antes de sintetizar.
 - **Siempre** verifica la integridad del sitemap para no borrar ramas validadas por accidente.
 - **Siempre** integra activamente el Actor Map de las etapas 02/03 en los flujos de usuario.
@@ -60,7 +60,7 @@ El Agente debe **bloquear** el proceso si detecta:
 
 ### Momento 1 — Sitemap & Navigation Strategy
 **Objetivo:** Definir el inventario de vistas y la jerarquía de navegación.
-**Produce:** 
+**Produce:**
 1. **Sitemap Visual (Mermaid):** Estructura jerárquica de páginas y subsecciones.
 2. **Navigation Model:** Definición de niveles de navegación (Global, Local, Contextual).
 3. **[NUEVO] PRODUCT_MASTER_MATRIX.md:** Inicialización del artefacto de trazabilidad (Skill 39) con el listado de pantallas y sus prioridades de negocio.
@@ -70,7 +70,7 @@ El Agente debe **bloquear** el proceso si detecta:
 **Reglas de Proactividad:**
 - **Mandato de Omnipresencia de Actores:** Es OBLIGATORIO consultar el Actor Map (Etapa 02/03) antes de iniciar. Los flujos no son "aislados"; deben mostrar la interacción entre el Actor Principal, Actores Secundarios y el Sistema (Backstage).
 - **Cobertura de Escenarios:** No se limita al "Happy Path". El Agente DEBE proponer y documentar proactivamente flujos de error, estados vacíos y bifurcaciones de decisión sin que el humano lo pida.
-**Produce:** 
+**Produce:**
 1. **Multi-Actor Flows (Mermaid):** Diagramas de flujo que integran carriles (swimlanes) o nodos de interacción para todos los actores implicados.
 2. **Edge Case Matrix:** Inventario de puntos de fricción, errores y decisiones críticas.
 
@@ -87,14 +87,14 @@ El Agente debe **bloquear** el proceso si detecta:
 - **Blindaje de Lenguaje:** Establecer el nombre oficial de cada entidad para evitar sinonimia confusa en la interfaz.
 - **Lógica de Estados:** Definir el ciclo de vida de los objetos principales (ej: Pedido, Usuario, Contenido).
 - **Mandato de Sincronización Retroactiva (P0):** Dado que este momento establece la "Fuente de Verdad" terminológica, el Agente tiene la **OBLIGACIÓN PROACTIVA** de proponer y ejecutar la revisión de los artefactos de los Momentos 01, 02 y 03 (Sitemap, Flows y Taxonomía). Se debe asegurar que la nomenclatura y los estados coincidan al 100% con el Glosario y la State Machine antes de cerrar la etapa.
-**Produce:** 
+**Produce:**
 1. **Product Glossary:** Tabla de términos críticos, definiciones y etiquetas de interfaz prohibidas vs. sugeridas.
 2. **Object State Machine:** Matriz de estados y transiciones para las entidades core del negocio.
 3. **Notification Trigger Map:** Definición de puntos de contacto (Push, Email) basados en cambios de estado o hitos de navegación.
 
 ---
 
-## 🛠️ Motores Integrados (Bridge Architecture)
+## Motores Integrados (Bridge Architecture)
 Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 1. **UX Writing Engine (`../05_interaction_design_ux/skills/methodology/05_interaction_design_ux/skills/engines/ux_writing_engine/`):** Aplicar para asegurar precisión semántica en taxonomías y glosarios.
 2. **Design Critique Engine (`../06_visual_design_ui/skills/methodology/06_visual_design_ui/skills/engines/design_critique_engine/`):** Aplicar para validar la arquitectura con stakeholders o como auditoría crítica interna.
@@ -129,7 +129,7 @@ Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 - Momento 4 → Eje: `ia-vocabulary-states` (tipo: `ux-writing`)
 
 ---
-## 🧠 Protocolo de Mentoría y Co-creación (E04)
+## Protocolo de Mentoría y Co-creación (E04)
 En la fase de arquitectura, el Agente actúa como un **Arquitecto de Información Mentor**:
 *   **Justificación de Navegación:** Al proponer una estructura, explicar el **Modelo Mental** (ej. *"Propongo una navegación lateral porque tu producto tiene muchas herramientas paralelas que requieren acceso rápido, evitando la fatiga de clics"*).
 *   **Gestión de Carga Cognitiva:** Desafiar al usuario si una sección tiene demasiados niveles o ítems: *"Estamos superando la regla de 7 elementos; ¿podemos agrupar estos conceptos para no abrumar al usuario?"*.

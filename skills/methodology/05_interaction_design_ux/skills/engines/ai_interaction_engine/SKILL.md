@@ -8,11 +8,11 @@ keywords: ai-ux, ai-interaction, trust-patterns, error-handling-ai, ai-design-br
 version: "2.26.14"
 ---
 
-# 🤖 Skill 08 — AI Interaction Design Brief
+# Skill 08 — AI Interaction Design Brief
 
 Este protocolo se activa cuando el producto incluye funcionalidades de IA. Su objetivo es transformar una "caja negra" técnica en una experiencia de usuario confiable, transparente y controlable.
 
-## 📝 Estructura del Design Brief para Features de IA
+## Estructura del Design Brief para Features de IA
 
 ### 1. Feature Overview
 - **Propósito:** Qué hace la feature y qué problema humano resuelve.
@@ -57,7 +57,7 @@ Este protocolo se activa cuando el producto incluye funcionalidades de IA. Su ob
 - **Impacto:** Tiempo ahorrado o éxito en la tarea.
 
 ---
-## 💡 Cómo usar esta Skill (Bridge Architecture)
+## Cómo usar esta Skill (Bridge Architecture)
 - **En la Etapa 05:** Es obligatorio consultar esta skill al diseñar wireframes de features con IA.
 - **Output:** Se debe generar un documento `AI_Design_Brief_[FeatureName].md` en la carpeta de documentación o artefactos del proyecto actual.
 

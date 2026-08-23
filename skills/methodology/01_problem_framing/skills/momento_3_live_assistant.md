@@ -141,7 +141,7 @@ Este es el momento más operativo del framework. No analizás estrategia — eje
 ### Sub-tarea D — Procesado final (fin de todas las entrevistas / encuestas)
 **Trigger:** "Fin de las entrevistas. Procesá toda la colección." / "Tengo los datos de la encuesta. Procesalos."
 
-**🔴 DATA EXHAUSTIVENESS MANDATE — Regla absoluta:**
+** DATA EXHAUSTIVENESS MANDATE — Regla absoluta:**
 > El desperdicio de data ya recolectada es un error metodológico inaceptable. Cada pregunta, campo o punto de datos que el humano invirtió tiempo en recolectar **DEBE ser analizado y representado**. No hay "preguntas secundarias" ni "datos de relleno". Todo tiene valor o fue un error de diseño del cuestionario — y en ese caso, señalarlo es parte del análisis.
 
 **Qué hacés en esta sub-tarea:**
@@ -163,7 +163,7 @@ Este es el momento más operativo del framework. No analizás estrategia — eje
 ---
 
 ## Resumen ejecutivo (Triangulación de hallazgos)
-> ⚠️ **Mandato de Triangulación:** No resumas método por método. Cruza la información.
+>  **Mandato de Triangulación:** No resumas método por método. Cruza la información.
 - **Patrón Dominante:** [Hallazgo reforzado por >1 fuente de datos]
 - **Tensión Detectada:** [Contradicción entre lo que el usuario dice (encuesta) y lo que hace o siente (entrevista)]
 - **Estado de la Visión:** [¿El research apoya la visión original o sugiere que estamos mirando el problema equivocado?]
@@ -182,7 +182,7 @@ Este es el momento más operativo del framework. No analizás estrategia — eje
 ---
 
 ## Análisis exhaustivo por pregunta / dimensión (Estructura OPIR)
-> ⚠️ **Mandato de Rigor:** Cada punto de datos analizado debe seguir la estructura de 4 bloques. No uses lenguaje dubitativo ("podría", "parece"). Si hay incertidumbre, declárala como "Riesgo de Conocimiento".
+>  **Mandato de Rigor:** Cada punto de datos analizado debe seguir la estructura de 4 bloques. No uses lenguaje dubitativo ("podría", "parece"). Si hay incertidumbre, declárala como "Riesgo de Conocimiento".
 
 ### Dimensión/Pregunta: [Nombre de la pregunta]
 - **Observación:** [Lo que se vio/escuchó directamente, sin interpretación. Cita o dato crudo.]
@@ -216,7 +216,7 @@ Este es el momento más operativo del framework. No analizás estrategia — eje
 ---
 
 ## Patrones detectados (Affinity Mapping)
-> ⚠️ **Regla de Naming:** No uses etiquetas simples (ej: "Navegación"). Usa oraciones de hallazgo (ej: "Los usuarios abandonan el flujo al no entender el estado de carga").
+>  **Regla de Naming:** No uses etiquetas simples (ej: "Navegación"). Usa oraciones de hallazgo (ej: "Los usuarios abandonan el flujo al no entender el estado de carga").
 
 ### Patrón 1 — [Oración de hallazgo descriptiva]
 - **Frecuencia:** Aparece en [N] de [N] participantes ([%] del total).
@@ -228,7 +228,7 @@ Este es el momento más operativo del framework. No analizás estrategia — eje
 
 ## Mapa de Pain Points
 > Clasificación de las fricciones detectadas por severidad e impacto. Herramienta de priorización para stakeholders.
-> ⚠️ **Regla:** Esta sección describe problemas, no soluciones. Las oportunidades de diseño se definen en la Etapa 03.
+>  **Regla:** Esta sección describe problemas, no soluciones. Las oportunidades de diseño se definen en la Etapa 03.
 
 | Pain Point | Severidad (1-5) | Frecuencia | Evidencia (cita) | Hipótesis que impacta |
 | :--- | :---: | :--- | :--- | :--- |
@@ -304,7 +304,7 @@ Este es el momento más operativo del framework. No analizás estrategia — eje
 ### Sub-tarea E — Síntesis de Personas basada en evidencia
 **Trigger:** "Generá las personas del proyecto." / "Armá los perfiles de usuario." / el Informe de Research ya fue aprobado.
 
-**🔴 Regla Fundamental — Anti-Ficción:**
+** Regla Fundamental — Anti-Ficción:**
 > Una persona del Baraldi Framework NO es una construcción hipotética. **Cada atributo debe poder citarse con evidencia real** del Informe de Research. Si un atributo no tiene respaldo en datos, se deja vacío y se marca como `[SIN EVIDENCIA — pendiente]`. Está prohibido "completar" con suposiciones plausibles.
 
 **Qué hacés en esta sub-tarea:**
@@ -368,7 +368,7 @@ Este es el momento más operativo del framework. No analizás estrategia — eje
 | [ej: Primera vez que abre la app] | [ej: Ansioso, expectante] | [ej: Tono cálido, célébrar el primer paso] |
 | [ej: Encuentra un error] | [ej: Frustrado] | [ej: Tono directo, sin humor, dar solución] |
 
-> ⚠️ Esta tabla es el puente directo con la **Matriz de Tono** del VOICE.md (Etapa 05 / Momento 1).
+>  Esta tabla es el puente directo con la **Matriz de Tono** del VOICE.md (Etapa 05 / Momento 1).
 
 ---
 ## Metadata de la Persona
@@ -400,7 +400,7 @@ Este es el momento más operativo del framework. No analizás estrategia — eje
 
 ---
 
-## ✅ UI Quality Checklist — Informes HTML (Sub-tarea D con output HTML)
+## UI Quality Checklist — Informes HTML (Sub-tarea D con output HTML)
 
 > Aplicar este checklist antes de entregar cualquier informe visual. Si algún ítem no se cumple, corregir antes de presentar al humano.
 

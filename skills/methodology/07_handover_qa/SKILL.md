@@ -15,7 +15,7 @@ version: "2.26.14"
 
 ---
 
-## 🚦 Flujo de la etapa — El Criterio "Go/No-Go"
+## Flujo de la etapa — El Criterio "Go/No-Go"
 
 Esta etapa actúa como la aduana final antes del desarrollo. Si el producto no pasa esta etapa, debe regresar a las Etapas 05 o 06 para resolución.
 
@@ -26,7 +26,7 @@ Esta etapa actúa como la aduana final antes del desarrollo. Si el producto no p
 
 ---
 
-## 🛠️ Integración con la Toolbox (Bridge Architecture)
+## Integración con la Toolbox (Bridge Architecture)
 Para asegurar un cierre de grado industrial, el Agente debe ejecutar los siguientes protocolos:
 
 1. **Momento 1 & 2 (Obligatorios):** Son bloqueantes. No se puede escribir código sin esto.
@@ -40,7 +40,7 @@ Para asegurar un cierre de grado industrial, el Agente debe ejecutar los siguien
 
 ---
 
-## 🚀 Próximos Pasos: El Despegue
+## Próximos Pasos: El Despegue
 Una vez superada la "Aduana" de la Etapa 07, el framework no te deja solo. El siguiente paso natural es invocar el **Product Launch Protocol** y el **Product Knowledge Compiler** para:
 *   Configurar el servidor de pruebas para la **Alpha Interna**.
 *   Compilar y desplegar la Base de Conocimiento (`KNOWLEDGE.md`) para CX y el Asistente Copilot IA.
@@ -57,7 +57,7 @@ Una vez superada la "Aduana" de la Etapa 07, el framework no te deja solo. El si
 
 ---
 
-## 🚫 NEVER List — Anti-patrones de la Etapa 07
+## NEVER List — Anti-patrones de la Etapa 07
 Para garantizar la integridad del sistema, el Agente debe **bloquear** el avance si detecta cualquiera de estos comportamientos:
 
 1.  **NEVER permitas un Handoff con "Lorem Ipsum":** El copy es diseño. Sin texto final, no se puede auditar la adaptabilidad real de los componentes.
@@ -70,7 +70,7 @@ Para garantizar la integridad del sistema, el Agente debe **bloquear** el avance
 
 ---
 
-## 🧠 Protocolo de Mentoría y Co-creación (E07)
+## Protocolo de Mentoría y Co-creación (E07)
 En el cierre, el Agente actúa como un **Guardián de la Excelencia y Veedor de la Experiencia**:
 *   **Soberanía del Ritual:** Enfatizar que el Handoff no es un archivo, es un acuerdo: *"Esta ceremonia formaliza que el diseño está blindado. A partir de ahora, nuestra misión es acompañar a ingeniería para que este diseño brille en producción"*.
 *   **QA Proactivo vs. Reactivo:** Educar sobre la supervisión continua: *"No esperamos al final del desarrollo para testear. Vamos a auditar cada sprint para asegurar que el ADN del producto no se degrade"*.

@@ -8,16 +8,16 @@ keywords: service-design, blueprint, good-services, journey-map, system-analysis
 version: "2.26.14"
 ---
 
-# 🗺️ Good Services Engine
+# Good Services Engine
 
 Este motor táctico provee las herramientas de análisis sistémico para diseñar, diagnosticar y mejorar servicios. Entendemos por "Servicio" a **todo aquello que ayuda a un usuario a lograr un objetivo**, independientemente de cuántos canales o departamentos internos estén involucrados.
 
-## 🎯 Objetivo del Engine
+## Objetivo del Engine
 Mapear el servicio completo (Frontstage y Backstage), identificar puntos de quiebre operativos y garantizar que el servicio cumpla con los estándares universales de usabilidad sistémica.
 
 ---
 
-## 🚫 NEVER List (Anti-Patrones de Servicio)
+## NEVER List (Anti-Patrones de Servicio)
 El Agente tiene **estrictamente prohibido** diseñar o auditar bajo estos supuestos:
 
 1. **Anti-Organigrama (Silos):** Nunca diseñar la experiencia basándose en la estructura interna de la empresa. Al usuario no le importa qué departamento procesa su solicitud; el servicio debe sentirse como un ente único.
@@ -27,7 +27,7 @@ El Agente tiene **estrictamente prohibido** diseñar o auditar bajo estos supues
 
 ---
 
-## ✅ ALWAYS List (Mandatos Operativos)
+## ALWAYS List (Mandatos Operativos)
 El Agente **debe** aplicar estas reglas al generar mapas o auditorías:
 
 1. **Definición Basada en Verbos:** El nombre y propósito del servicio siempre deben definirse como una acción clara desde la perspectiva del usuario (Ej. "Aprender a manejar", no "Educación Vial").
@@ -40,8 +40,8 @@ El Agente **debe** aplicar estas reglas al generar mapas o auditorías:
 
 ---
 
-## 🧠 Los 15 Principios de Good Services (Auditoría)
-Cuando se solicite una **"Auditoría de Servicio"**, la IA evaluará el flujo contra estas 15 reglas de Lou Downe. 
+## Los 15 Principios de Good Services (Auditoría)
+Cuando se solicite una **"Auditoría de Servicio"**, la IA evaluará el flujo contra estas 15 reglas de Lou Downe.
 **Regla de Auditoría:** Para cada principio violado, la IA DEBE documentar el **Failure Mode** (cómo falla hoy) y el **Improvement Move** (cómo arreglarlo sistémicamente).
 
 1. Es fácil de encontrar.
@@ -60,13 +60,13 @@ Cuando se solicite una **"Auditoría de Servicio"**, la IA evaluará el flujo co
 14. Explica por qué se tomó una decisión (rechazos).
 15. **Hace fácil obtener asistencia humana.**
 
-**🎯 El Triple Estándar de Calidad — Un servicio es "Good" cuando es:**
+** El Triple Estándar de Calidad — Un servicio es "Good" cuando es:**
 - **Bueno para el Usuario:** Lo ayuda a lograr su objetivo sin esfuerzo innecesario.
 - **Bueno para la Organización:** Sostenible (costo, riesgo, capacidad) y alineado con los objetivos de negocio.
 - **Bueno para la Sociedad:** No genera daño evitable (exclusión, sesgo, impacto ambiental).
 > Usar este trío al priorizar mejoras y elegir métricas de éxito.
 
-**📊 Scorecard de Auditoría — Formato Obligatorio:**
+** Scorecard de Auditoría — Formato Obligatorio:**
 Cuando se audite un servicio, documentar cada principio con esta tabla:
 
 | # | Principio | Score (0-2) | Evidencia (dato/investigación) | Dónde falla en el journey | Fix ideas |
@@ -84,7 +84,7 @@ Cuando se audite un servicio, documentar cada principio con esta tabla:
 
 ---
 
-## 🛠️ Protocolos de Ejecución (Templates)
+## Protocolos de Ejecución (Templates)
 
 ### 1. Service Definition Canvas
 Antes de hacer un Blueprint complejo, el Agente debe definir el servicio respondiendo estrictamente a estas dimensiones:
@@ -111,19 +111,19 @@ Cuando el usuario pida "Mapear el servicio", la IA NO debe hacer una tabla gené
 6. **Métricas de Tiempo / Fallo:** Cuánto tarda cada paso y dónde se cae el usuario.
 7. **Oportunidades (Improvement Moves):** Qué principio de Good Service se está violando y cómo arreglarlo.
 
-**⚠️ Checklist de Riesgos Operativos del Blueprint** (revisar siempre antes de cerrar):
+** Checklist de Riesgos Operativos del Blueprint** (revisar siempre antes de cerrar):
 - [ ] Handoffs de datos entre equipos (duplicación, desincronización, latencia).
 - [ ] Desalineación de políticas entre departamentos u organizaciones.
 - [ ] Restricciones de capacidad (colas, staffing, tiempo de respuesta).
 - [ ] Manejo de excepciones (¿qué pasa fuera del happy path?).
 - [ ] Trazabilidad de decisiones (¿quedan registros auditables?).
 
-**🔑 Reglas de Oro del Blueprint Técnico** (aplicar en cada paso del backstage):
+** Reglas de Oro del Blueprint Técnico** (aplicar en cada paso del backstage):
 - **Mapeo de Errores de Backend:** Por cada acción del usuario, documentar qué sucede si el servidor devuelve un `500` (error interno), `403` (sin permiso) o `401` (no autenticado). Un blueprint sin rutas de error es incompleto.
 - **Latency Design:** Si una tarea de backstage tarda más de 2 segundos, el blueprint **DEBE** incluir un estado de interacción intermedio (skeleton screen, spinner con mensaje, progress bar). Nunca dejar al usuario sin feedback.
 - **Data Provenance:** Identificar de dónde viene cada dato que se muestra en la UI. Si el backend no puede proveer ese campo, no puede existir en el diseño. Nunca inventar datos sin fuente confirmada.
 
-> 🧠 **Regla de Juicio Senior:** *"Un gran diseño frente a un mal proceso de backstage genera una mala experiencia de cliente."* Siempre auditar si el proceso interno es tan fluido como la interfaz que lo representa.
+>  **Regla de Juicio Senior:** *"Un gran diseño frente a un mal proceso de backstage genera una mala experiencia de cliente."* Siempre auditar si el proceso interno es tan fluido como la interfaz que lo representa.
 
 
 
@@ -164,6 +164,6 @@ Al cerrar la auditoría, convertir los fallos en ítems de backlog orientados a 
 | Próximo | | | | | | | |
 | Después | | | | | | | |
 
-> ⚠️ Marcar los ítems que requieren cambios de política/legal vs. cambios de diseño/ops. Para ítems cross-org, documentar qué estándares o incentivos compartidos son necesarios.
+>  Marcar los ítems que requieren cambios de política/legal vs. cambios de diseño/ops. Para ítems cross-org, documentar qué estándares o incentivos compartidos son necesarios.
 
 > **Protocolo de Memoria:** Si durante el mapeo se detectan dependencias técnicas críticas o silos organizacionales que bloquean la experiencia, la IA debe usar `mem_save` para registrar este "Riesgo Sistémico" antes de avanzar a la Etapa 03.
