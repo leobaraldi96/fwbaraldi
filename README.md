@@ -202,7 +202,7 @@ A nivel de infraestructura (LLM Ops), el Framework Baraldi maximiza el rendimien
 
 | Métrica | Valor | Estado |
 |---|---|---|
-| **Eficiencia Actual (v2.27.0)** | **95.60%** | 🟢 Full Release (07/07 Etapas) |
+| **Eficiencia Actual (v2.28.0)** | **96.50%** | 🟢 Full Release (07/07 Etapas + 16 Protocolos) |
 | **Engram Engine** | **v1.20.0** | 🟢 20 MCP Tools & BM25 Ranking |
 
 *Aclaración Técnica: Al cargar en memoria viva solo los hallazgos estrictamente necesarios para la toma de decisión del momento, reducimos el ruido contextual, manteniendo la IA enfocada, rápida y económicamente viable.*
@@ -228,9 +228,9 @@ Si sos un modelo de IA o estás configurando un agente, **LEER PRIMERO:**
 
 ---
 
-## 🧰 El Arsenal de Élite (v2.27.0 — 15 Protocolos)
+## 🧰 El Arsenal de Élite (v2.28.0 — 16 Protocolos)
 
-La Toolbox del Framework Baraldi no es una simple carpeta de utilidades; es un conjunto de **15 protocolos de alto impacto** diseñados para resolver situaciones críticas de producto, negocio y política organizacional.
+La Toolbox del Framework Baraldi no es una simple carpeta de utilidades; es un conjunto de **16 protocolos de alto impacto** diseñados para resolver situaciones críticas de producto, negocio y política organizacional.
 
 | Skill | Nombre | Propósito Estratégico |
 | :--- | :--- | :--- |
@@ -249,6 +249,7 @@ La Toolbox del Framework Baraldi no es una simple carpeta de utilidades; es un c
 | **13** | **Product Master Matrix Protocol** | Artefacto vivo de trazabilidad y checklist de completitud de producto. |
 | **14** | **Systemic Issue Triage Protocol** | Triaje sistémico, resolución por causa raíz y Over-Engineering Test. |
 | **15** | **Strategic Epic Slicing Protocol** | Desglose estructurado de iniciativas en Epics e historias hijas con diagramas Mermaid para Jira/Linear/GitHub. |
+| **16** | **Product Knowledge Compiler Protocol** | Compilación de artefactos E01-E07 en Base de Conocimiento viva (`KNOWLEDGE.md`), manuales de usuario por rol y prompts de contexto RAG para Asistentes de IA. |
 
 ---
 
@@ -257,40 +258,50 @@ La Toolbox del Framework Baraldi no es una simple carpeta de utilidades; es un c
 
 ```text
 fwbaraldi/
-├── 00_boot/                                ← Identidad y Contexto inicial
+├── 00_boot/                                ← Identidad, Contexto inicial y Selector de Rigor (/init)
 ├── skills/
 │   ├── core/                               ← Consciencia del Framework (Reglas de Inmunidad)
 │   │   ├── 00_core_guardrails/             ← Barandas de contención y disciplina
 │   │   ├── 00_operational_hygiene/         ← Protocolos de ramas y handoff
 │   │   ├── 00_project_health_audit/        ← Framework Doctor (Auditoría de salud)
 │   │   ├── 00_skill_evaluation/            ← Skill Judge (Filtro de calidad)
-│   │   └── 00_system_awareness/            ← Consciencia Sistémica y Memoria (v2.26.15)
+│   │   └── 00_system_awareness/            ← Consciencia Sistémica y Memoria (v2.28.0)
 │   │
 │   ├── methodology/                        ← El núcleo del proceso (End-to-End)
-│   │   ├── 01_problem_framing/             ← Hardened v2.26.15
-│   │   ├── 02_system_analysis/             ← Hardened v2.26.15
-│   │   ├── 03_product_logic/               ← Hardened v2.27.0
-│   │   ├── 04_information_architecture/    ← Hardened v2.27.0
-│   │   ├── 05_interaction_design_ux/       ← Hardened v2.27.0
-│   │   ├── 06_visual_design_ui/            ← Hardened v2.27.0
-│   │   └── 07_handover_qa/                 ← Hardened v2.27.0
+│   │   ├── 01_problem_framing/             ← Hardened v2.28.0
+│   │   ├── 02_system_analysis/             ← Hardened v2.28.0
+│   │   ├── 03_product_logic/               ← Hardened v2.28.0
+│   │   ├── 04_information_architecture/    ← Hardened v2.28.0
+│   │   ├── 05_interaction_design_ux/       ← Hardened v2.28.0
+│   │   ├── 06_visual_design_ui/            ← Hardened v2.28.0
+│   │   └── 07_handover_qa/                 ← Hardened v2.28.0
 │   │
-│       └── toolbox/                            ← Tu arsenal estratégico (v2.27.0)
-│           ├── advanced_prioritization_protocol/
-│           ├── business_strategy_and_growth_protocol/
-│           ├── concept_synthesis_and_ideation_protocol/
-│           ├── data_driven_design_and_experimentation/
-│           ├── personal_impact_report/
-│           ├── pricing_and_monetization_protocol/
-│           ├── product_health_qbr_protocol/
-│           ├── product_launch_protocol/
-│           ├── product_master_matrix_protocol/
-│           ├── responsive_and_global_readiness_protocol/
-│           ├── sales_enablement_and_pitch_protocol/
-│           ├── stakeholder_narrative_strategy/
-│           ├── strategic_epic_slicing_protocol/
-│           ├── strategic_product_roadmap/
-│           └── systemic_issue_triage_protocol/
+│   └── toolbox/                            ← Tu arsenal estratégico (16 Protocolos)
+│       ├── advanced_prioritization_protocol/
+│       ├── business_strategy_and_growth_protocol/
+│       ├── concept_synthesis_and_ideation_protocol/
+│       ├── data_driven_design_and_experimentation/
+│       ├── personal_impact_report/
+│       ├── pricing_and_monetization_protocol/
+│       ├── product_health_qbr_protocol/
+│       ├── product_knowledge_compiler_protocol/
+│       ├── product_launch_protocol/
+│       ├── product_master_matrix_protocol/
+│       ├── responsive_and_global_readiness_protocol/
+│       ├── sales_enablement_and_pitch_protocol/
+│       ├── stakeholder_narrative_strategy/
+│       ├── strategic_epic_slicing_protocol/
+│       ├── strategic_product_roadmap/
+│       └── systemic_issue_triage_protocol/
+│
+├── templates/                              ← Suite de Contratos Vivos de Soberanía
+│   ├── business_md.md                      ← Contrato de Negocio e Invariantes
+│   ├── security_md.md                      ← Contrato de Seguridad y RLS
+│   ├── legal_md.md                         ← Contrato Regulatorio y Privacidad
+│   ├── ux_md.md                            ← Contrato de Ergonomía e Interacción
+│   ├── knowledge_md.md                     ← Base de Conocimiento y Manual de Producto
+│   ├── ejemplo_knowledge_block.md          ← Referencia Canónica ISO 26514 / Info Mapping
+│   └── docs_readme.md                      ← README y Calibrador de Rigor de docs-fwbaraldi/
 │
 ├── scripts/
 │   ├── backup.js                           ← Asistente de Backup de Memoria
@@ -299,15 +310,16 @@ fwbaraldi/
 │   └── internal-audit.js                   ← Guardián de Integridad y Versiones
 │
 ├── 00_Backlog_Estrategico.md               ← Hoja de ruta del propio Framework
+├── MAPA_DE_ARTEFACTOS.md                   ← Catálogo oficial de entregables (v2.28.0)
 ├── SKILL.md                                ← Archivo maestro para Agentes IA
 └── README.md                               ← Este archivo
 ```
 
 ---
 
-## 🚀 Quick Start / Instalación (v2.27.0)
+## 🚀 Quick Start / Instalación (v2.28.0)
 
-> ⚠️ **IMPORTANTE:** A partir de la versión 2.27.0 (Modelo Cero-Copia), el Framework Baraldi opera como un **Único Orquestador Agéntico Global (`baraldi-framework`)**. Todas las etapas y la toolbox viven encapsuladas internamente para mantener limpio el entorno y evitar la fragmentación de habilidades.
+> ⚠️ **IMPORTANTE:** A partir de la versión 2.28.0 (Modelo Cero-Copia), el Framework Baraldi opera como un **Único Orquestador Agéntico Global (`baraldi-framework`)**. Todas las etapas y la toolbox viven encapsuladas internamente para mantener limpio el entorno y evitar la fragmentación de habilidades.
 
 ### Instalación Automática (Recomendado)
 Hemos construido un instalador CLI (`fwbaraldi` / `baraldi-init`) que se encarga de todo el trabajo pesado. Solo necesitas tener **Node.js** instalado en tu computadora.
