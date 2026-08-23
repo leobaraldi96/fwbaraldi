@@ -5,7 +5,7 @@ description: >
   contraste, flujo de atención y uso del espacio en blanco. Detecta problemas de UI
   antes del Handoff y genera soluciones accionables.
 keywords: design-critique, visual-hierarchy, ui-audit, contrast, art-direction, layout-fixes
-version: "2.26.14"
+version: "2.28.0"
 ---
 
 # Skill 20 — Design Critique & Visual Hierarchy Audit Protocol
@@ -55,4 +55,4 @@ Para el fix más crítico (Top 1), el Agente debe describir con detalle milimét
 - **Sinergia:** Actúa como el supervisor de la Inteligencia de Layout (Etapa 06 Momento 0). Si el Momento 0 es el arquitecto, la Skill 20 es el inspector de obra.
 
 ---
-*Framework Baraldi v2.26.14 · Skill 20*
+*Framework Baraldi v2.28.0 · Skill 20*

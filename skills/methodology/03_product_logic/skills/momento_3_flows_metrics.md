@@ -9,7 +9,7 @@ description: >
   (campos, estados, mensajes) y define las métricas de éxito.
   Keywords: ux-dna, experience anatomy, handoff, estados, mensajes de error, kpi, north star.
 skill_id: product_logic_momento_3
-version: "2.26.14"
+version: "2.28.0"
 framework: Baraldi
 stage: "03 - Product Logic"
 momento: 3

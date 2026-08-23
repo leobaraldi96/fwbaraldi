@@ -5,7 +5,7 @@ description: >
   Define las reglas críticas para la nomenclatura de ramas (branches), commits semánticos
   y auditorías profundas (Deep Reviews), adaptadas al diseño y estrategia de producto.
   Trigger: Al crear commits, ramas de trabajo, o al revisar el trabajo entre etapas.
-version: "2.27.0"
+version: "2.28.0"
 ---
 
 # Higiene Operativa — Framework Baraldi
@@ -82,4 +82,4 @@ Para garantizar una experiencia premium, el agente tiene prohibido cerrar un tur
 
 ---
 
-*Framework Baraldi v2.27.0 · Higiene Operativa.*
+*Framework Baraldi v2.28.0 · Higiene Operativa.*

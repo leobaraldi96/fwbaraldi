@@ -22,7 +22,7 @@ const pkg = JSON.parse(fs.readFileSync(path.join(packageRoot, 'package.json'), '
 const FRAMEWORK_VERSION = pkg.version;
 
 // Configuración de versión fuerte
-const ENGRAM_VERSION = 'v1.20.0'; // Sincronizado con FWB v2.27.0
+const ENGRAM_VERSION = 'v1.20.0'; // Sincronizado con FWB v2.28.0
 const REPO_ORIGEN = 'Gentleman-Programming';
 
 // Lista de sub-habilidades de FWB que JAMÁS deben quedar sueltas en la raíz global de skills

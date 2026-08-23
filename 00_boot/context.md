@@ -421,4 +421,4 @@ Si el Paso -3 NO encontró memoria de ningún proyecto existente:
 
 ---
 
-*Framework Baraldi v2.26.15 · context.md · Boot Layer 00 (Sincronía Atómica Certificada)*
+*Framework Baraldi v2.28.0 · context.md · Boot Layer 00 (Sincronía Atómica Certificada)*

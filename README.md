@@ -1,6 +1,6 @@
 # Framework Baraldi (FWB) 🤖⚡
 
-![Version](https://img.shields.io/badge/version-2.27.0-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-yellow) ![Memory](https://img.shields.io/badge/memory-Engram--v1.20.0-orange) ![Type](https://img.shields.io/badge/type-Agentic--Orchestrator-blueviolet)
+![Version](https://img.shields.io/badge/version-2.28.0-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-yellow) ![Memory](https://img.shields.io/badge/memory-Engram--v1.20.0-orange) ![Type](https://img.shields.io/badge/type-Agentic--Orchestrator-blueviolet)
 
 > [!NOTE]
 > **¿Hola, no entendés un carajo de lo que hay acá?** 👉 **[¡Siga por aquí! (Guía de bienvenida fácil para humanos)](./NO_ENTIENDO_NADA.md)** 🚀
@@ -74,8 +74,9 @@ Ninguno de los frameworks anteriores tiene estas características juntas:
 8. **Framework Doctor (Auditoría de Salud)**: Un motor de autodiagnóstico que verifica la coherencia semántica, rastrea hipótesis sin validar y detecta conflictos estratégicos en tiempo real entre todas las etapas.
 9. **El problema del nivel de madurez resuelto con estructura**: El diseñador académico conoce los modelos teóricos pero no sabe cómo adaptarlos a la velocidad actual. El senior experimentado sabe qué hacer de forma empírica pero no tiene un modelo que lo sostenga estructuradamente. El Framework **le da al académico la experiencia embebida en el proceso, y al senior le da el modelo que le faltaba**.
 10. **Proactividad de Soporte**: El sistema propone proactivamente formatos de alta fidelidad (Landings/Dashboards HTML) cuando la densidad de datos lo requiere, eliminando la pasividad del agente.
-11. **Contratos Agénticos (VOICE.md & DESIGN.md)**: El framework genera archivos de "Fuente de Verdad" diseñados específicamente para ser leídos por otras IAs, garantizando que el tono, la voz y la identidad visual se mantengan consistentes en cada línea de código generada.
-12. **Verificación de Versión Proactiva (v2.26.15)**: El Framework verifica automáticamente tu versión local para asegurar que el motor metodológico esté siempre al día.
+11. **Contratos Vivos de Soberanía (`DESIGN`, `VOICE`, `BUSINESS`, `SECURITY`, `LEGAL`, `UX`, `KNOWLEDGE`)**: El framework genera archivos de "Fuente de Verdad" diseñados específicamente para ser leídos por humanos y otras IAs, garantizando que el diseño, negocio, seguridad y soporte se mantengan blindados e inmutables.
+12. **Arsenal de Toolbox (16 Protocolos)**: Protocolos estratégicos modulares de alta densidad para slicing de epics, triaje de issues, pricing, data-driven design y compilación de conocimiento de producto.
+13. **Verificación de Versión Proactiva (v2.28.0)**: El Framework verifica automáticamente tu versión local para asegurar que el motor metodológico esté siempre al día.
 
 ---
 
@@ -83,14 +84,15 @@ Ninguno de los frameworks anteriores tiene estas características juntas:
 
 | Fase | Estado | Descripción |
 |---|---|---|
-| **00_boot** | ✅ Estable | Set-up de identidad y contexto del proyecto. |
+| **00_boot** | ✅ Estable | Set-up de identidad, contexto y Perfiles de Rigor (`/init`). |
 | **01_problem_framing** | ✅ Estable | Entendimiento del problema y mapeo de actores. |
 | **02_system_analysis** | ✅ Estable | Mapeo de dependencias, flujos de datos y riesgos. |
 | **03_product_logic** | ✅ Estable | Lógica de negocio, UX-DNA y Matriz de Orquestación. |
 | **04_information_architecture** | ✅ Estable | Arquitectura de información, Sitemap y Glosario. |
 | **05_interaction_design_ux** | ✅ Estable | Diseño de interacción, Estados y **VOICE.md**. |
 | **06_visual_design_ui** | ✅ Estable | Diseño visual, Tokens y **DESIGN.md**. |
-| **07_handover_qa** | ✅ Estable | Procesos de validación final y documentación. |
+| **07_handover_qa** | ✅ Estable | Validación final, QA y Product Knowledge Compiler (`KNOWLEDGE.md`). |
+| **Toolbox** | ✅ Estable | Arsenal de 16 Protocolos de Ejecución Estratégica. |
 
 ---
 
@@ -390,4 +392,4 @@ El Framework Baraldi es el resultado de más de 25 años de experiencia en el di
 - 📧 **Email:** [leobaraldi96@gmail.com](mailto:leobaraldi96@gmail.com)
 
 ---
-*Framework Baraldi v2.26.15 · Desarrollado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.28.0 · Desarrollado y mantenido por Leo Baraldi.*

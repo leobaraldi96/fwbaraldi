@@ -4,7 +4,7 @@ description: >
   Protocolo de triaje sistémico y resolución de causa raíz. Clasifica feedback, incidencias
   y fricciones por causas raíz y aplica el Over-Engineering Test para simplificar el producto.
 keywords: triaje, causa raíz, simplificación, feedback, bugs, over-engineering test, backlog triage
-version: "2.27.0"
+version: "2.28.0"
 ---
 
 # Protocolo — Triaje Sistémico de Producto y Resolución de Causa Raíz
@@ -50,4 +50,4 @@ Este protocolo actúa como un **Principal Systems Product Architect**. Su misió
 - **SIEMPRE** vincula la solución a la North Star de la Etapa 01.
 
 ---
-*Framework Baraldi v2.27.0 · Systemic Issue Triage Protocol.*
+*Framework Baraldi v2.28.0 · Systemic Issue Triage Protocol.*
