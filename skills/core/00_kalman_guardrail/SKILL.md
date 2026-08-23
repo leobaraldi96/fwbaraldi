@@ -5,7 +5,7 @@ version: "2.28.0"
 enabled: true
 ---
 
-# Filtro de Kalman Agéntico — Calibración de Comportamiento (v2.26.14)
+# Filtro de Kalman Agéntico — Calibración de Comportamiento (v2.28.0)
 
 Este documento define el protocolo de control de comportamiento de la IA dentro del **Framework Baraldi**. Utiliza un modelo de **Predicción-Corrección** inspirado en el Filtro de Kalman para evitar la deriva agéntica, la asunción de contexto no confirmada y la entrega de tareas incompletas.
 

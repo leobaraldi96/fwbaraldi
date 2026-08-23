@@ -39,4 +39,4 @@ El framework realiza llamadas externas únicamente en los siguientes casos de "S
 5.  **Custodia de Backups:** Los archivos generados por `fwbaraldi backup` contienen la totalidad de las memorias locales del sistema. Guárdalos en ubicaciones cifradas o de acceso controlado (como nubes privadas o discos externos protegidos) para evitar accesos no autorizados a tus actas estratégicas.
 
 ---
-*Framework Baraldi v2.26.15 · Transparencia y Ética Agéntica*
+*Framework Baraldi v2.28.0 · Transparencia y Ética Agéntica*

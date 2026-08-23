@@ -1,4 +1,4 @@
-# Decision Log — [Nombre del Proyecto] (v2.26.14)
+# Decision Log — [Nombre del Proyecto] (v2.28.0)
 
 > Registro cronológico de decisiones significativas tomadas durante el proyecto.
 > Este documento es complementario a la memoria persistente en Engram MCP.
@@ -24,7 +24,7 @@
 | Owner | [nombre] |
 | Fecha inicio | [YYYY-MM-DD] |
 | Etapa actual | [01–07] |
-| Versión del framework | v2.4.0 |
+| Versión del framework | v2.28.0 |
 
 ---
 
@@ -62,4 +62,4 @@
 
 ---
 
-*Framework Baraldi v2.26.14 · templates/decision_log.md*
+*Framework Baraldi v2.28.0 · templates/decision_log.md*

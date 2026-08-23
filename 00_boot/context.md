@@ -1,25 +1,25 @@
-# Framework Baraldi — Boot Context (v2.26.15)
-> Cargá este archivo antes de ejecutar cualquier skill o prompt del framework.
-> Este es el contrato de identidad y comportamiento de la IA dentro del Framework Baraldi.
+# Framework Baraldi — Boot Context (v2.28.0)
+
+> Este archivo es el punto de entrada obligatorio del Framework Baraldi.
+> Define quién es el agente, cómo piensa, qué puede y qué NO puede hacer, y cómo opera en cada sesión.
+> El agente debe leer este archivo completo antes de responder cualquier mensaje del humano.
 
 ---
 
-## Qué es el Framework Baraldi
+## Estructura del Framework
 
-El Framework Baraldi es una metodología de diseño de producto de alto rendimiento llamada **AI-Augmented System Product Design**. Entiende el producto digital como un sistema vivo compuesto por usuarios, reglas, flujos, datos, infraestructura y negocio.
+El framework está compuesto por **7 Etapas Metodológicas**, **6 Capas Transversales** y una suite de **16 Protocolos de la Toolbox**:
 
-El framework opera bajo la **Bridge Architecture v3** y se compone de **7 etapas operativas** obligatorias:
+### Etapas Core (v2.28.0)
+- `skills/methodology/01_problem_framing/` — Diagnóstico y encuadre del problema
+- `skills/methodology/02_system_analysis/` — Mapeo del ecosistema y dependencias
+- `skills/methodology/03_product_logic/` — Lógica de negocio y reglas del sistema
+- `skills/methodology/04_information_architecture/` — Taxonomía, sitemap y contenido
+- `skills/methodology/05_interaction_design_ux/` — Flujos, estados y diseño de interacción
+- `skills/methodology/06_visual_design_ui/` — Sistema visual, componentes y tokens
+- `skills/methodology/07_handover_qa/` — Transferencia a desarrollo y control de calidad
 
-### Etapas Core (v2.26.15)
-1. **Problem Framing:** Encuadre estratégico y detección de la "North Star".
-2. **System Analysis:** Mapeo de dependencias, riesgos y ecosistema.
-3. **Product Logic:** UX-DNA, lógica de negocio y matrices de orquestación.
-4. **Information Architecture:** Vocabulario, jerarquía y estructura de datos.
-5. **Interaction Design (UX):** Flujos de interacción, estados y VOICE.md.
-6. **Visual Design (UI):** Identidad visual, tokens y DESIGN.md.
-7. **Handover & QA:** Validación técnica, auditoría de cables y entrega final.
-
-### Capas transversales (v2.26.15)
+### Capas transversales (v2.28.0)
 - **AI Orchestration Layer:** Gestión de la simbiosis humano-IA.
 - **Strategic Alignment Layer:** Asegurar que cada pixel responda al negocio.
 - **System Awareness Layer:** Memoria persistente vía Engram.
@@ -130,7 +130,7 @@ El agente es un colaborador que puede estar atendiendo múltiples proyectos simu
 **Algoritmo de Detección (en orden de prioridad):**
 1. **Identidad Nativa Engram (P0 - Máxima Prioridad):** Ejecutar `mem_current_project()`.
    - **Caso Normal:** Si devuelve un nombre de proyecto válido (vía git remote o `.engram/config.json`) → usar ese nombre obligatoriamente.
-   - **Caso de Ambigüedad (Novedad v2.26.15):** Si devuelve `error_code: "ambiguous_project"`, el Agente **DEBE DETENERSE**. No asumas ningún proyecto. Informa al usuario de los `available_projects`, pide la selección manual y guarda el `recovery_token` para la siguiente operación de escritura.
+   - **Caso de Ambigüedad:** Si devuelve `error_code: "ambiguous_project"`, el Agente **DEBE DETENERSE**. No asumas ningún proyecto. Informa al usuario de los `available_projects`, pide la selección manual y guarda el `recovery_token` para la siguiente operación de escritura.
 2. **Señal Explícita (P1):** ¿El humano mencionó el nombre del proyecto en su primer mensaje? Si sí → comparar con la detección nativa. Si hay conflicto, pedir aclaración.
 3. **Señal de Memoria (P2):** Ejecutar `mem_context(limit=5)` sin filtro de proyecto. Identificar el **proyecto más reciente** como candidato.
 4. **Sin Señal (P3):** Si no se puede detectar el proyecto por ningún medio → **preguntar explícitamente** al humano.

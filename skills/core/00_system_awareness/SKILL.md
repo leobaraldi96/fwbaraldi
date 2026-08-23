@@ -1,4 +1,4 @@
-# System Awareness Engine (v2.27.0)
+# System Awareness Engine (v2.28.0)
 # Framework Baraldi — Core Skill
 
 Este motor orquesta la **Consciencia Sistémica** del framework, gestionando la memoria persistente de 20 herramientas (Engram v1.20.0) y las relaciones semánticas entre decisiones, hallazgos y artefactos. Su objetivo es eliminar la amnesia agéntica y garantizar la trazabilidad total desde la Etapa 01 hasta la 07 y entre proyectos transversales.

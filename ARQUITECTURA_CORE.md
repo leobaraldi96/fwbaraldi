@@ -100,11 +100,11 @@ sequenceDiagram
     
     note over IA,Humano: FASE DE LÓGICA SISTÉMICA (Etapa 03)
     IA->>IA: Ejecuta Product Logic (Brain Integration)
-    IA->>FS: Genera Blueprint y Business Rules Matrix (v2.27.0)
+    IA->>FS: Genera Blueprint, Business Rules Matrix y BUSINESS.md (v2.28.0)
 ```
 
 ### 3.1 El Rol de la Etapa 03 (Product Logic)
-Tras completar la actualización v2.27.0, la Etapa 03 se consolida como el **"Cerebro del Producto"**. Su función es blindar la viabilidad funcional antes de que el equipo de diseño entre a la fase visual, integrando el estándar **UX-DNA (Experience Anatomy)**. 
+En la versión v2.28.0, la Etapa 03 se consolida como el **"Cerebro del Producto"**. Su función es blindar la viabilidad funcional antes de que el equipo de diseño entre a la fase visual, integrando el estándar **UX-DNA (Experience Anatomy)** y los Contratos de Negocio. 
 
 **Entregables clave al usuario:**
 - **Product Logic Orchestration:** Matriz de Actores, Matriz de Orquestación de Backlog y Service Blueprint.
@@ -112,7 +112,7 @@ Tras completar la actualización v2.27.0, la Etapa 03 se consolida como el **"Ce
 - **Data Dictionary:** Inventario de entidades y atributos.
 - **Business Rules Matrix:** Leyes lógicas de comportamiento (If/Then).
 - **KPIs Funcionales:** North Star Metric y puntos de medición (Recharts Expert).
-- **Contratos Agénticos (Handoff 2.0):** Generación de los archivos **VOICE.md** (Capa semántica y de tono) y **DESIGN.md** (Capa visual y de tokens) como el nuevo estándar de handoff diseñado para el consumo de modelos de lenguaje, garantizando la fidelidad de la implementación automatizada.
+- **Contratos Vivos de Soberanía:** Generación de la suite de contratos (`DESIGN.md`, `VOICE.md`, `BUSINESS.md`, `SECURITY.md`, `LEGAL.md`, `UX.md`, `KNOWLEDGE.md`) como el nuevo estándar de handoff diseñado para el consumo de humanos y modelos de lenguaje, garantizando la fidelidad de la implementación automatizada.
 
 ---
 

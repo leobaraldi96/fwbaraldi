@@ -38,15 +38,15 @@ fwbaraldi/
 │   │   └── 00_system_awareness/      ← Consciencia Sistémica y Memoria (Engram v1.20.0)
 │   │
 │   ├── methodology/
-│   │   ├── 01_problem_framing/       ← Hardened v2.27.0
-│   │   ├── 02_system_analysis/       ← Hardened v2.27.0
-│   │   ├── 03_product_logic/         ← Hardened v2.27.0 (Parent/Child Slicing)
-│   │   ├── 04_information_architecture/ ← Hardened v2.27.0
-│   │   ├── 05_interaction_design_ux/ ← Hardened v2.27.0
-│   │   ├── 06_visual_design_ui/      ← Hardened v2.27.0
-│   │   └── 07_handover_qa/           ← Hardened v2.27.0 (SDD Review Path)
+│   │   ├── 01_problem_framing/       ← Hardened v2.28.0
+│   │   ├── 02_system_analysis/       ← Hardened v2.28.0
+│   │   ├── 03_product_logic/         ← Hardened v2.28.0 (Parent/Child Slicing)
+│   │   ├── 04_information_architecture/ ← Hardened v2.28.0
+│   │   ├── 05_interaction_design_ux/ ← Hardened v2.28.0
+│   │   ├── 06_visual_design_ui/      ← Hardened v2.28.0
+│   │   └── 07_handover_qa/           ← Hardened v2.28.0 (SDD Review Path)
 │   │
-│   └── toolbox/                      ← Arsenal de 15 protocolos estratégicos
+│   └── toolbox/                      ← Arsenal de 16 protocolos estratégicos
 │
 ├── references/
 │   └── templates/
@@ -103,4 +103,4 @@ Si el usuario menciona que va a formatear su equipo, migrar de equipo o pide un 
 
 ---
 
-*Framework Baraldi v2.27.0 · DOCUMENTACION_IA.md · Referencia de Arquitectura e Instalación*
+*Framework Baraldi v2.28.0 · DOCUMENTACION_IA.md · Referencia de Arquitectura e Instalación*

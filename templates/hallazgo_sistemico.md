@@ -1,4 +1,4 @@
-# Template — Hallazgo Sistémico (v2.26.14)
+# Template — Hallazgo Sistémico (v2.28.0)
 
 > Usar este template para registrar conocimiento valioso mediante `mem_save` de Engram MCP.
 > Consultar protocolos en `skills/core/00_system_awareness/SKILL.md`.
@@ -63,11 +63,11 @@ Los slugs deben ser descriptivos y estables. Estructura recomendada:
 | 01 Problem Framing | `pf-` | `pf-hipotesis-central`, `pf-stakeholder-clave` |
 | 02 System Analysis | `sa-` | `sa-actor-map`, `sa-riesgo-api`, `sa-dependencia-critica` |
 | 03 Product Logic | `pl-` | `pl-regla-negocio-x`, `pl-flujo-principal` |
-| 04 UX Experience | `ux-` | `ux-patron-navegacion`, `ux-friction-clave` |
-| 05 UI Design | `ui-` | `ui-decision-componente`, `ui-sistema-tokens` |
-| 06 Implementation | `im-` | `im-decision-stack`, `im-patron-api` |
-| 07 System Reflection | `sr-` | `sr-aprendizaje-ciclo`, `sr-deuda-tecnica` |
+| 04 Information Architecture | `ia-` | `ia-sitemap-core`, `ia-taxonomia-entidades` |
+| 05 Interaction Design | `ix-` | `ux-patron-navegacion`, `ux-voice-tone` |
+| 06 Visual Design UI | `ui-` | `ui-decision-componente`, `ui-sistema-tokens` |
+| 07 Handover & QA | `qa-` | `qa-checklist-cables`, `qa-knowledge-compiler` |
 
 ---
 
-*Framework Baraldi v2.26.14 · templates/hallazgo_sistemico.md*
+*Framework Baraldi v2.28.0 · templates/hallazgo_sistemico.md*
