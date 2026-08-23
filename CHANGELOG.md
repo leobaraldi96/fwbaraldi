@@ -5,6 +5,20 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.28.0] - 2026-08-22
+
+### 📚 Compilador de Base de Conocimiento y Ayuda de Producto (Zero-Waste Help Center & RAG Ready)
+- **Protocolo de Compilación de Conocimiento (`product_knowledge_compiler_protocol`):**
+  - Incorporado al Toolbox (Arsenal de 16 Protocolos) para traducir de forma automática toda la inteligencia validada en las Etapas 01 a 07 hacia artefactos de ayuda y soporte.
+  - Elimina el "Handoff Ciego" hacia los equipos de CX y redactores de manuales.
+- **Nuevo Artefacto de Soberanía (`docs-fwbaraldi/KNOWLEDGE.md`):**
+  - Estructuración canónica en 4 capas operativas: (1) Descubrimiento y Preventa / FAQ de Landing, (2) Glosario y Taxonomía oficial, (3) Manuales de usuario por rol/actor, y (4) Troubleshooting y matriz de resolución de errores.
+  - Plantilla oficial incorporada en `templates/knowledge_md.md`.
+- **Doble Salida RAG para Asistentes de IA:**
+  - Generación de System Prompts y chunks de contexto para dos modalidades de copiloto: Modo Público / Landing (preventa y alcance) y Modo In-App / Dashboard (guía contextual y soporte operativo paso a paso).
+- **Integración con Etapa 07 (Handover & QA):**
+  - Mapeo del compilador en el Momento 3 y en los Próximos Pasos del Handoff como paso previo al Go-To-Market.
+
 ## [2.27.0] - 2026-08-10
 
 ### 🚀 Asimilación Integral de Ecosistema Agéntico (Engram v1.20.0, Ergonomía Cognitiva y Slicing)

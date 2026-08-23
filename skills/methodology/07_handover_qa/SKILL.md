@@ -34,14 +34,16 @@ Para asegurar un cierre de grado industrial, el Agente debe ejecutar los siguien
 3. **AI UI Compliance Audit (`skills/engines/ai_ui_compliance_audit_engine/`):** Protocolo para auditar el output de las IAs contra el diseño.
 4. **WCAG Accessibility Audit (`skills/engines/wcag_accessibility_audit_engine/`):** Auditoría completa de accesibilidad (WCAG 2.2, principios POUR). **MANDATORIO** antes de aprobar el Momento 1.
 5. **Screen Reader Testing Engine (`skills/engines/screen_reader_testing_engine/`):** Guía operativa para pruebas manuales con tecnología asistiva (AT). Activar al cerrar el Momento 2.
-6. **Jira Tasks Engine (`skills/engines/jira_tasks_engine/`):** Protocolo de creación de tickets estratégicos (Parent/Child). **Último paso del Momento 3** antes del Go/No-Go final.
-7. **Product Launch Protocol (`skills/toolbox/product_launch_protocol/`):** Orquestación del despliegue gradual (Interno -> F&F -> Público). Se activa tras la aprobación del Handoff para planificar la salida a producción.
+6. **Product Knowledge Compiler Protocol (`skills/toolbox/product_knowledge_compiler_protocol/`):** Compilación de toda la inteligencia de E01-E07 en `KNOWLEDGE.md`, manuales de ayuda por rol y prompts para copilotos IA (Landing & In-App).
+7. **Jira Tasks Engine (`skills/engines/jira_tasks_engine/`):** Protocolo de creación de tickets estratégicos (Parent/Child). **Último paso del Momento 3** antes del Go/No-Go final.
+8. **Product Launch Protocol (`skills/toolbox/product_launch_protocol/`):** Orquestación del despliegue gradual (Interno -> F&F -> Público). Se activa tras la aprobación del Handoff para planificar la salida a producción.
 
 ---
 
 ## 🚀 Próximos Pasos: El Despegue
-Una vez superada la "Aduana" de la Etapa 07, el framework no te deja solo. El siguiente paso natural es invocar el **Product Launch Protocol** para:
+Una vez superada la "Aduana" de la Etapa 07, el framework no te deja solo. El siguiente paso natural es invocar el **Product Launch Protocol** y el **Product Knowledge Compiler** para:
 *   Configurar el servidor de pruebas para la **Alpha Interna**.
+*   Compilar y desplegar la Base de Conocimiento (`KNOWLEDGE.md`) para CX y el Asistente Copilot IA.
 *   Mapear los canales de soporte y feedback.
 *   Establecer el bucle de "Regreso al Lápiz" para casos no mapeados en el mundo real.
 

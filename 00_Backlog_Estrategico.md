@@ -1,6 +1,6 @@
-# Framework Baraldi - Backlog Estratégico (v2.26.14)
-Última Actualización: 2026-06-07
-Estado: **Sistema Totalmente Hardened (v2.26.14)**
+# Framework Baraldi - Backlog Estratégico (v2.28.0)
+Última Actualización: 2026-08-22
+Estado: **Sistema Totalmente Hardened (v2.28.0)**
 
 > **Propósito:** Centralizar el scope futuro, las etapas en desarrollo (WIP) y las ideas de mejora sistémica para evitar el Scope Creep durante las sesiones actuales.
 > **Disciplina:** Revisar este archivo al inicio de cada sesión (Boot Step -3).
@@ -17,11 +17,12 @@ Estado: **Sistema Totalmente Hardened (v2.26.14)**
 - [x] Etapa 04: Information Architecture (Vocabulary y Sitemap)
 - [x] Etapa 05: Interaction Design (UX Writing y States)
 - [x] Etapa 06: Visual Design UI (DESIGN.md y Tokens)
-- [x] Etapa 07: Handover & QA (Aduana Técnica Final)
+- [x] Etapa 07: Handover & QA (Aduana Técnica Final + Product Knowledge Compiler)
 
 ### 🟢 Toolbox & Tech Guardrails
-- **Estado:** ✅ HARDENED & REFACTORED (v2.26.14)
-- [x] Consolidación de Skills de Alta Densidad (13+).
+- **Estado:** ✅ HARDENED & EXPANDIDO (v2.28.0)
+- [x] Consolidación de Skills de Alta Densidad (16 Protocolos).
+- [x] Integración de `product_knowledge_compiler_protocol` y plantilla `KNOWLEDGE.md`.
 - [x] Purga de Tech Guardrails: Foco 100% agnóstico en Lógica y Diseño.
 
 ---
@@ -37,8 +38,9 @@ Estado: **Sistema Totalmente Hardened (v2.26.14)**
 ## 🎯 [ESTRATEGIA] Negocio y Producto
 
 - [x] **Pitch Engine v2**: Integración de narrativa de impacto en Skill 01.
+- [x] **Product Knowledge Compiler**: Compilación automatizada de Base de Conocimiento y Copilot Prompts RAG.
 - [ ] **English-Native Version (Token Optimization)**: Traducir y optimizar todo el framework al inglés para reducir el consumo de tokens.
 
 ---
 
-*Última actualización: 2026-06-07 · Sincronizado con v2.26.14*
+*Última actualización: 2026-08-22 · Sincronizado con v2.28.0*

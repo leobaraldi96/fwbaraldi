@@ -47,6 +47,7 @@ const KNOWN_FWB_SUB_SKILLS = [
   'personal_impact_report',
   'pricing_and_monetization_protocol',
   'product_health_qbr_protocol',
+  'product_knowledge_compiler_protocol',
   'product_launch_protocol',
   'product_master_matrix_protocol',
   'responsive_and_global_readiness_protocol',

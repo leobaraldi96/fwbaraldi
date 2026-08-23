@@ -6,7 +6,7 @@ description: >
   para ir más allá del diseño de interfaces y enfocarse en sistemas y outcomes.
   Úsalo cuando el usuario quiera iniciar un proceso de diseño de producto estructurado.
 keywords: product-design, framework-baraldi, problem-framing, system-analysis, ux-strategy, systems-thinking
-version: "2.27.0"
+version: "2.28.0"
 ---
 
 # Framework Baraldi — Orquestador Global
@@ -24,7 +24,7 @@ Guiar al equipo de producto a través de fases estructuradas de descubrimiento, 
    - Empezar siempre por la **Etapa 01 — Problem Framing** (`skills/methodology/01_problem_framing/SKILL.md`) para validar el "para qué" antes del "cómo".
    - Avanzar a **Etapa 02 — System Analysis** (`skills/methodology/02_system_analysis/SKILL.md`) para mapear el ecosistema completo.
 
-## Toolbox Estratégica (v2.27.0 — 15 Protocolos)
+## Toolbox Estratégica (v2.28.0 — 16 Protocolos)
 El framework cuenta con una caja de herramientas transversal para la ejecución táctica y estratégica:
 1.  **Stakeholder Narrative Strategy:** Gestión de líderes difíciles (Anti-Lucio/Carlos/Maxi) y venta de ideas.
 2.  **Advanced Prioritization Protocol:** Motor de ROI absoluto basado en RICE, Kano y Score Baraldi.
@@ -41,6 +41,7 @@ El framework cuenta con una caja de herramientas transversal para la ejecución 
 13. **Product Master Matrix Protocol:** Artefacto vivo de trazabilidad y checklist de completitud de producto.
 14. **Systemic Issue Triage Protocol:** Triaje sistémico, resolución por causa raíz y Over-Engineering Test.
 15. **Strategic Epic Slicing Protocol:** Desglose estructurado de iniciativas en Epics e historias hijas con diagramas Mermaid para Jira/Linear/GitHub.
+16. **Product Knowledge Compiler Protocol:** Compilación de artefactos E01-E07 en Base de Conocimiento viva (`KNOWLEDGE.md`), manuales de usuario por rol y prompts de contexto RAG para Asistentes de IA (Landing & In-App Copilot).
 
 ---
 

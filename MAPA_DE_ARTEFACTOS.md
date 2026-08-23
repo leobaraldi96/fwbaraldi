@@ -16,6 +16,7 @@ Estos archivos viven en la carpeta **`docs-fwbaraldi/`** y son transversales a t
 | **`PRODUCT_MASTER_MATRIX.md`** | El "Cerebro de Trazabilidad". Inventario vivo de pantallas y componentes. | Úsalo para ver el progreso real y qué falta por diseñar o auditar. | Evita que se pierdan definiciones entre el diseño y el código. | ID de pantalla, prioridad, estado por etapa (E04-E07), componentes core. |
 | **`VOICE.md`** | Contrato de Personalidad. Define cómo habla el producto. | Úsalo como guía para redactar todo el copy, errores y notificaciones. | Consistencia absoluta en la comunicación, sin importar quién escriba. | Tono, voz, reglas gramaticales, ejemplos de microcopy (Error/Éxito). |
 | **`DESIGN.md`** | Contrato Visual Agéntico. La biblia estética para la IA. | Pásalo a cualquier Agente de IA para que codifique con tu estilo exacto. | Elimina el "AI Slop" (diseños genéricos) y garantiza fidelidad visual. | Tokens de color, tipografía, escalas de espaciado, especificaciones de componentes. |
+| **`KNOWLEDGE.md`** | Base de Conocimiento y Manual Vivo del Producto. | Impórtalo en tu centro de ayuda (Intercom/Zendesk) o inyéctalo en Copilotos IA. | Elimina el "Handoff Ciego" de CX y habilita soporte contextual RAG inmediato. | FAQ comercial, glosario oficial, guías por rol y matriz de resolución de errores. |
 
 ---
 

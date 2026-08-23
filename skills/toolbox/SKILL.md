@@ -1,8 +1,8 @@
-# 🧰 Toolbox Core (v2.27.0)
+# 🧰 Toolbox Core (v2.28.0)
 
 Este es el arsenal estratégico del **Framework Baraldi**. Estas herramientas son transversales y pueden ser invocadas en cualquier etapa del proyecto mediante su nombre o ID.
 
-## 🛠️ Inventario de Herramientas de Alta Densidad (15 Protocolos)
+## 🛠️ Inventario de Herramientas de Alta Densidad (16 Protocolos)
 
 - **Stakeholder Narrative Strategy:** Gestión política, narrativa de impacto y protocolos de defensa (Anti-Lucio/Carlos/Maxi).
 - **Advanced Prioritization Protocol:** Scoring basado en RICE, Kano y ROI Baraldi.
@@ -19,6 +19,7 @@ Este es el arsenal estratégico del **Framework Baraldi**. Estas herramientas so
 - **Product Master Matrix Protocol:** Artefacto vivo de trazabilidad y checklist de completitud de producto.
 - **Systemic Issue Triage Protocol:** Triaje sistémico, resolución por causa raíz y Over-Engineering Test.
 - **Strategic Epic Slicing Protocol:** Desglose estructurado de iniciativas en Epics e historias hijas con diagramas Mermaid para Jira/Linear/GitHub.
+- **Product Knowledge Compiler Protocol:** Compilación de artefactos E01-E07 en Base de Conocimiento viva (`KNOWLEDGE.md`), manuales de usuario por rol y prompts de contexto RAG para Asistentes de IA (Landing & In-App Copilot).
 
 > ⚠️ **Nota:** WCAG, Screen Reader, UX Audit, DS Audit, User Stories, Performance, SEO, UX Writing, Layers Flow, AI Interaction, Design Critique, Token Audit, Component Inventory, Visual Reverse Engineering y Prototyping ahora son **Motores Nativos** de sus respectivas Etapas Metodológicas (E02–E07). No buscarlos aquí.
 
