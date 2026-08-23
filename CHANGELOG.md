@@ -21,7 +21,22 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
   - Elimina el "Handoff Ciego" hacia los equipos de CX y redactores de manuales.
   - Arquitectura basada en **ISO/IEC/IEEE 26514:2022** (8 atributos de calidad) e **ISO/IEC/IEEE 26515** (sincronía ágil con User Stories).
   - Inyección de metodologías científicas de estructuración: **Information Mapping®** (6 bloques semánticos y límite digital $5 \pm 1$ ítems), **Precision Content** (propósito técnico único) y separación de cuadrantes **Diátaxis**.
+  - **Taxonomía Cognitiva Estricta (Concept vs. Task):** Separación tajante entre asimilación teórica (Memoria Semántica, 3ra persona expositiva) y ejecución instrumental (Memoria Procedimental, 2da persona imperativa, regla *"un paso = una acción"*), eliminando el ruido vectorial en RAG.
+  - **Leyes de Usabilidad y QA de Información:** Inyección de la regla del 79% de escaneo visual (Nielsen Norman), la Ley Anti-Putrefacción (*Anti-Rot Principle* contra sobre-detalle efímero) y el protocolo de auditoría *Fresh Clone Test*.
   - Higiene lingüística estricta (filtros anti-slop, erradicación de adjetivos promocionales y adverbios condescendientes, máx. 25 palabras por oración) y tubería multiagente secuencial con bucle de guardrails (*Iterative Refinement* ante `REJECTED_INPUT`).
+  - **4 Adaptadores de Destino de Publicación (Target Publishing Adapters):**
+    - *Docs-as-Code:* Exportación a `.mdx` interactivo con `<AccordionGroup>`, `<CardGroup>`, `<Tabs>` y configuración de navegación para **Mintlify**, **Docusaurus** y **Nextra**.
+    - *Help Centers SaaS:* Artículos atomizados HTML/Markdown con tags de búsqueda y snippets para widgets in-app (**Zendesk**, **Intercom**, **HelpDocs**, **HubSpot**).
+    - *In-App RAG / Factoría Propia:* Generación de `knowledge_chunks.json` estructurado con metadatos para bases de datos vectoriales (**Supabase pgvector**, **Pinecone**).
+    - *Universal Markdown:* Formato canónico `docs-fwbaraldi/KNOWLEDGE.md` para **Notion**, **Confluence** o repositorios internos.
+  - **Directivas de Internacionalización y Diseño i18n-Ready:**
+    - Filtro *Clean Source* (neutralidad cultural y erradicación de modismos locales).
+    - Regla de la cursiva para protección de motores de traducción automática (Machine Translation).
+    - Buffer del +30% de expansión de texto en interfaces y parametrización de fechas, números y monedas.
+    - Traducción modular a nivel de bloque (*Single-Source*) para reducir hasta un 80% los costos de localización.
+  - **Pipeline de Mantenimiento Continuo (Continuous DocOps):**
+    - Diffing automatizado a nivel de bloque (`block_id` + hash) para aislar deltas y evitar la re-traducción o re-procesamiento de manuales completos.
+    - Sincronización multicanal atómica e instantánea hacia portales web, manuales PDF y bases vectoriales RAG.
 - **Doble Salida RAG para Asistentes de IA:**
   - Generación de System Prompts y chunks de contexto para dos modalidades de copiloto: Modo Público / Landing (preventa y alcance) y Modo In-App / Dashboard (guía contextual y soporte operativo paso a paso).
 - **Selector Interactivo de Perfiles de Rigor Operativo (`/init` & Boot Step -1):**

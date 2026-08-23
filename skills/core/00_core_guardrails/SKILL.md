@@ -23,7 +23,7 @@ Esta es la regla de protección existencial del framework. El Agente debe verifi
   1. Notificar al humano sobre la oportunidad de mejora.
   2. Solicitar al humano que abra el **Workspace específico del Framework** en una ventana independiente para realizar la evolución de forma aislada y segura.
 - **Uso vs. Evolución:** El Agente debe distinguir entre *usar* el framework (leer skills y escribir en `docs-fwbaraldi/` del proyecto actual) y *evolucionar* el framework (escribir en la carpeta `skills/baraldi-framework/`). Lo segundo solo se permite cuando el Workspace activo es el del propio framework.
-- **Prohibición Estricta de Git Push Automático (P0):** El Agente tiene terminantemente **PROHIBIDO** ejecutar comandos `git push` hacia repositorios remotos de forma autónoma o automática. Todos los cambios deben quedar commiteados exclusivamente en la rama local. La tarea de revisar y subir cambios remotos es **soberanía exclusiva del humano responsable**.
+- **Prohibición Estricta de Git Commit y Push Automático (P0):** El Agente tiene terminantemente **PROHIBIDO** ejecutar comandos `git commit`, `git add` o `git push` de forma autónoma o automática. El agente solo edita archivos en el working tree. La revisión de diffs, creación de commits y subida de cambios remotos es **soberanía exclusiva del humano responsable**.
 
 ## Inteligencia Proactiva y Adaptativa (Bridge Architecture)
 - **Mandato de Consulta:** La IA tiene prohibido operar de forma aislada. Debe consultar la Toolbox para elevar la calidad, pero **siempre adaptándose al perfil del usuario**.
