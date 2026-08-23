@@ -1,10 +1,10 @@
 # Base de Conocimiento & Manual de Producto — {NOMBRE_DEL_PRODUCTO}
 
-> **Fuente de Verdad Operativa:** Este documento fue compilado automáticamente por el **Framework Baraldi** a partir de los acuerdos y definiciones validados en las Etapas 01 a 07.
+> **Fuente de Verdad Operativa:** Este documento fue compilado automáticamente por el **Framework Baraldi** bajo estándares de lenguaje claro (Plain Language), accesibilidad cognitiva y diseño para el momento enseñable (*Every Page is Page One*).
 
 ---
 
-## 1. Descubrimiento y Preventa (Landing & Presales)
+## 1. Descubrimiento y Guía de Inicio Rápido (Quickstart)
 
 ### Propuesta de Valor Central
 {Definición concisa del problema que resuelve y el beneficio principal obtenido en E01}.
@@ -13,62 +13,74 @@
 * **{Perfil Principal 1}:** {Descripción de su dolor y cómo este producto lo resuelve}.
 * **{Perfil Principal 2}:** {Descripción de su dolor y cómo este producto lo resuelve}.
 
-### Preguntas Frecuentes Comerciales (FAQ)
-* **¿Qué incluye el producto?** {Resumen de capacidades}.
-* **¿Cómo funciona el esquema de planes/precios?** {Explicación de tiers y límites}.
-* **¿Qué necesito para empezar?** {Requisitos de onboarding}.
+### Guía de Inicio Rápido (Primer Éxito en < 5 minutos)
+* **Objetivo:** {Resultado visible inmediato}.
+* **Requisitos previos:** {Cuenta creada / Conexión a Internet}.
+* **Procedimiento (3 pasos):**
+  1. Ingresa a `{Ruta_o_URL}`.
+  2. Completa `{Campo_Principal}`.
+  3. Haz clic en `{Boton_Accion_Primaria}`.
 
 ---
 
 ## 2. Glosario Oficial y Taxonomía del Sistema
 
-| Término Oficial | ¿Qué significa en la plataforma? | Evitar / No usar |
+| Término Oficial | ¿Qué significa en la plataforma? | Términos NO recomendados (Evitar) |
 | :--- | :--- | :--- |
-| **{Término 1}** | {Definición clara y unívoca según E04} | {Sinónimo informal} |
-| **{Término 2}** | {Definición clara y unívoca según E04} | {Sinónimo informal} |
-| **{Término 3}** | {Definición clara y unívoca según E04} | {Sinónimo informal} |
+| **{Término 1}** | {Definición clara y unívoca según E04} | {Sinónimo informal o confuso} |
+| **{Término 2}** | {Definición clara y unívoca según E04} | {Sinónimo informal o confuso} |
+| **{Término 3}** | {Definición clara y unívoca según E04} | {Sinónimo informal o confuso} |
 
 ---
 
-## 3. Guías de Uso y Manual Operativo por Rol
+## 3. Guías de Tareas por Rol (Procedimientos "Cómo hacer X")
 
 ### Para el Rol: {Administrador / Dueño}
-1. **Primeros Pasos / Configuración Inicial:**
-   - Ingresar a `{Ruta}` y completar `{Campos}`.
-   - Activar las integraciones necesarias en `{Sección}`.
-2. **Operación Cotidiana:**
-   - Cómo consultar métricas y reportes en `{Vista}`.
-   - Cómo gestionar permisos de usuarios en `{Vista}`.
 
-### Para el Rol: {Operador / Staff / Empleado}
-1. **Flujo de Trabajo Diario:**
-   - Abrir `{Vista}` para revisar pendientes.
-   - Marcar el estado de `{Entidad}` haciendo clic en `{Botón}`.
+#### Cómo {Nombre de la Tarea Principal}
+* **Objetivo:** {Qué logrará el usuario al finalizar esta guía}.
+* **Requisitos:** {Permiso de Administrador}.
+* **Procedimiento (Regla: Un paso = Una acción):**
+  1. Abre el panel de `{Seccion}`.
+  2. Haz clic en el botón `{Nombre_Boton}`.
+  3. Selecciona la opción `{Opcion}` en el menú desplegable.
+  4. Presiona `{Boton_Confirmar}` para guardar los cambios.
+
+### Para el Rol: {Operador / Staff}
+
+#### Cómo {Nombre de la Tarea Operativa}
+* **Procedimiento:**
+  1. Revisa la lista de `{Entidad}` pendientes en `{Vista}`.
+  2. Selecciona el registro que deseas actualizar.
+  3. Haz clic en `{Boton_Estado}`.
 
 ### Para el Rol: {Cliente / Usuario Final}
-1. **Cómo {Acción Principal - Ej: Realizar una Reserva / Pedido}:**
-   - Paso 1: {Seleccionar ítem}.
-   - Paso 2: {Confirmar datos}.
-   - Paso 3: {Recibir confirmación por canal oficial}.
+
+#### Cómo {Acción Principal - Ej: Reservar un Turno / Enviar Pedido}
+* **Procedimiento:**
+  1. Selecciona `{Item_o_Servicio}` del catálogo.
+  2. Elige la fecha y hora disponible.
+  3. Haz clic en `{Confirmar}` para recibir el comprobante.
 
 ---
 
-## 4. Guía de Troubleshooting y Resolución de Errores
+## 4. Matriz de Troubleshooting y Resolución de Errores (Blameless)
 
-| Qué ve el usuario en pantalla | Por qué ocurre (Regla de Negocio E03) | Acción Correctiva Inmediata |
+> **Criterio de Redacción:** Explicaciones empáticas, calmadas, sin culpar al usuario y orientadas a la salida inmediata.
+
+| Qué ves en pantalla | Por qué ocurre (Regla de Negocio E03) | Solución Paso a Paso (Cómo resolverlo) |
 | :--- | :--- | :--- |
-| **Botón de acción bloqueado / gris** | Falta completar un campo obligatorio o saldo insuficiente. | Verificar los campos marcados en rojo. |
-| **Mensaje: "{Mensaje de Error}"** | La operación superó el límite permitido de {X}. | Aguardar {N} minutos o solicitar ampliación de cupo. |
-| **No llega la notificación / código** | Bloqueo de canal o número mal ingresado. | Revisar formato de teléfono y solicitar reenvío. |
+| **Botón `{Nombre_Boton}` deshabilitado** | Falta completar un campo requerido o aceptar términos. | Revisa los campos resaltados en el formulario y completa la información. |
+| **Mensaje: "{Mensaje_de_Error}"** | Se alcanzó el límite permitido para el plan actual. | Haz clic en `[Ver Planes]` para ampliar el cupo o elimina ítems antiguos. |
+| **No se recibió el código de confirmación** | Demora temporal en el canal de mensajería. | Aguarda 60 segundos y presiona `[Reenviar código]`. |
 
 ---
 
-## 5. Chunks de Contexto para Asistentes de IA (RAG Readiness)
+## 5. Directivas de Contexto para Copilotos IA (RAG Readiness)
 
-### Directiva de Tono y Personalidad (VOICE.md Sync)
-* **Tratamiento:** {Tú / Vos / Usted}
-* **Estilo:** {Directo / Profesional / Cercano / Sin rodeos}
-* **Regla estricta:** Responder siempre citando las secciones y botones exactos de este documento.
+* **Tratamiento gramatical:** {Tú / Vos / Usted según VOICE.md}
+* **Voz y Tono:** Profesional, directo y facilitador en tareas cotidianas; empático y resolutivo en troubleshooting.
+* **Regla estricta:** Citar siempre nombres exactos de botones y rutas documentadas en este archivo.
 
 ---
 *Framework Baraldi · docs-fwbaraldi/KNOWLEDGE.md Template.*

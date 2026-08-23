@@ -2,111 +2,143 @@
 name: product-knowledge-compiler-protocol
 description: >
   Protocolo para compilar toda la inteligencia generada en las Etapas 01 a 07 en artefactos
-  vivos de Centro de Ayuda (KNOWLEDGE.md / HELP_CENTER.md), manuales de usuario por rol
-  y paquetes de contexto RAG para Asistentes de IA (Landing & In-App Copilot).
-keywords: knowledge base, help center, manual de usuario, copilot rag, cx, soporte, onboarding, faq
+  vivos de Centro de Ayuda (KNOWLEDGE.md / HELP_CENTER.md), manuales de usuario por rol,
+  guías Quickstart y paquetes de contexto RAG para Asistentes de IA (Landing & In-App Copilot).
+keywords: knowledge base, help center, manual de usuario, copilot rag, cx, soporte, onboarding, faq, plain language, sense-making
 version: "2.28.0"
 ---
 
 # Protocolo — Compilador de Base de Conocimiento y Ayuda de Producto
 
-Este protocolo elimina el **"Handoff Ciego"** hacia los equipos de CX, Soporte y Documentación. Su objetivo es tomar toda la inteligencia estructurada generada durante las Etapas 01 a 07 del **Framework Baraldi** y compilarla de forma automática en un sistema de conocimiento vivo para humanos y agentes de IA.
+Este protocolo elimina el **"Handoff Ciego"** hacia los equipos de CX, Soporte y Documentación. Su objetivo es tomar toda la inteligencia estructurada generada durante las Etapas 01 a 07 del **Framework Baraldi** y compilarla de forma automática en un sistema de conocimiento vivo para humanos y agentes de IA, bajo estándares mundiales de redacción técnica y accesibilidad cognitiva.
 
 ---
 
-## 1. Filosofía "Zero-Waste": El Conocimiento ya está Escrito
+## 1. Filosofía de Contenido: Minimalismo y Sentido
 
-No se redacta ayuda desde cero. La documentación de soporte es la **traducción pedagógica** de los artefactos de diseño e ingeniería ya validados:
+No se redacta ayuda desde cero ni se abruma al usuario con sobreinformación. La documentación opera bajo tres leyes fundamentales:
+
+1. **La Paradoja del Sentido (Sense-Making):** Los usuarios no leen manuales de punta a punta; acuden a ellos cuando están atascados o cometen un error. El contenido se diseña exclusivamente para el **"momento enseñable"** (resolución inmediata de una fricción puntual).
+2. **Every Page is Page One:** Cada artículo o sección de ayuda debe ser completamente autónomo. El usuario debe comprender el contexto, el objetivo y la solución sin importar en qué pantalla o URL haya aterrizado.
+3. **Divulgación Progresiva (Progressive Disclosure):** Se presenta primero la acción primaria esencial; las configuraciones avanzadas u opcionales quedan al final de la guía.
 
 ```
 ┌──────────────────────────────────────┐     ┌──────────────────────────────────────┐
 │       ARTEFACTOS FW BARALDI          │     │    BASE DE CONOCIMIENTO (CX / AI)    │
 ├──────────────────────────────────────┤     ├──────────────────────────────────────┤
-│ E01: Problem Framing / Pitch / JTBD  │ ──► │ FAQ Comercial, Landing, "¿Para qué?" │
-│ E02: Actor Map / Service Blueprint   │ ──► │ Manuales de Usuario por Rol/Actor    │
-│ E03: Business Rules / Logic Matrix   │ ──► │ Troubleshooting ("¿Por qué falló?")  │
-│ E04: Sitemap / Taxonomía / Glosario  │ ──► │ Glosario y Taxonomía del Help Center │
-│ E05: Interaction Flows / States      │ ──► │ Guías Paso a Paso & Onboarding       │
-│ E06: VOICE.md & DESIGN.md            │ ──► │ Tono del Asistente & Copilot Prompts │
-│ E07: QA Checklist & Edge Cases       │ ──► │ Matriz de Errores y Recuperación     │
+│ E01: Problem Framing / Pitch / JTBD  │ --> │ FAQ Comercial, Landing, Quickstart   │
+│ E02: Actor Map / Service Blueprint   │ --> │ Manuales de Usuario por Rol/Actor    │
+│ E03: Business Rules / Logic Matrix   │ --> │ Troubleshooting ("¿Por qué falló?")  │
+│ E04: Sitemap / Taxonomía / Glosario  │ --> │ Glosario y Taxonomía del Help Center │
+│ E05: Interaction Flows / States      │ --> │ Guías Paso a Paso ("Cómo hacer X")   │
+│ E06: VOICE.md & DESIGN.md            │ --> │ Tono del Asistente & Copilot Prompts │
+│ E07: QA Checklist & Edge Cases       │ --> │ Matriz de Errores y Recuperación     │
 └──────────────────────────────────────┘     └──────────────────────────────────────┘
 ```
 
 ---
 
-## 2. Estructura Canónica de `docs-fwbaraldi/KNOWLEDGE.md`
+## 2. Estilo de Escritura y Accesibilidad Cognitiva
 
-El compilador genera un artefacto maestro estructurado en 4 capas de consumo:
+Todo texto de ayuda compilado debe cumplir estrictamente con los siguientes estándares:
+
+* **Regla de Oro: Un Paso = Una Sola Acción:** En procedimientos numerados, cada paso contiene una única acción física o mental. Prohibido agrupar múltiples clics o decisiones en un solo punto.
+* **Lenguaje Claro (Plain Language):** Oraciones cortas, palabras comunes, sin tecnicismos innecesarios (nivel de lectura equivalente a 8º grado).
+* **Voz Activa Obligatoria:** Aporta energía y claridad directa (*"El sistema guarda los cambios"* en lugar de *"Los cambios son guardados por el sistema"*; *"Haz clic en Guardar"* en vez de *"Se debe presionar el botón"*).
+* **Diseño para Escaneo Visual:** Jerarquía estricta (H1, H2, H3), listas viñetadas, negritas estratégicas en nombres exactos de botones y abundante espacio en blanco.
+* **Accesibilidad Universal:** Enlaces siempre descriptivos (prohibido *"haz clic aquí"*; usar *"Descarga la plantilla de importación"*). Texto alternativo (*alt text*) descriptivo en diagramas e imágenes.
+
+---
+
+## 3. Identidad Verbal y Modulación de Tono Contextual
+
+La voz del producto es consistente (definida en `VOICE.md`), pero el **tono se modula según el contexto de uso**:
+
+| Contexto / Sección | Actitud & Tono Requerido | Objetivo Psicológico |
+| :--- | :--- | :--- |
+| **Onboarding / Quickstart** | Entusiasta, directo, inspirador. | Lograr el primer éxito (*Time-to-First-Success*) en < 5 minutos. |
+| **Guías de Tareas Diarias** | Claro, estructurado, facilitador. | Ejecución eficiente y sin distracciones. |
+| **Troubleshooting & Errores** | Empático, calmado, altamente resolutivo y **100% libre de culpas** hacia el usuario. | Bajar la ansiedad y ofrecer caminos inmediatos de recuperación. |
+
+---
+
+## 4. Estructura Canónica de `docs-fwbaraldi/KNOWLEDGE.md`
+
+El compilador genera el documento maestro organizado en 4 capas operativas:
 
 ```markdown
 # Base de Conocimiento & Manual del Producto — {Nombre del Producto}
 
-## Capa 1: Descubrimiento & Preventa (Landing / Logged-Out)
-- **Propuesta de Valor:** {Resumen claro del dolor que resuelve derivado de E01}
+## Capa 1: Descubrimiento & Quickstart (< 5 min)
+- **Propuesta de Valor:** {Resumen del dolor que resuelve derivado de E01}
 - **Público Objetivo:** {Perfiles y casos de uso principales}
-- **FAQ Comercial & Planes:** {Respuestas directas a dudas de precios, límites y características}
+- **Guía de Inicio Rápido (3 pasos):**
+  1. Paso 1: {Acción mínima inicial}
+  2. Paso 2: {Configuración básica}
+  3. Paso 3: {Primer resultado visible / Time-to-First-Success}
 
-## Capa 2: Glosario & Conceptos Clave (Taxonomía)
+## Capa 2: Glosario Oficial y Taxonomía Unívoca
 | Término Oficial | ¿Qué significa en este producto? | Términos NO recomendados (Evitar) |
 | :--- | :--- | :--- |
 | {Entidad de E04} | {Definición clara y concisa} | {Sinónimos confusos} |
 
-## Capa 3: Guías de Uso y Manuales por Rol (Actor Manuals)
-### Para {Rol A - Ej: Administrador / Dueño}
-1. **Flujo de Configuración Inicial:** {Paso a paso derivado de E02/E05}
-2. **Gestión Diaria:** {Acciones clave y atajos}
+## Capa 3: Guías de Tareas por Rol (Procedimientos "Cómo hacer X")
+### Para el Rol: {Rol A - Ej: Administrador / Dueño}
+#### Cómo {Tarea Principal 1}
+- **Objetivo:** {Qué logrará el usuario}
+- **Requisitos previos:** {Condición necesaria}
+- **Procedimiento:**
+  1. {Acción 1}
+  2. {Acción 2}
+  3. {Acción 3}
 
-### Para {Rol B - Ej: Operador / Staff}
-1. **Flujo de Atención:** {Paso a paso rápido}
+### Para el Rol: {Rol B - Ej: Cliente / Usuario Final}
+#### Cómo {Tarea Principal 2}
+- **Procedimiento:** {Paso a paso bajo la regla "Un paso, una acción"}
 
-### Para {Rol C - Ej: Cliente / Usuario Final}
-1. **Cómo {Acción Principal - Ej: Reservar o Comprar}:** {Paso a paso sin fricción}
-
-## Capa 4: Troubleshooting, Errores y Casos de Borde (Self-Service)
-| Situación / Error en Pantalla | Causa de Negocio (E03) | Cómo Resolverlo (Paso a Paso) |
+## Capa 4: Matriz de Troubleshooting y Resolución de Errores (Blameless)
+| Qué ve el usuario en pantalla | Causa de Negocio (E03) | Solución Paso a Paso (Camino de Salida) |
 | :--- | :--- | :--- |
-| Botón de acción deshabilitado | No se cumplió la regla {Regla X} | Completar el campo requerido {Y} |
-| "Turno no disponible" | Cupo agotado o fuera de horario | Seleccionar un horario en verde |
-| Pago rechazado / Pendiente | Timeout de pasarela | Aguardar 5 min o reintentar con otro medio |
+| Botón de acción deshabilitado | Falta completar campo obligatorio | Completar el campo requerido {Y} |
+| "Turno no disponible" | Cupo agotado o fuera de horario | Seleccionar un horario disponible en verde |
+| Error de conexión o pasarela | Timeout de servidor | Aguardar 2 min o reintentar con otro medio |
 ```
 
 ---
 
-## 3. Compilación para Asistentes de IA (Dual RAG Prompts)
+## 5. Compilación para Asistentes de IA (Dual RAG System Prompts)
 
-El protocolo genera adicionalmente las directivas y chunks de contexto para desplegar copilotos de IA en el producto:
-
-### Output A: System Prompt para Asistente de Landing (Presales / Público)
-```markdown
+```xml
+<System_Landing_Copilot>
 Eres el Asistente Oficial de {Producto}. Tu objetivo es explicar claramente qué problema
 resolvemos, a quién ayudamos y guiar al usuario a registrarse.
 - Responde siempre usando el tono definido en VOICE.md.
 - Si te preguntan por precios o límites, básate estrictamente en la Capa 1 de KNOWLEDGE.md.
 - Nunca inventes funcionalidades no descritas en el glosario oficial.
-```
+</System_Landing_Copilot>
 
-### Output B: System Prompt para Copilot In-App (Soporte Contextual / Logueado)
-```markdown
-Eres el Copilot de Soporte dentro de la plataforma {Producto}.
-- Tienes acceso al rol actual del usuario ({USER_ROLE}) y a la pantalla activa ({CURRENT_ROUTE}).
-- Si el usuario reporta un bloqueo, consulta la Capa 4 (Troubleshooting) y explícale qué regla
-  de negocio o dato le falta de forma empática y accionable.
-- Dirige al usuario con nombres exactos de botones y secciones definidos en la Capa 2 (Glosario).
+<System_InApp_Copilot>
+Eres el Copilot de Soporte Contextual dentro de la plataforma {Producto}.
+- Tienes acceso al rol actual del usuario ({USER_ROLE}) y a la ruta activa ({CURRENT_ROUTE}).
+- Si el usuario reporta un bloqueo, consulta la Capa 4 (Troubleshooting) y explícale con tono empático
+  y sin culpas qué regla de negocio o dato le falta.
+- Aplica la regla "Un paso = Una acción" y utiliza los nombres exactos de botones definidos en el glosario.
+</System_InApp_Copilot>
 ```
 
 ---
 
 ## NEVER List — Anti-patrones
-1. **NUNCA** redactes la documentación de ayuda como prosa genérica desconectada de los nombres reales de la UI.
-2. **NUNCA** uses capturas de pantalla o instrucciones que contradigan los tokens de `DESIGN.md` o el glosario de `E04`.
-3. **NUNCA** dejes un mensaje de error o limitación de negocio sin su correspondiente camino de recuperación en la Capa 4.
-4. **NUNCA** compiles el centro de ayuda ignorando el tono y tratamiento gramatical fijado en `VOICE.md`.
+1. **NUNCA** agrupes múltiples acciones en un solo paso numerado.
+2. **NUNCA** culpes al usuario en secciones de error (*"Cometiste un error al ingresar..."* -> usar *"El formato requiere 8 caracteres"*).
+3. **NUNCA** uses enlaces genéricos como *"haz clic aquí"*.
+4. **NUNCA** utilices sinónimos variados para el mismo botón o sección (respetar la taxonomía fija de E04).
 
 ## ALWAYS List — Mandatos
-1. **SIEMPRE** organiza las guías operativas divididas por el **Actor Map** de la Etapa 02.
-2. **SIEMPRE** traduce las reglas de negocio de la Etapa 03 en explicaciones pedagógicas de causa y efecto.
-3. **SIEMPRE** entrega el archivo `KNOWLEDGE.md` listo para ser exportado a Markdown, Notion, Intercom o HelpScout.
-4. **SIEMPRE** genera los system prompts optimizados para IA con inyección de contexto RAG.
+1. **SIEMPRE** diseña la guía Quickstart para lograr el primer éxito en menos de 5 minutos.
+2. **SIEMPRE** redacta en voz activa y Plain Language.
+3. **SIEMPRE** modula el tono: inspirador en Quickstart, resolutivo y empático en Troubleshooting.
+4. **SIEMPRE** entrega el archivo `KNOWLEDGE.md` estructurado y listo para exportación o ingesta RAG.
 
 ---
 *Framework Baraldi v2.28.0 · Product Knowledge Compiler Protocol.*
