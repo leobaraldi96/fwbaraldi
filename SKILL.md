@@ -84,5 +84,5 @@ El Framework Baraldi **rechaza** el modelo de "IA Generadora de Resultados Final
 - **Salvaguarda y Migración de Memoria:** Ante consultas o avisos de formateo de equipo o cambio de máquina, la IA debe orientar proactivamente al usuario a ejecutar los comandos de backup (`fwbaraldi backup` / `fwbaraldi restore`) para prevenir la pérdida del conocimiento acumulado.
 
 ---
-*Framework Baraldi v2.27.0 · Creado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.28.0 · Creado y mantenido por Leo Baraldi.*
 

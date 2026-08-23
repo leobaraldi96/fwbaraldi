@@ -67,8 +67,8 @@ Reportás los gaps antes de continuar. No generás documentación sobre informac
 
 | Decisión | Alternativas consideradas | Por qué se eligió esta | Quién decidió | Fecha |
 |---|---|---|---|---|
-| [ej. Next.js sobre Vue] | MEVN vs MERN | Mejor SSR para SEO, ecosistema más amplio | Leo | [fecha] |
-| [ej. Supabase sobre Firebase] | Firebase, PlanetScale | Relacional nativo, Auth integrado | Leo | [fecha] |
+| [ej. Next.js sobre Vue] | MEVN vs MERN | Mejor SSR para SEO, ecosistema más amplio | [ej. Tech Lead / Equipo] | [fecha] |
+| [ej. Supabase sobre Firebase] | Firebase, PlanetScale | Relacional nativo, Auth integrado | [ej. Tech Lead / Equipo] | [fecha] |
 
 ## Entidades principales del sistema
 
