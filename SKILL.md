@@ -5,8 +5,8 @@ description: >
   Este framework obliga a la IA a adoptar metodologías rigurosas (Problem Framing, System Analysis, etc.)
   para ir más allá del diseño de interfaces y enfocarse en sistemas y outcomes.
   Úsalo cuando el usuario quiera iniciar un proceso de diseño de producto estructurado.
-keywords: product-design, framework-baraldi, problem-framing, system-analysis, ux-strategy, systems-thinking
-version: "2.28.0"
+keywords: product-design, framework-baraldi, problem-framing, system-analysis, ux-strategy, systems-thinking, continuous-discovery, telemetry
+version: "2.29.0"
 ---
 
 # Framework Baraldi — Orquestador Global
@@ -30,6 +30,7 @@ Guiar al equipo de producto a través de fases estructuradas de descubrimiento, 
      * **Etapa 05:** `skills/methodology/05_interaction_design_ux/SKILL.md`
      * **Etapa 06:** `skills/methodology/06_visual_design_ui/SKILL.md`
      * **Etapa 07:** `skills/methodology/07_handover_qa/SKILL.md`
+     * **Etapa 08:** `skills/methodology/08_continuous_discovery_telemetry/SKILL.md`
 
 ---
 
@@ -54,12 +55,10 @@ Cargar exclusivamente el protocolo solicitado por el usuario o requerido por el 
 
 ---
 
----
-
 ## Slash Commands (Atajos Semánticos para el Agente)
 Como agente de IA operando el framework, debes reconocer y ejecutar inmediatamente las siguientes directivas rápidas ingresadas por el usuario, evitando rodeos conversacionales:
 *   `/init` -> Inicializa la estructura conceptual del framework. **MANDATORIO:** Presenta interactivamente el selector de **Perfiles de Rigor Operativo** (1. Lean/MVP Express, 2. Standard Product, 3. Enterprise/Hardened, 4. Custom) para calibrar qué Contratos Vivos de Soberanía (`DESIGN`, `VOICE`, `BUSINESS`, `SECURITY`, `LEGAL`, `UX`, `KNOWLEDGE`) y qué nivel de documentación de CX se provisionarán en `docs-fwbaraldi/`.
-*   `/etapa [1-7]` -> Salta directamente al contexto operativo de la etapa especificada (ej. `/etapa 1` activa Problem Framing), cargando sus reglas y entregables adaptados al perfil de rigor activo.
+*   `/etapa [1-8]` -> Salta directamente al contexto operativo de la etapa especificada (ej. `/etapa 1` activa Problem Framing, `/etapa 8` activa Telemetría y Continuous Discovery), cargando sus reglas y entregables adaptados al perfil de rigor activo.
 *   `/align` -> Ejecuta una auditoría de la carpeta del proyecto actual (`docs-fwbaraldi`) y notifica al usuario si falta alguna taxonomía o alineamiento.
 *   `/upgrade` -> Lee `docs-fwbaraldi/.UPGRADE_REPORT.md` e inicia la Refactorización Guiada. OBLIGATORIO: 1) Aconsejar backup de `docs-fwbaraldi` (ofrecer instrucciones manuales o hacerlo por consola). 2) Mostrar un plan detallado de qué se modificará. 3) Refactorizar archivo por archivo preservando 100% del valor original y esperando el "OK" humano en cada paso. NUNCA tocar código fuera de `docs-fwbaraldi`.
 *   `/backlog` -> Lee, analiza y resume de forma priorizada el estado actual de `00_Backlog_Estrategico.md`.

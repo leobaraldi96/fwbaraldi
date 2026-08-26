@@ -45,7 +45,8 @@ fwbaraldi/
 │   │   ├── 04_information_architecture/ ← Hardened v2.28.0
 │   │   ├── 05_interaction_design_ux/ ← Hardened v2.28.0
 │   │   ├── 06_visual_design_ui/      ← Hardened v2.28.0
-│   │   └── 07_handover_qa/           ← Hardened v2.28.0 (SDD Review Path)
+│   │   ├── 07_handover_qa/           ← Hardened v2.28.0 (SDD Review Path)
+│   │   └── 08_continuous_discovery_telemetry/ ← Telemetría y Data UX v2.29.0
 │   │
 │   └── toolbox/                      ← Arsenal de 16 protocolos estratégicos
 │
@@ -55,6 +56,8 @@ fwbaraldi/
 │   ├── legal_md.md
 │   ├── ux_md.md
 │   ├── knowledge_md.md
+│   ├── data_diagnostic_report.md
+│   ├── action_registry_decisions.md
 │   ├── decision_log.md
 │   ├── hallazgo_sistemico.md
 │   ├── ejemplo_knowledge_block.md

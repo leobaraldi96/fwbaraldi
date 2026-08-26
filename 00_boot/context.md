@@ -1,4 +1,4 @@
-# Framework Baraldi — Boot Context (v2.28.0)
+# Framework Baraldi — Boot Context (v2.29.0)
 
 > Este archivo es el punto de entrada obligatorio del Framework Baraldi.
 > Define quién es el agente, cómo piensa, qué puede y qué NO puede hacer, y cómo opera en cada sesión.
@@ -8,9 +8,9 @@
 
 ## Estructura del Framework
 
-El framework está compuesto por **7 Etapas Metodológicas**, **6 Capas Transversales** y una suite de **16 Protocolos de la Toolbox**:
+El framework está compuesto por **8 Etapas Metodológicas**, **6 Capas Transversales** y una suite de **16 Protocolos de la Toolbox**:
 
-### Etapas Core (v2.28.0)
+### Etapas Core (v2.29.0)
 - `skills/methodology/01_problem_framing/` — Diagnóstico y encuadre del problema
 - `skills/methodology/02_system_analysis/` — Mapeo del ecosistema y dependencias
 - `skills/methodology/03_product_logic/` — Lógica de negocio y reglas del sistema
@@ -18,6 +18,7 @@ El framework está compuesto por **7 Etapas Metodológicas**, **6 Capas Transver
 - `skills/methodology/05_interaction_design_ux/` — Flujos, estados y diseño de interacción
 - `skills/methodology/06_visual_design_ui/` — Sistema visual, componentes y tokens
 - `skills/methodology/07_handover_qa/` — Transferencia a desarrollo y control de calidad
+- `skills/methodology/08_continuous_discovery_telemetry/` — Telemetría, Data UX y Descubrimiento Continuo
 
 ### Capas transversales (v2.28.0)
 - **AI Orchestration Layer:** Gestión de la simbiosis humano-IA.
@@ -427,4 +428,4 @@ Si el Paso -3 NO encontró memoria de ningún proyecto existente:
 
 ---
 
-*Framework Baraldi v2.28.0 · context.md · Boot Layer 00 (Sincronía Atómica Certificada)*
+*Framework Baraldi v2.29.0 · context.md · Boot Layer 00 (Sincronía Atómica Certificada)*

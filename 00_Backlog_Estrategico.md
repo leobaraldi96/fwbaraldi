@@ -1,6 +1,6 @@
-# Framework Baraldi - Backlog Estratégico (v2.28.0)
+# Framework Baraldi - Backlog Estratégico (v2.29.0)
 Última Actualización: 2026-08-26
-Estado: **Sistema Totalmente Hardened (v2.28.0) & JIT-Ready**
+Estado: **Sistema Totalmente Hardened (v2.29.0) & Continuous Discovery Ready**
 
 > **Propósito:** Centralizar el scope futuro, las etapas en desarrollo (WIP) y las ideas de mejora sistémica para evitar el Scope Creep durante las sesiones actuales.
 > **Disciplina:** Revisar este archivo al inicio de cada sesión (Boot Step -3).
@@ -9,7 +9,7 @@ Estado: **Sistema Totalmente Hardened (v2.28.0) & JIT-Ready**
 
 ## 🏗️ [METODOLOGÍA] Etapas en Desarrollo (WIP)
 
-### 🟢 Etapas Base (01 a 07)
+### 🟢 Etapas Base (01 a 08)
 - **Estado:** ✅ COMPLETADAS, HARDENED & ESTABLES (10/10 Skill Judge)
 - [x] Etapa 01: Problem Framing
 - [x] Etapa 02: System Analysis (Dependencias y Diagramas de Flujo)
@@ -18,9 +18,10 @@ Estado: **Sistema Totalmente Hardened (v2.28.0) & JIT-Ready**
 - [x] Etapa 05: Interaction Design (UX Writing y States)
 - [x] Etapa 06: Visual Design UI (DESIGN.md y Tokens)
 - [x] Etapa 07: Handover & QA (Aduana Técnica Final + Product Knowledge Compiler)
+- [x] Etapa 08: Continuous Discovery & Data Intelligence (Telemetría, Data UX y Bucle a E01)
 
 ### 🟢 Toolbox & Tech Guardrails
-- **Estado:** ✅ HARDENED & EXPANDIDO (v2.28.0)
+- **Estado:** ✅ HARDENED & EXPANDIDO (v2.29.0)
 - [x] Consolidación de Skills de Alta Densidad (16 Protocolos).
 - [x] Integración de `product_knowledge_compiler_protocol` y plantilla `KNOWLEDGE.md`.
 - [x] Purga de Tech Guardrails: Foco 100% agnóstico en Lógica y Diseño.

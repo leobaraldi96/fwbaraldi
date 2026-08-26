@@ -104,7 +104,7 @@ sequenceDiagram
 ```
 
 ### 3.1 El Rol de la Etapa 03 (Product Logic)
-En la versión v2.28.0, la Etapa 03 se consolida como el **"Cerebro del Producto"**. Su función es blindar la viabilidad funcional antes de que el equipo de diseño entre a la fase visual, integrando el estándar **UX-DNA (Experience Anatomy)** y los Contratos de Negocio. 
+En la versión v2.29.0, la Etapa 03 se consolida como el **"Cerebro del Producto"**. Su función es blindar la viabilidad funcional antes de que el equipo de diseño entre a la fase visual, integrando el estándar **UX-DNA (Experience Anatomy)** y los Contratos de Negocio. 
 
 **Entregables clave al usuario:**
 - **Product Logic Orchestration:** Matriz de Actores, Matriz de Orquestación de Backlog y Service Blueprint.
@@ -113,6 +113,9 @@ En la versión v2.28.0, la Etapa 03 se consolida como el **"Cerebro del Producto
 - **Business Rules Matrix:** Leyes lógicas de comportamiento (If/Then).
 - **KPIs Funcionales:** North Star Metric y puntos de medición (Recharts Expert).
 - **Contratos Vivos de Soberanía:** Generación de la suite de contratos (`DESIGN.md`, `VOICE.md`, `BUSINESS.md`, `SECURITY.md`, `LEGAL.md`, `UX.md`, `KNOWLEDGE.md`) como el nuevo estándar de handoff diseñado para el consumo de humanos y modelos de lenguaje, garantizando la fidelidad de la implementación automatizada.
+
+### 3.2 El Bucle Infinito de la Etapa 08 (Continuous Discovery & Telemetry)
+En la versión v2.29.0, el framework cierra formalmente el ciclo continuo del producto. La Etapa 08 actúa como el **"Sistema Nervioso Post-Lanzamiento"**, ingiriendo telemetría y feedback real para transformarlo en diagnósticos de UX sin fricción matemática (*Zero-Math*), diseñando dashboards por nivel de urgencia de rol (Operativo < 3s, Táctico 1-5 min, Estratégico 30s) y retroalimentando automáticamente el `00_Backlog_Estrategico.md` y la Etapa 01.
 
 ---
 

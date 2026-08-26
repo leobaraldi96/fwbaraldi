@@ -1,6 +1,6 @@
 # Framework Baraldi (FWB) 🤖⚡
 
-![Version](https://img.shields.io/badge/version-2.28.0-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-yellow) ![Memory](https://img.shields.io/badge/memory-Engram--v1.20.0-orange) ![Type](https://img.shields.io/badge/type-Agentic--Orchestrator-blueviolet)
+![Version](https://img.shields.io/badge/version-2.29.0-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-yellow) ![Memory](https://img.shields.io/badge/memory-Engram--v1.20.0-orange) ![Type](https://img.shields.io/badge/type-Agentic--Orchestrator-blueviolet)
 
 > [!NOTE]
 > **¿Hola, no entendés un carajo de lo que hay acá?** 👉 **[¡Siga por aquí! (Guía de bienvenida fácil para humanos)](./NO_ENTIENDO_NADA.md)** 🚀
@@ -94,6 +94,7 @@ Ninguno de los frameworks anteriores tiene estas características juntas:
 | **05_interaction_design_ux** | ✅ Estable | Diseño de interacción, Estados y **VOICE.md**. |
 | **06_visual_design_ui** | ✅ Estable | Diseño visual, Tokens y **DESIGN.md**. |
 | **07_handover_qa** | ✅ Estable | Validación final, QA y Product Knowledge Compiler (`KNOWLEDGE.md`). |
+| **08_continuous_discovery_telemetry** | ✅ Estable | Telemetría post-deploy, Data UX por Rol y Bucle a Backlog/E01. |
 | **Toolbox** | ✅ Estable | Arsenal de 16 Protocolos de Ejecución Estratégica. |
 
 ---
@@ -277,7 +278,8 @@ fwbaraldi/
 │   │   ├── 04_information_architecture/    ← Hardened v2.28.0
 │   │   ├── 05_interaction_design_ux/       ← Hardened v2.28.0
 │   │   ├── 06_visual_design_ui/            ← Hardened v2.28.0
-│   │   └── 07_handover_qa/                 ← Hardened v2.28.0
+│   │   ├── 07_handover_qa/                 ← Hardened v2.28.0
+│   │   └── 08_continuous_discovery_telemetry/ ← Telemetría y Data UX v2.29.0
 │   │
 │   └── toolbox/                            ← Tu arsenal estratégico (16 Protocolos)
 │       ├── advanced_prioritization_protocol/
@@ -303,6 +305,8 @@ fwbaraldi/
 │   ├── legal_md.md                         ← Contrato Regulatorio y Privacidad
 │   ├── ux_md.md                            ← Contrato de Ergonomía e Interacción
 │   ├── knowledge_md.md                     ← Base de Conocimiento y Manual de Producto
+│   ├── data_diagnostic_report.md           ← Informe de Diagnóstico de Datos e Insights
+│   ├── action_registry_decisions.md        ← Registro de Acciones y Decisiones de Telemetría
 │   ├── decision_log.md                     ← Registro cronológico de decisiones
 │   ├── hallazgo_sistemico.md               ← Template de hallazgo para Engram MCP
 │   ├── ejemplo_knowledge_block.md          ← Referencia Canónica ISO 26514 / Info Mapping

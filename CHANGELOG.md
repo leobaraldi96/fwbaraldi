@@ -5,6 +5,21 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.29.0] - 2026-08-26
+
+### 🚀 Etapa 08: Continuous Discovery & Data Intelligence (El Bucle Infinito)
+- **Sub-Skill Metodológica `skills/methodology/08_continuous_discovery_telemetry/SKILL.md`:**
+  - Creación formal de la Etapa 08 para transformar datos de uso real post-lanzamiento en diagnósticos de UX y decisiones de producto.
+  - **Filosofía Zero-Math & Human-First:** Democratización del análisis analítico para diseñadores y creadores no expertos mediante lenguaje natural y metáforas directas.
+  - **Data UX & Pirámide de Urgencia:** Especificación de vistas según el tipo de usuario (Operativo < 3s, Táctico 1-5 min, Estratégico 30s) y árbol de decisión de componentes visuales (regla anti-tortas).
+  - **Diagnóstico Causa-Efecto:** Estructura obligatoria de 5 pasos (Hecho Objetivo ➔ Interpretación Humana ➔ Soluciones con Trade-offs ➔ Priorización ➔ Aprobación Humana).
+  - **Bucle Infinito a Backlog y Etapa 01:** Registro automático de decisiones confirmadas en `00_Backlog_Estrategico.md` y salto sugerido a `01_problem_framing` ante cambios estructurales de mercado.
+- **Nuevas Plantillas Canónicas en `templates/`:**
+  - `templates/data_diagnostic_report.md`: Plantilla para `01_Data_Diagnostic_and_Insights.md`.
+  - `templates/action_registry_decisions.md`: Plantilla para `02_Action_Registry_and_Decisions.md`.
+- **Integración de Ruteo Global & Slash Command:**
+  - Actualizado `/etapa [1-8]` en `SKILL.md` (local y global) y sincronizado con `00_boot/context.md`.
+
 ## [2.28.0] - 2026-08-26
 
 ### ⚡ Arquitectura Just-in-Time (JIT) y Compatibilidad con Prompt Caching

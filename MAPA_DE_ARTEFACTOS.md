@@ -1,4 +1,4 @@
-# 🗺️ Mapa de Artefactos — Framework Baraldi (v2.28.0)
+# 🗺️ Mapa de Artefactos — Framework Baraldi (v2.29.0)
 
 Este documento es el catálogo oficial de todos los **outputs** que genera el framework. Sirve como guía para que el equipo de producto, diseño y desarrollo entienda qué se ha construido, para qué sirve y cómo aprovechar cada pieza de información.
 
@@ -90,6 +90,14 @@ Estos archivos viven en la carpeta **`docs-fwbaraldi/`** y son transversales a t
 *   **Unmapped Use Case Log:** Registro de situaciones no previstas detectadas en pruebas, con valoración de urgencia para "volver al lápiz".
 *   **Feedback & Support Map:** Definición de canales de atención y herramientas de escucha para no perder calidad en el primer contacto.
 *   **Contingency & Rollback Manual:** Plan de acción ("Botón Rojo") en caso de fallos catastróficos.
+
+### Etapa 08: Continuous Discovery & Data Intelligence (Telemetría & Evolución)
+*Misión: Cerrar el ciclo de vida transformando el uso real en decisiones de diseño inteligentes y backlog priorizado.*
+
+*   **Plan de Tracking Simplificado (`TRACKING_PLAN.md`):** Guía minimalista de 1 carilla con los 3 o 4 eventos esenciales a medir.
+*   **Data Diagnostic Report (`01_Data_Diagnostic_and_Insights.md`):** Tablero ejecutivo contrastando hipótesis vs. datos reales, con diagnóstico causa-efecto (Hecho ➔ Interpretación ➔ Opciones).
+*   **Action Registry & Decisions (`02_Action_Registry_and_Decisions.md`):** Registro de mejoras confirmadas por el usuario, sincronizadas con el Backlog Estratégico.
+*   **Role Dashboard Specs:** Especificaciones de tableros segmentados por nivel de urgencia (Operativo < 3s, Táctico 1-5m, Estratégico 30s) y árbol de decisión de componentes visuales (Anti-Slop / Anti-Torta).
 
 ---
 

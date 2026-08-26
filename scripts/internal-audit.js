@@ -78,8 +78,8 @@ toolDirs.forEach(dir => {
     }
 });
 
-if (toolboxCount === 15) reportSuccess(`Conteo de Toolbox correcto (15 de 15)`);
-else reportIssue(`Se detectaron ${toolboxCount} herramientas, se esperaban 15.`);
+if (toolboxCount === 16) reportSuccess(`Conteo de Toolbox correcto (16 de 16)`);
+else reportIssue(`Se detectaron ${toolboxCount} herramientas, se esperaban 16.`);
 
 // 3. Check Guardrails
 const guardrails = fs.readFileSync(path.join(rootDir, 'skills', 'core', '00_core_guardrails', 'SKILL.md'), 'utf8');
@@ -92,7 +92,7 @@ if (!guardrailsClean.includes('prohibido resumir') && !guardrailsClean.includes(
 
 // 4. Check Etapas Metodología
 const methodologyDir = path.join(rootDir, 'skills', 'methodology');
-for (let i = 1; i <= 7; i++) {
+for (let i = 1; i <= 8; i++) {
     const etapa = `0${i}`;
     const etapaDirName = fs.readdirSync(methodologyDir).find(d => d.startsWith(etapa));
     if (!etapaDirName) {
