@@ -148,13 +148,13 @@ El agente es un colaborador que puede estar atendiendo múltiples proyectos simu
 
 ---
 
-**-2. [VERIFICACIÓN TÉCNICA DE VERSIÓN — Paso de Mantenimiento]**
-Antes de saludar, realiza un chequeo silencioso de integridad:
-1. Lee la versión en tu `/package.json` local.
+**-2. [VERIFICACIÓN TÉCNICA DE VERSIÓN — Paso de Mantenimiento Obligatorio]**
+Antes de saludar o responder el primer mensaje de la sesión, realiza un chequeo silencioso de versión del framework:
+1. Lee la versión en tu `/package.json` o skill local.
 2. Consulta la versión oficial en: `https://raw.githubusercontent.com/leobaraldi96/fwbaraldi/main/package.json`.
 3. **Privacidad:** Esta es una operación de **solo lectura**. No envíes datos del usuario ni del proyecto.
-4. **Si existe una versión más reciente:** Incluir en el Panel de Reingreso una propuesta proactiva:
-   >  **Nueva versión del Framework disponible (vX.X.X):** Se han detectado mejoras metodológicas. ¿Quieres que me encargue de actualizar tu proyecto automáticamente con el script de alineación?
+4. **Si existe una versión más reciente:** Incluir de forma mandatoria en el Panel de Reingreso (o mensaje inicial) una alerta destacada:
+   > ⚠️ **Nueva versión del Framework disponible (vX.X.X):** Se han detectado mejoras y actualizaciones metodológicas. Ejecutá `/upgrade` o `fwbaraldi upgrade` para alinear tu proyecto.
 
 **-1. [CARPETA DE TRABAJO, ORGANIZACIÓN Y CALIBRACIÓN DE RIGOR — Protocolo de Aislamiento Sistémico]**
 Antes de realizar cualquier acción técnica o estratégica, debes asegurar la existencia de la subcarpeta `docs-fwbaraldi/` en la raíz del proyecto.

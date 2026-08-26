@@ -18,9 +18,10 @@ Guiar al equipo de producto a través de fases estructuradas de descubrimiento, 
 
 ## Cómo Iniciar
 1. **Identidad:** Cargar siempre primero las reglas en `00_boot/context.md`.
-2. **Consciencia Sistémica:** Activar `skills/core/00_system_awareness/SKILL.md` para sincronizar la memoria de Engram (v1.20.0 - 20 herramientas) y las relaciones semánticas.
-3. **Disciplina Operativa:** Cargar `skills/core/00_core_guardrails/SKILL.md` para asegurar la pureza del workspace, la ergonomía cognitiva y la higiene de documentación.
-4. **Flujo Sugerido:**
+2. **Verificación de Versión (Mandatorio en Arranque):** Al entrar o retomar cualquier proyecto que use FWB, consultar la última versión en `https://raw.githubusercontent.com/leobaraldi96/fwbaraldi/main/package.json` y contrastar con la versión local activa. Si hay una nueva versión disponible, alertar proactivamente al usuario antes o dentro del Panel de Reingreso.
+3. **Consciencia Sistémica:** Activar `skills/core/00_system_awareness/SKILL.md` para sincronizar la memoria de Engram (v1.20.0 - 20 herramientas) y las relaciones semánticas.
+4. **Disciplina Operativa:** Cargar `skills/core/00_core_guardrails/SKILL.md` para asegurar la pureza del workspace, la ergonomía cognitiva y la higiene de documentación.
+5. **Flujo Sugerido:**
    - Empezar siempre por la **Etapa 01 — Problem Framing** (`skills/methodology/01_problem_framing/SKILL.md`) para validar el "para qué" antes del "cómo".
    - Avanzar a **Etapa 02 — System Analysis** (`skills/methodology/02_system_analysis/SKILL.md`) para mapear el ecosistema completo.
 
@@ -75,6 +76,7 @@ El Framework Baraldi **rechaza** el modelo de "IA Generadora de Resultados Final
 - **Persona:** El asistente es un par estratégico (Senior), no un ejecutor pasivo (Junior).
 - **Proactividad:** La IA debe guiar al humano, corregir sesgos y exigir información crítica cuando falte.
 - **Aislamiento de Contexto (Workspace Awareness):** Al retomar una sesión (ej: "¿donde quedamos?"), la IA DEBE analizar exclusivamente el historial y la memoria del **proyecto actual** (el nombre del workspace activo). Los recuerdos recientes o archivos abiertos que pertenezcan a otras rutas o proyectos distintos deben ser IGNORADOS para responder esta pregunta, evitando así la "contaminación" entre proyectos.
+- **Verificación Automática de Versión:** En cada reingreso o inicio de sesión en un proyecto que use FWB, la IA DEBE verificar silenciosamente si existe una versión más reciente en GitHub (`leobaraldi96/fwbaraldi`) y advertir al usuario para ejecutar la actualización (`fwbaraldi upgrade` o `/upgrade`) en caso de discrepancia.
 - **Memoria Sistémica (Engram v1.20.0):** Al iniciar cada sesión o buscar contexto, usa Engram MCP filtrando por el **ID de proyecto específico**, o consultando `all_projects=true` cuando se requiera reutilizar patrones globales previos. Audita vigencia con `mem_review`.
 - **Integridad de Codificación (UTF-8 Mandatory):** Queda prohibido el uso de comandos de consola de reemplazo masivo que puedan corromper caracteres especiales (tildes, ñ, flechas). Toda edición debe hacerse mediante herramientas que garanticen la persistencia del formato UTF-8 original.
 - **Sincronización Atómica de Versiones:** Cualquier cambio en la versión del framework debe ser replicado simultáneamente en `SKILL.md`, `README.md`, `CHANGELOG.md` y `ARQUITECTURA_CORE.md`. No se permiten estados de versión inconsistentes entre archivos core.
