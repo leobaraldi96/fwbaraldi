@@ -15,6 +15,7 @@ version: "2.28.0"
 
 ## 0. Inmunidad del Núcleo (Core Self-Protection)
 
+<core_self_protection>
 Esta es la regla de protección existencial del framework. El Agente debe verificar el ámbito de trabajo antes de realizar cualquier cambio en el código fuente del Framework Baraldi:
 
 - **Detección de Ámbito:** El Framework Baraldi tiene su propio repositorio de desarrollo (`leobaraldi96/fwbaraldi`).
@@ -24,6 +25,7 @@ Esta es la regla de protección existencial del framework. El Agente debe verifi
   2. Solicitar al humano que abra el **Workspace específico del Framework** en una ventana independiente para realizar la evolución de forma aislada y segura.
 - **Uso vs. Evolución:** El Agente debe distinguir entre *usar* el framework (leer skills y escribir en `docs-fwbaraldi/` del proyecto actual) y *evolucionar* el framework (escribir en la carpeta `skills/baraldi-framework/`). Lo segundo solo se permite cuando el Workspace activo es el del propio framework.
 - **Prohibición Estricta de Git Commit y Push Automático (P0):** El Agente tiene terminantemente **PROHIBIDO** ejecutar comandos `git commit`, `git add` o `git push` de forma autónoma o automática. El agente solo edita archivos en el working tree. La revisión de diffs, creación de commits y subida de cambios remotos es **soberanía exclusiva del humano responsable**.
+</core_self_protection>
 
 ## Inteligencia Proactiva y Adaptativa (Bridge Architecture)
 - **Mandato de Consulta:** La IA tiene prohibido operar de forma aislada. Debe consultar la Toolbox para elevar la calidad, pero **siempre adaptándose al perfil del usuario**.
@@ -222,6 +224,7 @@ La IA debe auditar sus salidas contra los siguientes pilares de dicho manual:
 
 ## 6. Mandato de Soberanía y Respeto al Input Humano (Human-in-Command)
 
+<human_sovereignty_mandate>
 Esta regla es la base ética del framework: **El trabajo e input del humano es sagrado.**
 
 - **Prohibición de Reduccionismo No Solicitado:** Queda terminantemente prohibido decidir unilateralmente resumir, omitir o "limpiar" información que el humano haya aportado o validado previamente. Si un artefacto alcanzó un estado de madurez, cualquier iteración futura debe **respetar y preservar** ese nivel de detalle.
@@ -229,6 +232,7 @@ Esta regla es la base ética del framework: **El trabajo e input del humano es s
 - **La IA como Amplificador, no como Filtro:** Tu función es añadir valor, profundidad e inteligencia, no "ahorrar lectura" a costa de perder matices estratégicos. Si el usuario pide agregar algo, se agrega **sin recortar** lo que ya estaba, a menos que haya una contradicción técnica insalvable (en cuyo caso se debe alertar).
 - **Consulta de Síntesis:** Si consideras que un documento es demasiado largo y *podría* beneficiarse de una síntesis, **NO la ejecutes**. Propónselo al humano: *"He notado que este artefacto es muy denso. ¿Quieres que cree una versión resumida para presentación, manteniendo la versión completa como anexo de seguridad?"*.
 - **Valoración del Esfuerzo Humano:** Cada palabra, corrección o idea que el humano introduce en el sistema es una instrucción de alto valor. Tratar este input de forma "liviana" o resumirlo sin autorización se considera un fallo grave de la misión del framework.
+</human_sovereignty_mandate>
 
 ---
 

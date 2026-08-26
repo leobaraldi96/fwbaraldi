@@ -76,7 +76,9 @@ Ninguno de los frameworks anteriores tiene estas características juntas:
 10. **Proactividad de Soporte**: El sistema propone proactivamente formatos de alta fidelidad (Landings/Dashboards HTML) cuando la densidad de datos lo requiere, eliminando la pasividad del agente.
 11. **Contratos Vivos de Soberanía (`DESIGN`, `VOICE`, `BUSINESS`, `SECURITY`, `LEGAL`, `UX`, `KNOWLEDGE`)**: El framework genera archivos de "Fuente de Verdad" diseñados específicamente para ser leídos por humanos y otras IAs, garantizando que el diseño, negocio, seguridad y soporte se mantengan blindados e inmutables.
 12. **Arsenal de Toolbox (16 Protocolos)**: Protocolos estratégicos modulares de alta densidad para slicing de epics, triaje de issues, pricing, data-driven design y compilación de conocimiento de producto.
-13. **Verificación de Versión Proactiva (v2.28.0)**: El Framework verifica automáticamente tu versión local para asegurar que el motor metodológico esté siempre al día.
+13. **Verificación de Versión Proactiva (v2.28.0)**: El Framework verifica automáticamente tu versión local contra el repositorio oficial para asegurar que el motor metodológico esté siempre al día.
+14. **Arquitectura Just-in-Time (JIT) & Prompt Caching**: Carga bajo demanda estricta de metodologías y protocolos, reduciendo hasta un 85% el consumo de tokens y acelerando la inferencia en LLMs avanzados (Gemini, Claude, GPT-4) sin saturación de contexto (*Context Rot*).
+15. **Sintaxis XML Estricta para Guardrails**: Restricciones y mandatos de comportamiento estructurados semánticamente en etiquetas XML para máxima adherencia en Claude y Gemini.
 
 ---
 

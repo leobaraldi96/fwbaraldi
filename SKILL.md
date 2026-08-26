@@ -16,33 +16,43 @@ Este Skill es la puerta de entrada a todo el **Framework Baraldi** de Product De
 ## Propósito
 Guiar al equipo de producto a través de fases estructuradas de descubrimiento, mapeo y diseño, asegurando que cada decisión esté basada en evidencia y una visión sistémica antes de entrar a la capa de interfaz o código.
 
-## Cómo Iniciar
-1. **Identidad:** Cargar siempre primero las reglas en `00_boot/context.md`.
+## Cómo Iniciar (Just-in-Time Routing Protocol)
+1. **Identidad & Boot:** Cargar `00_boot/context.md` (Punto de entrada estático).
 2. **Verificación de Versión (Mandatorio en Arranque):** Al entrar o retomar cualquier proyecto que use FWB, consultar la última versión en `https://raw.githubusercontent.com/leobaraldi96/fwbaraldi/main/package.json` y contrastar con la versión local activa. Si hay una nueva versión disponible, alertar proactivamente al usuario antes o dentro del Panel de Reingreso.
-3. **Consciencia Sistémica:** Activar `skills/core/00_system_awareness/SKILL.md` para sincronizar la memoria de Engram (v1.20.0 - 20 herramientas) y las relaciones semánticas.
-4. **Disciplina Operativa:** Cargar `skills/core/00_core_guardrails/SKILL.md` para asegurar la pureza del workspace, la ergonomía cognitiva y la higiene de documentación.
-5. **Flujo Sugerido:**
-   - Empezar siempre por la **Etapa 01 — Problem Framing** (`skills/methodology/01_problem_framing/SKILL.md`) para validar el "para qué" antes del "cómo".
-   - Avanzar a **Etapa 02 — System Analysis** (`skills/methodology/02_system_analysis/SKILL.md`) para mapear el ecosistema completo.
+3. **Consciencia Sistémica & Memoria:** Activar `skills/core/00_system_awareness/SKILL.md` para sincronizar la memoria de Engram y el contexto del proyecto activo.
+4. **Disciplina Operativa:** Cargar `skills/core/00_core_guardrails/SKILL.md` (Higiene, Anti-Slop y Naming).
+5. **Carga Condicional de Etapa (Lazy Loading):**
+   - No cargar todas las etapas en memoria. Cargar **únicamente** el archivo de la etapa activa:
+     * **Etapa 01:** `skills/methodology/01_problem_framing/SKILL.md`
+     * **Etapa 02:** `skills/methodology/02_system_analysis/SKILL.md`
+     * **Etapa 03:** `skills/methodology/03_product_logic/SKILL.md`
+     * **Etapa 04:** `skills/methodology/04_information_architecture/SKILL.md`
+     * **Etapa 05:** `skills/methodology/05_interaction_design_ux/SKILL.md`
+     * **Etapa 06:** `skills/methodology/06_visual_design_ui/SKILL.md`
+     * **Etapa 07:** `skills/methodology/07_handover_qa/SKILL.md`
 
-## Toolbox Estratégica (v2.28.0 — 16 Protocolos)
-El framework cuenta con una caja de herramientas transversal para la ejecución táctica y estratégica:
-1.  **Stakeholder Narrative Strategy:** Gestión de líderes difíciles (Anti-Lucio/Carlos/Maxi) y venta de ideas.
-2.  **Advanced Prioritization Protocol:** Motor de ROI absoluto basado en RICE, Kano y Score Baraldi.
-3.  **Personal Impact Report:** Sistematización de logros y visibilidad de carrera.
-4.  **Data Driven Design and Experimentation:** Insights analíticos y protocolos de validación.
-5.  **Product Launch Protocol:** Orquestación técnica y estratégica de lanzamientos.
-6.  **Product Health QBR Protocol:** Gobernanza y reporte de salud trimestral.
-7.  **Strategic Product Roadmap:** Planificación de productos por horizontes.
-8.  **Concept Synthesis and Ideation Protocol:** Motor de convergencia de ideas y valor.
-9.  **Business Strategy and Growth Protocol:** Maximización de ROI, upselling y caso de negocio.
-10. **Pricing and Monetization Protocol:** Diseño científico de tiers y captura de valor.
-11. **Sales Enablement and Pitch Protocol:** Creación de decks, one-pagers y cierre de ventas.
-12. **Responsive and Global Readiness Protocol:** Adaptabilidad multidispositivo y global.
-13. **Product Master Matrix Protocol:** Artefacto vivo de trazabilidad y checklist de completitud de producto.
-14. **Systemic Issue Triage Protocol:** Triaje sistémico, resolución por causa raíz y Over-Engineering Test.
-15. **Strategic Epic Slicing Protocol:** Desglose estructurado de iniciativas en Epics e historias hijas con diagramas Mermaid para Jira/Linear/GitHub.
-16. **Product Knowledge Compiler Protocol:** Compilación de artefactos E01-E07 en Base de Conocimiento viva (`KNOWLEDGE.md`), manuales de usuario por rol y prompts de contexto RAG para Asistentes de IA (Landing & In-App Copilot).
+---
+
+## Toolbox Estratégica (16 Protocolos Modulares Bajo Demanda)
+Cargar exclusivamente el protocolo solicitado por el usuario o requerido por el contexto:
+1.  **Stakeholder Narrative Strategy:** `skills/toolbox/stakeholder_narrative_strategy/SKILL.md`
+2.  **Advanced Prioritization Protocol:** `skills/toolbox/advanced_prioritization_protocol/SKILL.md`
+3.  **Personal Impact Report:** `skills/toolbox/personal_impact_report/SKILL.md`
+4.  **Data Driven Design and Experimentation:** `skills/toolbox/data_driven_design_and_experimentation/SKILL.md`
+5.  **Product Launch Protocol:** `skills/toolbox/product_launch_protocol/SKILL.md`
+6.  **Product Health QBR Protocol:** `skills/toolbox/product_health_qbr_protocol/SKILL.md`
+7.  **Strategic Product Roadmap:** `skills/toolbox/strategic_product_roadmap/SKILL.md`
+8.  **Concept Synthesis and Ideation Protocol:** `skills/toolbox/concept_synthesis_and_ideation_protocol/SKILL.md`
+9.  **Business Strategy and Growth Protocol:** `skills/toolbox/business_strategy_and_growth_protocol/SKILL.md`
+10. **Pricing and Monetization Protocol:** `skills/toolbox/pricing_and_monetization_protocol/SKILL.md`
+11. **Sales Enablement and Pitch Protocol:** `skills/toolbox/sales_enablement_and_pitch_protocol/SKILL.md`
+12. **Responsive and Global Readiness Protocol:** `skills/toolbox/responsive_and_global_readiness_protocol/SKILL.md`
+13. **Product Master Matrix Protocol:** `skills/toolbox/product_master_matrix_protocol/SKILL.md`
+14. **Systemic Issue Triage Protocol:** `skills/toolbox/systemic_issue_triage_protocol/SKILL.md`
+15. **Strategic Epic Slicing Protocol:** `skills/toolbox/strategic_epic_slicing_protocol/SKILL.md`
+16. **Product Knowledge Compiler Protocol:** `skills/toolbox/product_knowledge_compiler_protocol/SKILL.md`
+
+---
 
 ---
 

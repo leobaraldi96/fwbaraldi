@@ -1,6 +1,6 @@
 # Framework Baraldi - Backlog Estratégico (v2.28.0)
-Última Actualización: 2026-08-22
-Estado: **Sistema Totalmente Hardened (v2.28.0)**
+Última Actualización: 2026-08-26
+Estado: **Sistema Totalmente Hardened (v2.28.0) & JIT-Ready**
 
 > **Propósito:** Centralizar el scope futuro, las etapas en desarrollo (WIP) y las ideas de mejora sistémica para evitar el Scope Creep durante las sesiones actuales.
 > **Disciplina:** Revisar este archivo al inicio de cada sesión (Boot Step -3).
@@ -30,8 +30,10 @@ Estado: **Sistema Totalmente Hardened (v2.28.0)**
 ## ⚙️ [INFRAESTRUCTURA] Integraciones y Motor
 
 - [x] **Skill Judge Integration**: Implementado protocolo de auditoría de calidad en todas las etapas.
+- [x] **Router Determinista Just-in-Time (JIT)**: Carga modular bajo demanda de metodologías y toolbox para eliminar el Context Rot.
+- [x] **Optimización para Prompt Caching**: Estructura inmutable de boot para acelerar inferencia y reducir consumo de tokens en Gemini, Claude y GPT-4.
+- [x] **Sintaxis XML Estricta para Guardrails**: Restricciones de atención encapsuladas en tags XML para máxima adherencia en Claude y Gemini.
 - [ ] **Automatización de Memoria**: Refinar los "Save Nudges" de Engram para que sugieran resúmenes basados en hitos del backlog.
-- [ ] **Aduana de Contexto 2.0**: Implementar un sistema de "poda" de tokens más agresivo para mantener el contexto limpio.
 
 ---
 
@@ -43,4 +45,4 @@ Estado: **Sistema Totalmente Hardened (v2.28.0)**
 
 ---
 
-*Última actualización: 2026-08-22 · Sincronizado con v2.28.0*
+*Última actualización: 2026-08-26 · Sincronizado con v2.28.0*

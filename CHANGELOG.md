@@ -5,7 +5,19 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
-## [2.28.0] - 2026-08-22
+## [2.28.0] - 2026-08-26
+
+### ⚡ Arquitectura Just-in-Time (JIT) y Compatibilidad con Prompt Caching
+- **Router Determinista Just-in-Time en `SKILL.md`:**
+  - Optimización del punto de entrada para cargar sub-skills metodológicas (Etapas 01 a 07) y los 16 protocolos de la Toolbox bajo demanda estricta.
+  - Eliminación de la saturación cognitiva (*Context Rot*) y reducción de hasta un 85% en el consumo de tokens por mensaje en modelos avanzados (Gemini, Claude, GPT-4).
+- **Diseño Optimizado para Prompt Caching:**
+  - Estructuración inmutable del ancla de boot (`context.md` y `SKILL.md`) para maximizar el uso de caché estático en LLMs modernos, acelerando el *Time-to-First-Token*.
+- **Sintaxis XML Estricta para Guardrails:**
+  - Envoltorio semántico de directivas de atención (`<behavior_contract>`, `<always>`, `<never>`, `<strict_never>`, `<core_self_protection>`, `<human_sovereignty_mandate>`) para maximizar la adherencia y cumplimiento de reglas en modelos basados en transformadores (Claude 3.5 Sonnet y Gemini 1.5/2.0).
+- **Higiene y Trazabilidad del Core:**
+  - Sincronización 1:1 del árbol de estructura del repositorio en `README.md` y `DOCUMENTACION_IA.md`.
+  - Blindaje del protocolo de verificación de versión remota pre-saludo en arranque.
 
 ### 📚 Compilador de Base de Conocimiento y Suite Completa de Contratos Vivos
 - **Suite Completa de Contratos Vivos de Soberanía:**

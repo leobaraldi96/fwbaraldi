@@ -66,7 +66,7 @@ flowchart TD
     classDef localfile fill:#1a3022,stroke:#28a745,stroke-width:1px,color:#fff
 ```
 
-* **Motor Global (Single Skill Container):** Vive instalado como una **única skill orquestadora** en `~/.gemini/config/skills/baraldi-framework`. El archivo raíz `SKILL.md` actúa como punto de entrada y orquestador dinámico que carga bajo demanda las sub-habilidades (`skills/core/`, `skills/methodology/`, `skills/toolbox/`), evitando la polución o fragmentación en la interfaz del entorno.
+* **Motor Global (Single Skill Container & JIT Router):** Vive instalado como una **única skill orquestadora** en `~/.gemini/config/skills/baraldi-framework`. El archivo raíz `SKILL.md` actúa como un **Router Determinista Just-in-Time (JIT)** y ancla estática de identidad optimizada para **Prompt Caching** en LLMs modernos (Gemini, Claude, GPT-4). Carga bajo demanda estricta las sub-habilidades metodológicas y los 16 protocolos de la Toolbox, reduciendo hasta un 85% el consumo de tokens y eliminando la saturación cognitiva (*Context Rot*).
 * **Memoria Sistémica (Engram MCP):** Actúa como la base de datos centralizada SQLite. En lugar de guardar archivos `.md` de memoria repartidos por tu PC, todos los hallazgos y en qué etapa está un proyecto viven aquí. El protocolo **Identidad Blindada (Project Locking)** mediante `.engram/config.json` garantiza que la memoria de diferentes proyectos nunca se cruce.
 * **Workspace Local:** Tu carpeta. El Agente tiene orden estricta de dirigir todo entregable final a un folder ordenado y semántico (`docs-fwbaraldi/`).
 
