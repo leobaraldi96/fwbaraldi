@@ -32,6 +32,7 @@ fwbaraldi/
 ├── skills/
 │   ├── core/
 │   │   ├── 00_core_guardrails/       ← Reglas de disciplina, ergonomía cognitiva y comunicación
+│   │   ├── 00_kalman_guardrail/      ← Calibración agéntica y control de deriva
 │   │   ├── 00_operational_hygiene/   ← Branches, commits semánticos/work-units, handoff
 │   │   ├── 00_project_health_audit/  ← Framework Doctor (Auditoría de salud)
 │   │   ├── 00_skill_evaluation/      ← Skill Judge (Filtro de calidad)
@@ -48,6 +49,17 @@ fwbaraldi/
 │   │
 │   └── toolbox/                      ← Arsenal de 16 protocolos estratégicos
 │
+├── templates/                        ← Suite de Contratos Vivos de Soberanía
+│   ├── business_md.md
+│   ├── security_md.md
+│   ├── legal_md.md
+│   ├── ux_md.md
+│   ├── knowledge_md.md
+│   ├── decision_log.md
+│   ├── hallazgo_sistemico.md
+│   ├── ejemplo_knowledge_block.md
+│   └── docs_readme.md
+├── scripts/                          ← Utilidades CLI y automatizaciones
 ├── references/
 │   └── templates/
 │       └── baraldi_report_standard.css  ← Firma visual Dark Mode para reportes

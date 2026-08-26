@@ -262,6 +262,7 @@ fwbaraldi/
 ├── skills/
 │   ├── core/                               ← Consciencia del Framework (Reglas de Inmunidad)
 │   │   ├── 00_core_guardrails/             ← Barandas de contención y disciplina
+│   │   ├── 00_kalman_guardrail/            ← Calibración agéntica y control de deriva
 │   │   ├── 00_operational_hygiene/         ← Protocolos de ramas y handoff
 │   │   ├── 00_project_health_audit/        ← Framework Doctor (Auditoría de salud)
 │   │   ├── 00_skill_evaluation/            ← Skill Judge (Filtro de calidad)
@@ -300,14 +301,19 @@ fwbaraldi/
 │   ├── legal_md.md                         ← Contrato Regulatorio y Privacidad
 │   ├── ux_md.md                            ← Contrato de Ergonomía e Interacción
 │   ├── knowledge_md.md                     ← Base de Conocimiento y Manual de Producto
+│   ├── decision_log.md                     ← Registro cronológico de decisiones
+│   ├── hallazgo_sistemico.md               ← Template de hallazgo para Engram MCP
 │   ├── ejemplo_knowledge_block.md          ← Referencia Canónica ISO 26514 / Info Mapping
 │   └── docs_readme.md                      ← README y Calibrador de Rigor de docs-fwbaraldi/
 │
 ├── scripts/
+│   ├── align.js                            ← Auditoría y alineación de docs-fwbaraldi
 │   ├── backup.js                           ← Asistente de Backup de Memoria
-│   ├── restore.js                          ← Asistente de Restauración de Memoria
+│   ├── bump-footers.js                     ← Sincronizador de versiones en footers
 │   ├── install.js                          ← Instalador CLI interactivo
-│   └── internal-audit.js                   ← Guardián de Integridad y Versiones
+│   ├── internal-audit.js                   ← Guardián de Integridad y Versiones
+│   ├── restore.js                          ← Asistente de Restauración de Memoria
+│   └── sanitize-emojis.js                  ← Higiene de codificación UTF-8
 │
 ├── 00_Backlog_Estrategico.md               ← Hoja de ruta del propio Framework
 ├── MAPA_DE_ARTEFACTOS.md                   ← Catálogo oficial de entregables (v2.28.0)
