@@ -153,6 +153,13 @@ docs-fwbaraldi/
 - **Prohibición de Fuga (Zero-Leakage):** Queda prohibido generar carpetas temporales (ej: `scratch`), archivos de estilos (`.css`) o scripts sueltos (`.js`) fuera del directorio del artefacto.
 - **Cero Basura en la Raíz:** Si el sistema necesita archivos auxiliares para una landing, estos deben guardarse dentro de la subcarpeta del artefacto (ej: `docs-fwbaraldi/UXR/informe/assets/`).
 - **Bloqueo Preventivo:** Si el agente no está seguro de la ruta de destino, **debe frenar y preguntar** al usuario antes de escribir cualquier archivo en el disco.
+- **Universal UI & Voice Gatekeeper (Doble Aduana Inviolable en Código):**
+  - **Ámbito:** Aplica a cualquier propuesta o archivo generado/editado con texto visible al usuario (Microcopy, UI Copy, Errores, CTAs, Mensajes) o archivos con capacidad de renderizado (`.php`, `.html`, `.jsx`, `.tsx`, `.vue`, `.svelte`, `.blade.php`, `.twig`, emails HTML, o plantillas de sistema/error como `404.php`, `500.html`).
+  - **Prohibición de Sesgo Backend/Editorial:** La IA tiene terminantemente **PROHIBIDO** limitar `VOICE.md` a tareas de blog/redacción o categorizar código de servidor/error como "tarea pura de backend" para eludir los contratos.
+  - **Obligación Pre-Escritura Simultánea:** Antes de generar código, la IA **DEBE** consultar obligatoriamente:
+    1. `docs-fwbaraldi/DESIGN.md` (Línea de arte, tokens, variables CSS, tipografías reales y componentes nativos).
+    2. `docs-fwbaraldi/VOICE.md` (Voseo, tono directo, sin clichés de IA como "Oops!" ni solemnidad corporativa).
+  - **Prohibición de Slop Genérico:** Queda estrictamente prohibido recurrir a clases genéricas de frameworks por defecto (Bootstrap 5, Tailwind estándar, badges predeterminados) o copys corporativos impersonales en plantillas de sistema o error.
 - **Pureza del Repositorio:** No se deben copiar archivos operativos del framework (como este `SKILL.md` o el `context.md`) al workspace del usuario.
 
 ---

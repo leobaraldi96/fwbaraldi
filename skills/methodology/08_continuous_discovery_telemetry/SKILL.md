@@ -145,6 +145,9 @@ La IA vuelca las tareas aprobadas en las secciones correspondientes:
 - *Deuda Técnica / Lógica*
 - *Requisitos de Negocio*
 
+> [!IMPORTANT]
+> **Aduana Visual Obligatoria en Acciones de Telemetría:** Si la acción correctiva derivada de los datos implica crear o modificar archivos de renderizado o páginas de error/sistema (ej. eliminar una redirección 301 y crear `404.php`, rediseñar un modal de checkout, corregir un flujo de error en `.php`/`.html`/`.jsx`), la IA **NO DEBE** tratarlo como un cambio técnico aislado de backend. Debe invocar obligatoriamente el **Universal UI Gatekeeper** y leer `docs-fwbaraldi/DESIGN.md` y `docs-fwbaraldi/VOICE.md` para garantizar que la nueva plantilla herede 100% el ADN visual y de voz del proyecto.
+
 ### 3. El Salto a Etapa 01 (Nuevo Ciclo de Producto)
 Si el diagnóstico revela que la propuesta de valor original no funcionó o se descubrió un nuevo segmento de usuarios, la IA propone formalmente:
 > *"Los datos demuestran que el dolor principal cambió. ¿Querés que reabramos la **Etapa 01 (Problem Framing)** con esta evidencia para redefinir el Problem Statement?"*

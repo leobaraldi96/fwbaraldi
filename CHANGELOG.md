@@ -19,6 +19,8 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
   - `templates/action_registry_decisions.md`: Plantilla para `02_Action_Registry_and_Decisions.md`.
 - **Integración de Ruteo Global & Slash Command:**
   - Actualizado `/etapa [1-8]` en `SKILL.md` (local y global) y sincronizado con `00_boot/context.md`.
+- **Universal UI Gatekeeper (Aduana de Renderizado Inviolable):**
+  - Incorporado en `00_boot/context.md` y `00_core_guardrails/SKILL.md` un trigger determinista que fuerza la consulta de `docs-fwbaraldi/DESIGN.md` y `VOICE.md` ante la creación o edición de cualquier archivo de renderizado (`.php`, `.html`, `.jsx`, `.tsx`, `.vue`, `.blade.php`, `404.php`, `500.html`, etc.), erradicando el sesgo de backend y el uso de componentes genéricos (Bootstrap 5 o Tailwind default).
 
 ## [2.28.0] - 2026-08-26
 
