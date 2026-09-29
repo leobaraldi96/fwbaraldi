@@ -5,8 +5,8 @@ description: >
   Este framework obliga a la IA a adoptar metodologías rigurosas (Problem Framing, System Analysis, etc.)
   para ir más allá del diseño de interfaces y enfocarse en sistemas y outcomes.
   Úsalo cuando el usuario quiera iniciar un proceso de diseño de producto estructurado.
-keywords: product-design, framework-baraldi, problem-framing, system-analysis, ux-strategy, systems-thinking, continuous-discovery, telemetry
-version: "2.29.0"
+keywords: product-design, framework-baraldi, problem-framing, system-analysis, ux-strategy, systems-thinking, continuous-discovery, telemetry, showroom-ui
+version: "2.30.0"
 ---
 
 # Framework Baraldi — Orquestador Global
@@ -20,7 +20,7 @@ Guiar al equipo de producto a través de fases estructuradas de descubrimiento, 
 1. **Identidad & Boot:** Cargar `00_boot/context.md` (Punto de entrada estático).
 2. **Verificación de Versión (Mandatorio en Arranque):** Al entrar o retomar cualquier proyecto que use FWB, consultar la última versión en `https://raw.githubusercontent.com/leobaraldi96/fwbaraldi/main/package.json` y contrastar con la versión local activa. Si hay una nueva versión disponible, alertar proactivamente al usuario antes o dentro del Panel de Reingreso.
 3. **Consciencia Sistémica & Memoria:** Activar `skills/core/00_system_awareness/SKILL.md` para sincronizar la memoria de Engram y el contexto del proyecto activo.
-4. **Disciplina Operativa:** Cargar `skills/core/00_core_guardrails/SKILL.md` (Higiene, Anti-Slop y Naming).
+4. **Disciplina Operativa:** Cargar `skills/core/00_core_guardrails/SKILL.md` (Higiene, Anti-Slop, Naming y Pre-flight Check).
 5. **Carga Condicional de Etapa (Lazy Loading):**
    - No cargar todas las etapas en memoria. Cargar **únicamente** el archivo de la etapa activa:
      * **Etapa 01:** `skills/methodology/01_problem_framing/SKILL.md`
@@ -57,7 +57,7 @@ Cargar exclusivamente el protocolo solicitado por el usuario o requerido por el 
 
 ## Slash Commands (Atajos Semánticos para el Agente)
 Como agente de IA operando el framework, debes reconocer y ejecutar inmediatamente las siguientes directivas rápidas ingresadas por el usuario, evitando rodeos conversacionales:
-*   `/init` -> Inicializa la estructura conceptual del framework. **MANDATORIO:** Presenta interactivamente el selector de **Perfiles de Rigor Operativo** (1. Lean/MVP Express, 2. Standard Product, 3. Enterprise/Hardened, 4. Custom) para calibrar qué Contratos Vivos de Soberanía (`DESIGN`, `VOICE`, `BUSINESS`, `SECURITY`, `LEGAL`, `UX`, `KNOWLEDGE`) y qué nivel de documentación de CX se provisionarán en `docs-fwbaraldi/`.
+*   `/init` -> Inicializa la estructura conceptual del framework con **Onboarding Adaptativo**: detecta automáticamente si el workspace es Greenfield (vacío) para arrancar en Etapa 01 o si es In-flight/Legacy (código existente) para ofrecer auditoría de UI, extracción de `DESIGN.md`, creación de Showroom (`showroom.html`) y mapa de arquitectura. Calibra interactivamente los **Perfiles de Rigor Operativo** (Lean, Standard, Enterprise).
 *   `/etapa [1-8]` -> Salta directamente al contexto operativo de la etapa especificada (ej. `/etapa 1` activa Problem Framing, `/etapa 8` activa Telemetría y Continuous Discovery), cargando sus reglas y entregables adaptados al perfil de rigor activo.
 *   `/align` -> Ejecuta una auditoría de la carpeta del proyecto actual (`docs-fwbaraldi`) y notifica al usuario si falta alguna taxonomía o alineamiento.
 *   `/upgrade` -> Lee `docs-fwbaraldi/.UPGRADE_REPORT.md` e inicia la Refactorización Guiada. OBLIGATORIO: 1) Aconsejar backup de `docs-fwbaraldi` (ofrecer instrucciones manuales o hacerlo por consola). 2) Mostrar un plan detallado de qué se modificará. 3) Refactorizar archivo por archivo preservando 100% del valor original y esperando el "OK" humano en cada paso. NUNCA tocar código fuera de `docs-fwbaraldi`.

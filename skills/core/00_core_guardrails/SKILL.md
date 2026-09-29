@@ -159,6 +159,13 @@ docs-fwbaraldi/
   - **Obligación Pre-Escritura Simultánea:** Antes de generar código, la IA **DEBE** consultar obligatoriamente:
     1. `docs-fwbaraldi/DESIGN.md` (Línea de arte, tokens, variables CSS, tipografías reales y componentes nativos).
     2. `docs-fwbaraldi/VOICE.md` (Voseo, tono directo, sin clichés de IA como "Oops!" ni solemnidad corporativa).
+  - **Pre-flight Design & Voice Check (Inyección Obligatoria en CoT):** Para evitar la deriva probabilística de componentes genéricos, **ANTES** de escribir el bloque de código final en el chat o en disco, la IA DEBE anteponer la declaración explícita de tokens y reglas de voz aplicadas:
+    ```markdown
+    **[Pre-flight Design & Voice Check]**
+    - Tokens aplicados: [Valores extraídos de DESIGN.md]
+    - Voz aplicada: [Directivas de tono y voseo de VOICE.md]
+    - Clases nativas: [Componentes propios, cero Bootstrap/Tailwind estándar]
+    ```
   - **Prohibición de Slop Genérico:** Queda estrictamente prohibido recurrir a clases genéricas de frameworks por defecto (Bootstrap 5, Tailwind estándar, badges predeterminados) o copys corporativos impersonales en plantillas de sistema o error.
 - **Pureza del Repositorio:** No se deben copiar archivos operativos del framework (como este `SKILL.md` o el `context.md`) al workspace del usuario.
 

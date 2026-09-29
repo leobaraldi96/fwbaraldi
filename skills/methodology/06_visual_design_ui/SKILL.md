@@ -27,21 +27,29 @@ La IA debe:
 
 ---
 
-## Entregable Estrella: DESIGN.md (Agent-First Contract)
+## Entregables Estrella: DESIGN.md & Showroom / TestUI Interactivo
+
+### 1. DESIGN.md (Agent-First Contract)
 Este archivo es obligatorio y debe cumplir con el **[Protocolo 36] (Taste Design)** para evitar resultados genéricos. Debe contener:
 1. **Design Tokens (YAML):** Colores primarios, secundarios, estados, escalas de espaciado y tipografía.
 2. **CSS Variables Mapping:** Definición de variables para implementación directa.
 3. **Component Specs:** Reglas de redondeo (radius), sombras y bordes para componentes core.
 4. **Anti-Patterns List:** Lista de elementos prohibidos para este proyecto específico.
 
+### 2. Showroom / TestUI Interactivo (`docs-fwbaraldi/06_UI/showroom.html` o `test-ui.html`)
+Para erradicar la ceguera de contratos y permitir una auditoría visual simultánea entre humano e IA, la Etapa 06 debe generar y mantener vivo un archivo interactivo independiente:
+- **Vista Panorámica Total:** Expone en una sola pantalla todos los tokens reales (paleta, contraste, tipografías reales), componentes construidos (`.btn-*`, inputs, tarjetas, badges, modales) y sus estados (`:hover`, `:active`, `:disabled`, estados vacíos y de error).
+- **Herramienta Viva de Trabajo:** Cada vez que surge un nuevo componente o necesidad de UI en etapas posteriores (ej. páginas 404, modales de pago en E08), este componente **se añade primero al Showroom** para validar su consistencia visual antes de tocar las vistas productivas.
+- **Sincronización Bidireccional:** El Showroom se alimenta del `DESIGN.md` y, a su vez, sirve para alimentar visualmente el `DESIGN.md` con nuevos acuerdos estéticos tomados junto al usuario.
+
 ---
 
-## Flujo de la etapa — 4 momentos
+## Flujo de la etapa — 5 momentos
 
 0. **[MOMENTO 0] Design Intelligence:** El Motor Anti-Slop. Calibración de Taste, Layout y Guardrails UX (Reemplaza antiguas Skills 24, 36 y 38).
 1. **[MOMENTO 1] Design Tokens & Moodboard:** Definición de la paleta y el lenguaje visual. Generación del Sistema de Tokens Base.
 2. **[MOMENTO 2] High-Fidelity Components:** Creación de la biblioteca de componentes (Lógica Bottom-Up y Contrato Handoff).
-3. **[MOMENTO 3] DESIGN.md Generation:** Consolidación de la fuente de verdad agéntica.
+3. **[MOMENTO 3] DESIGN.md Generation & Showroom / TestUI:** Consolidación de la fuente de verdad agéntica y montaje de la vista interactiva panorámica (`showroom.html`).
 4. **[MOMENTO 4] Interactive Prototyping (Artifact):** Generación de un prototipo interactivo (React/Tailwind) listo para testeo.
 
 ---

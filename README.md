@@ -1,6 +1,6 @@
 # Framework Baraldi (FWB) 🤖⚡
 
-![Version](https://img.shields.io/badge/version-2.29.0-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-yellow) ![Memory](https://img.shields.io/badge/memory-Engram--v1.20.0-orange) ![Type](https://img.shields.io/badge/type-Agentic--Orchestrator-blueviolet)
+![Version](https://img.shields.io/badge/version-2.30.0-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-yellow) ![Memory](https://img.shields.io/badge/memory-Engram--v1.20.0-orange) ![Type](https://img.shields.io/badge/type-Agentic--Orchestrator-blueviolet)
 
 > [!NOTE]
 > **¿Hola, no entendés un carajo de lo que hay acá?** 👉 **[¡Siga por aquí! (Guía de bienvenida fácil para humanos)](./NO_ENTIENDO_NADA.md)** 🚀
@@ -79,6 +79,9 @@ Ninguno de los frameworks anteriores tiene estas características juntas:
 13. **Verificación de Versión Proactiva (v2.28.0)**: El Framework verifica automáticamente tu versión local contra el repositorio oficial para asegurar que el motor metodológico esté siempre al día.
 14. **Arquitectura Just-in-Time (JIT) & Prompt Caching**: Carga bajo demanda estricta de metodologías y protocolos, reduciendo hasta un 85% el consumo de tokens y acelerando la inferencia en LLMs avanzados (Gemini, Claude, GPT-4) sin saturación de contexto (*Context Rot*).
 15. **Sintaxis XML Estricta para Guardrails**: Restricciones y mandatos de comportamiento estructurados semánticamente en etiquetas XML para máxima adherencia en Claude y Gemini.
+16. **Onboarding Adaptativo (Greenfield vs In-flight)**: Detección automática al inicializar (`/init`) para guiar a proyectos desde cero con preguntas clave o auditar código existente para extraer `DESIGN.md` y arquitectura.
+17. **Panel de Reingreso con Próximo Paso Recomendado (Next Best Action)**: Cierre asertivo en cada sesión que propone de inmediato la tarea prioritaria para no perder el momentum de trabajo.
+18. **Showroom / TestUI Interactivo & Pre-flight Token Check**: Generación de vistas vivas (`showroom.html`) que exponen tokens y componentes en una sola pantalla, junto con la inyección obligatoria de tokens en CoT antes de emitir código.
 
 ---
 
@@ -305,6 +308,7 @@ fwbaraldi/
 │   ├── legal_md.md                         ← Contrato Regulatorio y Privacidad
 │   ├── ux_md.md                            ← Contrato de Ergonomía e Interacción
 │   ├── knowledge_md.md                     ← Base de Conocimiento y Manual de Producto
+│   ├── showroom_ui.html                    ← Vista Viva Panorámica de Tokens & TestUI
 │   ├── data_diagnostic_report.md           ← Informe de Diagnóstico de Datos e Insights
 │   ├── action_registry_decisions.md        ← Registro de Acciones y Decisiones de Telemetría
 │   ├── decision_log.md                     ← Registro cronológico de decisiones

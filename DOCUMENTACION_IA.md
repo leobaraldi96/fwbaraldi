@@ -56,6 +56,7 @@ fwbaraldi/
 │   ├── legal_md.md
 │   ├── ux_md.md
 │   ├── knowledge_md.md
+│   ├── showroom_ui.html
 │   ├── data_diagnostic_report.md
 │   ├── action_registry_decisions.md
 │   ├── decision_log.md

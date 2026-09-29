@@ -5,6 +5,23 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.30.0] - 2026-09-04
+
+### ⚡ Onboarding Adaptativo, Reingreso Proactivo y Showroom UI Interactivo
+- **Onboarding Adaptativo en Inicialización (`/init` & `context.md`):**
+  - Censo no-invasivo del Workspace para bifurcar la experiencia entre proyectos nuevos (Greenfield) y proyectos en curso (In-flight / Legacy).
+  - Guía inmediata a la Etapa 01 con 3 preguntas estratégicas para proyectos desde cero.
+  - Ofrecimiento de 4 vías de valor para proyectos existentes: auditoría de UI para extraer `DESIGN.md`, generación de Showroom UI, mapa de arquitectura y orden de backlog.
+- **Panel de Reingreso Proactivo con "Próximo Paso Recomendado" (Next Best Action):**
+  - El Boot Step -1 ahora formula una propuesta concreta y asertiva de acción inmediata para no perder el impulso de trabajo entre sesiones.
+- **Showroom / TestUI Interactivo (`showroom.html`):**
+  - Nueva plantilla canónica en `templates/showroom_ui.html` y formalización en `skills/methodology/06_visual_design_ui/SKILL.md` de una vista interactiva viva que expone tokens, componentes y estados juntos.
+  - Permite a humanos y a la IA auditar visualmente consistencias, detectar faltantes y extender el diseño en sincronía con `DESIGN.md`.
+- **Pre-flight Design & Voice Check (Inyección en CoT):**
+  - Obligación formal en `context.md` y `00_core_guardrails/SKILL.md` de declarar tokens de `DESIGN.md` y reglas de `VOICE.md` antes de emitir bloques de código de renderizado visual, eliminando la deriva de atención (*Attention Drift*).
+- **Poda Quirúrgica de Arneses Obsoletos:**
+  - Limpieza de advertencias sintácticas y roleplay redundantes para optimizar el consumo de tokens y acelerar la inferencia en modelos modernos (Gemini 2.0/3.0 y Claude 3.5/3.7).
+
 ## [2.29.0] - 2026-08-26
 
 ### 🚀 Etapa 08: Continuous Discovery & Data Intelligence (El Bucle Infinito)

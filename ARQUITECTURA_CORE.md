@@ -135,11 +135,10 @@ El objetivo primario aquí es *No escribir código hasta resolver los gaps de co
 ### 4.2 Sincronización de Proyectos En Curso (In-flight / Legacy)
 Uno de los mayores desafíos metodológicos es aplicar rigor a un proyecto que ya cuenta con meses de desarrollo. 
 
-Si un proyecto ya está comenzado, **NO obligamos al equipo a empezar de Etapa 01** repitiendo investigación redundante. Para esto usamos el concepto de **Auditoría de Sincronización**:
+En la versión **v2.30.0**, el framework incorpora el **Onboarding Adaptativo** en el arranque (`/init`):
+1. **Detección Automática de Pila:** El Agente escanea el workspace para detectar el stack (WordPress, React, Vue, Next.js, HTML) y el volumen de archivos existentes.
+2. **Generación del Showroom / TestUI Vivo (`showroom.html`):** Antes de tocar el código en producción, monta una vista interactiva panorámica con todos los tokens reales, componentes y estados detectados, permitiendo auditar la consistencia visual de inmediato.
+3. **Mapeo de Gaps:** En lugar de lanzar prompts de Etapa 01 redundantes, la IA genera la "Matriz de Deuda Sistémica" y extrae el `DESIGN.md`. Por ejemplo: *"Tienes el código funcionando (Etapa 05), pero no encuentro mapas de flujos lógicos (Etapa 03) ni métricas validadas (Etapa 01)."*
+4. **Acuerdo de Purismo y Rápido Valor:** El usuario y la IA deciden qué camino tomar (auditoría UI con Showroom, arquitectura o backlog) sin bloquear la velocidad del equipo.
 
-1. **Invocación Híbrida:** El usuario indica *"Quiero sumar este código legacy al Framework Baraldi"*.
-2. **Escaneo Superficial:** El Agente escanea las carpetas y levanta un inventario de lo que *hay* vs lo que *debería haber*.
-3. **Mapeo de Gaps:** En lugar de lanzar prompts de Etapa 01, la IA genera un "Matriz de Deuda Sistémica". Por ejemplo: *"Tienes el código funcionando (Etapa 05), pero no encuentro mapas de flujos lógicos (Etapa 03) ni métricas validadas (Etapa 01)."*
-4. **Acuerdo de Purismo:** El usuario y la IA deciden el nivel de purismo a adoptar. Puede ser que solo necesitemos correr la **Etapa 02 (System Analysis)** para documentar las dependencias ocultas, e ignorar el Problem Framing porque la empresa asume ese riesgo.
-
-> Esto garantiza que el framework actúe como un **consultor flexible** y no como un sistema burocrático bloqueante.
+> Esto garantiza que el framework actúe como un **consultor flexible y acelerador** y no como un sistema burocrático bloqueante.
