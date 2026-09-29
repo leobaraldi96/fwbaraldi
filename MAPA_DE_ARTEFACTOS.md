@@ -1,4 +1,4 @@
-# 🗺️ Mapa de Artefactos — Framework Baraldi (v2.30.0)
+# 🗺️ Mapa de Artefactos — Framework Baraldi (v2.31.0)
 
 Este documento es el catálogo oficial de todos los **outputs** que genera el framework. Sirve como guía para que el equipo de producto, diseño y desarrollo entienda qué se ha construido, para qué sirve y cómo aprovechar cada pieza de información.
 
@@ -73,7 +73,7 @@ Estos archivos viven en la carpeta **`docs-fwbaraldi/`** y son transversales a t
 *Misión: Estética premium y coherencia visual absoluta.*
 
 *   **Design Tokens System (`DESIGN.md`):** El ADN visual convertido en variables (CSS/JSON) y contrato agéntico.
-*   **Showroom & TestUI Interactivo (`showroom.html`):** Vista panorámica viva para auditar en una sola pantalla todos los tokens, componentes nativos y estados de interacción, retroalimentando en sincronía el `DESIGN.md`.
+*   **Living Showroom UI Hub & Dev Specs (`showroom.html`):** Vista panorámica interactiva y viva para auditar tokens, componentes nativos y estados de interacción (`hover`, `focus`, `disabled`, `error`), documentando especificaciones para desarrolladores (clases, opciones, snippets de código listos para producción) en sincronía proactiva con `DESIGN.md`.
 *   **Component Specs:** Documentación técnica de cómo se construye cada botón, card o menú (redondeos, sombras, elevación).
 *   **Interactive Prototype:** Demo funcional para testear la "sensación" del producto antes de escribir una sola línea de código final.
 

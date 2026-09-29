@@ -153,20 +153,15 @@ docs-fwbaraldi/
 - **Prohibición de Fuga (Zero-Leakage):** Queda prohibido generar carpetas temporales (ej: `scratch`), archivos de estilos (`.css`) o scripts sueltos (`.js`) fuera del directorio del artefacto.
 - **Cero Basura en la Raíz:** Si el sistema necesita archivos auxiliares para una landing, estos deben guardarse dentro de la subcarpeta del artefacto (ej: `docs-fwbaraldi/UXR/informe/assets/`).
 - **Bloqueo Preventivo:** Si el agente no está seguro de la ruta de destino, **debe frenar y preguntar** al usuario antes de escribir cualquier archivo en el disco.
-- **Universal UI & Voice Gatekeeper (Doble Aduana Inviolable en Código):**
-  - **Ámbito:** Aplica a cualquier propuesta o archivo generado/editado con texto visible al usuario (Microcopy, UI Copy, Errores, CTAs, Mensajes) o archivos con capacidad de renderizado (`.php`, `.html`, `.jsx`, `.tsx`, `.vue`, `.svelte`, `.blade.php`, `.twig`, emails HTML, o plantillas de sistema/error como `404.php`, `500.html`).
-  - **Prohibición de Sesgo Backend/Editorial:** La IA tiene terminantemente **PROHIBIDO** limitar `VOICE.md` a tareas de blog/redacción o categorizar código de servidor/error como "tarea pura de backend" para eludir los contratos.
-  - **Obligación Pre-Escritura Simultánea:** Antes de generar código, la IA **DEBE** consultar obligatoriamente:
-    1. `docs-fwbaraldi/DESIGN.md` (Línea de arte, tokens, variables CSS, tipografías reales y componentes nativos).
-    2. `docs-fwbaraldi/VOICE.md` (Voseo, tono directo, sin clichés de IA como "Oops!" ni solemnidad corporativa).
-  - **Pre-flight Design & Voice Check (Inyección Obligatoria en CoT):** Para evitar la deriva probabilística de componentes genéricos, **ANTES** de escribir el bloque de código final en el chat o en disco, la IA DEBE anteponer la declaración explícita de tokens y reglas de voz aplicadas:
-    ```markdown
-    **[Pre-flight Design & Voice Check]**
-    - Tokens aplicados: [Valores extraídos de DESIGN.md]
-    - Voz aplicada: [Directivas de tono y voseo de VOICE.md]
-    - Clases nativas: [Componentes propios, cero Bootstrap/Tailwind estándar]
-    ```
-  - **Prohibición de Slop Genérico:** Queda estrictamente prohibido recurrir a clases genéricas de frameworks por defecto (Bootstrap 5, Tailwind estándar, badges predeterminados) o copys corporativos impersonales en plantillas de sistema o error.
+- **Universal UI, Showroom & Voice Gatekeeper (Triple Aduana Inviolable en Renderizado):**
+  - **Ámbito:** Aplica a cualquier nueva vista, página, sección, módulo, modal, formulario o archivo con capacidad de renderizado (`.php`, `.html`, `.jsx`, `.tsx`, `.vue`, `.svelte`, `.blade.php`, `.twig`, emails HTML, o plantillas de sistema/error como `404.php`, `500.html`).
+  - **Prohibición Estricta de Invención:** Queda terminantemente **PROHIBIDO inventar componentes, clases, estilos improvisados o copys aislados**.
+  - **La Tríada de Policías de Consistencia:** Antes de emitir o proponer código, la IA DEBE consultar obligatoriamente:
+    1. `docs-fwbaraldi/06_UI/showroom.html`: Inspeccionar si el componente/patrón ya existe, respetando su marcado, modificadores y estados (`hover`, `focus`, `disabled`, `error`). Si no existe, se diseña y aprueba con el humano agregándolo al Showroom primero.
+    2. `docs-fwbaraldi/DESIGN.md`: Tokens de color, variables CSS, familias tipográficas reales, escalas y bordes/sombras.
+    3. `docs-fwbaraldi/VOICE.md`: Voseo, tono directo, sin clichés de IA ni solemnidad, rigiendo estrictamente el Sentence case en español.
+  - **Pre-flight Check en CoT:** Anteponer la declaración explícita de componentes del Showroom, tokens y directivas de voz aplicadas.
+  - **Prohibición de Slop Genérico:** Cero recursos a frameworks por defecto (Bootstrap 5 o Tailwind estándar) sin declarar en los contratos.
 - **Pureza del Repositorio:** No se deben copiar archivos operativos del framework (como este `SKILL.md` o el `context.md`) al workspace del usuario.
 
 ---
@@ -265,27 +260,35 @@ La IA debe actuar como un curador de información, aplicando estos principios en
 
 Para evitar interfaces fragmentadas o código redundante e insostenible, la IA debe adherirse estrictamente a las siguientes leyes de construcción de interfaz:
 
-1.  **Herencia de Estilo y Línea de Diseño Transversal:**
+1.  **Herencia de Estilo, Línea de Diseño Transversal e Higiene CSS:**
     - Toda guía, estilo, token, color, tipografía, espaciado o patrón de diseño establecido en una página (como la Home) **aplica automáticamente por defecto al resto de las páginas y nuevas secciones**, a menos que se indique explícitamente lo contrario.
     - Si se definen tokens de diseño (`design_tokens.md` o variables globales de estilo), se deben reutilizar y heredar de manera transversal. La creación de estilos locales improvisados está estrictamente prohibida.
-2.  **Reutilización Absoluta de Componentes (DRY UI):**
-    - Los componentes de interfaz comunes (como `nav` de navegación, `footer` de pie de página, menús, layouts de página o botones) son **activos reutilizables únicos**, no elementos independientes clonados con el mismo código.
-    - Al crear una nueva vista o página, la IA debe importar o reutilizar la misma estructura y archivos del componente ya definido en la Home o vistas previas.
-    - La duplicación de lógica o de marcado CSS/HTML para componentes semánticamente idénticos se considera un fallo grave en la calidad del desarrollo.
-3.  **El Contrato Visual Agéntico (DESIGN.md):**
-    - El archivo `DESIGN.md` es un documento de texto estructurado en lenguaje Markdown que describe el sistema de diseño visual del proyecto. Actúa como una guía de referencia rápida, pero está optimizado específicamente para que los agentes de Inteligencia Artificial lo lean y lo comprendan.
-    - Sus propósitos son:
-      * **Consistencia visual:** Almacena reglas de diseño para que, cuando la IA genere interfaces, pantallas o componentes, estos mantengan el mismo estilo (colores, tipografías, márgenes, redondeo de bordes).
-      * **Portabilidad:** Permite exportar e importar estas reglas de diseño entre diferentes proyectos o herramientas de IA sin tener que empezar desde cero.
-      * **Estructura:** Contiene especificaciones técnicas (como códigos hexadecimales de color o valores de espaciado en CSS) combinadas con lenguaje natural.
-    - El Agente **debe** crear este artefacto en la Etapa 06 (o proponer su creación en modo retrofit al comenzar a diseñar o codificar) y mantenerlo actualizado.
-    - Antes de diseñar o codificar cualquier nueva vista, componente o sección, la IA **DEBE** leer obligatoriamente el `DESIGN.md` existente en el workspace para alinear la nueva pantalla y evitar desviaciones de la línea de diseño.
+    - **Prohibición Absoluta de CSS Inline (`style="..."`):** Queda terminantemente **PROHIBIDO insertar estilos inline** en elementos de interfaz. Todo estilo debe originarse en los tokens, variables CSS y clases nativas del sistema.
+    - **Prohibición de Inflación de Clases y Contaminación de Frameworks:** Si el proyecto utiliza un framework (Tailwind, Bootstrap, shadcn/ui), la IA **NO DEBE** acumular clases innecesarias ni clases por defecto que ensucien o ignoren las reglas globales ya acordadas (ej. botones, tarjetas o tipografías).
+    - **Mandato de Consulta ante Reglas Faltantes (Anti-Improvisación):** Si una vista requiere un elemento, estado o variante que **no está documentado en `showroom.html` ni en `DESIGN.md`**, la IA tiene prohibido inventar clases o estilos sobre la marcha. Debe frenar, notificar al humano y proponer su incorporación formal en el Showroom y en el contrato de diseño.
+2.  **Reutilización Absoluta y Componentización Modular (DRY UI & Atomic Slicing):**
+    - Los componentes de interfaz comunes (como `nav` de navegación, `footer` de pie de página, menús, layouts de página, botones, modales, cards o tablas) son **activos reutilizables únicos**, no elementos independientes clonados con el mismo código.
+    - **Prohibición de Monolitos de Página (Anti-Monolith Mandate):** La IA tiene terminantemente **PROHIBIDO amontonar lógica, llamadas a datos, marcado y estilos en un solo archivo gigante** (páginas de 500+ líneas).
+    - **Estándar en Next.js / TypeScript / React:**
+      * Las páginas (`page.tsx`) actúan como **orquestadores/ensambladores** de alto nivel.
+      * Todo componente interactivo o visualmente delimitado vive en su propio archivo (`components/ui/` o `components/features/`).
+      * Las interfaces y contratos de datos viven en archivos `.types.ts`.
+      * La lógica de interacción, transformaciones y estado complejo vive en custom hooks (`hooks/use[Feature].ts`).
+      * Respetar las fronteras de Server Components (RSC) y aislar `'use client'` únicamente en componentes hoja que requieran eventos del navegador.
+    - **Estándar en HTML / PHP / Frontend Tradicional (Tríada Sanitaria Desacoplada):**
+      * **Estructura (Semántica):** Marcado limpio en `.html` o partials modulares `.php` (`header.php`, `card.php`, etc.).
+      * **Decoración (Estilos):** Estilos desacoplados en archivos `.css` externos o clases nativas del sistema. **Prohibido el uso de estilos inline (`style="..."`) o etiquetas `<style>` incrustadas en las vistas**.
+      * **Interacción (Comportamiento):** Módulos `.js` externos desacoplados. **Prohibido el uso de etiquetas `<script>` con lógica interactiva pegada dentro del HTML/PHP**.
+3.  **El Contrato Visual Agéntico (DESIGN.md) y Showroom UI Hub:**
+    - El archivo `DESIGN.md` es un documento de texto estructurado en lenguaje Markdown que describe el sistema de diseño visual del proyecto.
+    - **Showroom UI (`showroom.html`):** Es el espejo interactivo visual en vivo de `DESIGN.md`. Cada vez que se declaran o modifican tokens, componentes, botones, inputs o layouts, **el Agente DEBE actualizar de forma viva y proactiva `docs-fwbaraldi/06_UI/showroom.html`**. Debe incluir la vista previa funcional, todos sus estados (`hover`, `focus`, `disabled`, `error`), especificaciones para devs (clases, modificadores) y snippets de código copiables.
+    - Antes de diseñar o codificar cualquier nueva vista, componente o sección, la IA **DEBE** leer obligatoriamente el `DESIGN.md` existente en el workspace y verificar el `showroom.html` para evitar duplicación o discrepancias.
 4.  **Alineación Proactiva de Voz y Contenido (Copy & Voice Lock):**
     - Al generar maquetados, layouts, prototipos o código de interfaz frontend (HTML, CSS, Vue, React, etc.), la IA **debe** verificar proactivamente la existencia de `docs-fwbaraldi/VOICE.md` o directivas en `docs-fwbaraldi/UXW/`.
     - Si existen, queda prohibida la inserción de textos genéricos, "Lorem Ipsum" o copys sueltos no alineados. La IA debe adaptar los copys al estándar de voz definido y ofrecer esta alineación preguntando explícitamente en el chat: *"He detectado que tenemos definidas directivas de voz en VOICE.md. ¿Querés que alinee automáticamente los copys de la interfaz a este estándar al generar el código?"*.
-5.  **Validación Obligatoria Pre-entrega (QA de Diseño y Voz):**
-    - Al crear una vista o componente nuevo, **está estrictamente prohibido finalizar la tarea o darla por completada** hasta que no se realice de manera automática un check de alineación con el `docs-fwbaraldi/DESIGN.md` (si ya existe) y `docs-fwbaraldi/VOICE.md` (si ya existe).
-    - Esta validación debe contrastar que los tokens de color, espaciado fluidos (unidades relativas `rem`) y tipografía se alineen exactamente con el `DESIGN.md`, y que la redacción, ortografía y microcopy sigan las directrices del `VOICE.md` (Sentence case obligatorio en español y anti-slop).
+5.  **Validación Obligatoria Pre-entrega (QA de Diseño, Showroom, Modularidad y Voz):**
+    - Al crear una vista o componente nuevo, **está estrictamente prohibido finalizar la tarea o darla por completada** hasta que no se realice de manera automática un check de alineación con la Triple Aduana (`docs-fwbaraldi/DESIGN.md`, `docs-fwbaraldi/06_UI/showroom.html` y `docs-fwbaraldi/VOICE.md`), sumado a la **verificación de modularidad sanitaria** (cero monolitos, separación de responsabilidades y desacoplamiento de capas).
+    - Esta validación debe contrastar que los tokens de color, espaciado fluidos (unidades relativas `rem`) y tipografía se alineen exactamente con el `DESIGN.md`, que el componente quede documentado en el Showroom vivo, y que la redacción, ortografía y microcopy sigan las directrices del `VOICE.md` (Sentence case obligatorio en español y anti-slop).
     - Se debe notificar y detallar explícitamente al usuario en el chat que este proceso de QA ha sido realizado de forma exitosa antes de entregar la salida.
 
 ---

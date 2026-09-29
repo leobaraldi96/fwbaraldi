@@ -36,11 +36,18 @@ Este archivo es obligatorio y debe cumplir con el **[Protocolo 36] (Taste Design
 3. **Component Specs:** Reglas de redondeo (radius), sombras y bordes para componentes core.
 4. **Anti-Patterns List:** Lista de elementos prohibidos para este proyecto específico.
 
-### 2. Showroom / TestUI Interactivo (`docs-fwbaraldi/06_UI/showroom.html` o `test-ui.html`)
-Para erradicar la ceguera de contratos y permitir una auditoría visual simultánea entre humano e IA, la Etapa 06 debe generar y mantener vivo un archivo interactivo independiente:
-- **Vista Panorámica Total:** Expone en una sola pantalla todos los tokens reales (paleta, contraste, tipografías reales), componentes construidos (`.btn-*`, inputs, tarjetas, badges, modales) y sus estados (`:hover`, `:active`, `:disabled`, estados vacíos y de error).
-- **Herramienta Viva de Trabajo:** Cada vez que surge un nuevo componente o necesidad de UI en etapas posteriores (ej. páginas 404, modales de pago en E08), este componente **se añade primero al Showroom** para validar su consistencia visual antes de tocar las vistas productivas.
-- **Sincronización Bidireccional:** El Showroom se alimenta del `DESIGN.md` y, a su vez, sirve para alimentar visualmente el `DESIGN.md` con nuevos acuerdos estéticos tomados junto al usuario.
+### 2. Showroom UI & Living Component Library (`docs-fwbaraldi/06_UI/showroom.html` o `test-ui.html`)
+Para erradicar la ceguera de contratos y permitir una auditoría visual simultánea entre humano e IA, la Etapa 06 genera y mantiene vivo este archivo interactivo bajo el principio de **Agnosticismo Estricto**:
+- **Naturaleza Agnóstica y Co-construida:** La plantilla base de `showroom.html` **NO impone componentes predeterminados** (no asume botones, tarjetas ni alertas de cajón). La estructura de componentes se va poblando y descubriendo en un diálogo ida y vuelta con el usuario a partir de sus necesidades reales o su código preexistente.
+- **Vista Panorámica Total & Impacto Inmediato:** A medida que se definen tokens y componentes, se exponen en una sola pantalla con sus valores reales (paleta, tipografía, espaciados) y sus estados (`:hover`, `:active`, `:disabled`, `:focus`, estados vacíos y de error). Esto permite al usuario auditar al instante cómo impacta cualquier cambio global o nuevo elemento en todo el ecosistema.
+- **Herramienta Viva de Actualización Continua (Mandato Proactivo):** Cada vez que se crea o modifica `DESIGN.md`, se añade un token o se acuerda un nuevo componente (ej. modales, menús, estados de carga, páginas de error), **este archivo se actualiza de manera activa y simultánea**.
+- **Documentación Técnica Completa para Devs (Dev Specs & Snippets):** Todo componente acordado con el humano debe documentarse en el Showroom con:
+  1. **Indicaciones de uso:** Propósito del elemento y reglas de interacción.
+  2. **Opciones y Modificadores:** Tabla con clases CSS, variantes de tamaño/color y propiedades disponibles.
+  3. **Estados documentados en funcionamiento:** Ejemplos funcionales e interactivos de cada estado (`normal`, `hover`, `focus`, `disabled`, `error`, `loading`).
+  4. **Snippet de código listo para producción:** Bloque con botón de copiado rápido para desarrolladores.
+- **Sincronización Bidireccional y Recomendación de Validación:** El Showroom se alimenta del `DESIGN.md` y, a su vez, sirve para validar visualmente nuevos acuerdos estéticos antes de tocar las vistas productivas.
+- **Entrega Visible del Enlace (Mandato Proactivo):** Cada vez que el agente cree, actualice o modifique tokens o componentes en `DESIGN.md` o en vistas de UI, **debe proveer explícitamente en el chat el enlace directo al archivo local** (`[Abrir Showroom UI](file:///.../docs-fwbaraldi/06_UI/showroom.html)`) recomendando al usuario abrirlo en su navegador para validar visualmente el impacto inmediato del cambio.
 
 ---
 
@@ -84,12 +91,13 @@ El Agente debe **bloquear** el proceso si detecta:
 1.  **NEVER uses tipografías genéricas (Inter) en High-End:** El uso de Inter en productos premium es un "AI Tell". Usa Geist, Satoshi o Outfit.
 2.  **NEVER permitas "Alucinaciones Visuales":** Todo componente debe usar los tokens definidos en el `DESIGN.md`. Prohibido inventar clases ad-hoc.
 3.  **NEVER avances sin el DESIGN.md:** Este archivo es el contrato agéntico. Sin él, no hay fuente de verdad para el desarrollo.
-4.  **NEVER ignores la auditoría i18n:** El diseño debe estar preparado para traducciones y expansión de textos.
-5.  **NEVER entregues un diseño final sin hitos de decisión:** La UI es el resultado de una calibración continua con el humano.
-6.  **NEVER ignores los estándares A11y en tokens:** Contraste y tamaños deben ser validados matemáticamente.
+6.  **NEVER ignores los estándares A11y en tokens ni uses fuentes menores a 10px:** Contraste y tamaños deben ser validados matemáticamente. **Prohibido terminantemente usar `font-size` menor a 10px (0.625rem)** en cualquier elemento, texto legal, badge o pie de foto.
+7.  **NEVER generes vistas monolíticas o acoplamiento tóxico:** Prohibido amontonar JSX, lógica de fetch, tipos y estilos en un solo archivo gigante (ej: `page.tsx` de 500+ líneas). Divide en componentes atómicos (`components/ui/`), custom hooks y tipos aislados. En PHP/HTML, separa estrictamente estructura (marcado), decoración (CSS modular) e interacción (JS externo).
+8.  **NEVER uses CSS inline ni inventes clases no acordadas:** Prohibido el uso de `style="..."` o cadenas de clases utilitarias de frameworks (Tailwind/Bootstrap/shadcn) que ensucien o contradigan las clases globales. Si un estilo no está en `showroom.html` + `DESIGN.md`, no se improvisa: se consulta al usuario para extender el sistema.
 
 ## ALWAYS List — Mandatos de Comportamiento
 - **Siempre** justifica la estética basada en beneficios técnicos (legibilidad) o psicológicos.
+- **Siempre** fragmenta la interfaz en componentes modulares reutilizables y desacoplados.
 - **Siempre** utiliza el *Taste Spectrum* como una conversación para calibrar el diseño.
 - **Siempre** prepara el terreno para la sincronización 1:1 con Figma (API Sync).
 - **Siempre** documenta las reglas de redondeo, sombras y elevación en las especificaciones.

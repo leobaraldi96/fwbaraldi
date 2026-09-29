@@ -6,7 +6,7 @@ description: >
   para ir más allá del diseño de interfaces y enfocarse en sistemas y outcomes.
   Úsalo cuando el usuario quiera iniciar un proceso de diseño de producto estructurado.
 keywords: product-design, framework-baraldi, problem-framing, system-analysis, ux-strategy, systems-thinking, continuous-discovery, telemetry, showroom-ui
-version: "2.30.0"
+version: "2.31.0"
 ---
 
 # Framework Baraldi — Orquestador Global

@@ -54,8 +54,9 @@ Este archivo es un mapa para vos y para tu agente de IA. Resume exactamente qué
 
 ### `06_Visual_Design/`
 *   **¿Qué tiene?** Especificaciones de interfaz de alta fidelidad, tokens de diseño y directrices estéticas.
+*   **Showroom UI & Living Component Library:** [`docs-fwbaraldi/06_UI/showroom.html`](./06_UI/showroom.html) — Vista panorámica interactiva viva donde podés ver y probar todos los tokens, botones, formularios y componentes en vivo con sus especificaciones técnicas y estados.
 *   **¿Para qué sirve?** Guía el "Look & Feel" y la construcción final de la UI.
-*   **Uso del Agente:** La IA lo utiliza como sistema de diseño para estructurar componentes o generar código frontend sin alucinar estilos genéricos.
+*   **Uso del Agente:** La IA lo utiliza como sistema de diseño para estructurar componentes o generar código frontend sin alucinar estilos genéricos. **Recomendación proactiva:** Cada vez que se incorporen o modifiquen elementos visuales o tokens, la IA actualizará el Showroom y te dejará el enlace directo para que puedas abrirlo en tu navegador y validar visualmente el impacto del cambio.
 
 ### `07_Handover_QA/`
 *   **¿Qué tiene?** Los contratos de entrega a desarrollo, criterios de aceptación técnica y reportes de QA.

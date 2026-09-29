@@ -5,6 +5,27 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.31.0] - 2026-09-28
+
+### 🎨 Showroom UI Vivo, Triple Aduana y Arquitectura Sanitaria Modular
+- **Ley Sagrada de Accesibilidad Tipográfica (Umbral Mínimo 10px / 0.625rem):**
+  - Consagrada la prohibición absoluta de utilizar cualquier tamaño de fuente menor a **10px** (`0.625rem`) en cualquier proyecto, vista, badge, pie de foto, micro-etiqueta o texto legal. Todo valor inferior se cataloga como fallo crítico de accesibilidad y legibilidad.
+- **Higiene Estricta de CSS y Prohibición de Clases Fantasma (Anti-Class Inflation):**
+  - **Prohibición Absoluta de CSS Inline:** Prohibido el uso de `style="..."` o etiquetas `<style>` empotradas en HTML/JSX/PHP.
+  - **Cero Clases No Declaradas de Frameworks:** Prohibido ensuciar el marcado con clases utilitarias sobrantes (Tailwind, Bootstrap, shadcn) que contradigan o ignoren las clases globales ya acordadas (ej. botones, cards, tipografía).
+  - **Mandato de Consulta ante Ausencia de Regla:** Si una vista requiere un estilo o variante no contemplado en `showroom.html` + `DESIGN.md`, la IA tiene prohibido inventarlo sobre la marcha: debe frenar, advertir al humano y proponer su incorporación formal primero.
+- **Mandato de Arquitectura Sanitaria, Fragmentación y Componentización Modular:**
+  - Prohibición estricta de monolitos de código y acoplamiento tóxico (vistas de 500+ líneas).
+  - **Next.js / TS / React:** Páginas como orquestadores limpios, componentes atómicos desacoplados (`components/ui/`, `components/features/`), tipos en `.types.ts`, lógica en custom hooks (`use[Feature].ts`) y aislamiento estricto de Server/Client Components (`'use client'`).
+  - **HTML / PHP / Vanilla:** Separación sanitaria de la tríada: Estructura (marcado semántico/partials), Decoración (CSS externo/tokens, cero inline styles) e Interacción (módulos JS externos, cero scripts embebidos en el template).
+- **La Tríada de Policías de Consistencia (`showroom.html` + `DESIGN.md` + `VOICE.md`):**
+  - Consagrada la **Triple Aduana Inviolable** en `00_boot/context.md` y `skills/core/00_core_guardrails/SKILL.md`. Al crear o modificar cualquier vista, página, sección o módulo, queda terminantemente prohibido inventar o improvisar componentes o estilos.
+  - La IA debe consultar obligatoriamente: 1) `showroom.html` para respetar componentes existentes, estados y marcado; 2) `DESIGN.md` para tokens y variables; 3) `VOICE.md` para microcopy, tono y Sentence case.
+- **Living Showroom UI Hub & Documentación para Devs (`showroom.html`):**
+  - Plantilla agnóstica sin componentes predeterminados forzados, estructurada para co-crear y registrar componentes vivos, tablas de especificaciones técnicas (clases, modificadores) y snippets copiables para desarrolladores.
+- **Mandato de Sincronía Bidireccional y Enlace Visible en Chat:**
+  - Tras cualquier cambio de UI, la IA debe entregar el enlace local directo al `showroom.html` en el chat recomendando al humano abrirlo en su navegador para validar visualmente el impacto del cambio.
+
 ## [2.30.0] - 2026-09-04
 
 ### ⚡ Onboarding Adaptativo, Reingreso Proactivo y Showroom UI Interactivo

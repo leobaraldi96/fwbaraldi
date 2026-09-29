@@ -1,6 +1,6 @@
 # Framework Baraldi (FWB) 🤖⚡
 
-![Version](https://img.shields.io/badge/version-2.30.0-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-yellow) ![Memory](https://img.shields.io/badge/memory-Engram--v1.20.0-orange) ![Type](https://img.shields.io/badge/type-Agentic--Orchestrator-blueviolet)
+![Version](https://img.shields.io/badge/version-2.31.0-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-yellow) ![Memory](https://img.shields.io/badge/memory-Engram--v1.20.0-orange) ![Type](https://img.shields.io/badge/type-Agentic--Orchestrator-blueviolet)
 
 > [!NOTE]
 > **¿Hola, no entendés un carajo de lo que hay acá?** 👉 **[¡Siga por aquí! (Guía de bienvenida fácil para humanos)](./NO_ENTIENDO_NADA.md)** 🚀
