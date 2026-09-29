@@ -135,10 +135,11 @@ El objetivo primario aquí es *No escribir código hasta resolver los gaps de co
 ### 4.2 Sincronización de Proyectos En Curso (In-flight / Legacy)
 Uno de los mayores desafíos metodológicos es aplicar rigor a un proyecto que ya cuenta con meses de desarrollo. 
 
-En la versión **v2.30.0**, el framework incorpora el **Onboarding Adaptativo** en el arranque (`/init`):
+En la versión **v2.31.0**, el framework incorpora el **Onboarding Adaptativo** en el arranque (`/init`) y la **Triple Aduana Inviolable**:
 1. **Detección Automática de Pila:** El Agente escanea el workspace para detectar el stack (WordPress, React, Vue, Next.js, HTML) y el volumen de archivos existentes.
-2. **Generación del Showroom / TestUI Vivo (`showroom.html`):** Antes de tocar el código en producción, monta una vista interactiva panorámica con todos los tokens reales, componentes y estados detectados, permitiendo auditar la consistencia visual de inmediato.
-3. **Mapeo de Gaps:** En lugar de lanzar prompts de Etapa 01 redundantes, la IA genera la "Matriz de Deuda Sistémica" y extrae el `DESIGN.md`. Por ejemplo: *"Tienes el código funcionando (Etapa 05), pero no encuentro mapas de flujos lógicos (Etapa 03) ni métricas validadas (Etapa 01)."*
-4. **Acuerdo de Purismo y Rápido Valor:** El usuario y la IA deciden qué camino tomar (auditoría UI con Showroom, arquitectura o backlog) sin bloquear la velocidad del equipo.
+2. **Generación del Living Showroom UI Hub (`showroom.html`):** Antes de tocar el código en producción, monta una vista interactiva viva, agnóstica y documentada con todos los tokens reales, componentes, estados y especificaciones para desarrolladores (snippets copiables).
+3. **La Triple Aduana Inviolable (`showroom.html` + `DESIGN.md` + `VOICE.md`):** Al construir o modificar cualquier vista, la IA consulta de forma sincronizada esta tríada para garantizar cero improvisación visual, cero clases residuales y cero CSS inline, respetando la fragmentación modular y la accesibilidad ($\ge 10\text{px}$).
+4. **Mapeo de Gaps:** En lugar de lanzar prompts de Etapa 01 redundantes, la IA genera la "Matriz de Deuda Sistémica" y extrae el `DESIGN.md`.
+5. **Acuerdo de Purismo y Rápido Valor:** El usuario y la IA deciden qué camino tomar (auditoría UI con Showroom, arquitectura o backlog) sin bloquear la velocidad del equipo.
 
 > Esto garantiza que el framework actúe como un **consultor flexible y acelerador** y no como un sistema burocrático bloqueante.

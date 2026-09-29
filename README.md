@@ -81,7 +81,9 @@ Ninguno de los frameworks anteriores tiene estas características juntas:
 15. **Sintaxis XML Estricta para Guardrails**: Restricciones y mandatos de comportamiento estructurados semánticamente en etiquetas XML para máxima adherencia en Claude y Gemini.
 16. **Onboarding Adaptativo (Greenfield vs In-flight)**: Detección automática al inicializar (`/init`) para guiar a proyectos desde cero con preguntas clave o auditar código existente para extraer `DESIGN.md` y arquitectura.
 17. **Panel de Reingreso con Próximo Paso Recomendado (Next Best Action)**: Cierre asertivo en cada sesión que propone de inmediato la tarea prioritaria para no perder el momentum de trabajo.
-18. **Showroom / TestUI Interactivo & Pre-flight Token Check**: Generación de vistas vivas (`showroom.html`) que exponen tokens y componentes en una sola pantalla, junto con la inyección obligatoria de tokens en CoT antes de emitir código.
+18. **Living Showroom UI Hub & Dev Specs (`showroom.html`)**: Catálogo interactivo agnóstico que expone tokens, componentes vivos en todos sus estados funcionales y tablas de especificaciones técnicas con snippets copiables para desarrolladores, con enlace directo entregado en el chat.
+19. **La Triple Aduana Inviolable (`showroom.html` + `DESIGN.md` + `VOICE.md`)**: Tríada de policías de consistencia obligatoria antes de renderizar cualquier vista, garantizando cero improvisación estética, gramatical o de componentes.
+20. **Mandato de Arquitectura Sanitaria, Higiene CSS y Umbral A11y ($\ge 10\text{px}$)**: Prohibición estricta de monolitos y CSS inline (`style="..."`), fragmentación en componentes atómicos y desacoplamiento de estructura, estilos e interacción. Prohibición universal de fuentes menores a 10px en cualquier interfaz.
 
 ---
 
