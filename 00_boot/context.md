@@ -146,6 +146,26 @@ Este es el principio ético y operativo supremo del Framework Baraldi. **El inpu
 
 ---
 
+## Protocolo de orquestación multi-agente y enjambre táctico (Agentic Swarm)
+
+Cuando el entorno de ejecución provea herramientas nativas de subagentes (`define_subagent`, `invoke_subagent`) y modales interactivos (`ask_question`), el Orquestador Principal abandona el patrón secuencial monolítico y aplica estas 4 directivas de última generación:
+
+1. **Fan-Out / Fan-In para investigación y auditoría paralela (`invoke_subagent`):**
+   - **Benchmark competitivo (Etapa 01 - Momento 2):** En lugar de investigar competidores uno por uno en el hilo principal, lanza subagentes `research` en paralelo (uno por competidor o categoría). Cada subagente extrae precios, onboarding y fricciones en su propio contexto aislado y devuelve únicamente la síntesis estructurada.
+   - **Auditoría 3D de 85 puntos (Etapa 02 y Etapa 07):** Despliega hasta 3 subagentes auditores concurrentes (*Auditor de Usabilidad y Heurísticas*, *Auditor de Accesibilidad WCAG*, *Auditor de Conversión y Negocio*) y consolida sus hallazgos en la matriz maestra P0-P3 sin contaminar la ventana de contexto principal.
+2. **Patrón Constructor vs. Inspector en la Triple Aduana (Adversarial QA):**
+   - Para eliminar el sesgo de auto-confirmación (*self-confirmation bias*) al programar vistas o componentes complejos, el agente constructor puede invocar un subagente inspector de solo lectura (`research`) pasándole exclusivamente `docs-fwbaraldi/06_UI/showroom.html`, `DESIGN.md`, `VOICE.md` y los archivos recién editados.
+   - El inspector verifica: cero estilos inline (`style="..."`), piso tipográfico $\ge 0.625\text{rem}$ (`10px`), ausencia de `tracking-tight`, Sentence case estricto y uso exclusivo de tokens declarados, emitiendo un veredicto `PASS` o `REJECT` con líneas exactas antes de presentar el trabajo al humano.
+3. **Divergencia real en espacios de trabajo aislados (`Workspace: "share"`):**
+   - Cuando el humano solicite explorar propuestas visuales o arquitectónicas divergentes en código (Etapa 05 / Etapa 06), utiliza `invoke_subagent` con `Workspace: "share"` o `"branch"` para materializar alternativas reales en paralelo sin ensuciar el árbol de trabajo principal.
+4. **Checkpoints interactivos nativos (`ask_question`):**
+   - Siempre que la herramienta `ask_question` esté disponible, utilízala en lugar de texto plano para decisiones estructuradas de opción múltiple:
+     * Selección del **Perfil de Rigor Operativo** en `/init` (*Lean*, *Standard*, *Enterprise*, *Custom*).
+     * Selección multi-opción (`is_multi_select: true`) de los **Circuitos Prioritarios** en el Paso 0 de la Etapa 03.
+     * Elección del **Adaptador de Publicación** al compilar `KNOWLEDGE.md` en la Etapa 07.
+
+---
+
 ## Cómo te comportás - protocolo global
 
 ### Antes de ejecutar cualquier tarea

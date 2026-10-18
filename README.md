@@ -76,7 +76,7 @@ Ninguno de los frameworks anteriores tiene estas características juntas:
 10. **Proactividad de Soporte**: El sistema propone proactivamente formatos de alta fidelidad (Landings/Dashboards HTML) cuando la densidad de datos lo requiere, eliminando la pasividad del agente.
 11. **Contratos Vivos de Soberanía (`DESIGN`, `VOICE`, `BUSINESS`, `SECURITY`, `LEGAL`, `UX`, `KNOWLEDGE`)**: El framework genera archivos de "Fuente de Verdad" diseñados específicamente para ser leídos por humanos y otras IAs, garantizando que el diseño, negocio, seguridad y soporte se mantengan blindados e inmutables.
 12. **Arsenal de Toolbox (16 Protocolos)**: Protocolos estratégicos modulares de alta densidad para slicing de epics, triaje de issues, pricing, data-driven design y compilación de conocimiento de producto.
-13. **Verificación de Versión Proactiva (v2.28.0)**: El Framework verifica automáticamente tu versión local contra el repositorio oficial para asegurar que el motor metodológico esté siempre al día.
+13. **Verificación de Versión Proactiva (v2.31.0)**: El Framework verifica automáticamente tu versión local contra el repositorio oficial para asegurar que el motor metodológico esté siempre al día.
 14. **Arquitectura Just-in-Time (JIT) & Prompt Caching**: Carga bajo demanda estricta de metodologías y protocolos, reduciendo hasta un 85% el consumo de tokens y acelerando la inferencia en LLMs avanzados (Gemini, Claude, GPT-4) sin saturación de contexto (*Context Rot*).
 15. **Sintaxis XML Estricta para Guardrails**: Restricciones y mandatos de comportamiento estructurados semánticamente en etiquetas XML para máxima adherencia en Claude y Gemini.
 16. **Onboarding Adaptativo (Greenfield vs In-flight)**: Detección automática al inicializar (`/init`) para guiar a proyectos desde cero con preguntas clave o auditar código existente para extraer `DESIGN.md` y arquitectura.
@@ -84,6 +84,7 @@ Ninguno de los frameworks anteriores tiene estas características juntas:
 18. **Living Showroom UI Hub & Dev Specs (`showroom.html`)**: Catálogo interactivo agnóstico que expone tokens, componentes vivos en todos sus estados funcionales y tablas de especificaciones técnicas con snippets copiables para desarrolladores, con enlace directo entregado en el chat.
 19. **La Triple Aduana Inviolable (`showroom.html` + `DESIGN.md` + `VOICE.md`)**: Tríada de policías de consistencia obligatoria antes de renderizar cualquier vista, garantizando cero improvisación estética, gramatical o de componentes.
 20. **Mandato de Arquitectura Sanitaria, Higiene CSS y Umbral A11y ($\ge 10\text{px}$)**: Prohibición estricta de monolitos y CSS inline (`style="..."`), fragmentación en componentes atómicos y desacoplamiento de estructura, estilos e interacción. Prohibición universal de fuentes menores a 10px en cualquier interfaz.
+21. **Orquestación Multi-Agente y Enjambre Táctico (Agentic Swarm & Adversarial QA)**: Ejecución en paralelo (*Fan-Out / Fan-In*) de subagentes para investigación competitiva y auditorías 3D (85 pts), validación adversaria (Constructor vs. Inspector) en la Triple Aduana, prototipado divergente en ramas aisladas (`Workspace: "share"`) y checkpoints interactivos nativos (`ask_question`).
 
 ---
 

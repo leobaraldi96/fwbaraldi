@@ -27,12 +27,14 @@ Al usar `mem_save`, `mem_compare` o realizar auditorías, el Agente DEBE clasifi
 - **SEARCH:** Buscar pendientes en la memoria (`mem_search("pendientes OR backlog")`).
 - **CROSS-PROJECT DISCOVERY:** Cuando se diseñe un patrón común (ej. KYC, checkout, onboarding) o el usuario pregunte cómo se resolvió antes, ejecutar `mem_search(query="...", all_projects=true)` para rescatar patrones de diseño previos.
 
-### 2. Registro Proactivo y Save-Nudge (Durante la Sesión)
+### 2. Registro Proactivo, Taxonomía y Save-Nudge (Durante la Sesión)
 Usar `mem_save` proactivamente en los siguientes hitos:
 - Toma de decisión arquitectónica, de negocio o de diseño.
 - Validación o refutación de una hipótesis (UXR o analítica).
 - Descubrimiento de un riesgo técnico o dependencia crítica.
 - Aprobación de un artefacto por parte del humano.
+- **Taxonomía canónica (`mem_suggest_topic_key`):** Cuando se registre un hallazgo que no corresponda a una llave fija de etapa, utilizar `mem_suggest_topic_key` para mantener consistencia semántica sin inventar prefijos arbitrarios.
+- **Captura pasiva (`mem_capture_passive`):** Utilizar al procesar documentos extensos o transcripciones del usuario para extraer aprendizajes clave sin interrumpir el flujo conversacional.
 - **Save-Nudge de 15 Minutos:** En sesiones o talleres intensivos de diseño, hacer un guardado intermedio de hitos consolidados para no depender únicamente del cierre final.
 
 **Formato Mandatorio (What/Why/Where/Learned):**
@@ -43,13 +45,13 @@ Usar `mem_save` proactivamente en los siguientes hitos:
 **Learned**: [insight o gotcha descubierto]
 ```
 
-### 3. Ciclo de Vida y Auditoría de Vigencia (`mem_review`)
-- Usar `mem_review(action="list")` al iniciar auditorías (`00_project_health_audit`) o al comenzar etapas avanzadas (E05/E06) para identificar hipótesis de Problem Framing que hayan vencido su ciclo de revisión (`review_after`).
-- Revalidar con el humano y ejecutar `mem_review(action="mark_reviewed", observation_id=ID)` para actualizar su vigencia.
+### 3. Juicio Semántico y Auditoría de Vigencia (`mem_judge` & `mem_compare`)
+- **Evaluación de contradicciones (`mem_judge` / `mem_compare`):** Al iniciar auditorías (`00_project_health_audit`) o al comenzar etapas avanzadas (E05/E06), evaluar si las decisiones recientes de UI o arquitectura entran en conflicto (`conflicts_with`) o reemplazan (`supersedes`) hipótesis de Problem Framing (E01/E02).
+- **Gobernanza en Subagentes (Fan-Out / Fan-In):** Cuando se desplieguen subagentes en paralelo (`invoke_subagent`), los subagentes de investigación operan en modo lectura (`mem_search` / `mem_context`) y **solo el Orquestador Principal** ejecuta `mem_save` una vez consolidados y validados los hallazgos, evitando condiciones de carrera o entradas duplicadas en SQLite.
 
 ### 4. Sincronización Atómica (Cierre de Sesión)
 - **MANDATORIO:** Ejecutar `mem_session_summary()` antes de cerrar.
-- **ORDEN:** 1. Guardar memorias sueltas → 2. Resumen de sesión → 3. Mensaje humano final.
+- **ORDEN:** 1. Guardar memorias sueltas -> 2. Resumen de sesión -> 3. Mensaje humano final.
 
 ### 5. Salvaguarda de Memoria (Formateo y Migración)
 - **Detección Activa:** Si el usuario comenta que formateará su equipo, migrará a otra computadora o solicita respaldo de sus proyectos, la IA debe orientarlo de inmediato a ejecutar `fwbaraldi backup` (o `npx github:leobaraldi96/fwbaraldi backup`).
