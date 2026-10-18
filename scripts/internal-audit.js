@@ -114,23 +114,76 @@ if (!guardrails.includes(currentVersion)) {
     reportSuccess(`Versión sincronizada en 00_core_guardrails/SKILL.md`);
 }
 
-// 4. Check Etapas Metodología
+// 4. Check Etapas Metodología y Cableado Secuencial
 const methodologyDir = path.join(rootDir, 'skills', 'methodology');
+console.log(chalk.yellow(`\n🔗 Auditando Etapas de Metodología y Cableado Secuencial (01 a 08)...`));
+
 for (let i = 1; i <= 8; i++) {
     const etapa = `0${i}`;
     const etapaDirName = fs.readdirSync(methodologyDir).find(d => d.startsWith(etapa));
     if (!etapaDirName) {
         reportIssue(`Falta la carpeta de la Etapa ${etapa} en methodology/`);
     } else {
-        reportSuccess(`Etapa ${etapa} presente: ${etapaDirName}`);
-        
-        // Check Bridge Architecture
-        const etapaFile = path.join(methodologyDir, etapaDirName, 'SKILL.md');
+        const etapaDirPath = path.join(methodologyDir, etapaDirName);
+        const etapaFile = path.join(etapaDirPath, 'SKILL.md');
         const etapaContent = fs.readFileSync(etapaFile, 'utf8');
-        if (etapaContent.includes('## 🛠️ Integración con la Toolbox') || etapaContent.includes('(Bridge Architecture)')) {
+
+        reportSuccess(`Etapa ${etapa} presente: ${etapaDirName}`);
+
+        // 4.1 Check Versión sincronizada en la etapa
+        if (!etapaContent.includes(currentVersion)) {
+            reportIssue(`  ↳ Versión ${currentVersion} no sincronizada en ${etapaDirName}/SKILL.md`);
+        }
+
+        // 4.2 Check Ortotipografía (cero guiones largos —)
+        if (etapaContent.includes('—')) {
+            reportIssue(`  ↳ Se detectaron guiones largos (—) prohibidos en ${etapaDirName}/SKILL.md`);
+        }
+
+        // 4.3 Check Bridge Architecture y Protocolo de Handoff
+        if (etapaContent.includes('(Bridge Architecture)')) {
             reportSuccess(`  ↳ Bridge Architecture verificado`);
         } else {
-            reportIssue(`  ↳ Falta conexión con Toolbox (Bridge Architecture)`);
+            reportIssue(`  ↳ Falta conexión con Toolbox (Bridge Architecture) en ${etapaDirName}`);
+        }
+
+        if (etapaContent.includes('Protocolo de memoria y handoff')) {
+            reportSuccess(`  ↳ Tabla de persistencia Engram y Handoff verificados`);
+        } else {
+            reportIssue(`  ↳ Falta bloque estandarizado 'Protocolo de memoria y handoff' en ${etapaDirName}`);
+        }
+
+        // 4.4 Verificar que todos los archivos skills/momento_*.md en disco estén conectados en SKILL.md
+        const subSkillsDir = path.join(etapaDirPath, 'skills');
+        if (fs.existsSync(subSkillsDir)) {
+            const momentoFiles = fs.readdirSync(subSkillsDir).filter(f => f.startsWith('momento_') && f.endsWith('.md'));
+            momentoFiles.forEach(mf => {
+                const relRef = `skills/${mf}`;
+                if (!etapaContent.includes(relRef)) {
+                    reportIssue(`  ↳ Sub-archivo huérfano no conectado en ${etapaDirName}/SKILL.md: ${relRef}`);
+                }
+            });
+            if (momentoFiles.length > 0) {
+                reportSuccess(`  ↳ ${momentoFiles.length} sub-archivos momento_*.md conectados correctamente`);
+            }
+        }
+
+        // 4.5 Verificar existencia física en disco de todas las rutas relativas en backticks o paréntesis
+        const relPathRegex = /(?:`| \()((?:\.\.\/|skills\/)[^\s`)]+\.(?:md|html))(?:`|\))/g;
+        let match;
+        let brokenLinks = 0;
+        let checkedLinks = 0;
+        while ((match = relPathRegex.exec(etapaContent)) !== null) {
+            const relTarget = match[1];
+            const resolvedPath = path.resolve(etapaDirPath, relTarget);
+            checkedLinks++;
+            if (!fs.existsSync(resolvedPath)) {
+                reportIssue(`  ↳ Ruta rota en ${etapaDirName}/SKILL.md: '${relTarget}' (no existe en ${resolvedPath})`);
+                brokenLinks++;
+            }
+        }
+        if (brokenLinks === 0 && checkedLinks > 0) {
+            reportSuccess(`  ↳ ${checkedLinks} cables/rutas relativas verificadas físicamente en disco`);
         }
     }
 }
