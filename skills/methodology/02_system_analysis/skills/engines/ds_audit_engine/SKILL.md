@@ -5,10 +5,10 @@ description: >
   Evalúa coherencia visual, cobertura de biblioteca, accesibilidad, calidad de
   documentación e implementación técnica en código.
 keywords: design-system, health-check, audit, macro-audit, design-ops, scalability
-version: "2.28.0"
+version: "2.31.0"
 ---
 
-# Skill 31 — Comprehensive Design System Audit Protocol (Health Check)
+# Comprehensive Design System Audit Protocol (Health Check)
 
 Este protocolo se activa para realizar una evaluación de alto nivel (macro) sobre la salud integral de un sistema de diseño o producto maduro. El Agente actúa como un **Design Operations (DesignOps) Lead**, diagnosticando el ecosistema completo para identificar áreas de degradación o deuda técnica estructural.
 
@@ -62,4 +62,4 @@ El output final debe consolidarse en:
 - **Sinergia:** Detecta problemas a gran escala que luego serán resueltos quirúrgicamente por las **Skills 25, 29 y 30**.
 
 ---
-*Framework Baraldi v2.28.0 · Skill 31*
+*Framework Baraldi v2.31.0 · Skill 31*

@@ -30,7 +30,10 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
   - Limpieza ortotipográfica transversal en `00_boot/context.md`, `00_core_guardrails/SKILL.md` y `06_visual_design_ui/SKILL.md` (Sentence case estricto y erradicación de guiones largos `—`).
   - Unificación de la taxonomía de `docs-fwbaraldi/` en `00_core_guardrails/SKILL.md` (`06_UI/showroom.html`, `08_Telemetry/` y contratos vivos en raíz).
   - Optimización de latencia en el Boot Step -3 paralelizando llamadas a Engram y volviendo `mem_search` condicional a la ausencia de `00_Backlog_Estrategico.md`.
-  - Evolución de `scripts/internal-audit.js` para validar automáticamente ausencia de estilos inline en plantillas, ausencia de guiones largos en `context.md` y sincronía de versión en sub-skills core.
+  - **Cableado Secuencial Completo (Etapas 01 a 08):** Conexión explícita de los 28 sub-archivos `skills/momento_*.md`, estandarización del bloque *Protocolo de memoria y handoff* (persistencia Engram + handoff explícito a la etapa siguiente) y verificación física en disco de las 132 rutas relativas.
+  - **Poda Quirúrgica de Arneses (Harness Pruning) y Desanclaje de Dominio:** Eliminación de carpetas anidadas duplicadas en inglés (`ux-audit-rethink`, `wcag-accessibility-audit`), destilación de teoría básica redundante en los motores y momentos pesados (reduciendo más de 3.700 líneas de ruido de contexto sin perder una sola matriz o regla propietaria) y reemplazo de ejemplos fijos de maquetismo en Etapa 02 por plantillas agnósticas.
+  - **Auditoría Profunda en `scripts/internal-audit.js`:** Validación recursiva de los 78 archivos Markdown bajo `skills/` (sincronía a `v2.31.0`, erradicación total de guiones largos `—` / `–` y limpieza de encabezados legados `# Skill XX`).
+
 
 ## [2.30.0] - 2026-09-04
 

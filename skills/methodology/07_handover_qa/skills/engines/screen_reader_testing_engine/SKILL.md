@@ -4,10 +4,10 @@ description: >
   Protocolo operativo para la ejecución de pruebas con lectores de pantalla (VoiceOver, NVDA, TalkBack).
   Proporciona scripts de prueba, comandos esenciales y criterios de éxito para validar la experiencia de usuario con tecnología asistiva.
 keywords: a11y, screen reader, VoiceOver, NVDA, TalkBack, testing script, runbook, accesibilidad manual.
-version: "2.28.0"
+version: "2.31.0"
 ---
 
-# Skill 31 — Protocolo de Pruebas con Lector de Pantalla & Runbook
+# Protocolo de Pruebas con Lector de Pantalla & Runbook
 
 Este protocolo transforma la evaluación de accesibilidad de una "lista de deseos" en un **Script de Pruebas ejecutable**. Su objetivo es que cualquier miembro del equipo (QA, Dev o Designer) pueda auditar sistemáticamente la experiencia auditiva del producto.
 
@@ -49,13 +49,13 @@ Este protocolo transforma la evaluación de accesibilidad de una "lista de deseo
 
 ---
 
-## NEVER List — Lo que NUNCA debemos hacer
+## NEVER List - Lo que NUNCA debemos hacer
 - **NUNCA** confíes solo en herramientas automáticas (Lighthouse/Axe); el 70% de la accesibilidad es semántica y lógica que solo se detecta escuchando.
 - **NUNCA** uses un `tabindex` mayor a 0; rompe el orden natural de lectura y desorienta al usuario.
 - **NUNCA** dejes imágenes sin atributo `alt` (si son decorativas, usa `alt=""` para que el lector las ignore).
 - **NUNCA** incluyas frases como "Imagen de..." en el texto alternativo; el lector ya anuncia que el elemento es una imagen.
 
-## ALWAYS List — Mandatos de Accesibilidad Auditiva
+## ALWAYS List - Mandatos de Accesibilidad Auditiva
 - **SIEMPRE** verifica que el nombre accesible (`aria-label`) coincida con la intención visual del botón.
 - **SIEMPRE** anuncia los cambios de contenido dinámico que ocurren sin recargar la página.
 - **SIEMPRE** prueba los flujos críticos (Compra, Registro, Login) de principio a fin solo con el lector activado.
@@ -82,4 +82,4 @@ Este protocolo transforma la evaluación de accesibilidad de una "lista de deseo
 ```
 
 ---
-*Framework Baraldi v2.28.0 · Skill 31 · Engine de Pruebas AT*
+*Framework Baraldi v2.31.0 · Engine de Pruebas AT*

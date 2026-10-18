@@ -6,7 +6,7 @@ description: >
   (botones, errores, empty states, onboarding). Asegura que el contenido sea accesible,
   conciso, mitigue el sesgo WEIRD en LatAm y alinee con la voz del producto.
 keywords: ux-writing, content-design, microcopy, accessibility, tone-of-voice, weird-bias, error-messages
-version: "2.28.0"
+version: "2.31.0"
 ---
 
 # UX Writing & Content Design Engine
@@ -40,7 +40,7 @@ Queda **estrictamente prohibido** cometer los siguientes errores de redacción e
 7. **Anti-Latin Abbreviations:** En interfaces en inglés, nunca usar abreviaciones latinas como `e.g.`, `i.e.`, `etc.`, `via` o `vs`. Utilizar alternativas en lenguaje plano (ej: `for example`, `that is`, `and so on`).
 8. **Anti-Gerunds:** No terminar tooltips o descripciones de error con gerundios decorativos débiles (ej. *Prohibido:* "...permitiendo ahorrar tiempo", *Correcto:* "... Esto te permite ahorrar tiempo").
 9. **Anti-Emojis:** Queda estrictamente prohibido incluir emojis en botones, tooltips, placeholders, diálogos de confirmación o mensajes de error. Clutarean el layout y mimetizan contenido de spam.
-10. **Anti-Long-Dashes:** No usar guiones largos (`—` o `–`) para incisos en la interfaz. Rompen el flujo visual en layouts pequeños y causan problemas con los lectores de pantalla. Usar comas o paréntesis.
+10. **Anti-Long-Dashes:** No usar guiones largos (` - ` o ` - `) para incisos en la interfaz. Rompen el flujo visual en layouts pequeños y causan problemas con los lectores de pantalla. Usar comas o paréntesis.
 
 ---
 
@@ -75,7 +75,7 @@ Al organizar los diccionarios de traducción (JSON), el Agente sugerirá la nome
 
 ---
 
-## Voz vs. Tono — La Distinción Fundamental
+## Voz vs. Tono - La Distinción Fundamental
 > **Regla de Oro:** La **VOZ** es invariante (la personalidad del producto). El **TONO** es contextual (cómo suena esa personalidad según el estado emocional del usuario).
 
 ### Matriz de Adaptación de Tono
@@ -162,4 +162,4 @@ Antes de finalizar cualquier microcopy, verifica:
 - [ ] **Sesgo WEIRD:** Se contempla la realidad de LatAm (baja conectividad, pasarelas locales).
 
 ---
-*Framework Baraldi v2.28.0 · skills/methodology/05_interaction_design_ux/skills/engines/ux_writing_engine/SKILL.md*
+*Framework Baraldi v2.31.0 · skills/methodology/05_interaction_design_ux/skills/engines/ux_writing_engine/SKILL.md*

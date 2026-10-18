@@ -7,7 +7,7 @@ description: >
   Trigger: Al iniciar la etapa 02, o cuando se cierra formalmente la Etapa 01.
 ---
 
-# Etapa 02: System Analysis — Apertura
+# Etapa 02: System Analysis - Apertura
 
 ¡Excelente trabajo cerrando el Problem Framing! Ahora que tenemos el problema validado, es momento de entrar en la "sala de máquinas" del producto.
 
@@ -27,4 +27,4 @@ Para empezar, voy a recuperar los hallazgos de la Etapa 01 desde nuestra memoria
 **Confirmame:** ¿Hubo algún cambio de último momento en la hipótesis central o en el alcance del proyecto que deba tener en cuenta antes de mapear el sistema?
 
 ---
-*Framework Baraldi v2.28.0 · Momento 0: Apertura de E2*
+*Framework Baraldi v2.31.0 · Momento 0: Apertura de E2*

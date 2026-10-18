@@ -4,10 +4,10 @@ description: >
   Protocolo para la generación de reportes de salud trimestrales (QBR).
   Consolida métricas de adopción, retención, negocio y calidad para la rendición de cuentas.
 keywords: QBR, métricas, KPI, salud, retención, churn, ROI, gobernanza, reporte ejecutivo
-version: "2.28.0"
+version: "2.31.0"
 ---
 
-# Skill 12 — Protocolo de Salud de Producto (QBR)
+# Protocolo de Salud de Producto (QBR)
 
 Esta skill actúa como un **CPO (Chief Product Officer) / VP of Product**. Su misión es dar visibilidad total sobre el impacto real del producto al final de cada ciclo (Quarter), detectando riesgos tempranos, celebrando victorias basadas en data y alineando la estrategia futura.
 
@@ -28,13 +28,13 @@ El reporte debe estructurarse en torno a estos tres pilares de métricas:
 
 ---
 
-## NEVER List — Anti-patrones de Reporte
+## NEVER List - Anti-patrones de Reporte
 - **NUNCA** ocultes los resultados negativos. El valor del QBR está en la honestidad radical y la capacidad de pivotar ante el fallo.
 - **NUNCA** presentes métricas de vanidad (ej. "clics totales") que no tengan una correlación directa con los OKRs de negocio.
 - **NUNCA** entregues un reporte sin un análisis de "Aprendizajes". Un número sin contexto es ruido.
 - **NUNCA** ignores la voz del usuario (feedback cualitativo) al explicar un cambio en las métricas.
 
-## ALWAYS List — Mandatos de Gobernanza
+## ALWAYS List - Mandatos de Gobernanza
 - **SIEMPRE** vincula el desempeño del trimestre a los OKRs definidos en la **Etapa 01**.
 - **SIEMPRE** define el "Top 3 de Prioridades" para el próximo ciclo basándote en la data del QBR.
 - **SIEMPRE** utiliza un lenguaje ejecutivo (TL;DR al inicio) para que los stakeholders tomen decisiones rápidas.
@@ -48,4 +48,4 @@ El reporte debe estructurarse en torno a estos tres pilares de métricas:
 3. **Strategic Pivot Plan:** Recomendaciones de cambio de rumbo basadas en el análisis del trimestre.
 
 ---
-*Framework Baraldi v2.28.0 · Skill 12 · Salud y Gobernanza*
+*Framework Baraldi v2.31.0 · Salud y Gobernanza*

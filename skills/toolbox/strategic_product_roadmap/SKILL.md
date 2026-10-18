@@ -4,10 +4,10 @@ description: >
   Protocolo para la creación y mantenimiento de Roadmaps Estratégicos. Transforma OKRs
   en secuencias lógicas de entrega de valor (Now/Next/Later) para alinear al equipo.
 keywords: roadmap, estrategia, planificación, iniciativas, Now-Next-Later, ROI, horizontes
-version: "2.28.0"
+version: "2.31.0"
 ---
 
-# Skill 13 — Protocolo de Roadmap Estratégico de Producto
+# Protocolo de Roadmap Estratégico de Producto
 
 Esta skill actúa como un **Product Strategist / Head of Product**. Su misión es asegurar que el roadmap no sea una simple "lista de deseos" o un cronograma rígido de features, sino una secuencia lógica y priorizada de entrega de valor que maximiza el ROI y mitiga riesgos.
 
@@ -31,13 +31,13 @@ Identificación proactiva de bloqueos:
 
 ---
 
-## NEVER List — Anti-patrones de Roadmap
+## NEVER List - Anti-patrones de Roadmap
 - **NUNCA** prometas fechas fijas de lanzamiento a largo plazo (certidumbre falsa). El roadmap es una intención, no un contrato de entrega.
 - **NUNCA** incluyas una feature que no pueda rastrearse hasta un hallazgo de la **Etapa 01** o **02**.
 - **NUNCA** permitas que el roadmap sea solo una lista de features técnicas. Debe hablar de **Outcomes** (resultados para el usuario y el negocio).
 - **NUNCA** ignores la capacidad real del equipo (bandwidth) al planificar el horizonte "Now".
 
-## ALWAYS List — Mandatos Estratégicos
+## ALWAYS List - Mandatos Estratégicos
 - **SIEMPRE** revisa y ajusta el roadmap mensualmente basado en los nuevos aprendizajes y data.
 - **SIEMPRE** comunica los trade-offs de forma explícita: "Si hacemos X ahora, tendremos que mover Y al horizonte Next".
 - **SIEMPRE** define métricas de éxito (Success Criteria) para cada tema del roadmap.
@@ -51,4 +51,4 @@ Identificación proactiva de bloqueos:
 3. **Dependency & Risk Map:** Análisis de posibles bloqueos y planes de mitigación.
 
 ---
-*Framework Baraldi v2.28.0 · Skill 13 · Roadmap Estratégico*
+*Framework Baraldi v2.31.0 · Roadmap Estratégico*

@@ -5,10 +5,10 @@ description: >
   componentes de UI. Utiliza una matriz de Impacto vs. Frecuencia y mapeo de 
   dependencias para generar un Roadmap de desarrollo por fases.
 keywords: component-library, inventory, roadmap, dependencies, ui-architecture, scale
-version: "2.28.0"
+version: "2.31.0"
 ---
 
-# ðŸ—„ï¸ Skill 35 â€” Component Inventory & Prioritization Protocol
+# ðŸ - „ï¸ Skill 35 â€” Component Inventory & Prioritization Protocol
 
 Este protocolo se activa al iniciar la construcciÃ³n (o refactorizaciÃ³n masiva) de una biblioteca de componentes. El Agente actÃºa como un **Arquitecto de UI**, garantizando que el equipo de diseÃ±o y desarrollo construya las piezas correctas, en el orden correcto, sin romper las dependencias estructurales.
 
@@ -64,5 +64,5 @@ Documentar explÃ­citamente las relaciones para evitar cuellos de botella:
 - **Sinergia:** Define el backlog de trabajo. Las piezas identificadas aquÃ­ se documentarÃ¡n luego en la **Etapa 06 Momento 2** (Especificaciones atÃ³micas) y se codificarÃ¡n y validarÃ¡n con la **Skill 30**.
 
 ---
-*Framework Baraldi v2.28.0 Â· Skill 35*
+*Framework Baraldi v2.31.0 Â· Skill 35*
 

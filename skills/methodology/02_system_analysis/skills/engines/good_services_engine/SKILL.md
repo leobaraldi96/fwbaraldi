@@ -5,7 +5,7 @@ description: >
   Se utiliza durante la Etapa 02 (System Analysis) para mapear servicios de extremo a extremo (Service Blueprints),
   diagnosticar fricciones operativas y asegurar que la experiencia sea agnóstica a la estructura organizacional.
 keywords: service-design, blueprint, good-services, journey-map, system-analysis
-version: "2.28.0"
+version: "2.31.0"
 ---
 
 # Good Services Engine
@@ -60,13 +60,13 @@ Cuando se solicite una **"Auditoría de Servicio"**, la IA evaluará el flujo co
 14. Explica por qué se tomó una decisión (rechazos).
 15. **Hace fácil obtener asistencia humana.**
 
-** El Triple Estándar de Calidad — Un servicio es "Good" cuando es:**
+** El Triple Estándar de Calidad - Un servicio es "Good" cuando es:**
 - **Bueno para el Usuario:** Lo ayuda a lograr su objetivo sin esfuerzo innecesario.
 - **Bueno para la Organización:** Sostenible (costo, riesgo, capacidad) y alineado con los objetivos de negocio.
 - **Bueno para la Sociedad:** No genera daño evitable (exclusión, sesgo, impacto ambiental).
 > Usar este trío al priorizar mejoras y elegir métricas de éxito.
 
-** Scorecard de Auditoría — Formato Obligatorio:**
+** Scorecard de Auditoría - Formato Obligatorio:**
 Cuando se audite un servicio, documentar cada principio con esta tabla:
 
 | # | Principio | Score (0-2) | Evidencia (dato/investigación) | Dónde falla en el journey | Fix ideas |
@@ -143,13 +143,13 @@ Cuando se quiera mapear la experiencia desde la perspectiva del usuario (sin el 
 ### 4. Service Standard (Principios 14 y 15)
 Para servicios donde las decisiones automáticas o rechazos son frecuentes, documentar obligatoriamente:
 
-**Decision Policy (Principio 14 — Explicar decisiones):**
+**Decision Policy (Principio 14 - Explicar decisiones):**
 - ¿Qué decisiones toma el servicio de forma automática?
 - ¿Qué inputs usa y por qué importan?
 - ¿Cómo se le explica al usuario la decisión?
 - ¿Cómo puede el usuario apelar o corregir sus datos?
 
-**Human Assistance Model (Principio 15 — Asistencia humana fácil):**
+**Human Assistance Model (Principio 15 - Asistencia humana fácil):**
 - Puntos de entrada a ayuda humana (dónde y cómo se accede).
 - Reglas de triage y escalada.
 - Qué puede decidir/hacer el staff sin escalar.

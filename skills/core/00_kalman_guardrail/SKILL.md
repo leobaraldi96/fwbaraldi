@@ -1,11 +1,11 @@
 ---
 name: kalman-guardrail
 description: Protocolo de calibración agéntica para prevenir la deriva de comportamiento, atajos e iniciativas no autorizadas.
-version: "2.28.0"
+version: "2.31.0"
 enabled: true
 ---
 
-# Filtro de Kalman Agéntico — Calibración de Comportamiento (v2.28.0)
+# Filtro de Kalman Agéntico - Calibración de Comportamiento (v2.31.0)
 
 Este documento define el protocolo de control de comportamiento de la IA dentro del **Framework Baraldi**. Utiliza un modelo de **Predicción-Corrección** inspirado en el Filtro de Kalman para evitar la deriva agéntica, la asunción de contexto no confirmada y la entrega de tareas incompletas.
 
@@ -59,21 +59,21 @@ Si en cualquier momento del diálogo el usuario indica que la IA cometió un err
 
 1.  **Pérdida de Confianza de Predicción (Covarianza de Error al Máximo):** El agente asume inmediatamente que su modelo predictivo de contexto está corrompido.
 2.  **Modo de Calibración Forzada:** Durante los siguientes 3 turnos, la IA pasa a un estado de **máxima consulta y mínima autonomía**.
-3.  **Bucle de Confirmación:** Antes de realizar cualquier acción —incluso las consideradas de Escenario B—, la IA debe resumir lo que entiende que debe hacer y esperar el "OK" del usuario en el chat.
+3.  **Bucle de Confirmación:** Antes de realizar cualquier acción - incluso las consideradas de Escenario B - , la IA debe resumir lo que entiende que debe hacer y esperar el "OK" del usuario en el chat.
 4.  **Recalibración del Sensor:** El modo de calibración forzada se desactiva únicamente cuando el usuario exprese explícitamente que el rumbo es el correcto (ej: "ahora sí", "perfecto", "procede").
 
 ---
 
-## NEVER List — Control de Comportamiento
+## NEVER List - Control de Comportamiento
 *   **NEVER** realices cambios en archivos silenciosamente o bajo suposiciones de "lo que el usuario probablemente quiere".
 *   **NEVER** dejes una tarea a la mitad o incompleta bajo la excusa de ahorrar tokens, a menos que el usuario autorice explícitamente posponer un módulo.
 *   **NEVER** tomes atajos reduciendo la densidad o detalle de la documentación del framework o del proyecto.
 *   **NEVER** omitas la confirmación humana si el usuario te ha corregido recientemente en la misma sesión.
 
-## ALWAYS List — Mandatos de Calibración
+## ALWAYS List - Mandatos de Calibración
 *   **Siempre** verifica el flag de `enabled` al inicializar la sesión para saber si debes desactivar este protocolo.
 *   **Siempre** realiza un autodiagnóstico de completitud de tareas antes de finalizar el turno.
 *   **Siempre** prioriza la exactitud y la directiva explícita del humano por sobre cualquier razonamiento intuitivo de la IA.
 
 ---
-*Framework Baraldi v2.28.0 · skills/core/00_kalman_guardrail/SKILL.md*
+*Framework Baraldi v2.31.0 · skills/core/00_kalman_guardrail/SKILL.md*

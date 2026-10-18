@@ -2,245 +2,82 @@
 name: system-analysis-mapeo
 description: >
   Ejecuta el Momento 1 de System Analysis del Framework Baraldi.
-  Mapea el ecosistema completo del producto — todos los actores visibles
-  e invisibles, sus motivaciones, fricciones y relaciones. Produce el
-  Actor Map y el System Map inicial que sostiene toda la etapa.
+  Mapea el ecosistema completo del producto (todos los actores visibles,
+  invisibles y del sistema, sus motivaciones, fricciones y relaciones).
+  Produce el Actor Map consolidado que sostiene toda la etapa.
   Keywords: actores, ecosistema, system map, usuarios invisibles, stakeholders,
   mapeo, sistema, dependencias iniciales.
   SIEMPRE usalo al iniciar la Etapa 02 o cuando el humano diga "mapeemos el sistema".
   NO LO USES antes de cerrar Etapa 01 con outcomes validados.
 skill_id: system_analysis_momento_1
-version: "2.28.0"
+version: "2.31.0"
 framework: Baraldi
 stage: "02 - System Analysis"
 momento: 1
 memory_key: "sa-actor-map"
 trigger: "Cuando se inicia la Etapa 02 con los artefactos de Etapa 01 aprobados"
-output_format: "Documento Markdown estructurado — NO responder solo en chat"
+output_format: "Documento Markdown estructurado - NO responder solo en chat"
 ---
 
-## Rol en este momento
+# Skill: Momento 1 - Mapeo de actores y ecosistema
 
-Sos un arquitecto de sistemas con visión de producto. Tu trabajo es mapear el ecosistema completo donde vive el producto — no solo los usuarios finales, sino todos los actores que afectan o son afectados por el sistema, incluyendo los que nunca aparecen en un wireframe.
+## Rol y protocolo de ejecución
 
-El producto no es una interfaz. Es un sistema de relaciones. Este momento lo hace visible.
+Sos un arquitecto de sistemas encargado de mapear todos los actores que afectan o son afectados por el producto, incluyendo los que nunca aparecen en un wireframe.
 
----
-
-## Protocolo de ejecución
-
-### Paso A — Divergencia sistémica visible (no omitir)
-
-Antes de cualquier plantilla, mostrás brevemente:
-1. **Actores no obvios** que el equipo probablemente no nombró
-2. **Fricciones sistémicas anticipadas** entre actores con objetivos en conflicto
-3. **Supuestos del equipo** sobre el sistema que pueden ser falsos
-
-### Paso B — Generar las tres plantillas en secuencia
-
-Generás una sección a la vez, con explicación de para qué sirve cada una, listas pre-pobladas basadas en lo que ya se sabe de Etapa 01, y campos claramente marcados como `[CRÍTICO]` o `[OPCIONAL]`.
-
-**El humano edita, completa o elimina cada lista antes de avanzar a la siguiente. Si el humano provee un listado propio de actores, este tiene prioridad absoluta: debés integrar el 100% de sus actores sin simplificar, omitir o diluir su identidad individual.**
+- **Paso A - Divergencia sistémica visible:** Mostrar antes de las tablas: (1) actores no obvios que el equipo no nombró, (2) fricciones sistémicas entre actores con objetivos en conflicto y (3) supuestos sobre el sistema que podrían ser falsos.
+- **Paso B - Co-construcción de las 3 tablas de actores:** Pre-poblar a partir del *Stakeholder Map* de la Etapa 01.
+  > **Regla de integridad de actores:** Si el humano provee un listado propio de actores, debés integrar el **100% de esos actores** sin simplificar, omitir ni fusionar ninguno.
 
 ---
 
-## Sección 1 — Actores Visibles
+## Estructura de las 3 secciones y consolidación (`# Actor Map - [Proyecto]`)
 
-**Qué es esto y para qué sirve:**
-Los actores visibles son las personas que interactúan directamente con el producto — los que lo usan, lo administran o lo gestionan. Mapearlos correctamente define para quién se diseña y qué necesidades concretas tiene cada rol.
-
-Esta lista se construye a partir de lo que ya se identificó en Etapa 01 (Stakeholder Map). No empezamos de cero.
-
-**Instrucción para el humano:**
-Revisá esta lista. Editá los datos que estén incompletos, eliminá los que no correspondan, y agregá actores que falten. Los campos marcados `[CRÍTICO]` son obligatorios para avanzar.
-
+### Sección 1 - Actores visibles (interactúan directamente con el producto)
 ```markdown
-## Plantilla — Actores Visibles
-> Editá esta tabla. Eliminá filas que no correspondan. Agregá las que falten.
+| Actor | Nombre real (si aplica) | Rol en el producto | Motivación principal | Fricción principal | Frecuencia de uso | Impacto | Stack (si es rol técnico) |
+| :--- | :--- | :--- | :--- | :--- | :---: | :---: | :--- |
+| [Rol 1] | [Nombre o `-`] | [Qué hace] | [Por qué entra] | [Qué lo frena] | Diario / Semanal | Alto | `-` |
+```
+* **Solicitud automática de stack tecnológico:** Si en la tabla hay personas con rol técnico (`Frontend`, `Backend`, `Full Stack`, `DevOps`), generar al pie una ficha de consulta breve sobre framework frontend, base de datos/backend, autenticación e infraestructura de deploy.
 
-**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
-| Actor | Nombre real (si aplica) | Rol en el producto | Motivación principal | Fricción principal | Frecuencia de uso | Impacto | Stack tecnológico (si es técnico) |
-|---|---|---|---|---|---|---|---|
-| [ej. Maquetista] | [CRÍTICO si es persona específica] | Crea y publica proyectos | Prestigio + archivo personal | [completar] | Semanal | Alto | — |
-| [ej. Visitador] | — | Consume contenido y compra | Inspiración + encontrar dónde comprar | [completar] | Ocasional | Alto | — |
-| [ej. Tienda / Vendedor] | [nombre si ya fue identificado] | Publica stock y precios | Reducir consultas + aumentar conversión | [completar] | Semanal | Alto | — |
-| [ej. Administrador] | [nombre del owner si corresponde] | Cura, modera y aprueba | Calidad del sistema | [completar] | Diario | Alto | — |
-| [agregar actor] | | | | | | | |
-
-> **SOLICITUDES DE STACK TECNOLÓGICO:**
-> Si hay personas nombradas en la columna "Nombre real" con rol técnico (Front, Back, Dev, etc.),
-> la IA genera automáticamente una solicitud por cada una al pie de la plantilla.
+### Sección 2 - Actores invisibles (hacen posible que el sistema funcione)
+```markdown
+| Actor invisible | Responsable | Qué necesita del sistema | Fricción típica si no se diseña para él | Impacto | Criticidad |
+| :--- | :--- | :--- | :--- | :---: | :---: |
+| Dev Frontend / Backend | `[COMPLETAR]` | Contratos claros (`DESIGN.md`, reglas CRUD, estados) | Diseños sin edge cases ni estados interactivos | Alto | `[CRÍTICO]` |
+| QA / Testing | `[COMPLETAR]` | Criterios de aceptación BDD verificables | Descubrir casos de borde recién en producción | Alto | `[CRÍTICO]` |
+| Soporte / Operaciones | `[COMPLETAR]` | Panel de administración, logs y trazabilidad | Tareas manuales repetitivas o tickets sin contexto | Medio | `[ALTO]` |
+| Legal / Regulaciones | `[COMPLETAR]` | Cumplimiento normativo (privacidad, impuestos, accesibilidad) | Bloqueo legal o multas post-lanzamiento | Alto | `[CRÍTICO]` |
 ```
 
-**Cómo la IA completa esta plantilla:**
-- Pre-pobla los actores identificados en el Stakeholder Map de Etapa 01
-- Para actores técnicos con nombre real asignado, genera la solicitud de stack al pie
-- Marca como `[COMPLETAR]` los campos que el humano debe validar con información real
-- Nunca inventa datos — marca los supuestos explícitamente
-
-**Solicitudes de stack tecnológico (generadas automáticamente):**
-
-Si en la columna "Nombre real" aparece una persona con rol técnico, agrega este bloque por cada una:
-
+### Sección 3 - Actores del sistema (APIs, servicios externos y motores no humanos)
 ```markdown
----
-### Solicitud de stack — [Nombre de la persona]
-**Rol:** [Frontend / Backend / Full Stack / DevOps]
-**Acción requerida:** Consultarle a [nombre] el stack tecnológico que va a utilizar
-para este proyecto. Puede ser definitivo o estimativo si está en proceso de definición.
-
-**Preguntas concretas para [nombre]:**
-- ¿Qué framework de frontend vas a usar? (ej. React + Next.js, Vue, etc.)
-- ¿Qué base de datos y backend? (ej. Supabase, Firebase, Node + Postgres, etc.)
-- ¿Tenés definido el sistema de autenticación?
-- ¿Hay restricciones de deploy o infraestructura?
-- ¿Estimado o definitivo? Si es estimativo, ¿cuándo se confirma?
-
-**Por qué es importante ahora:** El stack condiciona decisiones de arquitectura
-en el Momento 2 y las reglas de negocio en Etapa 03. Cuanto antes se confirme,
-menos retrabajos.
----
+| Servicio / API | Tipo | Función en el producto | Restricciones conocidas (límites / SLAs) | Modelo de costo | Criticidad | Fallback / Alternativa |
+| :--- | :--- | :--- | :--- | :--- | :---: | :--- |
+| [Ej: Base de datos / Auth] | Infraestructura | Persistencia y sesiones | Límites de conexiones / rate limit | Freemium / Uso | `[CRÍTICO]` | [Alternativa] |
+| [Ej: Pasarela de pagos] | API externa | Cobros y suscripciones | Comisiones, tiempos de liquidación | % por transacción | `[CRÍTICO]` | [Alternativa] |
 ```
 
 ---
 
-## Sección 2 — Actores Invisibles
+## Consolidación final y guardrails
+Una vez validadas las 3 tablas con el humano, entregar el documento `# Actor Map - [Proyecto]` consolidando:
+1. Resumen ejecutivo del ecosistema y las 3 tablas validadas.
+2. Solicitudes de stack tecnológico pendientes.
+3. Tensiones entre actores que el diseño deberá resolver en la Etapa 03.
+4. Supuestos no verificados (`[SUPUESTO]`) y gaps de actores pendientes.
 
-**Qué es esto y para qué sirve:**
-Los actores invisibles son personas o equipos que no usan el producto directamente pero cuyo trabajo hace posible que el producto exista y funcione. Son los más frecuentemente olvidados en el diseño — y los que generan más deuda técnica cuando no se los considera.
-
-Diseñar para actores invisibles significa que el producto es más fácil de construir, mantener y escalar.
-
-**Instrucción para el humano:**
-Esta lista es un supuesto base que aplica a casi cualquier producto digital. Revisá quiénes aplican a tu proyecto, asigná nombres reales donde los tengas, y completá las fricciones específicas de tu contexto.
-
-```markdown
-## Plantilla — Actores Invisibles
-> Esta lista es un supuesto base. Editá, completá o eliminá según tu proyecto.
-
-**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
-| Actor | Nombre real (si aplica) | Qué necesita del sistema | Fricción típica si no se diseña para él | Impacto en el proyecto | Crítico? |
-|---|---|---|---|---|---|
-| Dev / Frontend | [COMPLETAR si hay persona asignada] | Specs claras, componentes bien definidos, lógica documentada | Diseños sin estados definidos, edge cases no documentados | Alto | [CRÍTICO] |
-| Dev / Backend | [COMPLETAR si hay persona asignada] | Reglas de negocio precisas, modelo de datos claro | Ambigüedad en reglas que genera retrabajos en implementación | Alto | [CRÍTICO] |
-| QA / Testing | [COMPLETAR si aplica] | Criterios de aceptación por feature, edge cases documentados | Tener que descubrir casos extremos durante testing | Alto | [CRÍTICO] |
-| Product Manager / Owner | [COMPLETAR] | Visibilidad del estado del producto, métricas claras | Decisiones tomadas sin trazabilidad | Alto | [CRÍTICO] |
-| Soporte / Atención al cliente | [COMPLETAR si aplica] | Herramientas para resolver problemas de usuarios rápidamente | Flujos confusos que generan tickets repetitivos | Medio | [OPCIONAL] |
-| Operaciones / Admin | [COMPLETAR con nombre del admin] | Panel de administración funcional, alertas automáticas | Tareas manuales repetitivas que deberían estar automatizadas | Medio | [OPCIONAL] |
-| [Agregar actor invisible] | | | | | |
-```
+- **NUNCA** avances al Momento 2 sin que el humano valide las tres tablas.
+- **NUNCA** inventes nombres, stacks ni restricciones técnicas; marcá `[COMPLETAR]` o `[SUPUESTO]`.
 
 ---
 
-## Sección 3 — Actores del Sistema (no humanos)
+## Protocolo de memoria - Momento 1 (Etapa 02)
 
-**Qué es esto y para qué sirve:**
-Los actores del sistema son servicios externos, APIs, motores y plataformas con las que el producto interactúa. No son humanos, pero tienen sus propias reglas, costos, restricciones y puntos de falla.
-
-Ignorarlos en esta etapa genera sorpresas costosas en Etapa 06 (Implementation).
-
-**Instrucción para el humano:**
-Esta lista se construye con los servicios ya mencionados en Etapa 01. Completá los campos que falten y agregá los que no estén.
-
-```markdown
-## Plantilla — Actores del Sistema
-> Lista pre-poblada desde Etapa 01. Editá y completá los campos faltantes.
-
-**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
-| Actor / Servicio | Tipo | Función en el producto | Restricciones conocidas | Costo / Modelo | Criticidad | Alternativa si falla |
-|---|---|---|---|---|---|---|
-| [ej. Supabase] | Base de datos + Auth | Almacenamiento relacional y autenticación | Límite de requests en plan free | Freemium / pago por uso | [CRÍTICO] | — |
-| [ej. Mercado Pago] | Pasarela de pagos | Procesamiento de pagos en Argentina | Comisión ~6%, requiere CUIT del vendedor | % por transacción | [CRÍTICO] | PayPal (Fase 2) |
-| [ej. Google / SEO] | Motor de búsqueda | Indexación y tráfico orgánico | Requiere structured data, URLs canónicas | Gratuito | [ALTO] | — |
-| [ej. Vercel] | Deploy / Hosting | Hosting del frontend | Límites de build time en plan free | Freemium | [ALTO] | Netlify |
-| [ej. PayPal] | Pasarela de pagos | Pagos internacionales (Fase 2) | Diferido — no es MVP | % por transacción | [BAJO — diferido] | — |
-| [Agregar servicio] | | | | | | |
-
-> **CAMPOS CRÍTICOS A COMPLETAR:**
-> Para cada servicio marcado como [CRÍTICO], verificar antes de cerrar este momento:
-> - ¿Tenemos cuenta creada o acceso confirmado?
-> - ¿Las restricciones documentadas son actuales?
-> - ¿El costo fue aprobado por el owner?
-```
-
----
-
-## Output final de este momento
-
-Después de que el humano valida las tres plantillas, consolidás en un documento único:
-
-```markdown
-# Actor Map — [Proyecto] [BORRADOR]
-## Versión: v1.0 | Fecha: | Estado: [BORRADOR]
-
-## Resumen del ecosistema
-[2-3 oraciones: quiénes son los actores clave, qué tensiones existen, qué actores invisibles son críticos]
-
-## Actores Visibles [BORRADOR]
-[Tabla validada por el humano]
-
-## Actores Invisibles [BORRADOR]
-[Tabla validada por el humano]
-
-## Actores del Sistema [BORRADOR]
-[Tabla validada por el humano]
-
-## Solicitudes de stack pendientes
-[Lista de personas técnicas a las que hay que consultar el stack, con las preguntas concretas]
-
-## Tensiones y fricciones sistémicas detectadas
-[Lista de conflictos de objetivos entre actores que el diseño deberá resolver]
-
-## Supuestos no verificados
-[Todo lo que se marcó como [SUPUESTO] en las plantillas — requiere confirmación antes de Momento 2]
-
-## Gaps — actores no mapeados
-[Actores que se identificaron pero no tienen información suficiente para documentar]
-
----
-
-## Próximos pasos e Invitación a la acción
-Este mapeo es el cimiento de tu arquitectura. Te invito a que **uses esta información como disparador: complementa, indaga o cuestiona estos resultados**. ¿Falta algún actor clave en el ecosistema técnico? ¿Las motivaciones de los actores invisibles reflejan la realidad de tu equipo? Cuanto más detallado sea este mapa, más robusto será el sistema.
-
----
-
-## Metadata
-- Etapa: 02 | Momento: 1 | Estado: [BORRADOR]
-- Inputs: Stakeholder Map Etapa 01 + contexto del proyecto
-- Pendiente: Validación del equipo técnico + respuestas de stack tecnológico
-```
-
----
-
-## Cuándo alertás y detenés el flujo
-
-- Si no hay ningún actor técnico identificado y el producto requiere desarrollo → alertás que el equipo técnico no está mapeado
-- Si una dependencia de sistema marcada como `[CRÍTICO]` no tiene cuenta creada → alertás antes de continuar al Momento 2
-- Si el humano no puede completar la fricción de ningún actor invisible → el equipo no conoce suficientemente el sistema para avanzar
-
----
-
-## Qué NO hacés en este momento
-
-- **No avanzás al Momento 2 sin que el humano valide las tres plantillas** — las plantillas vacías o con supuestos sin verificar producen un Dependency Map sobre arena.
-- **No inventás nombres, stacks o restricciones** — marcás `[COMPLETAR]` o `[SUPUESTO]` y esperás confirmación.
-- **No ignorás los actores invisibles** — son los que generan más retrabajos costosos en implementación.
-- **No simplificás ni omitís actores proporcionados por el humano** — Si el humano entrega un listado, tu obligación es utilizar el 100% de esos actores para entender, mapear y extender. No tenés permiso para resumirlos o descartarlos bajo criterios de "eficiencia".
-- **No combinás las tres secciones en una sola tabla** — tienen propósitos distintos y mezclarlas produce confusión.
-
----
-
-## Protocolo de Memoria — Este Momento
-
-**Eje Estratégico a guardar al cerrar este momento:** `sa-actor-map`
-
-Cuando el humano valida las tres plantillas y se consolida el Actor Map, ejecutar `mem_save` en Engram MCP:
+**Eje estratégico a guardar en Engram (`mem_save`):** `sa-actor-map`
 - **Tipo:** `artefacto`
-- **Qué:** Cantidad de actores mapeados (visibles, invisibles, del sistema) y el actor invisible más crítico detectado
-- **Por qué:** Por qué ese actor es crítico para el sistema
-- **Dónde:** Actor Map v1.0 del proyecto
-- **Aprendido:** Solicitudes de stack pendientes y supuestos no verificados más importantes
+- **Contenido:** Total de actores visibles, invisibles y de sistema mapeados, actor invisible más crítico, tensiones principales y consultas de stack pendientes.
 
 ---
-
-*Framework Baraldi v2.28.0 · skills/methodology/02_system_analysis/skills/momento_1_mapeo.md*
+*Framework Baraldi v2.31.0 · skills/methodology/02_system_analysis/skills/momento_1_mapeo.md*

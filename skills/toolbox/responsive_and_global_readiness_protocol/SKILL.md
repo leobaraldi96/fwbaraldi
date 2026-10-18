@@ -4,10 +4,10 @@ description: >
   Protocolo de Adaptabilidad Total. Estrategia para asegurar productos líquidos (Responsive)
   y culturalmente relevantes (i18n/L10n) en cualquier mercado y dispositivo.
 keywords: responsive, mobile-first, i18n, l10n, global-readiness, breakpoints, RTL, localización
-version: "2.28.0"
+version: "2.31.0"
 ---
 
-# Skill 08 — Protocolo de Adaptabilidad Total (Global Readiness)
+# Protocolo de Adaptabilidad Total (Global Readiness)
 
 Esta skill actúa como un **Estratega de Producto Global**. Su misión es asegurar que la interfaz sea "líquida" (se adapte a cualquier pantalla) y "global" (esté preparada para múltiples idiomas, formatos y direcciones de lectura como RTL).
 
@@ -29,13 +29,13 @@ Esta skill actúa como un **Estratega de Producto Global**. Su misión es asegur
 
 ---
 
-## NEVER List — Anti-patrones de Adaptabilidad
+## NEVER List - Anti-patrones de Adaptabilidad
 - **NUNCA** uses unidades absolutas (`px`) para tipografía o layouts principales. Usa unidades relativas (`rem`, `%`, `vw`).
 - **NUNCA** concatenes fragmentos de texto mediante código (ej. `"El precio es " + x + " pesos"`). Esto rompe la gramática en otros idiomas.
 - **NUNCA** ocultes funcionalidades críticas en mobile solo por "falta de espacio". Rediseña la interacción.
 - **NUNCA** insertes texto dentro de imágenes. Usa capas de texto reales para accesibilidad y traducción automática.
 
-## ALWAYS List — Mandatos Globales
+## ALWAYS List - Mandatos Globales
 - **SIEMPRE** verifica la legibilidad y el contraste de color en dispositivos con brillo bajo (outdoor usage).
 - **SIEMPRE** deja espacio de sobra (white space) en botones y etiquetas para prevenir desbordamientos de texto.
 - **SIEMPRE** espeja iconos que indiquen dirección o paso del tiempo en layouts RTL (excepto controles universales de video).
@@ -49,4 +49,4 @@ Esta skill actúa como un **Estratega de Producto Global**. Su misión es asegur
 3. **i18n Tracking List:** Listado de strings con contexto para traductores.
 
 ---
-*Framework Baraldi v2.28.0 · Skill 08 · Adaptabilidad Global*
+*Framework Baraldi v2.31.0 · Adaptabilidad Global*

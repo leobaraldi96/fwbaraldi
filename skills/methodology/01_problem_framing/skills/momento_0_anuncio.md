@@ -7,7 +7,7 @@ description: >
   Trigger: Al iniciar la etapa 01, o cuando el usuario diga "arrancamos".
 ---
 
-# Etapa 01: Problem Framing — Kick-off
+# Etapa 01: Problem Framing - Kick-off
 
 ¡Hola! Es un gusto acompañarte en el inicio de este proyecto. Antes de empezar a construir, vamos a dedicar un momento a **enfocar el problema real** para asegurarnos de que estamos diseñando la solución correcta.
 
@@ -34,4 +34,4 @@ Para que yo pueda amplificar tu visión y detectar riesgos ocultos, por favor co
 > **Tip del Framework:** No te preocupes por ser súper formal ahora. Contame lo que sepas y yo me encargo de procesarlo y ayudarte a refinarlo.
 
 ---
-*Framework Baraldi v2.28.0 · Momento 0: Intake*
+*Framework Baraldi v2.31.0 · Momento 0: Intake*

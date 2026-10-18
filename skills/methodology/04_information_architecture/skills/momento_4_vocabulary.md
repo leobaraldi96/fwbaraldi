@@ -1,4 +1,4 @@
-# Skill: Momento 4 — Vocabulary Foundations & Object States
+# Skill: Momento 4 - Vocabulary Foundations & Object States
 
 ---
 
@@ -9,7 +9,7 @@ description: >
   Establece la base terminológica oficial y la lógica de estados de los objetos del sistema.
   Keywords: glosario, taxonomía, nomenclatura, estados, state machine, consistencia.
 skill_id: ia_momento_4
-version: "2.28.0"
+version: "2.31.0"
 framework: Baraldi
 stage: "04 - Information Architecture"
 momento: 4
@@ -19,7 +19,7 @@ input_requerido:
   - Sitemap (Momento 1)
   - User Flows (Momento 2)
   - Content Inventory (Momento 3)
-output_format: "Respuesta directa en chat (Markdown renderizado) — NO uses un bloque de código global"
+output_format: "Respuesta directa en chat (Markdown renderizado) - NO uses un bloque de código global"
 estado_artefacto: BORRADOR
 ```
 
@@ -43,18 +43,18 @@ Crear la "Fuente de Verdad" del lenguaje del producto. Sin este momento, el equi
 
 ## Instrucciones Operativas
 
-### Paso 1 — Product Glossary (Lenguaje Oficial)
+### Paso 1 - Product Glossary (Lenguaje Oficial)
 Define los términos que el usuario verá en la interfaz.
 - **Término Oficial:** El nombre que aparecerá en botones, títulos y menús.
 - **Definición:** Qué significa exactamente en el contexto del negocio.
 - **Sinónimos Prohibidos:** Palabras que el sistema NUNCA debe usar para evitar confusión.
 
-### Paso 2 — Object State Machine (Lógica de Vida)
+### Paso 2 - Object State Machine (Lógica de Vida)
 Mapea los estados por los que pasa cada entidad principal (ej: Un "Pedido", un "Usuario", un "Servicio").
 - **Estados:** (Ej: Pendiente, Activo, Completado, Cancelado).
 - **Triggers de Cambio:** ¿Qué acción del usuario o del sistema dispara el cambio de estado?
 
-### Paso 3 — Notification Trigger Map
+### Paso 3 - Notification Trigger Map
 Identifica en qué estados el sistema debe comunicarse con el usuario.
 - **Evento:** Cambio de estado X.
 - **Canal:** Push, Email, In-app.
@@ -67,7 +67,7 @@ Identifica en qué estados el sistema debe comunicarse con el usuario.
 Entregás un documento Markdown con esta estructura:
 
 ```markdown
-# Information Architecture — Vocabulary & States — [Proyecto] [BORRADOR]
+# Information Architecture - Vocabulary & States - [Proyecto] [BORRADOR]
 
 ## 1. Glosario de Producto (Source of Truth)
 > Definiciones oficiales para interfaz y documentación.
@@ -104,7 +104,7 @@ Entregás un documento Markdown con esta estructura:
 
 ## Metadata del artefacto
 - **Etapa**: 04 - Information Architecture
-- **Momento**: 4 — Vocabulary Foundations & Object States
+- **Momento**: 4 - Vocabulary Foundations & Object States
 - **Versión**: [Versión Actual]
 ```
 
@@ -117,6 +117,6 @@ Entregás un documento Markdown con esta estructura:
 
 ---
 
-## Protocolo de Memoria — Este Momento
+## Protocolo de Memoria - Este Momento
 **Eje Estratégico:** `ia-vocabulary-states`
 Guardar en Engram el glosario final y la lógica de estados para que la Etapa 05 (UI) los use como leyes de microcopy.

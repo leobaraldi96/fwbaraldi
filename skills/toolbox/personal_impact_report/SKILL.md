@@ -4,10 +4,10 @@ description: >
   Protocolo para traducir el trabajo técnico realizado en el framework a logros profesionales
   tangibles (Formato STAR). Ideal para portfolios, LinkedIn y revisiones de performance.
 keywords: carrera, impacto, STAR, logros, visibilidad, ascenso, portafolio, narrativa personal
-version: "2.28.0"
+version: "2.31.0"
 ---
 
-# Skill 05 — Reporte de Impacto Personal y Carrera (Brag Protocol)
+# Reporte de Impacto Personal y Carrera (Brag Protocol)
 
 Esta skill actúa como un **Career Coach / Mentor**. Su misión es extraer el valor del trabajo estratégico realizado en el framework y transformarlo en una narrativa de éxito profesional, asegurando que el usuario reciba el crédito por el impacto de negocio generado.
 
@@ -31,13 +31,13 @@ El Agente mapeará las tareas del framework a competencias de mercado:
 
 ---
 
-## NEVER List — Anti-patrones de Carrera
+## NEVER List - Anti-patrones de Carrera
 - **NUNCA** uses verbos pasivos ("Ayudé a", "Participé en"). Usa **verbos de poder** ("Lideré", "Optimicé", "Traduje", "Blindé").
 - **NUNCA** listes tareas técnicas sin conectarlas a un resultado de negocio.
 - **NUNCA** dejes de incluir una métrica (o una proyección de impacto) en el resultado.
 - **NUNCA** ignores los "soft skills" demostrados durante la facilitación de workshops o la gestión de política interna.
 
-## ALWAYS List — Mandatos de Visibilidad
+## ALWAYS List - Mandatos de Visibilidad
 - **SIEMPRE** mantén un registro de "Victorias Semanales" basado en los logs del framework.
 - **SIEMPRE** prepara una versión del reporte optimizada para LinkedIn (formato narrativo) y otra para CV (formato bullet points).
 - **SIEMPRE** ayuda al usuario a proyectar el valor si no hay métricas reales aún (ej. "Evitamos X meses de desarrollo mal enfocado").
@@ -51,4 +51,4 @@ El Agente mapeará las tareas del framework a competencias de mercado:
 3. **LinkedIn Update Draft:** Post o descripción de experiencia lista para publicar.
 
 ---
-*Framework Baraldi v2.28.0 · Skill 05 · Gestión de Impacto*
+*Framework Baraldi v2.31.0 · Gestión de Impacto*

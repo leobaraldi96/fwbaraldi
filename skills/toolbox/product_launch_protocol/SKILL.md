@@ -4,10 +4,10 @@ description: >
   Protocolo integral para la orquestación técnica (Runbook) y comercial (GTM) de lanzamientos.
   Asegura estabilidad operativa y máximo impacto mediante comunicación segmentada y gestión de crisis.
 keywords: launch, runbook, GTM, comunicación, deploy, QA, Go/No-Go, rollback, métricas
-version: "2.28.0"
+version: "2.31.0"
 ---
 
-# Skill 03 — Protocolo de Lanzamiento y GTM (Go-to-Market)
+# Protocolo de Lanzamiento y GTM (Go-to-Market)
 
 Esta skill actúa como un **Launch Director / GTM Manager**. Su misión es orquestar a Ingeniería, Marketing, Ventas y Soporte para que el lanzamiento sea fluido, el equipo esté entrenado y el mercado perciba el valor de inmediato.
 
@@ -64,13 +64,13 @@ Definir eventos de tracking para medir:
 
 ---
 
-## NEVER List — Anti-patrones de Lanzamiento
+## NEVER List - Anti-patrones de Lanzamiento
 - **NUNCA** lances un viernes por la tarde o antes de un feriado (No Friday Deploys).
 - **NUNCA** lances sin un plan de **Rollback** probado y documentado.
 - **NUNCA** asumas que el usuario entenderá la feature sin un **Onboarding** in-product o comunicación clara.
 - **NUNCA** ignores la tasa de errores en los primeros 15 minutos del lanzamiento.
 
-## ALWAYS List — Mandatos de GTM
+## ALWAYS List - Mandatos de GTM
 - **SIEMPRE** define una **North Star de Lanzamiento** (una sola métrica de éxito).
 - **SIEMPRE** prepara una "War Room" (canal de comunicación rápida) para el día del deploy.
 - **SIEMPRE** comunica el éxito (o los aprendizajes del fallo) a todos los stakeholders tras 24hs.
@@ -85,4 +85,4 @@ Definir eventos de tracking para medir:
 4. **Post-Launch Analytics Spec:** Listado de eventos y dashboards esperados.
 
 ---
-*Framework Baraldi v2.28.0 · Skill 03 · Orquestación de Lanzamientos*
+*Framework Baraldi v2.31.0 · Orquestación de Lanzamientos*

@@ -1,4 +1,4 @@
-# Skill: Momento 1 — Visión y Amplificación de Campo
+# Skill: Momento 1 - Visión y amplificación de campo
 
 ---
 
@@ -12,227 +12,94 @@ description: >
   Keywords: problem framing, hipótesis, stakeholders, métricas, divergencia, producto.
   NO LO USES para diseñar soluciones, features o interfaces.
 skill_id: problem_framing_momento_1
-version: "2.28.0"
+version: "2.31.0"
 framework: Baraldi
 stage: "01 - Problem Framing"
 momento: 1
 memory_key: "pf-hipotesis-central"
 trigger: "Cuando el humano provee el contexto inicial del proyecto y completa Definir problema real + Identificar stakeholders + Establecer métricas de éxito"
-input_requerido:
-  - Nombre y descripción del proyecto
-  - Usuario principal identificado
-  - Dolor o problema observado (en bruto, sin refinar)
-  - Contexto de negocio o industria
-  - Métricas de éxito iniciales (aunque sean borradores)
-output_format: "Respuesta directa en chat (Markdown renderizado) — NO uses un bloque de código global"
+output_format: "Documento Markdown estructurado con divergencia visible + 5 artefactos"
 estado_artefacto: BORRADOR
 ```
 
 ---
 
-## Rol en este momento
+## Rol y protocolo de ejecución
 
-Sos un estratega de producto con experiencia en pensamiento sistémico y research de usuarios. Tu trabajo en este momento es **expandir el campo de visión** del humano: generar hipótesis alternativas, identificar sesgos de confirmación y formular las preguntas más críticas para las entrevistas.
-
-No estás diseñando soluciones. No estás validando nada todavía. Estás **divergiendo** — abriendo el espacio de posibilidades antes de que el humano converja.
-
----
-
-## Qué hacés en este momento
-
-### Paso A — Proceso de divergencia (VISIBLE, no omitir)
-
-Antes de generar el output final, mostrás en el documento:
-
-1. **Reencuadres del problema:** Describí el mismo problema desde al menos 3 ángulos distintos. ¿Qué pasaría si el dolor real no fuera el que el humano nombró? ¿Cuál sería el framing más incómodo pero posible?
-
-2. **Actores no obvios:** ¿Quién más es afectado por este problema que no aparece en el listado inicial? Incluí usuarios invisibles (sistemas, equipos internos, terceros).
-
-3. **Tensiones y contradicciones:** ¿Hay algo en el contexto que se contradice? ¿Alguna asunción que parece obvia pero podría ser falsa?
-
-### Paso B — Output estructurado
-
-Con la divergencia visible, generás los artefactos de salida de la etapa.
-
----
-
-## Formato de entrega obligatorio
-
-Entregás un documento Markdown con estas secciones exactas:
+Sos un estratega de producto enfocado en **divergir y cuestionar supuestos** antes de converger en el problema real.
+- **Paso A - Proceso de divergencia (obligatorio y visible antes de los artefactos):**
+  1. **Reencuadres del problema:** Mínimo 3 ángulos alternativos (incluyendo el framing más incómodo si el dolor real no fuera el declarado).
+  2. **Actores no obvios:** Usuarios invisibles (operaciones, soporte, reguladores, terceros) afectados por el problema.
+  3. **Tensiones y contradicciones:** Asunciones en el contexto inicial que podrían ser falsas.
+- **Paso B - Los 5 artefactos de salida (en estado `[BORRADOR]`):**
 
 ```markdown
-# Artefactos de Salida — Problem Framing [BORRADOR]
-## Proyecto: [nombre]
-## Fecha: [fecha]
-## Estado: [BORRADOR]
+# Artefactos de salida - Problem framing [BORRADOR]
+## Proyecto: [nombre] | Fecha: [fecha] | Estado: [BORRADOR]
+
+## 0. Proceso de divergencia visible
+- **Reencuadres alternativos (mínimo 3):** [...]
+- **Actores no obvios detectados:** [...]
+- **Tensiones y contradicciones:** [...]
 
 ---
 
-## Proceso de divergencia
-> **Nota metodológica:** La divergencia nos permite expandir el campo de visión y cuestionar nuestras propias asunciones antes de invertir tiempo en la solución. Es el momento de ser "incómodos" para descubrir oportunidades que no son obvias a simple vista.
-
-### Reencuadres del problema
-[Mínimo 3 framings alternativos del problema, con el razonamiento de cada uno]
-
-### Actores no obvios detectados
-[Lista de actores que no aparecían en el contexto inicial, con su relación al problema]
-
-### Tensiones y contradicciones
-[Lo que se contradice o puede ser falso en el contexto provisto]
+## Artefacto 1 - Problem Statement (alta densidad)
+1. **Sentencia:** `[Quién] necesita [qué] porque [por qué]. Actualmente [status quo], lo que resulta en [impacto medible].`
+2. **Contexto y escala:** Urgencia (¿por qué ahora?) y alcance de afectados directos/indirectos.
+3. **Necesidad y workarounds:** Dolor real, parches manuales actuales (con su costo) y resultado deseado.
+4. **Evidencia vs. asunciones críticas:** Qué datos existen hoy y qué debemos validar en el Momento 2/3.
+5. **Fuera de alcance (Out of scope):** Límites explícitos del problema.
 
 ---
 
-## Artefacto 1 — Problem Statement (Alta Densidad) [BORRADOR]
-> Definición blindada del problema, su escala, evidencia y límites de acción.
-
-**1. La Sentencia (Problem Statement):**
-`[Quién] necesita [qué] porque [por qué]. Actualmente [status quo], lo que resulta en [impacto medible].`
-
-**2. Contexto y Escala:**
-- **Urgencia (¿Por qué ahora?):** Disparadores y criticidad temporal.
-- **Alcance:** Quiénes son los afectados directos e indirectos y a qué escala (Nº de usuarios/equipos).
-
-**3. La Necesidad y Workarounds:**
-- **Dolor Real:** Qué intentan resolver y qué "parches" o procesos manuales usan hoy (con su costo asociado).
-- **Resultado Deseado:** Cómo se ve el "éxito" desde la perspectiva del usuario.
-
-**4. Evidencia y Asunciones:**
-- **Data/Insights:** Qué métricas o hallazgos previos respaldan este problema.
-- **Asunciones Críticas:** Qué estamos dando por sentado y qué requiere validación urgente en el Momento 2.
-
-**5. Fuera de Alcance (Out of Scope):**
-- Clarificación de los límites del problema para evitar el crecimiento descontrolado del proyecto.
+## Artefacto 2 - Opportunity Map
+| Solución / Parche actual | Qué resuelve hoy | Qué NO resuelve | Brecha (Gap de oportunidad) |
+| :--- | :--- | :--- | :--- |
 
 ---
 
-## Artefacto 2 — Opportunity Map [BORRADOR]
-> Qué soluciones parciales existen hoy, por qué no alcanzan, y dónde está el gap.
-
-**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
-| Solución actual | Qué resuelve | Qué NO resuelve | Gap |
-|---|---|---|---|
-| ... | ... | ... | ... |
+## Artefacto 3 - Stakeholder Map
+| Actor | Tipo (Visible / Invisible) | Motivación principal | Fricción principal | Nivel de impacto |
+| :--- | :---: | :--- | :--- | :---: |
 
 ---
 
-## Artefacto 3 — Stakeholder Map [BORRADOR]
-> Todos los actores que afectan o son afectados por el problema.
+## Artefacto 4 - OKRs & Strategic Alignment (Success Metrics)
+- **Objetivo estratégico:** [Frase clara de impacto en usuario y negocio]
 
-**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
-| Actor | Tipo | Motivación | Fricción principal | Nivel de impacto |
-|---|---|---|---|---|
-| ... | Visible/Invisible | ... | ... | Alto/Medio/Bajo |
+| Key Result (KR) | Baseline actual | Meta (Target) | Fuente de medición | Cadencia |
+| :--- | :---: | :---: | :--- | :---: |
+| [KR 1 - Outcome de usuario] | [...] | [...] | [...] | Semanal / Mensual |
+| [KR 2 - Calidad / Fricción] | [...] | [...] | [...] | Mensual |
+| [KR 3 - Negocio] | [...] | [...] | [...] | Trimestral |
 
----
-
-## Artefacto 4 — OKRs & Strategic Alignment [BORRADOR]
-> Define el norte del proyecto mediante Objetivos cualitativos y Resultados Clave cuantitativos.
-
-**Objetivo Estratégico:** [Frase aspiracional, inspiradora y clara — ej: "Dominar el mercado de micro-logística urbana"]
-- **Por qué importa:** [Impacto en el negocio/usuario]
-- **Alineación:** [Cómo escala a la estrategia general de la compañía]
-
-| Key Result (KR) | Baseline | Target | Fuente de Datos | Cadencia |
-| :--- | :---: | :---: | :--- | :--- |
-| [Métrica 1 - Outcome] | [actual] | [meta] | [ej: GA4 / Mixpanel] | [Semanal] |
-| [Métrica 2 - Calidad] | [actual] | [meta] | [ej: Zendesk / NPS] | [Mensual] |
-| [Métrica 3 - Negocio] | [actual] | [meta] | [ej: Stripe / CRM] | [Trimestral] |
-
-**Iniciativas de Soporte (Hipótesis de Trabajo):**
-- [Iniciativa 1]: [Breve descripción de qué proyecto/acción moverá el KR1]
-- [Iniciativa 2]: [Breve descripción de qué proyecto/acción moverá el KR2]
-
-**Criterio de Graduación (Éxito):**
-- **0.3 (Mínimo):** [Qué significa fallar con aprendizaje]
-- **0.7 (Éxito Real):** [El objetivo ambicioso pero alcanzable]
-- **1.0 (Extraordinario):** [El escenario ideal]
+- **Graduación de éxito:** `0.3 (Mínimo aprendizaje)` | `0.7 (Éxito real)` | `1.0 (Extraordinario)`.
 
 ---
 
-## Artefacto 5 — Outcome Definition [BORRADOR]
-
-### Hipótesis central
-[HIPÓTESIS] [Una oración — la creencia más importante y más arriesgada del proyecto]
-
-### Hipótesis secundarias
-- [HIPÓTESIS] ...
-- [HIPÓTESIS] ...
-
-### Criterio de validación
-Para avanzar a Etapa 02, la hipótesis central debe estar confirmada por:
-- [criterio concreto con número]
-- [criterio concreto con número]
-
----
-
-## Sesgos de confirmación detectados
-[Lista de los 3-5 sesgos más probables en este proyecto — qué podría estar viendo el equipo que no es real]
-
-## Preguntas críticas para entrevistas
-[Las 5-7 preguntas más importantes para validar o refutar la hipótesis central. Deben ser preguntas abiertas que NO sugieran la respuesta]
-
----
-
-## Próximos pasos e Invitación a la acción
-Esta es la base estratégica de tu proyecto. Te invito a que **indagues, complementes o cuestiones** estos artefactos. ¿Sientes que el Problem Statement captura tu visión real? ¿Hay algún actor que consideres que deberíamos profundizar? Cuanto más nutras este borrador inicial, más sólido será el sistema que construiremos.
-
----
-
-## Metadata del artefacto
-- **Etapa:** 01 - Problem Framing
-- **Momento:** 1 — Visión y amplificación
-- **Estado:** [BORRADOR]
-- **Inputs usados:** [lista de lo que el humano proveyó]
-- **Pendiente de validación:** [qué necesita confirmar el humano antes de usar este documento]
+## Artefacto 5 - Outcome Definition & Hipótesis
+- **Hipótesis central:** `[HIPÓTESIS]` [La creencia más importante y arriesgada del proyecto en una oración].
+- **Hipótesis secundarias:** `[HIPÓTESIS]` [...]
+- **Criterio cuantitativo de validación para avanzar a Etapa 02:** [Métrica o umbral concreto en entrevistas/datos].
+- **Sesgos de confirmación probables (3 a 5):** [...]
+- **5 a 7 preguntas abiertas críticas para entrevistas (sin inducir respuesta):** [...]
 ```
 
 ---
 
-## Qué NO hacés en este momento
-
-- **No diseñás features ni soluciones de producto** — porque diseñar soluciones antes de validar el problema real sesga toda la investigación posterior hacia confirmar lo que ya se decidió.
-- **No describís el ecosistema de productos** — porque eso pertenece a Product Logic (Etapa 3). Hacerlo aquí mezcla diagnóstico con solución y confunde al cliente sobre en qué etapa está.
-- **No presentás hipótesis como hechos validados** — porque el humano necesita saber qué es supuesto y qué es evidencia para tomar decisiones con el riesgo correcto.
-- **No omitís la sección de divergencia para ir directo al output** — porque el valor de este momento está en abrir el campo de visión, no en producir el artefacto más rápido. Sin divergencia visible, el humano no puede aprender ni discernir.
-- **No generás el guión de entrevistas aquí** — porque el guión depende de la metodología que se define en el Momento Feedback, después de que el humano apruebe los artefactos.
-- **No avanzás a la siguiente sección sin completar la anterior** — porque cada sección del output es input de la siguiente. Saltear pasos produce artefactos sin base.
+## Guardrails del Momento 1
+- **NUNCA** diseñes soluciones, pantallas ni features en este momento.
+- **NUNCA** presentes hipótesis como hechos validados; etiquetá siempre con `[HIPÓTESIS]` o `[SUPUESTO]`.
+- **NUNCA** omitas el bloque de divergencia para ir directo a los artefactos.
 
 ---
 
-## Cuándo pedís más información
+## Protocolo de memoria - Momento 1
 
-Pedís más contexto si:
-- No está claro quién es el usuario principal
-- El dolor observado es demasiado vago para generar hipótesis específicas
-- No hay ninguna métrica inicial aunque sea aproximada
-- El proyecto no tiene nombre o industria definida
-
-No pedís más contexto si:
-- Tenés suficiente para divergir (aunque sea imperfecto)
-- La información faltante puede cubrirse con una hipótesis marcada como `[SUPUESTO]`
+**Eje estratégico a guardar en Engram al aprobar los 5 artefactos (`mem_save`):** `pf-hipotesis-central`
+- **Tipo:** `decisión` o `validación`
+- **Contenido:** Hipótesis central en una oración, framing elegido, sesgo de confirmación principal a vigilar y criterio de validación para pasar a Etapa 02.
 
 ---
-
-## Ejemplo de activación
-
-**El humano escribe:**
-> "Arrancamos con Problem Framing. El proyecto es [nombre]. El usuario es [descripción]. El problema que observé es [descripción]. Las métricas iniciales son [descripción]."
-
-**Vos ejecutás Momento 1** y entregás el documento completo con divergencia visible + 5 artefactos.
-
----
-
-## Protocolo de Memoria — Este Momento
-
-**Eje Estratégico a guardar al cerrar este momento:** `pf-hipotesis-central`
-
-Cuando el humano aprueba los 5 artefactos de este momento, ejecutar `mem_save` en Engram MCP:
-- **Tipo:** `decisión` o `validación` según qué tan respaldada esté la hipótesis central
-- **Qué:** La hipótesis central del proyecto en una oración
-- **Por qué:** El razonamiento que llevó a ese framing del problema
-- **Dónde:** Artefacto 5 — Outcome Definition del proyecto
-- **Aprendido:** El Sesgo de confirmación detectado más relevante + criterio de validación
-
----
-
-*Framework Baraldi v2.28.0 · skills/methodology/01_problem_framing/skills/momento_1_vision.md*
+*Framework Baraldi v2.31.0 · skills/methodology/01_problem_framing/skills/momento_1_vision.md*

@@ -6,10 +6,10 @@ description: >
   hipótesis sin validar y brechas en la arquitectura de información.
   Trigger: "Auditar proyecto", "Salud del proyecto", "Framework Doctor",
   "Estado de coherencia".
-version: "2.28.0"
+version: "2.31.0"
 ---
 
-# Capa 00 — Project Health Audit (Framework Doctor)
+# Capa 00 - Project Health Audit (Framework Doctor)
 
 > **Misión:** Garantizar que el producto mantenga su integridad sistémica a lo largo de todas las etapas, evitando el "Drift" (desviación) entre la visión inicial y la implementación actual.
 
@@ -25,9 +25,9 @@ Cuando el usuario solicita un diagnóstico, el Agente debe ejecutar los siguient
 ### 2. Auditoría de Coherencia Semántica (Semantic Consistency)
 - Comparar el `01_Problem_Statement.md` con los artefactos de la etapa más avanzada (ej. Etapa 03 o 04).
 - **Relaciones Engram:**
-    - `[CONFLICT]` — ¿Una feature propuesta contradice un KPI de éxito de la Etapa 01?
-    - `[DRIFT]` — ¿Se está diseñando algo que no está "scoped" en el Problem Framing?
-    - `[EVOLVED]` — ¿Una decisión técnica "supersedes" (supera) una limitación identificada al inicio?
+    - `[CONFLICT]` - ¿Una feature propuesta contradice un KPI de éxito de la Etapa 01?
+    - `[DRIFT]` - ¿Se está diseñando algo que no está "scoped" en el Problem Framing?
+    - `[EVOLVED]` - ¿Una decisión técnica "supersedes" (supera) una limitación identificada al inicio?
 
 ### 3. Vigilancia de Hipótesis (Hypothesis Tracking)
 - Analizar el `docs-fwbaraldi/` en busca de etiquetas `[HIPÓTESIS]`.
@@ -66,4 +66,4 @@ El output de esta skill **SIEMPRE** debe ser un documento estructurado con el si
 - Si el humano decide ignorar un conflicto semántico, documéntalo como una "Decisión Consciente de Riesgo".
 
 ---
-*Framework Baraldi v2.28.0 · Project Health Audit*
+*Framework Baraldi v2.31.0 · Project Health Audit*

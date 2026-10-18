@@ -1,4 +1,4 @@
-# Skill: Momento 2 — Entidades de Datos & Business Rules (Rules Engine)
+# Skill: Momento 2 - Entidades de Datos & Business Rules (Rules Engine)
 
 ---
 
@@ -9,7 +9,7 @@ description: >
   Crea el diccionario de entidades y la matriz de reglas (If/Then).
   Keywords: data model, entidades, business rules, reglas de negocio, lógica, schema.
 skill_id: product_logic_momento_2
-version: "2.28.0"
+version: "2.31.0"
 framework: Baraldi
 stage: "03 - Product Logic"
 momento: 2
@@ -32,7 +32,7 @@ Sos un **Data Architect & Business Analyst**. Tu misión es traducir los proceso
 
 ## Qué hacés en este momento (Pasos Obligatorios)
 
-### Paso A — Evaluación de Entidades (Marco Mental)
+### Paso A - Evaluación de Entidades (Marco Mental)
 No te limites a extraer sustantivos. Debés aplicar juicio profesional según la **naturaleza** de la entidad. Usá estas categorías como un "radar" para proponer campos que eviten la deuda técnica, pero solo si tienen sentido para el negocio:
 1.  **Identidad:** (¿Cómo identificamos esto de forma única y legal?).
 2.  **Contacto:** (¿Necesitamos comunicarnos con este objeto/sujeto?).
@@ -40,10 +40,10 @@ No te limites a extraer sustantivos. Debés aplicar juicio profesional según la
 4.  **Estado/Workflow:** (¿Cómo cambia esto en el tiempo? Status, tipos, roles).
 5.  **Trazabilidad:** (¿Quién lo creó? ¿Cuándo? Timestamps básicos).
 
-### Paso B — Justificación y Co-Construcción
+### Paso B - Justificación y Co-Construcción
 Explicá brevemente por qué incluiste (o por qué decidiste omitir) ciertas categorías. Esto sirve para interpelar al humano y permitir que él valide o aporte el detalle final de negocio.
 
-### Paso C — Reglas de Comportamiento (Rules Engine)
+### Paso C - Reglas de Comportamiento (Rules Engine)
 Establecé las leyes lógicas del producto. No te limites al "Happy Path"; pensá en qué pasa cuando las condiciones no se cumplen.
 
 ---
@@ -53,7 +53,7 @@ Establecé las leyes lógicas del producto. No te limites al "Happy Path"; pens�
 Entregás un documento Markdown con esta estructura:
 
 ```markdown
-# Data Entities & Business Rules — [Proyecto] [BORRADOR]
+# Data Entities & Business Rules - [Proyecto] [BORRADOR]
 
 ## 1. Diccionario de Entidades (Data Schema Pro)
 > **Regla de Oro:** Cada entidad debe ser exhaustiva. No omitir datos de contacto o localización si el negocio los sugiere.
@@ -88,7 +88,7 @@ Entregás un documento Markdown con esta estructura:
 
 ## Metadata del artefacto
 - **Etapa:** 03 - Product Logic
-- **Momento:** 2 — Entidades y Reglas
+- **Momento:** 2 - Entidades y Reglas
 - **Versión:** 2.25.27
 ```
 

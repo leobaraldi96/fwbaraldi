@@ -5,10 +5,10 @@ description: >
   generado por IA respeta estrictamente el sistema de diseño (tokens) y no
   introduce "alucinaciones" visuales o clases genéricas no aprobadas.
 keywords: ai-coding, compliance, linter, design-tokens, ui-engineering, feedback-loop, qa
-version: "2.28.0"
+version: "2.31.0"
 ---
 
-# Skill 30 — Protocolo de Auditoría de Cumplimiento de UI Generada por IA
+# Protocolo de Auditoría de Cumplimiento de UI Generada por IA
 
 Este protocolo se activa durante la fase de implementación o prototyping para evaluar el código generado por herramientas de IA. Actúa como un "Linter de Alucinaciones Visuales", asegurando que la IA programadora utilice los tokens del `DESIGN.md` y no invente estilos ad-hoc.
 
@@ -42,12 +42,12 @@ Generar un **Prompt de Corrección Exacto** para que la IA corrija su código au
 
 ---
 
-## NEVER List — Anti-patrones de la Auditoría
+## NEVER List - Anti-patrones de la Auditoría
 - **NUNCA** ignores un valor en duro (HEX o pixelaje plano) en el código. El sistema es binario: o consume el token o es una alucinación (violación de Copy/Style Lock).
 - **NUNCA** apruebes componentes interactivos que carezcan de estados de foco (`:focus`, `:focus-visible`) o estados deshabilitados (`:disabled`).
 - **NUNCA** dejes pasar elementos táctiles que no cumplan con el estándar mínimo de `44x44px` en interfaces adaptativas.
 
-## ALWAYS List — Mandatos de la Auditoría
+## ALWAYS List - Mandatos de la Auditoría
 - **SIEMPRE** vincula cada falla a un token o componente específico de la estructura YAML del `DESIGN.md`.
 - **SIEMPRE** prioriza la validación de la accesibilidad y el contraste de colores sobre la coincidencia visual subjetiva.
 - **SIEMPRE** genera el prompt de corrección técnica si se detectan violaciones al principio de "No Inline Values".
@@ -59,4 +59,4 @@ Generar un **Prompt de Corrección Exacto** para que la IA corrija su código au
 - **Output:** Reporte de validación técnica + Prompt de autocorrección para la IA.
 
 ---
-*Framework Baraldi v2.28.0 · Skill 30 · Engine de Auditoría AI*
+*Framework Baraldi v2.31.0 · Engine de Auditoría AI*

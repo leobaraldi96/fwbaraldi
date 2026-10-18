@@ -1,4 +1,4 @@
-# Skill: Momento 1 — Product Logic Orchestration (Actor & Service Blueprint)
+# Skill: Momento 1 - Product Logic Orchestration (Actor & Service Blueprint)
 
 ---
 
@@ -11,7 +11,7 @@ description: >
   2. Service Blueprint (Temporal): Flujo paso a paso con línea de visibilidad.
   Keywords: product logic, actor logic, service blueprint, backstage, frontstage, línea de visibilidad.
 skill_id: product_logic_momento_1
-version: "2.28.0"
+version: "2.31.0"
 framework: Baraldi
 stage: "03 - Product Logic"
 momento: 1
@@ -20,7 +20,7 @@ trigger: "Cuando el humano solicita iniciar la lógica de producto o el blueprin
 input_requerido:
   - Mapa de Actores (de Etapa 02)
   - Flujos críticos (de Etapa 01)
-output_format: "Respuesta directa en chat (Markdown renderizado) — NO uses un bloque de código global"
+output_format: "Respuesta directa en chat (Markdown renderizado) - NO uses un bloque de código global"
 estado_artefacto: BORRADOR
 ```
 
@@ -43,7 +43,7 @@ Definir la **Jurisdicción de Lógica** (quién puede hacer qué) y la **Orquest
 
 ## Instrucciones Operativas
 
-### Paso 0 — Matriz de Orquestación y Priorización (Backlog Lógico)
+### Paso 0 - Matriz de Orquestación y Priorización (Backlog Lógico)
 Antes de orquestar, la IA debe proponer un **Inventario Estratégico de Circuitos**. Esta fase es de co-construcción; debés presentar una tabla basada en los artefactos de la Etapa 02 siguiendo este formato:
 
 **[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
@@ -58,14 +58,14 @@ Antes de orquestar, la IA debe proponer un **Inventario Estratégico de Circuito
 2.  **Selección de Foco:** El humano define en qué circuitos se hará "Doble Clic" (Paso 1 y 2) en esta sesión según la necesidad de Dev o el MVP.
 3.  **Persistencia:** Los circuitos no seleccionados se registran como pendientes para expandir el backlog del proyecto, asegurando que la visión total no se pierda.
 
-### Paso 1 — Actor Logic Definition (Capa Estática)
+### Paso 1 - Actor Logic Definition (Capa Estática)
 Para **CADA UNO** de los actores identificados en la auditoría previa, definís su lógica base:
 - **Jurisdicción:** ¿Qué alcance tiene este actor? ¿Es multi-tenant? ¿Es global?
 - **Capacidades de UI:** Qué acciones dispara desde la interfaz.
 - **Reglas de Backend (RLS / SQL):** Qué filtros o permisos técnicos lo limitan.
 - **Requerimientos Funcionales de Alto Nivel:** Lo que el desarrollador debe saber sobre la "responsabilidad" de este actor.
 
-### Paso 2 — Service Blueprint (Capa Temporal)
+### Paso 2 - Service Blueprint (Capa Temporal)
 Diseñás el paso a paso del servicio. Es **obligatorio** que sea un flujo secuencial:
 - **Línea de Interacción:** Divide al usuario del sistema (Frontstage).
 - **Línea de Visibilidad:** El "Muro de Berlín" del UX. Separa lo que el usuario ve de los procesos invisibles (Backstage).
@@ -78,7 +78,7 @@ Diseñás el paso a paso del servicio. Es **obligatorio** que sea un flujo secue
 Entregás un documento Markdown con esta estructura:
 
 ```markdown
-# Product Logic Orchestration — [Proyecto] [BORRADOR]
+# Product Logic Orchestration - [Proyecto] [BORRADOR]
 
 ## 1. Actor Logic Definition (Matriz de Responsabilidad)
 > Define el alcance legal y técnico de los actores principales.
@@ -135,7 +135,7 @@ Entregás un documento Markdown con esta estructura:
 
 ## Metadata del artefacto
 - **Etapa:** 03 - Product Logic
-- **Momento:** 1 — Orchestration
+- **Momento:** 1 - Orchestration
 - **Versión:** [Versión Actual]
 ```
 
@@ -148,7 +148,7 @@ Entregás un documento Markdown con esta estructura:
 
 ---
 
-## Protocolo de Memoria — Este Momento
+## Protocolo de Memoria - Este Momento
 **Eje Estratégico:** `pl-orchestration-logic`
 Guardar en Engram la Matriz de Actor y los puntos de falla críticos.
 

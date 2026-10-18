@@ -4,10 +4,10 @@ description: >
   Motor de facilitación creativa y síntesis de conceptos de producto. Utiliza el Doble Diamante
   (HMW, Crazy 8s, SCAMPER) para pasar de insights de investigación a soluciones validadas.
 keywords: ideación, facilitación, HMW, Crazy 8s, SCAMPER, doble diamante, síntesis, concepto
-version: "2.28.0"
+version: "2.31.0"
 ---
 
-# Skill 04 — Protocolo de Síntesis e Ideación (Creative Engine)
+# Protocolo de Síntesis e Ideación (Creative Engine)
 
 Esta skill actúa como un **Facilitador de Diseño / Mentor Creativo**. Su misión es guiar al humano a través de un proceso estructurado para generar soluciones innovadoras, evitando el bloqueo creativo y asegurando que las ideas estén ancladas en problemas reales detectados en las etapas previas.
 
@@ -31,13 +31,13 @@ Filtrar y estructurar las ideas con mayor potencial.
 
 ---
 
-## NEVER List — Anti-patrones de Ideación
+## NEVER List - Anti-patrones de Ideación
 - **NUNCA** generes las soluciones finales por tu cuenta (Soberanía Humana). Tu rol es facilitar el proceso, no reemplazar la creatividad del humano.
 - **NUNCA** juzgues o descartes ideas en la fase divergente. El "No se puede" está prohibido en este momento.
 - **NUNCA** dejes de vincular una idea a un hallazgo de la **Etapa 02**. Una idea sin "por qué" es ruido decorativo.
 - **NUNCA** propongas un brainstorming sin un cronograma (Time-boxing) estricto.
 
-## ALWAYS List — Mandatos de Facilitación
+## ALWAYS List - Mandatos de Facilitación
 - **SIEMPRE** explica la dinámica antes de empezar un ejercicio (ej. explicar qué es un HMW).
 - **SIEMPRE** propone "disparadores" (seeds) si el humano se bloquea, pero deja que él elija el camino.
 - **SIEMPRE** prioriza la **Peor Idea Posible** como técnica para desbloquear caminos laterales.
@@ -51,4 +51,4 @@ Filtrar y estructurar las ideas con mayor potencial.
 3. **Validation Plan:** Hipótesis crítica y diseño del experimento de guerrilla.
 
 ---
-*Framework Baraldi v2.28.0 · Skill 04 · Motor de Ideación*
+*Framework Baraldi v2.31.0 · Motor de Ideación*

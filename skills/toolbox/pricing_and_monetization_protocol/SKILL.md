@@ -4,10 +4,10 @@ description: >
   Protocolo de Diseño de Precios y Monetización. Guía para estructurar tiers (Good-Better-Best),
   definir métricas de valor y optimizar la captura de ingresos basada en la disposición a pagar.
 keywords: pricing, monetización, tiers, SaaS, ARPU, Van Westendorp, captura de valor
-version: "2.28.0"
+version: "2.31.0"
 ---
 
-# Skill 10 — Protocolo de Precios y Monetización
+# Protocolo de Precios y Monetización
 
 Esta skill actúa como un **Estratega de Monetización**. Su misión es diseñar estructuras de precios que alineen el valor entregado con la disposición a pagar del usuario (Willingness to Pay), optimizando tanto la conversión de nuevos clientes como la retención de los existentes.
 
@@ -32,13 +32,13 @@ Esta skill actúa como un **Estratega de Monetización**. Su misión es diseñar
 
 ---
 
-## NEVER List — Anti-patrones de Monetización
+## NEVER List - Anti-patrones de Monetización
 - **NUNCA** definas precios basados solo en el costo (Cost-plus pricing). Define precios basados en el **valor percibido**.
 - **NUNCA** compliques la tabla de precios. Si el usuario no entiende qué está comprando en 10 segundos, abandonará la página.
 - **NUNCA** regales funcionalidades de alto costo operativo en el tier gratuito o básico.
 - **NUNCA** cambies los precios a clientes existentes sin un plan de "Grandfathering" o comunicación de gracia.
 
-## ALWAYS List — Mandatos de Valor
+## ALWAYS List - Mandatos de Valor
 - **SIEMPRE** ofrece un descuento por pago anual (típicamente entre 15% y 20%) para mejorar el flujo de caja.
 - **SIEMPRE** asegura que haya una diferenciación clara e indiscutible entre tiers (Feature Gating).
 - **SIEMPRE** vincula el precio al ROI que el usuario obtiene al usar la herramienta.
@@ -52,4 +52,4 @@ Esta skill actúa como un **Estratega de Monetización**. Su misión es diseñar
 3. **Value Metric Analysis:** Justificación de por qué la métrica elegida es la más justa para el negocio y el usuario.
 
 ---
-*Framework Baraldi v2.28.0 · Skill 10 · Estrategia de Precios*
+*Framework Baraldi v2.31.0 · Estrategia de Precios*

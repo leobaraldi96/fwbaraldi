@@ -1,10 +1,10 @@
 ---
 name: wcag-accessibility-audit
 description: Auditoría exhaustiva de accesibilidad web utilizando las pautas WCAG 2.1/2.2. Evalúa el cumplimiento a través de los 4 principios POUR (Perceptible, Operable, Comprensible, Robusto) con niveles de conformidad A, AA, AAA.
-version: "2.28.0"
+version: "2.31.0"
 ---
 
-# Skill 29 — Auditoría de Accesibilidad WCAG
+# Auditoría de Accesibilidad WCAG
 
 Esta skill permite a los agentes de IA realizar una **evaluación de accesibilidad web** completa utilizando los estándares **Web Content Accessibility Guidelines (WCAG) 2.1 y 2.2**, asegurando que los productos digitales sean utilizables por personas con discapacidades.
 
@@ -76,14 +76,14 @@ El Agente debe auditar con prioridad estos puntos de alto impacto:
 
 ---
 
-## NEVER List — Anti-patrones de Accesibilidad
+## NEVER List - Anti-patrones de Accesibilidad
 - **NUNCA** quites el `outline` del foco sin proporcionar un reemplazo visual de alto contraste.
 - **NUNCA** uses `click here` o `leer más` como texto de enlace; debe ser descriptivo por sí solo.
 - **NUNCA** fuerces la apertura de ventanas nuevas sin advertir al usuario.
 - **NUNCA** uses tablas para maquetar el layout visual; las tablas son solo para datos tabulares.
 - **NUNCA** permitas que un video se reproduzca automáticamente con sonido.
 
-## ALWAYS List — Mandatos de Diseño Inclusivo
+## ALWAYS List - Mandatos de Diseño Inclusivo
 - **SIEMPRE** usa unidades relativas (`rem`) para tipografía y espaciado.
 - **SIEMPRE** verifica que el contraste de color cumpla el estándar AA antes de aprobar un diseño.
 - **SIEMPRE** asegura que todos los elementos interactivos tengan un estado de foco visible.
@@ -103,4 +103,4 @@ Al finalizar la auditoría, genera este cuadro de mando:
 | **Robusto** |  Riesgo | Estados de carga no anunciados. | Implementar `role="status"`. |
 
 ---
-*Framework Baraldi v2.28.0 · Skill 29 · Engine de Accesibilidad WCAG*
+*Framework Baraldi v2.31.0 · Engine de Accesibilidad WCAG*

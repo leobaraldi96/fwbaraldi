@@ -4,10 +4,10 @@ description: >
   Protocolo de triaje sistémico y resolución de causa raíz. Clasifica feedback, incidencias
   y fricciones por causas raíz y aplica el Over-Engineering Test para simplificar el producto.
 keywords: triaje, causa raíz, simplificación, feedback, bugs, over-engineering test, backlog triage
-version: "2.28.0"
+version: "2.31.0"
 ---
 
-# Protocolo — Triaje Sistémico de Producto y Resolución de Causa Raíz
+# Protocolo - Triaje Sistémico de Producto y Resolución de Causa Raíz
 
 Este protocolo actúa como un **Principal Systems Product Architect**. Su misión es evitar la trampa de parchar síntomas uno por uno hasta que el producto se convierta en una maquinaria monstruosa, sobrecargada e inmantenible.
 
@@ -39,15 +39,15 @@ Este protocolo actúa como un **Principal Systems Product Architect**. Su misió
 
 ---
 
-## NEVER List — Anti-patrones
+## NEVER List - Anti-patrones
 - **NUNCA** agregues un parche superficial a un flujo si la lógica de fondo está rota.
 - **NUNCA** crees configuraciones o preferencias complejas para el usuario si el sistema puede tomar la decisión inteligente por defecto.
 - **NUNCA** cierres un problema sin documentar la causa raíz y su verificación en Engram (`mem_save`).
 
-## ALWAYS List — Mandatos
+## ALWAYS List - Mandatos
 - **SIEMPRE** prioriza simplificar y eliminar complejidad antes que añadir nuevas capas.
 - **SIEMPRE** documenta los aprendizajes y relaciones semánticas con `mem_save(topic_key="triage/...")`.
 - **SIEMPRE** vincula la solución a la North Star de la Etapa 01.
 
 ---
-*Framework Baraldi v2.28.0 · Systemic Issue Triage Protocol.*
+*Framework Baraldi v2.31.0 · Systemic Issue Triage Protocol.*

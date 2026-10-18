@@ -188,6 +188,46 @@ for (let i = 1; i <= 8; i++) {
     }
 }
 
+// 5. Deep Audit: Todos los archivos Markdown en skills/ (core, methodology, engines, momentos, toolbox)
+function walkMarkdown(dir) {
+    let results = [];
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+        const fullPath = path.join(dir, entry.name);
+        if (entry.isDirectory()) {
+            results = results.concat(walkMarkdown(fullPath));
+        } else if (entry.name.endsWith('.md')) {
+            results.push(fullPath);
+        }
+    }
+    return results;
+}
+
+const allSkillMdFiles = walkMarkdown(path.join(rootDir, 'skills'));
+console.log(chalk.yellow(`\n🧬 Auditando Higiene Profunda en los ${allSkillMdFiles.length} archivos Markdown de skills/...`));
+
+let subFileIssues = 0;
+allSkillMdFiles.forEach(filePath => {
+    const relPath = path.relative(rootDir, filePath);
+    const content = fs.readFileSync(filePath, 'utf8');
+
+    if (content.includes('\u2014') || content.includes('\u2013')) {
+        reportIssue(`Guiones largos prohibidos (— / –) detectados en ${relPath}`);
+        subFileIssues++;
+    }
+    if (/2\.(28|29|30)\.\d+/.test(content)) {
+        reportIssue(`Versión desactualizada detectada en ${relPath} (se esperaba ${currentVersion})`);
+        subFileIssues++;
+    }
+    if (/^#\s+Skill\s+\d+/m.test(content)) {
+        reportIssue(`Encabezado legado '# Skill XX' detectado en ${relPath}`);
+        subFileIssues++;
+    }
+});
+
+if (subFileIssues === 0) {
+    reportSuccess(`${allSkillMdFiles.length} archivos Markdown verificados (versión ${currentVersion}, cero guiones largos y sin encabezados legados)`);
+}
+
 console.log('\n------------------------------------------------');
 if (issues === 0) {
     console.log(chalk.bold.green('🚀 RESULTADO: FRAMEWORK NIVELADO Y LISTO PARA SUBIR.'));
@@ -195,3 +235,4 @@ if (issues === 0) {
     console.log(chalk.bold.red(`🛑 RESULTADO: SE ENCONTRARON ${issues} INCONSISTENCIAS. NO SUBIR.`));
 }
 console.log('------------------------------------------------\n');
+

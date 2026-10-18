@@ -39,13 +39,13 @@ Una vez definida la Voz, diseña con el usuario las matrices operativas:
     *   **Mensajes de Error:** Prohibido culpar al usuario. Estructura fija: *Qué pasó + Por qué + Cómo solucionarlo*. (Ej: *"No pudimos guardar los cambios. Revisa tu conexión e inténtalo de nuevo."*)
     *   **Tooltips:** Máximo 150 caracteres. Un solo concepto por globo. Nunca esconder información crítica dentro de un tooltip.
 3. **Estados Temporales y de Confirmación** *(patrón incorporado desde AI UX Playground)*
-    *   **Carga / Progreso — Regla de los 3 umbrales:**
+    *   **Carga / Progreso - Regla de los 3 umbrales:**
         | Tiempo de espera | Qué mostrar |
         | :--- | :--- |
         | **< 2 segundos** | Solo spinner visual, sin texto |
-        | **2 – 10 segundos** | Mensaje de estado descriptivo (ej: *"Guardando cambios..."*) |
+        | **2 - 10 segundos** | Mensaje de estado descriptivo (ej: *"Guardando cambios..."*) |
         | **> 10 segundos** | Duración estimada + porcentaje de progreso (ej: *"Procesando tu video. Suele tomar 1-2 minutos."*) |
-    *   **Mensajes de Éxito — Más allá de la confirmación:**
+    *   **Mensajes de Éxito - Más allá de la confirmación:**
         *    Genérico: *"¡Éxito!"*
         *    Específico: *"Tu perfil ha sido actualizado."*
         *    Con datos: *"Mensaje enviado a usuario@ejemplo.com"* / *"Pedido #12345 confirmado."*
@@ -85,7 +85,7 @@ Con todas las validaciones aprobadas por el humano, debes generar dos cosas:
 Cuando escribas el archivo físico, usa esta estructura exacta:
 
 ```markdown
-# VOICE.md — Fuente de Verdad de Contenido
+# VOICE.md - Fuente de Verdad de Contenido
 
 > **Prompt Inyectable:** "Eres un UX Writer experto. Aplica estrictamente las siguientes reglas de Tono, Voz y Microcopy para cualquier texto, botón o mensaje de error que generes para este proyecto."
 
@@ -116,7 +116,7 @@ Cuando escribas el archivo físico, usa esta estructura exacta:
 Toda redacción de interfaz (títulos, modales, alertas, correos) debe regirse bajo los principios del manual de escritura humana:
 - **Tono conversacional y ritmo natural:** Evitar la neutralidad estéril de chatbot; tomar una postura de marca clara y variar la longitud de las oraciones.
 - **Lista de palabras prohibidas de IA:** Queda prohibido usar palabras del vocabulario redundante de LLM (ej. "crucial", "vibrante", "tapiz", "delve").
-- **Directivas gramaticales:** No usar guiones largos (—) en exceso, comillas tipográficas curvas o emojis decorativos en títulos. Usar el verbo directo "es/tiene" en lugar de rodear con "sirve como/actúa como".
+- **Directivas gramaticales:** No usar guiones largos ( - ) en exceso, comillas tipográficas curvas o emojis decorativos en títulos. Usar el verbo directo "es/tiene" en lugar de rodear con "sirve como/actúa como".
 - Para ver ejemplos prácticos de antes/después, consúltese la guía universal [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) o las directivas del manual de escritura humana del framework.
 ```
 
@@ -127,4 +127,4 @@ Toda redacción de interfaz (títulos, modales, alertas, correos) debe regirse b
 - **Engram Save:** Al generar el archivo, lanza un `mem_save` con el título *"Establecido el VOICE.md"* y el tag `ux-voice-tone`.
 
 ---
-*Framework Baraldi v2.28.0 · Etapa 05 / Momento 1*
+*Framework Baraldi v2.31.0 · Etapa 05 / Momento 1*

@@ -5,10 +5,10 @@ description: >
   Transforma hallazgos técnicos en historias de éxito de negocio y proporciona protocolos
   de defensa ante perfiles tóxicos (Anti-Lucio/Charly/Maxi).
 keywords: pitch, stakeholders, narrativa, defensa, Q&A, Anti-Lucio, gestión política, visibilidad
-version: "2.28.0"
+version: "2.31.0"
 ---
 
-# Skill 01 — Estrategia Narrativa y Gestión de Stakeholders
+# Estrategia Narrativa y Gestión de Stakeholders
 
 Esta skill actúa como un **Consultor de Comunicación Estratégica**. Su misión es asegurar que el valor generado por el framework sea comprendido, aprobado y celebrado por quienes toman las decisiones, protegiendo la integridad del proyecto ante la política corporativa.
 
@@ -54,13 +54,13 @@ Generar una lista de "preguntas difíciles" basadas en el contexto actual y ensa
 
 ---
 
-## NEVER List — Lo que NUNCA debemos hacer
+## NEVER List - Lo que NUNCA debemos hacer
 - **NUNCA** presentes una deck sin un **Executive Summary** (TL;DR) al inicio.
 - **NUNCA** uses jerga técnica (padding, API, refactor) con stakeholders de negocio. Habla de valor, tiempo y dinero.
 - **NUNCA** salgas de una reunión sin enviar una **Minuta de Decisión** en los primeros 30 minutos.
 - **NUNCA** aceptes feedback vago como "hacelo más pop"; fuerza la traducción a requerimientos técnicos.
 
-## ALWAYS List — Mandatos de Comunicación
+## ALWAYS List - Mandatos de Comunicación
 - **SIEMPRE** vincula cada hallazgo a un OKR o a la métrica North Star definida en la Etapa 01.
 - **SIEMPRE** incluye citas reales de usuarios para humanizar la data.
 - **SIEMPRE** sé transparente con los riesgos y lo que "no sabemos todavía". La honestidad construye autoridad.
@@ -75,4 +75,4 @@ Generar una lista de "preguntas difíciles" basadas en el contexto actual y ensa
 4. **Q&A Cheat Sheet:** Respuestas blindadas para la sesión de preguntas.
 
 ---
-*Framework Baraldi v2.28.0 · Skill 01 · Estrategia Narrativa*
+*Framework Baraldi v2.31.0 · Estrategia Narrativa*

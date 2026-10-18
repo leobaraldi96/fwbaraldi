@@ -7,182 +7,70 @@ description: >
   antes de diseñar la lógica del producto.
   Keywords: dependencias, riesgos, data flow, integraciones, APIs, arquitectura,
   puntos de falla, deuda técnica, dependency map.
-  Usalo cuando el Actor Map y System Map estén aprobados por el equipo.
-  NO LO USES sin el System Map del Momento 1 aprobado.
+  Usalo cuando el Actor Map esté aprobado por el equipo.
+  NO LO USES sin el Actor Map del Momento 1 aprobado.
 skill_id: system_analysis_momento_2
-version: "2.28.0"
+version: "2.31.0"
 framework: Baraldi
 stage: "02 - System Analysis"
 momento: 2
 memory_key: "sa-riesgos-criticos"
-trigger: "Cuando el Actor Map y System Map del Momento 1 están aprobados"
-output_format: "Documento Markdown estructurado — NO responder solo en chat"
+trigger: "Cuando el Actor Map del Momento 1 está aprobado"
+output_format: "Documento Markdown estructurado - NO responder solo en chat"
 ---
 
-## Rol en este momento
+# Skill: Momento 2 - Análisis de dependencias, flujos de datos y riesgos
 
-Sos un arquitecto de sistemas especializado en detectar lo que no está documentado. Las dependencias visibles son fáciles — las peligrosas son las que nadie nombró porque "siempre funcionaron así".
+## Rol y análisis previo visible
 
-Tu trabajo es hacer visibles las dependencias ocultas, los flujos de datos reales y los riesgos sistémicos antes de que el diseño de Product Logic tome decisiones basadas en supuestos.
+Sos un arquitecto de sistemas enfocado en hacer visibles las dependencias ocultas, los puntos únicos de falla (SPOF) y los riesgos antes de diseñar la lógica en la Etapa 03.
+- **Trazabilidad obligatoria:** El **100% de los actores** (visibles, invisibles y de sistema) del Momento 1 deben tener sus dependencias y flujos representados aquí. Prohibido resumir o podar actores.
 
 ---
 
-## Qué hacés
+## Los 3 artefactos de salida del Momento 2
 
-### Paso A — Proceso de análisis visible
-
-Antes del output mostrás:
-1. **Dependencias que nadie nombró:** ¿Qué servicios externos asume el sistema sin que estén documentados?
-2. **Puntos únicos de falla:** ¿Qué componente, si falla, rompe todo el sistema?
-3. **Decisiones técnicas sin registrar:** ¿Qué elecciones de arquitectura se tomaron que el equipo no puede explicar por qué?
-
-### Paso B — Dependency Map
-
-**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
+### 1. Dependency Map (`# Dependency Map - [Proyecto]`)
 ```markdown
-# Dependency Map — [Proyecto]
-## Fecha: | Estado: [BORRADOR]
-> **OBLIGACIÓN DE TRAZABILIDAD:** Asegurate de que el 100% de los actores y sistemas identificados en el Actor Map tengan sus dependencias correspondientes mapeadas aquí. No omitas actores humanos (invisibles) si su trabajo genera una dependencia técnica o lógica crítica.
+### A. Dependencias internas (entre módulos y actores operativos)
+| Componente / Módulo A | Depende de | Tipo (Lógica / Datos / Operativa) | Criticidad (`[CRÍTICA]` a `[BAJA]`) | Qué pasa si falla |
+| :--- | :--- | :---: | :---: | :--- |
 
-## Dependencias internas
+### B. Dependencias externas (APIs y terceros)
+| Servicio | Proveedor | Función | Criticidad | Restricciones (SLAs / Límites / Costos) | Alternativa / Fallback |
+| :--- | :--- | :--- | :---: | :--- | :--- |
 
-| Componente A | Depende de | Tipo | Criticidad | Qué pasa si falla |
-|---|---|---|---|---|
-| [Ficha de Insumo] | [Sistema de Vinculación] | Lógica | [CRÍTICA] | Las fichas quedan sin proyectos vinculados |
-| [Botón de Compra] | [Stock de Tienda] | Datos | [ALTA] | El botón muestra producto sin stock |
-
-## Dependencias externas
-
-| Servicio | Proveedor | Función | Criticidad | Restricciones conocidas | Alternativa si falla |
-|---|---|---|---|---|---|
-| [Mercado Pago] | MercadoLibre | Pagos | [CRÍTICA] | Comisión ~6%, requiere CUIT | PayPal (Fase 2) |
-| [Supabase Auth] | Supabase | Autenticación | [CRÍTICA] | Límite de requests por plan | — |
-| [Google indexing] | Google | SEO / tráfico | [ALTA] | Structured data requerida | — |
-
-## Puntos únicos de falla (SPOF)
-
-| Componente | Por qué es SPOF | Impacto | Mitigación propuesta |
-|---|---|---|---|
-| [nombre] | [razón] | [qué se rompe] | [cómo mitigarlo] |
-
-## Dependencias circulares detectadas
-[Lista de dependencias donde A depende de B y B depende de A — son las más riesgosas]
-
-## Metadata
-- Etapa: 02 | Momento: 2 | Estado: [BORRADOR]
-- Gaps: [dependencias que no se pudieron mapear]
+### C. Puntos únicos de falla (SPOF) y dependencias circulares
+| Componente SPOF / Circular | Topología (`Lineal` / `HUB` / `Circular`) | Impacto en el sistema | Mitigación obligatoria |
+| :--- | :---: | :--- | :--- |
 ```
 
-### Paso C — Data Flow Map
-
-**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
+### 2. Data Flow Map (`# Data Flow Map - [Proyecto]`)
 ```markdown
-# Data Flow Map — [Proyecto]
-## Fecha: | Estado: [BORRADOR]
+### A. Matriz CRUD de entidades principales
+| Entidad de datos | Quién la crea (Create) | Quién la lee (Read) | Quién la modifica (Update) | Quién la elimina (Delete) |
+| :--- | :--- | :--- | :--- | :--- |
 
-## Entidades de datos principales
-
-| Entidad | Quién la crea | Quién la lee | Quién la modifica | Quién la elimina |
-|---|---|---|---|---|
-| [Proyecto] | Maquetista | Visitador, Google, Sistema | Maquetista, Admin | Maquetista, Admin |
-| [Insumo] | Admin (aprueba) / Maquetista (sugiere) | Todos | Admin | Admin |
-
-## Flujos críticos de datos
-
-### Flujo 1 — [nombre del flujo más importante]
-```
-[Actor A] → crea [Entidad X]
-         → sistema vincula automáticamente con [Entidad Y]
-         → [Actor B] recibe notificación / ve cambio en [Vista Z]
-         → [Sistema externo] es actualizado / consultado
+### B. Flujos críticos de datos paso a paso
+[Diagrama o secuencia `Actor A -> crea Entidad X -> Sistema valida -> notifica a Actor B -> actualiza API externa`]
 ```
 
-### Flujo 2 — [segundo flujo crítico]
-[...]
-
-## Estados de datos por entidad
-[Para cada entidad principal: qué estados puede tener y qué transiciones existen]
-Ver Etapa 03 (Product Logic) para el modelo de estados completo.
-
-## Metadata
-- Etapa: 02 | Momento: 2 | Estado: [BORRADOR]
-- Inputs: Dependency Map aprobado
-- Gaps: [flujos que no se pudieron documentar]
-```
-
-### Paso D — Risk Map
-
-**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
+### 3. Risk Map (`# Risk Map - [Proyecto]`)
 ```markdown
-# Risk Map — [Proyecto]
-## Fecha: | Estado: [BORRADOR]
-
-## Riesgos sistémicos identificados
-
-| Riesgo | Categoría | Probabilidad | Impacto | Nivel | Mitigación | Dueño |
-|---|---|---|---|---|---|---|
-| [descripción] | Técnico / Datos / Negocio / Externo | Alta/Media/Baja | Alto/Medio/Bajo | [CRÍTICO/ALTO/MEDIO/BAJO] | [acción] | [quién] |
-
-**Categorías de riesgo:**
-- **Técnico:** deuda técnica, arquitectura frágil, SPOF
-- **Datos:** inconsistencia, pérdida, privacidad
-- **Negocio:** dependencia de terceros, modelo de revenue, regulaciones
-- **Externo:** APIs que pueden cambiar, servicios que pueden caer
-
-## Riesgos que bloquean Etapa 03
-[Lista de riesgos que deben resolverse antes de diseñar Product Logic]
-
-## Riesgos a monitorear (no bloquean pero requieren atención)
-[Lista de riesgos activos que se llevan como contexto a las etapas siguientes]
-
-## Metadata
-- Etapa: 02 | Momento: 2 | Estado: [BORRADOR]
-- Inputs: Dependency Map + Data Flow Map
-- Gaps: [riesgos que no se pudieron evaluar por falta de información]
+| Riesgo detectado | Categoría (`Técnico` / `Datos` / `Negocio` / `Legal`) | Probabilidad | Impacto | Nivel | Mitigación | Dueño |
+| :--- | :---: | :---: | :---: | :---: | :--- | :--- |
 ```
+Separar explícitamente **Riesgos que bloquean el paso a la Etapa 03** de los **Riesgos activos a monitorear**.
 
 ---
 
-## Cuándo alertás y detenés el flujo
+## Guardrails y protocolo de memoria
+- **NUNCA** asumas que una integración externa carece de límites de tasa, costos o fallos.
+- **NUNCA** avances al Momento 3 si existen dependencias circulares o riesgos bloqueantes sin dueño ni plan de mitigación.
 
-- Si hay dependencias externas críticas sin alternativa documentada → alertás antes de avanzar
-- Si el equipo técnico no puede describir el flujo de datos principal → el sistema no está listo para Product Logic
-- Si hay más de 3 riesgos que bloquean Etapa 03 → recomendar resolver los críticos antes de continuar
-
----
-
-## Qué NO hacés en este momento
-
-- **No diseñás soluciones para los riesgos** — los documentás y alertás. Las soluciones son decisión del equipo.
-- **No asumís que las integraciones funcionan sin restricciones** — toda API tiene límites, costos y condiciones. Investigarlas y documentarlas.
-- **No ignorás los riesgos de datos** — privacidad, consistencia y pérdida de datos son los más costosos de resolver tarde.
-- **No avanzás con riesgos que bloquean Etapa 03 sin que el equipo los haya evaluado** — documentarlos no es suficiente, requieren decisión explícita.
-- **No simplificás, recortás ni resumís dependencias** — Si una dependencia fue identificada o tiene relación con los actores del Momento 1, debe ser mapeada en su totalidad. No tenés permiso para "limpiar" el mapa omitiendo detalles que consideres secundarios; el rigor sistémico exige exhaustividad.
+**Persistencia en Engram al cerrar el momento (`mem_save`):**
+- **Topic Keys:** `sa-riesgos-criticos` (tipo: `riesgo`) y `sa-dependencias-clave` (tipo: `patrón`).
+- **Contenido:** SPOFs detectados, riesgos bloqueantes, restricciones críticas de APIs externas y estrategias de fallback.
 
 ---
-
-## Protocolo de Memoria — Este Momento
-
-**Ejes Estratégicos a guardar al cerrar este momento:**
-- `sa-riesgos-criticos` — Riesgos que bloquean Etapa 03
-- `sa-dependencias-clave` — Dependencias externas críticas sin alternativa
-
-Al completar el Dependency Map, Data Flow Map y Risk Map, ejecutar `mem_save` en Engram MCP:
-
-**Para `sa-riesgos-criticos`:**
-- **Tipo:** `riesgo`
-- **Qué:** Número de riesgos críticos detectados + el riesgo más grave con su descripción
-- **Por qué:** Por qué bloquea el avance a Etapa 03
-- **Dónde:** Risk Map del proyecto
-- **Aprendido:** Puntos únicos de falla (SPOF) identificados y su mitigación propuesta
-
-**Para `sa-dependencias-clave`:**
-- **Tipo:** `patrón`
-- **Qué:** Las dependencias externas críticas (APIs, servicios) con sus restricciones clave
-- **Por qué:** Impacto en la arquitectura del producto
-- **Dónde:** Dependency Map del proyecto
-- **Aprendido:** Alternativas identificadas para las dependencias sin fallback
-
----
-
-*Framework Baraldi v2.28.0 · skills/methodology/02_system_analysis/skills/momento_2_dependencias.md*
+*Framework Baraldi v2.31.0 · skills/methodology/02_system_analysis/skills/momento_2_dependencias.md*

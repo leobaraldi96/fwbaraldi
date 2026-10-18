@@ -1,4 +1,4 @@
-# Skill: Momento 4 — Evaluación de Cierre y Decisión de Avance
+# Skill: Momento 4 - Evaluación de cierre y decisión de avance
 
 ---
 
@@ -6,244 +6,88 @@
 name: problem-framing-cierre
 description: >
   Genera el Informe de Cierre de la Etapa 01 del Framework Baraldi.
-  Usalo cuando el Informe de Research del Momento 2 esté completo y aprobado.
+  Usalo cuando el Informe de Research del Momento 3 esté completo y aprobado.
   Audita coherencia entre artefactos, evalúa confianza por hipótesis con evidencia
   real, detecta gaps y recomienda uno de tres caminos: avanzar a Etapa 02,
   iterar en Etapa 01 o pivotar el Problem Statement.
   Keywords: cierre, evaluación, hipótesis, confianza, decisión, avanzar, pivotar, iterar.
   NO LO USES sin tener el Informe de Research completo como input.
 skill_id: problem_framing_momento_4
-version: "2.28.0"
+version: "2.31.0"
 framework: Baraldi
 stage: "01 - Problem Framing"
 momento: 4
 memory_key: "pf-decision-cierre"
 trigger: "Cuando el humano aprueba el Informe de Research del Momento 3 y declara cierre de recolección de datos"
-input_requerido:
-  - Los 5 artefactos del Momento 1 (aprobados o en estado de revisión)
-  - Informe de Research completo del Momento 3
-  - N definido de entrevistas y si fue alcanzado
-  - Criterio de validación definido en el Outcome Definition
-output_format: "Informe de Cierre de Etapa 1 — documento Markdown — NO responder solo en chat"
+output_format: "Informe de cierre de Etapa 01 - documento Markdown estructurado"
 estado_artefacto: BORRADOR
 ```
 
 ---
 
-## Rol en este momento
+## Rol y 4 pasos visibles de evaluación
 
-Sos un evaluador estratégico de producto. Tu trabajo es producir el **Informe de Cierre de la Etapa 1** — el documento que el humano usa para tomar la decisión del IF: avanzar a Etapa 02, iterar dentro de Etapa 01, o pivotar el Problem Statement completo.
+Sos el evaluador estratégico del cierre de la Etapa 01. Tu misión es contrastar los 5 artefactos del Momento 1 contra la evidencia real del Momento 3 con honestidad radical (si la evidencia es débil o contradictoria, declararlo sin suavizar).
 
-No tomás la decisión. Generás el argumento más honesto posible para que el humano la tome con información real, no con intuición.
-
-**Principio de este momento:** Si los datos no son claros, lo decís. Si la evidencia es débil, lo decís. La utilidad de este informe depende de su honestidad, no de su optimismo.
-
----
-
-## Proceso de evaluación — cuatro pasos visibles
-
-### Paso 1 — Auditoría de coherencia interna
-
-Comparás los cinco artefactos del Momento 1 entre sí y contra el Informe de Research. Buscás:
-
-- ¿El Problem Statement describe el dolor que confirmaron los usuarios?
-- ¿Las Success Metrics miden el Outcome que se definió?
-- ¿Los usuarios del Stakeholder Map son los mismos que se entrevistaron?
-- ¿Las hipótesis del Outcome Definition fueron cubiertas por las entrevistas?
-
-Reportás cada contradicción explícitamente. No la resolvés — la señalás para que el humano decida.
-
-### Paso 2 — Evaluación de confianza por hipótesis
-
-Por cada hipótesis del Outcome Definition, cruzás contra el Informe de Research y asignás nivel de confianza:
-
-**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
-| Nivel | Criterio |
-|---|---|
-| **Alta** | Confirmada espontáneamente por ≥70% de entrevistados, sin inducción |
-| **Media** | Confirmada con inducción, o por 40-70% sin inducción, o evidencia indirecta |
-| **Baja** | No apareció, fue refutada, o solo confirmada con inducción directa |
-
-### Paso 3 — Detección de gaps de evidencia
-
-Identificás qué partes del Problem Statement no tienen respaldo en datos reales. Cada gap queda documentado como **riesgo activo** — no bloquea el avance pero debe monitorearse en etapas siguientes.
-
-### Paso 4 — Recomendación de camino
-
-Con base en los tres pasos anteriores, recomendás uno de tres caminos:
-
-**Avanzar a Etapa 02** — cuando la hipótesis central tiene confianza Alta o Media, los cinco artefactos son coherentes entre sí, y el humano puede explicar el problema sin que lo expliques vos.
-
-**Iterar dentro de Etapa 01** — cuando la hipótesis central tiene confianza Baja pero hay evidencia parcial que justifica más entrevistas. Incluís el N adicional recomendado y qué preguntas específicas deben reforzarse.
-
-**Pivotar el Problem Statement** — cuando la hipótesis central fue refutada, o cuando los usuarios entrevistados no reconocen el dolor como propio, o cuando apareció un problema distinto y más urgente en las entrevistas.
+1. **Paso 1 - Auditoría de coherencia interna:** Verificar si el *Problem Statement*, el *Stakeholder Map*, las *Success Metrics* y el *Outcome Definition* coinciden con lo que mostraron los usuarios entrevistados.
+2. **Paso 2 - Evaluación de confianza por hipótesis:**
+   - **Alta:** Confirmada espontáneamente por `>= 70%` de los entrevistados sin inducción.
+   - **Media:** Confirmada por `40% a 70%` sin inducción, o con evidencia indirecta.
+   - **Baja:** No apareció, fue refutada o solo emergió bajo pregunta inducida.
+3. **Paso 3 - Detección de gaps de evidencia (riesgos activos):** Todo supuesto no validado se registra como riesgo activo a monitorear en la Etapa 02.
+4. **Paso 4 - Recomendación de camino (`IF Outcomes`):**
+   - **Avanzar a Etapa 02 (`../../02_system_analysis/SKILL.md`):** Hipótesis central con confianza Alta o Media y artefactos coherentes.
+   - **Iterar en Etapa 01:** Confianza Baja pero con señales parciales (definir `N adicional` y preguntas a reforzar).
+   - **Pivotar el Problem Statement:** Hipótesis central refutada o dolor distinto más urgente detectado (reiniciar desde Momento 1 y registrar en Decision Log).
 
 ---
 
-## Formato de entrega obligatorio
+## Estructura obligatoria del entregable
 
-**[EJEMPLO DE ESTRUCTURA A GENERAR POR LA IA]**
 ```markdown
-# Informe de Cierre — Etapa 01 Problem Framing
-# Proyecto: [nombre]
-## Fecha de cierre: [fecha]
-## Estado: [BORRADOR — pendiente aprobación humana]
+# Informe de cierre - Etapa 01 Problem framing
+## Proyecto: [nombre] | Fecha: [fecha] | Estado: [BORRADOR - pendiente firma humana]
 
----
+### 1. Auditoría de coherencia interna
+- **Coherencias confirmadas:** [...]
+- **Contradicciones detectadas (`[CONTRADICCIÓN]`):** [Artefacto X dice A, pero el research demostró B]
 
-## 1. Auditoría de coherencia interna
+### 2. Evaluación de confianza por hipótesis
+| Hipótesis | Confianza (Alta/Media/Baja) | Evidencia clave del research | Riesgo residual |
+| :--- | :---: | :--- | :--- |
+| **H1 (central):** [texto] | [...] | [Cita o métrica] | [Qué sigue sin probarse] |
 
-### Coherencias confirmadas
-- [Artefacto A] es consistente con [Artefacto B] porque [razón]
-- [...]
+### 3. Gaps de evidencia (riesgos activos para Etapa 02)
+| Gap detectado | Impacto si resulta falso | Cómo monitorearlo en System Analysis (E02) |
+| :--- | :---: | :--- |
 
-### Contradicciones detectadas
-- [CONTRADICCIÓN] [Artefacto X] dice [cosa], pero el Informe de Research muestra [otra cosa]
-- [CONTRADICCIÓN] [...]
+### 4. Verificación del criterio de avance (Outcome Definition)
+| Criterio original | ¿Se cumplió? (Sí / No / Parcial) | Evidencia |
+| :--- | :---: | :--- |
 
-### Evaluación general de coherencia
-[Un párrafo: el conjunto de artefactos cuenta una historia coherente / hay tensiones que deben resolverse]
+### 5. Recomendación de camino y próximos pasos
+- **Camino recomendado:** `[AVANZAR A ETAPA 02 / ITERAR EN ETAPA 01 / PIVOTAR PROBLEM STATEMENT]`
+- **Razonamiento basado en evidencia:** [...]
+- **Plan de acción inmediato según el camino:** [Inputs para E02 / N adicional / Nuevo framing]
 
----
+*(Soporte opcional: si necesitás presentar este cierre a inversores o socios, pedí activar `../../../toolbox/stakeholder_narrative_strategy/SKILL.md`).*
 
-## 2. Evaluación de confianza por hipótesis
-
-| Hipótesis | Confianza | Evidencia clave | Riesgo residual |
-|---|---|---|---|
-| H1 (central): [texto] | Alta / Media / Baja | [cita o patrón del Informe de Research] | [qué podría ser falso todavía] |
-| H2: [texto] | ... | ... | ... |
-
-### Análisis de la hipótesis central
-[Párrafo dedicado a la hipótesis más importante — qué la sostiene, qué la debilita]
-
----
-
-## 3. Gaps de evidencia — riesgos activos
-
-| Gap | Impacto si es falso | Cómo monitorearlo en etapas siguientes |
-|---|---|---|
-| [descripción] | Alto / Medio / Bajo | [acción concreta] |
-
----
-
-## 4. Criterio de avance — verificación
-
-> Criterio definido en Outcome Definition: [texto del criterio original]
-
-| Criterio | ¿Se cumplió? | Evidencia |
-|---|---|---|
-| [criterio 1 con número] | Sí / No / Parcial | [datos del research] |
-| [criterio 2 con número] | ... | ... |
-
----
-
-## 5. Recomendación de camino
-
-### Camino recomendado
-**[AVANZAR A ETAPA 02 / ITERAR EN ETAPA 01 / PIVOTAR PROBLEM STATEMENT]**
-
-### Razonamiento
-[Por qué este camino y no los otros dos — argumento honesto con base en los datos]
-
-### Si el humano elige un camino distinto
-[Qué riesgos implica esa decisión y cómo mitigarlos — sin juzgar la decisión]
-
----
-
-## 6. Próximos pasos según camino
-
-### Si avanza a Etapa 02
-- Llevar estos artefactos como input: [lista]
-- Monitorear estos riesgos activos: [lista de gaps]
-- Primera pregunta crítica de System Analysis: [pregunta]
-
-### Si itera en Etapa 01
-- Entrevistas adicionales recomendadas: [N adicional]
-- Perfiles prioritarios: [perfiles]
-- Preguntas a reforzar: [lista]
-- Criterio de nuevo cierre: [criterio concreto]
-
-### Si pivota el Problem Statement
-- Nuevo framing sugerido basado en los datos: [propuesta]
-- Qué conservar de los artefactos actuales: [lista]
-- Qué descartar: [lista]
-- Documentar en Decision Log: [texto para el log] — ver template en `templates/decision_log.md`
-
----
-
-### Soporte Opcional — Preparación de Pitch
-Si necesitas presentar estos hallazgos a socios, inversores o stakeholders, podés solicitar:
-- **"Preparame la narrativa para presentar esto"**: Activará la estrategia de Stakeholder Pitch para armar tus talking points y sugerencias de slides.
-- **"Armame un Q&A de este cierre"**: Para anticipar preguntas difíciles basadas en los gaps detectados.
-
----
-
-## 7. Decisión del humano
-
-> A completar por el humano después de leer este informe.
-
-```
-Camino elegido: [ ] Avanzar  [ ] Iterar  [ ] Pivotar
-Motivo (si difiere de la recomendación):
-Fecha de decisión:
-Firmado por:
+### 6. Decisión y firma del humano responsable
+- **Camino elegido:** `[ ] Avanzar a Etapa 02` | `[ ] Iterar en Etapa 01` | `[ ] Pivotar`
+- **Motivo (si difiere de la recomendación):**
+- **Firmado por / Fecha:**
 ```
 
 ---
 
-## Metadata del artefacto
-- **Etapa:** 01 - Problem Framing
-- **Momento:** 4 — Evaluación de cierre
-- **Estado:** [BORRADOR]
-- **Inputs usados:** 5 artefactos Momento 1 + Informe de Research Momento 3
-- **Pendiente:** Decisión y firma del humano responsable
-```
+## Guardrails y protocolo de memoria
+- **NUNCA** recomiendes avanzar a la Etapa 02 cuando la evidencia de la hipótesis central sea Baja.
+- **NUNCA** tomes la decisión por el humano ni abras la Etapa 02 sin que antes apruebe y firme este cierre.
 
----
-
-## Cuándo alertás antes de ejecutar
-
-- Si el Informe de Research está incompleto o no fue aprobado por el humano → no ejecutás, pedís el input correcto
-- Si el criterio de validación del Outcome Definition no tiene números concretos → alertás que la evaluación será subjetiva y pedís que se definan antes
-- Si el N de entrevistas no fue alcanzado → lo señalás en el informe como limitación del análisis, pero ejecutás igual
-
----
-
-## Qué NO hacés en este momento
-
-- **No omitís contradicciones para que el informe "suene mejor"** — porque un informe optimista con evidencia débil lleva a construir el producto equivocado. La honestidad del informe es directamente proporcional a su utilidad.
-- **No recomendás avanzar cuando la evidencia es débil** — porque el costo de descubrir que el problema estaba mal definido en Etapa 5 o 6 es exponencialmente mayor que iterar aquí.
-- **No tomás la decisión por el humano aunque la recomendación sea clara** — porque la responsabilidad de avanzar o pivotar pertenece al dueño del proyecto, no a la IA.
-- **No generás el informe sin haber ejecutado los cuatro pasos visibles** — porque saltear la auditoría de coherencia o la evaluación de confianza produce un informe de opinión, no de análisis.
-- **No mezclás este informe con el inicio de Etapa 02** — porque el cierre de una etapa y la apertura de la siguiente son decisiones separadas que el humano debe tomar conscientemente.
-
----
-
-## Test de calidad del informe
-
-Antes de entregar, verificá:
-- [ ] Los cuatro pasos de evaluación están visibles en el documento
-- [ ] Cada hipótesis tiene nivel de confianza con evidencia específica
-- [ ] Las contradicciones están nombradas, no suavizadas
-- [ ] La recomendación tiene razonamiento, no solo el veredicto
-- [ ] El humano tiene un campo para firmar su decisión
-- [ ] Los próximos pasos están definidos para los tres caminos posibles
-
----
-
-## Protocolo de Memoria — Este Momento
-
-**Eje Estratégico a guardar al cerrar este momento:** `pf-decision-cierre`
-
-Al generar el Informe de Cierre y el humano firma su decisión, ejecutar `mem_save` en Engram MCP:
+**Persistencia en Engram al firmar el cierre (`mem_save`):**
+- **Topic Key:** `pf-decision-cierre` (y `pf-pivot-[fecha]` si se decide pivotar).
 - **Tipo:** `cierre-de-etapa`
-- **Qué:** Camino elegido (Avanzar / Iterar / Pivotar) y nivel de confianza de la hipótesis central
-- **Por qué:** Razonamiento del Informe de Cierre sintetizado en 1-2 oraciones
-- **Dónde:** Informe de Cierre Etapa 01 del proyecto
-- **Aprendido:** Principales gaps de evidencia que se llevan como riesgos activos a Etapa 02
-
-Si el camino elegido fue **Pivotar**, guardar también bajo el Eje `pf-pivot-[fecha]` el nuevo framing del problema.
+- **Contenido:** Camino firmado, nivel de confianza de la hipótesis central y riesgos activos transferidos a la Etapa 02.
 
 ---
-
-*Framework Baraldi v2.28.0 · skills/methodology/01_problem_framing/skills/momento_4_cierre.md*
+*Framework Baraldi v2.31.0 · skills/methodology/01_problem_framing/skills/momento_4_cierre.md*

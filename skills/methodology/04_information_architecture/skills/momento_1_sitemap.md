@@ -1,4 +1,4 @@
-# Skill: Momento 1 — Sitemap & Navigation Strategy
+# Skill: Momento 1 - Sitemap & Navigation Strategy
 
 ---
 
@@ -9,7 +9,7 @@ description: >
   Define el inventario de vistas y la jerarquía de navegación del producto.
   Keywords: information architecture, sitemap, navegación, jerarquía, niveles de navegación.
 skill_id: ia_momento_1
-version: "2.28.0"
+version: "2.31.0"
 framework: Baraldi
 stage: "04 - Information Architecture"
 momento: 1
@@ -18,7 +18,7 @@ trigger: "Cuando el humano solicita definir la estructura de navegación o el si
 input_requerido:
   - Service Blueprint (de Etapa 03)
   - Flujos Lógicos (de Etapa 03)
-output_format: "Respuesta directa en chat (Markdown renderizado) — NO uses un bloque de código global"
+output_format: "Respuesta directa en chat (Markdown renderizado) - NO uses un bloque de código global"
 estado_artefacto: BORRADOR
 ```
 
@@ -42,19 +42,19 @@ Definir el **Inventario de Vistas** (qué páginas existen) y el **Modelo de Nav
 
 ## Instrucciones Operativas
 
-### Paso 1 — Inventario de Vistas (Content Inventory)
+### Paso 1 - Inventario de Vistas (Content Inventory)
 Enumera todas las vistas necesarias agrupándolas por su función principal:
 - **Vistas Públicas:** Landing, Login, Onboarding.
 - **Vistas Privadas (Core):** Dashboard, Perfil, Configuración.
 - **Vistas Operativas:** Formularios de creación, Listados (Grids), Detalles (Single Views).
 
-### Paso 2 — Definición de Niveles de Navegación
+### Paso 2 - Definición de Niveles de Navegación
 Propone cómo el usuario se moverá entre las vistas:
 - **Nivel 1 (Global):** Sidebar, Navbar superior, Tab bar móvil.
 - **Nivel 2 (Local):** Tabs internas, menús laterales de sección.
 - **Nivel 3 (Contextual):** Breadcrumbs, botones de "Ver más", enlaces dentro del texto.
 
-### Paso 3 — Sitemap Visual (Mermaid) con Deep Mapping
+### Paso 3 - Sitemap Visual (Mermaid) con Deep Mapping
 **[CRÍTICO - MANDATO DE ALTA RESOLUCIÓN]:** Tienes estrictamente prohibido entregar un Sitemap "pobre", "perezoso" o "de alto nivel". El diagrama debe reflejar el 100% de la arquitectura.
 - No agrupes secciones complejas bajo una sola caja genérica (ej: "Configuración"). Debes desplegar las sub-vistas (ej: "Perfil", "Seguridad", "Suscripción", "Notificaciones").
 - Incluye flujos críticos de error o recuperación (ej: "Recuperar Contraseña", "Página 404", "Upgrade Paywall").
@@ -79,7 +79,7 @@ graph TD
 Entregás un documento Markdown con esta estructura:
 
 ```markdown
-# Information Architecture — [Proyecto] [BORRADOR]
+# Information Architecture - [Proyecto] [BORRADOR]
 
 ## 1. Inventario de Vistas (Site Inventory)
 > Listado exhaustivo de las pantallas que componen el sistema.
@@ -112,7 +112,7 @@ Entregás un documento Markdown con esta estructura:
 
 ## Metadata del artefacto
 - **Etapa**: 04 - Information Architecture
-- **Momento**: 1 — Sitemap & Navigation
+- **Momento**: 1 - Sitemap & Navigation
 - **Versión**: [Versión Actual]
 ```
 
@@ -125,6 +125,6 @@ Entregás un documento Markdown con esta estructura:
 
 ---
 
-## Protocolo de Memoria — Este Momento
+## Protocolo de Memoria - Este Momento
 **Eje Estratégico:** `ia-sitemap-structure`
 Guardar en Engram la estructura del Sitemap y el modelo de navegación elegido.

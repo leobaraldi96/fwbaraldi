@@ -5,10 +5,10 @@ description: >
   (DESIGN.md) en un System Prompt hiper-detallado para guiar a IAs codificadoras
   (v0, Cursor, Claude) en la generación de UI sin alucinaciones.
 keywords: prompt-engineering, ai-coder, v0, cursor, system-prompt, design-system-compiler, handoff
-version: "2.28.0"
+version: "2.31.0"
 ---
 
-# Skill 32 — Protocolo de Generación de System Prompt para IA (Compilador)
+# Protocolo de Generación de System Prompt para IA (Compilador)
 
 Este protocolo se activa durante el Handoff (**Etapa 07**) cuando el desarrollo de la interfaz de usuario va a ser delegado a un Agente de IA (como v0 de Vercel, Cursor, o Claude Artifacts). Actúa como un "Compilador", traduciendo el `DESIGN.md` a un formato instruccional restrictivo que impide que la IA use estilos genéricos.
 
@@ -45,12 +45,12 @@ Instrucción final para la IA implementadora:
 
 ---
 
-## NEVER List — Anti-patrones del Compilador
+## NEVER List - Anti-patrones del Compilador
 - **NUNCA** generes un prompt genérico sin inyectar la estructura YAML real de tokens y componentes.
 - **NUNCA** permitas que la IA de desarrollo asuma valores por defecto si no están definidos en el `DESIGN.md`.
 - **NUNCA** ignores las restricciones de accesibilidad física (mínimo 44x44px) ni la legibilidad de contraste WCAG.
 
-## ALWAYS List — Mandatos del Compilador
+## ALWAYS List - Mandatos del Compilador
 - **SIEMPRE** impón la regla "Copy/Style Lock" de no usar valores en bruto (No Inline Values) al inicio de las instrucciones.
 - **SIEMPRE** traduce las variantes y estados del YAML a clases CSS dinámicas equivalentes en el prompt generado.
 - **SIEMPRE** comprueba que los nombres de los tokens generados sigan una nomenclatura coherente y estándar con el proyecto destino.
@@ -63,4 +63,4 @@ Instrucción final para la IA implementadora:
 - **Sinergia:** El output generado por la IA usando este prompt será posteriormente auditado por el **AI UI Compliance Audit Engine** para verificar cumplimiento.
 
 ---
-*Framework Baraldi v2.28.0 · Skill 32 · Engine de Compilación AI*
+*Framework Baraldi v2.31.0 · Engine de Compilación AI*
