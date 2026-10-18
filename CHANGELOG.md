@@ -25,6 +25,12 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
   - Plantilla agnóstica sin componentes predeterminados forzados, estructurada para co-crear y registrar componentes vivos, tablas de especificaciones técnicas (clases, modificadores) y snippets copiables para desarrolladores.
 - **Mandato de Sincronía Bidireccional y Enlace Visible en Chat:**
   - Tras cualquier cambio de UI, la IA debe entregar el enlace local directo al `showroom.html` en el chat recomendando al humano abrirlo en su navegador para validar visualmente el impacto del cambio.
+- **Hardening de Coherencia Interna y Auditoría Automática:**
+  - Refactorización completa de `templates/showroom_ui.html` eliminando 100% de estilos inline (`style="..."`), migrando a unidades relativas `rem` y espacio de color `oklch()`.
+  - Limpieza ortotipográfica transversal en `00_boot/context.md`, `00_core_guardrails/SKILL.md` y `06_visual_design_ui/SKILL.md` (Sentence case estricto y erradicación de guiones largos `—`).
+  - Unificación de la taxonomía de `docs-fwbaraldi/` en `00_core_guardrails/SKILL.md` (`06_UI/showroom.html`, `08_Telemetry/` y contratos vivos en raíz).
+  - Optimización de latencia en el Boot Step -3 paralelizando llamadas a Engram y volviendo `mem_search` condicional a la ausencia de `00_Backlog_Estrategico.md`.
+  - Evolución de `scripts/internal-audit.js` para validar automáticamente ausencia de estilos inline en plantillas, ausencia de guiones largos en `context.md` y sincronía de versión en sub-skills core.
 
 ## [2.30.0] - 2026-09-04
 

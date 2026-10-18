@@ -36,6 +36,25 @@ const changelog = fs.readFileSync(path.join(rootDir, 'CHANGELOG.md'), 'utf8');
 if (!changelog.includes(`## [${currentVersion}]`)) reportIssue(`No existe entrada para la versión ${currentVersion} en CHANGELOG.md`);
 else reportSuccess(`Entrada encontrada en CHANGELOG.md`);
 
+// Check Boot Context
+const bootContext = fs.readFileSync(path.join(rootDir, '00_boot', 'context.md'), 'utf8');
+if (!bootContext.includes(currentVersion)) reportIssue(`Versión ${currentVersion} no encontrada en 00_boot/context.md`);
+else reportSuccess(`Versión sincronizada en 00_boot/context.md`);
+
+if (bootContext.includes('—')) reportIssue(`Se detectaron guiones largos (—) prohibidos en 00_boot/context.md`);
+else reportSuccess(`Ortotipografía sin guiones largos verificada en 00_boot/context.md`);
+
+// Check Showroom Template Hygiene
+const showroomPath = path.join(rootDir, 'templates', 'showroom_ui.html');
+if (fs.existsSync(showroomPath)) {
+    const showroomHtml = fs.readFileSync(showroomPath, 'utf8');
+    if (showroomHtml.includes('style="')) {
+        reportIssue(`Se detectaron estilos inline prohibidos (style="...") en templates/showroom_ui.html`);
+    } else {
+        reportSuccess(`Plantilla showroom_ui.html libre de estilos inline (Zero-Inline CSS)`);
+    }
+}
+
 // 2. Check Toolbox Integrity
 const toolboxDir = path.join(rootDir, 'skills', 'toolbox');
 const toolDirs = fs.readdirSync(toolboxDir).filter(f => {
@@ -88,6 +107,11 @@ if (!guardrailsClean.includes('prohibido resumir') && !guardrailsClean.includes(
     reportIssue(`La Cláusula de Inmunidad del Mapa no está presente en los Core Guardrails`);
 } else {
     reportSuccess(`Cláusula de Inmunidad del Mapa verificada`);
+}
+if (!guardrails.includes(currentVersion)) {
+    reportIssue(`Versión ${currentVersion} no sincronizada en 00_core_guardrails/SKILL.md`);
+} else {
+    reportSuccess(`Versión sincronizada en 00_core_guardrails/SKILL.md`);
 }
 
 // 4. Check Etapas Metodología
