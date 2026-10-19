@@ -39,7 +39,7 @@ El Framework Baraldi ha evolucionado de ser una colección de prompts a converti
 
 El **Framework Baraldi** es una colección estructurada de Skills y prompts que guían a modelos de IA (Claude, GPT, Gemini) a través de las fases del diseño de producto.
 
-A diferencia de un asistente genérico, este framework obliga a la IA a adoptar metodologías rigurosas, mostrar su proceso de razonamiento, cuestionar supuestos y producir artefactos estructurados — en lugar de respuestas conversacionales que el diseñador no puede validar ni reutilizar.
+A diferencia de un asistente genérico, este framework obliga a la IA a adoptar metodologías rigurosas, mostrar su proceso de razonamiento, cuestionar supuestos y producir artefactos estructurados, en lugar de respuestas conversacionales que el diseñador no puede validar ni reutilizar.
 
 ### 🎨 Representación Visual y Arquitectura Core
 Tenemos diagramas y explicaciones de carácter gráfico para ilustrar de qué va el framework, cómo funciona bajo la Arquitectura Cero-Copia y cómo iterar con IA.
@@ -52,13 +52,13 @@ Tenemos diagramas y explicaciones de carácter gráfico para ilustrar de qué va
 
 No deviene de un solo modelo. Es una síntesis crítica de varios referentes metodológicos:
 
-- **Double Diamond** *(Design Council, 2005)* — Es el antecedente más directo en estructura (Divergir → Converger, dos veces). El Framework Baraldi toma esa lógica pero la extiende: agrega la capa sistémica, la responsabilidad post-handoff y la IA como capa transversal. El Double Diamond era para diseñadores que entregaban interfaces. Esto es para diseñadores que orquestan sistemas.
-- **Design Thinking** *(IDEO / Stanford d.school)* — Comparte el foco en empatía y validación con usuarios reales. Pero Design Thinking es un proceso de innovación, no de diseño de producto continuo. No escala bien a equipos técnicos ni a productos complejos con deuda técnica.
-- **Systems Thinking** *(Donella Meadows)* — La idea de producto como sistema vivo viene de acá. Meadows habla de stocks, flujos, loops de retroalimentación. El Framework Baraldi traduce eso al lenguaje operativo del diseño de producto.
-- **Jobs To Be Done** *(Christensen / Ulwick)* — El foco en outcomes medibles y en entender el progreso que el usuario quiere hacer, no solo el dolor que siente. Está implícito en el Outcome Definition y en el criterio de validación.
-- **Shape Up** *(Basecamp / Ryan Singer)* — La idea de ciclos acotados con criterios de cierre explícitamente.
-- **Context7** *(Context7.com)* — Nuestra fuente oficial de **Conocimiento técnico** (Manuales para IA).
-- **Skills.sh** *(Vercel Labs)* — Nuestra fuente oficial de **Procedimientos operativos** (Entrenamiento para IA).
+- **Double Diamond** *(Design Council, 2005)*: Es el antecedente más directo en estructura (Divergir → Converger, dos veces). El Framework Baraldi toma esa lógica pero la extiende: agrega la capa sistémica, la responsabilidad post-handoff y la IA como capa transversal. El Double Diamond era para diseñadores que entregaban interfaces. Esto es para diseñadores que orquestan sistemas.
+- **Design Thinking** *(IDEO / Stanford d.school)*: Comparte el foco en empatía y validación con usuarios reales. Pero Design Thinking es un proceso de innovación, no de diseño de producto continuo. No escala bien a equipos técnicos ni a productos complejos con deuda técnica.
+- **Systems Thinking** *(Donella Meadows)*: La idea de producto como sistema vivo viene de acá. Meadows habla de stocks, flujos, loops de retroalimentación. El Framework Baraldi traduce eso al lenguaje operativo del diseño de producto.
+- **Jobs To Be Done** *(Christensen / Ulwick)*: El foco en outcomes medibles y en entender el progreso que el usuario quiere hacer, no solo el dolor que siente. Está implícito en el Outcome Definition y en el criterio de validación.
+- **Shape Up** *(Basecamp / Ryan Singer)*: La idea de ciclos acotados con criterios de cierre explícitos.
+- **Context7** *(Context7.com)*: Nuestra fuente oficial de **Conocimiento técnico** (Manuales para IA).
+- **Skills.sh** *(Vercel Labs)*: Nuestra fuente oficial de **Procedimientos operativos** (Entrenamiento para IA).
 
 ## 💎 Lo que lo hace genuinamente distinto
 
@@ -211,14 +211,14 @@ A nivel de infraestructura (LLM Ops), el Framework Baraldi maximiza el rendimien
 
 | Métrica | Valor | Estado |
 |---|---|---|
-| **Eficiencia Actual (v2.28.0)** | **96.50%** | 🟢 Full Release (07/07 Etapas + 16 Protocolos) |
+| **Eficiencia Actual (v2.31.0)** | **96.50%** | 🟢 Full Release (08/08 Etapas + 16 Protocolos) |
 | **Engram Engine** | **v1.20.0** | 🟢 20 MCP Tools & BM25 Ranking |
 
 *Aclaración Técnica: Al cargar en memoria viva solo los hallazgos estrictamente necesarios para la toma de decisión del momento, reducimos el ruido contextual, manteniendo la IA enfocada, rápida y económicamente viable.*
 
 > [!NOTE]
 > **Sobre el Idioma y la Optimización de Tokens:**
-> Actualmente, el Framework Baraldi está documentado íntegramente en **español**. Somos conscientes de que el inglés es un idioma más eficiente para la tokenización de los LLMs (consume menos tokens por palabra). Con las 7 etapas ya estabilizadas, el backlog incluye la creación de una versión **"English-Native"** para maximizar el Context ROI del sistema.
+> Actualmente, el Framework Baraldi está documentado íntegramente en **español**. Somos conscientes de que el inglés es un idioma más eficiente para la tokenización de los LLMs (consume menos tokens por palabra). Con las 8 etapas ya estabilizadas, el backlog incluye la creación de una versión **"English-Native"** para maximizar el Context ROI del sistema.
 
 ### 🌟 Inspiración y Reconocimientos
 El soporte tecnológico actual para el manejo de esta memoria fue inspirado y potenciado por el excelente trabajo del ecosistema open-source [Gentleman-Programming](https://github.com/Gentleman-Programming), (Gracias Ale!!! 😍) particularmente su protocolo **Engram**.
@@ -237,7 +237,7 @@ Si sos un modelo de IA o estás configurando un agente, **LEER PRIMERO:**
 
 ---
 
-## 🧰 El Arsenal de Élite (v2.28.0 — 16 Protocolos)
+## 🧰 El Arsenal de Élite (v2.31.0 - 16 Protocolos)
 
 La Toolbox del Framework Baraldi no es una simple carpeta de utilidades; es un conjunto de **16 protocolos de alto impacto** diseñados para resolver situaciones críticas de producto, negocio y política organizacional.
 
@@ -275,17 +275,17 @@ fwbaraldi/
 │   │   ├── 00_operational_hygiene/         ← Protocolos de ramas y handoff
 │   │   ├── 00_project_health_audit/        ← Framework Doctor (Auditoría de salud)
 │   │   ├── 00_skill_evaluation/            ← Skill Judge (Filtro de calidad)
-│   │   └── 00_system_awareness/            ← Consciencia Sistémica y Memoria (v2.28.0)
+│   │   └── 00_system_awareness/            ← Consciencia Sistémica y Memoria (v2.31.0)
 │   │
 │   ├── methodology/                        ← El núcleo del proceso (End-to-End)
-│   │   ├── 01_problem_framing/             ← Hardened v2.28.0
-│   │   ├── 02_system_analysis/             ← Hardened v2.28.0
-│   │   ├── 03_product_logic/               ← Hardened v2.28.0
-│   │   ├── 04_information_architecture/    ← Hardened v2.28.0
-│   │   ├── 05_interaction_design_ux/       ← Hardened v2.28.0
-│   │   ├── 06_visual_design_ui/            ← Hardened v2.28.0
-│   │   ├── 07_handover_qa/                 ← Hardened v2.28.0
-│   │   └── 08_continuous_discovery_telemetry/ ← Telemetría y Data UX v2.29.0
+│   │   ├── 01_problem_framing/             ← Hardened v2.31.0
+│   │   ├── 02_system_analysis/             ← Hardened v2.31.0
+│   │   ├── 03_product_logic/               ← Hardened v2.31.0
+│   │   ├── 04_information_architecture/    ← Hardened v2.31.0
+│   │   ├── 05_interaction_design_ux/       ← Hardened v2.31.0
+│   │   ├── 06_visual_design_ui/            ← Hardened v2.31.0
+│   │   ├── 07_handover_qa/                 ← Hardened v2.31.0
+│   │   └── 08_continuous_discovery_telemetry/ ← Telemetría y Data UX v2.31.0
 │   │
 │   └── toolbox/                            ← Tu arsenal estratégico (16 Protocolos)
 │       ├── advanced_prioritization_protocol/
@@ -329,14 +329,14 @@ fwbaraldi/
 │   └── sanitize-emojis.js                  ← Higiene de codificación UTF-8
 │
 ├── 00_Backlog_Estrategico.md               ← Hoja de ruta del propio Framework
-├── MAPA_DE_ARTEFACTOS.md                   ← Catálogo oficial de entregables (v2.28.0)
+├── MAPA_DE_ARTEFACTOS.md                   ← Catálogo oficial de entregables (v2.31.0)
 ├── SKILL.md                                ← Archivo maestro para Agentes IA
 └── README.md                               ← Este archivo
 ```
 
 ---
 
-## 🚀 Quick Start / Instalación (v2.28.0)
+## 🚀 Quick Start / Instalación (v2.31.0)
 
 > ⚠️ **IMPORTANTE:** A partir de la versión 2.28.0 (Modelo Cero-Copia), el Framework Baraldi opera como un **Único Orquestador Agéntico Global (`baraldi-framework`)**. Todas las etapas y la toolbox viven encapsuladas internamente para mantener limpio el entorno y evitar la fragmentación de habilidades.
 
@@ -407,20 +407,20 @@ El Framework Baraldi es el resultado de más de 25 años de experiencia en el di
 ---
 
 ## 🤝 Colaboradores
-- **[Denisse Peduzzi](https://www.linkedin.com/in/denissepeduzzi/)** — *Content Designer*
-- **[Analia Lucero](https://www.linkedin.com/in/anabelucero/)** — *Functional & Business Analyst Sr*
-- **[Víctor Cámara](https://www.linkedin.com/in/camaravictor/)** — *Product & Web Platform Strategist*
-- **[Rodrigo Arija](https://www.linkedin.com/in/rodrigo-arija-29847514/)** — *CEO Manifesto Solutions (AI & Security Specialist)*
-- **[Hernán Novillo](https://www.linkedin.com/in/novufy/)** — *Art Director & Visual Designer*
-- **[Tu Nombre Aquí]** — *¿Quieres colaborar? ¡Envía un PR!*
+- **[Denisse Peduzzi](https://www.linkedin.com/in/denissepeduzzi/)**: *Content Designer*
+- **[Analia Lucero](https://www.linkedin.com/in/anabelucero/)**: *Functional & Business Analyst Sr*
+- **[Víctor Cámara](https://www.linkedin.com/in/camaravictor/)**: *Product & Web Platform Strategist*
+- **[Rodrigo Arija](https://www.linkedin.com/in/rodrigo-arija-29847514/)**: *CEO Manifesto Solutions (AI & Security Specialist)*
+- **[Hernán Novillo](https://www.linkedin.com/in/novufy/)**: *Art Director & Visual Designer*
+- **[Tu Nombre Aquí]**: *¿Quieres colaborar? ¡Envía un PR!*
 
 ---
 
 ## 📩 Contacto
-**Leo Baraldi** — *Senior UX Product Designer*
+**Leo Baraldi**: *Senior UX Product Designer*
 - 💼 **LinkedIn:** [leobaraldi](https://www.linkedin.com/in/leobaraldi/)
 - 🌐 **Web:** [leobaraldi.com.ar](http://leobaraldi.com.ar/)
 - 📧 **Email:** [leobaraldi96@gmail.com](mailto:leobaraldi96@gmail.com)
 
 ---
-*Framework Baraldi v2.28.0 · Desarrollado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.31.0 · Desarrollado y mantenido por Leo Baraldi.*
