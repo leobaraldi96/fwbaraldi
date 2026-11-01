@@ -160,8 +160,8 @@ Además de los comandos que usa la IA, puedes gestionar tu memoria directamente:
 ### 💾 Backup, Salvaguarda y Migración de Memoria (¿Vas a formatear tu PC o cambiar de equipo?)
 
 > [!WARNING]
-> **Toda tu memoria reside localmente en tu computadora:**
-> Engram almacena las decisiones, riesgos, actas y aprendizajes de todos tus proyectos en tu disco local (carpeta `~/.engram/`). Si formateas tu equipo o cambias de máquina sin hacer un backup, **perderás todo el conocimiento acumulado de tus proyectos**.
+> **Toda tu memoria y tu arnés evolutivo residen localmente en tu computadora:**
+> Engram almacena las decisiones, riesgos, actas y aprendizajes de todos tus proyectos en tu disco local (carpeta `~/.engram/`), mientras que tu **Arnés Evolutivo Personal (Harness²)** guarda tus heurísticas y estándares transversales en `~/.fwbaraldi/user_harness.md`. Si formateas tu equipo o cambias de máquina sin hacer un backup, **perderás todo el conocimiento acumulado de tus proyectos y tu arnés personal**.
 
 El Framework Baraldi incluye herramientas automáticas integradas para respaldar y recuperar tu memoria en segundos:
 
@@ -175,7 +175,7 @@ fwbaraldi backup
 # O directamente vía npx sin instalar nada:
 npx github:leobaraldi96/fwbaraldi backup
 ```
-*Esto generará un archivo comprimido timestamped (ej: `fwb-memory-backup-2026-08-10_16-30-00.zip`) en tu carpeta actual con la base SQLite y la exportación universal JSON. Guarda este archivo en un pendrive, Google Drive o Dropbox.*
+*Esto generará un archivo comprimido timestamped (ej: `fwb-memory-backup-2026-08-10_16-30-00.zip`) en tu carpeta actual con la base SQLite (`engram.db`), tu arnés evolutivo (`user_harness.md`) y la exportación universal JSON. Guarda este archivo en un pendrive, Google Drive o Dropbox.*
 
 #### 2. Restaurar tu Memoria en tu Nueva PC
 Una vez que hayas instalado tu nuevo sistema operativo o te encuentres en tu nueva máquina:
@@ -187,7 +187,7 @@ npx github:leobaraldi96/fwbaraldi
 # 2. Restaura tu archivo de backup:
 fwbaraldi restore -f "ruta/al/archivo/fwb-memory-backup-xxx.zip"
 ```
-*El asistente restaurará todas tus memorias, verificará la integridad y mantendrá una copia de seguridad preventiva automática.*
+*El asistente restaurará todas tus memorias y tu `user_harness.md`, verificará la integridad y mantendrá una copia de seguridad preventiva automática.*
 
 #### 📂 Método Manual (Para usuarios avanzados)
 Si prefieres respaldar tus archivos manualmente:
@@ -355,8 +355,9 @@ npx github:leobaraldi96/fwbaraldi
 **El instalador se ocupa automáticamente de:**
 1. Descargar e instalar el binario oficial del motor **Engram** en `~/.fwbaraldi/bin/`.
 2. Desplegar el framework como **1 única Skill Global** en `~/.gemini/config/skills/baraldi-framework/` (limpiando automáticamente cualquier sub-skill huérfana).
-3. Configurar de forma segura el servidor MCP `engram` en `~/.gemini/config/mcp_config.json`.
-4. Vincular las reglas operativas globales en `~/.gemini/config/AGENTS.md`.
+3. Inicializar tu **Arnés Evolutivo Personal (`~/.fwbaraldi/user_harness.md`)** en la primera instalación y **preservarlo intacto** ante cualquier actualización futura del framework.
+4. Configurar de forma segura el servidor MCP `engram` en `~/.gemini/config/mcp_config.json`.
+5. Vincular las reglas operativas globales en `~/.gemini/config/AGENTS.md`.
 
 ---
 
