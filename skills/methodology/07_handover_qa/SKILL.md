@@ -72,6 +72,7 @@ Una vez superada la "aduana" de la Etapa 07, el framework continúa acompañando
 - [ ] No existen pantallas con "Lorem Ipsum" (copy finalizado según `docs-fwbaraldi/VOICE.md`).
 - [ ] Los casos de borde (errores de red, estados vacíos, límites de caracteres) están documentados en el **Momento 3**.
 - [ ] Los activos (íconos, imágenes) están exportados y accesibles en formatos vectoriales/optimizados.
+- [ ] **Cero Archivos Satélite Huérfanos (Root & Docs Sync):** Ante cualquier release o cambio de versión, se verificó que todos los documentos satélite de la raíz y de `docs-fwbaraldi/` estén sincronizados, sin referencias a versiones o flujos obsoletos.
 
 ---
 

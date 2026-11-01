@@ -187,6 +187,7 @@ El Agente debe **bloquear** el proceso si detecta:
 4. **NEVER dejes dependencias sin nivel de riesgo:** Todo servicio externo debe marcarse como `[CRÍTICA]`, `[ALTA]`, `[MEDIA]` o `[BAJA]`.
 5. **NEVER omitas los "gaps" del sistema:** Lo que no se pudo mapear debe quedar documentado como un riesgo activo.
 6. **NEVER asumas factibilidad sin validación técnica:** El *Architecture Overview* debe ser validado por ingeniería antes de avanzar.
+7. **NEVER mezcles estado mutable del usuario dentro de paquetes actualizables:** Al diseñar plugins, CLIs, extensiones o sistemas modulares, prohibido almacenar preferencias, bases de datos locales o configuraciones aprendidas dentro de la carpeta del código ejecutable que se sobrescribe en un deploy o actualización. El estado del usuario debe vivir siempre en un directorio persistente separado.
 
 ## ALWAYS List - Mandatos de comportamiento
 - **Siempre** busca actores invisibles que no aparecen en el listado inicial.

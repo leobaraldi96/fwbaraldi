@@ -40,9 +40,10 @@ Antes de incorporar una regla nueva al arnés, pregúntate:
 - **Invariante Universal:** Resuelve una debilidad general del agente (ej. olvidarse de incluir un campo nuevo en el `SELECT` de la API o desalinear cabeceras entre módulos). Puede ir al Core FWB o a `~/.fwbaraldi/user_harness.md`.
 - **Específica de Dominio:** Depende del negocio, marca o librería de un cliente puntual. Debe ir **exclusivamente** al `docs-fwbaraldi/` local de ese proyecto.
 
-### 4. El Filtro de Anti-Patrones (NEVER Lists)
+### 4. El Filtro de Anti-Patrones (NEVER Lists) e Inmunidad de Meta-Reglas
 La mitad del conocimiento experto es saber qué **NO** hacer.
 - Toda skill o regla debe incluir restricciones claras (`NEVER do X because Y`) basadas en fallos reales observados.
+- **Inmunidad de Meta-Reglas (Anti-Self-Triggering):** Al redactar contratos (`DESIGN.md`, `VOICE.md`, `SECURITY.md`) o skills que prohíben un patrón sintáctico o tipográfico, descríbelo por su nombre técnico o código escapado (ej. *em-dash*, `\u2014`, `inline style`) sin insertar jamás la cadena prohibida literal que dispara falsos positivos en linters o contamina por imitación el contexto del modelo.
 
 ### 5. Anatomía del Contexto Oculto (Description)
 La propiedad `description` en el YAML frontmatter debe responder: **QUÉ** hace, **CUÁNDO** activarla y **PALABRAS CLAVE** de disparo.

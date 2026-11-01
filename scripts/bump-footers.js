@@ -24,7 +24,13 @@ function walk(dir) {
   return results;
 }
 
-const files = walk(path.join(rootDir, 'skills')).concat(walk(path.join(rootDir, '00_boot')));
+const rootMdFiles = fs.readdirSync(rootDir)
+  .filter(f => f.endsWith('.md') && f !== 'CHANGELOG.md')
+  .map(f => path.join(rootDir, f));
+
+const files = walk(path.join(rootDir, 'skills'))
+  .concat(walk(path.join(rootDir, '00_boot')))
+  .concat(rootMdFiles);
 let updated = 0;
 
 for (const file of files) {

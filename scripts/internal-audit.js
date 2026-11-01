@@ -188,7 +188,7 @@ for (let i = 1; i <= 8; i++) {
     }
 }
 
-// 5. Deep Audit: Todos los archivos Markdown en skills/ (core, methodology, engines, momentos, toolbox)
+// 5. Deep Audit: Todos los archivos Markdown en skills/, 00_boot/ y raíz del repositorio
 function walkMarkdown(dir) {
     let results = [];
     for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -211,7 +211,7 @@ allSkillMdFiles.forEach(filePath => {
     const content = fs.readFileSync(filePath, 'utf8');
 
     if (content.includes('\u2014') || content.includes('\u2013')) {
-        reportIssue(`Guiones largos prohibidos (— / –) detectados en ${relPath}`);
+        reportIssue(`Guiones largos prohibidos (em-dash / en-dash) detectados en ${relPath}`);
         subFileIssues++;
     }
     if (/2\.(28|29|30|31)\.\d+/.test(content)) {
@@ -225,7 +225,33 @@ allSkillMdFiles.forEach(filePath => {
 });
 
 if (subFileIssues === 0) {
-    reportSuccess(`${allSkillMdFiles.length} archivos Markdown verificados (versión ${currentVersion}, cero guiones largos y sin encabezados legados)`);
+    reportSuccess(`${allSkillMdFiles.length} archivos Markdown de skills/ verificados (versión ${currentVersion}, cero guiones largos y sin encabezados legados)`);
+}
+
+// 6. Root Satellite Files Audit (Cero archivos satélite huérfanos o desincronizados en la raíz)
+const rootMdFiles = fs.readdirSync(rootDir)
+    .filter(f => f.endsWith('.md') && f !== 'CHANGELOG.md')
+    .map(f => path.join(rootDir, f));
+
+console.log(chalk.yellow(`\n🏛️  Auditando ${rootMdFiles.length} archivos Markdown satélite en la raíz del repositorio...`));
+
+let rootFileIssues = 0;
+rootMdFiles.forEach(filePath => {
+    const fileName = path.basename(filePath);
+    const content = fs.readFileSync(filePath, 'utf8');
+
+    if (!content.includes(currentVersion)) {
+        reportIssue(`Archivo de raíz '${fileName}' no incluye la versión actual (${currentVersion})`);
+        rootFileIssues++;
+    }
+    if (/v2\.(26|27|28|29|30|31)\.\d+/.test(content) && fileName !== 'README.md') {
+        reportIssue(`Archivo de raíz '${fileName}' contiene referencias a versiones obsoletas`);
+        rootFileIssues++;
+    }
+});
+
+if (rootFileIssues === 0) {
+    reportSuccess(`${rootMdFiles.length} archivos Markdown de la raíz sincronizados en v${currentVersion}`);
 }
 
 console.log('\n------------------------------------------------');
