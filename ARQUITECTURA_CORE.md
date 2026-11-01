@@ -19,9 +19,13 @@ Este ecosistema se basa en la **Simbiosis Cognitiva**:
 
 ---
 
-## 2. Arquitectura "Cero-Copia" (Zero-Copy)
+## 2. Arquitectura "Cero-Copia" (Zero-Copy) y Evolución en 3 Anillos (Harness²)
 
-Para evolucionar a una herramienta escalable en múltiples proyectos simultáneos, el framework se sustenta en una **Arquitectura Tripartita de Cero-Copia**.
+Para evolucionar a una herramienta escalable en múltiples proyectos simultáneos y aprender de cada usuario sin contaminar el estándar público, el framework se sustenta en una **Arquitectura Cero-Copia con Inteligencia Recursiva en 3 Anillos**:
+
+1. **Anillo 1 - Core FWB (Inmutable):** Vive en `~/.gemini/config/skills/baraldi-framework/`. Provee la metodología universal (Etapas 01 a 08 + 16 protocolos de Toolbox) y el bucle de evaluación *Propose -> Probe -> Compose*.
+2. **Anillo 2 - Arnés Evolutivo del Usuario (`~/.fwbaraldi/user_harness.md` + Engram `scope: "personal"`):** Captura las heurísticas transversales de arquitectura, UX/UI y correcciones recurrentes propias de cada usuario en su entorno local (*User-Invariant Edits*). Se carga en paralelo en cada proyecto y sobrevive intacto a futuras actualizaciones del framework.
+3. **Anillo 3 - Contratos de Dominio del Proyecto (`docs-fwbaraldi/` + Engram `scope: "project"`):** Reglas de negocio, esquemas de datos y tokens exclusivos del proyecto actual (*Domain Edits*), aislados para no contaminar otros repositorios.
 
 ### Concepto Central
 Ningún archivo metodológico, de identidad de la IA, o plantillas de sistema debe "parásitar" o clonarse en la carpeta local del proyecto de tu empresa. El proyecto debe permanecer limpio y alojar **únicamente** el código puro y los documentos de salida generados.
@@ -100,11 +104,11 @@ sequenceDiagram
     
     note over IA,Humano: FASE DE LÓGICA SISTÉMICA (Etapa 03)
     IA->>IA: Ejecuta Product Logic (Brain Integration)
-    IA->>FS: Genera Blueprint, Business Rules Matrix y BUSINESS.md (v2.28.0)
+    IA->>FS: Genera Blueprint, Business Rules Matrix y BUSINESS.md (v2.32.0)
 ```
 
 ### 3.1 El Rol de la Etapa 03 (Product Logic)
-En la versión v2.29.0, la Etapa 03 se consolida como el **"Cerebro del Producto"**. Su función es blindar la viabilidad funcional antes de que el equipo de diseño entre a la fase visual, integrando el estándar **UX-DNA (Experience Anatomy)** y los Contratos de Negocio. 
+En la versión v2.32.0, la Etapa 03 se consolida como el **"Cerebro del Producto"**. Su función es blindar la viabilidad funcional antes de que el equipo de diseño entre a la fase visual, integrando el estándar **UX-DNA (Experience Anatomy)**, el chequeo de trazabilidad de los **5 Eslabones del Dato (Data-to-UI Lineage)** y los Contratos de Negocio. 
 
 **Entregables clave al usuario:**
 - **Product Logic Orchestration:** Matriz de Actores, Matriz de Orquestación de Backlog y Service Blueprint.
@@ -115,7 +119,7 @@ En la versión v2.29.0, la Etapa 03 se consolida como el **"Cerebro del Producto
 - **Contratos Vivos de Soberanía:** Generación de la suite de contratos (`DESIGN.md`, `VOICE.md`, `BUSINESS.md`, `SECURITY.md`, `LEGAL.md`, `UX.md`, `KNOWLEDGE.md`) como el nuevo estándar de handoff diseñado para el consumo de humanos y modelos de lenguaje, garantizando la fidelidad de la implementación automatizada.
 
 ### 3.2 El Bucle Infinito de la Etapa 08 (Continuous Discovery & Telemetry)
-En la versión v2.29.0, el framework cierra formalmente el ciclo continuo del producto. La Etapa 08 actúa como el **"Sistema Nervioso Post-Lanzamiento"**, ingiriendo telemetría y feedback real para transformarlo en diagnósticos de UX sin fricción matemática (*Zero-Math*), diseñando dashboards por nivel de urgencia de rol (Operativo < 3s, Táctico 1-5 min, Estratégico 30s) y retroalimentando automáticamente el `00_Backlog_Estrategico.md` y la Etapa 01.
+En la versión v2.32.0, el framework cierra formalmente el ciclo continuo del producto. La Etapa 08 actúa como el **"Sistema Nervioso Post-Lanzamiento"**, ingiriendo telemetría y feedback real para transformarlo en diagnósticos de UX sin fricción matemática (*Zero-Math*), diseñando dashboards por nivel de urgencia de rol (Operativo < 3s, Táctico 1-5 min, Estratégico 30s) y retroalimentando automáticamente el `00_Backlog_Estrategico.md` y la Etapa 01.
 
 ---
 

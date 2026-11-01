@@ -1,4 +1,4 @@
-# 🛡️ Seguridad y Privacidad — Framework Baraldi
+# 🛡️ Seguridad y Privacidad - Framework Baraldi
 
 Este documento detalla el compromiso de transparencia y las políticas de seguridad del **Framework Baraldi**. Entendemos que el diseño de producto maneja información sensible y estratégica, por lo que la privacidad es un pilar fundamental de nuestra arquitectura.
 
@@ -8,7 +8,7 @@ Este documento detalla el compromiso de transparencia y las políticas de seguri
 
 El Framework Baraldi **no recolecta, no almacena en la nube, ni transmite información privada** de tus proyectos, clientes o código a servidores externos.
 
-- **Memoria Local:** El conocimiento persistente se gestiona a través de **Engram MCP**, que utiliza una base de datos SQLite residente únicamente en tu máquina local.
+- **Memoria y Arnés Evolutivo Locales:** El conocimiento persistente se gestiona a través de **Engram MCP** (base de datos SQLite en `~/.engram/`) y tu arnés de mejora personal vive en `~/.fwbaraldi/user_harness.md`, residentes únicamente en tu máquina local.
 - **Sin Telemetría:** No existe rastreo de uso ni analíticas enviadas a Leo Baraldi o terceros.
 - **Arquitectura Zero-Copy:** El framework opera desde su ubicación global y solo escribe archivos en la carpeta de proyecto que tú definas explícitamente.
 
@@ -39,4 +39,4 @@ El framework realiza llamadas externas únicamente en los siguientes casos de "S
 5.  **Custodia de Backups:** Los archivos generados por `fwbaraldi backup` contienen la totalidad de las memorias locales del sistema. Guárdalos en ubicaciones cifradas o de acceso controlado (como nubes privadas o discos externos protegidos) para evitar accesos no autorizados a tus actas estratégicas.
 
 ---
-*Framework Baraldi v2.28.0 · Transparencia y Ética Agéntica*
+*Framework Baraldi v2.32.0 · Transparencia y Ética Agéntica*

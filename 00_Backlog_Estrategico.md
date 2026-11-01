@@ -1,6 +1,6 @@
-# Framework Baraldi - Backlog Estratégico (v2.31.0)
-Última Actualización: 2026-09-28
-Estado: **Sistema Totalmente Hardened (v2.31.0) & Living Component Library Ready**
+# Framework Baraldi - Backlog Estratégico (v2.32.0)
+Última Actualización: 2026-11-01
+Estado: **Sistema Totalmente Hardened (v2.32.0) & Harness² 3-Ring Recursive Intelligence Ready**
 
 > **Propósito:** Centralizar el scope futuro, las etapas en desarrollo (WIP) y las ideas de mejora sistémica para evitar el Scope Creep durante las sesiones actuales.
 > **Disciplina:** Revisar este archivo al inicio de cada sesión (Boot Step -3).
@@ -21,7 +21,7 @@ Estado: **Sistema Totalmente Hardened (v2.31.0) & Living Component Library Ready
 - [x] Etapa 08: Continuous Discovery & Data Intelligence (Telemetría, Data UX y Bucle a E01)
 
 ### 🟢 Toolbox & Tech Guardrails
-- **Estado:** ✅ HARDENED & EXPANDIDO (v2.31.0)
+- **Estado:** ✅ HARDENED & EXPANDIDO (v2.32.0)
 - [x] Consolidación de Skills de Alta Densidad (16 Protocolos).
 - [x] Integración de `product_knowledge_compiler_protocol` y plantilla `KNOWLEDGE.md`.
 - [x] Purga de Tech Guardrails: Foco 100% agnóstico en Lógica y Diseño.
@@ -38,6 +38,8 @@ Estado: **Sistema Totalmente Hardened (v2.31.0) & Living Component Library Ready
 - [x] **Panel de Reingreso con Next Best Action**: Cierre asertivo con propuesta de acción inmediata para retomar trabajo sin fricción.
 - [x] **Pre-flight Design & Voice Check**: Inyección forzada de tokens en CoT previa a la emisión de código para erradicar el sesgo de backend y componentes genéricos.
 - [x] **Living Showroom UI Hub & Dev Specs (`showroom.html`)**: Vista viva panorámica, interactiva y documentada para desarrolladores con snippets copiables, tablas de props y estados funcionales en sincronía activa con `DESIGN.md`.
+- [x] **Gobernanza por Blast Radius & Data-to-UI Lineage**: Calibración de autonomía para modelos de frontera y validación de los 5 eslabones del dato.
+- [x] **Harness² Recursive Intelligence (3 Anillos & `/evolve`)**: Bucle *Propose -> Probe -> Compose*, aprendizaje local por usuario en `~/.fwbaraldi/user_harness.md` (`scope: "personal"`) y separación de *Domain Edits* vs. *User-Invariant Edits*.
 - [ ] **Automatización de Memoria**: Refinar los "Save Nudges" de Engram para que sugieran resúmenes basados en hitos del backlog.
 
 ---
@@ -50,4 +52,4 @@ Estado: **Sistema Totalmente Hardened (v2.31.0) & Living Component Library Ready
 
 ---
 
-*Última actualización: 2026-09-28 · Sincronizado con v2.31.0*
+*Última actualización: 2026-11-01 · Sincronizado con v2.32.0*

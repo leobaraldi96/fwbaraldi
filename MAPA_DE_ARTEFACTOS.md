@@ -1,4 +1,4 @@
-# 🗺️ Mapa de Artefactos — Framework Baraldi (v2.32.0)
+# 🗺️ Mapa de Artefactos - Framework Baraldi (v2.32.0)
 
 Este documento es el catálogo oficial de todos los **outputs** que genera el framework. Sirve como guía para que el equipo de producto, diseño y desarrollo entienda qué se ha construido, para qué sirve y cómo aprovechar cada pieza de información.
 
@@ -24,6 +24,7 @@ Estos archivos viven en la carpeta **`docs-fwbaraldi/`** y son transversales a t
 | **`LEGAL.md`** | Contrato Regulatorio, Privacidad y Compliance. | Úsalo para diseñar flujos de onboarding, cookies y gestión de cuentas. | Protege la responsabilidad legal y asegura cumplimiento GDPR/PCI-DSS. | Consentimiento explícito, retención de datos, derecho al olvido y pasarelas de pago. |
 | **`UX.md`** | Contrato de Ergonomía e Interacción. | Consúltalo para definir tiempos de carga, feedback de botones y estados vacíos. | Asegura una experiencia de usuario fluida, predecible y sin callejones sin salida. | Tiempos de feedback, filosofía Optimistic UI, dimensiones táctiles y Zero Dead-Ends. |
 | **`KNOWLEDGE.md`** | Base de Conocimiento y Manual Vivo del Producto. | Impórtalo en tu centro de ayuda o inyéctalo en Copilotos IA. | Elimina el "Handoff Ciego" de CX y habilita soporte contextual RAG inmediato. | FAQ comercial, glosario oficial, guías por rol y matriz de resolución de errores. |
+| **`~/.fwbaraldi/user_harness.md`** | Arnés Evolutivo Personal del Usuario (Anillo 2 - Harness²). | Vive fuera del proyecto en tu máquina local y se carga en paralelo en cada sesión. | Acumula tus heurísticas transversales de arquitectura, UX/UI y correcciones recurrentes sin contaminar el proyecto ni perderse al actualizar el framework. | Heurísticas de arquitectura, estándares de UI/UX, reglas de stack y antipatrones aprendidos contigo. |
 
 ---
 
