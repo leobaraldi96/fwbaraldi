@@ -1,6 +1,6 @@
 # Arquitectura Core del Framework Baraldi
 
-> Este documento detalla la estructura lógica, la arquitectura tecnológica y el ciclo de vida de adopción del **Framework Baraldi** (v2.31.0). El framework ha evolucionado de un repositorio de prompts a un **Ecosistema Agéntico Simbiótico** donde la infraestructura tecnológica y la maestría humana convergen.
+> Este documento detalla la estructura lógica, la arquitectura tecnológica y el ciclo de vida de adopción del **Framework Baraldi** (v2.32.0). El framework ha evolucionado de un repositorio de prompts a un **Ecosistema Agéntico Simbiótico** donde la infraestructura tecnológica y la maestría humana convergen.
 
 ---
 
@@ -135,7 +135,7 @@ El objetivo primario aquí es *No escribir código hasta resolver los gaps de co
 ### 4.2 Sincronización de Proyectos En Curso (In-flight / Legacy)
 Uno de los mayores desafíos metodológicos es aplicar rigor a un proyecto que ya cuenta con meses de desarrollo. 
 
-En la versión **v2.31.0**, el framework incorpora el **Onboarding Adaptativo** en el arranque (`/init`) y la **Triple Aduana Inviolable**:
+En la versión **v2.32.0**, el framework incorpora el **Onboarding Adaptativo** en el arranque (`/init`) y la **Triple Aduana Inviolable**:
 1. **Detección Automática de Pila:** El Agente escanea el workspace para detectar el stack (WordPress, React, Vue, Next.js, HTML) y el volumen de archivos existentes.
 2. **Generación del Living Showroom UI Hub (`showroom.html`):** Antes de tocar el código en producción, monta una vista interactiva viva, agnóstica y documentada con todos los tokens reales, componentes, estados y especificaciones para desarrolladores (snippets copiables).
 3. **La Triple Aduana Inviolable (`showroom.html` + `DESIGN.md` + `VOICE.md`):** Al construir o modificar cualquier vista, la IA consulta de forma sincronizada esta tríada para garantizar cero improvisación visual, cero clases residuales y cero CSS inline, respetando la fragmentación modular y la accesibilidad ($\ge 10\text{px}$).

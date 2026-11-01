@@ -6,7 +6,7 @@ description: >
   con taxonomía cognitiva estricta (Concept vs. Task), pipeline de Continuous DocOps,
   validación Fresh Clone, adaptadores de exportación e internacionalización bajo normas ISO/IEC/IEEE 26514/26515.
 keywords: knowledge base, help center, fresh clone test, nielsen norman 79 rule, anti-rot law, concept vs task, memory types, continuous docops, component translation, block diffing, iso 26514, information mapping, precision content, i18n, l10n, single sourcing, mintlify, zendesk, intercom, rag chunks, cx, onboarding, troubleshooting
-version: "2.31.0"
+version: "2.32.0"
 ---
 
 # Protocolo: compilador de base de conocimiento y ayuda de producto
@@ -127,4 +127,4 @@ Cada bloque informativo se gestiona de forma atómica (hashing y diffing por blo
 - **SIEMPRE** valida cada guía con el *Fresh clone test*, asigna `block_id` para sincronización RAG y asegura un quickstart de menos de 5 minutos.
 
 ---
-*Framework Baraldi v2.31.0 · Product Knowledge Compiler Protocol.*
+*Framework Baraldi v2.32.0 · Product Knowledge Compiler Protocol.*

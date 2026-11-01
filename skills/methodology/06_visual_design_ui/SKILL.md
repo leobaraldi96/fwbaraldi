@@ -2,16 +2,16 @@
 name: visual-design-ui
 description: >
   Ejecuta la Etapa 06 (Visual Design / UI) del Framework Baraldi.
-  Define la estética, los tokens de diseño y los componentes de alta fidelidad.
-  Crea el contrato visual para la implementación agéntica (DESIGN.md).
-keywords: visual design, ui, tokens, design system, luxury obsidian, design.md, css variables.
+  Define la estética, los tokens de diseño, la anatomía visual ecualizada y los componentes de alta fidelidad.
+  Crea el contrato visual para la implementación agéntica (DESIGN.md) y el Showroom vivo (showroom.html).
+keywords: visual design, ui, tokens, design system, design.md, showroom.html, css variables.
 status: operational
-version: "2.31.0"
+version: "2.32.0"
 ---
 
 # Etapa 06 - Visual design (UI)
 
-> **Objetivo:** Transformar la arquitectura e interacción en una interfaz de alta fidelidad, estética premium y coherencia visual absoluta. El entregable final es el **DESIGN.md**, la "fuente de verdad" para que cualquier agente de IA pueda codificar el producto.
+> **Objetivo:** Transformar la arquitectura e interacción en una interfaz de alta fidelidad, estética cuidada y coherencia visual absoluta. Los entregables finales son el **DESIGN.md** y el **Showroom UI vivo (`showroom.html`)**, la "fuente de verdad" para que cualquier agente de IA o desarrollador pueda codificar el producto sin desviaciones.
 
 ---
 
@@ -31,9 +31,9 @@ La IA debe:
 
 ### 1. DESIGN.md (Agent-First Contract)
 Este archivo es obligatorio y debe cumplir con la calibración de `skills/momento_0_design_intelligence.md` para evitar resultados genéricos. Debe contener:
-1. **Design Tokens (YAML):** Colores primarios, secundarios, estados, escalas de espaciado y tipografía.
+1. **Design Tokens (YAML):** Colores primarios, secundarios, estados, escalas de espaciado y tipografía (respetando el piso inviolable de `10px / 0.625rem`).
 2. **CSS Variables Mapping:** Definición de variables para implementación directa.
-3. **Component Specs:** Reglas de redondeo (radius), sombras y bordes para componentes core.
+3. **Component Specs & Cross-Module Anatomy:** Reglas de redondeo (radius), sombras, bordes para componentes core y la **regla de ecualización anatómica de módulos** (jerarquía uniforme de cabeceras, ubicación de pestañas/sub-vistas, política de búsqueda y colapso de barras de herramientas móviles).
 4. **Anti-Patterns List:** Lista de elementos prohibidos para este proyecto específico.
 
 ### 2. Showroom UI & Living Component Library (`docs-fwbaraldi/06_UI/showroom.html` o `test-ui.html`)
@@ -75,7 +75,7 @@ Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 ---
 
 ## Criterio de calidad
-- [ ] El **DESIGN.md** está presente en `docs-fwbaraldi/DESIGN.md` con la estructura YAML normalizada de tokens.
+- [ ] El **DESIGN.md** está presente en `docs-fwbaraldi/DESIGN.md` con la estructura YAML normalizada de tokens y las reglas de anatomía ecualizada de módulos.
 - [ ] El **Showroom UI** está presente y sincronizado en `docs-fwbaraldi/06_UI/showroom.html`.
 - [ ] Los tokens son consistentes con la identidad de marca definida.
 - [ ] Se ha preparado el terreno para la sincronización 1:1 con Figma (`../07_handover_qa/skills/momento_2_visual_token_qa.md`).
@@ -87,11 +87,11 @@ Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 ## NEVER List - Anti-patrones de la Etapa 06
 El Agente debe **bloquear** el proceso si detecta:
 
-1. **NEVER uses tipografías genéricas (Inter) en High-End:** El uso de Inter en productos premium es un "AI Tell". Usa Geist, Satoshi o Outfit.
+1. **NEVER uses tipografías por defecto sin criterio:** Toda elección tipográfica debe justificarse funcional y estéticamente en `DESIGN.md`.
 2. **NEVER permitas "alucinaciones visuales":** Todo componente debe usar los tokens definidos en el `DESIGN.md`. Prohibido inventar clases ad-hoc.
-3. **NEVER avances sin el DESIGN.md:** Este archivo es el contrato agéntico. Sin él, no hay fuente de verdad para el desarrollo.
+3. **NEVER avances sin el DESIGN.md y el Showroom UI:** Estos archivos son el contrato agéntico y visual. Sin ellos, no hay fuente de verdad para el desarrollo.
 4. **NEVER ignores los estándares A11y en tokens ni uses fuentes menores a 10px:** Contraste y tamaños deben ser validados matemáticamente. **Prohibido terminantemente usar `font-size` menor a 10px (0.625rem)** en cualquier elemento, texto legal, badge o pie de foto.
-5. **NEVER generes vistas monolíticas o acoplamiento tóxico:** Prohibido amontonar JSX, lógica de fetch, tipos y estilos en un solo archivo gigante (ej: `page.tsx` de 500+ líneas). Divide en componentes atómicos (`components/ui/`), custom hooks y tipos aislados. En PHP/HTML, separa estrictamente estructura (marcado), decoración (CSS modular) e interacción (JS externo).
+5. **NEVER generes vistas monolíticas o acoplamiento tóxico:** Prohibido amontonar marcado, lógica de datos, tipos y estilos en un solo archivo gigante (ej: vistas de 500+ líneas). Divide en componentes atómicos (`components/ui/`), custom hooks y tipos aislados. En arquitecturas tradicionales, separa estrictamente estructura (marcado), decoración (CSS modular) e interacción (JS externo).
 6. **NEVER uses CSS inline ni inventes clases no acordadas:** Prohibido el uso de `style="..."` o cadenas de clases utilitarias de frameworks (Tailwind/Bootstrap/shadcn) que ensucien o contradigan las clases globales. Si un estilo no está en `showroom.html` + `DESIGN.md`, no se improvisa: se consulta al usuario para extender el sistema.
 
 ## ALWAYS List - Mandatos de comportamiento
@@ -99,8 +99,8 @@ El Agente debe **bloquear** el proceso si detecta:
 - **Siempre** fragmenta la interfaz en componentes modulares reutilizables y desacoplados.
 - **Siempre** utiliza el *Taste Spectrum* como una conversación para calibrar el diseño.
 - **Siempre** prepara el terreno para la sincronización 1:1 con Figma (API Sync).
-- **Siempre** documenta las reglas de redondeo, sombras y elevación en las especificaciones.
-- **Siempre** en proyectos comenzados (Retrofit), detecta y solicita al usuario indicarte una o más "vistas semilla de referencia" (código de componentes React/Vue/HTML ya aprobados) para autocompletar los tokens y estilos base de `DESIGN.md` de forma precisa y evitar discrepancias.
+- **Siempre** documenta las reglas de redondeo, sombras, elevación y ecualización entre módulos en las especificaciones.
+- **Siempre** en proyectos comenzados (Retrofit), detecta y solicita al usuario indicarte una o más "vistas semilla de referencia" (código de componentes ya aprobados) para autocompletar los tokens y estilos base de `DESIGN.md` de forma precisa y evitar discrepancias.
 
 ---
 
@@ -130,4 +130,4 @@ En la fase visual, el Agente actúa como un **director de arte** que educa el oj
 *   **Decisión compartida:** Nunca entregar un diseño finalizado sin haber transitado los hitos de decisión con el humano.
 
 ---
-*Framework Baraldi v2.31.0 · skills/methodology/06_visual_design_ui/SKILL.md*
+*Framework Baraldi v2.32.0 · skills/methodology/06_visual_design_ui/SKILL.md*

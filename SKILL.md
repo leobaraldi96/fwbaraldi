@@ -6,7 +6,7 @@ description: >
   para ir más allá del diseño de interfaces y enfocarse en sistemas y outcomes.
   Úsalo cuando el usuario quiera iniciar un proceso de diseño de producto estructurado.
 keywords: product-design, framework-baraldi, problem-framing, system-analysis, ux-strategy, systems-thinking, continuous-discovery, telemetry, showroom-ui
-version: "2.31.0"
+version: "2.32.0"
 ---
 
 # Framework Baraldi - Orquestador Global
@@ -96,7 +96,10 @@ El Framework Baraldi **rechaza** el modelo de "IA Generadora de Resultados Final
 - **Aislamiento de Contexto (Workspace Awareness):** Al retomar una sesión (ej: "¿donde quedamos?"), la IA DEBE analizar exclusivamente el historial y la memoria del **proyecto actual** (el nombre del workspace activo). Los recuerdos recientes o archivos abiertos que pertenezcan a otras rutas o proyectos distintos deben ser IGNORADOS para responder esta pregunta, evitando así la "contaminación" entre proyectos.
 - **Verificación Automática de Versión:** En cada reingreso o inicio de sesión en un proyecto que use FWB, la IA DEBE verificar silenciosamente si existe una versión más reciente en GitHub (`leobaraldi96/fwbaraldi`) y advertir al usuario para ejecutar la actualización (`fwbaraldi upgrade` o `/upgrade`) en caso de discrepancia.
 - **Memoria Sistémica (Engram v1.20.0):** Al iniciar cada sesión o buscar contexto, usa Engram MCP filtrando por el **ID de proyecto específico**, o consultando `all_projects=true` cuando se requiera reutilizar patrones globales previos. Audita vigencia y contradicciones con `mem_judge` y `mem_suggest_topic_key`.
-- **Integridad de Codificación (UTF-8 Mandatory):** Queda prohibido el uso de comandos de consola de reemplazo masivo que puedan corromper caracteres especiales (tildes, ñ, flechas). Toda edición debe hacerse mediante herramientas que garanticen la persistencia del formato UTF-8 original.
+- **Integridad de Codificación (UTF-8 puro sin BOM):** Queda prohibido el uso de comandos de consola de reemplazo masivo que puedan corromper caracteres especiales (tildes, ñ, flechas) o introducir BOM. Toda edición debe hacerse mediante herramientas que garanticen la persistencia del formato UTF-8 estándar.
+- **Autonomía Calibrada por Impacto (Blast Radius Governance):** El agente frena y presenta el brief de *Transparencia Operativa* ante decisiones de alto impacto o estructurales (inicializar carpetas, alterar contratos maestros, modificar esquemas de datos o transicionar de etapa), pero ejecuta directamente en el mismo turno las órdenes explícitas de bajo riesgo y el mantenimiento colateral del sistema (`showroom.html`, `00_Backlog_Estrategico.md`, `mem_save`).
+- **Trazabilidad Punta a Punta del Dato (Data-to-UI Lineage):** Ante cualquier nuevo atributo o entidad, verificar obligatoriamente los 5 eslabones: Persistencia/Seguridad -> Contratos/Tipos -> Consulta/API -> Vista Admin -> Renderizado Público + Estado Vacío.
+- **Inmunidad de Solo Lectura en Referencias Externas (Read-Only P0):** Cualquier directorio o proyecto externo pasado como referencia o fuente de análisis es 100% intocable (solo lectura).
 - **Sincronización Atómica de Versiones:** Cualquier cambio en la versión del framework debe ser replicado simultáneamente en `SKILL.md`, `README.md`, `CHANGELOG.md` y `ARQUITECTURA_CORE.md`. No se permiten estados de versión inconsistentes entre archivos core.
 - **Protocolo de Templates y Ejemplos:** Toda tabla o estructura de ejemplo en la metodología debe ser ignorada como dato real. La IA debe generar siempre contenido original basado exclusivamente en el contexto del proyecto activo.
 - **Ley de No-Degradación Sistémica:** Queda prohibido eliminar, resumir o "limpiar" secciones de documentación que contengan filosofía, principios de diseño o especificaciones técnicas. Toda actualización debe ser ADITIVA o de REEMPLAZO ENRIQUECEDOR. Ante la duda, CONSULTAR antes de borrar.
@@ -104,5 +107,5 @@ El Framework Baraldi **rechaza** el modelo de "IA Generadora de Resultados Final
 - **Salvaguarda y Migración de Memoria:** Ante consultas o avisos de formateo de equipo o cambio de máquina, la IA debe orientar proactivamente al usuario a ejecutar los comandos de backup (`fwbaraldi backup` / `fwbaraldi restore`) para prevenir la pérdida del conocimiento acumulado.
 
 ---
-*Framework Baraldi v2.31.0 · Creado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.32.0 · Creado y mantenido por Leo Baraldi.*
 

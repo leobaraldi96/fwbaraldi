@@ -7,7 +7,7 @@ description: >
   Activar en rediseños de productos legados, evaluaciones estratégicas o como
   punto de entrada antes de auditorías específicas.
   Keywords: ux-audit, usabilidad, IxDF, honeycomb, interacción, rediseño, evaluación.
-version: "2.31.0"
+version: "2.32.0"
 framework: Baraldi
 stage: "02 - System Analysis"
 ---
@@ -110,4 +110,4 @@ Para cada problema `P0` y `P1`, especificar:
 - **SIEMPRE** evalúa la experiencia móvil con rigor específico (targets táctiles, carga cognitiva por pantalla y navegación al alcance del pulgar).
 
 ---
-*Framework Baraldi v2.31.0 · skills/methodology/02_system_analysis/skills/engines/ux_audit_rethink_engine/SKILL.md*
+*Framework Baraldi v2.32.0 · skills/methodology/02_system_analysis/skills/engines/ux_audit_rethink_engine/SKILL.md*

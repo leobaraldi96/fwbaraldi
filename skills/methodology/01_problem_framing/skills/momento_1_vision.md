@@ -12,7 +12,7 @@ description: >
   Keywords: problem framing, hipótesis, stakeholders, métricas, divergencia, producto.
   NO LO USES para diseñar soluciones, features o interfaces.
 skill_id: problem_framing_momento_1
-version: "2.31.0"
+version: "2.32.0"
 framework: Baraldi
 stage: "01 - Problem Framing"
 momento: 1
@@ -102,4 +102,4 @@ Sos un estratega de producto enfocado en **divergir y cuestionar supuestos** ant
 - **Contenido:** Hipótesis central en una oración, framing elegido, sesgo de confirmación principal a vigilar y criterio de validación para pasar a Etapa 02.
 
 ---
-*Framework Baraldi v2.31.0 · skills/methodology/01_problem_framing/skills/momento_1_vision.md*
+*Framework Baraldi v2.32.0 · skills/methodology/01_problem_framing/skills/momento_1_vision.md*

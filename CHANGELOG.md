@@ -5,6 +5,31 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.32.0] - 2026-11-01
+
+### 🧠 Optimización para Modelos de Frontera, Autonomía por Radio de Explosión y Linaje de Datos
+- **Descompresión y Limpieza de Redundancias Core (Dieta para Modelos de Alto Razonamiento):**
+  - Eliminación del solapamiento entre `00_boot/context.md` y `skills/core/00_core_guardrails/SKILL.md`: `context.md` consolida las leyes de identidad, comportamiento, Triple Aduana y autonomía, mientras que `00_core_guardrails` concentra la taxonomía de `docs-fwbaraldi/`, protección de directorios externos, ergonomía cognitiva y checklist pre-entrega, reduciendo la carga de tokens de arranque sin perder una sola regla normativa.
+  - **Calibración Unificada en `/init`:** Fusión de los cuestionarios de arranque (Setup Operativo *Solo-Pilot vs. Equipo* y *Perfil de Rigor Operativo*) en un único checkpoint interactivo (`ask_question`).
+  - **Corrección Técnica de Encoding (`UTF-8 puro sin BOM`):** Reemplazo de la directiva obsoleta de UTF-8 con BOM por UTF-8 estándar sin BOM para garantizar compatibilidad total con compiladores modernos, JSON y ESM.
+  - **Alineación de `00_operational_hygiene/SKILL.md`:** Sincronización de la tabla de ramas con las 8 etapas reales del framework y adecuación estricta a la regla P0 de soberanía manual de Git (el agente sugiere ramas y mensajes de commit semánticos, nunca ejecuta `git commit` ni `git push`).
+  - Limpieza del directorio residual `temp-Engram-v1.15.11/` y retiro de workarounds obsoletos de versiones antiguas del IDE.
+- **Gobernanza de Autonomía por Radio de Explosión (Blast Radius Governance):**
+  - Modernización de `00_boot/context.md` y `skills/core/00_kalman_guardrail/SKILL.md`: el agente frena y presenta el brief de *Transparencia Operativa* ante decisiones de alto impacto o estructurales (inicializar carpetas, alterar contratos maestros, cambiar esquemas de base de datos o transicionar de etapa), pero ejecuta de forma fluida en un solo turno las órdenes operativas directas del usuario y el mantenimiento colateral obligatorio (`showroom.html`, `00_Backlog_Estrategico.md`, `mem_save`).
+- **Trazabilidad Punta a Punta del Dato (Data-to-UI Lineage Check en Etapas 03 y 07):**
+  - Incorporado el chequeo obligatorio de los 5 eslabones en cadena ante la creación o modificación de cualquier atributo de entidad: `1. Persistencia y Seguridad (DB/RLS) -> 2. Contratos y Tipado -> 3. Capa de Consulta/API (SELECT/Payload) -> 4. Vista de Carga/Admin -> 5. Renderizado Público y Condicional de Estado Vacío`.
+- **Protocolo de Ecualización Anatómica de Módulos (Cross-Module Equalization en Etapas 05 y 06):**
+  - Estandarización agnóstica para productos multi-módulo: jerarquía fija de cabeceras, política unificada de búsqueda (evitando buscadores locales redundantes), ubicación predecible de sub-navegación y colapso progresivo de barras de herramientas en móvil.
+- **Seguridad de Directorios Externos y Sanitización de Divulgación (`00_core_guardrails`):**
+  - **External Reference Read-Only (P0):** Cualquier ruta o repositorio externo provisto como referencia o fuente de análisis es 100% intocable (solo lectura).
+  - **Filtro de Secreto de Negocio (NDA Filter):** Protección de datos comerciales sensibles y redondeo comunicacional de métricas al redactar casos de estudio o documentación pública.
+- **Evolución de la Toolbox Comercial (`pricing_and_monetization_protocol` y `sales_enablement_and_pitch_protocol`):**
+  - Estructuración de planes de evolución post-lanzamiento (Fase 2) por nivel de valor de negocio (*Técnico / Producto / Estratégico*), inclusión de talleres de habilitación para el equipo receptor en la oferta core, cláusula obligatoria de vigencia temporal e higiene tipográfica formal en propuestas.
+- **Verificación en Vivo Condicional (Live Environment & MCP QA en Etapa 07) y Bucle de Aprendizaje Continuo:**
+  - Uso proactivo de asesores de base de datos, chequeo de tipos y herramientas de inspección de DOM en la Etapa 07 cuando estén disponibles en el entorno, más destilación de patrones reutilizables (`pattern/[nombre]`) al cierre de sesión.
+- **Hardening de Scripts CLI (`install.js` y `align.js`):**
+  - Soporte retrocompatible de `.engram/config.json` con `project_name` y `project` para Engram `v1.20.0`, y cobertura completa de las 8 etapas y 16 herramientas en las listas de higiene anti-fragmentación.
+
 ## [2.31.0] - 2026-09-28
 
 ### 🎨 Showroom UI Vivo, Triple Aduana y Arquitectura Sanitaria Modular

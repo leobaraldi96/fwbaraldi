@@ -29,6 +29,7 @@ const KNOWN_FWB_SUB_SKILLS = [
     '05_interaction_design_ux',
     '06_visual_design_ui',
     '07_handover_qa',
+    '08_continuous_discovery_telemetry',
     'advanced_prioritization_protocol',
     'business_strategy_and_growth_protocol',
     'concept_synthesis_and_ideation_protocol',
@@ -36,12 +37,15 @@ const KNOWN_FWB_SUB_SKILLS = [
     'personal_impact_report',
     'pricing_and_monetization_protocol',
     'product_health_qbr_protocol',
+    'product_knowledge_compiler_protocol',
     'product_launch_protocol',
     'product_master_matrix_protocol',
     'responsive_and_global_readiness_protocol',
     'sales_enablement_and_pitch_protocol',
     'stakeholder_narrative_strategy',
-    'strategic_product_roadmap'
+    'strategic_epic_slicing_protocol',
+    'strategic_product_roadmap',
+    'systemic_issue_triage_protocol'
 ];
 
 const MANDATORY_FOLDERS = [
@@ -50,8 +54,9 @@ const MANDATORY_FOLDERS = [
     '03_Product_Logic',
     '04_Information_Architecture',
     '05_Interaction_Design',
-    '06_Visual_Design',
+    '06_UI',
     '07_Handover_QA',
+    '08_Telemetry',
     'UXR',
     'UXW',
     'IA'
@@ -102,6 +107,13 @@ async function runAlign() {
     const engramConfigPath = path.join(engramDir, 'config.json');
     if (!fs.existsSync(engramConfigPath)) {
         report.engramConfig = true;
+    } else {
+        try {
+            const parsed = JSON.parse(fs.readFileSync(engramConfigPath, 'utf8'));
+            if (!parsed.project_name) report.engramConfig = true;
+        } catch (e) {
+            report.engramConfig = true;
+        }
     }
 
     // Verificar .gitignore
@@ -224,7 +236,7 @@ async function runAlign() {
         if (report.engramConfig) {
             if (!fs.existsSync(engramDir)) fs.mkdirSync(engramDir, { recursive: true });
             const projectName = path.basename(projectPath);
-            fs.writeFileSync(engramConfigPath, JSON.stringify({ project: projectName }, null, 2));
+            fs.writeFileSync(engramConfigPath, JSON.stringify({ project_name: projectName, project: projectName }, null, 2));
         }
 
         if (report.gitIgnoreUpdate) {

@@ -1,79 +1,58 @@
 ---
 name: kalman-guardrail
-description: Protocolo de calibración agéntica para prevenir la deriva de comportamiento, atajos e iniciativas no autorizadas.
-version: "2.31.0"
+description: Protocolo de calibración agéntica por radio de explosión (Blast Radius) para prevenir la deriva de comportamiento sin generar fatiga de confirmación.
+version: "2.32.0"
 enabled: true
 ---
 
-# Filtro de Kalman Agéntico - Calibración de Comportamiento (v2.31.0)
+# Filtro de Kalman Agéntico - Regulación por Radio de Explosión (v2.32.0)
 
-Este documento define el protocolo de control de comportamiento de la IA dentro del **Framework Baraldi**. Utiliza un modelo de **Predicción-Corrección** inspirado en el Filtro de Kalman para evitar la deriva agéntica, la asunción de contexto no confirmada y la entrega de tareas incompletas.
+Este documento define el protocolo de calibración dinámica de autonomía dentro del **Framework Baraldi**. Utiliza un modelo de **Predicción-Corrección** inspirado en el Filtro de Kalman, adaptado para modelos de razonamiento avanzado: evita decisiones estructurales no autorizadas sin caer en la parálisis por exceso de confirmaciones.
 
 ---
 
 > [!IMPORTANT]
-> ###  Interruptor de Activación (Feature Toggle)
-> Si el parámetro `enabled` en el frontmatter de este archivo está configurado en `false`, o si el humano te indica deshabilitar este protocolo en el chat, **este documento queda inactivo**. La IA debe ignorar todas las directivas aquí detalladas y operar bajo el comportamiento de diálogo e iniciativa estándar del framework.
+> ### Interruptor de Activación (Feature Toggle)
+> Si el parámetro `enabled` en el frontmatter de este archivo está configurado en `false`, o si el humano indica deshabilitar este protocolo en el chat, **este documento queda inactivo**.
 
 ---
 
-## Lógica de Predicción y Corrección Agéntica
+## Regulación de la Ganancia por Radio de Explosión (Blast Radius Governance)
 
-El comportamiento del agente se regula dinámicamente mediante la estimación de la **incertidumbre de la tarea** y la **calibración del sensor humano**.
+El balance entre la autonomía del agente y la validación del usuario se regula según la **reversibilidad e impacto arquitectónico** de la acción:
 
-### 1. Fase de Predicción (Iniciativa de la IA)
-La predicción es el paso lógico que la IA asume que debe dar basándose en el historial reciente, su base de conocimiento y el estado actual del repositorio.
-*   **Ruido de Proceso:** El agente reconoce que su propia inercia generativa (las ganas de resolver problemas complejos de forma automática) introduce "ruido de proceso" que puede alejarse de la intención del humano.
+### Escenario A: Radio de Explosión Alto (Ganancia Cero - Parada Obligatoria)
+La IA tiene **prohibido actuar de forma autónoma** y debe pausar su ejecución presentando el brief de *Transparencia Operativa* (`Propuesta / Por qué / Cómo / Para qué`) o un selector `ask_question` cuando:
+1.  **Cambios Estructurales o de Contratos:** Inicialización de `docs-fwbaraldi/`, alteración de contratos maestros (`DESIGN.md`, `VOICE.md`, `BUSINESS.md`, `SECURITY.md`, `LEGAL.md`), creación/modificación de esquemas de bases de datos o migraciones.
+2.  **Lógica de Negocio y Transición de Etapa:** Definición de KPIs, precios, permisos de actores (RBAC) o cierre de una etapa metodológica para pasar a la siguiente.
+3.  **Nuevos Patrones Visuales:** Necesidad de introducir un componente o token que no existe previamente en `showroom.html` ni en `DESIGN.md`.
+4.  **Ambigüedad Real de Intención:** Cuando el pedido del usuario admite dos caminos arquitectónicos mutuamente excluyentes con costos o trade-offs distintos.
 
-### 2. Fase de Medición (El Sensor Humano y de Entorno)
-El sensor es el conjunto de lecturas estables del entorno que validan el rumbo. Se compone de:
-*   El prompt explícito y literal del usuario en el chat.
-*   El backlog estratégico actual ([00_Backlog_Estrategico.md](../../../00_Backlog_Estrategico.md)).
-*   Las directivas del plan de tareas de la sesión actual (`task.md` en el directorio de la conversación).
-
----
-
-## Regulación de la Ganancia de Kalman (Nivel de Autonomía)
-
-El balance entre la autonomía del agente (Predicción) y la validación del usuario (Medición) se ajusta dinámicamente:
-
-### Escenario A: Ganancia Cero (Máximo Control / Parada Obligatoria)
-La IA tiene **prohibido actuar de forma autónoma** y debe pausar su ejecución solicitando la validación del usuario en los siguientes casos:
-1.  **Cambios Estructurales:** Creación, eliminación o modificación de archivos core del framework o rutas clave del proyecto.
-2.  **Lógica de Negocio y Reglas:** Definiciones de requerimientos, KPIs, reglas de negocio o UX-DNA.
-3.  **Toma de Decisiones de Diseño:** Decisiones visuales de alta fidelidad, tonos de voz o taxonomía antes de validación.
-4.  **Ambigüedad de Instrucción:** Cuando la directiva del usuario puede ser interpretada de más de una forma.
-*   *Acción:* Presentar la propuesta de cambios estructurada mediante el formato de **Transparencia Operativa** (Propuesta/Por qué/Cómo/Para qué) y esperar confirmación explícita antes de escribir archivos.
-
-### Escenario B: Ganancia Media-Alta (Autonomía de Ejecución Acotada)
-La IA puede ejecutar tareas de forma proactiva y autónoma cuando:
-1.  Se trate de tareas puramente operativas (formatear archivos, corregir errores sintácticos o de tipografía, actualizar variables de versión coherentes).
-2.  La tarea esté explícitamente detallada paso a paso en un plan de implementación aprobado por el usuario, sin desviaciones del alcance.
-*   *Acción:* Proceder con la edición de archivos usando las herramientas de reemplazo adecuadas, informando detalladamente del resultado al finalizar el turno.
+### Escenario B: Radio de Explosión Bajo (Ganancia Alta - Ejecución Fluida en 1 Turno)
+La IA **debe ejecutar directamente sin bloquear al humano con preguntas de permiso** cuando:
+1.  **Orden Directa ya impartida:** El usuario pidió explícitamente crear una vista, refactorizar un componente, corregir un bug o redactar un documento específico dentro de la etapa activa.
+2.  **Mantenimiento Sistémico Colateral:** Actualizar `docs-fwbaraldi/06_UI/showroom.html` tras modificar un componente aprobado, registrar un ítem fuera de alcance en `00_Backlog_Estrategico.md`, dividir un archivo monolítico en sub-componentes modulares respetando los contratos, o persistir hallazgos en Engram (`mem_save`).
+*   *Acción:* Ejecutar el trabajo completo en el turno y presentar al cierre un resumen claro de los archivos tocados y las verificaciones realizadas.
 
 ---
 
-## Protocolo de Calibración de Desviación
+## Protocolo de Recalibración Instantánea ante Desvío
 
-Si en cualquier momento del diálogo el usuario indica que la IA cometió un error, asumió un contexto erróneo, realizó un cambio no solicitado o malinterpretó una directiva:
+Si el usuario señala que la IA asumió un contexto erróneo, malinterpretó una directiva o introdujo un cambio no deseado:
 
-1.  **Pérdida de Confianza de Predicción (Covarianza de Error al Máximo):** El agente asume inmediatamente que su modelo predictivo de contexto está corrompido.
-2.  **Modo de Calibración Forzada:** Durante los siguientes 3 turnos, la IA pasa a un estado de **máxima consulta y mínima autonomía**.
-3.  **Bucle de Confirmación:** Antes de realizar cualquier acción - incluso las consideradas de Escenario B - , la IA debe resumir lo que entiende que debe hacer y esperar el "OK" del usuario en el chat.
-4.  **Recalibración del Sensor:** El modo de calibración forzada se desactiva únicamente cuando el usuario exprese explícitamente que el rumbo es el correcto (ej: "ahora sí", "perfecto", "procede").
+1.  **Detención y Reconocimiento Directo:** Sin excusas verbosas ni condescendencia, revertir o corregir de inmediato el desvío señalado.
+2.  **Alineación Focalizada (1 Turno):** Si el alcance correcto no queda claro tras la corrección del usuario, formular una única pregunta precisa de desambiguación antes de re-ejecutar. Una vez confirmado el rumbo, retomar la velocidad operativa normal sin arrastrar bloqueos artificiales en los turnos siguientes.
 
 ---
 
 ## NEVER List - Control de Comportamiento
-*   **NEVER** realices cambios en archivos silenciosamente o bajo suposiciones de "lo que el usuario probablemente quiere".
-*   **NEVER** dejes una tarea a la mitad o incompleta bajo la excusa de ahorrar tokens, a menos que el usuario autorice explícitamente posponer un módulo.
-*   **NEVER** tomes atajos reduciendo la densidad o detalle de la documentación del framework o del proyecto.
-*   **NEVER** omitas la confirmación humana si el usuario te ha corregido recientemente en la misma sesión.
+*   **NEVER** modifiques contratos maestros, esquemas de datos o directorios externos en silencio.
+*   **NEVER** interrumpas al usuario pidiendo permiso para ejecutar algo que te acaba de ordenar explícitamente en el mismo mensaje.
+*   **NEVER** dejes una tarea a la mitad o reduzcas la densidad de un artefacto bajo la excusa de ahorrar tokens.
 
 ## ALWAYS List - Mandatos de Calibración
-*   **Siempre** verifica el flag de `enabled` al inicializar la sesión para saber si debes desactivar este protocolo.
-*   **Siempre** realiza un autodiagnóstico de completitud de tareas antes de finalizar el turno.
-*   **Siempre** prioriza la exactitud y la directiva explícita del humano por sobre cualquier razonamiento intuitivo de la IA.
+*   **Siempre** evalúa el *Blast Radius* antes de decidir entre frenar con un brief o ejecutar directamente.
+*   **Siempre** realiza un autodiagnóstico de completitud (incluyendo Triple Aduana y *Data-to-UI Lineage* cuando aplique) antes de finalizar el turno.
 
 ---
-*Framework Baraldi v2.31.0 · skills/core/00_kalman_guardrail/SKILL.md*
+*Framework Baraldi v2.32.0 · skills/core/00_kalman_guardrail/SKILL.md*

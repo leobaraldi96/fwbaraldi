@@ -4,6 +4,8 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.join(__dirname, '..');
+const pkg = JSON.parse(fs.readFileSync(path.join(rootDir, 'package.json'), 'utf8'));
+const targetVersion = pkg.version;
 
 function walk(dir) {
   let results = [];
@@ -28,10 +30,10 @@ let updated = 0;
 for (const file of files) {
   let content = fs.readFileSync(file, 'utf8');
   const original = content;
-  
-  // Replace footer versions safely
-  content = content.replace(/\*Framework Baraldi v2\.(26\.\d+|27\.\d+)/g, '*Framework Baraldi v2.28.0');
-  content = content.replace(/version: "(2\.26\.\d+|2\.27\.\d+)"/g, 'version: "2.28.0"');
+
+  // Replace versions safely in UTF-8
+  content = content.replace(/v2\.(26|27|28|29|30|31)\.\d+/g, `v${targetVersion}`);
+  content = content.replace(/version:\s*"2\.(26|27|28|29|30|31)\.\d+"/g, `version: "${targetVersion}"`);
 
   if (content !== original) {
     fs.writeFileSync(file, content, 'utf8');
@@ -40,4 +42,4 @@ for (const file of files) {
   }
 }
 
-console.log(`\nTotal files updated with v2.28.0: ${updated}`);
+console.log(`\nTotal files updated with v${targetVersion}: ${updated}`);

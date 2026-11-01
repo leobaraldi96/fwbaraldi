@@ -40,6 +40,7 @@ const KNOWN_FWB_SUB_SKILLS = [
   '05_interaction_design_ux',
   '06_visual_design_ui',
   '07_handover_qa',
+  '08_continuous_discovery_telemetry',
   'advanced_prioritization_protocol',
   'business_strategy_and_growth_protocol',
   'concept_synthesis_and_ideation_protocol',
@@ -348,7 +349,7 @@ Opciones:
 
     if (!fs.existsSync(engramConfigPath)) {
       const projectName = path.basename(destPath);
-      fs.writeFileSync(engramConfigPath, JSON.stringify({ project: projectName }, null, 2));
+      fs.writeFileSync(engramConfigPath, JSON.stringify({ project_name: projectName, project: projectName }, null, 2));
     }
 
     const gitignoreRules = '\n# Engram Memory (Framework Baraldi Security)\n.engram/\n!.engram/config.json\n';
@@ -413,4 +414,3 @@ run().catch(err => {
   console.error(chalk.red('\n❌ Error en la instalación: ' + err.message));
   process.exit(1);
 });
-

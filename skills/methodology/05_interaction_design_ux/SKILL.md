@@ -2,10 +2,10 @@
 name: interaction-design-ux
 description: >
   Ejecuta la Etapa 05 (Interaction Design / UX) del Framework Baraldi.
-  Define el comportamiento, los estados y el esqueleto de la experiencia.
-keywords: ux, interaction design, micro-interactions, states, wireframes, user experience.
+  Define el comportamiento, los estados, la ecualización anatómica entre módulos y el esqueleto de la experiencia.
+keywords: ux, interaction design, micro-interactions, states, wireframes, user experience, module equalization.
 status: operational
-version: "2.31.0"
+version: "2.32.0"
 framework: Baraldi
 stage: "05"
 stage_name: "Interaction Design (UX)"
@@ -13,7 +13,7 @@ stage_name: "Interaction Design (UX)"
 
 # Etapa 05 - Interaction design (UX)
 
-> **Objetivo:** Definir cómo el usuario interactúa con la arquitectura creada en la Etapa 04. Pasamos del "mapa" al "movimiento". Aquí se diseñan los comportamientos, los estados de los componentes, el **sistema de contenido (content systems architecture)** y la **Handoff Matrix** validada.
+> **Objetivo:** Definir cómo el usuario interactúa con la arquitectura creada en la Etapa 04. Pasamos del "mapa" al "movimiento". Aquí se diseñan los comportamientos, la consistencia estructural entre vistas, los estados de los componentes, el **sistema de contenido (content systems architecture)** y la **Handoff Matrix** validada.
 
 ---
 
@@ -21,7 +21,8 @@ stage_name: "Interaction Design (UX)"
 En esta etapa no nos preocupamos por los colores, sino por:
 1. **Micro-interacciones:** Qué pasa cuando el usuario hace clic, desliza o espera.
 2. **Sistema de estados:** Definición exhaustiva de Hover, Active, Focus, Disabled, Loading y Error para cada componente.
-3. **Validación multidimensional:** Alineación de cada wireframe con negocio, legal, producto y voz.
+3. **Ecualización anatómica de módulos (Cross-Module Anatomy):** Garantizar que todas las vistas hermanas del producto compartan una estructura predecible de cabecera, navegación secundaria, búsqueda y filtros.
+4. **Validación multidimensional:** Alineación de cada wireframe con negocio, legal, producto y voz.
 
 ---
 
@@ -36,7 +37,7 @@ En esta etapa no nos preocupamos por los colores, sino por:
         ↓
   Validar estados interactivos y microcopy
         ↓
-[MOMENTO 3] Handoff matrix & wireframes (skills/momento_3_wireframes.md)
+[MOMENTO 3] Handoff matrix, ecualización de vistas & wireframes (skills/momento_3_wireframes.md)
         ↓
        Etapa 06 - Visual design / UI (../06_visual_design_ui/SKILL.md)
 ```
@@ -55,10 +56,17 @@ En esta etapa no nos preocupamos por los colores, sino por:
 **Activar cuando:** El `VOICE.md` está aprobado por el usuario.
 **Produce:** Mapeo de los 6 estados interactivos por componente (`default`, `hover`, `focus`, `active`, `disabled`, `loading`/`error`) y optimización sistémica del microcopy.
 
-### Momento 3 - Handoff matrix & wireframes
+### Momento 3 - Handoff matrix, ecualización de módulos & wireframes
 **Archivo:** `skills/momento_3_wireframes.md`
 **Activar cuando:** La matriz de estados y el microcopy están validados.
-**Produce:** Creación del inventario exhaustivo de pantallas (Layout Architecture) y wireframes validados para pasar a la Etapa 06.
+**Produce:** Creación del inventario exhaustivo de pantallas (Layout Architecture), definición de la **Anatomía Ecualizada de Módulos** y wireframes validados para pasar a la Etapa 06.
+
+#### Protocolo de Ecualización Anatómica de Módulos (Cross-Module Equalization)
+Para evitar que un producto con múltiples secciones (ej. Catálogo, Clientes, Pedidos, Configuración, Reportes) sufra de "deriva estructural" donde cada pantalla ubica los controles en lugares distintos, el Momento 3 establece una **anatomía canónica transversal**:
+1. **Jerarquía de cabecera fija:** Posición uniforme para el título de vista (`H1`), descripción breve y acción primaria (`CTA` principal).
+2. **Política unificada de búsqueda y filtrado:** Definir con claridad si la búsqueda es global (ej. barra superior / atajo de teclado) o local por módulo, prohibiendo duplicar barras de búsqueda redundantes en la misma pantalla.
+3. **Ubicación predecible de sub-navegación:** Si un módulo tiene sub-vistas (ej. pestañas o segmentos), deben ubicarse siempre en el mismo nivel jerárquico respecto al encabezado y antes de las tablas o grillas de datos.
+4. **Adaptabilidad progresiva en móvil:** Definir cómo colapsan las barras de herramientas, filtros múltiples y tarjetas de métricas en pantallas pequeñas (ej. mediante popovers compactos o paneles desplegables) para no empujar el contenido principal fuera del primer pantallazo (*above the fold*).
 
 ---
 
@@ -74,10 +82,10 @@ Para elevar la calidad de esta etapa, el Agente debe consultar proactivamente:
 
 ## Criterio de calidad
 - [ ] El artefacto de "Layout Architecture" cubre OBLIGATORIAMENTE el 100% de las vistas y rutas aprobadas en el Sitemap de la Etapa 04 (regla anti-shortcuts).
+- [ ] Todas las vistas hermanas respetan el **Protocolo de Ecualización Anatómica de Módulos** (cabecera, búsqueda, sub-navegación y colapso móvil consistentes).
 - [ ] Los flujos lógicos de la Etapa 04 están exhaustivamente representados en wireframes.
 - [ ] El **VOICE.md** está presente en `docs-fwbaraldi/VOICE.md`, definiendo tono, voz y reglas de microcopy.
 - [ ] Cada interacción crítica tiene definidos sus estados de Error y Loading con copy validado.
-- [ ] La navegación es intuitiva y sigue patrones de diseño establecidos.
 
 ---
 
@@ -86,7 +94,7 @@ El Agente debe **bloquear** el proceso si detecta:
 
 1. **NEVER diseñes estética (UI):** Esta etapa es de comportamiento. El foco es el movimiento y la lógica de interacción, no el maquillaje.
 2. **NEVER permitas componentes sin sistema de estados:** Hover, Focus, Disabled y Loading son obligatorios. Prohibido omitir estados interactivos.
-3. **NEVER uses gestos ocultos sin pistas:** La interactividad debe ser descubrible. No asumas que el usuario conoce gestos complejos.
+3. **NEVER permitas asimetría caótica entre módulos hermanos:** Prohibido cambiar arbitrariamente la posición del buscador, de las pestañas o del botón primario entre un módulo y otro del mismo sistema.
 4. **NEVER permitas microcopy vago:** "Error" o "Cargando" son inaceptables. Todo mensaje debe seguir el **VOICE.md** y ser accionable.
 5. **NEVER ignores la latencia en IA:** Prohibido no diseñar los estados de "pensamiento" y los fallos de modelo si el producto usa IA.
 6. **NEVER avances sin Handoff Matrix:** El inventario de pantallas debe ser exhaustivo y validado antes de la alta fidelidad.
@@ -109,7 +117,7 @@ El Agente debe **bloquear** el proceso si detecta:
 |---|---|---|---|
 | Momento 1 | `ux-voice-contract` | `ux-writing` | Contrato `VOICE.md`, arquetipo de voz, tono por contexto y diccionario |
 | Momento 2 | `ux-state-machines` | `interacción` | Matriz de los 6 estados interactivos y microcopy de errores/loading |
-| Momento 3 | `ux-handoff-wireframes` | `cierre-de-etapa` | Layout Architecture al 100% del Sitemap y wireframes aprobados |
+| Momento 3 | `ux-handoff-wireframes` | `cierre-de-etapa` | Layout Architecture al 100% del Sitemap, anatomía ecualizada y wireframes aprobados |
 
 **Al cerrar la etapa (Handoff hacia Etapa 06):**
 1. Ejecutar el protocolo de cierre de ubicación sistémica de `../../../00_boot/context.md`.
@@ -128,4 +136,4 @@ En esta etapa, el Agente no solo dibuja; enseña y facilita la decisión arquite
 *   **Traspaso de dibujo (handoff visual al humano):** Al finalizar de entregar los artefactos, la IA debe detenerse y delegar explícitamente el diseño al humano con este enfoque: *"Listo, tenés todos los artefactos de la Etapa 05. Ahora te toca a vos diseñar los wireframes (en baja o media fidelidad) basándote en estas definiciones. Tenés dos opciones para que trabajemos juntos: 1) Si usás el protocolo MCP (Figma, Stitch), nos conectamos al lienzo y lo armamos en equipo. 2) Si preferís hacerlo por tu cuenta, no es obligatorio usar MCP: podés pasarme capturas de pantalla por acá, o ir guardando tus exportaciones dentro de la carpeta 'docs-fwbaraldi/05_Interaction_Design/wireframes/' y avisarme para que yo las revise, critique y vayamos iterando versión a versión."*
 
 ---
-*Framework Baraldi v2.31.0 · skills/methodology/05_interaction_design_ux/SKILL.md*
+*Framework Baraldi v2.32.0 · skills/methodology/05_interaction_design_ux/SKILL.md*

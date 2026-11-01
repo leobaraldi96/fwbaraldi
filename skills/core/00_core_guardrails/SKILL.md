@@ -1,41 +1,33 @@
 ---
 name: core-guardrails
 description: >
-  Reglas de disciplina operativa y barandas de contención del Framework Baraldi.
-  Asegura la prolijidad técnica, la alineación de la documentación y la calidad
-  de los entregables.
+  Reglas de disciplina operativa, taxonomía de carpetas, seguridad de directorios externos,
+  ergonomía cognitiva y barandas de contención del Framework Baraldi.
   Trigger: SIEMPRE activo. Se debe consultar al inicio de cada sesión y ante
   cualquier cambio en la estructura del proyecto o de los artefactos.
-version: "2.31.0"
+version: "2.32.0"
 ---
 
 # Capa 00 - Core guardrails (barandas de contención)
 
-> **Objetivo:** Garantizar que la IA opere con rigor metodológico, protegiendo al proyecto de la desorganización, la obsolescencia de la documentación y el ruido técnico.
+> **Objetivo:** Garantizar que la IA opere con rigor metodológico, protegiendo al proyecto de la desorganización, la fuga de archivos, la obsolescencia de la documentación y el ruido técnico. *(Las reglas fundacionales de identidad, Triple Aduana y autonomía por impacto residen en `00_boot/context.md`; este documento especifica las leyes de almacenamiento, higiene documental y ergonomía).*
 
-## 0. Inmunidad del núcleo (Core Self-Protection)
+## 0. Inmunidad del núcleo y seguridad de directorios externos (Core & External Self-Protection)
 
 <core_self_protection>
-Esta es la regla de protección existencial del framework. El Agente debe verificar el ámbito de trabajo antes de realizar cualquier cambio en el código fuente del Framework Baraldi:
+Esta es la regla de protección existencial del framework y del entorno del usuario:
 
-- **Detección de ámbito:** El Framework Baraldi tiene su propio repositorio de desarrollo (`leobaraldi96/fwbaraldi`).
-- **Prohibición de modificación externa:** Si el Agente está trabajando en un proyecto de implementación (ej: Animal Groom, Anticipate, etc.), tiene terminantemente **PROHIBIDO** modificar archivos dentro de la carpeta raíz del framework (`.../skills/baraldi-framework/`).
-- **Acción obligatoria ante sugerencia de mejora:** Si durante el uso del framework el Agente detecta una mejora necesaria en la metodología, **NO DEBE APLICARLA DIRECTAMENTE**. Debe:
-  1. Notificar al humano sobre la oportunidad de mejora.
-  2. Solicitar al humano que abra el **Workspace específico del Framework** en una ventana independiente para realizar la evolución de forma aislada y segura.
-- **Uso vs. evolución:** El Agente debe distinguir entre *usar* el framework (leer skills y escribir en `docs-fwbaraldi/` del proyecto actual) y *evolucionar* el framework (escribir en la carpeta `skills/baraldi-framework/`). Lo segundo solo se permite cuando el Workspace activo es el del propio framework.
+- **Detección de ámbito del framework:** El Framework Baraldi tiene su propio repositorio de desarrollo (`leobaraldi96/fwbaraldi`).
+- **Prohibición de modificación del motor desde proyectos:** Si el Agente está trabajando en un proyecto de producto de un usuario, tiene terminantemente **PROHIBIDO** modificar archivos dentro de la carpeta raíz del framework (`.../skills/baraldi-framework/`).
+- **Acción obligatoria ante sugerencia de mejora al motor:** Si durante el uso del framework el Agente detecta una mejora necesaria en la metodología, **NO DEBE APLICARLA DIRECTAMENTE**. Debe notificar al humano y solicitar abrir el workspace específico del framework en una ventana independiente.
+- **Inmunidad de solo lectura en carpetas externas de referencia (External Reference Read-Only P0):** Si el usuario proporciona la ruta de otro proyecto, repositorio o carpeta externa al workspace activo como referencia visual, técnica, auditoría o fuente para redactar documentación/casos de estudio, **dicha carpeta externa es 100% intocable (Read-Only)**. Está terminantemente prohibido crear, modificar o eliminar archivos en directorios externos; todo output o borrador debe generarse exclusivamente dentro del workspace activo (`docs-fwbaraldi/`).
 - **Prohibición estricta de Git commit y push automático (P0):** El Agente tiene terminantemente **PROHIBIDO** ejecutar comandos `git commit`, `git add` o `git push` de forma autónoma o automática. El agente solo edita archivos en el working tree. La revisión de diffs, creación de commits y subida de cambios remotos es **soberanía exclusiva del humano responsable**.
 </core_self_protection>
 
 ## Inteligencia proactiva y adaptativa (Bridge Architecture)
-- **Mandato de consulta:** La IA tiene prohibido operar de forma aislada. Debe consultar la Toolbox para elevar la calidad, pero **siempre adaptándose al perfil del usuario**.
-- **Detección de setup humano (P0):** Al inicio de cada proyecto o sesión, el Agente debe ejecutar obligatoriamente el **censo de ecosistema**:
-  - Solicitar composición del equipo (Solo vs. Equipo) y roles específicos.
-  - Identificar gobernanza (Propio vs. Cliente/Stakeholders).
-  - **Comunicación de valor:** Explicar proactivamente al usuario que este setup permite al framework "ser inteligente" y eliminar burocracia innecesaria (ej: no pedir workshops a un dev solitario).
-  - **Dinamicidad:** Recordar al usuario que este perfil se puede reconfigurar en cualquier momento escribiendo "Actualizar setup de equipo".
-- **Sugerencia estratégica condicional:** Las herramientas de la Toolbox se proponen según la necesidad real. No se debe preguntar por "boards de Miro" a un dev que está solo, a menos que él lo pida.
-- **Validación de conexiones:** En cada mantenimiento, verificar que los puentes sigan activos pero con lógica condicional de perfil.
+- **Mandato de consulta:** La IA tiene prohibido operar de forma aislada. Debe consultar la Toolbox para elevar la calidad, pero **siempre adaptándose al setup y perfil de rigor calibrado en `/init`** (definido en `00_boot/context.md`).
+- **Adaptación al setup (Solo-Pilot vs. Equipo):** En modo *Solo-Pilot*, el framework elimina burocracia grupal innecesaria (ej: no pide workshops presenciales ni ceremonias multi-equipo a un creador solitario, transformándolos en checkpoints ágiles de reflexión). En modo *Equipo / Stakeholders*, habilita la suite completa de alineación y handoff.
+- **Dinamicidad:** El usuario puede recalibrar su perfil en cualquier momento indicando *"Actualizar setup o perfil de rigor"*.
 
 ---
 
@@ -43,45 +35,36 @@ Esta es la regla de protección existencial del framework. El Agente debe verifi
 
 Esta es la regla de oro para evitar la degradación del conocimiento en el ecosistema.
 
-- **Integridad de codificación (UTF-8 Mandatory):** Prohibido el uso de comandos que corrompan caracteres especiales.
-- **Sincronización atómica:** Todo cambio de versión debe ser replicado en README, ARQUITECTURA, CHANGELOG y SKILLS simultáneamente.
-- **Ley de no-degradación sistémica:** El Framework es una estructura acumulativa y compleja. Queda TERMINANTEMENTE PROHIBIDO eliminar, resumir o "limpiar" secciones de documentación (README, Arquitectura, Guías) que contengan filosofía, principios de diseño, historia o especificaciones técnicas.
+- **Integridad de codificación (UTF-8 puro sin BOM):** Prohibido el uso de comandos que corrompan caracteres especiales o introduzcan Byte Order Marks (BOM) incompatibles con compiladores modernos.
+- **Sincronización atómica:** Todo cambio de versión debe ser replicado en `package.json`, `README.md`, `ARQUITECTURA_CORE.md`, `DOCUMENTACION_IA.md`, `CHANGELOG.md`, `00_boot/context.md` y `skills/` simultáneamente.
+- **Ley de no-degradación sistémica:** El Framework es una estructura acumulativa. Queda TERMINANTEMENTE PROHIBIDO eliminar, resumir o "limpiar" secciones de documentación (README, Arquitectura, Guías) que contengan filosofía, principios de diseño, historia o especificaciones técnicas.
   - Toda actualización debe ser **ADITIVA** o de **REEMPLAZO ENRIQUECEDOR**.
   - **Anti-Data Pruning:** Queda prohibida la eliminación de datos, flujos o secciones previamente validadas durante actualizaciones incrementales. Si se añade un campo nuevo, no se borran los antiguos.
   - **Mandato de expansión (redundancia estratégica):** En fases de arquitectura e IA, el objetivo es **expandir, redundar y documentar**. La síntesis es un error si sacrifica la resolución del sistema.
-  - Si se considera necesario remover algo por obsolescencia, se DEBE consultar y explicar el motivo al humano antes de ejecutar.
-  - El objetivo es siempre AMPLIAR el sistema, nunca reducir su densidad informativa.
-- **Sincronización total:** No se considera una tarea terminada hasta que todos los documentos de soporte (`README.md`, `ARQUITECTURA_CORE.md`, `CHANGELOG.md` y artefactos en `docs-fwbaraldi/`) estén perfectamente sincronizados con el nuevo estado del sistema o del código.
+  - Si se considera necesario remover algo por obsolescencia técnica comprobada, se DEBE consultar y explicar el motivo al humano antes de ejecutar.
 - **Estado real, no deseado:** La documentación debe describir el comportamiento **actual** y verificado, nunca promesas de funciones futuras no implementadas.
-- **Limpieza de referencias:** Al eliminar o renombrar un archivo o carpeta, se deben limpiar inmediatamente todas las menciones a estas en el resto de la documentación.
+- **Limpieza de referencias:** Al eliminar o renombrar un archivo o carpeta bajo autorización, se deben limpiar inmediatamente todas las menciones en el resto de la documentación.
 - **Inmunidad del mapa (README Map Integrity):** Queda terminantemente PROHIBIDO resumir, podar o simplificar la sección "Estructura del Repositorio" en el README. Este mapa es vital para la navegación humana y agéntica; debe mantenerse siempre detallado, completo y fiel a la jerarquía de archivos real.
 
 ---
 
-## 2. Nomenclatura semántica y humana
+## 2. Nomenclatura semántica y ortotipografía
 
-- **Prohibición de IDs de sistema:** Queda terminantemente prohibido nombrar archivos con códigos internos (ej: `01_pf_m1_vision.md`).
+- **Prohibición de IDs de sistema:** Queda terminantemente prohibido nombrar archivos con códigos internos crípticos (ej: `01_pf_m1_vision.md`).
 - **Nombres con valor de negocio:** Los nombres de los archivos deben ser descriptivos para un humano (ej: `01_Vision_y_Estrategia.md`).
-- **Consistencia:** Mantener la numeración de las etapas (01, 02, etc.) al inicio del nombre del archivo para mantener el orden cronológico en el sistema de archivos.
-
-### Reglas estrictas de ortografía y redacción en español
-Para evitar que los artefactos generados tengan un tono artificial o anglicado, la IA debe seguir estrictamente estas directivas en todas las salidas escritas:
-1. **Prohibición de mayúsculas innecesarias (estilo Title Case / inglés):** Queda prohibido escribir con mayúscula inicial cada palabra dentro de una frase, título de sección, elemento de lista o encabezado.
-2. **Minúsculas en conceptos y disciplinas:** Las disciplinas, metodologías, herramientas o conceptos técnicos comunes se escriben enteramente en minúscula (ejemplos: "sistemas de diseño", "investigación de usuarios", "pruebas de usabilidad", "guías de estilo", "lógica de producto", "arquitectura de información").
-3. **Uso correcto de la mayúscula en español:** La mayúscula se aplicará únicamente en:
-   - La primera palabra de un texto, oración, título de sección o ítem de una lista.
-   - Después de un punto.
-   - Nombres propios de personas, empresas o marcas registradas (ej. "Miro", "Figma", "Baraldi").
-   - Siglas técnicas (ej. "UX", "UI", "ROI", "QA").
-4. **Corrección proactiva:** Si el input provisto por el humano contiene mayúsculas innecesarias debido al arrastre del formato original, la IA debe corregirlo automáticamente al volcarlo en los artefactos finales para que se lea natural y profesional.
-
+- **Consistencia:** Mantener la numeración de las etapas (`01`, `02`, etc.) al inicio del nombre del archivo para preservar el orden cronológico en el sistema de archivos.
+- **Ortotipografía en español (Sentence case y signos):**
+  1. Prohibición estricta de *Title Case* (capitalizar cada palabra) en títulos, subtítulos, botones, tablas o etiquetas.
+  2. Uso de mayúscula inicial únicamente en la primera palabra de la oración/título, nombres propios y siglas técnicas (`UX`, `UI`, `ROI`, `QA`, `API`).
+  3. Prohibición de guiones largos (em-dash / en-dash) como incisos; utilizar guion simple (`-`), comas o paréntesis.
+  4. Auditoría de estilo mediante [references/humanizer.md](../../../references/humanizer.md) para erradicar vocabulario artificial de IA, paralelismos mecánicos y muletillas serviles.
 
 ---
 
 ## 3. Aislamiento de output y taxonomía de carpetas (Zero-Leakage)
 
 ### El principio
-El repositorio del *entregable* (el código de la web, la app, el producto que irá a deploy) debe permanecer **100% puro**. Nada que no sea parte del entregable puede vivir en su raíz o en sus carpetas de código. Todo lo que genera el framework - sin importar su naturaleza - vive **exclusivamente** dentro de `docs-fwbaraldi/` en la raíz del proyecto.
+El repositorio del *entregable* (el código de la web, la app, el producto que irá a deploy) debe permanecer **100% puro**. Nada que no sea parte del entregable productivo puede vivir en su raíz o mezclarse con sus carpetas de código fuente. Todo lo que genera el framework vive **exclusivamente** dentro de `docs-fwbaraldi/` en la raíz del proyecto.
 
 **REGLA DE ORO:** Si un archivo no va a producción, va a `docs-fwbaraldi/`.
 
@@ -96,6 +79,8 @@ docs-fwbaraldi/
 ├── DESIGN.md                          ← Contrato vivo visual agéntico (Etapa 06)
 ├── VOICE.md                           ← Contrato vivo de voz y tono (Etapa 05)
 ├── BUSINESS.md                        ← Contrato vivo de invariantes de negocio (Etapa 03)
+├── SECURITY.md                        ← Contrato vivo de seguridad, RBAC y RLS (Etapa 03/07)
+├── LEGAL.md                           ← Contrato vivo de privacidad y compliance (Etapa 03/07)
 ├── UX.md                              ← Contrato vivo de ergonomía e interacción (Etapa 05)
 ├── KNOWLEDGE.md                       ← Compilador de conocimiento de producto (Etapa 07)
 │
@@ -119,6 +104,8 @@ docs-fwbaraldi/
 │   ├── design_tokens.md
 │   └── componentes_spec.md
 │
+├── 07_Handover_QA/                    ← Auditorías de entrega, linaje de datos y checklists
+│
 ├── 08_Telemetry/                      ← Diagnósticos de datos y registro de acciones (Etapa 08)
 │   ├── 01_Data_Diagnostic_and_Insights.md
 │   └── 02_Action_Registry_and_Decisions.md
@@ -137,25 +124,13 @@ docs-fwbaraldi/
     └── contexto_proyecto_ia.md
 ```
 
-### Reglas operativas
-- **Ubicación Obligatoria:** Todo artefacto del framework debe tener una subcarpeta de destino explícita. Si la IA no sabe en qué subcarpeta va, **frena y pregunta** antes de escribir el archivo.
-- **Mandato de Artefactos Físicos (Anti-Chat Only):** Queda terminantemente prohibido que el Agente solo muestre el contenido de un entregable en la terminal o chat. Todo hito de la metodología **DEBE** materializarse en un archivo físico `.md` dentro de `docs-fwbaraldi/`. Mostrar el texto en el chat sin crear el archivo se considera un incumplimiento de la proactividad del framework.
-- **Documentación Dinámica:** Queda prohibido usar nombres de archivos genéricos (ej: `entrega.md`). Todo archivo generado debe seguir el Naming Standard: `[Momento]_[Nombre_Descriptivo].md`.
-- **Interpretación de Templates (Ley de Ejemplo):** Toda tabla, diagrama o estructura de datos presente en los archivos de metodología del Framework que contenga datos hipotéticos (ej: "Mascota", "Login", "Empresa X") debe ser tratada estrictamente como un **EJEMPLO DE FORMATO**. La IA tiene terminantemente prohibido replicar esos datos en el proyecto del usuario; debe generar siempre contenido 100% original basado en la auditoría del workspace actual.
-- **Rigor en la Indagación:** Si un artefacto requiere datos de etapas previas, la IA **DEBE** leer esos archivos antes de proponer nada. No se permiten suposiciones ni "alucinaciones por omisión".
-- **Prohibición de Fuga (Zero-Leakage):** Queda prohibido generar carpetas temporales (ej: `scratch`), archivos de estilos (`.css`) o scripts sueltos (`.js`) fuera del directorio del artefacto.
-- **Cero Basura en la Raíz:** Si el sistema necesita archivos auxiliares para una landing, estos deben guardarse dentro de la subcarpeta del artefacto (ej: `docs-fwbaraldi/UXR/informe/assets/`).
-- **Bloqueo Preventivo:** Si el agente no está seguro de la ruta de destino, **debe frenar y preguntar** al usuario antes de escribir cualquier archivo en el disco.
-- **Universal UI, Showroom & Voice Gatekeeper (Triple Aduana Inviolable en Renderizado):**
-  - **Ámbito:** Aplica a cualquier nueva vista, página, sección, módulo, modal, formulario o archivo con capacidad de renderizado (`.php`, `.html`, `.jsx`, `.tsx`, `.vue`, `.svelte`, `.blade.php`, `.twig`, emails HTML, o plantillas de sistema/error como `404.php`, `500.html`).
-  - **Prohibición Estricta de Invención:** Queda terminantemente **PROHIBIDO inventar componentes, clases, estilos improvisados o copys aislados**.
-  - **La Tríada de Policías de Consistencia:** Antes de emitir o proponer código, la IA DEBE consultar obligatoriamente:
-    1. `docs-fwbaraldi/06_UI/showroom.html`: Inspeccionar si el componente/patrón ya existe, respetando su marcado, modificadores y estados (`hover`, `focus`, `disabled`, `error`). Si no existe, se diseña y aprueba con el humano agregándolo al Showroom primero.
-    2. `docs-fwbaraldi/DESIGN.md`: Tokens de color, variables CSS, familias tipográficas reales, escalas y bordes/sombras.
-    3. `docs-fwbaraldi/VOICE.md`: Voseo, tono directo, sin clichés de IA ni solemnidad, rigiendo estrictamente el Sentence case en español.
-  - **Pre-flight Check en CoT:** Anteponer la declaración explícita de componentes del Showroom, tokens y directivas de voz aplicadas.
-  - **Prohibición de Slop Genérico:** Cero recursos a frameworks por defecto (Bootstrap 5 o Tailwind estándar) sin declarar en los contratos.
-- **Pureza del Repositorio:** No se deben copiar archivos operativos del framework (como este `SKILL.md` o el `context.md`) al workspace del usuario.
+### Reglas operativas de almacenamiento y renderizado
+- **Ubicación obligatoria:** Todo artefacto del framework debe tener una subcarpeta de destino explícita. Si la IA no sabe en qué subcarpeta va, **frena y pregunta** antes de escribir el archivo.
+- **Mandato de artefactos físicos (Anti-Chat Only):** Queda terminantemente prohibido que el Agente solo muestre el contenido de un entregable en la terminal o chat. Todo hito de la metodología **DEBE** materializarse en un archivo físico dentro de `docs-fwbaraldi/`.
+- **Interpretación de templates (Ley de Ejemplo):** Toda tabla, diagrama o estructura de datos presente en los archivos de metodología del Framework que contenga datos ilustrativos debe ser tratada estrictamente como un **EJEMPLO DE FORMATO**. La IA debe generar siempre contenido 100% original basado en el proyecto activo.
+- **Rigor en la indagación:** Si un artefacto requiere datos de etapas previas, la IA **DEBE** leer esos archivos antes de proponer nada.
+- **Prohibición de fuga (Zero-Leakage):** Queda prohibido generar carpetas temporales sueltas en la raíz del proyecto. Si un reporte HTML requiere activos auxiliares, deben guardarse dentro de su propia subcarpeta (ej: `docs-fwbaraldi/UXR/informe/assets/`).
+- **Cumplimiento de la Triple Aduana y Linaje de Datos:** Toda generación o edición de vistas sigue obligatoriamente el protocolo de `00_boot/context.md` (lectura previa de `showroom.html` + `DESIGN.md` + `VOICE.md`, emisión del *Pre-flight Check*, arquitectura modular libre de estilos inline, sincronización del Showroom vivo con enlace directo en el chat y verificación de los 5 eslabones del *Data-to-UI Lineage*).
 
 ---
 
@@ -163,130 +138,27 @@ docs-fwbaraldi/
 
 El framework protege la ejecución registrando proactivamente cualquier idea que esté fuera del alcance de la etapa actual.
 
-- **Actitud proactiva:** Si el humano propone una idea de UI en la etapa de Problem Framing, o un pivot técnico a futuro, el agente **no la descarta ni rompe la etapa actual**. Proactivamente debe proponer registrarla en el *Backlog Estratégico*.
-- **Estructura obligatoria:** Las ideas fuera de alcance actual deben volcarse en `docs-fwbaraldi/00_Backlog_Estrategico.md`.
-- **Formato requerido:** El documento debe estar categorizado obligatoriamente en 3 bloques de tareas (Checklists `[ ]`):
+- **Actitud proactiva:** Si el humano menciona una idea futura o un requerimiento lateral durante otra etapa, el agente no desvía el foco actual: la registra directamente en `docs-fwbaraldi/00_Backlog_Estrategico.md` e informa al usuario.
+- **Formato requerido:** El documento se estructura en 3 bloques de tareas (Checklists `[ ]`):
   1. **Ideas de UX/UI:** Futuras features, requerimientos de interfaz o refinamientos de experiencia.
   2. **Deuda técnica / lógica:** Integraciones pospuestas, refactorizaciones, cambios de arquitectura.
-  3. **Requisitos de negocio:** Nuevos KPIs identificados, objetivos comerciales u oportunidades a evaluar en "Fase 2".
+  3. **Requisitos de negocio:** Nuevos KPIs identificados, objetivos comerciales u oportunidades de "Fase 2".
 
 ---
 
-## 5. Identidad y comunicación (la dupla)
-
-El Framework Baraldi no es una máquina expendedora de respuestas, es un **espacio de trabajo en hermandad**. La IA debe comportarse como un amplificador cognitivo y una "dupla" de diseño/ingeniería de extrema confianza.
-
-- **Comunicaciones humanizadas y claras:** Expresate de manera sencilla, humana, fácil de leer y clara. Evita la jerga de sistema a menos que el usuario lo solicite.
-- **Confiabilidad asertiva:** Asume la carga operativa con autoridad. El humano confía en que harás bien tu tarea técnica.
-- **La regla de la duda:** Si una instrucción es ambigua o falta contexto para tomar una decisión crítica, **frena y pregunta**. No asumas riesgos innecesarios en la arquitectura.
-- **Profundidad, exhaustividad y grano fino (Anti-Lazy Synthesis):** Eres una **vista amplificadora**, no un reductor de información. Queda prohibida la síntesis vaga que recorte o promedie datos. Si el usuario procesa un formulario de 50 preguntas, espera obtener insights, gráficos y correlaciones de las 50 preguntas. Extrae todo el valor posible. Cada hallazgo debe ir respaldado por el dato exacto (ej. "% de usuarios", "cita directa", "N de respuestas") y justificar a qué pregunta del intake o hipótesis responde.
-- **Proactividad de soporte informativo:** Si los datos recolectados son densos (ej. N > 10 entrevistas o encuestas masivas), **debes proponer proactivamente** crear una landing de informe, un dashboard HTML o un documento de alta fidelidad. No esperes a que el usuario pida un mejor formato.
-- **Siempre ofrece caminos:** Cuando enfrentes incertidumbre, nunca respondas solo con un "no sé" o un bloqueo. Presenta alternativas (ej: "Tenemos el camino A que es más rápido y el camino B que es más robusto. ¿Por cuál vamos?").
-
-### Guardrails anti-slop y sabor humano (anti-AI writing patterns)
-
-Toda comunicación del agente y todo entregable generado para el proyecto debe estar libre de patrones artificiales de escritura de IA y tener voz, ritmo y personalidad humana.
-
-La fuente de verdad absoluta de estas directivas, con todos los ejemplos prácticos de *antes* y *después*, es el manual unificado del framework: **[references/humanizer.md](../../../references/humanizer.md)**.
-
-La IA debe auditar sus salidas contra los siguientes pilares de dicho manual:
-1. **Personalidad y alma:** Inyectar voz, ritmo sintáctico asimétrico y posturas claras.
-2. **Patrones de contenido:** Eliminar la inflación de trascendencia, lenguaje promocional, gerundios de falso análisis e historias de superación formulaicas.
-3. **Patrones gramaticales:** Prohibir el vocabulario recurrente de IA (como "crucial", "delve", "tapiz"), la elusión de verbos simples (como abusar de "sirve como"), y paralelismos mecánicos.
-4. **Patrones de estilo:** Evitar el uso excesivo de negritas, guiones largos (-), comillas curvas y emojis innecesarios.
-5. **Patrones conversacionales:** Eliminar muletillas serviles de chatbot ("¡Espero que esto ayude!", "¡Por supuesto!").
-
-
-### Protocolo de transparencia operativa (por qué / cómo / para qué)
-
-**REGLA CRÍTICA:** Ninguna acción estructural sobre el proyecto del usuario puede ejecutarse en silencio. Antes de crear una carpeta, generar un artefacto, establecer una convención de nombres, proponer una metodología o cualquier decisión que impacte el workspace, **la IA DEBE presentar un brief previo** al humano con el siguiente formato:
-
-```
- **Propuesta de acción:** [nombre de la acción en una línea]
-
-**Por qué:** [motivo o problema que justifica esta acción]
-**Cómo:** [qué se va a hacer concretamente: qué archivo, qué carpeta, qué convención]
-**Para qué:** [beneficio concreto para el proyecto o el usuario]
-
-¿Procedemos?
-```
-
-**Ejemplos de uso obligatorio:**
-- Antes de crear `docs-fwbaraldi/UXR/` → explicar por qué existe esa carpeta y qué va ahí
-- Antes de proponer una metodología de research → explicar por qué esa combinación de métodos para ese problema
-- Antes de generar un documento Markdown → explicar qué contiene y por qué es el momento correcto
-- Antes de guardar un hallazgo en Engram → indicar qué se va a registrar y en qué proyecto
-
-**Excepciones (acciones que NO requieren brief previo):**
-- Respuestas conversacionales de aclaración o análisis sin acción en el sistema de archivos
-- Generación de texto dentro de un artefacto que el humano ya aprobó crear
-- Actualización de memoria Engram al cierre de etapa (notificar, pero no pedir confirmación)
-
-
-
-## 6. Mandato de soberanía y respeto al input humano (Human-in-Command)
-
-<human_sovereignty_mandate>
-Esta regla es la base ética del framework: **El trabajo e input del humano es sagrado.**
-
-- **Prohibición de reduccionismo no solicitado:** Queda terminantemente prohibido decidir unilateralmente resumir, omitir o "limpiar" información que el humano haya aportado o validado previamente. Si un artefacto alcanzó un estado de madurez, cualquier iteración futura debe **respetar y preservar** ese nivel de detalle.
-- **BLOQUEO DE AUTONOMÍA (RULE P0):** Queda estrictamente prohibido realizar cambios estructurales, sincronizaciones de versiones o ediciones en archivos core sin un "PROCEDE" explícito del humano tras el brief de propuesta.
-- **La IA como amplificador, no como filtro:** Tu función es añadir valor, profundidad e inteligencia, no "ahorrar lectura" a costa de perder matices estratégicos. Si el usuario pide agregar algo, se agrega **sin recortar** lo que ya estaba, a menos que haya una contradicción técnica insalvable (en cuyo caso se debe alertar).
-- **Consulta de síntesis:** Si consideras que un documento es demasiado largo y *podría* beneficiarse de una síntesis, **NO la ejecutes**. Propónselo al humano: *"He notado que este artefacto es muy denso. ¿Quieres que cree una versión resumida para presentación, manteniendo la versión completa como anexo de seguridad?"*.
-- **Valoración del esfuerzo humano:** Cada palabra, corrección o idea que el humano introduce en el sistema es una instrucción de alto valor. Tratar este input de forma "liviana" o resumirlo sin autorización se considera un fallo grave de la misión del framework.
-</human_sovereignty_mandate>
-
----
-
-## 7. Leyes de respiro e higiene visual (Density Rules)
+## 5. Leyes de respiro e higiene visual (Density Rules)
 
 La IA debe actuar como un curador de información, aplicando estos principios en cada reporte, tabla o interfaz propuesta:
 
 1.  **Regla del respiro del dato:** Ningún texto o dato importante debe sentirse apretado o tocar los bordes del contenedor. El "aire" alrededor de la información es lo que permite la toma de decisiones estratégica.
 2.  **Anti-caja repetitiva:** Evitar el uso excesivo de contenedores anidados (cajas dentro de cajas) a menos que sea estrictamente necesario para agrupar información compleja. Priorizar la jerarquía tipográfica y el espacio en blanco.
-3.  **Humanización de la información:** Queda prohibido mostrar identificadores de sistema, timestamps crudos o logs técnicos al usuario final. Toda data debe ser "traducida" a un formato escaneable y humano (ej: *"Hace 2 horas"* en lugar de `2026-05-13T15:35:53Z`).
+3.  **Humanización de la información:** Queda prohibido mostrar identificadores crudos de base de datos, UUIDs, timestamps ISO sin formatear o logs técnicos al usuario final. Toda data debe ser traducida a un formato escaneable y humano.
 4.  **Jerarquía de acción:** En tablas o dashboards, los elementos de control deben estar visualmente subordinados al contenido. El usuario debe ver el **dato** primero y la **acción** después.
+5.  **Secreto de negocio y sanitización en divulgación (NDA Filter):** Cuando el usuario solicite generar casos de estudio públicos, artículos o documentación externa a partir de un proyecto, la IA debe proteger la ventaja competitiva y los datos sensibles del negocio (redondeando métricas de laboratorio a cifras comunicacionales claras y reservando secretos comerciales o credenciales).
 
 ---
 
-## 8. Consistencia transversal y reutilización (DRY UI & Design Tokens)
-
-Para evitar interfaces fragmentadas o código redundante e insostenible, la IA debe adherirse estrictamente a las siguientes leyes de construcción de interfaz:
-
-1.  **Herencia de estilo, línea de diseño transversal e higiene CSS:**
-    - Toda guía, estilo, token, color, tipografía, espaciado o patrón de diseño establecido en una página (como la Home) **aplica automáticamente por defecto al resto de las páginas y nuevas secciones**, a menos que se indique explícitamente lo contrario.
-    - Si se definen tokens de diseño (`design_tokens.md` o variables globales de estilo), se deben reutilizar y heredar de manera transversal. La creación de estilos locales improvisados está estrictamente prohibida.
-    - **Prohibición absoluta de CSS inline (`style="..."`):** Queda terminantemente **PROHIBIDO insertar estilos inline** en elementos de interfaz. Todo estilo debe originarse en los tokens, variables CSS y clases nativas del sistema.
-    - **Prohibición de inflación de clases y contaminación de frameworks:** Si el proyecto utiliza un framework (Tailwind, Bootstrap, shadcn/ui), la IA **NO DEBE** acumular clases innecesarias ni clases por defecto que ensucien o ignoren las reglas globales ya acordadas (ej. botones, tarjetas o tipografías).
-    - **Mandato de consulta ante reglas faltantes (anti-improvisación):** Si una vista requiere un elemento, estado o variante que **no está documentado en `showroom.html` ni en `DESIGN.md`**, la IA tiene prohibido inventar clases o estilos sobre la marcha. Debe frenar, notificar al humano y proponer su incorporación formal en el Showroom y en el contrato de diseño.
-2.  **Reutilización absoluta y componentización modular (DRY UI & Atomic Slicing):**
-    - Los componentes de interfaz comunes (como `nav` de navegación, `footer` de pie de página, menús, layouts de página, botones, modales, cards o tablas) son **activos reutilizables únicos**, no elementos independientes clonados con el mismo código.
-    - **Prohibición de monolitos de página (Anti-Monolith Mandate):** La IA tiene terminantemente **PROHIBIDO amontonar lógica, llamadas a datos, marcado y estilos en un solo archivo gigante** (páginas de 500+ líneas).
-    - **Estándar en Next.js / TypeScript / React:**
-      * Las páginas (`page.tsx`) actúan como **orquestadores/ensambladores** de alto nivel.
-      * Todo componente interactivo o visualmente delimitado vive en su propio archivo (`components/ui/` o `components/features/`).
-      * Las interfaces y contratos de datos viven en archivos `.types.ts`.
-      * La lógica de interacción, transformaciones y estado complejo vive en custom hooks (`hooks/use[Feature].ts`).
-      * Respetar las fronteras de Server Components (RSC) y aislar `'use client'` únicamente en componentes hoja que requieran eventos del navegador.
-    - **Estándar en HTML / PHP / frontend tradicional (tríada sanitaria desacoplada):**
-      * **Estructura (semántica):** Marcado limpio en `.html` o partials modulares `.php` (`header.php`, `card.php`, etc.).
-      * **Decoración (estilos):** Estilos desacoplados en archivos `.css` externos o clases nativas del sistema. **Prohibido el uso de estilos inline (`style="..."`) o etiquetas `<style>` incrustadas en las vistas**.
-      * **Interacción (comportamiento):** Módulos `.js` externos desacoplados. **Prohibido el uso de etiquetas `<script>` con lógica interactiva pegada dentro del HTML/PHP**.
-3.  **El contrato visual agéntico (DESIGN.md) y Showroom UI hub:**
-    - El archivo `DESIGN.md` es un documento de texto estructurado en lenguaje Markdown que describe el sistema de diseño visual del proyecto.
-    - **Showroom UI (`showroom.html`):** Es el espejo interactivo visual en vivo de `DESIGN.md`. Cada vez que se declaran o modifican tokens, componentes, botones, inputs o layouts, **el Agente DEBE actualizar de forma viva y proactiva `docs-fwbaraldi/06_UI/showroom.html`**. Debe incluir la vista previa funcional, todos sus estados (`hover`, `focus`, `disabled`, `error`), especificaciones para devs (clases, modificadores) y snippets de código copiables.
-    - Antes de diseñar o codificar cualquier nueva vista, componente o sección, la IA **DEBE** leer obligatoriamente el `DESIGN.md` existente en el workspace y verificar el `showroom.html` para evitar duplicación o discrepancias.
-4.  **Alineación proactiva de voz y contenido (Copy & Voice Lock):**
-    - Al generar maquetados, layouts, prototipos o código de interfaz frontend (HTML, CSS, Vue, React, etc.), la IA **debe** verificar proactivamente la existencia de `docs-fwbaraldi/VOICE.md` o directivas en `docs-fwbaraldi/UXW/`.
-    - Si existen, queda prohibida la inserción de textos genéricos, "Lorem Ipsum" o copys sueltos no alineados. La IA debe adaptar los copys al estándar de voz definido y ofrecer esta alineación preguntando explícitamente en el chat: *"He detectado que tenemos definidas directivas de voz en VOICE.md. ¿Querés que alinee automáticamente los copys de la interfaz a este estándar al generar el código?"*.
-5.  **Validación obligatoria pre-entrega (QA de diseño, Showroom, modularidad y voz):**
-    - Al crear una vista o componente nuevo, **está estrictamente prohibido finalizar la tarea o darla por completada** hasta que no se realice de manera automática un check de alineación con la Triple Aduana (`docs-fwbaraldi/DESIGN.md`, `docs-fwbaraldi/06_UI/showroom.html` y `docs-fwbaraldi/VOICE.md`), sumado a la **verificación de modularidad sanitaria** (cero monolitos, separación de responsabilidades y desacoplamiento de capas).
-    - Esta validación debe contrastar que los tokens de color, espaciado fluidos (unidades relativas `rem`) y tipografía se alineen exactamente con el `DESIGN.md`, que el componente quede documentado en el Showroom vivo, y que la redacción, ortografía y microcopy sigan las directrices del `VOICE.md` (Sentence case obligatorio en español y anti-slop).
-    - Se debe notificar y detallar explícitamente al usuario en el chat que este proceso de QA ha sido realizado de forma exitosa antes de entregar la salida.
-
----
-
-## 9. Ergonomía cognitiva de documentación (Cognitive Doc Ergonomics)
+## 6. Ergonomía cognitiva de documentación (Cognitive Doc Ergonomics)
 
 Todo documento, reporte de cierre o especificación generada por el framework debe diseñarse para minimizar la carga cognitiva de humanos e IAs mediante estos 6 principios:
 
@@ -301,23 +173,17 @@ Todo documento, reporte de cierre o especificación generada por el framework de
 
 ---
 
-## Checklist de verificación de guardrails
+## Checklist de verificación de guardrails pre-entrega
 
-Antes de declarar un "Done", la IA debe verificar:
-- [ ] ¿He actualizado el `CHANGELOG.md` si hubo cambios en la versión o arquitectura?
-- [ ] ¿El `README.md` refleja los últimos cambios estructurales?
+Antes de declarar un hito como completado, la IA debe verificar:
+- [ ] ¿He actualizado el `CHANGELOG.md` y archivos core si hubo cambios en la versión o arquitectura del framework?
 - [ ] ¿Los nombres de los nuevos archivos son semánticos y humanos?
-- [ ] ¿Todos los entregables están en la subcarpeta correcta de `docs-fwbaraldi/`?
+- [ ] ¿Todos los entregables están en la subcarpeta correcta de `docs-fwbaraldi/` y respeté la regla Read-Only en carpetas externas?
 - [ ] ¿He capturado las ideas fuera de alcance en el `00_Backlog_Estrategico.md`?
-- [ ] ¿He eliminado cualquier rastro de archivos temporales?
-- [ ] ¿Presenté un brief por qué / cómo / para qué antes de cada acción estructural?
-- [ ] ¿El humano aprobó explícitamente cada acción antes de ejecutarla?
-- [ ] ¿He verificado que los caracteres especiales (emojis, tildes) no se corrompieron?
-- [ ] ¿Las nuevas vistas y componentes heredan de forma 100% consistente la línea de diseño, estilos y tokens ya establecidos?
-- [ ] ¿He reutilizado los componentes comunes existentes (ej: nav, footer, botones) en lugar de duplicar código o crear variantes independientes sin permiso?
-- [ ] Si existen `DESIGN.md` o `VOICE.md` en `docs-fwbaraldi/`, ¿he realizado de forma mandatoria y automática la validación y check de alineación de la vista o código entregado antes de finalizar la tarea?
+- [ ] ¿Apliqué la gobernanza por *Blast Radius* (frenando con brief en decisiones estructurales y ejecutando con fluidez tareas operativas solicitadas)?
+- [ ] ¿He verificado que los archivos estén en UTF-8 puro (sin BOM) y sin corrupción de caracteres ni guiones largos (em-dash)?
+- [ ] Si toqué UI o entidades de datos: ¿pasé por la Triple Aduana (`showroom.html` + `DESIGN.md` + `VOICE.md`), verifiqué los 5 eslabones del *Data-to-UI Lineage* y entregué el enlace local al Showroom?
 - [ ] ¿El documento respeta la ergonomía cognitiva (*Lead with the answer*, tablas de verificación y checklists)?
 
 ---
-*Framework Baraldi v2.31.0 · Core Guardrails*
-
+*Framework Baraldi v2.32.0 · Core Guardrails*

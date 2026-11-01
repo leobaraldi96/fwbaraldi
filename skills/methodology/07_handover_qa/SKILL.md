@@ -2,11 +2,11 @@
 name: handover-qa
 description: >
   Ejecuta la Etapa 07 (Handover & Quality Assurance) del Framework Baraldi.
-  Establece los protocolos de entrega a desarrollo, validación de completitud
-  y auditoría técnica/visual final.
-keywords: handover, qa, quality-assurance, design-handoff, completeness-audit, developer-handoff
+  Establece los protocolos de entrega a desarrollo, validación de completitud,
+  auditoría de linaje de datos, verificación en vivo con herramientas MCP y QA visual/técnico final.
+keywords: handover, qa, quality-assurance, design-handoff, completeness-audit, developer-handoff, data-lineage, live-qa
 status: operational
-version: "2.31.0"
+version: "2.32.0"
 framework: Baraldi
 stage: "07"
 stage_name: "Handover & Quality Assurance"
@@ -14,18 +14,31 @@ stage_name: "Handover & Quality Assurance"
 
 # Etapa 07 - Handover & quality assurance
 
-> **Objetivo:** Auditar y certificar que el diseño (arquitectura, interacción y UI) está 100% completo, accesible y técnicamente preparado para ser implementado por el equipo de ingeniería (o agentes de desarrollo) sin bloqueos ni ambigüedades.
+> **Objetivo:** Auditar y certificar que el diseño y su implementación (arquitectura, linaje de datos, interacción y UI) están 100% completos, accesibles y técnicamente preparados para producción sin bloqueos ni ambigüedades.
 
 ---
 
 ## Flujo de la etapa - el criterio "Go/No-Go"
 
-Esta etapa actúa como la aduana final antes del desarrollo. Si el producto no pasa esta etapa, debe regresar a las Etapas 05 (`../05_interaction_design_ux/SKILL.md`) o 06 (`../06_visual_design_ui/SKILL.md`) para resolución.
+Esta etapa actúa como la aduana final antes del lanzamiento. Si el producto no pasa esta etapa, debe regresar a las Etapas 05 (`../05_interaction_design_ux/SKILL.md`) o 06 (`../06_visual_design_ui/SKILL.md`) para resolución.
 
 0. **[MOMENTO 0] Ceremonies & rituals (`skills/momento_0_ceremonies_and_rituals.md`):** El protocolo de sincronía humana. Ejecución de las ceremonias de kickoff y el ritual formal de handoff.
-1. **[MOMENTO 1] Design completeness audit (`skills/momento_1_completeness_audit.md`):** Revisión exhaustiva (la aduana QA) de edge cases, estados interactivos y cobertura de pantallas.
-2. **[MOMENTO 2] Visual & token QA (`skills/momento_2_visual_token_qa.md`):** Auditoría de fidelidad técnica para garantizar que el código respeta los tokens de `DESIGN.md`, el `showroom.html` y la anatomía del diseño.
-3. **[MOMENTO 3] Handoff documentation & accompaniment (`skills/momento_3_handoff_documentation.md`):** Entrega de la "fuente de verdad", generación de tickets y pase a producción / **Etapa 08 (`../08_continuous_discovery_telemetry/SKILL.md`)**.
+1. **[MOMENTO 1] Design completeness & lineage audit (`skills/momento_1_completeness_audit.md`):** Revisión exhaustiva (la aduana QA) de edge cases, estados interactivos, cobertura de pantallas y **trazabilidad de los 5 eslabones del dato (*Data-to-UI Lineage*)**.
+2. **[MOMENTO 2] Visual, token & live environment QA (`skills/momento_2_visual_token_qa.md`):** Auditoría de fidelidad técnica para garantizar que el código respeta los tokens de `DESIGN.md`, el `showroom.html`, la ecualización de módulos y las validaciones en vivo del entorno.
+3. **[MOMENTO 3] Handoff documentation & accompaniment (`skills/momento_3_handoff_documentation.md`):** Entrega de la "fuente de verdad", generación de tickets, compilación de `KNOWLEDGE.md` y pase a producción / **Etapa 08 (`../08_continuous_discovery_telemetry/SKILL.md`)**.
+
+---
+
+## Protocolo de Verificación en Vivo Condicional (Live Environment & MCP QA)
+
+Cuando el entorno de ejecución cuente con servidores MCP o herramientas de terminal conectadas al proyecto, el Agente complementa la revisión documental con **verificación empírica en vivo** (manteniendo siempre el agnosticismo si dichas herramientas no están presentes):
+
+1. **Auditoría de Base de Datos y Seguridad (si hay DB MCP o esquemas locales):**
+   - Ejecutar los asesores de seguridad y rendimiento disponibles (ej. verificación de políticas de acceso por fila / RLS, índices faltantes en claves foráneas y coincidencia de columnas con los tipos del código).
+2. **Auditoría de Tipado y Compilación:**
+   - Verificar que el chequeo estático de tipos y el build del proyecto pasen con **0 errores** tras cualquier cambio de interfaz o modelo.
+3. **Auditoría de DOM, Consola y Vitales (si hay Browser / DevTools MCP):**
+   - Contrastar la vista renderizada contra `docs-fwbaraldi/06_UI/showroom.html` y `DESIGN.md`, verificando ausencia de errores en consola, recursos rotos (404) y estabilidad de layout (CLS).
 
 ---
 
@@ -55,6 +68,7 @@ Una vez superada la "aduana" de la Etapa 07, el framework continúa acompañando
 
 ## Criterio de calidad
 - [ ] El 100% de los puntos del **Momento 1 (Completeness Audit)** han sido auditados y aprobados.
+- [ ] Todos los atributos nuevos o modificados superaron el **Data-to-UI Lineage Check** (Persistencia -> Tipos -> Query/API -> Admin -> Vista Pública + Estado Vacío).
 - [ ] No existen pantallas con "Lorem Ipsum" (copy finalizado según `docs-fwbaraldi/VOICE.md`).
 - [ ] Los casos de borde (errores de red, estados vacíos, límites de caracteres) están documentados en el **Momento 3**.
 - [ ] Los activos (íconos, imágenes) están exportados y accesibles en formatos vectoriales/optimizados.
@@ -65,12 +79,13 @@ Una vez superada la "aduana" de la Etapa 07, el framework continúa acompañando
 Para garantizar la integridad del sistema, el Agente debe **bloquear** el avance si detecta cualquiera de estos comportamientos:
 
 1. **NEVER permitas un handoff con "Lorem Ipsum":** El copy es diseño. Sin texto final, no se puede auditar la adaptabilidad real de los componentes.
-2. **NEVER entregues assets sin optimizar:** El rendimiento se define aquí. Prohibido el uso de íconos en PNG o assets pesados (SVG-First/WebP-First obligatorio).
-3. **NEVER uses unidades absolutas (`px`):** Toda documentación y token debe estar en unidades relativas (`rem`) para asegurar accesibilidad.
-4. **NEVER asumas estados de borde:** Si el Empty State, Error de red o Loading no están documentados, la etapa se considera incompleta.
-5. **NEVER ignores la auditoría WCAG (Base A/AA):** La accesibilidad no es opcional; es un requisito de bloqueo para el Go/No-Go.
-6. **NEVER permitas "callejones sin salida":** Todo flujo de usuario debe tener una salida o retorno lógico documentado.
-7. **NEVER ignores la ceremonia de handoff:** El handoff no es un link, es un contrato. La ausencia de sincronía con ingeniería invalida la etapa.
+2. **NEVER entregues atributos huérfanos en código:** Prohibido dar por cerrada una vista si un campo guardado en la base de datos no está incluido en la consulta (`SELECT`/API) o carece de manejo de estado vacío en la interfaz.
+3. **NEVER entregues assets sin optimizar:** El rendimiento se define aquí. Prohibido el uso de íconos en PNG o assets pesados (SVG-First/WebP-First obligatorio).
+4. **NEVER uses unidades absolutas (`px`) ni fuentes menores a `0.625rem` (`10px`):** Toda documentación y token debe estar en unidades relativas (`rem`) para asegurar accesibilidad.
+5. **NEVER asumas estados de borde:** Si el Empty State, Error de red o Loading no están documentados, la etapa se considera incompleta.
+6. **NEVER ignores la auditoría WCAG (Base A/AA):** La accesibilidad no es opcional; es un requisito de bloqueo para el Go/No-Go.
+7. **NEVER permitas "callejones sin salida":** Todo flujo de usuario debe tener una salida o retorno lógico documentado.
+8. **NEVER ignores la ceremonia de handoff:** El handoff no es un link, es un contrato. La ausencia de sincronía con ingeniería invalida la etapa.
 
 ---
 
@@ -82,8 +97,8 @@ Para garantizar la integridad del sistema, el Agente debe **bloquear** el avance
 
 | Momento | Topic Key (`topic_key`) | Tipo | Contenido a persistir |
 |---|---|---|---|
-| Momento 0 & 1 | `qa-completeness-audit` | `auditoría` | Resultado de la aduana de completitud, edge cases y auditoría WCAG |
-| Momento 2 | `qa-visual-token-sync` | `calidad-ui` | Veredicto de fidelidad de tokens (`rem`, `oklch`, cero CSS inline) |
+| Momento 0 & 1 | `qa-completeness-audit` | `auditoría` | Resultado de la aduana de completitud, linaje de datos, edge cases y auditoría WCAG |
+| Momento 2 | `qa-visual-token-sync` | `calidad-ui` | Veredicto de fidelidad de tokens (`rem`, `oklch`, cero CSS inline) y QA en vivo |
 | Momento 3 | `qa-handoff-signoff` | `cierre-de-etapa` | Aprobación Go/No-Go, tickets generados y compilación de `KNOWLEDGE.md` |
 
 **Al cerrar la etapa (Handoff hacia Etapa 08):**
@@ -101,4 +116,4 @@ En el cierre, el Agente actúa como un **guardián de la excelencia y veedor de 
 *   **El rol de acompañamiento:** Recordar que el diseño sigue vivo durante el código, asistiendo y resolviendo dudas técnicas en tiempo real.
 
 ---
-*Framework Baraldi v2.31.0 · skills/methodology/07_handover_qa/SKILL.md*
+*Framework Baraldi v2.32.0 · skills/methodology/07_handover_qa/SKILL.md*

@@ -4,7 +4,7 @@ description: >
   Protocolo de desglose estratégico de iniciativas en Epics e Historias Hijas por componente
   técnico (API, UI, Data) con diagramas Mermaid, listo para Jira, Linear o GitHub Issues.
 keywords: epic, user story, task slicing, jira, linear, github issues, mermaid, dependencias
-version: "2.31.0"
+version: "2.32.0"
 ---
 
 # Protocolo - Desglose Estratégico de Epics e Historias Hijas
@@ -96,4 +96,4 @@ sequenceDiagram
 - **SIEMPRE** numera los criterios de aceptación en formato de checklist binario (`[ ]`).
 
 ---
-*Framework Baraldi v2.31.0 · Strategic Epic Slicing Protocol.*
+*Framework Baraldi v2.32.0 · Strategic Epic Slicing Protocol.*

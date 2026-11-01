@@ -1,6 +1,6 @@
 # Framework Baraldi (FWB) 🤖⚡
 
-![Version](https://img.shields.io/badge/version-2.31.0-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-yellow) ![Memory](https://img.shields.io/badge/memory-Engram--v1.20.0-orange) ![Type](https://img.shields.io/badge/type-Agentic--Orchestrator-blueviolet)
+![Version](https://img.shields.io/badge/version-2.32.0-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-yellow) ![Memory](https://img.shields.io/badge/memory-Engram--v1.20.0-orange) ![Type](https://img.shields.io/badge/type-Agentic--Orchestrator-blueviolet)
 
 > [!NOTE]
 > **¿Hola, no entendés un carajo de lo que hay acá?** 👉 **[¡Siga por aquí! (Guía de bienvenida fácil para humanos)](./NO_ENTIENDO_NADA.md)** 🚀
@@ -76,7 +76,7 @@ Ninguno de los frameworks anteriores tiene estas características juntas:
 10. **Proactividad de Soporte**: El sistema propone proactivamente formatos de alta fidelidad (Landings/Dashboards HTML) cuando la densidad de datos lo requiere, eliminando la pasividad del agente.
 11. **Contratos Vivos de Soberanía (`DESIGN`, `VOICE`, `BUSINESS`, `SECURITY`, `LEGAL`, `UX`, `KNOWLEDGE`)**: El framework genera archivos de "Fuente de Verdad" diseñados específicamente para ser leídos por humanos y otras IAs, garantizando que el diseño, negocio, seguridad y soporte se mantengan blindados e inmutables.
 12. **Arsenal de Toolbox (16 Protocolos)**: Protocolos estratégicos modulares de alta densidad para slicing de epics, triaje de issues, pricing, data-driven design y compilación de conocimiento de producto.
-13. **Verificación de Versión Proactiva (v2.31.0)**: El Framework verifica automáticamente tu versión local contra el repositorio oficial para asegurar que el motor metodológico esté siempre al día.
+13. **Verificación de Versión Proactiva (v2.32.0)**: El Framework verifica automáticamente tu versión local contra el repositorio oficial para asegurar que el motor metodológico esté siempre al día.
 14. **Arquitectura Just-in-Time (JIT) & Prompt Caching**: Carga bajo demanda estricta de metodologías y protocolos, reduciendo hasta un 85% el consumo de tokens y acelerando la inferencia en LLMs avanzados (Gemini, Claude, GPT-4) sin saturación de contexto (*Context Rot*).
 15. **Sintaxis XML Estricta para Guardrails**: Restricciones y mandatos de comportamiento estructurados semánticamente en etiquetas XML para máxima adherencia en Claude y Gemini.
 16. **Onboarding Adaptativo (Greenfield vs In-flight)**: Detección automática al inicializar (`/init`) para guiar a proyectos desde cero con preguntas clave o auditar código existente para extraer `DESIGN.md` y arquitectura.
@@ -85,6 +85,7 @@ Ninguno de los frameworks anteriores tiene estas características juntas:
 19. **La Triple Aduana Inviolable (`showroom.html` + `DESIGN.md` + `VOICE.md`)**: Tríada de policías de consistencia obligatoria antes de renderizar cualquier vista, garantizando cero improvisación estética, gramatical o de componentes.
 20. **Mandato de Arquitectura Sanitaria, Higiene CSS y Umbral A11y ($\ge 10\text{px}$)**: Prohibición estricta de monolitos y CSS inline (`style="..."`), fragmentación en componentes atómicos y desacoplamiento de estructura, estilos e interacción. Prohibición universal de fuentes menores a 10px en cualquier interfaz.
 21. **Orquestación Multi-Agente y Enjambre Táctico (Agentic Swarm & Adversarial QA)**: Ejecución en paralelo (*Fan-Out / Fan-In*) de subagentes para investigación competitiva y auditorías 3D (85 pts), validación adversaria (Constructor vs. Inspector) en la Triple Aduana, prototipado divergente en ramas aisladas (`Workspace: "share"`) y checkpoints interactivos nativos (`ask_question`).
+22. **Gobernanza por Radio de Explosión (Blast Radius) y Trazabilidad del Dato (Data-to-UI Lineage)**: Autonomía calibrada para modelos de frontera (freno con brief en cambios estructurales, ejecución directa en órdenes operativas), chequeo obligatorio de los 5 eslabones del dato (DB -> Tipos -> Query/API -> Admin -> UI + Estado Vacío), ecualización anatómica de módulos y protección Read-Only de directorios externos.
 
 ---
 
@@ -211,7 +212,7 @@ A nivel de infraestructura (LLM Ops), el Framework Baraldi maximiza el rendimien
 
 | Métrica | Valor | Estado |
 |---|---|---|
-| **Eficiencia Actual (v2.31.0)** | **96.50%** | 🟢 Full Release (08/08 Etapas + 16 Protocolos) |
+| **Eficiencia Actual (v2.32.0)** | **96.50%** | 🟢 Full Release (08/08 Etapas + 16 Protocolos) |
 | **Engram Engine** | **v1.20.0** | 🟢 20 MCP Tools & BM25 Ranking |
 
 *Aclaración Técnica: Al cargar en memoria viva solo los hallazgos estrictamente necesarios para la toma de decisión del momento, reducimos el ruido contextual, manteniendo la IA enfocada, rápida y económicamente viable.*
@@ -237,7 +238,7 @@ Si sos un modelo de IA o estás configurando un agente, **LEER PRIMERO:**
 
 ---
 
-## 🧰 El Arsenal de Élite (v2.31.0 - 16 Protocolos)
+## 🧰 El Arsenal de Élite (v2.32.0 - 16 Protocolos)
 
 La Toolbox del Framework Baraldi no es una simple carpeta de utilidades; es un conjunto de **16 protocolos de alto impacto** diseñados para resolver situaciones críticas de producto, negocio y política organizacional.
 
@@ -275,17 +276,17 @@ fwbaraldi/
 │   │   ├── 00_operational_hygiene/         ← Protocolos de ramas y handoff
 │   │   ├── 00_project_health_audit/        ← Framework Doctor (Auditoría de salud)
 │   │   ├── 00_skill_evaluation/            ← Skill Judge (Filtro de calidad)
-│   │   └── 00_system_awareness/            ← Consciencia Sistémica y Memoria (v2.31.0)
+│   │   └── 00_system_awareness/            ← Consciencia Sistémica y Memoria (v2.32.0)
 │   │
 │   ├── methodology/                        ← El núcleo del proceso (End-to-End)
-│   │   ├── 01_problem_framing/             ← Hardened v2.31.0
-│   │   ├── 02_system_analysis/             ← Hardened v2.31.0
-│   │   ├── 03_product_logic/               ← Hardened v2.31.0
-│   │   ├── 04_information_architecture/    ← Hardened v2.31.0
-│   │   ├── 05_interaction_design_ux/       ← Hardened v2.31.0
-│   │   ├── 06_visual_design_ui/            ← Hardened v2.31.0
-│   │   ├── 07_handover_qa/                 ← Hardened v2.31.0
-│   │   └── 08_continuous_discovery_telemetry/ ← Telemetría y Data UX v2.31.0
+│   │   ├── 01_problem_framing/             ← Hardened v2.32.0
+│   │   ├── 02_system_analysis/             ← Hardened v2.32.0
+│   │   ├── 03_product_logic/               ← Hardened v2.32.0
+│   │   ├── 04_information_architecture/    ← Hardened v2.32.0
+│   │   ├── 05_interaction_design_ux/       ← Hardened v2.32.0
+│   │   ├── 06_visual_design_ui/            ← Hardened v2.32.0
+│   │   ├── 07_handover_qa/                 ← Hardened v2.32.0
+│   │   └── 08_continuous_discovery_telemetry/ ← Telemetría y Data UX v2.32.0
 │   │
 │   └── toolbox/                            ← Tu arsenal estratégico (16 Protocolos)
 │       ├── advanced_prioritization_protocol/
@@ -329,14 +330,14 @@ fwbaraldi/
 │   └── sanitize-emojis.js                  ← Higiene de codificación UTF-8
 │
 ├── 00_Backlog_Estrategico.md               ← Hoja de ruta del propio Framework
-├── MAPA_DE_ARTEFACTOS.md                   ← Catálogo oficial de entregables (v2.31.0)
+├── MAPA_DE_ARTEFACTOS.md                   ← Catálogo oficial de entregables (v2.32.0)
 ├── SKILL.md                                ← Archivo maestro para Agentes IA
 └── README.md                               ← Este archivo
 ```
 
 ---
 
-## 🚀 Quick Start / Instalación (v2.31.0)
+## 🚀 Quick Start / Instalación (v2.32.0)
 
 > ⚠️ **IMPORTANTE:** A partir de la versión 2.28.0 (Modelo Cero-Copia), el Framework Baraldi opera como un **Único Orquestador Agéntico Global (`baraldi-framework`)**. Todas las etapas y la toolbox viven encapsuladas internamente para mantener limpio el entorno y evitar la fragmentación de habilidades.
 
@@ -423,4 +424,4 @@ El Framework Baraldi es el resultado de más de 25 años de experiencia en el di
 - 📧 **Email:** [leobaraldi96@gmail.com](mailto:leobaraldi96@gmail.com)
 
 ---
-*Framework Baraldi v2.31.0 · Desarrollado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.32.0 · Desarrollado y mantenido por Leo Baraldi.*

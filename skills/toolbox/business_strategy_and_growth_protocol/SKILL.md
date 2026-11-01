@@ -4,7 +4,7 @@ description: >
   Protocolo de Estrategia de Negocio y Crecimiento. Actúa como el Chief Growth Officer
   para asegurar que el diseño esté alineado con la captura de ingresos, ROI y escalabilidad.
 keywords: crecimiento, ROI, business-strategy, upselling, auditoría-negocio, escalabilidad, métricas
-version: "2.31.0"
+version: "2.32.0"
 ---
 
 # Protocolo de Estrategia de Negocio y Crecimiento
@@ -55,4 +55,4 @@ Justificación económica de la inversión técnica.
 3. **ROI Projection:** Estimación de impacto en KPIs de negocio tras la implementación.
 
 ---
-*Framework Baraldi v2.31.0 · Estrategia de Negocio*
+*Framework Baraldi v2.32.0 · Estrategia de Negocio*

@@ -214,7 +214,7 @@ allSkillMdFiles.forEach(filePath => {
         reportIssue(`Guiones largos prohibidos (— / –) detectados en ${relPath}`);
         subFileIssues++;
     }
-    if (/2\.(28|29|30)\.\d+/.test(content)) {
+    if (/2\.(28|29|30|31)\.\d+/.test(content)) {
         reportIssue(`Versión desactualizada detectada en ${relPath} (se esperaba ${currentVersion})`);
         subFileIssues++;
     }
