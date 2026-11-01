@@ -86,6 +86,7 @@ Ninguno de los frameworks anteriores tiene estas características juntas:
 20. **Mandato de Arquitectura Sanitaria, Higiene CSS y Umbral A11y ($\ge 10\text{px}$)**: Prohibición estricta de monolitos y CSS inline (`style="..."`), fragmentación en componentes atómicos y desacoplamiento de estructura, estilos e interacción. Prohibición universal de fuentes menores a 10px en cualquier interfaz.
 21. **Orquestación Multi-Agente y Enjambre Táctico (Agentic Swarm & Adversarial QA)**: Ejecución en paralelo (*Fan-Out / Fan-In*) de subagentes para investigación competitiva y auditorías 3D (85 pts), validación adversaria (Constructor vs. Inspector) en la Triple Aduana, prototipado divergente en ramas aisladas (`Workspace: "share"`) y checkpoints interactivos nativos (`ask_question`).
 22. **Gobernanza por Radio de Explosión (Blast Radius) y Trazabilidad del Dato (Data-to-UI Lineage)**: Autonomía calibrada para modelos de frontera (freno con brief en cambios estructurales, ejecución directa en órdenes operativas), chequeo obligatorio de los 5 eslabones del dato (DB -> Tipos -> Query/API -> Admin -> UI + Estado Vacío), ecualización anatómica de módulos y protección Read-Only de directorios externos.
+23. **Evolución Recursiva del Arnés en 3 Anillos (Harness² - Propose-Probe-Compose & Experience Reflector)**: Basado en *Recursive Agent Harnessing*, el framework evalúa soluciones mediante contraste conductual (*Propose -> Probe -> Compose*) y aprende continuamente de cada usuario en su propio entorno local (`~/.fwbaraldi/user_harness.md` + Engram `scope: "personal"`), separando las reglas exclusivas de un proyecto (*Domain Edits*) de las lecciones transversales del usuario (*User-Invariant Edits*) y permitiendo evolucionar el Core mediante `/evolve`.
 
 ---
 
@@ -318,6 +319,7 @@ fwbaraldi/
 │   ├── decision_log.md                     ← Registro cronológico de decisiones
 │   ├── hallazgo_sistemico.md               ← Template de hallazgo para Engram MCP
 │   ├── ejemplo_knowledge_block.md          ← Referencia Canónica ISO 26514 / Info Mapping
+│   ├── user_harness.md                     ← Arnés de Mejora Personal del Usuario (Harness²)
 │   └── docs_readme.md                      ← README y Calibrador de Rigor de docs-fwbaraldi/
 │
 ├── scripts/

@@ -1,57 +1,60 @@
 ---
 name: baraldi-skill-evaluation
 description: >
-  La "Aduana" del Framework Baraldi. Evalúa cualquier propuesta para crear,
-  instalar o modificar una habilidad (Skill) para prevenir la "Obesidad de Contexto".
-  Trigger: Al crear un nuevo archivo SKILL.md, auditar una habilidad existente,
+  La "Aduana" del Framework Baraldi y Evaluador Contrastivo (Harness²). Evalúa cualquier propuesta
+  para crear, instalar o modificar una habilidad (Skill) o regla del arnés mediante el criterio
+  de Delta de Conocimiento y Contraste Conductual.
+  Trigger: Al crear un nuevo archivo SKILL.md, auditar una habilidad existente, ejecutar /evolve
   o cuando el usuario pida agregar una nueva capacidad al sistema.
 version: "2.32.0"
 ---
 
-# Orquestador de Inteligencia y Eficiencia (Skill Judge)
+# Orquestador de Inteligencia, Eficiencia y Contraste Conductual (Skill Judge & Harness² Filter)
 
-Este protocolo es la defensa inmunológica del Framework Baraldi contra el desperdicio de tokens (Context Bloat). Asegura que el framework se mantenga eficiente, económico y libre de alucinaciones.
+Este protocolo es la defensa inmunológica del Framework Baraldi contra el desperdicio de tokens (*Context Bloat*). Asegura que el framework y el arnés evolutivo se mantengan eficientes, económicos y respaldados por cambios reales de comportamiento.
 
 ## La Fórmula Fundamental
 
-Evalúa CUALQUIER conocimiento nuevo con esta ecuación:
+Evalúa CUALQUIER conocimiento o regla nueva con esta ecuación:
 
-> **Buena Skill = Conocimiento Experto Exclusivo − Lo que la IA Ya Sabe**
+> **Buena Skill / Regla de Arnés = (Conocimiento Experto Exclusivo − Lo que la IA Ya Sabe) × Contraste Conductual Observable**
 
-Si una habilidad intenta enseñar lo que un LLM (como Claude o Gemini) ya sabe de fábrica (ej. "Cómo hacer un bucle", "Qué es el Design Thinking", "Cómo centrar un div"),  **ESTÁ PROHIBIDA**. Es basura cognitiva que ralentiza el sistema y cuesta dinero.
-
-## Proceso de Evaluación (La Aduana)
-
-Cuando el usuario pida crear o evaluar una Skill, aplica este filtro antes de escribir código:
-
-### 1. El Delta de Conocimiento (Knowledge Delta)
-- **Experto:** ¿Contiene árboles de decisión? ¿Trade-offs? ¿Casos límite que solo da la experiencia? -> **APROBADO**.
-- **Redundante:** ¿Es un tutorial paso a paso de una librería estándar? ¿Explica conceptos básicos? -> **RECHAZADO**.
-
-### 2. El Filtro de Anti-Patrones (NEVER Lists)
-La mitad del conocimiento experto es saber qué **NO** hacer.
-- Si la skill no tiene una lista explícita de `NEVER do X because Y`, no tiene valor estratégico real. Exige al humano (o autogenera) razones no obvias para evitar errores.
-
-### 3. Anatomía del Contexto Oculto (Description)
-La propiedad `description` en el YAML frontmatter es el campo más importante.
-Debe responder:
-- **QUÉ** hace.
-- **CUÁNDO** usarlo.
-- **PALABRAS CLAVE** para dispararlo.
-Si el description dice solo "Ayuda con X", la skill es invisible y nunca se ejecutará.
-
-### 4. Responsabilidad Sistémica (Dilema Interno vs Externo)
-Antes de aceptar una skill técnica genérica, pregúntate:
-- *"¿Es este conocimiento nuclear para la identidad del proyecto, o debería ser consultado a través de **Context7.com** o **Skills.sh**?"*
-- Mantén el Framework Baraldi centrado en la ESTRATEGIA. Delega el código puro a ecosistemas externos.
-
-## Respuesta al Usuario (En caso de rechazar una Skill)
-
-Si detectas que el usuario pide crear una skill redundante (ej. "Crea una skill sobre cómo programar en React"):
-1. **Detén la creación.**
-2. Explícale (con tono humano y empático) que tú ya tienes ese conocimiento internalizado.
-3. Adviértele que crear ese archivo solo consumirá el "presupuesto cognitivo" del framework sin añadir valor real, haciéndolo más lento y costoso.
-4. Ofrécele, en cambio, usar ese espacio para escribir una skill sobre "Restricciones de Negocio" u "Identidad Visual" que tú no podrías adivinar.
+Si una habilidad intenta enseñar lo que un modelo de frontera ya sabe de fábrica (ej. "Cómo hacer un bucle", "Qué es el Design Thinking", "Cómo centrar un div") o no produce ningún cambio medible en la acción del agente, **ESTÁ PROHIBIDA**. Es grasa cognitiva que ralentiza el sistema.
 
 ---
-*Framework Baraldi v2.32.0 · Skill Evaluation.*
+
+## Proceso de Evaluación (La Aduana de 5 Filtros)
+
+Cuando el usuario pida crear o evaluar una Skill, o al promover una regla mediante `/evolve`, aplica estos 5 filtros:
+
+### 1. El Delta de Conocimiento (Knowledge Delta)
+- **Experto:** ¿Contiene árboles de decisión, invariantes de arquitectura, umbrales exactos o casos límite que solo da la experiencia empírica? -> **APROBADO**.
+- **Redundante:** ¿Es un tutorial básico o explica teoría estándar? -> **RECHAZADO**.
+
+### 2. Prueba de Contraste Conductual Libre de Rúbrica (Harness² Behavioral Contrast)
+Antes de incorporar una regla nueva al arnés, pregúntate:
+- *"Si el agente ejecuta una tarea real CON esta línea escrita vs. SIN esta línea escrita, ¿qué acción concreta, herramienta o estructura del archivo cambia?"*
+- Si la respuesta es "ninguna, es solo un consejo motivacional o declarativo", **se descarta o se reescribe como un gatillo determinista** (`Cuando ocurra X -> Ejecutar/Verificar Y`).
+
+### 3. Separación Estricta Invariante vs. Dominio (Invariant vs. Domain Split)
+- **Invariante Universal:** Resuelve una debilidad general del agente (ej. olvidarse de incluir un campo nuevo en el `SELECT` de la API o desalinear cabeceras entre módulos). Puede ir al Core FWB o a `~/.fwbaraldi/user_harness.md`.
+- **Específica de Dominio:** Depende del negocio, marca o librería de un cliente puntual. Debe ir **exclusivamente** al `docs-fwbaraldi/` local de ese proyecto.
+
+### 4. El Filtro de Anti-Patrones (NEVER Lists)
+La mitad del conocimiento experto es saber qué **NO** hacer.
+- Toda skill o regla debe incluir restricciones claras (`NEVER do X because Y`) basadas en fallos reales observados.
+
+### 5. Anatomía del Contexto Oculto (Description)
+La propiedad `description` en el YAML frontmatter debe responder: **QUÉ** hace, **CUÁNDO** activarla y **PALABRAS CLAVE** de disparo.
+
+---
+
+## Respuesta al Usuario (En caso de rechazar una Skill o Regla Redundante)
+
+Si detectas que el usuario pide crear una skill redundante:
+1. **Detén la creación.**
+2. Explícale con claridad que el modelo base ya posee ese conocimiento internalizado y que agregarlo solo consumirá presupuesto de atención sin generar **contraste conductual**.
+3. Ofrécele, en cambio, registrar únicamente las **restricciones de negocio, invariantes de arquitectura o preferencias de diseño** que el modelo no podría adivinar por sí solo.
+
+---
+*Framework Baraldi v2.32.0 · Skill Evaluation & Harness² Filter.*

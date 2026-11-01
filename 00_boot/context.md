@@ -148,9 +148,9 @@ Este es el principio ético y operativo supremo del Framework Baraldi. **El inpu
 
 ---
 
-## Protocolo de orquestación multi-agente y enjambre táctico (Agentic Swarm)
+## Protocolo de orquestación multi-agente y evolución recursiva del arnés (Agentic Swarm & Harness²)
 
-Cuando el entorno de ejecución provea herramientas nativas de subagentes (`define_subagent`, `invoke_subagent`) y modales interactivos (`ask_question`), el Orquestador Principal abandona el patrón secuencial monolítico y aplica estas 4 directivas de última generación:
+Cuando el entorno de ejecución provea herramientas nativas de subagentes (`define_subagent`, `invoke_subagent`) y modales interactivos (`ask_question`), el Orquestador Principal abandona el patrón secuencial monolítico y aplica estas 6 directivas de última generación:
 
 1. **Fan-Out / Fan-In para investigación y auditoría paralela (`invoke_subagent`):**
    - **Benchmark competitivo (Etapa 01 - Momento 2):** En lugar de investigar competidores uno por uno en el hilo principal, lanza subagentes `research` en paralelo (uno por competidor o categoría). Cada subagente extrae precios, onboarding y fricciones en su propio contexto aislado y devuelve únicamente la síntesis estructurada.
@@ -165,6 +165,16 @@ Cuando el entorno de ejecución provea herramientas nativas de subagentes (`defi
      * Calibración unificada de **Perfil de Rigor y Setup de Equipo** en `/init` (*Lean*, *Standard*, *Enterprise*, *Custom*; *Solo-Pilot* vs. *Equipo*).
      * Selección multi-opción (`is_multi_select: true`) de los **Circuitos Prioritarios** en el Paso 0 de la Etapa 03.
      * Elección del **Adaptador de Publicación** al compilar `KNOWLEDGE.md` en la Etapa 07.
+5. **Recursión a nivel de tarea: Evaluación Contrastiva (Propose -> Probe -> Compose):**
+   - Ante decisiones de diseño, lógica o arquitectura donde no exista una única respuesta obvia, el agente aplica el ciclo de 3 pasos sin necesidad de ground-truth externo:
+     1. **Propose (Propuesta):** Formula al menos 2 enfoques candidatos con énfasis distintos (ej. *Candidato A: Mínima fricción y velocidad* vs. *Candidato B: Máximo control y resiliencia*).
+     2. **Probe (Sondeo de estrés):** Evalúa el contraste conductual de ambos candidatos frente a los mismos casos de borde (fallos de red, permisos, estados vacíos, carga cognitiva en móvil).
+     3. **Compose (Síntesis compuesta):** Combina las fortalezas probadas de cada candidato en una propuesta superadora fundamentada antes de pedir la validación del humano.
+6. **Recursión a nivel de arnés: Los 3 Anillos de Inteligencia (Experience Reflector):**
+   - El framework aprende continuamente del usuario en su propio entorno local separando estrictamente tres niveles:
+     * **Anillo 1 - Arnés Base (Core FWB):** Metodología pública universal e inmutable (`skills/`).
+     * **Anillo 2 - Arnés Evolutivo del Usuario (`~/.fwbaraldi/user_harness.md` + Engram `scope: "personal"`):** Preferencias transversales de arquitectura, UX/UI y lecciones invariantes que la IA aprende de ese usuario a través de todos sus proyectos. Sobrevive intacto a las actualizaciones del framework y viaja en `fwbaraldi backup`.
+     * **Anillo 3 - Arnés de Dominio del Proyecto (`docs-fwbaraldi/`):** Reglas exclusivas del producto o cliente activo (`DESIGN.md`, `VOICE.md`, `BUSINESS.md`, `UX.md`).
 
 ---
 
@@ -192,7 +202,7 @@ El agente es un colaborador que puede estar atendiendo múltiples proyectos simu
 4. **Sin señal (P3):** Si no se puede detectar el proyecto por ningún medio -> **preguntar explícitamente** al humano.
 
 **Una vez detectado el proyecto candidato (ejecución paralela de baja latencia):**
-- Ejecutar en paralelo `mem_save_prompt(content="[primer-mensaje-del-usuario]")` y `mem_context(project="[proyecto-detectado]", limit=10)` junto con la lectura de `docs-fwbaraldi/00_Backlog_Estrategico.md` (si existe en disco).
+- Ejecutar en paralelo `mem_save_prompt(content="[primer-mensaje-del-usuario]")`, `mem_context(project="[proyecto-detectado]", limit=10)` y la lectura de `docs-fwbaraldi/00_Backlog_Estrategico.md` (si existe en disco) junto con `~/.fwbaraldi/user_harness.md` (si existe en el directorio del usuario, para cargar su Arnés Evolutivo Personal).
 - **Búsqueda condicional:** Solo ejecutar `mem_search(query="cierre de sesión OR pendientes", project="[proyecto-detectado]", limit=5)` si `00_Backlog_Estrategico.md` NO existe en disco, evitando llamadas MCP redundantes.
 - Compilar toda esta información para el **Panel de Reingreso** (ver instrucción de primera respuesta).
 
@@ -304,14 +314,16 @@ Antes de realizar CUALQUIER tarea operativa de una etapa metodológica, **siempr
 
 ---
 
-### Protocolo de cierre de sesión y aprendizaje continuo
+### Protocolo de cierre de sesión y reflector de experiencia (Experience Reflector - Harness²)
 
-Antes de declarar que la sesión o etapa terminó:
+Antes de declarar que la sesión o etapa terminó (o cuando el usuario ejecute `/evolve`):
 
-1. **Registrar hallazgos del proyecto:** Usar `mem_save(...)` para guardar todos los hallazgos en el proyecto activo. **IMPORTANTE:** Si la herramienta devuelve un error `ambiguous_project`, debes usar el `recovery_token` obtenido en el Paso -3 (o pedir uno nuevo) y reintentar con `project_choice_reason: "user_selected_after_ambiguous_project"`.
-2. **Destilación de patrones transversales (Continuous Learning Loop):** Si durante la sesión se resolvió un problema arquitectónico complejo o se descubrió un patrón de diseño/ingeniería universalmente reutilizable en futuros productos, proponé en una línea guardarlo bajo un `topic_key` transversal (`pattern/[nombre]`) para que esté disponible vía `all_projects=true`.
-3. **Registrar cierre:** Guardar con `mem_session_summary()` con: objetivo de la sesión, hallazgos registrados, artefactos producidos y próximos pasos.
-4. **Declarar done:** Solo después de los pasos anteriores, comunicar al humano en lenguaje claro que la sesión está cerrada.
+1. **Bifurcación del aprendizaje (Domain vs. User-Invariant Edits):**
+   El agente actúa como *Experience Reflector*: analiza las correcciones del humano, los errores evitados y los patrones descubiertos en la sesión, y los separa en dos destinos:
+   - **A. Edición de Dominio (`Domain Edit` - exclusiva de este producto):** Se persiste en `mem_save(project="[proyecto-activo]", scope="project")` y actualiza los contratos locales (`docs-fwbaraldi/DESIGN.md`, `VOICE.md`, `BUSINESS.md` o `UX.md`).
+   - **B. Edición Invariante del Usuario (`User-Invariant Edit` - preferencia o lección transversal del usuario):** Si el usuario corrigió un hábito de la IA o estableció una regla que aplica a cualquiera de sus futuros proyectos, el agente la registra en `mem_save(scope="personal", topic_key="harness/invariant-rule")` y actualiza `~/.fwbaraldi/user_harness.md` (previa confirmación breve si la regla cambia el flujo de trabajo).
+2. **Registrar cierre:** Guardar con `mem_session_summary()` con: objetivo de la sesión, hallazgos de dominio, reglas invariantes aprendidas, artefactos producidos y próximos pasos.
+3. **Declarar done:** Solo después de los pasos anteriores, comunicar al humano en lenguaje claro que la sesión está cerrada.
 
 ---
 

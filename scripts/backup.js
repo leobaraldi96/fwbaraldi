@@ -157,6 +157,13 @@ Opciones:
       fs.copyFileSync(shmFile, path.join(tmpBackupDir, 'engram.db-shm'));
     }
 
+    // 2.5. Copiar Arnés Evolutivo Personal del Usuario (Harness²) si existe
+    const userHarnessPath = path.join(os.homedir(), '.fwbaraldi', 'user_harness.md');
+    const hasUserHarness = fs.existsSync(userHarnessPath);
+    if (hasUserHarness) {
+      fs.copyFileSync(userHarnessPath, path.join(tmpBackupDir, 'user_harness.md'));
+    }
+
     // 3. Crear manifiesto de metadatos
     const manifest = {
       framework: 'Framework Baraldi',
@@ -168,7 +175,8 @@ Opciones:
       engramDataDir,
       databaseSizeBytes: fs.statSync(dbFile).size,
       hasJsonExport: jsonExportSuccess,
-      backupFormat: '1.0'
+      hasUserHarness,
+      backupFormat: '1.1'
     };
     fs.writeFileSync(path.join(tmpBackupDir, 'manifest.json'), JSON.stringify(manifest, null, 2), 'utf8');
 

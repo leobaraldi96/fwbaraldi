@@ -63,6 +63,9 @@ Como agente de IA operando el framework, debes reconocer y ejecutar inmediatamen
 *   `/upgrade` -> Lee `docs-fwbaraldi/.UPGRADE_REPORT.md` e inicia la Refactorización Guiada. OBLIGATORIO: 1) Aconsejar backup de `docs-fwbaraldi` (ofrecer instrucciones manuales o hacerlo por consola). 2) Mostrar un plan detallado de qué se modificará. 3) Refactorizar archivo por archivo preservando 100% del valor original y esperando el "OK" humano en cada paso. NUNCA tocar código fuera de `docs-fwbaraldi`.
 *   `/backlog` -> Lee, analiza y resume de forma priorizada el estado actual de `00_Backlog_Estrategico.md`.
 *   `/toolbox` -> Lista las herramientas estratégicas disponibles y solicita al usuario cuál de ellas desea aplicar al proyecto.
+*   `/evolve` -> Activa el **Protocolo de Evolución Recursiva del Arnés (Harness²)**:
+    1. *En el proyecto de un usuario:* Audita las correcciones y hallazgos recientes de la sesión, separa las reglas de dominio (*Domain Edits* -> contratos locales `docs-fwbaraldi/`) de las lecciones transversales del usuario (*User-Invariant Edits* -> `~/.fwbaraldi/user_harness.md` y Engram `scope: "personal"`).
+    2. *En el repositorio fuente del Framework Baraldi:* Busca en Engram (`all_projects=true`, `topic_key: "harness/invariant-rule"`) y en `~/.fwbaraldi/user_harness.md` todas las lecciones empíricas acumuladas en proyectos reales, las abstrae de forma 100% agnóstica y presenta una tabla de candidatas para promoverlas al Core público del framework.
 *   `/help` -> Muestra este menú de atajos semánticos y un resumen de tres líneas de la North Star del FWB.
 
 ---
@@ -73,6 +76,9 @@ Cuando el entorno disponga de herramientas de subagentes (`define_subagent`, `in
 *   **QA Adversario en la Triple Aduana (Constructor vs. Inspector):** Separación entre el agente que escribe código y un subagente inspector de solo lectura que audita cumplimiento estricto de `showroom.html` + `DESIGN.md` + `VOICE.md` sin sesgo de auto-confirmación.
 *   **Divergencia Visual en Workspaces Aislados (`Workspace: "share"`):** Exploración de variantes de UI en ramas compartidas sin ensuciar el árbol principal.
 *   **Checkpoints Interactivos Nativos (`ask_question`):** Uso de selectores estructurados para calibración de rigor en `/init`, priorización de circuitos en Etapa 03 y selección de adaptadores en Etapa 07.
+*   **Recursión en Dos Niveles (Harness² - Propose-Probe-Compose & Experience Reflector):**
+    1. *Recursión a nivel de tarea (Propose-Probe-Compose):* Evaluación contrastiva de candidatos frente a casos de borde antes de componer la solución final en hitos críticos.
+    2. *Recursión a nivel de arnés (3 Anillos de Inteligencia):* Separación automática entre ediciones de dominio del proyecto (`docs-fwbaraldi/`), ediciones invariantes del usuario en su propio entorno (`~/.fwbaraldi/user_harness.md` + Engram `scope: "personal"`) y evolución del Core público vía `/evolve`.
 
 ---
 

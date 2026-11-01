@@ -62,6 +62,7 @@ fwbaraldi/
 │   ├── decision_log.md
 │   ├── hallazgo_sistemico.md
 │   ├── ejemplo_knowledge_block.md
+│   ├── user_harness.md
 │   └── docs_readme.md
 ├── scripts/                          ← Utilidades CLI y automatizaciones
 ├── references/

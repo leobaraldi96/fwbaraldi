@@ -25,8 +25,10 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
   - **Filtro de Secreto de Negocio (NDA Filter):** Protección de datos comerciales sensibles y redondeo comunicacional de métricas al redactar casos de estudio o documentación pública.
 - **Evolución de la Toolbox Comercial (`pricing_and_monetization_protocol` y `sales_enablement_and_pitch_protocol`):**
   - Estructuración de planes de evolución post-lanzamiento (Fase 2) por nivel de valor de negocio (*Técnico / Producto / Estratégico*), inclusión de talleres de habilitación para el equipo receptor en la oferta core, cláusula obligatoria de vigencia temporal e higiene tipográfica formal en propuestas.
-- **Verificación en Vivo Condicional (Live Environment & MCP QA en Etapa 07) y Bucle de Aprendizaje Continuo:**
-  - Uso proactivo de asesores de base de datos, chequeo de tipos y herramientas de inspección de DOM en la Etapa 07 cuando estén disponibles en el entorno, más destilación de patrones reutilizables (`pattern/[nombre]`) al cierre de sesión.
+- **Verificación en Vivo Condicional (Live Environment & MCP QA en Etapa 07) y Evolución Recursiva del Arnés (Harness²):**
+  - Uso proactivo de asesores de base de datos, chequeo de tipos y herramientas de inspección de DOM en la Etapa 07 cuando estén disponibles en el entorno.
+  - **Arquitectura de 3 Anillos de Inteligencia (Harness²):** Separación entre el *Arnés Base* (Core FWB), el *Arnés Evolutivo del Usuario* (`~/.fwbaraldi/user_harness.md` + Engram `scope: "personal"`, `topic_key: "harness/invariant-rule"`) y el *Arnés de Dominio del Proyecto* (`docs-fwbaraldi/`).
+  - Incorporado el ciclo de evaluación contrastiva **Propose -> Probe -> Compose**, el filtro de **Contraste Conductual** en `00_skill_evaluation/SKILL.md`, el comando `/evolve` en `SKILL.md` y el respaldo/restauración automática de `user_harness.md` en `install.js`, `backup.js` y `restore.js`.
 - **Hardening de Scripts CLI (`install.js` y `align.js`):**
   - Soporte retrocompatible de `.engram/config.json` con `project_name` y `project` para Engram `v1.20.0`, y cobertura completa de las 8 etapas y 16 herramientas en las listas de higiene anti-fragmentación.
 

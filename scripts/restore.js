@@ -248,6 +248,16 @@ Opciones:
 
     spinner.succeed(chalk.green('✓ Memoria restaurada con éxito en: ') + chalk.cyan(engramDataDir));
 
+    // Restaurar Arnés Evolutivo Personal del Usuario (Harness²) si viene en el ZIP
+    const possibleUserHarness = path.join(tmpRestoreDir, 'user_harness.md');
+    if (fs.existsSync(possibleUserHarness)) {
+      const targetHarnessDir = path.join(os.homedir(), '.fwbaraldi');
+      const targetHarnessPath = path.join(targetHarnessDir, 'user_harness.md');
+      if (!fs.existsSync(targetHarnessDir)) fs.mkdirSync(targetHarnessDir, { recursive: true });
+      fs.copyFileSync(possibleUserHarness, targetHarnessPath);
+      console.log(chalk.green('✓ Arnés Evolutivo Personal restaurado en: ') + chalk.cyan(targetHarnessPath));
+    }
+
     console.log(chalk.bold.magenta('\n' + '═'.repeat(60)));
     console.log(chalk.bold.green('  🎉 RESTAURACIÓN COMPLETADA CON ÉXITO'));
     console.log(chalk.dim('  Destino: ') + chalk.white(engramDataDir));

@@ -365,6 +365,20 @@ Opciones:
 
   spinner.succeed(chalk.green(`✓ Orquestador Baraldi desplegado como Skill Única en: `) + chalk.cyan(destPath));
 
+  // Inicializar Arnés Evolutivo Personal del Usuario (Harness² - Persistente fuera de skills/)
+  const userHarnessDir = path.join(homeDir, '.fwbaraldi');
+  const userHarnessPath = path.join(userHarnessDir, 'user_harness.md');
+  const userHarnessTemplate = path.join(packageRoot, 'templates', 'user_harness.md');
+  if (!fs.existsSync(userHarnessDir)) {
+    fs.mkdirSync(userHarnessDir, { recursive: true });
+  }
+  if (!fs.existsSync(userHarnessPath) && fs.existsSync(userHarnessTemplate)) {
+    fs.copyFileSync(userHarnessTemplate, userHarnessPath);
+    console.log(chalk.green('✓ Arnés Evolutivo Personal inicializado en: ') + chalk.cyan(userHarnessPath));
+  } else if (fs.existsSync(userHarnessPath)) {
+    console.log(chalk.green('✓ Arnés Evolutivo Personal preservado intacto en: ') + chalk.cyan(userHarnessPath));
+  }
+
   console.log(chalk.bold('\n[3/3] ⚙️ Autoconfiguración de MCP y Reglas Globales...'));
 
   if (agenteDestino === 'antigravity') {
