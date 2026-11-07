@@ -191,11 +191,12 @@ function configureGlobalAgentsRule() {
   }
 
   const ruleContent = `
-# Framework Baraldi (FWB) System Integration
-- Framework Baraldi (v${FRAMEWORK_VERSION}) is globally integrated into this environment.
-- You have access to Framework Baraldi skills (Problem Framing, System Analysis, Product Logic, IA, Interaction Design, Visual Design, Handover QA, and Toolbox Protocols).
-- When the user asks to start, align, or design with Framework Baraldi, follow the methodology and protocols defined in the baraldi-framework skill.
-- Persist knowledge using the Engram memory server when available.
+# Integración del Sistema Framework Baraldi (FWB) y Autoaprendizaje (Harness²)
+- Framework Baraldi (v${FRAMEWORK_VERSION}) está integrado de forma global en este entorno.
+- Tienes acceso a todas las etapas del Framework Baraldi (Problem Framing, System Analysis, Product Logic, Information Architecture, Interaction Design, Visual Design, Handover & QA, Continuous Discovery & Telemetry y los 16 protocolos de la Toolbox).
+- Cuando el usuario solicite iniciar, alinear o diseñar con Framework Baraldi, sigue estrictamente la metodología, contratos y protocolos definidos en la skill \`baraldi-framework\`.
+- Persiste el conocimiento y las decisiones de diseño utilizando el servidor de memoria Engram (\`mem_save\`, \`mem_context\`, \`mem_search\`).
+- **Gatillo de aprendizaje en caliente (Hot-Reflection - Harness²):** Cada vez que el usuario corrija un hábito o error de comportamiento de la IA o establezca una preferencia transversal de trabajo durante una conversación, registra esa regla **en ese mismo turno** (sin esperar al cierre de la sesión) en \`~/.fwbaraldi/user_harness.md\` y en Engram (\`scope: "personal"\`, \`topic_key: "harness/invariant-rule"\`).
 `;
 
   let existing = '';

@@ -170,11 +170,12 @@ Cuando el entorno de ejecución provea herramientas nativas de subagentes (`defi
      1. **Propose (Propuesta):** Formula al menos 2 enfoques candidatos con énfasis distintos (ej. *Candidato A: Mínima fricción y velocidad* vs. *Candidato B: Máximo control y resiliencia*).
      2. **Probe (Sondeo de estrés):** Evalúa el contraste conductual de ambos candidatos frente a los mismos casos de borde (fallos de red, permisos, estados vacíos, carga cognitiva en móvil).
      3. **Compose (Síntesis compuesta):** Combina las fortalezas probadas de cada candidato en una propuesta superadora fundamentada antes de pedir la validación del humano.
-6. **Recursión a nivel de arnés: Los 3 Anillos de Inteligencia (Experience Reflector):**
+6. **Recursión a nivel de arnés: Los 3 Anillos de Inteligencia y Gatillo en Caliente (Experience Reflector - Hot-Reflection):**
    - El framework aprende continuamente del usuario en su propio entorno local separando estrictamente tres niveles:
      * **Anillo 1 - Arnés Base (Core FWB):** Metodología pública universal e inmutable (`skills/`).
      * **Anillo 2 - Arnés Evolutivo del Usuario (`~/.fwbaraldi/user_harness.md` + Engram `scope: "personal"`):** Preferencias transversales de arquitectura, UX/UI y lecciones invariantes que la IA aprende de ese usuario a través de todos sus proyectos. Sobrevive intacto a las actualizaciones del framework y viaja en `fwbaraldi backup`.
      * **Anillo 3 - Arnés de Dominio del Proyecto (`docs-fwbaraldi/`):** Reglas exclusivas del producto o cliente activo (`DESIGN.md`, `VOICE.md`, `BUSINESS.md`, `UX.md`).
+   - **Gatillo de Aprendizaje en Caliente (In-Flight Trigger):** Cuando el humano corrija un hábito o error de comportamiento del agente durante la conversación (ej. *"no hagas X"*, *"no vuelvas a poner Y"*, *"acordate siempre de Z"*), el agente **NO debe esperar al cierre de sesión**: en ese mismo turno, además de aplicar la corrección técnica, debe registrar inmediatamente la lección en `~/.fwbaraldi/user_harness.md` y en Engram (`scope: "personal"`, `topic_key: "harness/invariant-rule"`).
 
 ---
 
@@ -314,14 +315,14 @@ Antes de realizar CUALQUIER tarea operativa de una etapa metodológica, **siempr
 
 ---
 
-### Protocolo de cierre de sesión y reflector de experiencia (Experience Reflector - Harness²)
+### Protocolo de reflector de experiencia en caliente y cierre de sesión (Experience Reflector - Harness²)
 
-Antes de declarar que la sesión o etapa terminó (o cuando el usuario ejecute `/evolve`):
+Tanto **en caliente durante la conversación** (cada vez que el humano corrija un hábito de la IA o cuando ejecute `/evolve`) como antes de declarar que una sesión o etapa terminó:
 
 1. **Bifurcación del aprendizaje (Domain vs. User-Invariant Edits):**
-   El agente actúa como *Experience Reflector*: analiza las correcciones del humano, los errores evitados y los patrones descubiertos en la sesión, y los separa en dos destinos:
+   El agente actúa como *Experience Reflector*: analiza las correcciones del humano, los errores evitados y los patrones descubiertos, y los separa inmediatamente en dos destinos:
    - **A. Edición de Dominio (`Domain Edit` - exclusiva de este producto):** Se persiste en `mem_save(project="[proyecto-activo]", scope="project")` y actualiza los contratos locales (`docs-fwbaraldi/DESIGN.md`, `VOICE.md`, `BUSINESS.md` o `UX.md`).
-   - **B. Edición Invariante del Usuario (`User-Invariant Edit` - preferencia o lección transversal del usuario):** Si el usuario corrigió un hábito de la IA o estableció una regla que aplica a cualquiera de sus futuros proyectos, el agente la registra en `mem_save(scope="personal", topic_key="harness/invariant-rule")` y actualiza `~/.fwbaraldi/user_harness.md` (previa confirmación breve si la regla cambia el flujo de trabajo).
+   - **B. Edición Invariante del Usuario (`User-Invariant Edit` - captura inmediata en caliente):** Si el usuario corrigió un hábito de la IA o estableció una regla que aplica a cualquiera de sus futuros proyectos, el agente la registra **en ese mismo turno** (sin esperar al final de la sesión) en `mem_save(scope="personal", topic_key="harness/invariant-rule")` y actualiza `~/.fwbaraldi/user_harness.md`.
 2. **Registrar cierre:** Guardar con `mem_session_summary()` con: objetivo de la sesión, hallazgos de dominio, reglas invariantes aprendidas, artefactos producidos y próximos pasos.
 3. **Declarar done:** Solo después de los pasos anteriores, comunicar al humano en lenguaje claro que la sesión está cerrada.
 

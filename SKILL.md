@@ -76,9 +76,9 @@ Cuando el entorno disponga de herramientas de subagentes (`define_subagent`, `in
 *   **QA Adversario en la Triple Aduana (Constructor vs. Inspector):** Separación entre el agente que escribe código y un subagente inspector de solo lectura que audita cumplimiento estricto de `showroom.html` + `DESIGN.md` + `VOICE.md` sin sesgo de auto-confirmación.
 *   **Divergencia Visual en Workspaces Aislados (`Workspace: "share"`):** Exploración de variantes de UI en ramas compartidas sin ensuciar el árbol principal.
 *   **Checkpoints Interactivos Nativos (`ask_question`):** Uso de selectores estructurados para calibración de rigor en `/init`, priorización de circuitos en Etapa 03 y selección de adaptadores en Etapa 07.
-*   **Recursión en Dos Niveles (Harness² - Propose-Probe-Compose & Experience Reflector):**
+*   **Recursión en Dos Niveles y Gatillo en Caliente (Harness² - Propose-Probe-Compose & Hot-Reflection):**
     1. *Recursión a nivel de tarea (Propose-Probe-Compose):* Evaluación contrastiva de candidatos frente a casos de borde antes de componer la solución final en hitos críticos.
-    2. *Recursión a nivel de arnés (3 Anillos de Inteligencia):* Separación automática entre ediciones de dominio del proyecto (`docs-fwbaraldi/`), ediciones invariantes del usuario en su propio entorno (`~/.fwbaraldi/user_harness.md` + Engram `scope: "personal"`) y evolución del Core público vía `/evolve`.
+    2. *Recursión a nivel de arnés en caliente (3 Anillos de Inteligencia):* Separación inmediata (en el mismo turno en que ocurre una corrección del humano, sin esperar al cierre de sesión) entre ediciones de dominio del proyecto (`docs-fwbaraldi/`), ediciones invariantes del usuario en su propio entorno (`~/.fwbaraldi/user_harness.md` + Engram `scope: "personal"`, `topic_key: "harness/invariant-rule"`) y evolución del Core público vía `/evolve`.
 
 ---
 
