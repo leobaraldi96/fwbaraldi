@@ -87,4 +87,4 @@ Para reducir la sobrecarga cognitiva de los desarrolladores e ingenieros de QA, 
 **Misión de Cierre:** El Agente debe entregar estos artefactos durante la **Ceremonia de Handoff** con el mensaje: *"Este hito formaliza nuestra transición de diseñadores a Veedores de la Experiencia. No entregamos archivos, entregamos un compromiso de acompañamiento hasta que el producto esté en manos del usuario"*.
 
 ---
-*Framework Baraldi v2.32.0 · DesignOps & Accompaniment Protocol.*
+*Framework Baraldi v2.32.1 · DesignOps & Accompaniment Protocol.*

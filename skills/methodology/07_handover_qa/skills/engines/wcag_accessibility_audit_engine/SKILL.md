@@ -1,7 +1,7 @@
 ---
 name: wcag-accessibility-audit
 description: Auditoría exhaustiva de accesibilidad web utilizando las pautas WCAG 2.1/2.2. Evalúa el cumplimiento a través de los 4 principios POUR (Perceptible, Operable, Comprensible, Robusto), niveles A, AA, AAA y prevención de alucinaciones de contraste.
-version: "2.32.0"
+version: "2.32.1"
 ---
 
 # Auditoría de accesibilidad WCAG y control de factores humanos
@@ -127,4 +127,4 @@ Al finalizar la auditoría, genera este cuadro de mando:
 | **Robusto** | OK | Semántica nativa (`<button>`, `<a href>`) y `cursor: pointer` en capa base. | Mantener estándar actual. |
 
 ---
-*Framework Baraldi v2.32.0 · Auditoría WCAG 2.2 & Factores Humanos*
+*Framework Baraldi v2.32.1 · Auditoría WCAG 2.2 & Factores Humanos*

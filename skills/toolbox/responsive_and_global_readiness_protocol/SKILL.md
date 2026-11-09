@@ -4,7 +4,7 @@ description: >
   Protocolo de adaptabilidad total y reflujo móvil anti-slop. Estrategia para asegurar productos líquidos (Responsive)
   sin puntos ciegos de viewport, con ergonomía táctil real y culturalmente relevantes (i18n/L10n) en cualquier mercado y dispositivo.
 keywords: responsive, mobile-first, i18n, l10n, global-readiness, breakpoints, RTL, localización, mobile-reflow, dvh
-version: "2.32.0"
+version: "2.32.1"
 ---
 
 # Protocolo de adaptabilidad total y reflujo móvil (Global Readiness)
@@ -65,4 +65,4 @@ Esta skill actúa como un **Estratega de Producto Global y Arquitecto de Reflujo
 3. **i18n Tracking List:** Listado de strings con contexto para traductores.
 
 ---
-*Framework Baraldi v2.32.0 · Adaptabilidad Global & Mobile Reflow*
+*Framework Baraldi v2.32.1 · Adaptabilidad Global & Mobile Reflow*

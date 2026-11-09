@@ -3,7 +3,7 @@
 > **⚠️ Este archivo es para humanos (desarrolladores, configuradores, colaboradores) y para agentes externos en primera instalación.**
 > Los modelos de IA que ya tienen el framework instalado **no deben cargar este archivo** en el ciclo de boot porque genera tokens redundantes sin aportar valor operativo. El agente carga directamente `SKILL.md` -> `00_boot/context.md` -> `~/.fwbaraldi/user_harness.md` -> skills específicas.
 
-**AI-Augmented System Product Design · v2.32.0 · Leo Baraldi**
+**AI-Augmented System Product Design · v2.32.1 · Leo Baraldi**
 
 ---
 
@@ -21,7 +21,7 @@ README.md -> ARQUITECTURA_CORE.md -> CHANGELOG.md
 
 ---
 
-## 📁 Mapa del repositorio (v2.32.0)
+## 📁 Mapa del repositorio (v2.32.1)
 
 ```text
 fwbaraldi/
@@ -31,24 +31,24 @@ fwbaraldi/
 │
 ├── skills/
 │   ├── core/
-│   │   ├── 00_core_guardrails/       <- Reglas de disciplina, ergonomía cognitiva y comunicación (v2.32.0)
-│   │   ├── 00_kalman_guardrail/      <- Calibración por Blast Radius y control de deriva (v2.32.0)
-│   │   ├── 00_operational_hygiene/   <- Branches, soberanía Git manual y handoff (v2.32.0)
-│   │   ├── 00_project_health_audit/  <- Framework Doctor (Auditoría de salud v2.32.0)
-│   │   ├── 00_skill_evaluation/      <- Skill Judge y Contraste Conductual Harness² (v2.32.0)
+│   │   ├── 00_core_guardrails/       <- Reglas de disciplina, ergonomía cognitiva y comunicación (v2.32.1)
+│   │   ├── 00_kalman_guardrail/      <- Calibración por Blast Radius y control de deriva (v2.32.1)
+│   │   ├── 00_operational_hygiene/   <- Branches, soberanía Git manual y handoff (v2.32.1)
+│   │   ├── 00_project_health_audit/  <- Framework Doctor (Auditoría de salud v2.32.1)
+│   │   ├── 00_skill_evaluation/      <- Skill Judge y Contraste Conductual Harness² (v2.32.1)
 │   │   └── 00_system_awareness/      <- Consciencia Sistémica, 3 Anillos y Memoria (Engram v1.20.0)
 │   │
 │   ├── methodology/
-│   │   ├── 01_problem_framing/       <- Hardened v2.32.0
-│   │   ├── 02_system_analysis/       <- Hardened v2.32.0
-│   │   ├── 03_product_logic/         <- Hardened v2.32.0 (Parent/Child Slicing + Data Lineage)
-│   │   ├── 04_information_architecture/ <- Hardened v2.32.0
-│   │   ├── 05_interaction_design_ux/ <- Hardened v2.32.0 (Cross-Module Equalization)
-│   │   ├── 06_visual_design_ui/      <- Hardened v2.32.0 (Triple Aduana)
-│   │   ├── 07_handover_qa/           <- Hardened v2.32.0 (SDD Review Path + Live Env Audit)
-│   │   └── 08_continuous_discovery_telemetry/ <- Telemetría y Data UX v2.32.0
+│   │   ├── 01_problem_framing/       <- Hardened v2.32.1
+│   │   ├── 02_system_analysis/       <- Hardened v2.32.1
+│   │   ├── 03_product_logic/         <- Hardened v2.32.1 (Parent/Child Slicing + Data Lineage)
+│   │   ├── 04_information_architecture/ <- Hardened v2.32.1
+│   │   ├── 05_interaction_design_ux/ <- Hardened v2.32.1 (Cross-Module Equalization)
+│   │   ├── 06_visual_design_ui/      <- Hardened v2.32.1 (Triple Aduana)
+│   │   ├── 07_handover_qa/           <- Hardened v2.32.1 (SDD Review Path + Live Env Audit)
+│   │   └── 08_continuous_discovery_telemetry/ <- Telemetría y Data UX v2.32.1
 │   │
-│   └── toolbox/                      <- Arsenal de 16 protocolos estratégicos (v2.32.0)
+│   └── toolbox/                      <- Arsenal de 16 protocolos estratégicos (v2.32.1)
 │
 ├── templates/                        <- Suite de Contratos Vivos de Soberanía
 │   ├── business_md.md
@@ -128,4 +128,4 @@ Si el usuario menciona que va a formatear su equipo, migrar de máquina o pide u
 
 ---
 
-*Framework Baraldi v2.32.0 · DOCUMENTACION_IA.md · Referencia de Arquitectura e Instalación*
+*Framework Baraldi v2.32.1 · DOCUMENTACION_IA.md · Referencia de Arquitectura e Instalación*

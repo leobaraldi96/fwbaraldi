@@ -5,7 +5,7 @@ description: >
   ergonomía cognitiva y barandas de contención del Framework Baraldi.
   Trigger: SIEMPRE activo. Se debe consultar al inicio de cada sesión y ante
   cualquier cambio en la estructura del proyecto o de los artefactos.
-version: "2.32.0"
+version: "2.32.1"
 ---
 
 # Capa 00 - Core guardrails (barandas de contención)
@@ -21,6 +21,8 @@ Esta es la regla de protección existencial del framework y del entorno del usua
 - **Prohibición de modificación del motor desde proyectos:** Si el Agente está trabajando en un proyecto de producto de un usuario, tiene terminantemente **PROHIBIDO** modificar archivos dentro de la carpeta raíz del framework (`.../skills/baraldi-framework/`).
 - **Acción obligatoria ante sugerencia de mejora al motor:** Si durante el uso del framework el Agente detecta una mejora necesaria en la metodología, **NO DEBE APLICARLA DIRECTAMENTE**. Debe notificar al humano y solicitar abrir el workspace específico del framework en una ventana independiente.
 - **Inmunidad de solo lectura en carpetas externas de referencia (External Reference Read-Only P0):** Si el usuario proporciona la ruta de otro proyecto, repositorio o carpeta externa al workspace activo como referencia visual, técnica, auditoría o fuente para redactar documentación/casos de estudio, **dicha carpeta externa es 100% intocable (Read-Only)**. Está terminantemente prohibido crear, modificar o eliminar archivos en directorios externos; todo output o borrador debe generarse exclusivamente dentro del workspace activo (`docs-fwbaraldi/`).
+- **No-interferencia con el servidor de desarrollo activo (`npm run dev`):** El usuario suele mantener su propio servidor de desarrollo con HMR activo en su terminal. Queda terminantemente prohibido matar procesos Node (`taskkill`), reiniciar servidores en segundo plano o levantar un segundo servidor de desarrollo sin autorización explícita.
+- **Inmunidad de supresiones del humano (Respect User Deletions):** Cuando el humano elimina deliberadamente un elemento visual, logo, campo o bloque de una interfaz, queda terminantemente prohibido volver a reintroducirlo en iteraciones posteriores por inercia o "completitud de plantilla".
 - **Prohibición estricta de Git commit y push automático (P0):** El Agente tiene terminantemente **PROHIBIDO** ejecutar comandos `git commit`, `git add` o `git push` de forma autónoma o automática. El agente solo edita archivos en el working tree. La revisión de diffs, creación de commits y subida de cambios remotos es **soberanía exclusiva del humano responsable**.
 </core_self_protection>
 
@@ -110,6 +112,11 @@ docs-fwbaraldi/
 │   ├── 01_Data_Diagnostic_and_Insights.md
 │   └── 02_Action_Registry_and_Decisions.md
 │
+├── informes/                          ← Bitácoras mensuales de tareas, reportes y auditorías
+│   └── REGISTRO_TAREAS_YYYY-MM.md     ← Registro continuo para rendición de cuentas y facturación
+│
+├── [<modulo-o-tarea>]/                ← Subcarpetas operativas (ej. precios/, migraciones/, catalogos/)
+│
 ├── UXR/                               ← Todo lo que sea investigación de usuarios
 │   ├── plan_de_metodologia.md
 │   ├── guion_entrevistas.md
@@ -129,8 +136,9 @@ docs-fwbaraldi/
 - **Mandato de artefactos físicos (Anti-Chat Only):** Queda terminantemente prohibido que el Agente solo muestre el contenido de un entregable en la terminal o chat. Todo hito de la metodología **DEBE** materializarse en un archivo físico dentro de `docs-fwbaraldi/`.
 - **Interpretación de templates (Ley de Ejemplo):** Toda tabla, diagrama o estructura de datos presente en los archivos de metodología del Framework que contenga datos ilustrativos debe ser tratada estrictamente como un **EJEMPLO DE FORMATO**. La IA debe generar siempre contenido 100% original basado en el proyecto activo.
 - **Rigor en la indagación:** Si un artefacto requiere datos de etapas previas, la IA **DEBE** leer esos archivos antes de proponer nada.
-- **Prohibición de fuga (Zero-Leakage):** Queda prohibido generar carpetas temporales sueltas en la raíz del proyecto. Si un reporte HTML requiere activos auxiliares, deben guardarse dentro de su propia subcarpeta (ej: `docs-fwbaraldi/UXR/informe/assets/`).
-- **Cumplimiento de la Triple Aduana y Linaje de Datos:** Toda generación o edición de vistas sigue obligatoriamente el protocolo de `00_boot/context.md` (lectura previa de `showroom.html` + `DESIGN.md` + `VOICE.md`, emisión del *Pre-flight Check*, arquitectura modular libre de estilos inline, sincronización del Showroom vivo con enlace directo en el chat y verificación de los 5 eslabones del *Data-to-UI Lineage*).
+- **Prohibición de fuga (Zero-Leakage) y organización por dominio operativo:** Queda terminantemente prohibido dejar o dispersar archivos de entregables, CSVs, planillas, scripts auxiliares o documentos de trabajo en directorios temporales (`scratch/`, carpetas internas del agente o la raíz del proyecto). Todo archivo generado relativo a una tarea operativa debe alojarse de manera organizada dentro de `docs-fwbaraldi/<modulo-o-tarea>/` (por ejemplo, `docs-fwbaraldi/precios/`). Si un reporte HTML requiere activos auxiliares, deben guardarse dentro de su propia subcarpeta (ej: `docs-fwbaraldi/UXR/informe/assets/`).
+- **Registro continuo en bitácora mensual (`docs-fwbaraldi/informes/REGISTRO_TAREAS_YYYY-MM.md`):** Cuando el proyecto cuente con seguimiento operativo o facturación recurrente a clientes, cada tarea ejecutada, ajuste técnico, mantenimiento o nueva funcionalidad debe registrarse sistemáticamente en el mismo turno dentro de `docs-fwbaraldi/informes/REGISTRO_TAREAS_YYYY-MM.md`, detallando fecha, categoría, descripción técnica/funcional e impacto de negocio, listo para auditar y rendir cuentas.
+- **Cumplimiento de la Triple Aduana, Vista Madre y Linaje de Datos:** Toda generación o edición de vistas sigue obligatoriamente el protocolo de `00_boot/context.md` (lectura previa de `showroom.html` + `globals.css` + `DESIGN.md` + `VOICE.md` + *Vista Madre Canónica*, emisión del *Pre-flight Check*, arquitectura modular con techo de `350` líneas sin modales anidados, cero estilos inline ni `tracking-*`, sincronización del Showroom vivo con enlace directo en el chat y verificación de los 5 eslabones del *Data-to-UI Lineage*).
 
 ---
 
@@ -186,4 +194,4 @@ Antes de declarar un hito como completado, la IA debe verificar:
 - [ ] ¿El documento respeta la ergonomía cognitiva (*Lead with the answer*, tablas de verificación y checklists)?
 
 ---
-*Framework Baraldi v2.32.0 · Core Guardrails*
+*Framework Baraldi v2.32.1 · Core Guardrails*

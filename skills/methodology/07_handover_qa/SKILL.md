@@ -6,7 +6,7 @@ description: >
   auditoría de linaje de datos, verificación en vivo con herramientas MCP y QA visual/técnico final.
 keywords: handover, qa, quality-assurance, design-handoff, completeness-audit, developer-handoff, data-lineage, live-qa
 status: operational
-version: "2.32.0"
+version: "2.32.1"
 framework: Baraldi
 stage: "07"
 stage_name: "Handover & Quality Assurance"
@@ -117,4 +117,4 @@ En el cierre, el Agente actúa como un **guardián de la excelencia y veedor de 
 *   **El rol de acompañamiento:** Recordar que el diseño sigue vivo durante el código, asistiendo y resolviendo dudas técnicas en tiempo real.
 
 ---
-*Framework Baraldi v2.32.0 · skills/methodology/07_handover_qa/SKILL.md*
+*Framework Baraldi v2.32.1 · skills/methodology/07_handover_qa/SKILL.md*

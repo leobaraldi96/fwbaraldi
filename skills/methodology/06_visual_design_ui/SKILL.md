@@ -6,7 +6,7 @@ description: >
   Crea el contrato visual para la implementación agéntica (DESIGN.md) y el Showroom vivo (showroom.html).
 keywords: visual design, ui, tokens, design system, design.md, showroom.html, css variables.
 status: operational
-version: "2.32.0"
+version: "2.32.1"
 ---
 
 # Etapa 06 - Visual design (UI)
@@ -91,8 +91,8 @@ El Agente debe **bloquear** el proceso si detecta:
 2. **NEVER permitas "alucinaciones visuales":** Todo componente debe usar los tokens definidos en el `DESIGN.md`. Prohibido inventar clases ad-hoc.
 3. **NEVER avances sin el DESIGN.md y el Showroom UI:** Estos archivos son el contrato agéntico y visual. Sin ellos, no hay fuente de verdad para el desarrollo.
 4. **NEVER ignores los estándares A11y en tokens ni uses fuentes menores a 10px:** Contraste y tamaños deben ser validados matemáticamente. **Prohibido terminantemente usar `font-size` menor a 10px (0.625rem)** en cualquier elemento, texto legal, badge o pie de foto.
-5. **NEVER generes vistas monolíticas o acoplamiento tóxico:** Prohibido amontonar marcado, lógica de datos, tipos y estilos en un solo archivo gigante (ej: vistas de 500+ líneas). Divide en componentes atómicos (`components/ui/`), custom hooks y tipos aislados. En arquitecturas tradicionales, separa estrictamente estructura (marcado), decoración (CSS modular) e interacción (JS externo).
-6. **NEVER uses CSS inline ni inventes clases no acordadas:** Prohibido el uso de `style="..."` o cadenas de clases utilitarias de frameworks (Tailwind/Bootstrap/shadcn) que ensucien o contradigan las clases globales. Si un estilo no está en `showroom.html` + `DESIGN.md`, no se improvisa: se consulta al usuario para extender el sistema.
+5. **NEVER generes vistas monolíticas, modales anidados o acoplamiento tóxico:** Prohibido amontonar marcado, lógica de datos, tipos y estilos en un solo archivo gigante. Ningún archivo de componente o vista debe superar las **350 líneas**, y queda terminantemente prohibido anidar múltiples modales o sub-flujos dentro del mismo archivo. Divide en componentes atómicos (`components/ui/`, `components/features/`), custom hooks y tipos aislados. En arquitecturas tradicionales, separa estrictamente estructura (marcado), decoración (CSS modular) e interacción (JS externo).
+6. **NEVER uses CSS inline, `tracking-*`, `font-mono` en UI ni inventes clases fuera del Showroom y `globals.css`:** Prohibido el uso de `style="..."`, utilidades de alteración de letter-spacing (`tracking-*`), `font-mono` en textos/botones de interfaz (reservado solo para hashes criptográficos o código fuente), controles híbridos confusos (botones que simulan ser checkboxes con íconos) o clases cromáticas/sombras genéricas (`bg-gray-*`, `text-green-*`, `bg-amber-*`, `shadow-2xs`) que ignoren las clases compuestas oficiales (`.badge-pill`, `.btn-primary`, etc.) declaradas en `globals.css`, `showroom.html` y `DESIGN.md`.
 
 ## ALWAYS List - Mandatos de comportamiento
 - **Siempre** justifica la estética basada en beneficios técnicos (legibilidad) o psicológicos.
@@ -130,4 +130,4 @@ En la fase visual, el Agente actúa como un **director de arte** que educa el oj
 *   **Decisión compartida:** Nunca entregar un diseño finalizado sin haber transitado los hitos de decisión con el humano.
 
 ---
-*Framework Baraldi v2.32.0 · skills/methodology/06_visual_design_ui/SKILL.md*
+*Framework Baraldi v2.32.1 · skills/methodology/06_visual_design_ui/SKILL.md*

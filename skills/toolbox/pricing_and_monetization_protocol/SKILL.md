@@ -4,7 +4,7 @@ description: >
   Protocolo de Diseño de Precios y Monetización. Guía para estructurar tiers (Good-Better-Best),
   planes de evolución post-lanzamiento, métricas de valor y optimización de captura de ingresos.
 keywords: pricing, monetización, tiers, SaaS, ARPU, Van Westendorp, captura de valor, retainers
-version: "2.32.0"
+version: "2.32.1"
 ---
 
 # Protocolo de Precios y Monetización
@@ -58,4 +58,4 @@ Esta skill actúa como un **Estratega de Monetización**. Su misión es diseñar
 3. **Value Metric Analysis:** Justificación de por qué la métrica elegida es la más justa para el negocio y el usuario.
 
 ---
-*Framework Baraldi v2.32.0 · Estrategia de Precios*
+*Framework Baraldi v2.32.1 · Estrategia de Precios*

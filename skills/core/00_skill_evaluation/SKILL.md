@@ -6,7 +6,7 @@ description: >
   de Delta de Conocimiento y Contraste Conductual.
   Trigger: Al crear un nuevo archivo SKILL.md, auditar una habilidad existente, ejecutar /evolve
   o cuando el usuario pida agregar una nueva capacidad al sistema.
-version: "2.32.0"
+version: "2.32.1"
 ---
 
 # Orquestador de Inteligencia, Eficiencia y Contraste Conductual (Skill Judge & Harness² Filter)
@@ -58,4 +58,4 @@ Si detectas que el usuario pide crear una skill redundante:
 3. Ofrécele, en cambio, registrar únicamente las **restricciones de negocio, invariantes de arquitectura o preferencias de diseño** que el modelo no podría adivinar por sí solo.
 
 ---
-*Framework Baraldi v2.32.0 · Skill Evaluation & Harness² Filter.*
+*Framework Baraldi v2.32.1 · Skill Evaluation & Harness² Filter.*

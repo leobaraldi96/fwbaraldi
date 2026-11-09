@@ -1,6 +1,6 @@
 # Arquitectura Core del Framework Baraldi
 
-> Este documento detalla la estructura lógica, la arquitectura tecnológica y el ciclo de vida de adopción del **Framework Baraldi** (v2.32.0). El framework ha evolucionado de un repositorio de prompts a un **Ecosistema Agéntico Simbiótico** donde la infraestructura tecnológica y la maestría humana convergen.
+> Este documento detalla la estructura lógica, la arquitectura tecnológica y el ciclo de vida de adopción del **Framework Baraldi** (v2.32.1). El framework ha evolucionado de un repositorio de prompts a un **Ecosistema Agéntico Simbiótico** donde la infraestructura tecnológica y la maestría humana convergen.
 
 ---
 
@@ -104,11 +104,11 @@ sequenceDiagram
     
     note over IA,Humano: FASE DE LÓGICA SISTÉMICA (Etapa 03)
     IA->>IA: Ejecuta Product Logic (Brain Integration)
-    IA->>FS: Genera Blueprint, Business Rules Matrix y BUSINESS.md (v2.32.0)
+    IA->>FS: Genera Blueprint, Business Rules Matrix y BUSINESS.md (v2.32.1)
 ```
 
 ### 3.1 El Rol de la Etapa 03 (Product Logic)
-En la versión v2.32.0, la Etapa 03 se consolida como el **"Cerebro del Producto"**. Su función es blindar la viabilidad funcional antes de que el equipo de diseño entre a la fase visual, integrando el estándar **UX-DNA (Experience Anatomy)**, el chequeo de trazabilidad de los **5 Eslabones del Dato (Data-to-UI Lineage)** y los Contratos de Negocio. 
+En la versión v2.32.1, la Etapa 03 se consolida como el **"Cerebro del Producto"**. Su función es blindar la viabilidad funcional antes de que el equipo de diseño entre a la fase visual, integrando el estándar **UX-DNA (Experience Anatomy)**, el chequeo de trazabilidad de los **5 Eslabones del Dato (Data-to-UI Lineage)** y los Contratos de Negocio. 
 
 **Entregables clave al usuario:**
 - **Product Logic Orchestration:** Matriz de Actores, Matriz de Orquestación de Backlog y Service Blueprint.
@@ -119,7 +119,7 @@ En la versión v2.32.0, la Etapa 03 se consolida como el **"Cerebro del Producto
 - **Contratos Vivos de Soberanía:** Generación de la suite de contratos (`DESIGN.md`, `VOICE.md`, `BUSINESS.md`, `SECURITY.md`, `LEGAL.md`, `UX.md`, `KNOWLEDGE.md`) como el nuevo estándar de handoff diseñado para el consumo de humanos y modelos de lenguaje, garantizando la fidelidad de la implementación automatizada.
 
 ### 3.2 El Bucle Infinito de la Etapa 08 (Continuous Discovery & Telemetry)
-En la versión v2.32.0, el framework cierra formalmente el ciclo continuo del producto. La Etapa 08 actúa como el **"Sistema Nervioso Post-Lanzamiento"**, ingiriendo telemetría y feedback real para transformarlo en diagnósticos de UX sin fricción matemática (*Zero-Math*), diseñando dashboards por nivel de urgencia de rol (Operativo < 3s, Táctico 1-5 min, Estratégico 30s) y retroalimentando automáticamente el `00_Backlog_Estrategico.md` y la Etapa 01.
+En la versión v2.32.1, el framework cierra formalmente el ciclo continuo del producto. La Etapa 08 actúa como el **"Sistema Nervioso Post-Lanzamiento"**, ingiriendo telemetría y feedback real para transformarlo en diagnósticos de UX sin fricción matemática (*Zero-Math*), diseñando dashboards por nivel de urgencia de rol (Operativo < 3s, Táctico 1-5 min, Estratégico 30s) y retroalimentando automáticamente el `00_Backlog_Estrategico.md` y la Etapa 01.
 
 ---
 
@@ -139,7 +139,7 @@ El objetivo primario aquí es *No escribir código hasta resolver los gaps de co
 ### 4.2 Sincronización de Proyectos En Curso (In-flight / Legacy)
 Uno de los mayores desafíos metodológicos es aplicar rigor a un proyecto que ya cuenta con meses de desarrollo. 
 
-En la versión **v2.32.0**, el framework incorpora el **Onboarding Adaptativo** en el arranque (`/init`) y la **Triple Aduana Inviolable**:
+En la versión **v2.32.1**, el framework incorpora el **Onboarding Adaptativo** en el arranque (`/init`) y la **Triple Aduana Inviolable**:
 1. **Detección Automática de Pila:** El Agente escanea el workspace para detectar el stack (WordPress, React, Vue, Next.js, HTML) y el volumen de archivos existentes.
 2. **Generación del Living Showroom UI Hub (`showroom.html`):** Antes de tocar el código en producción, monta una vista interactiva viva, agnóstica y documentada con todos los tokens reales, componentes, estados y especificaciones para desarrolladores (snippets copiables).
 3. **La Triple Aduana Inviolable (`showroom.html` + `DESIGN.md` + `VOICE.md`):** Al construir o modificar cualquier vista, la IA consulta de forma sincronizada esta tríada para garantizar cero improvisación visual, cero clases residuales y cero CSS inline, respetando la fragmentación modular y la accesibilidad ($\ge 10\text{px}$).

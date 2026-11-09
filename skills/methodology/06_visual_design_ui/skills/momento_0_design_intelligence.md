@@ -1,7 +1,7 @@
 ---
 name: momento-0-design-intelligence
 description: Motor central de inteligencia de diseño y filtro anti-slop. Establece las leyes de jerarquía, los límites de dosis visual, los bloqueos de clichés en landings y dashboards, y las palancas de vitalidad antes de construir tokens o vistas.
-version: "2.32.0"
+version: "2.32.1"
 ---
 
 # [MOMENTO 0] Design intelligence y protocolo anti-slop
@@ -74,8 +74,8 @@ Las técnicas visuales no son malas en sí mismas; se convierten en slop cuando 
   - El **estado de error (Error State)** debe explicar qué falló y cómo resolverlo o reintentar.
 
 ### 4.3 Tipografía, iconografía y honestidad de contenido
-- **Color base:** Prohibido el negro puro (`#000000`) para fondos o textos; usar tonos profundos matizados definidos en los tokens.
-- **Tipografía con propósito y cero compresión artificial:** Prohibido elegir tipografías por inercia del modelo sin justificarlas en `DESIGN.md`, prohibido usar encabezados monospace gigantes como disfraz "técnico", y **prohibido estrictamente aplicar `tracking-tight` o `tracking-tighter`** en encabezados o elementos de UI. Respetar el piso mínimo inviolable de `10px (0.625rem)`.
+- **Color base y fidelidad de paleta:** Prohibido el negro puro (`#000000`) para fondos o textos; usar tonos profundos matizados definidos en los tokens. Prohibido inyectar clases cromáticas genéricas por defecto (`bg-gray-*`, `text-green-*`, `bg-amber-*`, `text-emerald-*`) cuando el proyecto cuenta con tokens de superficie, marca y estado definidos en `DESIGN.md` y clases compuestas en `globals.css` / `showroom.html`.
+- **Tipografía con propósito, restricción de `font-mono` y cero alteración de `tracking-*`:** Prohibido elegir tipografías por inercia del modelo sin justificarlas en `DESIGN.md`. Todo el sistema tipográfico de interfaz (textos, botones, etiquetas de estado, badges y números de UI) se rige por la fuente base `font-sans`; **`font-mono` queda estrictamente reservado para hashes criptográficos (SHA-256), UUIDs técnicos de auditoría, claves API o código fuente puro**. Queda **terminantemente prohibido aplicar cualquier utilidad `tracking-*` (`tracking-tighter`, `tracking-tight`, `tracking-wide`, `tracking-wider`, `tracking-widest`)** en encabezados, subtítulos, labels, badges o tablas. Respetar el piso mínimo inviolable de `10px (0.625rem)`.
 - **Iconografía relevante:** Prohibidos los íconos cliché de IA (destellos/sparkles, varitas mágicas, rayos, orbes, robots) para representar funciones de producto. Si ningún ícono aporta claridad real a la etiqueta, no se usa ícono. Prohibido usar emojis como decoración en interfaces.
 - **Cero activos o reclamos fabricados:** Prohibido inventar testimonios, avatares, certificaciones de seguridad (*"SOC 2"*, *"ISO 27001"*) o porcentajes de mejora sin fuente real provista por el usuario.
 
@@ -87,4 +87,4 @@ Las técnicas visuales no son malas en sí mismas; se convierten en slop cuando 
 - **Performance en marcado:** Reservar dimensiones (`width`, `height` o `aspect-ratio`) en toda imagen, video o embed para evitar saltos de layout (CLS). La imagen principal sobre el pliegue (Hero/LCP) debe llevar `fetchpriority="high"` y nunca `loading="lazy"`. Respetar siempre `@media (prefers-reduced-motion: reduce)`.
 
 ---
-*Framework Baraldi v2.32.0 · Design Intelligence & Anti-Slop Engine*
+*Framework Baraldi v2.32.1 · Design Intelligence & Anti-Slop Engine*

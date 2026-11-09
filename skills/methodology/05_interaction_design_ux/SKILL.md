@@ -5,7 +5,7 @@ description: >
   Define el comportamiento, los estados, la ecualización anatómica entre módulos y el esqueleto de la experiencia.
 keywords: ux, interaction design, micro-interactions, states, wireframes, user experience, module equalization.
 status: operational
-version: "2.32.0"
+version: "2.32.1"
 framework: Baraldi
 stage: "05"
 stage_name: "Interaction Design (UX)"
@@ -61,12 +61,13 @@ En esta etapa no nos preocupamos por los colores, sino por:
 **Activar cuando:** La matriz de estados y el microcopy están validados.
 **Produce:** Creación del inventario exhaustivo de pantallas (Layout Architecture), definición de la **Anatomía Ecualizada de Módulos** y wireframes validados para pasar a la Etapa 06.
 
-#### Protocolo de Ecualización Anatómica de Módulos (Cross-Module Equalization)
-Para evitar que un producto con múltiples secciones (ej. Catálogo, Clientes, Pedidos, Configuración, Reportes) sufra de "deriva estructural" donde cada pantalla ubica los controles en lugares distintos, el Momento 3 establece una **anatomía canónica transversal**:
-1. **Jerarquía de cabecera fija:** Posición uniforme para el título de vista (`H1`), descripción breve y acción primaria (`CTA` principal).
-2. **Política unificada de búsqueda y filtrado:** Definir con claridad si la búsqueda es global (ej. barra superior / atajo de teclado) o local por módulo, prohibiendo duplicar barras de búsqueda redundantes en la misma pantalla.
-3. **Ubicación predecible de sub-navegación:** Si un módulo tiene sub-vistas (ej. pestañas o segmentos), deben ubicarse siempre en el mismo nivel jerárquico respecto al encabezado y antes de las tablas o grillas de datos.
-4. **Adaptabilidad progresiva en móvil:** Definir cómo colapsan las barras de herramientas, filtros múltiples y tarjetas de métricas en pantallas pequeñas (ej. mediante popovers compactos o paneles desplegables) para no empujar el contenido principal fuera del primer pantallazo (*above the fold*).
+#### Protocolo de Ecualización Anatómica de Módulos y Clonación de Vista Madre (Cross-Module Equalization & Master View Skeleton)
+Para evitar que un producto con múltiples secciones (ej. Catálogo, Clientes, Pedidos, Configuración, Reportes) sufra de "deriva estructural" donde cada pantalla ubica los controles o métricas en lugares distintos, el Momento 3 establece una **anatomía canónica transversal**:
+1. **Clonación de la Vista Madre Canónica (Master View Skeleton):** Al diseñar o programar un nuevo módulo dentro de un arquetipo existente (ej. un panel de administración o gestión), la IA tiene prohibido inventar un layout de contenedor, grilla de KPIs o espaciado desde cero. Debe identificar y abrir primero la **vista madre de referencia** aprobada en el proyecto (ej. el catálogo principal de productos) y clonar con exactitud su contenedor raíz, su separación vertical entre bloques (`space-y-*` / `gap-*`) y las proporciones compactas de sus tarjetas métricas.
+2. **Jerarquía de cabecera fija:** Posición uniforme para el título de vista (`H1`), descripción breve y acción primaria (`CTA` principal).
+3. **Ubicación predecible de sub-navegación y KPIs:** Si un módulo tiene sub-vistas (ej. pestañas o segmentos) y fila horizontal de mini-KPIs, deben ubicarse siempre en el mismo orden jerárquico inmediatamente debajo del encabezado y antes de la barra de filtros o tablas de datos.
+4. **Política unificada de búsqueda y filtrado:** Definir con claridad si la búsqueda es global (ej. barra superior / atajo de teclado) o local por módulo, prohibiendo duplicar barras de búsqueda redundantes en la misma pantalla.
+5. **Adaptabilidad progresiva en móvil:** Definir cómo colapsan las barras de herramientas, filtros múltiples y tarjetas de métricas en pantallas pequeñas (ej. mediante popovers compactos o paneles desplegables) para no empujar el contenido principal fuera del primer pantallazo (*above the fold*).
 
 ---
 
@@ -136,4 +137,4 @@ En esta etapa, el Agente no solo dibuja; enseña y facilita la decisión arquite
 *   **Traspaso de dibujo (handoff visual al humano):** Al finalizar de entregar los artefactos, la IA debe detenerse y delegar explícitamente el diseño al humano con este enfoque: *"Listo, tenés todos los artefactos de la Etapa 05. Ahora te toca a vos diseñar los wireframes (en baja o media fidelidad) basándote en estas definiciones. Tenés dos opciones para que trabajemos juntos: 1) Si usás el protocolo MCP (Figma, Stitch), nos conectamos al lienzo y lo armamos en equipo. 2) Si preferís hacerlo por tu cuenta, no es obligatorio usar MCP: podés pasarme capturas de pantalla por acá, o ir guardando tus exportaciones dentro de la carpeta 'docs-fwbaraldi/05_Interaction_Design/wireframes/' y avisarme para que yo las revise, critique y vayamos iterando versión a versión."*
 
 ---
-*Framework Baraldi v2.32.0 · skills/methodology/05_interaction_design_ux/SKILL.md*
+*Framework Baraldi v2.32.1 · skills/methodology/05_interaction_design_ux/SKILL.md*

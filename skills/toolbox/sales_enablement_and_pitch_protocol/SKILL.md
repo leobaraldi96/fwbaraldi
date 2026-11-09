@@ -4,7 +4,7 @@ description: >
   Protocolo de Habilitación de Ventas, Propuestas Comerciales y Pitch. Creación de materiales
   (Pitch Decks, One-pagers, Propuestas B2B) y entrenamiento para el cierre y manejo de objeciones.
 keywords: ventas, pitch, deck, one-pager, propuestas, objeciones, sales-enablement, evangelización
-version: "2.32.0"
+version: "2.32.1"
 ---
 
 # Protocolo de Habilitación de Ventas y Pitch
@@ -60,4 +60,4 @@ Utilizar el framework de respuesta: **Validar -> Redirigir -> Probar -> Avanzar*
 3. **Objection Battle Card:** Respuestas preparadas para los 5 bloqueos más comunes del decisor.
 
 ---
-*Framework Baraldi v2.32.0 · Habilitación de Ventas*
+*Framework Baraldi v2.32.1 · Habilitación de Ventas*

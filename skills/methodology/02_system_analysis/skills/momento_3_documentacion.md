@@ -11,7 +11,7 @@ description: >
   Usalo cuando Dependency Map y Risk Map estén completos y aprobados.
   NO LO USES sin los artefactos del Momento 2 aprobados.
 skill_id: system_analysis_momento_3
-version: "2.32.0"
+version: "2.32.1"
 framework: Baraldi
 stage: "02 - System Analysis"
 momento: 3
@@ -77,4 +77,4 @@ Incluir al pie los **Momentos de verdad** (puntos donde un fallo técnico impact
 - **Contenido:** Estado del Architecture Overview, hallazgos del Service Blueprint y los 3 inputs críticos que condicionan la Etapa 03.
 
 ---
-*Framework Baraldi v2.32.0 · skills/methodology/02_system_analysis/skills/momento_3_documentacion.md*
+*Framework Baraldi v2.32.1 · skills/methodology/02_system_analysis/skills/momento_3_documentacion.md*

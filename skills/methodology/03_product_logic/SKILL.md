@@ -6,7 +6,7 @@ description: >
   Keywords: product logic, reglas de negocio, modelo de datos, entidades,
   kpi, north star, flujos logicos, state machine, permisos, data lineage.
   Activar cuando se cierre la Etapa 02 (System Analysis).
-version: "2.32.0"
+version: "2.32.1"
 framework: Baraldi
 stage: "03"
 stage_name: "Product Logic"
@@ -145,4 +145,4 @@ El Agente debe **bloquear** el proceso si detecta:
 
 ---
 
-*Framework Baraldi v2.32.0 · skills/methodology/03_product_logic/SKILL.md*
+*Framework Baraldi v2.32.1 · skills/methodology/03_product_logic/SKILL.md*

@@ -6,7 +6,7 @@ description: >
   para ir más allá del diseño de interfaces y enfocarse en sistemas y outcomes.
   Úsalo cuando el usuario quiera iniciar un proceso de diseño de producto estructurado.
 keywords: product-design, framework-baraldi, problem-framing, system-analysis, ux-strategy, systems-thinking, continuous-discovery, telemetry, showroom-ui
-version: "2.32.0"
+version: "2.32.1"
 ---
 
 # Framework Baraldi - Orquestador Global
@@ -113,5 +113,5 @@ El Framework Baraldi **rechaza** el modelo de "IA Generadora de Resultados Final
 - **Salvaguarda y Migración de Memoria:** Ante consultas o avisos de formateo de equipo o cambio de máquina, la IA debe orientar proactivamente al usuario a ejecutar los comandos de backup (`fwbaraldi backup` / `fwbaraldi restore`) para prevenir la pérdida del conocimiento acumulado.
 
 ---
-*Framework Baraldi v2.32.0 · Creado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.32.1 · Creado y mantenido por Leo Baraldi.*
 

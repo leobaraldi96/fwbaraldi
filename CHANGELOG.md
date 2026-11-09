@@ -5,6 +5,21 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.32.1] - 2026-11-09
+
+### 🛡️ Promoción de Aprendizajes de Trinchera al Core (Harness² -> Anillo 1)
+- **Blindaje de la Triple Aduana y Consumo de Clases Globales (`00_boot/context.md`, `06_visual_design_ui` y `ai_ui_compliance_audit_engine`):**
+  - **Lectura obligatoria de CSS global y Vista Madre en el Pre-flight Check:** Antes de generar código visual, el agente debe consultar explícitamente las clases atómicas compuestas de `globals.css` / `showroom.html` (ej. `.badge-pill`, `.badge-tech`, `.btn-primary`) y la **Vista Madre Canónica (*Master View Skeleton*)** del proyecto, prohibiendo re-implementar badges o botones con cadenas ad-hoc de Tailwind o usar colores/sombras genéricas fuera de tokens (`bg-gray-*`, `text-green-*`, `bg-amber-*`, `text-emerald-*`, `shadow-2xs`).
+  - **Prohibición absoluta de manipulación artificial de letter-spacing (`tracking-*`):** Expansión del bloqueo tipográfico a toda la familia de utilidades `tracking-*` (`tracking-tighter`, `tracking-tight`, `tracking-wide`, `tracking-wider`, `tracking-widest`) en encabezados, subtítulos, labels, badges y tablas.
+  - **Restricción semántica de `font-mono` en UI (`momento_0_design_intelligence.md`):** Consagrado el uso exclusivo de `font-sans` para todos los textos, botones, estados y números de interfaz; `font-mono` queda estrictamente reservado para hashes criptográficos (SHA-256), UUIDs de auditoría, claves API o bloques de código fuente.
+  - **Prohibición de controles híbridos (botones disfrazados de checkboxes):** Bloqueo en `ai_ui_compliance_audit_engine` contra botones que alternan variantes e íconos (`<Square>` / `<CheckSquare>`) para simular selección múltiple; exigencia de controles de formulario semánticos (`<input type="checkbox">` / `Checkbox` accesible).
+- **Arquitectura Antimonolítica Estricta y Clonación de Vista Madre (`05_interaction_design_ux` y `06_visual_design_ui`):**
+  - **Techo duro de 350 líneas y cero modales anidados:** Ningún archivo de vista o componente puede superar las `350` líneas, y queda prohibido anidar múltiples modales o sub-flujos dentro del mismo archivo (cada modal se desacopla en su propio submódulo).
+  - **Clonación de Esqueleto Canónico (*Master View Skeleton*):** Al crear un nuevo módulo dentro de un arquetipo existente (ej. un panel de administración), el agente debe clonar el contenedor raíz, el espaciado vertical (`space-y-*` / `gap-*`) y la secuencia jerárquica de la vista madre aprobada en el proyecto.
+- **Inmunidad Operativa y Gestión Documental para Facturación (`00_core_guardrails`):**
+  - **Inmunidad del servidor de desarrollo local (`npm run dev`) y de supresiones del humano:** Prohibido matar procesos Node o reiniciar servidores locales activos del usuario, y prohibido reintroducir bloques visuales o elementos eliminados deliberadamente por el humano en turnos previos.
+  - **Enrutamiento estricto por dominio (`docs-fwbaraldi/<modulo-o-tarea>/`) y bitácora mensual de tareas (`docs-fwbaraldi/informes/REGISTRO_TAREAS_YYYY-MM.md`):** Prohibición de dispersar planillas, CSVs o entregables en carpetas temporales (`scratch/` o raíz), y registro continuo en el mismo turno de cada tarea ejecutada con su impacto de negocio para rendición de cuentas y facturación mensual.
+
 ## [2.32.0] - 2026-11-01
 
 ### 🧠 Optimización para Modelos de Frontera, Autonomía por Radio de Explosión y Linaje de Datos
