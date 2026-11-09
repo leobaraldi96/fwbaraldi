@@ -53,17 +53,26 @@ Si se detectan desvíos, generar un **Prompt de Corrección Exacto** para subsan
 
 ---
 
-## Delivery Gate (Compuerta obligatoria pre-entrega)
+## Delivery Gate Determinista (Compuerta ejecutable pre-entrega)
 
-Antes de dar por finalizada cualquier creación o edición de interfaz, el agente debe ejecutar mentalmente y reportar este **Delivery Gate binario (PASS / FAIL)** respaldado por evidencia concreta en el código:
+Para eliminar el sesgo de auto-confirmación donde la IA cree haber respetado las reglas pero filtró clases por inercia de pre-entrenamiento, antes de dar por finalizada cualquier creación o edición de interfaz el agente debe:
 
-- [ ] **Tokens, Clases Atómicas y Triple Aduana:** ¿El 100% de colores, tipografías (`font-sans` en UI, `font-mono` solo en hashes/código), radios y espaciados provienen de `DESIGN.md`, respetan el esqueleto de la Vista Madre y consumen las clases de `globals.css` / `showroom.html` sin CSS inline ni clases cromáticas genéricas (`bg-gray-*`, `text-green-*`, `bg-amber-*`)?
+1. **Re-hidratación previa (`Tool-Call Gate`):** Haber ejecutado `read_file` en el mismo turno sobre `globals.css` y la Vista Madre antes de crear una vista nueva.
+2. **Ejecución del Linter Determinista (`ui-check.js`):** Ejecutar por terminal (`run_command`):
+   ```bash
+   node ~/.gemini/config/skills/baraldi-framework/scripts/ui-check.js [archivos-modificados]
+   ```
+   El script valida mecánicamente y devuelve `EXIT CODE 1` si existe `style=`, cualquier `tracking-*`, clases genéricas (`bg-gray-*`, `shadow-2xs`), `font-mono` en UI, guiones largos, botones híbridos con íconos de checkbox, modales anidados o archivos `> 350` líneas.
+3. **Verificación del Checklist Binario (PASS / FAIL):**
+
+- [ ] **Ejecución de `ui-check.js` en verde (`PASS`):** ¿El script determinista corrió sobre los archivos tocados y devolvió `0 violaciones críticas`?
+- [ ] **Tokens, Clases Atómicas y Triple Aduana:** ¿El 100% de colores, tipografías (`font-sans` en UI, `font-mono` solo en hashes/código), radios y espaciados provienen de `DESIGN.md`, respetan el esqueleto de la Vista Madre (o usan `<PageShell>`) y consumen las clases de `globals.css` / `showroom.html` sin CSS inline ni clases cromáticas genéricas (`bg-gray-*`, `text-green-*`, `bg-amber-*`)?
 - [ ] **Límites de dosis, cero `tracking-*` y arquitectura modular:** ¿La vista está libre de cualquier utilidad `tracking-*`, no supera las **350 líneas**, no tiene modales anidados en el mismo archivo y está libre de guiones largos, emojis decorativos, píldoras redundantes sobre el H1, puntos pulsantes falsos, métricas inventadas y exceso de blur/glow?
 - [ ] **Completitud funcional, controles nativos y estados:** ¿Todos los controles interactivos tienen comportamiento real (cero botones muertos, cero botones híbridos simulando checkboxes con íconos) y las vistas de datos contemplan estados vacío, cargando y error accionables con el glosario de `VOICE.md`?
 - [ ] **Accesibilidad, foco y táctil:** ¿Contraste AA verificado (`4.5:1` texto / `3:1` UI), navegación por teclado (`Tab`/`Enter`/`Escape`), `:focus-visible` presente, `cursor: pointer` activo y áreas táctiles de `44x44px` con separación en móvil?
 - [ ] **Performance y código limpio:** ¿Imágenes dimensionadas, Hero con `fetchpriority="high"` (sin lazy), soporte para `prefers-reduced-motion` y código libre de comentarios basura de IA?
 
-*Si algún punto arroja **FAIL**, el agente no debe entregar dando la tarea por terminada: debe corregir el código primero, volver a validar la compuerta y recién entonces presentar el resultado.*
+*Si `ui-check.js` o algún punto arroja **FAIL**, el agente tiene **TERMINANTEMENTE PROHIBIDO** entregar dando la tarea por terminada: debe corregir el código primero, volver a correr `ui-check.js` hasta obtener `PASS` y recién entonces presentar el resultado.*
 
 ---
 

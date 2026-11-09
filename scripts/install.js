@@ -12,6 +12,7 @@ import { fileURLToPath } from 'url';
 
 import { runBackup } from './backup.js';
 import { runRestore } from './restore.js';
+import { runUiCheck } from './ui-check.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -197,6 +198,7 @@ function configureGlobalAgentsRule() {
 - Cuando el usuario solicite iniciar, alinear o diseñar con Framework Baraldi, sigue estrictamente la metodología, contratos y protocolos definidos en la skill \`baraldi-framework\`.
 - Persiste el conocimiento y las decisiones de diseño utilizando el servidor de memoria Engram (\`mem_save\`, \`mem_context\`, \`mem_search\`).
 - **Gatillo de aprendizaje en caliente (Hot-Reflection - Harness²):** Cada vez que el usuario corrija un hábito o error de comportamiento de la IA o establezca una preferencia transversal de trabajo durante una conversación, registra esa regla **en ese mismo turno** (sin esperar al cierre de la sesión) en \`~/.fwbaraldi/user_harness.md\` y en Engram (\`scope: "personal"\`, \`topic_key: "harness/invariant-rule"\`).
+- **Compuerta Determinista de UI (Tool-Call Gate & ui-check P0):** Antes de crear o editar cualquier vista UI (\`.tsx\`, \`.jsx\`, \`.html\`), ejecuta \`read_file\` en ese mismo turno sobre \`globals.css\` y 1 vista canónica de referencia. Tras editar y antes de responder al usuario, ejecuta por terminal \`node "~/.gemini/config/skills/baraldi-framework/scripts/ui-check.js" <archivos-tocados>\` y corrige cualquier \`[FAIL]\` antes de entregar.
 `;
 
   let existing = '';
@@ -221,6 +223,11 @@ async function run() {
 
   if (firstArg === 'restore') {
     await runRestore(args.slice(1));
+    return;
+  }
+
+  if (firstArg === 'ui-check' || firstArg === 'uicheck' || firstArg === 'lint-ui') {
+    await runUiCheck(args.slice(1));
     return;
   }
 
@@ -251,6 +258,7 @@ Uso:
 
 Comandos:
   (default)             Instala y despliega el orquestador global
+  ui-check [archivos]   Ejecuta el UI Gatekeeper determinista sobre vistas modificadas
   backup                Crea una copia de seguridad (.zip) de la memoria Engram
   restore               Restaura una copia de seguridad de la memoria Engram
 

@@ -7,7 +7,14 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
 ## [2.32.1] - 2026-11-09
 
-### 🛡️ Promoción de Aprendizajes de Trinchera al Core (Harness² -> Anillo 1)
+### 🛡️ Compuerta Determinista de UI (`ui-check.js`), Re-hidratación en Caliente y Promoción Harness²
+- **Linter Determinista Ejecutable de UI (`scripts/ui-check.js` / `fwbaraldi ui-check`):**
+  - Nuevo validador mecánico de ejecución obligatoria por terminal (`run_command`) antes de dar por cerrada cualquier creación o edición de interfaz.
+  - Extrae y lista automáticamente las clases compuestas reales de `globals.css` (ej. `.badge-pill`, `.badge-tech`, `.btn-primary`) y devuelve `EXIT CODE 1 / [FAIL]` con el número de línea exacto si detecta: estilos inline (`style=`), cualquier utilidad `tracking-*`, clases genéricas fuera de token (`bg-gray-*`, `text-gray-*`, `shadow-2xs`), `font-mono` en elementos de UI, guiones largos (`—` / `–`), botones híbridos simulando checkboxes con íconos (`<Square>` / `<CheckSquare>`), múltiples modales anidados en el mismo archivo o archivos mayores a `350` líneas.
+- **Re-hidratación en Caliente por Herramientas (`Tool-Call Gate` en `00_boot/context.md` y `AGENTS.md`):**
+  - Para eliminar el decaimiento de atención por distancia de contexto (*Context Dilution*), antes de usar `write_file` o `edit_file` en una vista nueva, el agente tiene obligación mecánica de ejecutar `read_file` en ese mismo turno sobre `globals.css` y sobre 1 Vista Madre Canónica existente, inyectando los tokens reales en los últimos 1.000 tokens de su memoria inmediata.
+- **Patrón de Layout Shell Cerrado (`<PageShell>` / `<AdminPageLayout>`):**
+  - Estandarizado en `00_boot/context.md` y Etapa 06 el uso de componentes contenedores cerrados (`<PageShell>`) que reciben `title`, `subtitle`, `actions` y `kpis` por props cuando dos o más vistas comparten estructura, erradicando la re-escritura manual de cabeceras y grillas de métricas.
 - **Blindaje de la Triple Aduana y Consumo de Clases Globales (`00_boot/context.md`, `06_visual_design_ui` y `ai_ui_compliance_audit_engine`):**
   - **Lectura obligatoria de CSS global y Vista Madre en el Pre-flight Check:** Antes de generar código visual, el agente debe consultar explícitamente las clases atómicas compuestas de `globals.css` / `showroom.html` (ej. `.badge-pill`, `.badge-tech`, `.btn-primary`) y la **Vista Madre Canónica (*Master View Skeleton*)** del proyecto, prohibiendo re-implementar badges o botones con cadenas ad-hoc de Tailwind o usar colores/sombras genéricas fuera de tokens (`bg-gray-*`, `text-green-*`, `bg-amber-*`, `text-emerald-*`, `shadow-2xs`).
   - **Prohibición absoluta de manipulación artificial de letter-spacing (`tracking-*`):** Expansión del bloqueo tipográfico a toda la familia de utilidades `tracking-*` (`tracking-tighter`, `tracking-tight`, `tracking-wide`, `tracking-wider`, `tracking-widest`) en encabezados, subtítulos, labels, badges y tablas.
