@@ -10,7 +10,7 @@ description: >
   Usalo cuando el Actor Map esté aprobado por el equipo.
   NO LO USES sin el Actor Map del Momento 1 aprobado.
 skill_id: system_analysis_momento_2
-version: "2.32.1"
+version: "2.33.0"
 framework: Baraldi
 stage: "02 - System Analysis"
 momento: 2
@@ -73,4 +73,4 @@ Separar explícitamente **Riesgos que bloquean el paso a la Etapa 03** de los **
 - **Contenido:** SPOFs detectados, riesgos bloqueantes, restricciones críticas de APIs externas y estrategias de fallback.
 
 ---
-*Framework Baraldi v2.32.1 · skills/methodology/02_system_analysis/skills/momento_2_dependencias.md*
+*Framework Baraldi v2.33.0 · skills/methodology/02_system_analysis/skills/momento_2_dependencias.md*

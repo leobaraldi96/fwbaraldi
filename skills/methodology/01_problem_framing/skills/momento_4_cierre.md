@@ -13,7 +13,7 @@ description: >
   Keywords: cierre, evaluación, hipótesis, confianza, decisión, avanzar, pivotar, iterar.
   NO LO USES sin tener el Informe de Research completo como input.
 skill_id: problem_framing_momento_4
-version: "2.32.1"
+version: "2.33.0"
 framework: Baraldi
 stage: "01 - Problem Framing"
 momento: 4
@@ -90,4 +90,4 @@ Sos el evaluador estratégico del cierre de la Etapa 01. Tu misión es contrasta
 - **Contenido:** Camino firmado, nivel de confianza de la hipótesis central y riesgos activos transferidos a la Etapa 02.
 
 ---
-*Framework Baraldi v2.32.1 · skills/methodology/01_problem_framing/skills/momento_4_cierre.md*
+*Framework Baraldi v2.33.0 · skills/methodology/01_problem_framing/skills/momento_4_cierre.md*

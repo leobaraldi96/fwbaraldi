@@ -2,7 +2,21 @@
 import fs from 'fs';
 import path from 'path';
 import { execSync } from 'child_process';
-import chalk from 'chalk';
+
+// Helper ANSI nativo (Zero-Dependencies) para que ui-check.js funcione desde cualquier carpeta sin node_modules
+const chalk = {
+    cyan: (s) => `\x1b[36m${s}\x1b[0m`,
+    dim: (s) => `\x1b[2m${s}\x1b[0m`,
+    yellow: (s) => `\x1b[33m${s}\x1b[0m`,
+    green: (s) => `\x1b[32m${s}\x1b[0m`,
+    red: (s) => `\x1b[31m${s}\x1b[0m`,
+    white: (s) => `\x1b[37m${s}\x1b[0m`,
+    bold: {
+        magenta: (s) => `\x1b[1m\x1b[35m${s}\x1b[0m`,
+        red: (s) => `\x1b[1m\x1b[31m${s}\x1b[0m`,
+        green: (s) => `\x1b[1m\x1b[32m${s}\x1b[0m`
+    }
+};
 
 const UI_EXTENSIONS = new Set(['.tsx', '.jsx', '.html', '.vue', '.svelte', '.php']);
 const MAX_COMPONENT_LINES = 350;
@@ -143,11 +157,64 @@ export async function runUiCheck(args = []) {
             });
         }
 
-        // Line-by-line inspection
-        lines.forEach((lineText, idx) => {
+        // Line-by-line inspection (con estado para bloques de comentarios y bloques <style>)
+        const isShowroomFile = /showroom(_ui)?\.html$/i.test(filePath);
+        let inBlockComment = false;
+        let inStyleTag = false;
+
+        lines.forEach((rawLineText, idx) => {
             const lineNum = idx + 1;
+
+            // Limpiar comentarios inline en la misma línea (<!-- ... -->, {/* ... */}, /* ... */, // ...)
+            let lineText = rawLineText
+                .replace(/<!--[\s\S]*?-->/g, '')
+                .replace(/\{\/\*[\s\S]*?\*\/\}/g, '')
+                .replace(/\/\*[\s\S]*?\*\//g, '');
+
+            // Manejo de comentarios multilínea /* ... */ o <!-- ... -->
+            if (inBlockComment) {
+                if (lineText.includes('-->') || lineText.includes('*/')) {
+                    inBlockComment = false;
+                    lineText = lineText.replace(/^[\s\S]*?(?:-->|\*\/)/, '');
+                } else {
+                    return;
+                }
+            }
+            if (lineText.includes('<!--') && !lineText.includes('-->')) {
+                inBlockComment = true;
+                lineText = lineText.replace(/<!--[\s\S]*$/, '');
+            } else if ((lineText.includes('/*') && !lineText.includes('*/'))) {
+                inBlockComment = true;
+                lineText = lineText.replace(/\/\*[\s\S]*$/, '');
+            }
+
             const trimmed = lineText.trim();
-            if (trimmed.startsWith('//') || trimmed.startsWith('/*') || trimmed.startsWith('*')) return;
+            if (!trimmed || trimmed.startsWith('//') || trimmed.startsWith('*')) return;
+
+            // Detección de bloques <style> empotrados y colores HEX crudos en CSS
+            if (/<style\b[^>]*>/i.test(lineText)) {
+                inStyleTag = true;
+                if (!isShowroomFile) {
+                    fileErrors.push({
+                        line: lineNum,
+                        rule: 'NO_EMBEDDED_STYLE_TAG',
+                        msg: `Prohibido insertar bloques <style> empotrados en vistas o componentes. Usa hojas de estilo globales (globals.css) y tokens del sistema.`
+                    });
+                }
+            }
+            if (inStyleTag) {
+                const rawHexInCss = lineText.match(/#[0-9a-fA-F]{3,8}\b/);
+                if (rawHexInCss) {
+                    fileErrors.push({
+                        line: lineNum,
+                        rule: 'NO_RAW_HEX_IN_STYLE',
+                        msg: `Color HEX crudo ('${rawHexInCss[0]}') dentro de <style>. Usa variables CSS ('var(--*)') o espacio perceptual 'oklch(...)'.`
+                    });
+                }
+                if (/<\/style>/i.test(lineText)) {
+                    inStyleTag = false;
+                }
+            }
 
             // 4. Inline Style Gate
             if (/\bstyle\s*=\s*(\{\{|["'])/.test(lineText)) {
@@ -196,7 +263,46 @@ export async function runUiCheck(args = []) {
                 });
             }
 
-            // 9. Ad-hoc Badge Inflation Warning
+            // 9. Minimum Font Size A11y Gate (>= 10px / 0.625rem)
+            const sub10pxMatch = lineText.match(/\btext-\[(?:[0-9](?:\.[0-9]+)?px|0\.(?:[0-5][0-9]*|6[01][0-9]*|62[0-4][0-9]*)rem)\]/i);
+            if (sub10pxMatch) {
+                fileErrors.push({
+                    line: lineNum,
+                    rule: 'MIN_FONT_SIZE_10PX',
+                    msg: `Violación del umbral mínimo A11y (${sub10pxMatch[0]} < 10px / 0.625rem). Ningún texto en interfaz puede ser menor a 10px.`
+                });
+            }
+
+            // 10. Arbitrary Tailwind JIT Values Gate (No Inline Values: #hex, rgb, px)
+            const arbitraryHexOrColor = lineText.match(/\b(?:bg|text|border|ring|fill|stroke|from|via|to)-\[(?:#[0-9a-fA-F]{3,8}|rgb[a]?\([^)]+\)|hsl[a]?\([^)]+\))\]/);
+            if (arbitraryHexOrColor) {
+                fileErrors.push({
+                    line: lineNum,
+                    rule: 'NO_ARBITRARY_COLOR',
+                    msg: `Color arbitrario hardcodeado detectado ('${arbitraryHexOrColor[0]}'). Usa exclusivamente los tokens de color de DESIGN.md / globals.css.`
+                });
+            }
+
+            const arbitraryPx = lineText.match(/\b(?:text|p|px|py|pt|pb|pl|pr|m|mx|my|mt|mb|ml|mr|gap|gap-x|gap-y|rounded|top|bottom|left|right)-\[[0-9.]+px\]/);
+            if (arbitraryPx) {
+                fileErrors.push({
+                    line: lineNum,
+                    rule: 'NO_ARBITRARY_PX',
+                    msg: `Valor arbitrario en píxeles detectado ('${arbitraryPx[0]}'). Respeta la política REM-First y la escala de espaciado/tipografía del sistema.`
+                });
+            }
+
+            // 11. No Emojis in Product UI Gate
+            const emojiMatch = lineText.match(/\p{Extended_Pictographic}/u);
+            if (emojiMatch && !/[©®™]/.test(emojiMatch[0])) {
+                fileErrors.push({
+                    line: lineNum,
+                    rule: 'NO_UI_EMOJI',
+                    msg: `Emoji decorativo detectado en código de interfaz ('${emojiMatch[0]}'). Usa iconografía vectorial SVG del sistema (ej. Lucide).`
+                });
+            }
+
+            // 12. Ad-hoc Badge Inflation Warning
             if (
                 canonicalClasses.includes('.badge-pill') &&
                 /\b(rounded-full|rounded)\b/.test(lineText) &&

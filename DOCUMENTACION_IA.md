@@ -3,7 +3,7 @@
 > **⚠️ Este archivo es para humanos (desarrolladores, configuradores, colaboradores) y para agentes externos en primera instalación.**
 > Los modelos de IA que ya tienen el framework instalado **no deben cargar este archivo** en el ciclo de boot porque genera tokens redundantes sin aportar valor operativo. El agente carga directamente `SKILL.md` -> `00_boot/context.md` -> `~/.fwbaraldi/user_harness.md` -> skills específicas.
 
-**AI-Augmented System Product Design · v2.32.1 · Leo Baraldi**
+**AI-Augmented System Product Design · v2.33.0 · Leo Baraldi**
 
 ---
 
@@ -21,7 +21,7 @@ README.md -> ARQUITECTURA_CORE.md -> CHANGELOG.md
 
 ---
 
-## 📁 Mapa del repositorio (v2.32.1)
+## 📁 Mapa del repositorio (v2.33.0)
 
 ```text
 fwbaraldi/
@@ -31,24 +31,24 @@ fwbaraldi/
 │
 ├── skills/
 │   ├── core/
-│   │   ├── 00_core_guardrails/       <- Reglas de disciplina, ergonomía cognitiva y comunicación (v2.32.1)
-│   │   ├── 00_kalman_guardrail/      <- Calibración por Blast Radius y control de deriva (v2.32.1)
-│   │   ├── 00_operational_hygiene/   <- Branches, soberanía Git manual y handoff (v2.32.1)
-│   │   ├── 00_project_health_audit/  <- Framework Doctor (Auditoría de salud v2.32.1)
-│   │   ├── 00_skill_evaluation/      <- Skill Judge y Contraste Conductual Harness² (v2.32.1)
+│   │   ├── 00_core_guardrails/       <- Reglas de disciplina, ergonomía cognitiva y comunicación (v2.33.0)
+│   │   ├── 00_kalman_guardrail/      <- Calibración por Blast Radius y control de deriva (v2.33.0)
+│   │   ├── 00_operational_hygiene/   <- Branches, soberanía Git manual y handoff (v2.33.0)
+│   │   ├── 00_project_health_audit/  <- Framework Doctor (Auditoría de salud v2.33.0)
+│   │   ├── 00_skill_evaluation/      <- Skill Judge y Contraste Conductual Harness² (v2.33.0)
 │   │   └── 00_system_awareness/      <- Consciencia Sistémica, 3 Anillos y Memoria (Engram v1.20.0)
 │   │
 │   ├── methodology/
-│   │   ├── 01_problem_framing/       <- Hardened v2.32.1
-│   │   ├── 02_system_analysis/       <- Hardened v2.32.1
-│   │   ├── 03_product_logic/         <- Hardened v2.32.1 (Parent/Child Slicing + Data Lineage)
-│   │   ├── 04_information_architecture/ <- Hardened v2.32.1
-│   │   ├── 05_interaction_design_ux/ <- Hardened v2.32.1 (Cross-Module Equalization)
-│   │   ├── 06_visual_design_ui/      <- Hardened v2.32.1 (Triple Aduana)
-│   │   ├── 07_handover_qa/           <- Hardened v2.32.1 (SDD Review Path + Live Env Audit)
-│   │   └── 08_continuous_discovery_telemetry/ <- Telemetría y Data UX v2.32.1
+│   │   ├── 01_problem_framing/       <- Hardened v2.33.0
+│   │   ├── 02_system_analysis/       <- Hardened v2.33.0
+│   │   ├── 03_product_logic/         <- Hardened v2.33.0 (Parent/Child Slicing + Data Lineage)
+│   │   ├── 04_information_architecture/ <- Hardened v2.33.0
+│   │   ├── 05_interaction_design_ux/ <- Hardened v2.33.0 (Cross-Module Equalization)
+│   │   ├── 06_visual_design_ui/      <- Hardened v2.33.0 (Triple Aduana)
+│   │   ├── 07_handover_qa/           <- Hardened v2.33.0 (SDD Review Path + Live Env Audit)
+│   │   └── 08_continuous_discovery_telemetry/ <- Telemetría y Data UX v2.33.0
 │   │
-│   └── toolbox/                      <- Arsenal de 16 protocolos estratégicos (v2.32.1)
+│   └── toolbox/                      <- Arsenal de 16 protocolos estratégicos (v2.33.0)
 │
 ├── templates/                        <- Suite de Contratos Vivos de Soberanía
 │   ├── business_md.md
@@ -81,27 +81,35 @@ fwbaraldi/
 
 Si un usuario te pide: *"Leé este repositorio de GitHub e instalá el Framework Baraldi en mi sistema / en Antigravity"*, debés ejecutar preferentemente `node scripts/install.js -y` o seguir estrictamente estas reglas:
 
-### ⛔ Regla de oro (Single Skill Root Container)
-1. **Un solo skill global:** el Framework Baraldi debe instalarse como **un único orquestador** dentro de la carpeta:
+### ⛔ Regla de oro (Single Skill Root Container - Omnipresente)
+1. **Un solo skill global por entorno:** el Framework Baraldi debe instalarse como **un único orquestador** dentro de las carpetas globales de cada agente:
    ```text
-   ~/.gemini/config/skills/baraldi-framework/
+   ~/.gemini/config/skills/baraldi-framework/   (Antigravity / Gemini)
+   ~/.claude/skills/baraldi-framework/          (Claude Code)
    ```
-2. **Estrictamente prohibido:** desglosar o copiar las subcarpetas internas (`skills/core/`, `skills/methodology/`, `skills/toolbox/`) directamente a la raíz `~/.gemini/config/skills/`. Si hacés esto, contaminarás la interfaz del usuario con más de 26 skills sueltas.
-3. **Higiene automática:** si detectás que en `~/.gemini/config/skills/` existen sub-skills sueltas de FWB (como `00_core_guardrails`, `01_problem_framing`, `advanced_prioritization_protocol`, etc.), debés eliminarlas de la raíz y conservar únicamente la carpeta contenedora `baraldi-framework/`.
+2. **Estrictamente prohibido:** desglosar o copiar las subcarpetas internas (`skills/core/`, `skills/methodology/`, `skills/toolbox/`) directamente a la raíz `~/.gemini/config/skills/` o `~/.claude/skills/`. Si hacés esto, contaminarás la interfaz del usuario con más de 26 skills sueltas.
+3. **Higiene automática:** si detectás que en `~/.gemini/config/skills/` o `~/.claude/skills/` existen sub-skills sueltas de FWB (como `00_core_guardrails`, `01_problem_framing`, `advanced_prioritization_protocol`, etc.), debés eliminarlas de la raíz y conservar únicamente la carpeta contenedora `baraldi-framework/`.
 
-### 📂 Estructura global esperada en el sistema del usuario
+### 📂 Estructura global esperada en el sistema del usuario (Omnipresente)
 ```text
 ~/
 ├── .fwbaraldi/
 │   ├── bin/engram(.exe)               <- Binario oficial del motor de memoria Engram
+│   ├── package/                       <- Paquete maestro con dependencias CLI
 │   └── user_harness.md                <- Arnés Evolutivo Personal (Anillo 2 - NUNCA sobrescribir si ya existe)
 ├── .engram/
 │   └── engram.db                      <- Base de datos SQLite local de memorias
+├── .claude.json                       <- Servidor MCP Engram registrado para Claude Code
+├── .claude/
+│   ├── CLAUDE.md                      <- Regla de integración global FWB y ruta absoluta a ui-check.js
+│   ├── commands/                      <- 8 comandos nativos /fwb-* (fwb-init.md, fwb-etapa.md, etc.)
+│   └── skills/
+│       └── baraldi-framework/         <- ÚNICA carpeta de FWB en .claude/skills/
 └── .gemini/config/
-    ├── AGENTS.md                      <- Regla de integración global FWB
-    ├── mcp_config.json                <- Servidor MCP Engram configurado
+    ├── AGENTS.md                      <- Regla de integración global FWB y ruta absoluta a ui-check.js
+    ├── mcp_config.json                <- Servidor MCP Engram configurado para Antigravity
     └── skills/
-        └── baraldi-framework/         <- ÚNICA carpeta en skills/
+        └── baraldi-framework/         <- ÚNICA carpeta de FWB en .gemini/config/skills/
             ├── SKILL.md               <- Orquestador maestro (visible para el IDE)
             ├── package.json
             ├── 00_boot/
@@ -111,14 +119,14 @@ Si un usuario te pide: *"Leé este repositorio de GitHub e instalá el Framework
             │   └── toolbox/
             ├── references/
             ├── templates/
-            └── scripts/
+            └── scripts/               <- Incluye ui-check.js (Zero-Dependencies) y align.js
 ```
 
-### ⚙️ Componentes a configurar por la IA
-1. **Engram MCP:** descargar el binario `engram` oficial en `~/.fwbaraldi/bin/` y registrarlo en `~/.gemini/config/mcp_config.json` bajo `mcpServers.engram`.
+### ⚙️ Componentes a configurar por la IA (`node scripts/install.js -y`)
+1. **Engram MCP:** descargar el binario `engram` oficial en `~/.fwbaraldi/bin/` y registrarlo en `~/.gemini/config/mcp_config.json` y en `~/.claude.json` bajo `mcpServers.engram`.
 2. **Arnés evolutivo del usuario (`Harness²`):** si `~/.fwbaraldi/user_harness.md` no existe, copiar `templates/user_harness.md` hacia `~/.fwbaraldi/user_harness.md`. Si ya existe, **preservarlo intacto sin sobrescribirlo** para no perder el aprendizaje acumulado del usuario.
-3. **Skill global:** clonar/copiar el repositorio completo en `~/.gemini/config/skills/baraldi-framework`.
-4. **Reglas globales:** añadir en `~/.gemini/config/AGENTS.md` el bloque de integración del Framework Baraldi.
+3. **Skill global omnipresente:** sincronizar el orquestador en `~/.gemini/config/skills/baraldi-framework`, `~/.claude/skills/baraldi-framework` y `~/.fwbaraldi/package`.
+4. **Reglas globales y comandos `/fwb-*`:** actualizar `~/.gemini/config/AGENTS.md` y `~/.claude/CLAUDE.md` con rutas absolutas normalizadas, y generar los 8 comandos `/fwb-*` en `~/.claude/commands/`.
 
 ### 💾 Protocolo de salvaguarda de memoria y arnés (formateo / migración)
 Si el usuario menciona que va a formatear su equipo, migrar de máquina o pide un backup de sus proyectos/memorias:
@@ -128,4 +136,4 @@ Si el usuario menciona que va a formatear su equipo, migrar de máquina o pide u
 
 ---
 
-*Framework Baraldi v2.32.1 · DOCUMENTACION_IA.md · Referencia de Arquitectura e Instalación*
+*Framework Baraldi v2.33.0 · DOCUMENTACION_IA.md · Referencia de Arquitectura e Instalación*

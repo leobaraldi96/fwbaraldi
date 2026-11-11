@@ -5,7 +5,7 @@ description: >
   Define la estructura, navegación y taxonomía del producto.
   Keywords: information architecture, sitemap, user flow, taxonomía, navegación, content inventory.
   Activar cuando se cierre la Etapa 03 o se necesite estructurar la navegación.
-version: "2.32.1"
+version: "2.33.0"
 framework: Baraldi
 stage: "04"
 stage_name: "Information Architecture"
@@ -153,4 +153,4 @@ En la fase de arquitectura, el Agente actúa como un **arquitecto de informació
 *   **Construcción coherente:** Asegurar que el humano entienda que lo que decidimos aquí es el "esqueleto" que sostendrá toda la UI posterior.
 
 ---
-*Framework Baraldi v2.32.1 · skills/methodology/04_information_architecture/SKILL.md*
+*Framework Baraldi v2.33.0 · skills/methodology/04_information_architecture/SKILL.md*

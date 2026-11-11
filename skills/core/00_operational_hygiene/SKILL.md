@@ -6,7 +6,7 @@ description: >
   para el usuario (respetando la soberanía manual de Git) y auditorías profundas (Deep Reviews)
   entre las 8 etapas del framework.
   Trigger: Al preparar cierres de unidad de trabajo, sugerir convenciones de Git al usuario o revisar handoffs entre etapas.
-version: "2.32.1"
+version: "2.33.0"
 ---
 
 # Higiene Operativa - Framework Baraldi
@@ -72,4 +72,4 @@ Este protocolo fuerza a la IA a auditar el trabajo rigurosamente antes de declar
 
 ---
 
-*Framework Baraldi v2.32.1 · Higiene Operativa.*
+*Framework Baraldi v2.33.0 · Higiene Operativa.*

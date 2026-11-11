@@ -90,14 +90,19 @@ async function runAlign() {
         fragmentedSkills: []
     };
 
-    // -1. Verificar Higiene Global de Skills (Anti-Fragmentación)
+    // -1. Verificar Higiene Global de Skills (Anti-Fragmentación en Antigravity y Claude Code)
     const homeDir = os.homedir();
-    const globalSkillsDir = path.join(homeDir, '.gemini', 'config', 'skills');
-    if (fs.existsSync(globalSkillsDir)) {
-        const globalEntries = fs.readdirSync(globalSkillsDir, { withFileTypes: true });
-        for (const entry of globalEntries) {
-            if (entry.isDirectory() && entry.name !== 'baraldi-framework' && KNOWN_FWB_SUB_SKILLS.includes(entry.name)) {
-                report.fragmentedSkills.push(entry.name);
+    const globalSkillsDirs = [
+        path.join(homeDir, '.gemini', 'config', 'skills'),
+        path.join(homeDir, '.claude', 'skills')
+    ];
+    for (const globalSkillsDir of globalSkillsDirs) {
+        if (fs.existsSync(globalSkillsDir)) {
+            const globalEntries = fs.readdirSync(globalSkillsDir, { withFileTypes: true });
+            for (const entry of globalEntries) {
+                if (entry.isDirectory() && entry.name !== 'baraldi-framework' && KNOWN_FWB_SUB_SKILLS.includes(entry.name)) {
+                    report.fragmentedSkills.push(path.join(globalSkillsDir, entry.name));
+                }
             }
         }
     }
@@ -180,7 +185,7 @@ async function runAlign() {
 
     if (report.fragmentedSkills.length > 0) {
         console.log(chalk.yellow('\n🧹 Higiene de Entorno Global (Anti-Fragmentación):'));
-        console.log(chalk.dim('  Se detectaron sub-skills sueltas en ~/.gemini/config/skills/.'));
+        console.log(chalk.dim('  Se detectaron sub-skills sueltas en tus carpetas globales de skills.'));
         console.log(chalk.dim('  El framework debe existir únicamente como 1 skill global unificada (baraldi-framework).'));
         report.fragmentedSkills.forEach(s => console.log(`  - ${s} (Consolidar en baraldi-framework)`));
     }
@@ -223,9 +228,8 @@ async function runAlign() {
         const applySpinner = ora('Aplicando alineamientos...').start();
         
         // -1. Limpiar sub-skills fragmentadas si las hubiera
-        if (report.fragmentedSkills.length > 0 && fs.existsSync(globalSkillsDir)) {
-            report.fragmentedSkills.forEach(subSkill => {
-                const subSkillPath = path.join(globalSkillsDir, subSkill);
+        if (report.fragmentedSkills.length > 0) {
+            report.fragmentedSkills.forEach(subSkillPath => {
                 try {
                     fs.rmSync(subSkillPath, { recursive: true, force: true });
                 } catch (e) {}

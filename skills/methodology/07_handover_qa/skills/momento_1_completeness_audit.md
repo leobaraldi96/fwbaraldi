@@ -1,7 +1,7 @@
 ---
 name: momento-1-completeness-audit
 description: La aduana final (Go/No-Go). Protocolo de auditoría para verificar la completitud del diseño, el linaje de datos punta a punta y la ausencia de regresiones técnicas, de seguridad o de DevEx antes del despliegue.
-version: "2.32.1"
+version: "2.33.0"
 ---
 
 # [MOMENTO 1] Design completeness, data lineage y auditoría de regresiones (Go/No-Go)
@@ -84,4 +84,4 @@ Cuando se auditan cambios de código, ramas o implementaciones antes de cerrar u
 **Misión de bloqueo:** Si se detectan desvíos verificados, el agente debe frenar con precisión quirúrgica: *"Encontré 2 bloqueadores verificados: 1) El atributo `stock` se guarda en DB pero falta en el `SELECT` del servicio público; 2) Se agregó la variable `WEBHOOK_SECRET` en el endpoint sin documentarla en `.env.example`. Por protocolo, resolvemos estos dos puntos antes de dar el Go/No-Go"*.
 
 ---
-*Framework Baraldi v2.32.1 · Quality Assurance, Lineage & Regression Protocol*
+*Framework Baraldi v2.33.0 · Quality Assurance, Lineage & Regression Protocol*

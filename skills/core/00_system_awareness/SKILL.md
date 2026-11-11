@@ -1,4 +1,4 @@
-# System Awareness Engine (v2.32.1)
+# System Awareness Engine (v2.33.0)
 # Framework Baraldi - Core Skill
 
 Este motor orquesta la **Consciencia Sistémica** y el **Arnés Recursivo (Harness²)** del framework, gestionando la memoria persistente de 20 herramientas (Engram v1.20.0), el archivo evolutivo personal (`~/.fwbaraldi/user_harness.md`) y las relaciones semánticas entre decisiones, hallazgos y artefactos. Su objetivo es eliminar la amnesia agéntica, garantizar que el framework aprenda continuamente del usuario en su propio entorno y mantener la trazabilidad total desde la Etapa 01 hasta la 08.
@@ -85,4 +85,4 @@ Usar `mem_save` proactivamente en los siguientes hitos:
 
 ---
 
-*Framework Baraldi v2.32.1 · 00_system_awareness · Orquestador de Memoria Sistémica y Harness².*
+*Framework Baraldi v2.33.0 · 00_system_awareness · Orquestador de Memoria Sistémica y Harness².*

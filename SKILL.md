@@ -6,7 +6,7 @@ description: >
   para ir más allá del diseño de interfaces y enfocarse en sistemas y outcomes.
   Úsalo cuando el usuario quiera iniciar un proceso de diseño de producto estructurado.
 keywords: product-design, framework-baraldi, problem-framing, system-analysis, ux-strategy, systems-thinking, continuous-discovery, telemetry, showroom-ui
-version: "2.32.1"
+version: "2.33.0"
 ---
 
 # Framework Baraldi - Orquestador Global
@@ -55,30 +55,30 @@ Cargar exclusivamente el protocolo solicitado por el usuario o requerido por el 
 
 ---
 
-## Slash Commands (Atajos Semánticos para el Agente)
-Como agente de IA operando el framework, debes reconocer y ejecutar inmediatamente las siguientes directivas rápidas ingresadas por el usuario, evitando rodeos conversacionales:
-*   `/init` -> Inicializa la estructura conceptual del framework con **Onboarding Adaptativo**: detecta automáticamente si el workspace es Greenfield (vacío) para arrancar en Etapa 01 o si es In-flight/Legacy (código existente) para ofrecer auditoría de UI, extracción de `DESIGN.md`, creación de Showroom (`showroom.html`) y mapa de arquitectura. Calibra interactivamente los **Perfiles de Rigor Operativo** (Lean, Standard, Enterprise).
-*   `/etapa [1-8]` -> Salta directamente al contexto operativo de la etapa especificada (ej. `/etapa 1` activa Problem Framing, `/etapa 8` activa Telemetría y Continuous Discovery), cargando sus reglas y entregables adaptados al perfil de rigor activo.
-*   `/align` -> Ejecuta una auditoría de la carpeta del proyecto actual (`docs-fwbaraldi`) y notifica al usuario si falta alguna taxonomía o alineamiento.
-*   `/upgrade` -> Lee `docs-fwbaraldi/.UPGRADE_REPORT.md` e inicia la Refactorización Guiada. OBLIGATORIO: 1) Aconsejar backup de `docs-fwbaraldi` (ofrecer instrucciones manuales o hacerlo por consola). 2) Mostrar un plan detallado de qué se modificará. 3) Refactorizar archivo por archivo preservando 100% del valor original y esperando el "OK" humano en cada paso. NUNCA tocar código fuera de `docs-fwbaraldi`.
-*   `/backlog` -> Lee, analiza y resume de forma priorizada el estado actual de `00_Backlog_Estrategico.md`.
-*   `/toolbox` -> Lista las herramientas estratégicas disponibles y solicita al usuario cuál de ellas desea aplicar al proyecto.
-*   `/evolve` -> Activa el **Protocolo de Evolución Recursiva del Arnés (Harness²)**:
+## Slash Commands (Atajos Semánticos Libres de Colisión para el Agente)
+Como agente de IA operando el framework, debes reconocer y ejecutar inmediatamente las siguientes directivas rápidas ingresadas por el usuario. En **Claude Code**, los comandos `/fwb-*` están instalados nativamente en `~/.claude/commands/` (evita sugerir `/init`, `/help` o `/upgrade` sin prefijo en Claude Code porque son comandos internos reservados de su CLI). También puedes activarlos por lenguaje natural:
+*   `/fwb-init` (o `"iniciar fwb"`, `"init del framework"`, o `/init` en Antigravity) -> Inicializa la estructura conceptual del framework con **Onboarding Adaptativo**: detecta automáticamente si el workspace es Greenfield (vacío) para arrancar en Etapa 01 o si es In-flight/Legacy (código existente) para ofrecer auditoría de UI, extracción de `DESIGN.md`, creación de Showroom (`showroom.html`) y mapa de arquitectura. Calibra interactivamente los **Perfiles de Rigor Operativo** (Lean, Standard, Enterprise).
+*   `/fwb-etapa [1-8]` (o `"etapa [1-8]"`, `/etapa [1-8]`) -> Salta directamente al contexto operativo de la etapa especificada (ej. `/fwb-etapa 1` activa Problem Framing, `/fwb-etapa 8` activa Telemetría y Continuous Discovery), cargando sus reglas y entregables adaptados al perfil de rigor activo.
+*   `/fwb-align` (o `"alinear fwb"`, `/align`) -> Ejecuta una auditoría de la carpeta del proyecto actual (`docs-fwbaraldi`) y notifica al usuario si falta alguna taxonomía o alineamiento.
+*   `/fwb-upgrade` (o `"upgrade fwb"`, o `/upgrade` en Antigravity) -> Lee `docs-fwbaraldi/.UPGRADE_REPORT.md` e inicia la Refactorización Guiada. OBLIGATORIO: 1) Aconsejar backup de `docs-fwbaraldi` (ofrecer instrucciones manuales o hacerlo por consola). 2) Mostrar un plan detallado de qué se modificará. 3) Refactorizar archivo por archivo preservando 100% del valor original y esperando el "OK" humano en cada paso. NUNCA tocar código fuera de `docs-fwbaraldi`.
+*   `/fwb-backlog` (o `"backlog fwb"`, `/backlog`) -> Lee, analiza y resume de forma priorizada el estado actual de `00_Backlog_Estrategico.md`.
+*   `/fwb-toolbox` (o `"toolbox fwb"`, `/toolbox`) -> Lista las herramientas estratégicas disponibles y solicita al usuario cuál de ellas desea aplicar al proyecto.
+*   `/fwb-evolve` (o `"evolucionar fwb"`, `/evolve`) -> Activa el **Protocolo de Evolución Recursiva del Arnés (Harness²)**:
     1. *En el proyecto de un usuario:* Audita las correcciones y hallazgos recientes de la sesión, separa las reglas de dominio (*Domain Edits* -> contratos locales `docs-fwbaraldi/`) de las lecciones transversales del usuario (*User-Invariant Edits* -> `~/.fwbaraldi/user_harness.md` y Engram `scope: "personal"`).
     2. *En el repositorio fuente del Framework Baraldi:* Busca en Engram (`all_projects=true`, `topic_key: "harness/invariant-rule"`) y en `~/.fwbaraldi/user_harness.md` todas las lecciones empíricas acumuladas en proyectos reales, las abstrae de forma 100% agnóstica y presenta una tabla de candidatas para promoverlas al Core público del framework.
-*   `/help` -> Muestra este menú de atajos semánticos y un resumen de tres líneas de la North Star del FWB.
+*   `/fwb-help` (o `"ayuda fwb"`, o `/help` en Antigravity) -> Muestra este menú de atajos semánticos y un resumen de tres líneas de la North Star del FWB.
 
 ---
 
 ## Orquestación Multi-Agente y Enjambre Táctico (Agentic Swarm Protocol)
-Cuando el entorno disponga de herramientas de subagentes (`define_subagent`, `invoke_subagent`) y modales interactivos (`ask_question`), el Orquestador aplica las siguientes técnicas avanzadas (detalladas en `00_boot/context.md`):
-*   **Fan-Out / Fan-In de Investigación y Auditoría:** Despliegue concurrente de subagentes `research` aislados para benchmarks competitivos (Etapa 01) y auditorías 3D de 85 puntos (Etapa 02 / Etapa 07), evitando contaminar la ventana de contexto principal.
+El Orquestador aplica las siguientes técnicas avanzadas en cualquier entorno (mapeando automáticamente las herramientas entre **Antigravity** y **Claude Code**: `read_file`/`write_file`/`edit_file` <-> `Read`/`Write`/`Edit`, `run_command` <-> `Bash`, `invoke_subagent` <-> `Agent`, `ask_question` <-> `AskUserQuestion`, `Workspace: "share"` <-> `isolation: "worktree"`, detalladas en `00_boot/context.md`):
+*   **Fan-Out / Fan-In de Investigación y Auditoría (`invoke_subagent` / `Agent`):** Despliegue concurrente de subagentes de investigación aislados para benchmarks competitivos (Etapa 01) y auditorías 3D de 85 puntos (Etapa 02 / Etapa 07), evitando contaminar la ventana de contexto principal.
 *   **QA Adversario en la Triple Aduana (Constructor vs. Inspector):** Separación entre el agente que escribe código y un subagente inspector de solo lectura que audita cumplimiento estricto de `showroom.html` + `DESIGN.md` + `VOICE.md` sin sesgo de auto-confirmación.
-*   **Divergencia Visual en Workspaces Aislados (`Workspace: "share"`):** Exploración de variantes de UI en ramas compartidas sin ensuciar el árbol principal.
-*   **Checkpoints Interactivos Nativos (`ask_question`):** Uso de selectores estructurados para calibración de rigor en `/init`, priorización de circuitos en Etapa 03 y selección de adaptadores en Etapa 07.
+*   **Divergencia Visual en Workspaces Aislados (`Workspace: "share"` / `isolation: "worktree"`):** Exploración de variantes de UI en ramas compartidas sin ensuciar el árbol principal.
+*   **Checkpoints Interactivos Nativos (`ask_question` / `AskUserQuestion`):** Uso de selectores estructurados para calibración de rigor en `/fwb-init`, priorización de circuitos en Etapa 03 y selección de adaptadores en Etapa 07.
 *   **Recursión en Dos Niveles y Gatillo en Caliente (Harness² - Propose-Probe-Compose & Hot-Reflection):**
     1. *Recursión a nivel de tarea (Propose-Probe-Compose):* Evaluación contrastiva de candidatos frente a casos de borde antes de componer la solución final en hitos críticos.
-    2. *Recursión a nivel de arnés en caliente (3 Anillos de Inteligencia):* Separación inmediata (en el mismo turno en que ocurre una corrección del humano, sin esperar al cierre de sesión) entre ediciones de dominio del proyecto (`docs-fwbaraldi/`), ediciones invariantes del usuario en su propio entorno (`~/.fwbaraldi/user_harness.md` + Engram `scope: "personal"`, `topic_key: "harness/invariant-rule"`) y evolución del Core público vía `/evolve`.
+    2. *Recursión a nivel de arnés en caliente (3 Anillos de Inteligencia):* Separación inmediata (en el mismo turno en que ocurre una corrección del humano, sin esperar al cierre de sesión) entre ediciones de dominio del proyecto (`docs-fwbaraldi/`), ediciones invariantes del usuario en su propio entorno (`~/.fwbaraldi/user_harness.md` + Engram `scope: "personal"`, `topic_key: "harness/invariant-rule"`) y evolución del Core público vía `/fwb-evolve`.
 
 ---
 
@@ -113,5 +113,5 @@ El Framework Baraldi **rechaza** el modelo de "IA Generadora de Resultados Final
 - **Salvaguarda y Migración de Memoria:** Ante consultas o avisos de formateo de equipo o cambio de máquina, la IA debe orientar proactivamente al usuario a ejecutar los comandos de backup (`fwbaraldi backup` / `fwbaraldi restore`) para prevenir la pérdida del conocimiento acumulado.
 
 ---
-*Framework Baraldi v2.32.1 · Creado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.33.0 · Creado y mantenido por Leo Baraldi.*
 

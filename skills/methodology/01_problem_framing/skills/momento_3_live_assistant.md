@@ -13,7 +13,7 @@ description: >
   Keywords: entrevistas, notas, research, usuarios, evidencia, hipótesis, benchmark, saturación.
   NO LO USES para analizar datos sin tener notas o transcripciones reales como input.
 skill_id: problem_framing_momento_3
-version: "2.32.1"
+version: "2.33.0"
 framework: Baraldi
 stage: "01 - Problem Framing"
 momento: 3
@@ -122,4 +122,4 @@ Si el usuario solicita el Informe de research en formato **HTML interactivo** (s
 - **Contenido:** Patrones de mayor tracción, tensiones *dice vs. hace*, nivel de confianza alcanzado en la hipótesis central e insights sutiles destacados por el humano.
 
 ---
-*Framework Baraldi v2.32.1 · skills/methodology/01_problem_framing/skills/momento_3_live_assistant.md*
+*Framework Baraldi v2.33.0 · skills/methodology/01_problem_framing/skills/momento_3_live_assistant.md*

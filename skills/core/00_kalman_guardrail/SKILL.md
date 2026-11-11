@@ -1,11 +1,11 @@
 ---
 name: kalman-guardrail
 description: Protocolo de calibración agéntica por radio de explosión (Blast Radius) para prevenir la deriva de comportamiento sin generar fatiga de confirmación.
-version: "2.32.1"
+version: "2.33.0"
 enabled: true
 ---
 
-# Filtro de Kalman Agéntico - Regulación por Radio de Explosión (v2.32.1)
+# Filtro de Kalman Agéntico - Regulación por Radio de Explosión (v2.33.0)
 
 Este documento define el protocolo de calibración dinámica de autonomía dentro del **Framework Baraldi**. Utiliza un modelo de **Predicción-Corrección** inspirado en el Filtro de Kalman, adaptado para modelos de razonamiento avanzado: evita decisiones estructurales no autorizadas sin caer en la parálisis por exceso de confirmaciones.
 
@@ -55,4 +55,4 @@ Si el usuario señala que la IA asumió un contexto erróneo, malinterpretó una
 *   **Siempre** realiza un autodiagnóstico de completitud (incluyendo Triple Aduana y *Data-to-UI Lineage* cuando aplique) antes de finalizar el turno.
 
 ---
-*Framework Baraldi v2.32.1 · skills/core/00_kalman_guardrail/SKILL.md*
+*Framework Baraldi v2.33.0 · skills/core/00_kalman_guardrail/SKILL.md*

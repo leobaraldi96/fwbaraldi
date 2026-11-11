@@ -139,8 +139,8 @@ function copyDirectorySync(src, dest) {
   const entries = fs.readdirSync(src, { withFileTypes: true });
 
   for (let entry of entries) {
-    // Evitar copiar cosas inútiles
-    if (['node_modules', '.git', 'temp-Gentleman-Programming', 'temp-Engram-v1.15.11', 'scripts', '.gitignore'].includes(entry.name)) continue;
+    // Evitar copiar cosas inútiles o identidad local del repo (.engram) hacia las skills globales (nota: conservamos 'scripts' para que ui-check.js y align.js estén disponibles en la skill instalada)
+    if (['node_modules', '.git', '.engram', 'docs-fwbaraldi', 'temp-Gentleman-Programming', 'temp-Engram-v1.15.11', '.gitignore'].includes(entry.name)) continue;
 
     const srcPath = path.join(src, entry.name);
     const destPath = path.join(dest, entry.name);
@@ -182,34 +182,166 @@ function configureMcpServer(binaryPath) {
   return mcpConfigPath;
 }
 
-function configureGlobalAgentsRule() {
+function configureClaudeMcpServer(binaryPath) {
   const homeDir = os.homedir();
-  const agentsPath = path.join(homeDir, '.gemini', 'config', 'AGENTS.md');
-  const agentsDir = path.dirname(agentsPath);
+  const claudeConfigPath = path.join(homeDir, '.claude.json');
 
-  if (!fs.existsSync(agentsDir)) {
-    fs.mkdirSync(agentsDir, { recursive: true });
+  let config = {};
+  if (fs.existsSync(claudeConfigPath)) {
+    try {
+      const raw = fs.readFileSync(claudeConfigPath, 'utf8').trim();
+      if (raw) config = JSON.parse(raw);
+    } catch (e) {
+      // Si el archivo existe pero tiene formato inválido, respaldar antes de tocar
+      try {
+        fs.copyFileSync(claudeConfigPath, `${claudeConfigPath}.bak`);
+      } catch (_) {}
+      config = {};
+    }
   }
 
-  const ruleContent = `
+  if (!config.mcpServers || typeof config.mcpServers !== 'object') {
+    config.mcpServers = {};
+  }
+  config.mcpServers.engram = {
+    type: "stdio",
+    command: binaryPath,
+    args: ["mcp"],
+    env: {}
+  };
+
+  fs.writeFileSync(claudeConfigPath, JSON.stringify(config, null, 2), 'utf8');
+  return claudeConfigPath;
+}
+
+function buildGlobalRuleContent(uiCheckScriptPath, userHarnessPath) {
+  return `
 # Integración del Sistema Framework Baraldi (FWB) y Autoaprendizaje (Harness²)
 - Framework Baraldi (v${FRAMEWORK_VERSION}) está integrado de forma global en este entorno.
 - Tienes acceso a todas las etapas del Framework Baraldi (Problem Framing, System Analysis, Product Logic, Information Architecture, Interaction Design, Visual Design, Handover & QA, Continuous Discovery & Telemetry y los 16 protocolos de la Toolbox).
-- Cuando el usuario solicite iniciar, alinear o diseñar con Framework Baraldi, sigue estrictamente la metodología, contratos y protocolos definidos en la skill \`baraldi-framework\`.
+- Cuando el usuario solicite iniciar, alinear o diseñar con Framework Baraldi (mediante los comandos \`/fwb-init\`, \`/fwb-etapa\`, \`/fwb-align\`, \`/fwb-upgrade\`, \`/fwb-backlog\`, \`/fwb-toolbox\`, \`/fwb-evolve\`, \`/fwb-help\` o sus equivalentes naturales), sigue estrictamente la metodología, contratos y protocolos definidos en la skill \`baraldi-framework\`.
 - Persiste el conocimiento y las decisiones de diseño utilizando el servidor de memoria Engram (\`mem_save\`, \`mem_context\`, \`mem_search\`).
-- **Gatillo de aprendizaje en caliente (Hot-Reflection - Harness²):** Cada vez que el usuario corrija un hábito o error de comportamiento de la IA o establezca una preferencia transversal de trabajo durante una conversación, registra esa regla **en ese mismo turno** (sin esperar al cierre de la sesión) en \`~/.fwbaraldi/user_harness.md\` y en Engram (\`scope: "personal"\`, \`topic_key: "harness/invariant-rule"\`).
-- **Compuerta Determinista de UI (Tool-Call Gate & ui-check P0):** Antes de crear o editar cualquier vista UI (\`.tsx\`, \`.jsx\`, \`.html\`), ejecuta \`read_file\` en ese mismo turno sobre \`globals.css\` y 1 vista canónica de referencia. Tras editar y antes de responder al usuario, ejecuta por terminal \`node "~/.gemini/config/skills/baraldi-framework/scripts/ui-check.js" <archivos-tocados>\` y corrige cualquier \`[FAIL]\` antes de entregar.
+- **Gatillo de aprendizaje en caliente (Hot-Reflection - Harness²):** Cada vez que el usuario corrija un hábito o error de comportamiento de la IA o establezca una preferencia transversal de trabajo durante una conversación, registra esa regla **en ese mismo turno** (sin esperar al cierre de la sesión) en \`${userHarnessPath}\` y en Engram (\`scope: "personal"\`, \`topic_key: "harness/invariant-rule"\`).
+- **Compuerta Determinista de UI (Tool-Call Gate & ui-check P0):** Antes de crear o editar cualquier vista UI (\`.tsx\`, \`.jsx\`, \`.html\`), lee en ese mismo turno (\`read_file\` / \`Read\`) el archivo \`globals.css\` y 1 vista canónica de referencia. Tras editar y antes de responder al usuario, ejecuta por terminal \`node "${uiCheckScriptPath}" <archivos-tocados>\` y corrige cualquier \`[FAIL]\` antes de entregar.
 `;
+}
 
-  let existing = '';
-  if (fs.existsSync(agentsPath)) {
-    existing = fs.readFileSync(agentsPath, 'utf8');
+function upsertRuleBlock(filePath, uiCheckScriptPath, userHarnessPath) {
+  const dir = path.dirname(filePath);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
   }
 
+  const ruleContent = buildGlobalRuleContent(uiCheckScriptPath, userHarnessPath);
+  if (!fs.existsSync(filePath)) {
+    fs.writeFileSync(filePath, ruleContent.trimStart(), 'utf8');
+    return filePath;
+  }
+
+  let existing = fs.readFileSync(filePath, 'utf8');
   if (!existing.includes('Framework Baraldi')) {
-    fs.appendFileSync(agentsPath, ruleContent, 'utf8');
+    fs.appendFileSync(filePath, '\n' + ruleContent.trimStart(), 'utf8');
+  } else {
+    // Actualizar versión, nombres de herramientas multi-host y rutas absolutas de ui-check.js sin usar '~' entre comillas
+    existing = existing.replace(/Framework Baraldi \(v\d+\.\d+\.\d+\)/g, `Framework Baraldi (v${FRAMEWORK_VERSION})`);
+    existing = existing.replace(/node\s+"[^"]*ui-check\.js"/g, `node "${uiCheckScriptPath}"`);
+    existing = existing.replace(/`~\/\.fwbaraldi\/user_harness\.md`/g, `\`${userHarnessPath}\``);
+    existing = existing.replace(/ejecuta `read_file` en ese mismo turno/g, 'lee en ese mismo turno (`read_file` / `Read`)');
+    fs.writeFileSync(filePath, existing, 'utf8');
   }
-  return agentsPath;
+  return filePath;
+}
+
+function configureGlobalAgentsRule() {
+  const homeDir = os.homedir();
+  const agentsPath = path.join(homeDir, '.gemini', 'config', 'AGENTS.md');
+  const uiCheckPosix = path.join(homeDir, '.gemini', 'config', 'skills', 'baraldi-framework', 'scripts', 'ui-check.js').replace(/\\/g, '/');
+  const harnessPosix = path.join(homeDir, '.fwbaraldi', 'user_harness.md').replace(/\\/g, '/');
+  return upsertRuleBlock(agentsPath, uiCheckPosix, harnessPosix);
+}
+
+function configureClaudeGlobalRule() {
+  const homeDir = os.homedir();
+  const claudeMdPath = path.join(homeDir, '.claude', 'CLAUDE.md');
+  const uiCheckPosix = path.join(homeDir, '.claude', 'skills', 'baraldi-framework', 'scripts', 'ui-check.js').replace(/\\/g, '/');
+  const harnessPosix = path.join(homeDir, '.fwbaraldi', 'user_harness.md').replace(/\\/g, '/');
+  return upsertRuleBlock(claudeMdPath, uiCheckPosix, harnessPosix);
+}
+
+function configureClaudeCommands() {
+  const homeDir = os.homedir();
+  const commandsDir = path.join(homeDir, '.claude', 'commands');
+  if (!fs.existsSync(commandsDir)) {
+    fs.mkdirSync(commandsDir, { recursive: true });
+  }
+
+  const skillRootPosix = path.join(homeDir, '.claude', 'skills', 'baraldi-framework').replace(/\\/g, '/');
+  const skillPathPosix = `${skillRootPosix}/SKILL.md`;
+  const bootPathPosix = `${skillRootPosix}/00_boot/context.md`;
+  const methodologyDirPosix = `${skillRootPosix}/skills/methodology`;
+  const toolboxDirPosix = `${skillRootPosix}/skills/toolbox`;
+  const userHarnessPosix = path.join(homeDir, '.fwbaraldi', 'user_harness.md').replace(/\\/g, '/');
+  const alignScriptPosix = path.join(homeDir, '.fwbaraldi', 'package', 'scripts', 'align.js').replace(/\\/g, '/');
+
+  const commands = [
+    {
+      name: 'fwb-init',
+      description: 'Inicializa la estructura del Framework Baraldi con Onboarding Adaptativo (Greenfield o Retrofit) y calibra el Perfil de Rigor.',
+      body: `Lee \`${skillPathPosix}\` y \`${bootPathPosix}\` y ejecuta inmediatamente la directiva \`/fwb-init\` del Framework Baraldi.\n\n1. Realiza un censo no-invasivo del workspace actual para detectar si es Greenfield (vacío) o In-flight/Legacy.\n2. Utiliza \`AskUserQuestion\` para calibrar en un único paso el **Setup Operativo** (Solo-Pilot vs. Equipo) y el **Perfil de Rigor Operativo** (Lean, Standard, Enterprise, Custom).\n3. Si el usuario pasó argumentos adicionales, tenlos en cuenta: $ARGUMENTS`
+    },
+    {
+      name: 'fwb-etapa',
+      description: 'Activa directamente una etapa metodológica (1 a 8) del Framework Baraldi.',
+      argumentHint: '[1-8]',
+      body: `Lee \`${skillPathPosix}\` y \`${bootPathPosix}\`, y salta directamente al contexto operativo de la **Etapa $ARGUMENTS** del Framework Baraldi.\n\nCarga únicamente el archivo \`SKILL.md\` correspondiente a la etapa indicada dentro de \`${methodologyDirPosix}/\`, anuncia la apertura de la etapa (Momento 0) y ejecuta su flujo adaptado al perfil de rigor del proyecto activo.`
+    },
+    {
+      name: 'fwb-align',
+      description: 'Audita y alinea la carpeta docs-fwbaraldi/ y la identidad Engram del proyecto activo.',
+      body: `Lee \`${skillPathPosix}\` y ejecuta la auditoría de alineación (\`/fwb-align\`) sobre la carpeta \`docs-fwbaraldi/\` del proyecto actual.\n\nVerifica la taxonomía de carpetas, la identidad blindada en \`.engram/config.json\`, las reglas en \`.gitignore\` y notifica cualquier desvío (o apóyate en \`${alignScriptPosix}\`). Argumentos adicionales: $ARGUMENTS`
+    },
+    {
+      name: 'fwb-upgrade',
+      description: 'Inicia la refactorización guiada de artefactos en docs-fwbaraldi/ tras una actualización de versión del Framework Baraldi.',
+      body: `Lee \`${skillPathPosix}\` y ejecuta el protocolo \`/fwb-upgrade\` del Framework Baraldi.\n\n1. Revisa \`docs-fwbaraldi/.UPGRADE_REPORT.md\` (o escanea los documentos en \`docs-fwbaraldi/\` frente a la versión actual v${FRAMEWORK_VERSION}).\n2. Aconseja realizar backup previo de \`docs-fwbaraldi/\`.\n3. Presenta un plan detallado de qué archivos se actualizarán.\n4. Refactoriza archivo por archivo preservando el 100% del valor original y esperando confirmación humana en cada paso. NUNCA modifiques código fuera de \`docs-fwbaraldi/\`.`
+    },
+    {
+      name: 'fwb-backlog',
+      description: 'Lee, analiza y resume de forma priorizada el estado actual de docs-fwbaraldi/00_Backlog_Estrategico.md.',
+      body: `Lee \`${skillPathPosix}\` y ejecuta la directiva \`/fwb-backlog\`: inspecciona \`docs-fwbaraldi/00_Backlog_Estrategico.md\` (y la memoria reciente en Engram del proyecto activo), y presenta un resumen priorizado con el próximo paso recomendado (Next Best Action). Argumentos: $ARGUMENTS`
+    },
+    {
+      name: 'fwb-toolbox',
+      description: 'Lista los 16 protocolos estratégicos de la Toolbox del Framework Baraldi y aplica el seleccionado.',
+      argumentHint: '[nombre-o-numero-protocolo]',
+      body: `Lee \`${skillPathPosix}\` y ejecuta la directiva \`/fwb-toolbox\`.\n\nSi no se especificó protocolo en \`$ARGUMENTS\`, presenta los 16 protocolos estratégicos de la Toolbox y consulta cuál aplicar mediante \`AskUserQuestion\`. Si se especificó (\`$ARGUMENTS\`), carga únicamente ese protocolo desde \`${toolboxDirPosix}/\` y ejecútalo en el proyecto activo.`
+    },
+    {
+      name: 'fwb-evolve',
+      description: 'Activa el protocolo Harness² (Experience Reflector) para destilar aprendizajes de dominio e invariantes del usuario.',
+      body: `Lee \`${skillPathPosix}\` y \`${bootPathPosix}\`, y ejecuta inmediatamente el protocolo \`/fwb-evolve\` (Evolución Recursiva del Arnés - Harness²).\n\n1. Si estás en el proyecto de un producto: audita las correcciones de la sesión y separa las reglas de dominio (\`docs-fwbaraldi/\` + Engram \`scope: "project"\`) de las reglas invariantes del usuario (\`${userHarnessPosix}\` + Engram \`scope: "personal"\`, \`topic_key: "harness/invariant-rule"\`).\n2. Si estás en el repositorio fuente del Framework Baraldi: busca en Engram (\`all_projects=true\`, \`topic_key: "harness/invariant-rule"\`) y en \`${userHarnessPosix}\` las lecciones acumuladas, abstráelas de forma 100% agnóstica y presenta una tabla de candidatas para promover al Core.`
+    },
+    {
+      name: 'fwb-help',
+      description: 'Muestra el menú de comandos /fwb-*, las 8 etapas, las 16 herramientas de Toolbox y la North Star del Framework Baraldi.',
+      body: `Lee \`${skillPathPosix}\` y ejecuta la directiva \`/fwb-help\`: muestra de forma clara y directa la tabla de comandos \`/fwb-*\`, las 8 etapas metodológicas, los 16 protocolos de la Toolbox y un resumen de tres líneas de la North Star del Framework Baraldi (v${FRAMEWORK_VERSION}).`
+    }
+  ];
+
+  for (const cmd of commands) {
+    const frontmatterLines = [
+      '---',
+      `description: ${cmd.description}`
+    ];
+    if (cmd.argumentHint) {
+      frontmatterLines.push(`argument-hint: ${cmd.argumentHint}`);
+    }
+    frontmatterLines.push('---', '', cmd.body, '');
+    const filePath = path.join(commandsDir, `${cmd.name}.md`);
+    fs.writeFileSync(filePath, frontmatterLines.join('\n'), 'utf8');
+  }
+
+  return commandsDir;
 }
 
 async function run() {
@@ -263,8 +395,8 @@ Comandos:
   restore               Restaura una copia de seguridad de la memoria Engram
 
 Opciones:
-  -y, --yes             Instalación desatendida/automática (Antigravity por defecto)
-  --agent <destino>     Define el destino: antigravity, claude, local
+  -y, --yes             Instalación desatendida/automática (Omnipresente: Antigravity + Claude Code)
+  --agent <destino>     Define el destino: all, antigravity, claude, local
   -s, --silent          Modo silencioso (sin animaciones de cabecera)
   -h, --help            Muestra esta ayuda
 `);
@@ -306,14 +438,15 @@ Opciones:
   console.log(chalk.white(' 1. ') + chalk.bold('Metodología Baraldi:') + chalk.dim(' Un ÚNICO Orquestador Global (baraldi-framework).'));
   console.log(chalk.white(' 2. ') + chalk.bold('Motor Engram:') + chalk.dim(' El sistema de memoria persistente para tu IA.\n'));
 
-  let agenteDestino = chosenAgent || (isNonInteractive ? 'antigravity' : null);
+  let agenteDestino = chosenAgent || (isNonInteractive ? 'all' : null);
 
   if (!agenteDestino) {
     agenteDestino = await select({
       message: '¿Dónde deseas instalar el cerebro del framework?',
       choices: [
-        { name: 'Antigravity (Recomendado)', value: 'antigravity', description: 'Integración profunda con Google Antigravity como Orquestador Único' },
-        { name: 'Claude Code', value: 'claude', description: 'Instala en el contexto global de Claude' },
+        { name: 'Omnipresente: Antigravity + Claude Code (Recomendado)', value: 'all', description: 'Sincroniza el Orquestador Único, MCP y reglas globales en ambos entornos a la vez' },
+        { name: 'Solo Antigravity / Gemini', value: 'antigravity', description: 'Instala en ~/.gemini/config/skills/baraldi-framework' },
+        { name: 'Solo Claude Code', value: 'claude', description: 'Instala en ~/.claude/skills/baraldi-framework y configura CLAUDE.md + ~/.claude.json' },
         { name: 'Directorio Local', value: 'local', description: 'Crea una carpeta ./baraldi-framework en tu ubicación actual' }
       ]
     });
@@ -325,54 +458,83 @@ Opciones:
   const binaryAbsolutePath = await downloadBinary(sysOs, sysArch);
 
   console.log(chalk.bold('\n[2/3] 📂 Desplegando Metodología Unificada...'));
-  let destPath = '';
   const homeDir = os.homedir();
+  const targets = [];
 
-  if (agenteDestino === 'antigravity') {
-    destPath = path.join(homeDir, '.gemini', 'config', 'skills', 'baraldi-framework');
+  if (agenteDestino === 'all' || agenteDestino === 'both') {
+    targets.push({ type: 'antigravity', path: path.join(homeDir, '.gemini', 'config', 'skills', 'baraldi-framework') });
+    targets.push({ type: 'claude', path: path.join(homeDir, '.claude', 'skills', 'baraldi-framework') });
+    targets.push({ type: 'package', path: path.join(homeDir, '.fwbaraldi', 'package') });
+  } else if (agenteDestino === 'antigravity') {
+    targets.push({ type: 'antigravity', path: path.join(homeDir, '.gemini', 'config', 'skills', 'baraldi-framework') });
+    targets.push({ type: 'package', path: path.join(homeDir, '.fwbaraldi', 'package') });
+  } else if (agenteDestino === 'claude') {
+    targets.push({ type: 'claude', path: path.join(homeDir, '.claude', 'skills', 'baraldi-framework') });
+    targets.push({ type: 'package', path: path.join(homeDir, '.fwbaraldi', 'package') });
   } else if (agenteDestino === 'local') {
-    destPath = path.join(process.cwd(), 'baraldi-framework');
+    targets.push({ type: 'local', path: path.join(process.cwd(), 'baraldi-framework') });
   } else {
-    destPath = path.join(homeDir, '.fwbaraldi', 'skills', 'baraldi-framework');
+    targets.push({ type: 'antigravity', path: path.join(homeDir, '.gemini', 'config', 'skills', 'baraldi-framework') });
+    targets.push({ type: 'claude', path: path.join(homeDir, '.claude', 'skills', 'baraldi-framework') });
   }
 
-  const spinner = ora('Sincronizando orquestador unificado...').start();
-  copyDirectorySync(packageRoot, destPath);
+  for (const target of targets) {
+    const spinner = ora(`Sincronizando orquestador en ${target.path}...`).start();
+    copyDirectorySync(packageRoot, target.path);
 
-  // Protocolo de Higiene Anti-Fragmentación: Limpiar sub-skills sueltas si se instaló en .gemini/config/skills
-  if (agenteDestino === 'antigravity') {
-    const parentSkillsDir = path.dirname(destPath);
-    const cleaned = cleanupFragmentedSkills(parentSkillsDir);
-    if (cleaned > 0) {
-      spinner.info(chalk.yellow(`ℹ Higiene ejecutada: Se consolidaron ${cleaned} sub-skills sueltas dentro del orquestador único.`));
-    }
-  }
-
-  // Hardening de Seguridad Post-Instalación (Identidad Blindada)
-  if (agenteDestino === 'local') {
-    const engramDir = path.join(destPath, '.engram');
-    const engramConfigPath = path.join(engramDir, 'config.json');
-    const gitignorePath = path.join(destPath, '.gitignore');
-
-    if (!fs.existsSync(engramDir)) fs.mkdirSync(engramDir, { recursive: true });
-
-    if (!fs.existsSync(engramConfigPath)) {
-      const projectName = path.basename(destPath);
-      fs.writeFileSync(engramConfigPath, JSON.stringify({ project_name: projectName, project: projectName }, null, 2));
-    }
-
-    const gitignoreRules = '\n# Engram Memory (Framework Baraldi Security)\n.engram/\n!.engram/config.json\n';
-    if (fs.existsSync(gitignorePath)) {
-      const content = fs.readFileSync(gitignorePath, 'utf8');
-      if (!content.includes('.engram/')) {
-        fs.appendFileSync(gitignorePath, gitignoreRules);
+    // Protocolo de Higiene Anti-Fragmentación: Limpiar sub-skills sueltas en la carpeta padre de skills
+    if (target.type === 'antigravity' || target.type === 'claude') {
+      const parentSkillsDir = path.dirname(target.path);
+      const cleaned = cleanupFragmentedSkills(parentSkillsDir);
+      if (cleaned > 0) {
+        spinner.info(chalk.yellow(`ℹ Higiene ejecutada en ${parentSkillsDir}: Se consolidaron ${cleaned} sub-skills sueltas dentro del orquestador único.`));
       }
+    }
+
+    // Hardening de Seguridad Post-Instalación (Identidad Blindada) para instalación local
+    if (target.type === 'local') {
+      const engramDir = path.join(target.path, '.engram');
+      const engramConfigPath = path.join(engramDir, 'config.json');
+      const gitignorePath = path.join(target.path, '.gitignore');
+
+      if (!fs.existsSync(engramDir)) fs.mkdirSync(engramDir, { recursive: true });
+
+      if (!fs.existsSync(engramConfigPath)) {
+        const projectName = path.basename(target.path);
+        fs.writeFileSync(engramConfigPath, JSON.stringify({ project_name: projectName, project: projectName }, null, 2));
+      }
+
+      const gitignoreRules = '\n# Engram Memory (Framework Baraldi Security)\n.engram/\n!.engram/config.json\n';
+      if (fs.existsSync(gitignorePath)) {
+        const content = fs.readFileSync(gitignorePath, 'utf8');
+        if (!content.includes('.engram/')) {
+          fs.appendFileSync(gitignorePath, gitignoreRules);
+        }
+      } else {
+        fs.writeFileSync(gitignorePath, gitignoreRules);
+      }
+    }
+
+    if (target.type !== 'package') {
+      spinner.succeed(chalk.green(`✓ Orquestador Baraldi (${target.type}) desplegado en: `) + chalk.cyan(target.path));
     } else {
-      fs.writeFileSync(gitignorePath, gitignoreRules);
+      spinner.succeed(chalk.green(`✓ Paquete maestro sincronizado en: `) + chalk.cyan(target.path));
     }
   }
 
-  spinner.succeed(chalk.green(`✓ Orquestador Baraldi desplegado como Skill Única en: `) + chalk.cyan(destPath));
+  // Higiene de copias huérfanas obsoletas en rutas legadas (~/.gemini/antigravity/skills/baraldi-framework y ~/.fwbaraldi/skills/)
+  const legacyPaths = [
+    path.join(homeDir, '.gemini', 'antigravity', 'skills', 'baraldi-framework'),
+    path.join(homeDir, '.fwbaraldi', 'skills', 'baraldi-framework')
+  ];
+  for (const legacyPath of legacyPaths) {
+    if (fs.existsSync(legacyPath)) {
+      try {
+        fs.rmSync(legacyPath, { recursive: true, force: true });
+        console.log(chalk.yellow(`ℹ Copia legada obsoleta eliminada: `) + chalk.dim(legacyPath));
+      } catch (_) {}
+    }
+  }
 
   // Inicializar Arnés Evolutivo Personal del Usuario (Harness² - Persistente fuera de skills/)
   const userHarnessDir = path.join(homeDir, '.fwbaraldi');
@@ -390,13 +552,29 @@ Opciones:
 
   console.log(chalk.bold('\n[3/3] ⚙️ Autoconfiguración de MCP y Reglas Globales...'));
 
-  if (agenteDestino === 'antigravity') {
+  const hasAntigravity = targets.some(t => t.type === 'antigravity');
+  const hasClaude = targets.some(t => t.type === 'claude');
+
+  if (hasAntigravity) {
     const mcpFile = configureMcpServer(binaryAbsolutePath);
-    console.log(chalk.green('✓ Servidor MCP Engram configurado en: ') + chalk.cyan(mcpFile));
+    console.log(chalk.green('✓ [Antigravity] Servidor MCP Engram configurado en: ') + chalk.cyan(mcpFile));
 
     const agentsFile = configureGlobalAgentsRule();
-    console.log(chalk.green('✓ Reglas globales vinculadas en: ') + chalk.cyan(agentsFile));
-  } else {
+    console.log(chalk.green('✓ [Antigravity] Reglas globales vinculadas en: ') + chalk.cyan(agentsFile));
+  }
+
+  if (hasClaude) {
+    const claudeMcpFile = configureClaudeMcpServer(binaryAbsolutePath);
+    console.log(chalk.green('✓ [Claude Code] Servidor MCP Engram configurado en: ') + chalk.cyan(claudeMcpFile));
+
+    const claudeMdFile = configureClaudeGlobalRule();
+    console.log(chalk.green('✓ [Claude Code] Reglas globales vinculadas en: ') + chalk.cyan(claudeMdFile));
+
+    const claudeCmdsDir = configureClaudeCommands();
+    console.log(chalk.green('✓ [Claude Code] 8 comandos /fwb-* instalados en: ') + chalk.cyan(claudeCmdsDir));
+  }
+
+  if (!hasAntigravity && !hasClaude) {
     console.log(chalk.dim('Configuración MCP manual requerida para este entorno:'));
     const mcpConfig = {
       "mcpServers": {

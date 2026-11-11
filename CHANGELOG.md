@@ -5,6 +5,26 @@ Todas las actualizaciones destacadas de este proyecto se documentarán en este a
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/), 
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/).
 
+## [2.33.0] - 2026-11-11
+
+### 🌐 Instalación Omnipresente (Antigravity + Claude Code), Slash Commands Nativos, Mapeo Multi-Host y Blindaje `ui-check.js`
+- **Despliegue Nativo y Omnipresente en Claude Code (`scripts/install.js` y `scripts/align.js`):**
+  - El modo por defecto de `fwbaraldi` (tanto interactivo como desatendido con `-y` / `--agent=all`) ahora sincroniza simultáneamente **Antigravity (`~/.gemini/config/skills/baraldi-framework`)**, **Claude Code (`~/.claude/skills/baraldi-framework`)** y el paquete maestro (`~/.fwbaraldi/package`).
+  - Autoconfiguración nativa para Claude Code: inyección automática de las reglas globales en `~/.claude/CLAUDE.md` (con rutas absolutas normalizadas libres del bug de expansión de `~` entre comillas en Windows) y registro seguro del servidor MCP `engram` en `~/.claude.json` preservando configuraciones preexistentes.
+  - **Generación automática de los 8 comandos `/fwb-*` en `~/.claude/commands/`:** Creación de `fwb-init.md`, `fwb-etapa.md`, `fwb-align.md`, `fwb-upgrade.md`, `fwb-backlog.md`, `fwb-toolbox.md`, `fwb-evolve.md` y `fwb-help.md` con rutas absolutas y soporte de `$ARGUMENTS` para que el CLI de Claude Code los reconozca como slash commands nativos sin tirar error de comando desconocido ni chocar con `/init`, `/help` o `/upgrade` internos.
+  - Inclusión de la carpeta `scripts/` (con `ui-check.js` y `align.js`) dentro de la skill global desplegada en ambos entornos, y limpieza automática de copias huérfanas obsoletas (`~/.gemini/antigravity/skills/baraldi-framework`).
+  - Extensión de la auditoría de higiene anti-fragmentación (`cleanupFragmentedSkills`) tanto a `~/.gemini/config/skills/` como a `~/.claude/skills/`.
+- **Matriz de Equivalencia de Herramientas Multi-Agente (`00_boot/context.md` y `SKILL.md`):**
+  - Incorporada la tabla de mapeo explícito entre **Google Antigravity** y **Anthropic Claude Code** (`read_file`/`write_file`/`edit_file` <-> `Read`/`Write`/`Edit`, `run_command` <-> `Bash`, `invoke_subagent` <-> `Agent`, `ask_question` <-> `AskUserQuestion`, `Workspace: "share"` <-> `isolation: "worktree"`) para habilitar el enjambre de subagentes, el QA adversario, los checkpoints interactivos y el `Tool-Call Gate` en ambos entornos.
+- **Evolución de `scripts/ui-check.js` (Zero-Dependencies + 6 Nuevas Compuertas de Contrato UI):**
+  - **Ejecución 100% Zero-Dependencies:** Reemplazo de `chalk` por códigos ANSI nativos de Node.js para que `ui-check.js` se ejecute instantáneamente desde cualquier copia de skill (`~/.claude/skills/` o `~/.gemini/config/skills/`) sin requerir `node_modules`.
+  - **`MIN_FONT_SIZE_10PX`:** Bloqueo determinista de tamaños de fuente arbitrarios menores al umbral de accesibilidad de `10px` / `0.625rem` (ej. `text-[8px]`, `text-[9px]`, `text-[0.5rem]`).
+  - **`NO_ARBITRARY_COLOR`:** Bloqueo de colores hardcodeados en corchetes JIT de Tailwind (`bg-[#123456]`, `text-[#fff]`, `border-[rgb(...)]`).
+  - **`NO_ARBITRARY_PX`:** Bloqueo de medidas arbitrarias en píxeles (`text-[13px]`, `p-[7px]`, `gap-[15px]`) para hacer cumplir la política `REM-First`.
+  - **`NO_UI_EMOJI`:** Bloqueo de emojis decorativos en el código de interfaz (`\p{Extended_Pictographic}`), exigiendo iconografía vectorial SVG del sistema.
+  - **`NO_EMBEDDED_STYLE_TAG` y `NO_RAW_HEX_IN_STYLE`:** Prohibición de etiquetas `<style>` empotradas en vistas o componentes de producto (exceptuando únicamente `showroom.html`) y bloqueo de colores HEX crudos dentro de bloques `<style>`.
+  - **Parser inteligente de comentarios:** Exclusión de comentarios HTML (`<!-- ... -->`), JSX (`{/* ... */}`), bloques (`/* ... */`) y líneas `//` (sin falsos positivos en URLs `https://`) antes de evaluar las reglas de interfaz.
+
 ## [2.32.1] - 2026-11-09
 
 ### 🛡️ Compuerta Determinista de UI (`ui-check.js`), Re-hidratación en Caliente y Promoción Harness²

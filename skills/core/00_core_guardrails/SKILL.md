@@ -5,7 +5,7 @@ description: >
   ergonomía cognitiva y barandas de contención del Framework Baraldi.
   Trigger: SIEMPRE activo. Se debe consultar al inicio de cada sesión y ante
   cualquier cambio en la estructura del proyecto o de los artefactos.
-version: "2.32.1"
+version: "2.33.0"
 ---
 
 # Capa 00 - Core guardrails (barandas de contención)
@@ -194,4 +194,4 @@ Antes de declarar un hito como completado, la IA debe verificar:
 - [ ] ¿El documento respeta la ergonomía cognitiva (*Lead with the answer*, tablas de verificación y checklists)?
 
 ---
-*Framework Baraldi v2.32.1 · Core Guardrails*
+*Framework Baraldi v2.33.0 · Core Guardrails*

@@ -1,6 +1,6 @@
 # Framework Baraldi (FWB) 🤖⚡
 
-![Version](https://img.shields.io/badge/version-2.32.1-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-yellow) ![Memory](https://img.shields.io/badge/memory-Engram--v1.20.0-orange) ![Type](https://img.shields.io/badge/type-Agentic--Orchestrator-blueviolet)
+![Version](https://img.shields.io/badge/version-2.33.0-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-yellow) ![Memory](https://img.shields.io/badge/memory-Engram--v1.20.0-orange) ![Type](https://img.shields.io/badge/type-Agentic--Orchestrator-blueviolet)
 
 > [!NOTE]
 > **¿Hola, no entendés un carajo de lo que hay acá?** 👉 **[¡Siga por aquí! (Guía de bienvenida fácil para humanos)](./NO_ENTIENDO_NADA.md)** 🚀
@@ -76,7 +76,7 @@ Ninguno de los frameworks anteriores tiene estas características juntas:
 10. **Proactividad de Soporte**: El sistema propone proactivamente formatos de alta fidelidad (Landings/Dashboards HTML) cuando la densidad de datos lo requiere, eliminando la pasividad del agente.
 11. **Contratos Vivos de Soberanía (`DESIGN`, `VOICE`, `BUSINESS`, `SECURITY`, `LEGAL`, `UX`, `KNOWLEDGE`)**: El framework genera archivos de "Fuente de Verdad" diseñados específicamente para ser leídos por humanos y otras IAs, garantizando que el diseño, negocio, seguridad y soporte se mantengan blindados e inmutables.
 12. **Arsenal de Toolbox (16 Protocolos)**: Protocolos estratégicos modulares de alta densidad para slicing de epics, triaje de issues, pricing, data-driven design y compilación de conocimiento de producto.
-13. **Verificación de Versión Proactiva (v2.32.1)**: El Framework verifica automáticamente tu versión local contra el repositorio oficial para asegurar que el motor metodológico esté siempre al día.
+13. **Verificación de Versión Proactiva (v2.33.0)**: El Framework verifica automáticamente tu versión local contra el repositorio oficial para asegurar que el motor metodológico esté siempre al día.
 14. **Arquitectura Just-in-Time (JIT) & Prompt Caching**: Carga bajo demanda estricta de metodologías y protocolos, reduciendo hasta un 85% el consumo de tokens y acelerando la inferencia en LLMs avanzados (Gemini, Claude, GPT-4) sin saturación de contexto (*Context Rot*).
 15. **Sintaxis XML Estricta para Guardrails**: Restricciones y mandatos de comportamiento estructurados semánticamente en etiquetas XML para máxima adherencia en Claude y Gemini.
 16. **Onboarding Adaptativo (Greenfield vs In-flight)**: Detección automática al inicializar (`/init`) para guiar a proyectos desde cero con preguntas clave o auditar código existente para extraer `DESIGN.md` y arquitectura.
@@ -213,7 +213,7 @@ A nivel de infraestructura (LLM Ops), el Framework Baraldi maximiza el rendimien
 
 | Métrica | Valor | Estado |
 |---|---|---|
-| **Eficiencia Actual (v2.32.1)** | **96.50%** | 🟢 Full Release (08/08 Etapas + 16 Protocolos) |
+| **Eficiencia Actual (v2.33.0)** | **96.50%** | 🟢 Full Release (08/08 Etapas + 16 Protocolos) |
 | **Engram Engine** | **v1.20.0** | 🟢 20 MCP Tools & BM25 Ranking |
 
 *Aclaración Técnica: Al cargar en memoria viva solo los hallazgos estrictamente necesarios para la toma de decisión del momento, reducimos el ruido contextual, manteniendo la IA enfocada, rápida y económicamente viable.*
@@ -239,7 +239,7 @@ Si sos un modelo de IA o estás configurando un agente, **LEER PRIMERO:**
 
 ---
 
-## 🧰 El Arsenal de Élite (v2.32.1 - 16 Protocolos)
+## 🧰 El Arsenal de Élite (v2.33.0 - 16 Protocolos)
 
 La Toolbox del Framework Baraldi no es una simple carpeta de utilidades; es un conjunto de **16 protocolos de alto impacto** diseñados para resolver situaciones críticas de producto, negocio y política organizacional.
 
@@ -277,17 +277,17 @@ fwbaraldi/
 │   │   ├── 00_operational_hygiene/         ← Protocolos de ramas y handoff
 │   │   ├── 00_project_health_audit/        ← Framework Doctor (Auditoría de salud)
 │   │   ├── 00_skill_evaluation/            ← Skill Judge (Filtro de calidad)
-│   │   └── 00_system_awareness/            ← Consciencia Sistémica y Memoria (v2.32.1)
+│   │   └── 00_system_awareness/            ← Consciencia Sistémica y Memoria (v2.33.0)
 │   │
 │   ├── methodology/                        ← El núcleo del proceso (End-to-End)
-│   │   ├── 01_problem_framing/             ← Hardened v2.32.1
-│   │   ├── 02_system_analysis/             ← Hardened v2.32.1
-│   │   ├── 03_product_logic/               ← Hardened v2.32.1
-│   │   ├── 04_information_architecture/    ← Hardened v2.32.1
-│   │   ├── 05_interaction_design_ux/       ← Hardened v2.32.1
-│   │   ├── 06_visual_design_ui/            ← Hardened v2.32.1
-│   │   ├── 07_handover_qa/                 ← Hardened v2.32.1
-│   │   └── 08_continuous_discovery_telemetry/ ← Telemetría y Data UX v2.32.1
+│   │   ├── 01_problem_framing/             ← Hardened v2.33.0
+│   │   ├── 02_system_analysis/             ← Hardened v2.33.0
+│   │   ├── 03_product_logic/               ← Hardened v2.33.0
+│   │   ├── 04_information_architecture/    ← Hardened v2.33.0
+│   │   ├── 05_interaction_design_ux/       ← Hardened v2.33.0
+│   │   ├── 06_visual_design_ui/            ← Hardened v2.33.0
+│   │   ├── 07_handover_qa/                 ← Hardened v2.33.0
+│   │   └── 08_continuous_discovery_telemetry/ ← Telemetría y Data UX v2.33.0
 │   │
 │   └── toolbox/                            ← Tu arsenal estratégico (16 Protocolos)
 │       ├── advanced_prioritization_protocol/
@@ -326,20 +326,21 @@ fwbaraldi/
 │   ├── align.js                            ← Auditoría y alineación de docs-fwbaraldi
 │   ├── backup.js                           ← Asistente de Backup de Memoria
 │   ├── bump-footers.js                     ← Sincronizador de versiones en footers
-│   ├── install.js                          ← Instalador CLI interactivo
+│   ├── install.js                          ← Instalador CLI omnipresente (Antigravity + Claude Code)
 │   ├── internal-audit.js                   ← Guardián de Integridad y Versiones
 │   ├── restore.js                          ← Asistente de Restauración de Memoria
-│   └── sanitize-emojis.js                  ← Higiene de codificación UTF-8
+│   ├── sanitize-emojis.js                  ← Higiene de codificación UTF-8
+│   └── ui-check.js                         ← Linter determinista de UI (Zero-Dependencies)
 │
 ├── 00_Backlog_Estrategico.md               ← Hoja de ruta del propio Framework
-├── MAPA_DE_ARTEFACTOS.md                   ← Catálogo oficial de entregables (v2.32.1)
+├── MAPA_DE_ARTEFACTOS.md                   ← Catálogo oficial de entregables (v2.33.0)
 ├── SKILL.md                                ← Archivo maestro para Agentes IA
 └── README.md                               ← Este archivo
 ```
 
 ---
 
-## 🚀 Quick Start / Instalación (v2.32.1)
+## 🚀 Quick Start / Instalación (v2.33.0)
 
 > ⚠️ **IMPORTANTE:** A partir de la versión 2.28.0 (Modelo Cero-Copia), el Framework Baraldi opera como un **Único Orquestador Agéntico Global (`baraldi-framework`)**. Todas las etapas y la toolbox viven encapsuladas internamente para mantener limpio el entorno y evitar la fragmentación de habilidades.
 
@@ -352,19 +353,19 @@ npx github:leobaraldi96/fwbaraldi
 ```
 *(Para instalación desatendida automática sin preguntas, agrega el flag `-y`: `npx github:leobaraldi96/fwbaraldi -y`)*
 
-**El instalador se ocupa automáticamente de:**
+**El instalador se ocupa automáticamente de (Modo Omnipresente: Antigravity + Claude Code):**
 1. Descargar e instalar el binario oficial del motor **Engram** en `~/.fwbaraldi/bin/`.
-2. Desplegar el framework como **1 única Skill Global** en `~/.gemini/config/skills/baraldi-framework/` (limpiando automáticamente cualquier sub-skill huérfana).
+2. Desplegar el framework como **1 única Skill Global** simultáneamente en **Antigravity (`~/.gemini/config/skills/baraldi-framework/`)**, en **Claude Code (`~/.claude/skills/baraldi-framework/`)** y en el paquete maestro (`~/.fwbaraldi/package/`), limpiando automáticamente cualquier sub-skill o copia huérfana.
 3. Inicializar tu **Arnés Evolutivo Personal (`~/.fwbaraldi/user_harness.md`)** en la primera instalación y **preservarlo intacto** ante cualquier actualización futura del framework.
-4. Configurar de forma segura el servidor MCP `engram` en `~/.gemini/config/mcp_config.json`.
-5. Vincular las reglas operativas globales en `~/.gemini/config/AGENTS.md`.
+4. Configurar de forma segura el servidor MCP `engram` tanto en `~/.gemini/config/mcp_config.json` (Antigravity) como en `~/.claude.json` (Claude Code).
+5. Vincular las reglas operativas globales y la compuerta `ui-check.js` en `~/.gemini/config/AGENTS.md` y `~/.claude/CLAUDE.md`, además de instalar los **8 comandos nativos `/fwb-*`** (`fwb-init`, `fwb-etapa`, `fwb-align`, `fwb-upgrade`, `fwb-backlog`, `fwb-toolbox`, `fwb-evolve`, `fwb-help`) en `~/.claude/commands/`.
 
 ---
 
 ### Paso 2: Ejecución
 1. Abre tu terminal o IDE en la carpeta de tu proyecto.
-2. Inicia tu Agente (Ej: [Antigravity](https://antigravity.google/)).
-3. Escribe en el chat: *"Iniciemos un proyecto nuevo usando el Framework Baraldi"*.
+2. Inicia tu Agente ([Antigravity](https://antigravity.google/) o **Claude Code**).
+3. Ejecuta `/fwb-init` (o escribe en el chat: *"Iniciemos un proyecto nuevo usando el Framework Baraldi"*).
 
 ---
 
@@ -427,4 +428,4 @@ El Framework Baraldi es el resultado de más de 25 años de experiencia en el di
 - 📧 **Email:** [leobaraldi96@gmail.com](mailto:leobaraldi96@gmail.com)
 
 ---
-*Framework Baraldi v2.32.1 · Desarrollado y mantenido por Leo Baraldi.*
+*Framework Baraldi v2.33.0 · Desarrollado y mantenido por Leo Baraldi.*

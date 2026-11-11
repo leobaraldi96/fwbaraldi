@@ -1,7 +1,7 @@
 ---
 name: momento-0-design-intelligence
 description: Motor central de inteligencia de diseño y filtro anti-slop. Establece las leyes de jerarquía, los límites de dosis visual, los bloqueos de clichés en landings y dashboards, y las palancas de vitalidad antes de construir tokens o vistas.
-version: "2.32.1"
+version: "2.33.0"
 ---
 
 # [MOMENTO 0] Design intelligence y protocolo anti-slop
@@ -87,4 +87,4 @@ Las técnicas visuales no son malas en sí mismas; se convierten en slop cuando 
 - **Performance en marcado:** Reservar dimensiones (`width`, `height` o `aspect-ratio`) en toda imagen, video o embed para evitar saltos de layout (CLS). La imagen principal sobre el pliegue (Hero/LCP) debe llevar `fetchpriority="high"` y nunca `loading="lazy"`. Respetar siempre `@media (prefers-reduced-motion: reduce)`.
 
 ---
-*Framework Baraldi v2.32.1 · Design Intelligence & Anti-Slop Engine*
+*Framework Baraldi v2.33.0 · Design Intelligence & Anti-Slop Engine*

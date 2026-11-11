@@ -6,7 +6,7 @@ description: >
   Crea el contrato visual para la implementación agéntica (DESIGN.md) y el Showroom vivo (showroom.html).
 keywords: visual design, ui, tokens, design system, design.md, showroom.html, css variables.
 status: operational
-version: "2.32.1"
+version: "2.33.0"
 ---
 
 # Etapa 06 - Visual design (UI)
@@ -130,4 +130,4 @@ En la fase visual, el Agente actúa como un **director de arte** que educa el oj
 *   **Decisión compartida:** Nunca entregar un diseño finalizado sin haber transitado los hitos de decisión con el humano.
 
 ---
-*Framework Baraldi v2.32.1 · skills/methodology/06_visual_design_ui/SKILL.md*
+*Framework Baraldi v2.33.0 · skills/methodology/06_visual_design_ui/SKILL.md*

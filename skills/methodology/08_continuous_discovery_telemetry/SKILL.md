@@ -6,7 +6,7 @@ description: >
   diseña dashboards por rol y nivel de urgencia, y genera planes de acción priorizados
   para retroalimentar el Backlog Estratégico y la Etapa 01.
 keywords: continuous discovery, telemetría, analytics, data ux, dashboards, métricas, post-launch, feedback loop, data intelligence, etapa 8
-version: "2.32.1"
+version: "2.33.0"
 framework: Baraldi
 stage: "08"
 stage_name: "Continuous Discovery & Data Intelligence"
@@ -203,4 +203,4 @@ Esta etapa se conecta bidireccionalmente con el arsenal estratégico de la Toolb
 
 ---
 
-*Framework Baraldi v2.32.1 · skills/methodology/08_continuous_discovery_telemetry/SKILL.md*
+*Framework Baraldi v2.33.0 · skills/methodology/08_continuous_discovery_telemetry/SKILL.md*

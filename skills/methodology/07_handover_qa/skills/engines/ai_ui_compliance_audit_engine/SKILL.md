@@ -5,7 +5,7 @@ description: >
   para validar que el código de UI generado por IA respeta estrictamente el sistema de diseño (tokens),
   las affordances de interacción, la performance base y no introduce alucinaciones visuales ni comentarios basura.
 keywords: ai-coding, compliance, linter, design-tokens, ui-engineering, feedback-loop, qa, anti-slop, delivery-gate
-version: "2.32.1"
+version: "2.33.0"
 ---
 
 # Protocolo de auditoría de cumplimiento de UI generada por IA y Delivery Gate
@@ -57,12 +57,13 @@ Si se detectan desvíos, generar un **Prompt de Corrección Exacto** para subsan
 
 Para eliminar el sesgo de auto-confirmación donde la IA cree haber respetado las reglas pero filtró clases por inercia de pre-entrenamiento, antes de dar por finalizada cualquier creación o edición de interfaz el agente debe:
 
-1. **Re-hidratación previa (`Tool-Call Gate`):** Haber ejecutado `read_file` en el mismo turno sobre `globals.css` y la Vista Madre antes de crear una vista nueva.
-2. **Ejecución del Linter Determinista (`ui-check.js`):** Ejecutar por terminal (`run_command`):
+1. **Re-hidratación previa (`Tool-Call Gate`):** Haber ejecutado `read_file` (o `Read` en Claude Code) en el mismo turno sobre `globals.css` y la Vista Madre antes de crear una vista nueva.
+2. **Ejecución del Linter Determinista (`ui-check.js`):** Ejecutar por terminal (`run_command` / `Bash`) usando la ruta absoluta configurada en `AGENTS.md` o `CLAUDE.md`:
    ```bash
-   node ~/.gemini/config/skills/baraldi-framework/scripts/ui-check.js [archivos-modificados]
+   node "$HOME/.gemini/config/skills/baraldi-framework/scripts/ui-check.js" [archivos-modificados]
+   # o en Claude Code: node "$HOME/.claude/skills/baraldi-framework/scripts/ui-check.js" [archivos-modificados]
    ```
-   El script valida mecánicamente y devuelve `EXIT CODE 1` si existe `style=`, cualquier `tracking-*`, clases genéricas (`bg-gray-*`, `shadow-2xs`), `font-mono` en UI, guiones largos, botones híbridos con íconos de checkbox, modales anidados o archivos `> 350` líneas.
+   El script valida mecánicamente (sin dependencias externas) y devuelve `EXIT CODE 1` si existe `style=`, bloques `<style>` empotrados o HEX crudos, colores o medidas en píxeles arbitrarias de Tailwind (`bg-[#...]`, `text-[13px]`, `p-[7px]`), fuentes menores a `10px` (`text-[8px]`), cualquier `tracking-*`, clases genéricas (`bg-gray-*`, `shadow-2xs`), `font-mono` en UI, emojis en la interfaz, guiones largos, botones híbridos con íconos de checkbox, modales anidados o archivos `> 350` líneas.
 3. **Verificación del Checklist Binario (PASS / FAIL):**
 
 - [ ] **Ejecución de `ui-check.js` en verde (`PASS`):** ¿El script determinista corrió sobre los archivos tocados y devolvió `0 violaciones críticas`?
@@ -88,4 +89,4 @@ Para eliminar el sesgo de auto-confirmación donde la IA cree haber respetado la
 - **SIEMPRE** ejecuta el **Delivery Gate** antes de entregar código de UI al usuario.
 
 ---
-*Framework Baraldi v2.32.1 · Engine de Auditoría AI & Delivery Gate*
+*Framework Baraldi v2.33.0 · Engine de Auditoría AI & Delivery Gate*

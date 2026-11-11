@@ -38,8 +38,8 @@ for (const file of files) {
   const original = content;
 
   // Replace versions safely in UTF-8
-  content = content.replace(/v2\.(26|27|28|29|30|31)\.\d+/g, `v${targetVersion}`);
-  content = content.replace(/version:\s*"2\.(26|27|28|29|30|31)\.\d+"/g, `version: "${targetVersion}"`);
+  content = content.replace(/v2\.(26|27|28|29|30|31|32)\.\d+/g, `v${targetVersion}`);
+  content = content.replace(/version:\s*"2\.(26|27|28|29|30|31|32)\.\d+"/g, `version: "${targetVersion}"`);
 
   if (content !== original) {
     fs.writeFileSync(file, content, 'utf8');

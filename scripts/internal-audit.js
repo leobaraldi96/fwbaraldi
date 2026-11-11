@@ -214,7 +214,7 @@ allSkillMdFiles.forEach(filePath => {
         reportIssue(`Guiones largos prohibidos (em-dash / en-dash) detectados en ${relPath}`);
         subFileIssues++;
     }
-    if (/2\.(28|29|30|31)\.\d+|2\.32\.0/.test(content)) {
+    if (/2\.(28|29|30|31|32)\.\d+/.test(content)) {
         reportIssue(`Versión desactualizada detectada en ${relPath} (se esperaba ${currentVersion})`);
         subFileIssues++;
     }
@@ -244,7 +244,7 @@ rootMdFiles.forEach(filePath => {
         reportIssue(`Archivo de raíz '${fileName}' no incluye la versión actual (${currentVersion})`);
         rootFileIssues++;
     }
-    if ((/v2\.(26|27|28|29|30|31)\.\d+/.test(content) || /v2\.32\.0/.test(content)) && fileName !== 'README.md') {
+    if ((/v2\.(26|27|28|29|30|31|32)\.\d+/.test(content)) && fileName !== 'README.md') {
         reportIssue(`Archivo de raíz '${fileName}' contiene referencias a versiones obsoletas`);
         rootFileIssues++;
     }
